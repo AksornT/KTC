@@ -155,13 +155,6 @@ a:hover{
 
 .scrolled-menu{
 	text-align: center;
-	opacity: 0;
-	pointer-events: none;
-}
-
-.mini-header .scrolled-menu{
-	opacity: 1;
-	pointer-events: all;
 }
 
 .scrolled-menu > li{
@@ -213,29 +206,7 @@ a:hover{
 }
 
 .menu-global > .content-wrap{
-    padding: 0 30px;
-    position: fixed;
-    z-index: 2;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
-.menu-global > .content-wrap:before{
-	background: #000;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	opacity: 0;
-	pointer-events: none;
-	content: "";
-	position: absolute;
-	display: block;
-	z-index: -1;
-}
-
-.menu-global.mini-header > .content-wrap:before{
-	opacity: 1;
-
+	padding: 0 30px;
 }
 
 .menu-global .search-on-menu{
@@ -293,10 +264,8 @@ a:hover{
 }
 
 .open-on-top{
-    padding: 66px 0 45px 0;
-    position: relative;
-    z-index: 1;
-    opacity: 1;
+	padding-bottom: 45px;
+	position: relative;
 }
 
 .open-on-top h4{
@@ -314,7 +283,6 @@ a:hover{
 .open-on-top p{
 	line-height: 21px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-    max-width: 475px;
 }
 
 .big-link{
@@ -481,5 +449,8 @@ a:hover{
 	display: inline-block;
 }
 
+.index-slide .owl-dots{
+	display: none;
+}
 
 
