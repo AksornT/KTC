@@ -63,8 +63,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -75,7 +75,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -452,7 +452,6 @@ a:hover{
 
 .text-on-slide p{
 	font-size: 35px;
-	padding-left: 0;
 }
 
 .text-on-slide a{
@@ -483,75 +482,4 @@ a:hover{
 }
 
 
-/* slide - eve */
-.item img{
-	width: 100%;
-	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-	border-radius: 6px;
-}
-.item .slide-title{
-	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 20px;
-	padding-top: 15px;
-}
-.item .slide-content{
-	font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 16px;
-	line-height: 21px;
-	padding-top: 10px;
-}
-.owl-nav button{
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-.owl-dots{
-	display: none;
-}
-.index-slide1, .index-slide2{
-	position: relative;
-}
-.owl-prev span{
-	width: 81px;
-  height: 81px;
-  background: url(../img/ico-left.png);
-  background-repeat: no-repeat;
-  display: block;
-  font-size: 0;
-}
-.owl-next span{
-	width: 81px;
-  height: 81px;
-  background: url(../img/ico-right.png);
-  background-repeat: no-repeat;
-  display: block;
-  font-size: 0;
-}
-.index-slide1 .owl-nav button.owl-prev{
-	position: absolute;
-  top: 50%;
-	left: -48px;
-  transform: translateY(-50%);
-}
-.index-slide1 .owl-nav button.owl-next{
-	position: absolute;
-  top: 50%;
-  right: -48px;
-  transform: translateY(-50%);
-}
-.index-slide2 .owl-nav button.owl-prev{
-	position: absolute;
-	top: 40%;
-	left: -48px;
-	transform: translateY(-60%);
-}
-.index-slide2 .owl-nav button.owl-next{
-	position: absolute;
-	top: 40%;
-	right: -48px;
-	transform: translateY(-60%);
-}
-button:focus {
-  outline: 0px dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-}
+
