@@ -105,7 +105,7 @@ a:hover{
 	text-decoration: none;
 }
 
-*{
+*, *:after, *:before{
 	transition: all .3s ease-out;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -199,6 +199,10 @@ a:hover{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1366px;
+}
+
+.slide-wrap{
+	overflow: hidden;
 }
 
 .menu-global > .content-wrap{
@@ -400,3 +404,53 @@ a:hover{
 .only-mobile{
 	display: none;
 }
+
+.index-head{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 20px;
+	color: #454545;
+	border-bottom: 4px solid #CF3339;
+	display: inline-block;
+	margin-top: 70px;
+}
+
+.text-on-slide{
+	margin: 25px 0;
+}
+
+.text-on-slide p{
+	font-size: 35px;
+}
+
+.text-on-slide a{
+	text-align: right;
+	font-size: 18px;
+	text-decoration: underline;
+	color: #757575;
+	padding-top: 13px;
+}
+
+.text-on-slide a:after{
+	width: 14px;
+	height: 10px;
+	display: inline-block;
+	content: "";
+	background: url("../img/ico-arrow-right.png");
+	margin-left: 3px;
+	position: relative;
+	left: 0;
+}
+
+.text-on-slide a:hover:after{
+	left: 6px;
+}
+
+.owl-item{
+	display: inline-block;
+}
+
+.index-slide .owl-dots{
+	display: none;
+}
+
+
