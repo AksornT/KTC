@@ -219,9 +219,23 @@ a:hover{
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
-.menu-global.mini-header > .content-wrap{
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+.menu-global > .content-wrap:before{
+	background: #000;
 	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	display: block;
+	z-index: -1;
+}
+
+.menu-global.mini-header > .content-wrap:before{
+	opacity: 1;
+
 }
 
 .menu-global .search-on-menu{
