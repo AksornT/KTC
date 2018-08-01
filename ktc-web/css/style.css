@@ -206,7 +206,10 @@ a:hover{
 }
 
 .menu-global > .content-wrap{
-	padding: 0 30px;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 2;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
 .menu-global .search-on-menu{
@@ -264,8 +267,9 @@ a:hover{
 }
 
 .open-on-top{
-	padding-bottom: 45px;
-	position: relative;
+    padding: 66px 0 45px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .open-on-top h4{
@@ -283,6 +287,7 @@ a:hover{
 .open-on-top p{
 	line-height: 21px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+    max-width: 475px;
 }
 
 .big-link{
