@@ -122,10 +122,6 @@ a:hover{
 	margin-bottom: 153px;
 }
 
-.menu-global.mini-header{
-	margin-bottom: 0;
-}
-
 .menu-global a{
 	color: #fff;
 }
@@ -160,10 +156,12 @@ a:hover{
 .scrolled-menu{
 	text-align: center;
 	opacity: 0;
+	pointer-events: none;
 }
 
 .mini-header .scrolled-menu{
 	opacity: 1;
+	pointer-events: all;
 }
 
 .scrolled-menu > li{
@@ -208,11 +206,6 @@ a:hover{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1366px;
-}
-
-#head-trigger{
-	position: relative;
-	top: 170px;
 }
 
 .slide-wrap{
@@ -472,10 +465,6 @@ a:hover{
 
 .owl-item{
 	display: inline-block;
-}
-
-.index-slide .owl-dots{
-	display: none;
 }
 
 
