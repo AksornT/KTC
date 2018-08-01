@@ -122,6 +122,10 @@ a:hover{
 	margin-bottom: 153px;
 }
 
+.menu-global.mini-header{
+	margin-bottom: 0;
+}
+
 .menu-global a{
 	color: #fff;
 }
@@ -155,6 +159,11 @@ a:hover{
 
 .scrolled-menu{
 	text-align: center;
+	opacity: 0;
+}
+
+.mini-header .scrolled-menu{
+	opacity: 1;
 }
 
 .scrolled-menu > li{
@@ -201,6 +210,11 @@ a:hover{
 	max-width: 1366px;
 }
 
+#head-trigger{
+	position: relative;
+	top: 170px;
+}
+
 .slide-wrap{
 	overflow: hidden;
 }
@@ -210,6 +224,11 @@ a:hover{
     position: fixed;
     z-index: 2;
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.menu-global.mini-header > .content-wrap{
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+	top: 0;
 }
 
 .menu-global .search-on-menu{
@@ -270,6 +289,7 @@ a:hover{
     padding: 66px 0 45px 0;
     position: relative;
     z-index: 1;
+    opacity: 1;
 }
 
 .open-on-top h4{
