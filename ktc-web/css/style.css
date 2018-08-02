@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Gotham-Bold';
-	src: url('fonts/GothamRnd-Bold.eot');
-	src: local('☺'), url('fonts/GothamRnd-Bold.woff') format('woff'), url('fonts/GothamRnd-Bold.ttf') format('truetype'), url('fonts/GothamRnd-Bold.svg') format('svg');
+	src: url('../fonts/GothamRnd-Bold.eot');
+	src: local('☺'), url('../fonts/GothamRnd-Bold.woff') format('woff'), url('../fonts/GothamRnd-Bold.ttf') format('truetype'), url('../fonts/GothamRnd-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -497,14 +497,14 @@ a:hover{
 .footer a{
 	color: #000;
 	font-family: sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 17px;
 	display: block;
 	position: relative;
 	left: 0;
 	margin-top: 8px;
 	opacity: 1;
-	max-width: 200px;
+	max-width: 185px;
 }
 
 .footer a:hover{
@@ -544,6 +544,7 @@ a:hover{
 	font-size: 16px;
 	line-height: 24px;
 	padding-top: 10px;
+	margin-bottom: 60px;
 }
 .owl-nav button{
 	background: none;
@@ -630,6 +631,60 @@ button:focus {
 
 .big-right{
 	padding-left: 13px;
+}
+
+.image-link{
+	margin-bottom: 105px;
+}
+
+.tel p{
+	font-family: 'Gotham-Bold';
+	line-height: 15px;
+	font-size: 18px;
+	margin:45px 0 12px 0;
+}
+
+.tel span{
+	font-family: 'Gotham-Bold';
+	line-height: 29px;
+	font-size: 24px;
+	padding-left: 24px;
+	background: url(../img/ico-footer-tel.png) no-repeat;
+	background-position: left center;
+	white-space: nowrap;
+}
+
+.footer-badge{
+	height: auto;
+	width: 100px;
+	margin: 16px 0 25px 0;
+}
+
+.download-section p{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.download-section .footer-badge{
+	margin: 2px 0;
+}
+
+.footer-badge.tapktc{
+	margin-bottom: 3px;
+	width: 136px;
+}
+
+.download-section img{
+	position: relative;
+	opacity: 1;
+	top: 0;
+}
+
+.download-section img:hover{
+	cursor: pointer;
+	opacity: 0.8;
+	top: -2px;
 }
 
 @media (min-width: 1366px) {
