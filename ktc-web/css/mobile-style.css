@@ -6,4 +6,30 @@
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 12px;
   }
+  .menu-global .another-sub .content-wrap > * {
+    flex: 0 100%;
+  }
+  .only-mobile {
+    display: block;
+  }
+  .another-sub span {
+    display: none;
+  }
+  .menu-global {
+    margin-bottom: 225px;
+  }
+  .index-head {
+    font-size: 14px;
+  }
+  .text-on-slide {
+    margin-top: 11.8px;
+    margin-bottom: 9px;
+  }
+  .text-on-slide p {
+    font-size: 16px;
+  }
+  .text-on-slide a {
+    font-size: 12px;
+    padding: 0;
+  }
 }
