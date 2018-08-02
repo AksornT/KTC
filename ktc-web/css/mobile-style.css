@@ -1,4 +1,4 @@
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .content-wrap {
     padding: 0 20px;
   }
