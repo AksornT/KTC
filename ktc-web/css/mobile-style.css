@@ -1,0 +1,9 @@
+@media (min-width: 375px) {
+  .content-wrap {
+    padding: 0 20px;
+  }
+  .icon-wrap p {
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 12px;
+  }
+}
