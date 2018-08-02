@@ -557,44 +557,55 @@ a:hover{
 }
 .owl-prev span{
 	width: 81px;
-  height: 81px;
-  background: url(../img/ico-left.png);
-  background-repeat: no-repeat;
-  display: block;
-  font-size: 0;
+	height: 81px;
+	background: url(../img/ico-left.png);
+	background-size: 100% 100%;
+	display: block;
+	font-size: 0;
 }
 .owl-next span{
 	width: 81px;
-  height: 81px;
-  background: url(../img/ico-right.png);
-  background-repeat: no-repeat;
-  display: block;
-  font-size: 0;
+	height: 81px;
+	background: url(../img/ico-right.png);
+	background-size: 100% 100%;
+	display: block;
+	font-size: 0;
 }
-.index-slide1 .owl-nav button.owl-prev{
-	position: absolute;
-  top: 50%;
-	left: -48px;
-  transform: translateY(-50%);
-}
-.index-slide1 .owl-nav button.owl-next{
-	position: absolute;
-  top: 50%;
-  right: -48px;
-  transform: translateY(-50%);
-}
+.index-slide1 .owl-nav button.owl-prev,
 .index-slide2 .owl-nav button.owl-prev{
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: -48px;
-	transform: translateY(-60%);
+	transform: translateY(-50%);
+	opacity: 1;
 }
+.index-slide1 .owl-nav button.owl-next,
 .index-slide2 .owl-nav button.owl-next{
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	right: -48px;
-	transform: translateY(-60%);
+	transform: translateY(-50%);
+  	opacity: 1;
 }
+
+.index-slide1 .owl-nav button.disabled,
+.index-slide2 .owl-nav button.disabled{
+	opacity: 0;
+	pointer-events: none;
+}
+
+.index-slide2 {
+    MARGIN-BOTTOM: 180px;
+}
+
+.index-slide2 .item {
+    position: relative;
+}
+
+.slide-content-wrap {
+    position: absolute;
+}
+
 button:focus {
   outline: 0px dotted;
   outline: 0px auto -webkit-focus-ring-color;
