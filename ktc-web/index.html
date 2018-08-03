@@ -129,42 +129,42 @@
         </div>
         <div class="another-sub">
           <div class="content-wrap row">
-            <a class="col-4">
+            <a class="col-4 col-sm-4">
               <img src="img/ico-shopping.png">
               <p>คะแนนสะสม</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4">
+            <a class="col-4 col-sm-4">
               <img src="img/ico-dining.png">
               <p>แบ่งชำระ</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4">
+            <a class="col-4 col-sm-4">
               <img src="img/ico-shoponline.png">
               <p>บริจาค</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4 only-mobile">
+            <a class="col-4 col-sm-4 only-mobile">
               <img src="img/ico-apply-card.png">
               <p>สมัครบัตร</p>
               <span>Others</span>
             </a>
-            <a class="col-4 only-desktop">
+            <a class="col-4 col-sm-4 only-desktop">
               <img src="img/ico-travel.png">
               <p>บริการลูกค้า</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4 only-desktop">
+            <a class="col-4 col-sm-4 only-desktop">
               <img src="img/ico-nearby.png">
               <p>ตรวจสอบสถานะบัตร</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4 only-mobile">
+            <a class="col-4 col-sm-4 only-mobile">
               <img src="img/ico-nearby.png">
               <p>ตรวจสอบสถานะบัตร</p>
               <span>Suspendisse</span>
             </a>
-            <a class="col-4 only-mobile">
+            <a class="col-4 col-sm-4 only-mobile">
               <img src="img/ico-travel.png">
               <p>บริการลูกค้า</p>
               <span>Suspendisse</span>
@@ -207,17 +207,18 @@
       $(document).ready(function() {
         $('.index-slide1').owlCarousel({
             loop:true,
-            margin:26,
             responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:true,
+                    margin:12
                 },
                 1000:{
                     items:2,
                     nav:true,
-                    loop:false
+                    loop:false,
+                    margin:26
                 }
             }
           });
@@ -280,17 +281,18 @@
       $(document).ready(function() {
         $('.index-slide2').owlCarousel({
             loop:true,
-            margin:26,
             responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:true,
+                    margin:12
                 },
                 1000:{
                     items:3,
                     nav:true,
-                    loop:false
+                    loop:false,
+                    margin:26
                 }
             }
           });
