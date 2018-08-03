@@ -8,14 +8,17 @@
   .icon-wrap p {
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 12px;
-    margin-bottom: -7px;
+    line-height: 10px;
+  }
+  .open-on-top {
+    padding: 66px 0 33px 0;
   }
   .big-link {
     padding-left: 14px;
     padding-bottom: 16px;
   }
   .big-link > div{
-    height: 88.5px;
+    height: 89px;
     padding-top: 6px;
   }
   .big-link img {
@@ -47,9 +50,16 @@
   .another-sub p{
     font-size: 12px;
     margin-top: -5px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    max-width: none;
+    width: auto;
+    display: block;
   }
   .menu-global{
-    margin-bottom: 225px;
+    margin-bottom: 155px;
   }
   .index-head{
     font-size: 14px;
