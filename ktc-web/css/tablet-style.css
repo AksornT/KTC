@@ -1,16 +1,18 @@
 @media (max-width: 768px) {
+  .index-slide2 .owl-nav button.owl-prev{
+    top: 11vw;
+  }
   .index-slide2 .owl-nav button.owl-next {
-    top: 22vw;
+    top: 11vw;
+  }
+  .open-on-top h4{
+    margin-top: 30px;
   }
   .icon-wrap p {
-    font-family: 'Conv_SukhumvitTadmai_Bol';
-    font-size: 12px;
-    line-height: 10px;
+    line-height: 18px;
   }
-  .big-link span {
-    font-family: 'Conv_SukhumvitTadmai_Bol';
-    font-size: 10px;
-    text-transform: uppercase;
+  .big-link img {
+    margin-bottom: 0px;
   }
   .only-desktop {
     display: none;
@@ -29,5 +31,21 @@
   }
   .another-sub a:after{
   	background: none;
+  }
+  .text-on-slide p {
+    font-size: 28px;
+  }
+  .text-on-slide a{
+    padding-top: 8px;
+  }
+  .item .slide-title{
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .item .slide-content{
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
