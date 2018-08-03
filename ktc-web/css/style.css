@@ -220,7 +220,7 @@ a:hover{
 	top: 0;
 	bottom: 0;
 	left: 0;
-	width: 40px; 
+	width: 40px;
 	pointer-events: none;
 	z-index: 3;
 	background: linear-gradient(to right, rgba(255,255,255,255.1), rgba(255,255,255,0));
@@ -233,7 +233,7 @@ a:hover{
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 40px; 
+	width: 40px;
 	pointer-events: none;
 	z-index: 3;
 	background: linear-gradient(to left, rgba(255,255,255,255.1), rgba(255,255,255,0));
@@ -384,6 +384,12 @@ a:hover{
 	margin-bottom: 10px;
 }
 
+.big-link span {
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
 .another-sub{
 	position: absolute;
 	top: 100%;
@@ -430,7 +436,7 @@ a:hover{
 	content: "";
 	width: 1px;
 	height: 60px;
-	background: #5B6670;
+	background: rgba(91,102,112,.15);
 	top: 20px;
 	left: 0;
 	position: absolute;

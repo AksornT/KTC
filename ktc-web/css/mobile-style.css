@@ -2,6 +2,9 @@
   .content-wrap {
     padding: 0 20px;
   }
+  .icon-wrap {
+    padding: 30px 0 0 15px;
+  }
   .icon-wrap p {
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 12px;
@@ -32,6 +35,9 @@
   .only-mobile{
     display: block;
   }
+  .another-sub img{
+    height: 40px;
+  }
   .another-sub span{
     display: none;
   }
@@ -47,6 +53,7 @@
   }
   .index-head{
     font-size: 14px;
+    margin-top: 40px;
   }
   .text-on-slide{
     margin-top: 11.8px;
@@ -62,7 +69,21 @@
   .owl-nav button{
     display: none;
   }
+  .big-left{
+    padding-right: 15px
+  }
   .big-right{
     margin-top: 10px;
+    padding-left: 15px
+  }
+  .item .slide-title{
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .item .slide-content{
+    font-size: 12px;
+    padding-top: 0px;
+    margin-bottom: 40px;
+    line-height: 18px;
   }
 }
