@@ -498,6 +498,8 @@ a:hover{
 	text-decoration: underline;
 	color: #757575;
 	padding-top: 13px;
+	position: relative;
+	padding-right: 0;
 }
 
 .text-on-slide a:after{
@@ -506,13 +508,15 @@ a:hover{
 	display: inline-block;
 	content: "";
 	background: url("../img/ico-arrow-right.png");
-	margin-left: 3px;
-	position: relative;
-	left: 0;
+	position: absolute;
+	left: 100%;
+	bottom: 8px;
+	opacity: 0;
 }
 
 .text-on-slide a:hover:after{
-	left: 6px;
+	left: calc(100% + 6px);
+	opacity: 1;
 }
 
 .owl-item{
