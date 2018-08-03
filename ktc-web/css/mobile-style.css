@@ -5,6 +5,21 @@
   .icon-wrap p {
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 12px;
+    margin-bottom: -6px;
+  }
+  .big-link {
+    padding-left: 16px;
+  }
+  .big-link.only-mobile > div{
+    padding-bottom: 5px;
+  }
+  .big-link img {
+    margin-bottom: 0px;
+  }
+  .big-link span {
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 10px;
+    text-transform: uppercase;
   }
   .menu-global .another-sub .content-wrap > * {
     flex: 0 100%;
