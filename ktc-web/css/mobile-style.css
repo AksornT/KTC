@@ -5,13 +5,15 @@
   .icon-wrap p {
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 12px;
-    margin-bottom: -6px;
+    margin-bottom: -7px;
   }
   .big-link {
-    padding-left: 16px;
+    padding-left: 14px;
+    padding-bottom: 16px;
   }
-  .big-link.only-mobile > div{
-    padding-bottom: 5px;
+  .big-link > div{
+    height: 88.5px;
+    padding-top: 6px;
   }
   .big-link img {
     margin-bottom: 0px;
@@ -24,26 +26,36 @@
   .menu-global .another-sub .content-wrap > * {
     flex: 0 100%;
   }
-  .only-mobile {
-    display: block;
-  }
-  .another-sub span {
+  .only-desktop {
     display: none;
   }
-  .menu-global {
+  .only-mobile{
+    display: block;
+  }
+  .another-sub span{
+    display: none;
+  }
+  .another-sub a:after{
+  	background: none;
+  }
+  .another-sub p{
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  .menu-global{
     margin-bottom: 225px;
   }
-  .index-head {
+  .index-head{
     font-size: 14px;
   }
-  .text-on-slide {
+  .text-on-slide{
     margin-top: 11.8px;
     margin-bottom: 9px;
   }
-  .text-on-slide p {
+  .text-on-slide p{
     font-size: 16px;
   }
-  .text-on-slide a {
+  .text-on-slide a{
     font-size: 12px;
     padding: 0;
   }
