@@ -62,4 +62,7 @@
   .owl-nav button{
     display: none;
   }
+  .big-right{
+    margin-top: 10px;
+  }
 }
