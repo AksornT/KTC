@@ -319,6 +319,9 @@ a:hover{
 .menu-global .content-wrap > *{
 	flex: auto;
 }
+.menu-global .on-right .only-mobile{
+	display: none;
+}
 
 .open-on-top{
     padding: 66px 0 45px 0;
@@ -809,7 +812,7 @@ button:focus {
 }
 
 .last-piece #lang-change{
-	-webkit-appearance: none; 
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	background: none;
@@ -827,7 +830,7 @@ button:focus {
 }
 
 .lang-footer label{
-	padding: 0 14px 0 20px; 
+	padding: 0 14px 0 20px;
 }
 
 .social-footer{

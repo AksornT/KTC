@@ -1,4 +1,36 @@
 @media (max-width: 768px) {
+  .menu-global .on-right{
+    width: 160px;
+  }
+  .scrolled-menu{
+    display: none;
+  }
+  .menu-global .on-right .card-register-btn{
+    display: none;
+  }
+  .menu-global .on-right .login-btn{
+    display: none;
+  }
+  .on-right .profile-image img{
+    width: 28px;
+    height: 28px;
+  }
+  .login-mobile{
+    position: relative;
+    top: 4px;
+  }
+  .login-mobile img{
+    width: 13px;
+    height: 17px;
+  }
+  .menu-mobile{
+    display: none;
+  }
+  .menu-mobile img{
+    width: 18px;
+    height: 16px;
+  }
+
   .index-slide2 .owl-nav button.owl-prev{
     top: 11vw;
   }
@@ -34,9 +66,10 @@
   .menu-global{
   	/*background: url("../img/bg_menu.png");*/
   	background: url("../img/bg-header-tablet.jpg");
-  }
-  .menu-global {
     margin-bottom: 215px;
+  }
+  .index-head {
+    padding-bottom: 4px;
   }
   .another-sub span{
     display: none;
@@ -56,7 +89,7 @@
     line-height: 28px;
   }
   .item .slide-content{
-    padding-top: 6px;
+    padding-top: 5px;
     font-size: 14px;
     line-height: 18px;
   }

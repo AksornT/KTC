@@ -1,4 +1,10 @@
 @media (max-width: 375px) {
+  .menu-global .on-right .card-register-btn{
+    display: none;
+  }
+  .menu-global .on-right .login-btn{
+    display: none;
+  }
   .content-wrap {
     padding: 0 20px;
   }
@@ -73,6 +79,8 @@
   .index-head{
     font-size: 14px;
     margin-top: 40px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #CF3339;
   }
   .text-on-slide{
     margin-top: 11.8px;
