@@ -1,10 +1,47 @@
 @media (max-width: 375px) {
+  .menu-global .on-right{
+    width: 100px;
+  }
+  .mini-header .on-right{
+    width: 160px;
+  }
   .menu-global .on-right .card-register-btn{
     display: none;
   }
   .menu-global .on-right .login-btn{
     display: none;
   }
+  .menu-global .on-right .only-mobile{
+  	display: inline-block;
+  }
+  .on-right .profile-image img{
+    width: 28px;
+    height: 28px;
+  }
+  .login-mobile{
+    position: relative;
+    top: 4px;
+  }
+  .login-mobile img{
+    width: 13px;
+    height: 17px;
+  }
+  .menu-mobile{
+    position: relative;
+    top: 4px;
+    padding-left: 14px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menu-mobile img{
+    width: 18px;
+    height: 16px;
+  }
+  .mini-header .menu-mobile {
+    opacity: 1;
+    pointer-events: all;
+  }
+
   .content-wrap {
     padding: 0 20px;
   }
