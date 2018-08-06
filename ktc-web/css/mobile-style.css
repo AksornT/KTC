@@ -79,7 +79,16 @@
   }
   .text-on-slide a{
     font-size: 12px;
-    padding: 0;
+    padding: 2px;
+  }
+  .owl-item {
+    opacity: 1;
+  }
+  .slide-wrap:before{
+    display: none;
+  }
+  .slide-wrap:after{
+    display: none;
   }
   .owl-nav button{
     display: none;
