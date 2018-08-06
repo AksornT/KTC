@@ -110,4 +110,42 @@
     margin-bottom: 40px;
     line-height: 18px;
   }
+  .footer ul a{
+  	overflow: hidden;
+  	height: 0;
+  	margin-top: 0;
+  	padding-left: 28px;
+  }
+  .footer ul{
+  	padding-bottom: 0;
+  }
+  .footer .active + ul{
+  	padding-bottom: 10px;
+  }
+  .footer .active + ul a{
+  	height: 17px;
+  	margin-top: 8px;
+  }
+  .footer .active + ul .two-line a{
+  	height: 34px;
+  }
+  .footer h3{
+  	font-size: 16px;
+  	line-height: 25px;
+  	padding: 10px 0 9px 0;
+  	margin: 0;
+  }
+
+  .footer-menu > div{
+  	border-bottom: 1px solid rgba(83,83,83,.15);
+  	padding: 0;
+  }
+
+  .footer-menu{
+    padding: 15px;
+    width: 100%;
+    max-width: none;
+    display: block;
+    margin: 0;
+  }
 }
