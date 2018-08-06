@@ -8,6 +8,11 @@
   .open-on-top h4{
     margin-top: 30px;
   }
+  .open-on-top h4.title-mobile{
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    line-height: 36px;
+  }
   .icon-wrap p {
     line-height: 18px;
   }

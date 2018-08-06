@@ -82,8 +82,9 @@
         <div class="content-wrap">
           <div class="row">
             <div class="col-lg-6">
-              <h4>Fulfill your life with <span>KTC Credit</span></h4>
-              <p>Suspendisse accumsan in ante et dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec pulvinar leo, vel malesuada orci.</p>
+              <h4 class="only-desktop">Fulfill your life with <span>KTC Credit</span></h4>
+              <p class="only-desktop">Suspendisse accumsan in ante et dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec pulvinar leo, vel malesuada orci.</p>
+              <h4 class="title-mobile only-mobile">ประสบการณ์<br>ให้ความหมายกับชีวิต</h4>
             </div>
             <div class="col-lg-6 row icon-wrap">
               <a class="big-link col-4" href="#">
@@ -206,13 +207,18 @@
       <script type="text/javascript">
       $(document).ready(function() {
         $('.index-slide1').owlCarousel({
-            loop:true,
+            loop:false,
             responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
                     nav:true,
                     margin:12
+                },
+                700:{
+                    items:1,
+                    nav:true,
+                    margin:26
                 },
                 1000:{
                     items:2,
@@ -280,7 +286,7 @@
       <script type="text/javascript">
       $(document).ready(function() {
         $('.index-slide2').owlCarousel({
-            loop:true,
+            loop:false,
             responsiveClass:true,
             responsive:{
                 0:{
@@ -291,7 +297,7 @@
                 700:{
                     items:2,
                     nav:true,
-                    margin:12
+                    margin:26
                 },
                 1000:{
                     items:3,
