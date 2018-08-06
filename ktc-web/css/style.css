@@ -170,6 +170,7 @@ a:hover{
     position: relative;
     padding: 23px 16px 16px 16px;
     top: 3px;
+    height: 63px;
 }
 
 .scrolled-menu > li:hover{
@@ -180,6 +181,21 @@ a:hover{
 	transform: rotate(-180deg);
 }
 
+.scrolled-menu > li:after{
+	position: absolute;
+	bottom: 0;
+	left: 16px;
+	right: 16px;
+	height: 3px;
+	background: #000;
+	content: "";
+	display: block;
+}
+
+.scrolled-menu > li:hover:after{
+	background: #CF3339;
+}
+
 .scrolled-menu ul{
 	top: 100%;
 	position: absolute;
@@ -188,11 +204,33 @@ a:hover{
 	opacity: 0;
 	pointer-events: none;
 	color: #fff;
+	padding-bottom: 11px;
+	background: #000;
 }
 
 .scrolled-menu > li:hover > ul{
 	opacity: 1;
 	pointer-events: all;
+}
+
+.scrolled-menu ul li{
+    text-align: left;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 45px;
+    position: relative;
+}
+
+.scrolled-menu ul li:hover{
+	color: #bf2a31;
+}
+
+.scrolled-menu ul li a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .text-on-left{
@@ -845,6 +883,10 @@ button:focus {
 .social-footer a{
 	display: inline-block;
 	margin: 2px 20px 0 0;
+}
+
+.footer .text-right{
+	white-space: nowrap;
 }
 
 @media (min-width: 1366px) {

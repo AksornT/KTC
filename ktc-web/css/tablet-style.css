@@ -1,3 +1,15 @@
+@media (max-width: 991px) {
+  .last-piece .text-right{
+    display: none;
+  }
+
+  .license{
+    font-size: 12px;
+    padding: 10px 0 12px 0;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .index-slide2 .owl-nav button.owl-prev{
     top: 11vw;
