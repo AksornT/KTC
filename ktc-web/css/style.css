@@ -588,6 +588,7 @@ a:hover{
 
 .footer-menu{
 	padding-left: 30px;
+	padding-bottom: 50px;
 }
 
 .footer-menu > .col-3{
@@ -808,6 +809,72 @@ button:focus {
 	cursor: pointer;
 	opacity: 0.6;
 	top: -2px;
+}
+
+.last-piece{
+	border-top: 1px solid #dfe1e1;
+	padding-bottom: 13px;
+}
+
+.license{
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	padding-top: 7px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.last-piece .text-right > div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lang-footer{
+	font-size: 12px;
+	line-height: 14px;
+	padding-top: 2px;
+}
+
+.last-piece #lang-change{
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+	background: none;
+	border: #707070 solid 1px;
+	border-radius: 6px;
+	width: 29px;
+	height: 28px;
+	font-size: 16px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	padding: 2px;
+}
+
+.last-piece #lang-change::-ms-expand{
+	display: none;
+}
+
+.lang-footer label{
+	padding: 0 14px 0 20px; 
+}
+
+.social-footer{
+	margin-top: 6px;
+	height: 23px;
+	padding-right: 6px;
+	border-right: 1px solid #4D4D4D;
+}
+
+.social-footer img{
+	width: 20px;
+	height: auto;
+}
+
+.social-footer a{
+	display: inline-block;
+	margin: 2px 20px 0 0;
 }
 
 @media (min-width: 1366px) {
