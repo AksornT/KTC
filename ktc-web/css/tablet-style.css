@@ -12,12 +12,11 @@
     display: none;
   }
 
-  .content-wrap {
-    padding: 0 20px;
+  .menu-global{
+    /*background: url("../img/bg_menu.png");*/
+    background: url("../img/bg-header-tablet.jpg");
+    margin-bottom: 215px;
   }
-}
-
-@media (max-width: 768px) {
   .menu-global .on-right{
     width: 100px;
   }
@@ -93,11 +92,6 @@
   .menu-global .another-sub .content-wrap > * {
     flex: 0 100%;
   }
-  .menu-global{
-  	/*background: url("../img/bg_menu.png");*/
-  	background: url("../img/bg-header-tablet.jpg");
-    margin-bottom: 215px;
-  }
   .index-head {
     padding-bottom: 4px;
   }
@@ -122,113 +116,5 @@
     padding-top: 5px;
     font-size: 14px;
     line-height: 18px;
-  }
-}
-@media (max-width: 576px) {
-  .footer ul a{
-    overflow: hidden;
-    height: 0;
-    margin-top: 0;
-    padding-left: 28px;
-  }
-  .footer ul{
-    padding-bottom: 0;
-  }
-  .footer .active + ul{
-    padding-bottom: 10px;
-  }
-  .footer .active + ul a{
-    height: 17px;
-    margin-top: 8px;
-  }
-  .footer .active + ul .two-line a{
-    height: 34px;
-  }
-  .footer h3{
-    font-size: 16px;
-    line-height: 25px;
-    padding: 10px 0 9px 0;
-    margin: 0;
-    font-family: 'Conv_SukhumvitTadmai_Tex';
-  }
-
-  .footer-menu > div{
-    border-bottom: 1px solid rgba(83,83,83,.15);
-    padding: 0;
-    position: relative;
-  }
-
-  .footer-menu > div:after,
-  .footer-menu h3:after{
-    content: "_";
-    position: absolute;
-    top: 3px;
-    font-family: 'Gotham-Bold';
-    right: 0;
-    font-size: 22px;
-  }
-
-  .footer-menu h3:after{
-    transform: rotate(90deg);
-    top: 11px;
-    right: -9px;
-  }
-
-  .footer-menu h3.active:after{
-    transform: rotate(0);
-    top: 2px;
-    right: 0;
-  }
-
-  .footer-menu{
-    padding: 15px;
-    width: 100%;
-    max-width: none;
-    display: block;
-    margin: 0;
-  }
-
-  .tel{
-    display: block;
-    text-align: center;
-  }
-  .tel > p,
-  .tel > span{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 38px 7px;
-  }
-
-  .footer-menu + div{
-    padding-bottom: 100px;
-    position: relative;
-  }
-  .tel + .footer-badge{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .download-section{
-    text-align: center;
-  }
-
-  .download-section p{
-    text-align: right;
-    width: 90px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 8px 0 3px 0;
-  }
-
-  .footer-badge.tapktc{
-    vertical-align: middle;
-    display: inline-block;
-  }
-
-  .download-section .footer-badge {
-    margin:8px;
-    width: 116px;
   }
 }
