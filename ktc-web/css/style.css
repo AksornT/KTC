@@ -115,7 +115,8 @@ a:hover{
 /*Global Menu*/
 .menu-global{
 	width: 100%;
-	background: url("../img/bg_menu.png");
+	/*background: url("../img/bg_menu.png");*/
+	background: url("../img/bg-header-desktop.jpg");
 	background-size: cover;
 	color: #fff;
 	font-size: 15px;
@@ -175,13 +176,8 @@ a:hover{
 	color: #bf2a31;
 }
 
-.scrolled-menu > li i{
-	color: #fff;
-}
-
 .scrolled-menu > li:hover i{
 	transform: rotate(-180deg);
-	color: #bf2a31;
 }
 
 .scrolled-menu ul{
@@ -192,33 +188,11 @@ a:hover{
 	opacity: 0;
 	pointer-events: none;
 	color: #fff;
-	background: #000;
-	padding-bottom: 13px;
-}
-
-.scrolled-menu ul > li{
-	background: #000;
-	color: #fff;
-	text-align: left;
-	padding: 13px 16px;
-	position: relative;
-}
-
-.scrolled-menu ul > li:hover{
-	color: #bf2a31;
 }
 
 .scrolled-menu > li:hover > ul{
 	opacity: 1;
 	pointer-events: all;
-}
-
-.scrolled-menu a{
-	position: absolute;
-	top:0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 }
 
 .text-on-left{
@@ -526,8 +500,6 @@ a:hover{
 	text-decoration: underline;
 	color: #757575;
 	padding-top: 13px;
-	position: relative;
-	padding-right: 0;
 }
 
 .text-on-slide a:after{
@@ -536,15 +508,13 @@ a:hover{
 	display: inline-block;
 	content: "";
 	background: url("../img/ico-arrow-right.png");
-	position: absolute;
-	left: 100%;
-	bottom: 8px;
-	opacity: 0;
+	margin-left: 3px;
+	position: relative;
+	left: 0;
 }
 
 .text-on-slide a:hover:after{
-	left: calc(100% + 6px);
-	opacity: 1;
+	left: 6px;
 }
 
 .owl-item{
