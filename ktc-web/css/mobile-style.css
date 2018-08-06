@@ -33,7 +33,7 @@
     position: relative;
   }
 
-  .footer-menu > div:after,
+  .footer-menu h3:before,
   .footer-menu h3:after{
     content: "_";
     position: absolute;
@@ -44,15 +44,28 @@
   }
 
   .footer-menu h3:after{
-    transform: rotate(90deg);
+    transform: rotate(0);
+    top: 2px;
+    right: 0;
+  }
+
+  .footer-menu h3:before{
+  	transform: rotate(90deg);
     top: 11px;
     right: -9px;
   }
 
+
+  .footer-menu h3.active:before{
+    transform: rotate(46deg);
+    top: 5px;
+    right: -7px;
+  }
+
   .footer-menu h3.active:after{
-    transform: rotate(0);
-    top: 2px;
-    right: 0;
+  	transform: rotate(-45deg);
+    top: 4px;
+    right: 6px;
   }
 
   .footer-menu{
@@ -240,15 +253,6 @@
   .text-on-slide a{
     font-size: 12px;
     padding: 2px;
-  }
-  .owl-item {
-    opacity: 1;
-  }
-  .slide-wrap:before{
-    display: none;
-  }
-  .slide-wrap:after{
-    display: none;
   }
   .owl-nav button{
     display: none;

@@ -117,4 +117,12 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  .slide-wrap:before,
+  .slide-wrap:after{
+    display: none;
+  }
+  .owl-item {
+    opacity: 1;
+  }
 }
