@@ -8,14 +8,14 @@
     padding: 10px 0 12px 0;
     text-align: center;
   }
+  .scrolled-menu{
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .menu-global .on-right{
     width: 160px;
-  }
-  .scrolled-menu{
-    display: none;
   }
   .menu-global .on-right .card-register-btn{
     display: none;

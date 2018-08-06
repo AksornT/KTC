@@ -117,7 +117,8 @@ a:hover{
 	width: 100%;
 	/*background: url("../img/bg_menu.png");*/
 	background: url("../img/bg-header-desktop.jpg");
-	background-size: cover;
+	background-size: auto 100%;
+	background-position: center center;
 	color: #fff;
 	font-size: 15px;
 	margin-bottom: 153px;
@@ -598,7 +599,7 @@ a:hover{
 }
 
 .footer-menu{
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 	padding-bottom: 50px;
 }
 
