@@ -23,6 +23,9 @@
   .menu-global .on-right .login-btn{
     display: none;
   }
+  .menu-global .on-right .only-mobile{
+  	display: inline-block;
+  }
   .on-right .profile-image img{
     width: 28px;
     height: 28px;
