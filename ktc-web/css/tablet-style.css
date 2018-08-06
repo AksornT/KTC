@@ -13,6 +13,9 @@
     margin-bottom: 8px;
     line-height: 36px;
   }
+  .icon-wrap {
+    padding: 130px 0 0 0;
+  }
   .icon-wrap p {
     line-height: 18px;
   }
@@ -27,6 +30,10 @@
   }
   .menu-global .another-sub .content-wrap > * {
     flex: 0 100%;
+  }
+  .menu-global{
+  	/*background: url("../img/bg_menu.png");*/
+  	background: url("../img/bg-header-tablet.jpg");
   }
   .menu-global {
     margin-bottom: 215px;

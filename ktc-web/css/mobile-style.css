@@ -8,7 +8,7 @@
     line-height: 36px;
   }
   .icon-wrap {
-    padding: 30px 0 0 15px;
+    padding: 120px 0 0 15px;
   }
   .icon-wrap p {
     font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -62,6 +62,10 @@
     max-width: none;
     width: auto;
     display: block;
+  }
+  .menu-global{
+  	/*background: url("../img/bg_menu.png");*/
+  	background: url("../img/bg-header-mobile.jpg");
   }
   .menu-global{
     margin-bottom: 155px;
