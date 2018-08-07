@@ -33,39 +33,38 @@
     position: relative;
   }
 
-  .footer-menu h3:before,
+  /*.footer-menu h3:before,*/
   .footer-menu h3:after{
-    content: "_";
+    content: "+";
     position: absolute;
     top: 3px;
     font-family: 'Gotham-Bold';
     right: 0;
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .footer-menu h3:after{
     transform: rotate(0);
-    top: 2px;
-    right: 0;
+    right: 0px;
+    top: 12px;
   }
 
-  .footer-menu h3:before{
+  /*.footer-menu h3:before{
   	transform: rotate(90deg);
     top: 11px;
     right: -9px;
   }
+*/
 
-
-  .footer-menu h3.active:before{
+  /*.footer-menu h3.active:before{
     transform: rotate(46deg);
     top: 5px;
     right: -7px;
-  }
+  }*/
 
   .footer-menu h3.active:after{
   	transform: rotate(-45deg);
-    top: 4px;
-    right: 6px;
+    right: -1px;
   }
 
   .footer-menu{
