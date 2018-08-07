@@ -59,6 +59,46 @@
     height: 16px;
     margin-left: 14px;
   }
+  .menu-responsive-dropdown{
+    position: absolute;
+    top: 8vw;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: auto;
+    padding-left: 25px;
+    /*padding-top: 20px;
+    padding-bottom: 40px;*/
+  }
+  div#scrolled-menu-responsive{
+    display: none;
+  }
+  #scrolled-menu-responsive img{
+    width: 40px;
+  }
+  .menu-responsive-dropdown a {
+    position: relative;
+    left: 0;
+    margin-top: 8px;
+    opacity: 1;
+    max-width: 185px;
+  }
+  .menu-responsive-dropdown ul a{
+    overflow: hidden;
+    height: 0;
+    margin-top: 0;
+    padding-left: 28px;
+  }
+  .menu-responsive-dropdown ul{
+    padding-bottom: 0;
+  }
+  .menu-responsive-dropdown .active + ul{
+    padding-bottom: 10px;
+  }
+  .menu-responsive-dropdown .active + ul a{
+    height: 17px;
+    margin-top: 8px;
+  }
 
   .index-slide2 .owl-nav button.owl-prev{
     top: 11vw;

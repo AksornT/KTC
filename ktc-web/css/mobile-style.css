@@ -123,7 +123,7 @@
     padding: 0 20px;
   }
   .menu-global .on-right{
-    width: 160px;
+    width: 250px;
   }
   .menu-global .on-right .card-register-btn{
     display: none;
@@ -163,6 +163,44 @@
     width: 18px;
     height: 16px;
     margin-left: 14px;
+  }
+  .menu-responsive-dropdown{
+    position: absolute;
+    top: 17vw;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: auto;
+    padding-left: 25px;
+  }
+  div#scrolled-menu-responsive{
+    display: none;
+  }
+  #scrolled-menu-responsive img{
+    width: 40px;
+  }
+  .menu-responsive-dropdown a {
+    position: relative;
+    left: 0;
+    margin-top: 8px;
+    opacity: 1;
+    max-width: 185px;
+  }
+  .menu-responsive-dropdown ul a{
+    overflow: hidden;
+    height: 0;
+    margin-top: 0;
+    padding-left: 28px;
+  }
+  .menu-responsive-dropdown ul{
+    padding-bottom: 0;
+  }
+  .menu-responsive-dropdown .active + ul{
+    padding-bottom: 10px;
+  }
+  .menu-responsive-dropdown .active + ul a{
+    height: 17px;
+    margin-top: 8px;
   }
 
   .content-wrap {
