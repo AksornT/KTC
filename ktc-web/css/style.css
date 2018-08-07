@@ -906,6 +906,11 @@ button:focus {
 	white-space: nowrap;
 }
 
+#card-register:hover{
+	background: #f08b8f;
+	cursor: pointer;
+}
+
 .modal.in{
 	opacity: 1;
 }
@@ -961,6 +966,7 @@ button:focus {
 	width: 100%;
 	position: relative;
 	margin-bottom: 38px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 .full-modal .modal-title:after{
