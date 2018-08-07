@@ -170,8 +170,10 @@
     left: 0;
     background: #000;
     width: 100%;
+    /*height: calc(100vh - 66px);*/
     height: auto;
     padding-left: 25px;
+    /*padding-bottom: 60px;*/
   }
   div#scrolled-menu-responsive{
     display: none;
@@ -198,10 +200,12 @@
   }
   .menu-responsive-dropdown .active + ul{
     padding-bottom: 10px;
+    margin-top: -14px;
   }
   .menu-responsive-dropdown .active + ul a{
     height: 17px;
-    margin-top: 8px;
+    margin-top: 18px;
+    margin-left: 27px;
   }
   .menu-responsive-dropdown .menu-toggle{
     position: relative;
@@ -210,6 +214,50 @@
     display: inline-block;
     position: absolute;
     top: 12px;
+    padding-left: 15px;
+  }
+  .menu-responsive-dropdown .lang-header-menu{
+    border-top: 0.5px solid #535353;
+    border-bottom: 0.5px solid #535353;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
+  .menu-responsive-dropdown .lang-header-menu img{
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .menu-responsive-dropdown .lang-header-menu label{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+  }
+  .menu-responsive-dropdown .lang-header-menu select{
+    float: right;
+    margin-right: 30px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .menu-responsive-dropdown .menu-btn{
+    margin-top: 55px;
+  }
+  .menu-responsive-dropdown .menu-btn button{
+    position: absolute;
+    bottom: 0;
+    width: 325px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: #CF3339;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 18px;
+    padding: 8px 0;
   }
 
   .content-wrap {
