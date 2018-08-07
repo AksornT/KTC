@@ -78,6 +78,7 @@
   }
   .menu-responsive-dropdown a {
     position: relative;
+    display: block;
     left: 0;
     margin-top: 8px;
     opacity: 1;
@@ -98,6 +99,14 @@
   .menu-responsive-dropdown .active + ul a{
     height: 17px;
     margin-top: 8px;
+  }
+  .menu-responsive-dropdown .menu-toggle{
+    position: relative;
+  }
+  .menu-responsive-dropdown h3{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
   }
 
   .index-slide2 .owl-nav button.owl-prev{
