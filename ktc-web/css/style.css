@@ -607,8 +607,7 @@ a:hover{
 }
 
 .footer a:hover{
-	left: 5px;
-	opacity: 0.75;
+	color: #cf3339;
 }
 
 .footer-menu{
@@ -950,6 +949,7 @@ button:focus {
   height: 100%;
   border-radius: 0;
   overflow: auto;
+  border-top: 4px solid #CF3339;
 }
 
 .full-modal .modal-header{
@@ -1018,6 +1018,174 @@ button:focus {
     line-height: 1.14;
     max-width: calc(100% - 130px);
     font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.only-mobile .social-footer{
+    text-align: center;
+    padding: 0;
+    border: none;
+    margin: 0 0 30px 0;
+}
+
+.only-mobile .social-footer a{
+	margin: 0 10px;
+}
+
+.only-mobile .social-footer img{
+	width: 30px;
+}
+
+.to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 37px;
+	z-index: 1;
+}
+
+.chat{
+	position: fixed;
+	bottom: 57px;
+	right: 110px;
+	z-index: 1;
+	width: 135px;
+	height: 37px;
+	border-radius: 5px;
+	background: #cf3339;
+	color: #fff;
+	font-size: 15px;
+	padding: 8px 3px;
+	z-index: 1;
+}
+
+.chat *{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+.chat img{
+    width: 32px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.ghost-footer{
+	opacity: 0;
+	pointer-events:none;
+}
+
+.ghost-footer.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.to-top img{
+	width: 80px;
+	height: auto;
+}
+
+.to-top:hover{
+	cursor: pointer;
+	bottom: 35px;
+}
+
+.chat:hover{
+	cursor: pointer;
+	bottom: 62px;
+}
+
+#foot-trigger{
+	position: relative;
+	top: -80vh;
+}
+
+.search-wrap{
+	text-align: center;
+	font-size: 0;
+	display: block;
+	margin: 9px 0 2px 0;
+}
+
+.search-wrap > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.input-search{
+	line-height: 30px;
+	font-size: 20px;
+	font-family: sans-serif;
+	width: 656px;
+	border: none;
+	border-bottom: 1px solid rgba(91,100,112,.15);
+    height: 30px;
+    margin: 3px 13px 0 9px;
+    padding-left: 12px;
+}
+
+.input-search:placeholder{
+	color: rgba(91,100,112,.15);
+}
+
+.input-search:focus::placeholder{
+	color: #fff;
+}
+
+.input-search:focus{
+	outline: 0;
+}
+
+.button-search{
+	background: #fff;
+	text-align: center;
+	color: #cf3339;
+	border: 1px solid #cf3339;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	width: 108px;
+	height: 30px;
+	line-height: 26px;
+}
+
+.button-search:hover{
+	background: #f3d4d6;
+	cursor: pointer;
+}
+
+.search-cat-wrap{
+	display: block;
+	font-size: 0;
+	text-align: center;
+}
+
+.search-cat-wrap *{
+	display: inline-block;
+	font-size: 16px;
+}
+
+.search-cat-wrap input[type="checkbox"]{
+	display: none;
+}
+
+.search-cat-wrap input[type="checkbox"]:checked + label{
+	color: #cf3339;
+}
+
+.search-cat-wrap label{
+	padding: 12px 35px;
+	line-height: 12px;
+	font-size: 16px;
+	border-left: 1px solid rgba(91,100,112,.15);
+}
+
+.search-cat-wrap > label:nth-child(2){
+	border: none;
+}
+
+.search-cat-wrap label:hover{
+	cursor: pointer;
+	opacity: 0.75;
 }
 
 @media (min-width: 1366px) {

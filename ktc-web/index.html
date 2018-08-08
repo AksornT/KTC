@@ -67,7 +67,7 @@
           </li>
         </ul>
         <div class="on-right">
-          <a class="search-on-menu">
+          <a class="search-on-menu" data-toggle="modal" data-target="#search-modal">
             <i class="fa fa-search"></i>
           </a>
           <div id="card-register" class="card-register-btn" data-toggle="modal" data-target="#card-register-modal" href="#">สมัครบัตร</div>
@@ -75,9 +75,9 @@
             <i class="fa fa-lock"></i>
             เข้าสู่ระบบ
           </a>
-          <a class="login-mobile only-mobile" href="#">
-            <div><img src="img/ico-login.png"></div>
-          </a>
+          <div class="login-mobile only-mobile" href="#">
+            <img src="img/ico-login.png">
+          </div>
           <div class="profile-on-menu">
             <!--<div class="profile-image"><img src="img/ico-user.png"></div>-->
             <span class="profile-name"></span>
@@ -393,6 +393,7 @@
     </div>
 
     <div class="footer">
+      <div id="foot-trigger"></div>
       <div class="content-wrap">
         <div class="row">
           <div class="col-sm-9 col-lg-10 row footer-menu">
@@ -519,6 +520,14 @@
               <img class="footer-badge" src="img/ico-download-ggplay.png">
             </div>
           </div>
+          <div class="col-sm-12 only-mobile">
+            <div class="social-footer">
+              <a href="#"><img src="img/ico-social-facebook.png"></a>
+              <a href="#"><img src="img/ico-social-twitter.png"></a>
+              <a href="#"><img src="img/ico-social-instagram.png"></a>
+              <a href="#"><img src="img/ico-social-line.png"></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="content-wrap last-piece">
@@ -541,6 +550,8 @@
           </div>
         </div>
       </div>
+      <div class="chat ghost-footer"><img src="img/ico-chat.png"><p>Live Chat</p></div>
+      <div class="to-top ghost-footer"><img src="img/ico-totop.png"></div>
     </div>
 
 
@@ -575,5 +586,39 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="search-modal" class="modal fade full-modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <div class="search-wrap">
+                <img src="img/ico-search-black.png">
+                <input class="input-search" type="text" placeholder="ค้นหาทุกสิ่งใน KTC">
+                <button class="button-search">ค้นหา</button>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="search-cat-wrap">
+              <input type="checkbox" name="" id="all-cat">
+              <label for="all-cat">ทั้งหมด</label>
+              <div class="subcat-wrap">
+                <input type="checkbox" name="" id="credit-cat">
+                <label for="credit-cat">บัตรเครดิต</label>
+                <input type="checkbox" name="" id="privill-cat">
+                <label for="privill-cat">สิทธิพิเศษ</label>
+                <input type="checkbox" name="" id="article-cat">
+                <label for="article-cat">บทความ</label>
+                <input type="checkbox" name="" id="other-cat">
+                <label for="other-cat">อื่นๆ</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
