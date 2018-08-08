@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    
+
 
 });
 
@@ -22,10 +22,10 @@ $(document).on('scroll', function() {
 //for menu mobile
 function myFunction() {
     var x = document.getElementById("scrolled-menu-responsive");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    if (x.style.opacity === "1") {
+        x.style.opacity = "0";
     } else {
-        x.style.display = "block";
+        x.style.opacity = "1";
     }
 }
 

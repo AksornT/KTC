@@ -122,10 +122,13 @@
   .content-wrap {
     padding: 0 20px;
   }
+  .menu-global .search-on-menu{
+    padding: 7px;
+  }
   .menu-global .on-right{
     width: 250px;
     position: relative;
-    z-index: 6;
+    /*z-index: 6;*/
   }
   .menu-global .on-right .card-register-btn{
     display: none;
@@ -143,6 +146,7 @@
   .login-mobile{
     position: relative;
     top: 4px;
+    padding-left: 7px;
   }
   .login-mobile img{
     width: 13px;
@@ -175,7 +179,7 @@
     width: 100%;
     height: calc(100vh);
     padding: 0 25px;
-    padding-top: 66px;
+    padding-top: 45px;
     padding-bottom: 130px;
     z-index: 5;
   }
@@ -184,7 +188,7 @@
     max-height: 100%;
   }
   div#scrolled-menu-responsive{
-    display: none;
+    opacity: 0;
   }
   #scrolled-menu-responsive img{
     width: 40px;
@@ -301,6 +305,21 @@
   #ktc-logo{
     position: relative;
     z-index: 6;
+    width: 45px;
+    height: 45px;
+  }
+  #ktc-logo img {
+    height: 32px;
+    margin-top: 7px;
+  }
+  .menu-resp-close{
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-family: 'Gotham-Bold';
+    font-size: 24px;
   }
 
   .content-wrap {
