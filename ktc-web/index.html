@@ -84,10 +84,10 @@
             <div class="menu-mobile only-mobile" onclick="myFunction()"></div>
           </div>
         </div>
-        <div class="menu-responsive-dropdown only-mobile">
-          <div id="scrolled-menu-responsive">
-            <div class="menu-toggle">
-              <img src="img/ico-creditcard.png"><h3>บัตรเครดิต</h3>
+        <div id="scrolled-menu-responsive" class="menu-responsive-dropdown only-mobile">
+          <div class="menu-resp-scroll">
+            <div class="menu-responsive">
+              <img src="img/ico-creditcard.png"><h3 class="menu-more">บัตรเครดิต</h3>
               <ul>
                 <li><a href="#">ผลิตภัณฑ์บัตรเครดิต</a></li>
                 <li><a href="#">คะแนนสะสม</a></li>
@@ -97,8 +97,8 @@
                 <li><a href="#">อัตราดอกเบี้ยและค่าธรรมเนียม</a></li>
               </ul>
             </div>
-            <div class="menu-toggle">
-              <img src="img/ico-personal-loans.png"><h3>สินเชื่อบุคคล</h3>
+            <div class="menu-responsive">
+              <img src="img/ico-personal-loans.png"><h3 class="menu-more">สินเชื่อบุคคล</h3>
               <ul>
                 <li><a href="#">ผลิตภัณฑ์สินเชื่อ</a></li>
                 <li><a href="#">แบ่งชำระ</a></li>
@@ -106,20 +106,20 @@
                 <li><a href="#">อัตราดอกเบี้ยและค่าธรรมเนียม</a></li>
               </ul>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-responsive">
               <img src="img/ico-privilege.png"><h3>สิทธิพิเศษ</h3>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-responsive">
               <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-responsive">
               <img src="img/ico-travel-service.png"><h3>บริการท่องเที่ยว</h3>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-responsive">
               <img src="img/ico-shopping-online.png"><h3>ช้อปสินค้าออนไลน์</h3>
             </div>
-            <div class="menu-toggle">
-              <img src="img/ico-travel.png"><h3>บริการลูกค้า</h3>
+            <div class="menu-responsive">
+              <img src="img/ico-travel.png"><h3 class="menu-more">บริการลูกค้า</h3>
               <ul>
                 <li><a href="#">ติดต่อ KTC</a></li>
                 <li><a href="#">บริการ KTC ONLINE</a></li>
@@ -130,17 +130,18 @@
                 <li><a href="#">คำถามที่พบบ่อย</a></li>
               </ul>
             </div>
-            <div class="menu-toggle">
-              <div class="lang-header-menu">
-                <img src="img/ico-lang.png"><label for="lang-change">Language</label>
-                <select class="" id="lang-change">
-                  <option>TH</option>
-                  <option>EN</option>
-                </select>
-              </div>
-            </div>
+
             <div class="menu-btn">
-              <button>สมัครบัตร</button>
+              <div class="menu-lang">
+                <div class="lang-header-menu">
+                  <img src="img/ico-lang.png"><label for="lang-change">Language</label>
+                  <select class="" id="lang-change">
+                    <option>TH</option>
+                    <option>EN</option>
+                  </select>
+                </div>
+              </div>
+              <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
             </div>
           </div>
         </div>

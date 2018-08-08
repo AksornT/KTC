@@ -124,6 +124,8 @@
   }
   .menu-global .on-right{
     width: 250px;
+    position: relative;
+    z-index: 6;
   }
   .menu-global .on-right .card-register-btn{
     display: none;
@@ -164,16 +166,22 @@
     height: 16px;
     margin-left: 14px;
   }
+
   .menu-responsive-dropdown{
     position: absolute;
-    top: 17vw;
+    top: 0;
     left: 0;
     background: #000;
     width: 100%;
-    /*height: calc(100vh - 66px);*/
-    height: auto;
-    padding-left: 25px;
-    /*padding-bottom: 60px;*/
+    height: calc(100vh);
+    padding: 0 25px;
+    padding-top: 66px;
+    padding-bottom: 130px;
+    z-index: 5;
+  }
+  .menu-resp-scroll{
+    overflow: auto;
+    max-height: 100%;
   }
   div#scrolled-menu-responsive{
     display: none;
@@ -187,13 +195,14 @@
     left: 0;
     margin-top: 8px;
     opacity: 1;
-    max-width: 185px;
   }
   .menu-responsive-dropdown ul a{
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 14px;
     overflow: hidden;
     height: 0;
     margin-top: 0;
-    padding-left: 28px;
+    padding-left: 55px;
   }
   .menu-responsive-dropdown ul{
     padding-bottom: 0;
@@ -205,59 +214,93 @@
   .menu-responsive-dropdown .active + ul a{
     height: 17px;
     margin-top: 18px;
-    margin-left: 27px;
-  }
-  .menu-responsive-dropdown .menu-toggle{
-    position: relative;
   }
   .menu-responsive-dropdown h3{
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 16px;
     display: inline-block;
     position: absolute;
-    top: 12px;
+    top: 18px;
     padding-left: 15px;
+    width: 75vw;
+  }
+  .menu-responsive-dropdown .menu-responsive{
+    position: relative;
+    border-bottom: 0.5px solid #535353;
+    padding: 5px 0;
+  }
+
+  .menu-responsive-dropdown h3.menu-more:after{
+    content: "+";
+    position: absolute;
+    top: -3px;
+    font-family: 'Gotham-Book';
+    right: 0;
+    font-size: 24px;
+  }
+  .menu-responsive-dropdown h3.menu-more:after{
+    transform: rotate(0);
+    right: 0;
+    top: -3px;
+  }
+  .menu-responsive-dropdown h3.menu-more.active:after{
+  	transform: rotate(-45deg);
+    right: -1px;
+  }
+
+  .menu-responsive-dropdown .menu-btn{
+    position: absolute;
+    bottom: 0;
+  }
+  .menu-responsive-dropdown .menu-lang{
+    position: relative;
   }
   .menu-responsive-dropdown .lang-header-menu{
     border-top: 0.5px solid #535353;
     border-bottom: 0.5px solid #535353;
-    margin-left: -30px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 40px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
   .menu-responsive-dropdown .lang-header-menu img{
-    width: 40px;
-    padding-left: 5px;
-    padding-right: 10px;
+    width: 24px !important;
+    padding-left: 0;
   }
   .menu-responsive-dropdown .lang-header-menu label{
     display: inline-block;
     position: absolute;
     top: 15px;
+    left: 56px;
   }
   .menu-responsive-dropdown .lang-header-menu select{
     float: right;
-    margin-right: 30px;
     background-color: transparent;
-    color: #fff;
+    color: #707070;
+    font-family: 'Gotham-Bold';
     border-radius: 4px;
-  }
-  .menu-responsive-dropdown .menu-btn{
-    margin-top: 55px;
+    border-color: #707070;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 5px;
   }
   .menu-responsive-dropdown .menu-btn button{
-    position: absolute;
-    bottom: 0;
-    width: 325px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 18px;
+    margin: 10px 0;
     background: #CF3339;
     border: none;
     border-radius: 3px;
     color: #fff;
-    font-family: 'Conv_SukhumvitTadmai_Bol';
-    font-size: 18px;
     padding: 8px 0;
+    width: 87vw;
+  }
+  #ktc-logo{
+    position: relative;
+    z-index: 6;
   }
 
   .content-wrap {
