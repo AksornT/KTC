@@ -130,11 +130,11 @@
   .menu-global .on-right .card-register-btn{
     display: none;
   }
-  .menu-global .on-right .login-btn{
-    display: none;
-  }
   .menu-global .on-right .only-mobile{
     display: inline-block;
+  }
+  .menu-global .on-right .login-btn{
+    display: none;
   }
   .on-right .profile-image img{
     width: 28px;

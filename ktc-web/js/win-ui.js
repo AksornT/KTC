@@ -20,17 +20,6 @@ $(document).ready(function() {
       $(".subcat-wrap input").prop("checked", false);
     });
 
-
-    //profile
-    $('.footer-menu h3').on('click touch', function () {
-        $('.footer-menu h3').not(this).each(function(){
-            $(this).removeClass('active');
-        });
-        $(this).toggleClass('active');
-    });
-
-    
-
 });
 
 //change header when scroll down.
@@ -66,6 +55,10 @@ $(document).ready(function() {
         $('.menu-responsive-dropdown h3').not(this).each(function(){
 	        $(this).removeClass('active');
 	    });
+        $(this).toggleClass('active');
+    });
+
+    $('.login-btn.logged-in').on('click touch', function () {
         $(this).toggleClass('active');
     });
 
