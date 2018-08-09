@@ -374,7 +374,7 @@
       display: block;
       text-align: left;
       background: #000;
-      z-index: 1;
+      z-index: 7;
   }
 
   .for-sub-profile-mobile .profile-image{
@@ -395,7 +395,5 @@
     color: #fff;
     font-size: 40px;
     opacity: 1;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
   }
 }

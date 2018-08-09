@@ -1284,6 +1284,12 @@ button:focus {
     display:none;
 }
 
+button.close{
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow: none;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
