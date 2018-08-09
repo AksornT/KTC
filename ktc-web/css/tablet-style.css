@@ -192,13 +192,13 @@
   .menu-responsive-dropdown .menu-btn button{
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 18px;
-    margin: 10px 0;
+    margin: 12px 0;
     background: #CF3339;
     border: none;
     border-radius: 3px;
     color: #fff;
-    padding: 8px 0;
     width: 94vw;
+    height: 45px;
   }
   #ktc-logo{
     position: relative;
