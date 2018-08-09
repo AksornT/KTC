@@ -1108,12 +1108,12 @@ button:focus {
 
 .to-top:hover{
 	cursor: pointer;
-	bottom: 35px;
+	bottom: 0;
 }
 
 .chat:hover{
 	cursor: pointer;
-	bottom: 62px;
+	bottom: 27px;
 }
 
 #foot-trigger{
