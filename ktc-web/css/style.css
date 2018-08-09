@@ -854,6 +854,12 @@ button:focus {
 	top: -2px;
 }
 
+.download-section img.tabktc:hover{
+	cursor: default;
+	opacity: 1;
+	top: 0;
+}
+
 .last-piece{
 	border-top: 1px solid #dfe1e1;
 	padding-bottom: 13px;
