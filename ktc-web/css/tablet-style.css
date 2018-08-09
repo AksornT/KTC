@@ -301,9 +301,10 @@
     right: 20px;
     width: calc(100% - 40px);
     display: block;
-    bottom: 29px;
+    bottom: 20px;
     background: #cf3339;
     color: #fff;
+    height: 45px;
   }
 
   .search-cat-wrap .subcat-wrap{
@@ -314,7 +315,7 @@
     border-bottom: 1px solid rgba(91,100,112,.15);
     display: block;
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
     padding: 14px 0;
   }
 
