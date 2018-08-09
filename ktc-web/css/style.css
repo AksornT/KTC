@@ -187,10 +187,12 @@ a:hover{
     height: 63px;
 }
 
-.scrolled-menu > li:hover{
+.scrolled-menu > li:hover,
+.scrolled-menu > li.active{
 	color: #bf2a31;
 }
 
+.scrolled-menu > li.active i,
 .scrolled-menu > li:hover i{
 	transform: rotate(-180deg);
 }
@@ -206,7 +208,8 @@ a:hover{
 	display: block;
 }
 
-.scrolled-menu > li:hover:after{
+.scrolled-menu > li:hover:after,
+.scrolled-menu > li.active:after{
 	background: #CF3339;
 }
 
@@ -222,7 +225,7 @@ a:hover{
 	background: #000;
 }
 
-.scrolled-menu > li:hover > ul{
+.scrolled-menu > li.active > ul{
 	opacity: 1;
 	pointer-events: all;
 }
