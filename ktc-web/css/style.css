@@ -436,7 +436,7 @@ a:hover{
 
 .big-link img{
 	height: auto;
-	width: 45%;
+	width: 40%;
 	margin-bottom: 10px;
 }
 
@@ -1037,14 +1037,14 @@ button:focus {
 
 .to-top{
 	position: fixed;
-	bottom: 30px;
+	bottom: -10px;
 	right: 37px;
 	z-index: 1;
 }
 
 .chat{
 	position: fixed;
-	bottom: 57px;
+	bottom: 17px;
 	right: 110px;
 	z-index: 1;
 	width: 135px;
@@ -1055,6 +1055,8 @@ button:focus {
 	font-size: 15px;
 	padding: 8px 3px;
 	z-index: 1;
+
+	display: none;
 }
 
 .chat *{
@@ -1300,5 +1302,24 @@ button.close{
 	.index-slide2 .owl-nav button.owl-prev,
 	.index-slide2 .item:after{
 		top:109px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.scrolled-menu > li{
+		font-size: 12px;
+    	padding: 23px 0.3rem 16px 0.3rem;
+	}
+	.card-register-btn{
+		font-size: 12px;
+    	padding: 8px 16px;
+	}
+
+	.profile-name{
+		font-size: 14px;
+    	max-width: 70px;	
+	}
+	.big-link > div{
+		height: 126px;
 	}
 }
