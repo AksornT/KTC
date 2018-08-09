@@ -274,7 +274,6 @@
     bottom: 0;
   }
   .menu-responsive-dropdown .lang-header-menu img{
-    width: 24px !important;
     padding-left: 0;
   }
   .menu-responsive-dropdown .lang-header-menu label{
@@ -282,7 +281,7 @@
     position: absolute;
     font-family: 'Gotham-Bold';
     font-size: 16px;
-    top: 15px;
+    top: 23px;
     left: 56px;
   }
   .menu-responsive-dropdown .lang-header-menu select{
@@ -297,6 +296,7 @@
     text-indent: 1px;
     text-overflow: '';
     padding: 5px;
+    margin-top: 7px;
   }
   .menu-responsive-dropdown .menu-btn button{
     font-family: 'Conv_SukhumvitTadmai_Bol';
