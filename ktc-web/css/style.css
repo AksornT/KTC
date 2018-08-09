@@ -720,7 +720,7 @@ a:hover{
     display: block;
 }
 
-.index-slide1 .item:after,
+/*.index-slide1 .item:after,
 .index-slide2 .item:after{
 	font-family:'FontAwesome';
 	content: "\f061";
@@ -737,7 +737,7 @@ a:hover{
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     z-index: 2;
-}
+}*/
 
 .index-slide2 .item:after{
 	top: 8vw;
