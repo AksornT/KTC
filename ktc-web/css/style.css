@@ -558,21 +558,25 @@ a:hover{
 	text-decoration: underline;
 	color: #757575;
 	padding-top: 13px;
+	padding-right: 0;
 }
 
-.text-on-slide a:after{
-	width: 14px;
-	height: 10px;
-	display: inline-block;
-	content: "";
-	background: url("../img/ico-arrow-right.png");
-	margin-left: 3px;
-	position: relative;
-	left: 0;
+.text-on-slide a:after {
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    content: "";
+    background: url(../img/ico-arrow-right.png);
+    margin-left: 3px;
+    position: relative;
+    left: -5px;
+    margin-right: -14px;
+    opacity: 0;
 }
 
 .text-on-slide a:hover:after{
-	left: 6px;
+	left: 0px;
+	opacity: 1;
 }
 
 .owl-item{
