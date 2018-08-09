@@ -631,6 +631,8 @@ a:hover{
 	width: 100%;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 	border-radius: 6px;
+	position: relative;
+  top: 0;
 }
 .item .slide-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -715,6 +717,7 @@ a:hover{
 .index-slide2 .item {
     position: relative;
     display: block;
+		padding: 13px 0;
 }
 
 /*.index-slide1 .item:after,
@@ -735,6 +738,16 @@ a:hover{
     -o-transition: all .3s linear;
     z-index: 2;
 }*/
+
+.slide-padd{
+	margin-top: -13px;
+}
+
+.index-slide1 .item img:hover,
+.index-slide2 .item img:hover{
+	box-shadow: 0px 3px 13px rgba(0,0,0,0.3);
+	top: -3px
+}
 
 .index-slide2 .item:after{
 	top: 8vw;
@@ -1317,7 +1330,7 @@ button.close{
 
 	.profile-name{
 		font-size: 14px;
-    	max-width: 70px;	
+    	max-width: 70px;
 	}
 	.big-link > div{
 		height: 126px;
