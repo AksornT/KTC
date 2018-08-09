@@ -1322,4 +1322,7 @@ button.close{
 	.big-link > div{
 		height: 126px;
 	}
+	.menu-global{
+		background-position: 39% center;
+	}
 }

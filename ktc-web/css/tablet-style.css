@@ -401,4 +401,8 @@
   .big-link > div{
     height: 153px;
   }
+
+  .menu-global{
+    background-position: left -30px top;
+  }
 }

@@ -483,6 +483,10 @@
 		right: 73px;
 	}
 
+	.menu-global{
+	    background-position: left top;
+	}
+
 	.login-mobile{
 		padding: 16px;
 		margin-right: -16px;
