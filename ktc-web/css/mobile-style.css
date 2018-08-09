@@ -465,7 +465,7 @@
   	margin-bottom: 20px;
   }
 
-	.ghost-footer.active{
+	/*.ghost-footer.active{
 		opacity: 0;
 		pointer-events: none;
 	}
@@ -473,7 +473,7 @@
 	.ghost-footer.active-mobile{
 		opacity: 1;
 		pointer-events: all;
-	}
+	}*/
 
 	.to-top{
 		right: 0;
@@ -481,6 +481,10 @@
 
 	.chat{
 		right: 73px;
+	}
+
+	.menu-global{
+	    background-position: left top;
 	}
 
 	.login-mobile{
