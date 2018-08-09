@@ -397,4 +397,8 @@
     font-size: 40px;
     opacity: 1;
   }
+
+  .big-link > div{
+    height: 153px;
+  }
 }
