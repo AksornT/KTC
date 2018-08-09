@@ -192,8 +192,7 @@ a:hover{
 	color: #bf2a31;
 }
 
-.scrolled-menu > li.active i,
-.scrolled-menu > li:hover i{
+.scrolled-menu > li.active i{
 	transform: rotate(-180deg);
 }
 
