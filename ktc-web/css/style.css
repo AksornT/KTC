@@ -187,6 +187,10 @@ a:hover{
     height: 63px;
 }
 
+.scrolled-menu > li:hover{
+	cursor: pointer;
+}
+
 .scrolled-menu > li:hover,
 .scrolled-menu > li.active{
 	color: #bf2a31;
