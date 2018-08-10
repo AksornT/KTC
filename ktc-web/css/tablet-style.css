@@ -14,7 +14,6 @@
 
   .menu-global{
     /*background: url("../img/bg_menu.png");*/
-    background: url("../img/bg-header-tablet.jpg");
     margin-bottom: 215px;
   }
   .menu-global .on-right{
@@ -108,12 +107,13 @@
     padding-bottom: 0;
   }
   .menu-responsive-dropdown .active + ul{
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     margin-top: -14px;
   }
   .menu-responsive-dropdown .active + ul a{
     height: 17px;
-    margin-top: 18px;
+    margin-top: 20px;
+    line-height: 21px;
   }
   .menu-responsive-dropdown h3{
     font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -230,7 +230,7 @@
     line-height: 36px;
   }
   .icon-wrap {
-    padding: 130px 0 0 0;
+    padding: 30px 0 0 0;
   }
   .icon-wrap p {
     line-height: 18px;
