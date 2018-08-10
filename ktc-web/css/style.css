@@ -115,17 +115,17 @@ a:hover{
 /*Global Menu*/
 .menu-global{
 	width: 100%;
-	/*background: url("../img/bg_menu.png");*/
-	background: url("../img/bg-header-desktop.jpg");
-	background-size: auto 100%;
+	background: url("../img/bg_menu.png");
+	/*background-size: auto 100%;*/
 	background-position: center center;
+	background-size: cover;
 	color: #fff;
 	font-size: 15px;
 	margin-bottom: 153px;
 }
 
 .menu-global a{
-	color: #fff;
+	color: rgba(255,255,255,0.7);
 }
 
 .menu-global:after{
@@ -189,7 +189,7 @@ a:hover{
 
 .scrolled-menu > li:hover,
 .scrolled-menu > li.active{
-	color: #bf2a31;
+	color: #fff;
 }
 
 .scrolled-menu > li.active i{
@@ -219,7 +219,7 @@ a:hover{
 	white-space: nowrap;
 	opacity: 0;
 	pointer-events: none;
-	color: #fff;
+	color: rgba(255,255,255,0.7);
 	padding-bottom: 11px;
 	background: #000;
 }
@@ -238,7 +238,7 @@ a:hover{
 }
 
 .scrolled-menu ul li:hover{
-	color: #bf2a31;
+	color: rgba(255,255,255,1);
 }
 
 .scrolled-menu ul li a{
@@ -270,12 +270,12 @@ a:hover{
 
 .slide-wrap:before{
 	content: "";
-	display: block;
+	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: -1px;
-	width: 55px;
+	width: 0px;
 	pointer-events: none;
 	z-index: 3;
 	background: linear-gradient(to right, rgba(255,255,255,255.1), rgba(255,255,255,0));
@@ -283,12 +283,12 @@ a:hover{
 
 .slide-wrap:after{
 	content: "";
-	display: block;
+	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: -1px;
-	width: 55px;
+	width: 0px;
 	pointer-events: none;
 	z-index: 3;
 	background: linear-gradient(to left, rgba(255,255,255,255.1), rgba(255,255,255,0));
@@ -388,7 +388,7 @@ a:hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 28px;
 	letter-spacing: 1.5px;
-	margin-top: 110px;
+	margin-top: 85px;
 	margin-bottom: 30px;
 }
 
@@ -584,7 +584,7 @@ a:hover{
 
 .owl-item{
 	display: inline-block;
-	opacity: 0.25;
+	opacity: 0;
 }
 
 .owl-item.active{
@@ -1263,12 +1263,12 @@ button:focus {
 .login-btn.logged-in:hover,
 .login-btn.logged-in:hover .profile-name{
 	cursor: pointer;
-	color: #cf3339;
+	color: rgba(255,255,255,1);
 }
 
 .login-btn.logged-in.active,
 .login-btn.logged-in.active .profile-name{
-	color: #cf3339;
+	color: rgba(255,255,255,1);
 }
 
 .login-btn.logged-in.active i {
@@ -1311,7 +1311,7 @@ button:focus {
 }
 
 .login-btn.logged-in ul li:hover p{
-	color: #cf3339;
+	color: rgba(255,255,255,1);
 }
 
 .subimg-wrap {
