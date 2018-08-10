@@ -146,10 +146,6 @@ a:hover{
 	margin-top: 13px;
 }
 
-#ktc-logo:hover{
-	opacity: 0.5;
-}
-
 .menu-global .on-right{
 	float: right;
 	text-align: right;
@@ -418,18 +414,19 @@ a:hover{
 	height: 153px;
 	color: #333;
 	padding: 13px 0 20px 0;
-	-webkit-box-shadow: 0px 3px 17px 0px rgba(255,193,193,0.79);
-	-moz-box-shadow: 0px 3px 17px 0px rgba(255,193,193,0.79);
-	box-shadow: 0px 3px 17px 0px rgba(255,193,193,0.79);
+	-webkit-box-shadow: 0px 3px 17px 0px rgba(150,150,150,0.79);
+	-moz-box-shadow: 0px 3px 17px 0px rgba(150,150,150,0.79);
+	box-shadow: 0px 3px 17px 0px rgba(150,150,150,0.79);
 	position: relative;
 	top: 0;
+	opacity: 0.9;
 }
 
 .big-link:hover > div{
 	top: -3px;
-	-webkit-box-shadow: 0px 3px 47px 0px rgba(255,193,193,0.79);
-	-moz-box-shadow: 0px 3px 47px 0px rgba(255,193,193,0.79);
-	box-shadow: 0px 3px 47px 0px rgba(255,193,193,0.79);
+	-webkit-box-shadow: 0px 3px 30px 0px rgba(150,150,150,0.79);
+	-moz-box-shadow: 0px 3px 30px 0px rgba(150,150,150,0.79);
+	box-shadow: 0px 3px 30px 0px rgba(150,150,150,0.79);
 }
 
 .icon-wrap{
@@ -448,7 +445,7 @@ a:hover{
 
 .big-link span {
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 0px;
 }
@@ -558,10 +555,13 @@ a:hover{
 .text-on-slide a{
 	text-align: right;
 	font-size: 18px;
-	text-decoration: underline;
 	color: #757575;
 	padding-top: 13px;
 	padding-right: 0;
+}
+
+.text-on-slide a:hover{
+    color: #cf3339;
 }
 
 .text-on-slide a:after {
@@ -572,13 +572,13 @@ a:hover{
     background: url(../img/ico-arrow-right.png);
     margin-left: 3px;
     position: relative;
-    left: -5px;
+    left: 0px;
     margin-right: -14px;
     opacity: 0;
 }
 
 .text-on-slide a:hover:after{
-	left: 0px;
+	left: 5px;
 	opacity: 1;
 }
 
@@ -605,7 +605,7 @@ a:hover{
 
 .footer a{
 	color: #000;
-	font-family: sans-serif;
+	font-family: Helvetica, Arial, sans-serif ;
 	font-size: 12px;
 	line-height: 17px;
 	display: block;
@@ -625,11 +625,9 @@ a:hover{
 	padding-bottom: 50px;
 }
 
-.footer-menu > .col-3{
-	width: auto;
-	margin-right: 70px;
+.footer-menu > .col-lg-3{
+	width: 23%;
 	flex: none;
-	padding: 0;
 }
 
 .footer-menu > .col-3:nth-last-child(1){
@@ -668,26 +666,29 @@ a:hover{
 .index-slide1, .index-slide2{
 	position: relative;
 }
-.owl-prev span{
-	width: 81px;
-	height: 81px;
-	background: url(../img/ico-left.png);
-	background-size: 100% 100%;
-	display: block;
-	font-size: 0;
+.owl-prev span,
+.owl-next span{
+	width: 45px;
+    height: 45px;
+    background: #fff;
+    background-size: 100% 100%;
+    display: block;
+    border-radius: 50%;
+    font-size: 50px;
+    line-height: 35px;
+    color: #CF3339;
+    -webkit-box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
+	padding-right: 2px;
 }
 .owl-next span{
-	width: 81px;
-	height: 81px;
-	background: url(../img/ico-right.png);
-	background-size: 100% 100%;
-	display: block;
-	font-size: 0;
+	padding: 0 0 0 2px;
 }
 .index-slide1 .owl-nav button.owl-prev{
 	position: absolute;
 	top: 50%;
-	left: -48px;
+	left: -30px;
 	transform: translateY(-50%);
 	opacity: 1;
 }
@@ -695,7 +696,7 @@ a:hover{
 .index-slide2 .owl-nav button.owl-prev{
 	position: absolute;
 	top: 8vw;
-	left: -48px;
+	left: -30px;
 	transform: translateY(-50%);
 	opacity: 1;
 }
@@ -704,15 +705,15 @@ a:hover{
 .index-slide1 .owl-nav button.owl-next{
 	position: absolute;
 	top: 50%;
-	right: -48px;
+	right: -30px;
 	transform: translateY(-50%);
   	opacity: 1;
 }
 
 .index-slide2 .owl-nav button.owl-next{
 	position: absolute;
-	top: 8vw;
-	right: -48px;
+	top: 9.5vw;
+	right: -30px;
 	transform: translateY(-50%);
   	opacity: 1;
 }
@@ -804,7 +805,7 @@ button:focus {
 }
 
 .image-link{
-	margin-bottom: 105px;
+	margin-bottom: 60px;
 }
 
 .tel p{
@@ -1066,9 +1067,23 @@ button:focus {
 
 .to-top{
 	position: fixed;
-	bottom: -10px;
+	bottom: 20px;
 	right: 37px;
 	z-index: 1;
+	width: 45px;
+    height: 45px;
+    background: #fff;
+    background-size: 100% 100%;
+    display: block;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #CF3339;
+    font-family: serif;
+    -webkit-box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
 }
 
 .chat{
@@ -1110,14 +1125,9 @@ button:focus {
 	pointer-events: all;
 }
 
-.to-top img{
-	width: 80px;
-	height: auto;
-}
-
 .to-top:hover{
 	cursor: pointer;
-	bottom: 0;
+	bottom: 25px;
 }
 
 .chat:hover{
@@ -1188,11 +1198,12 @@ button:focus {
 	display: block;
 	font-size: 0;
 	text-align: center;
+    margin-top: 10vh;
 }
 
 .search-cat-wrap *{
 	display: inline-block;
-	font-size: 16px;
+	font-size: 0;
 }
 
 .search-cat-wrap input[type="checkbox"]{
@@ -1330,13 +1341,13 @@ button.close{
 	.index-slide2 .owl-nav button.owl-next,
 	.index-slide2 .owl-nav button.owl-prev,
 	.index-slide2 .item:after{
-		top:109px;
+		top:125px;
 	}
 }
 
 @media (max-width: 1200px) {
 	.scrolled-menu > li{
-		font-size: 12px;
+		font-size: 15px;
     	padding: 23px 0.3rem 16px 0.3rem;
 	}
 	.card-register-btn{
@@ -1353,5 +1364,10 @@ button.close{
 	}
 	.menu-global{
 		background-position: 39% center;
+	}
+
+	.profile-name,
+	.login-btn i{
+	display: none;
 	}
 }

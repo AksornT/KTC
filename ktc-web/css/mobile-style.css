@@ -37,16 +37,11 @@
   .footer-menu h3:after{
     content: "+";
     position: absolute;
-    top: 3px;
-    font-family: 'Gotham-Bold';
-    right: 0;
+    font-family: serif;
     font-size: 28px;
-  }
-
-  .footer-menu h3:after{
     transform: rotate(0);
     right: 0px;
-    top: 12px;
+    top: 9px;
   }
 
   /*.footer-menu h3:before{
@@ -64,7 +59,7 @@
 
   .footer-menu h3.active:after{
   	transform: rotate(-45deg);
-    right: -1px;
+    right: 2px;
   }
 
   .footer-menu{
@@ -266,7 +261,6 @@
   }
   .menu-responsive-dropdown .lang-header-menu{
     border-top: 0.5px solid #535353;
-    border-bottom: 0.5px solid #535353;
     padding: 10px 0;
     margin-bottom: 5px;
     position: absolute;
@@ -415,7 +409,7 @@
     font-size: 16px;
   }
   .text-on-slide a{
-    font-size: 12px;
+    font-size: 11px;
     padding: 2px;
   }
   .owl-nav button{
@@ -435,7 +429,7 @@
   .item .slide-content{
     font-size: 12px;
     padding-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     line-height: 18px;
   }
   .footer-badge.tapktc{
@@ -465,6 +459,10 @@
 
   .card-choice{
   	margin-bottom: 20px;
+  }
+
+  .footer-menu > .col-lg-3{
+  	width: 100%;
   }
 
 	/*.ghost-footer.active{
