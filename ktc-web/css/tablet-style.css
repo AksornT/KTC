@@ -277,9 +277,9 @@
   .slide-wrap:after{
     display: none;
   }
-  .owl-item {
-    opacity: 1;
-  }
+  /*.owl-item {
+    opacity: 0;
+  }*/
 
   .to-top:hover{
     cursor: pointer;

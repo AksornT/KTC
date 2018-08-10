@@ -584,7 +584,7 @@ a:hover{
 
 .owl-item{
 	display: inline-block;
-	opacity: 0.25;
+	opacity: 0;
 }
 
 .owl-item.active{
