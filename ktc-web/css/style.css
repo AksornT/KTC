@@ -1332,6 +1332,109 @@ button.close{
     text-shadow: none;
 }
 
+/* creditcard page */
+.content-filter{
+	padding-top: 35px;
+	padding-bottom: 26px;
+}
+.breadcrumb.bc-content{
+	background-color: transparent;
+}
+.breadcrumb.bc-content .breadcrumb-item a{
+	color: rgba(91, 102, 112, 0.6);
+}
+.breadcrumb.bc-content .breadcrumb-item.active{
+	color: rgba(0, 0, 0, 1);
+}
+.col-right-filter{
+	text-align: right;
+}
+.col-right-filter input{
+	width: 335px;
+	height: 40px;
+	padding-left: 20px;
+	border: 1px solid #5B6670;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+.col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 14px;
+	color: #5B6670;
+}
+.col-right-filter input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+	color: #5B6670;
+}
+.col-right-filter input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 14px;
+	color: #5B6670;
+}
+.col-right-filter input:-moz-placeholder { /* Firefox 18- */
+  font-size: 14px;
+	color: #5B6670;
+}
+.btn-filter{
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-filter span{
+	font-size: 20px;
+}
+.btn-filter img{
+	width: 28px;
+	height: auto;
+}
+.main-credit{
+	margin-bottom: 130px;
+}
+.main-credit h3{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 40px;
+}
+.main-credit img{
+	width: 100%;
+}
+.creditcard-row{
+	margin-bottom: 60px;
+}
+.box-credit-content{
+	padding: 0 10px 0 15px;
+}
+.main-credit .credit-title{
+	font-family: 'Gotham-Bold';
+	font-size: 14px;
+	letter-spacing: 0.25px;
+  line-height: 18px;
+}
+.main-credit .credit-content{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 12px;
+	letter-spacing: 0.25px;
+	line-height: 16px;
+	padding-top: 10px;
+}
+.main-credit .main-content{
+	min-height: 100px;
+}
+.main-credit a{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 12px;
+	text-decoration: underline !important;
+}
+.main-credit button{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	color: #cf3339;
+	font-size: 14px;
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px solid #cf3339;
+	width: 108px;
+	height: 30px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
