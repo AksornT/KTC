@@ -1471,6 +1471,7 @@ button.close{
 }
 .breadcrumb.bc-content{
 	background-color: transparent;
+	padding-top: 15px;
 }
 .breadcrumb.bc-content .breadcrumb-item a{
 	color: rgba(91, 102, 112, 0.6);
