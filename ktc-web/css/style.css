@@ -1712,6 +1712,71 @@ button.close{
 	line-height: 24px;
 }
 
+/* loan-cash -eve */
+.page-loan-proud .cash-desc{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+    text-align: center;
+		display: block;
+		padding-top: 14px;
+}
+.box-cash img{
+	width: 100%;
+}
+.box-cash{
+	margin-bottom: 40px;
+}
+.box-img-cash{
+	padding: 0 0;
+}
+.box-cash-long{
+	background-color: rgba(91, 102, 112, 0.05);
+	display: inline-block;
+  text-align: center;
+  position: relative;
+	padding: 0 0;
+}
+.box-cash-short{
+	display: inline-block;
+  text-align: center;
+  position: relative;
+	padding: 0 0;
+}
+.box-cash-long .content-cash{
+	position: absolute;
+	top: calc(50% - 65px);
+  left: calc(50% - 255px);
+}
+.box-cash-short .content-cash{
+	position: absolute;
+	top: calc(50% - 65px);
+  left: calc(50% - 215px);
+}
+.box-cash .content-cash h2{
+	font-size: 30px;
+	line-height: 46px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-align: center;
+	display: block;
+}
+.box-cash .content-cash span{
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-align: center;
+	display: block;
+	padding-top: 14px;
+}
+.box-more{
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+.box-con-cal{
+	padding-left: calc(40% - 350px);
+  padding-right: calc(40% - 350px);
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
