@@ -1568,6 +1568,47 @@ button.close{
 	cursor: pointer;
 }
 
+/* loan page -eve */
+.main-loan{
+	padding-top: 60px;
+	padding-bottom: 130px;
+}
+.main-loan h3{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 10px;
+	margin-bottom: 65px;
+	display: block;
+	position: relative;
+}
+.main-loan h3:after {
+    height: 4px;
+    width: 50px;
+    background: #CF3339;
+    position: absolute;
+    left: calc(50% - 25px);
+    content: "";
+    top: 100%;
+}
+.main-loan img{
+	width: 270px;
+	height: auto;
+}
+.main-loan .box-content{
+	margin-top: 28px;
+}
+.main-loan .loan-title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+	line-height: 21px;
+	padding-bottom: 10px;
+}
+.main-loan .loan-content{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	line-height: 24px;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
