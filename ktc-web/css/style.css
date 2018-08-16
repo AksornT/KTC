@@ -1884,10 +1884,10 @@ a.card-register-center{
 }
 
 /* loan-cash -eve */
-.content-cash .on-desk{
-	display: block !important;
+.content-wrap .on-desk{
+	display: flex;
 }
-.content-cash .on-mobile{
+.content-wrap .on-mobile{
 	display: none !important;
 }
 .page-loan-proud .cash-desc{
