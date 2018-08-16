@@ -395,4 +395,11 @@
       width: 40%;
       flex: none;
   }
+
+  /* loan page -eve */
+  .main-loan .box-content {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
 }

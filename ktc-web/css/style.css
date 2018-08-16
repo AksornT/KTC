@@ -1789,6 +1789,30 @@ a.card-register-center{
     content: "";
     top: 100%;
 }
+
+/* loan page -eve */
+.main-loan{
+	padding-top: 60px;
+	padding-bottom: 130px;
+}
+.main-loan h3{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 10px;
+	margin-bottom: 65px;
+	display: block;
+	position: relative;
+}
+.main-loan h3:after {
+    height: 4px;
+    width: 50px;
+    background: #CF3339;
+    position: absolute;
+    left: calc(50% - 25px);
+    content: "";
+    top: 100%;
+}
+
 .sub-title{
 	font-size: 20px;
     font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -1840,6 +1864,89 @@ a.card-register-center{
 	padding-bottom: 10px;
 }
 
+.main-loan img{
+	width: 270px;
+	height: auto;
+}
+.main-loan .box-content{
+	margin-top: 28px;
+}
+.main-loan .loan-title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+	line-height: 21px;
+	padding-bottom: 10px;
+}
+.main-loan .loan-content{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* loan-cash -eve */
+.page-loan-proud .cash-desc{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+    text-align: center;
+		display: block;
+		padding-top: 14px;
+}
+.box-cash img{
+	width: 100%;
+}
+.box-cash{
+	margin-bottom: 40px;
+}
+.box-img-cash{
+	padding: 0 0;
+}
+.box-cash-long{
+	background-color: rgba(91, 102, 112, 0.05);
+	display: inline-block;
+  text-align: center;
+  position: relative;
+	padding: 0 0;
+}
+.box-cash-short{
+	display: inline-block;
+  text-align: center;
+  position: relative;
+	padding: 0 0;
+}
+.box-cash-long .content-cash{
+	position: absolute;
+	top: calc(50% - 65px);
+  left: calc(50% - 255px);
+}
+.box-cash-short .content-cash{
+	position: absolute;
+	top: calc(50% - 65px);
+  left: calc(50% - 215px);
+}
+.box-cash .content-cash h2{
+	font-size: 30px;
+	line-height: 46px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-align: center;
+	display: block;
+}
+.box-cash .content-cash span{
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-align: center;
+	display: block;
+	padding-top: 14px;
+}
+.box-more{
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+.box-con-cal{
+	padding-left: calc(40% - 350px);
+  padding-right: calc(40% - 350px);
+}
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
