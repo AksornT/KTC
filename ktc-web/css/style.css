@@ -1613,7 +1613,8 @@ button.close{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	padding: 13px 49px;
 	border-radius: 6px;
-	margin: 81px 0;
+	margin: 60px 0;
+	min-width: 176px;
 	position: relative;
 	top: 0;
 	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
@@ -1621,7 +1622,12 @@ button.close{
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
 }
 
+a.card-register-center{
+	margin: 80px 0;
+}
+
 .card-register-center:hover{
+	cursor: pointer;
 	color: #fff;
 	top: -3px;
 	-webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.2);
@@ -1669,7 +1675,171 @@ button.close{
 .text-content-wrap .little-notice{
     margin-left: 35px;
     display: block;
+    margin-bottom: 60px;
 }
+
+.withStore p{
+    display: inline;
+    vertical-align: top;
+    font-size: 16px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    line-height: 30px;
+    position: relative;
+    top: -4px;
+}
+
+.icon-store{
+	width: 135px;
+	margin: 8px 3px 0 3px;
+	position: relative;
+	top: 0;
+}
+
+.icon-store:hover{
+	cursor: pointer;
+	top: -2px;
+}
+
+.store-ktc{
+	margin: 8px 16px 0 8px;
+}
+
+.img-in-loan{
+	width: calc(100% + 15px);
+	max-width: none;
+	height: auto;
+    margin: 0px 0px -2px 1px;
+}
+
+.with-loan-img{
+	background: rgba(90,102,112,.05);
+	text-align: center;
+}
+
+.with-loan-img h4{
+	font-size: 30px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-bottom: 30px;
+}
+
+.with-loan-img p{
+	font-size: 16px;
+	line-height: 26px;
+	max-width: 332px;
+	margin: 30px auto 0 auto;
+}
+
+.vertical-wrap{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.vertical-content{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.two-icon-link{
+	max-width: 985px;
+	margin: 86px auto 95px auto;
+	text-align: center;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.two-icon-link a{
+	position: relative;
+	top: 0;
+}
+
+.two-icon-link a:hover{
+	top: -2px;
+}
+
+.grey-panel{
+	display: block;
+	background: rgba(90,102,112,.05);
+}
+
+.two-icon-link p{
+	text-align: center;
+	color: #CF3339;
+	text-decoration: underline;
+	display: block;
+	margin-top: 11px;
+}
+
+.content-title{
+    text-align: center;
+    font-size: 35px;
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 38px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    line-height: 1.5;
+    padding-top: 60px;
+}
+.content-title:after {
+    height: 2px;
+    width: 50px;
+    background: #CF3339;
+    position: absolute;
+    left: calc(50% - 25px);
+    content: "";
+    top: 100%;
+}
+.sub-title{
+	font-size: 20px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-wrap input{
+	width: 100%;
+	padding:0;
+	border: none;
+	font-size: 16px;
+	border-bottom: rgba(90,102,112,.4) solid 1px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-top: 60px;
+	height: 30px;
+}
+
+.form-wrap input::placeholder{
+	color: rgba(90,102,112,.7);
+}
+
+.form-wrap input:focus{
+	outline: none;
+}
+
+.form-wrap input:focus::placeholder{
+	color: #fff;
+}
+
+.input-notice{
+	padding: 7px 0;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.img-result{
+	margin: 145px 0 30px 0;
+}
+
+.proud-regis-complete{
+	text-align: center;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 20px;
+}
+
+.proud-regis-complete p{
+	font-size: 35px;
+	line-height: 54px;
+	padding-bottom: 10px;
+}
+
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
