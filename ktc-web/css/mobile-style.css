@@ -505,5 +505,85 @@
     margin-bottom: 80px;
   }
 
+  /* loan-cash page -eve */
+  .content-wrap .on-desk{
+    display: none !important;
+  }
+  .content-wrap .on-mobile{
+    display: block !important;
+  }
+  .reverse-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .box-cash-long{
+    background-color: transparent;
+  }
+  .box-cash-long .content-cash {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .box-cash-short .content-cash {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .box-cash .content-cash h2.on-mobile{
+    font-size: 20px;
+    line-height: 32px;
+    padding-top: 20px;
+  }
+  .box-cash .content-cash span {
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+    padding-top: 16px;
+  }
+  .box-img-cash {
+    padding: 0 20px;
+  }
+  .box-img-cash img{
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  }
+  .box-line-right{
+  	border-left: none;
+  }
+  .box-more{
+    border-top: 1px solid rgba(91, 102, 112, 0.15);
+    margin-top: 20px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .box-con-cal {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+  }
+  .box-con-cal .on-mobile a{
+    color: #CF3339;
+  	font-family: 'Conv_SukhumvitTadmai_Bol';
+  	font-size: 14px;
+  	line-height: 26px;
+  	text-decoration: underline;
+  }
+  .detail-register{
+    padding: 40px 0 40px 0;
+  }
+  .detail-register h3{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .detail-register-desc{
+    margin-bottom: 35px;
+  }
+  .detail-register-desc h5{
+    font-size: 20px;
+  }
+  .detail-register-desc p{
+    font-size: 16px;
+  }
+
+
 
 }

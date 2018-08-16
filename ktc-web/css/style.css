@@ -1713,6 +1713,12 @@ button.close{
 }
 
 /* loan-cash -eve */
+.content-cash .on-desk{
+	display: block !important;
+}
+.content-cash .on-mobile{
+	display: none !important;
+}
 .page-loan-proud .cash-desc{
     font-size: 18px;
     line-height: 28px;
@@ -1776,6 +1782,65 @@ button.close{
 	padding-left: calc(40% - 350px);
   padding-right: calc(40% - 350px);
 }
+.box-con-cal .media-body{
+  padding: 20px 0;
+}
+.box-con-cal .media-body h5{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.box-con-cal .media-body a{
+	color: #CF3339;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: underline;
+}
+.box-line-right{
+	border-left: 1px solid rgba(91, 102, 112, 0.15);
+}
+.detail-register h3{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 10px;
+	margin-bottom: 65px;
+	display: block;
+	position: relative;
+}
+.detail-register h3:after {
+  height: 4px;
+  width: 50px;
+  background: #CF3339;
+  position: absolute;
+  left: calc(50% - 25px);
+  content: "";
+  top: 100%;
+}
+.detail-register{
+	background-color: rgba(91, 102, 112, 0.05);
+	background-position: center;
+	background-size: cover;
+	padding: 30px 0 60px 0;
+}
+.detail-register-desc h5{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 28px;
+}
+.detail-register-desc p{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+	padding-top: 17px;
+	padding-bottom: 24px;
+}
+.detail-register-desc li{
+	font-family: Helvetica, Arial, sans-serif ;
+	list-style: inside;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0px;
+}
+
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
