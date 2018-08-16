@@ -20,6 +20,18 @@ $(document).ready(function() {
       $(".subcat-wrap input").prop("checked", false);
     });
 
+    //flexi page nav
+    $("body").scrollspy({target: "#nav-flexi", offset: 116});
+    $("#nav-flexi a.nav-link").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+            window.location.hash = hash;
+        }
+    })
 });
 
 //change header when scroll down.
