@@ -2120,6 +2120,28 @@ h4.content-title:after{
     line-height: 1.4;
 }
 
+#nav-flexi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+#nav-flexi .nav-link {
+    padding: 16px 40px;
+    color: #000000;
+}
+#nav-flexi .nav-link.active {
+    color: #cf3339;
+}
+
+#nav-flexi .nav-item {
+    border-right: 1px solid #E6E8EA;
+}
+#nav-flexi .nav-item:last-child {
+    border-right: none;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap {
 		padding-left: calc(50vw - 653px);
