@@ -519,6 +519,10 @@
   }
   .box-cash-long{
     background-color: transparent;
+    padding: 0 20px;
+  }
+  .box-cash-short{
+    padding: 0 20px;
   }
   .box-cash-long .content-cash {
     position: relative;
