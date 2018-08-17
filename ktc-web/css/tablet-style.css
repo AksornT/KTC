@@ -459,5 +459,11 @@
   .detail-register-desc{
     margin-bottom: 35px;
   }
+  .sub-title{
+    line-height: 32px;
+  }
+  .input-notice{
+    line-height: 24px;
+  }
 
 }
