@@ -1790,74 +1790,6 @@ a.card-register-center{
     top: 100%;
 }
 
-h4.content-title{
-	text-align: left;
-	font-size: 28px;
-}
-
-h4.content-title:after{
-	display: none;
-}
-
-.collapse.in{
-	display: block;
-}
-
-.faq-wrap{
-	margin-bottom: 105px;
-}
-
-.faq-head{
-	opacity: 1;
-	font-size: 14px;
-	line-height: 16px;
-	color: #000;
-	padding: 9px 22px 9px 0;
-	letter-spacing: 0px;
-	border-bottom: rgba(90,102,112,.15) solid 1px;
-    font-family: 'Conv_SukhumvitTadmai_Tex';
-    position: relative;
-}
-
-.faq-head .collapsed{
-	color: #707070;
-}
-
-.faq-head:hover,
-.faq-head:hover .collapsed{
-	cursor: pointer;
-	color: #000;
-}
-
-.faq-head > div{
-	position: relative;
-}
-
-.faq-head > div:after{
-	position: absolute;
-	content: "+";
-	font-size: 18px;
-	color: inherit;
-	left: 100%;
-	top: 50%;
-	margin-top: -9px;
-	transform: rotate(-45deg);
-}
-
-.faq-head > .collapsed:after{
-	transform: rotate(0deg);
-}
-
-.faq-answer{
-	padding: 9px 0 9px 15px;
-	font-size: 14px;
-	color: #000;
-	line-height: 20px;
-	border-bottom: rgba(90,102,112,.15) solid 1px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 100;
-}
-
 /* loan page -eve */
 .main-loan{
 	padding-top: 60px;
@@ -2080,48 +2012,9 @@ h4.content-title:after{
 	letter-spacing: 0px;
 }
 
-/* Flexi Page - @korstudio */
-
-.btn.button-flexi-start {
-    padding: 5px 30px;
-    font-family: 'Conv_SukhumvitTadmai_Bol', Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    color: #ffffff;
-    background: #CF3339;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}
-.button-flexi-start.only-desktop {
-    display: inline-block;
-    margin-top: 30px;
-}
-.button-flexi-start.only-mobile {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.page-flexi-header {
-    padding: 120px 0 100px;
-    background: #ee445b url("../img/bg-flexi-jumbotron.jpg") no-repeat center;
-    background-size: cover;
-}
-.page-flexi-header .content-wrap {
-
-}
-
-.page-flexi-header h2 {
-    margin-top: 15px;
-    font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
-    font-size: 42px;
-    color: #ffffff;
-    line-height: 1.4;
-}
 
 @media (min-width: 1366px) {
-	.menu-global .content-wrap {
+	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
 		padding-right: calc(50vw - 653px);
 		max-width: none;
@@ -2131,11 +2024,6 @@ h4.content-title:after{
 	.index-slide2 .item:after{
 		top:125px;
 	}
-
-    .page-flexi-header {
-        padding-left: calc(50vw - 535px);
-        padding-right: calc(50vw - 535px);
-    }
 }
 
 @media (max-width: 1200px) {
