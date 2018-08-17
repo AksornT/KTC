@@ -112,6 +112,8 @@
     width: 50px;
     height: 2px;
     background-color: #CF3339; }
+#page-flexi-content img {
+  max-width: 100%; }
 
 #section-flexi-cards {
   padding: 10px 0 50px;
@@ -205,5 +207,21 @@
       padding: 0; }
   #content-flexi-installments .right {
     padding: 20px 90px; }
+
+#section-flexi-shops {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 28px; }
+  #section-flexi-shops h4 {
+    margin-bottom: 60px; }
+  #section-flexi-shops .row {
+    background: #F6F6F6; }
+  #section-flexi-shops div[class*="col"].box-center-v {
+    align-self: center; }
+  #section-flexi-shops p {
+    line-height: 1.65; }
+  #section-flexi-shops .button-contact-shop {
+    margin-top: 60px;
+    font-size: 20px; }
 
 /*# sourceMappingURL=flexi.css.map */

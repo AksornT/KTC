@@ -148,6 +148,10 @@ $color-link-inactive: #8C949B;
 			background-color: $color-red;
 		}
 	}
+
+	img {
+		max-width: 100%;
+	}
 }
 
 #section-flexi-cards {
@@ -292,5 +296,32 @@ $color-link-inactive: #8C949B;
 
 	.right {
 		padding: 20px 90px;
+	}
+}
+
+#section-flexi-shops {
+	font-family: $font-normal;
+	text-align: center;
+	font-size: 28px;
+
+	h4 {
+		margin-bottom: 60px;
+	}
+
+	.row {
+		background: #F6F6F6;
+	}
+
+	div[class*="col"].box-center-v {
+		align-self: center;
+	}
+
+	p {
+		line-height: 1.65;
+	}
+
+	.button-contact-shop {
+		margin-top: 60px;
+		font-size: 20px;
 	}
 }
