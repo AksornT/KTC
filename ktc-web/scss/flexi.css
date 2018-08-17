@@ -99,7 +99,8 @@
     display: block; }
 
 #page-flexi-content section {
-  padding: 60px 0; }
+  padding: 60px 0;
+  border-bottom: 1px solid #E6E8EA; }
 #page-flexi-content h4 {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -114,8 +115,7 @@
 
 #section-flexi-cards {
   padding: 10px 0 50px;
-  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #E6E8EA; }
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 #section-flexi-cards > .row > *[class*="col"] {
   display: flex;

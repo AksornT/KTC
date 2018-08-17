@@ -131,6 +131,7 @@ $color-link-inactive: #8C949B;
 #page-flexi-content {
 	section {
 		padding: 60px 0;
+		border-bottom: 1px solid #E6E8EA;
 	}
 
 	h4 {
@@ -152,7 +153,6 @@ $color-link-inactive: #8C949B;
 #section-flexi-cards {
 	padding: 10px 0 50px;
 	font-family: $font-normal;
-	border-bottom: 1px solid #E6E8EA;
 }
 
 #section-flexi-cards > .row > *[class*="col"] {
