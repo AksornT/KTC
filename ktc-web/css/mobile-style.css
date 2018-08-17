@@ -564,7 +564,7 @@
     padding-right: 20px;
     margin-bottom: 60px;
   }
-  .box-con-cal .on-mobile a{
+  .box-con-cal .on-mobile p{
     color: #CF3339;
   	font-family: 'Conv_SukhumvitTadmai_Bol';
   	font-size: 14px;
@@ -586,6 +586,11 @@
   }
   .detail-register-desc p{
     font-size: 16px;
+  }
+
+  .proud-logo + h2.on-mobile {
+    font-size: 20px;
+    line-height: 36px;
   }
 
 

@@ -402,4 +402,62 @@
     margin-bottom: 80px;
   }
 
+  /* loan-cash page -eve */
+  .content-wrap .on-desk{
+    display: none !important;
+  }
+  .content-wrap .on-mobile{
+    display: block !important;
+  }
+  .reverse-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .box-cash-long{
+    background-color: transparent;
+    padding: 0 20px;
+  }
+  .box-cash-short{
+    padding: 0 20px;
+  }
+  .box-cash-long .content-cash {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .box-cash-short .content-cash {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .box-cash .content-cash h2.on-mobile{
+    padding-top: 20px;
+  }
+  .box-cash .content-cash span {
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+    padding-top: 16px;
+  }
+  .box-img-cash {
+    padding: 0 20px;
+  }
+  .box-img-cash img{
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  }
+  .box-con-cal .on-mobile p{
+    color: #CF3339;
+  	font-family: 'Conv_SukhumvitTadmai_Bol';
+  	font-size: 14px;
+  	line-height: 26px;
+  	text-decoration: underline;
+    padding-top: 10px;
+  }
+  .detail-register{
+    padding: 40px 0 40px 0;
+  }
+  .detail-register-desc{
+    margin-bottom: 35px;
+  }
+
 }

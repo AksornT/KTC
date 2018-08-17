@@ -1960,15 +1960,22 @@ a.card-register-center{
 	padding-left: calc(40% - 350px);
   padding-right: calc(40% - 350px);
 }
+.box-con-cal a.media{
+	cursor: pointer;
+}
+.box-con-cal a.media:hover{
+	margin-top: -2px;
+}
 .box-con-cal .media-body{
   padding: 20px 0;
 }
 .box-con-cal .media-body h5{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
+	color: #000;
 	padding-bottom: 10px;
 }
-.box-con-cal .media-body a{
+.box-con-cal .media-body p{
 	color: #CF3339;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
@@ -2217,5 +2224,17 @@ a.card-register-center{
 	.profile-name,
 	.login-btn i{
 	display: none;
+	}
+
+	.box-cash .content-cash h2 {
+    font-size: 26px;
+    line-height: 42px;
+	}
+	.box-cash-long .content-cash {
+    left: calc(50% - 240px);
+	}
+	.box-con-cal {
+    padding-left: calc(40% - 300px);
+    padding-right: calc(40% - 300px);
 	}
 }
