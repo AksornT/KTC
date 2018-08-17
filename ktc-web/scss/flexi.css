@@ -174,4 +174,35 @@
   #section-flexi-cards figure.box-info .btn {
     margin-top: 10px; }
 
+#nav-flexi-installments {
+  margin-top: 50px;
+  margin-bottom: 60px; }
+  #nav-flexi-installments li.nav-item:first-child {
+    border-right: 1px solid #E6E8EA; }
+  #nav-flexi-installments li.nav-item a {
+    padding: 15px 40px 9px;
+    font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #8c949b; }
+  #nav-flexi-installments li.nav-item.active a {
+    color: #000000; }
+    #nav-flexi-installments li.nav-item.active a::after {
+      content: '';
+      display: block;
+      margin-top: 3px;
+      height: 4px;
+      background: #CF3339; }
+
+#content-flexi-installments {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 2.45; }
+  #content-flexi-installments .right {
+    padding: 20px 90px; }
+  #content-flexi-installments a {
+    color: #CF3339; }
+  #content-flexi-installments .button-terms {
+    margin-top: 30px;
+    padding: 0; }
+
 /*# sourceMappingURL=flexi.css.map */

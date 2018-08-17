@@ -5,6 +5,7 @@ $font-bold: 'Conv_SukhumvitTadmai_Bol', Helvetica, Arial, sans-serif;
 
 $color-red: #CF3339;
 $color-light-grey: #E6E8EA;
+$color-link-inactive: #8C949B;
 
 .btn.button-flexi-start {
 	padding: 5px 30px;
@@ -236,3 +237,59 @@ $color-light-grey: #E6E8EA;
 	}
 }
 
+#section-flexi-installments {
+
+}
+
+#nav-flexi-installments {
+	margin-top: 50px;
+	margin-bottom: 60px;
+
+	li.nav-item {
+		&:first-child {
+			border-right: 1px solid $color-light-grey;
+		}
+
+		a {
+			padding: 15px 40px 9px;
+			font-family: $font-normal;
+			font-size: 24px;
+			color: #8c949b;
+		}
+
+		&.active a {
+			color: #000000;
+
+			&::after {
+				content: '';
+				display: block;
+				margin-top: 3px;
+				height: 4px;
+				background: $color-red;
+			}
+		}
+	}
+}
+
+#content-flexi-installments {
+	font-family: $font-normal;
+	font-size: 18px;
+	line-height: 2.45;
+
+	.left {
+
+	}
+
+	.right {
+		padding: 20px 90px;
+	}
+
+	a {
+		color: $color-red;
+	}
+
+	.button-terms {
+		margin-top: 30px;
+		padding: 0;
+	}
+}
