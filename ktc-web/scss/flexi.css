@@ -20,7 +20,8 @@
   margin-top: 20px; }
 
 .page-flexi-header {
-  padding: 120px 0 100px;
+  padding-top: 120px;
+  padding-bottom: 100px;
   background: #ee445b url("../img/bg-flexi-jumbotron.jpg") no-repeat center;
   background-size: cover; }
 
