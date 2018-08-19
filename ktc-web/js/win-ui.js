@@ -21,17 +21,14 @@ $(document).ready(function() {
     });
 
     //flexi page nav
-    $("body").scrollspy({target: "#nav-flexi", offset: 116});
-    $("#nav-flexi a.nav-link").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800);
-            window.location.hash = hash;
-        }
-    })
+    $("body").scrollspy({target: "#nav-flexi-navbar", offset: 180});
+    $("#nav-flexi a.nav-link").on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 150
+        }, 800);
+    });
 });
 
 //change header when scroll down.
@@ -50,6 +47,14 @@ $(document).on('scroll', function() {
     }else{
         $('.ghost-footer').removeClass('active-mobile');
     };
+
+    //flexi navbar
+    if($(this).scrollTop() >= $('#nav-flexi-scroll-trigger').offset().top) {
+        $('#nav-flexi').addClass('fixed');
+    } else {
+        $('#nav-flexi').removeClass('fixed');
+        $('#nav-flexi-navbar li.nav-item:first-child').addClass('active');
+    }
 });
 
 //for menu mobile
