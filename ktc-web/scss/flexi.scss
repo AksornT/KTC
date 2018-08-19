@@ -7,6 +7,21 @@ $color-red: #CF3339;
 $color-light-grey: #E6E8EA;
 $color-link-inactive: #8C949B;
 
+$breakpoint-mobile-max: 576px;
+$breakpoint-tablet-max: 991px;
+
+@mixin mobile() {
+	@media (max-width: $breakpoint-mobile-max) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (max-width: $breakpoint-tablet-max) {
+		@content;
+	}
+}
+
 .btn.button-flexi-start {
 	padding: 5px 30px;
 	font-family: $font-bold;
@@ -325,4 +340,14 @@ $color-link-inactive: #8C949B;
 		margin-top: 60px;
 		font-size: 20px;
 	}
+}
+
+// mobile
+@include mobile {
+
+}
+
+// tablet
+@include tablet {
+
 }
