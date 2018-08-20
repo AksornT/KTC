@@ -130,6 +130,9 @@
   display: block;
 }
 
+#nav-flexi-mobile, #nav-flexi-modal {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #nav-flexi-mobile .nav.full-size, #nav-flexi-modal .nav.full-size {
   margin-bottom: 20px;
 }
