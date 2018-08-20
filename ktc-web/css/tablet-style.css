@@ -554,4 +554,141 @@
     margin: 40px 0 60px 0;
   }
 
+  /* Flexi Page - @korstudio */
+  .page-flexi-header {
+    padding: 8vw 30px;
+    height: 40vw;
+  }
+  .page-flexi-header h2 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  #page-flexi-content section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #page-flexi-content h4 {
+    font-size: 20px;
+  }
+
+  #page-flexi-content .content-pre-nav {
+    padding: 25px 0;
+    text-align: center;
+  }
+  #page-flexi-content .content-pre-nav h3 {
+    margin-bottom: 10px;
+    font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+  }
+  #page-flexi-content .content-pre-nav h4 {
+    font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #page-flexi-content .content-pre-nav h4::after {
+    display: none;
+  }
+
+  #nav-flexi-mobile .nav.mini.show {
+    top: 66px;
+  }
+
+  #nav-flexi-scroll-trigger {
+    padding: 0;
+  }
+
+  #nav-flexi, #nav-flexi.only-desktop {
+    display: none;
+  }
+
+  section#section-flexi-cards {
+    padding: 30px 0;
+  }
+  section#section-flexi-cards > .row > *[class*="col"]:first-child {
+    border: none;
+  }
+  section#section-flexi-cards > .row > *[class*="col"]:last-child {
+    margin-top: 50px;
+  }
+  section#section-flexi-cards .box-title {
+    margin-bottom: 30px;
+  }
+  section#section-flexi-cards h4 {
+    font-size: 20px;
+  }
+  section#section-flexi-cards .sub-title {
+    font-size: 14px;
+  }
+  section#section-flexi-cards figure.box-info {
+    height: 135px;
+  }
+  section#section-flexi-cards figure.box-info h5 {
+    font-size: 16px;
+  }
+  section#section-flexi-cards figure.box-info h5 > small {
+    margin-top: 5px;
+    font-size: 1em;
+  }
+  section#section-flexi-cards figure.box-info .text-number {
+    font-size: 50px;
+  }
+  section#section-flexi-cards figure.box-info .text-number > small, section#section-flexi-cards figure.box-info .text-number.percent > small {
+    font-size: 14px;
+  }
+  section#section-flexi-cards figure.box-info .btn {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  section#section-flexi-installments .left {
+    text-align: center;
+  }
+  section#section-flexi-installments .right {
+    padding: 20px 5px;
+  }
+
+  #nav-flexi-installments {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  #nav-flexi-installments li.nav-item a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+
+  #content-flexi-installments .button-terms {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  #content-flexi-installments p {
+    font-size: 14px;
+  }
+
+  section#section-flexi-shops h4 {
+    margin-bottom: 30px;
+  }
+  section#section-flexi-shops p {
+    font-size: 18px;
+  }
+  section#section-flexi-shops a.button-contact-shop {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  section#section-flexi-shops .box-center-v {
+    padding: 30px;
+  }
+
+  #section-flexi-promotions .slide-flexi-promotions .item {
+    width: 100%;
+  }
+
+  .flexi-modal h5.modal-title.long-title {
+    font-size: 16px;
+  }
+  .flexi-modal p.table-title {
+    font-size: 17.5px;
+  }
 }
