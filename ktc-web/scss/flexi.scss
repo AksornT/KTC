@@ -521,6 +521,89 @@ section#section-flexi-cards {
   }
 }
 
+.flexi-modal {
+  .modal-header {
+  }
+
+  h5.modal-title.long-title {
+    font-size: 28px;
+    text-align: left;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-family: $font-normal;
+    font-size: 14px;
+
+    strong {
+      font-family: $font-bold;
+    }
+
+    &.table-title {
+      margin-top: 50px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    &.text-annotation {
+      color: #8c949b;
+    }
+  }
+
+  ul.list-terms {
+    margin-left: 17px;
+    font-family: $font-normal;
+    font-size: 14px;
+    list-style: disc;
+
+    li {
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+  }
+
+  table {
+    margin: 30px 0;
+    font-family: $font-normal;
+    font-size: 14px;
+
+    thead th {
+      min-width: 120px;
+      font-family: $font-bold;
+      border-top: none;
+      border-bottom: 1px solid #E6E8EA;
+
+      &:first-child {
+        min-width: 150px;
+      }
+    }
+
+    tbody {
+      border-bottom: 1px solid #E6E8EA;
+
+      td {
+        border-top: 1px solid #E6E8EA;
+      }
+    }
+  }
+}
+
+#flexi-interests-calc-modal {
+  table {
+    thead th {
+      min-width: 90px;
+
+      &:first-child {
+        min-width: 150px;
+      }
+    }
+  }
+}
+
 // tablet
 @include tablet {
   .page-flexi-header {
@@ -698,88 +781,6 @@ section#section-flexi-cards {
   }
 }
 
-.flexi-modal {
-  .modal-header {
-  }
-
-  h5.modal-title.long-title {
-    font-size: 28px;
-    text-align: left;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  p {
-    margin-bottom: 15px;
-    font-family: $font-normal;
-    font-size: 14px;
-
-    strong {
-      font-family: $font-bold;
-    }
-
-    &.table-title {
-      margin-top: 50px;
-      font-size: 20px;
-      line-height: 1.5;
-    }
-
-    &.text-annotation {
-      color: #8c949b;
-    }
-  }
-
-  ul.list-terms {
-    margin-left: 17px;
-    font-family: $font-normal;
-    font-size: 14px;
-    list-style: disc;
-
-    li {
-      margin-bottom: 5px;
-      line-height: 1.5;
-    }
-  }
-
-  table {
-    margin: 30px 0;
-    font-family: $font-normal;
-    font-size: 14px;
-
-    thead th {
-      min-width: 120px;
-      font-family: $font-bold;
-      border-top: none;
-      border-bottom: 1px solid #E6E8EA;
-
-      &:first-child {
-        min-width: 150px;
-      }
-    }
-
-    tbody {
-      border-bottom: 1px solid #E6E8EA;
-
-      td {
-        border-top: 1px solid #E6E8EA;
-      }
-    }
-  }
-}
-
-#flexi-interests-calc-modal {
-  table {
-    thead th {
-      min-width: 90px;
-
-      &:first-child {
-        min-width: 150px;
-      }
-    }
-  }
-}
 
 // mobile
 @include mobile {

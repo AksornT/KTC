@@ -416,6 +416,67 @@ section#section-flexi-cards {
   text-decoration: none;
 }
 
+.flexi-modal h5.modal-title.long-title {
+  font-size: 28px;
+  text-align: left;
+}
+.flexi-modal h5.modal-title.long-title::after {
+  display: none;
+}
+.flexi-modal p {
+  margin-bottom: 15px;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.flexi-modal p strong {
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+}
+.flexi-modal p.table-title {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.flexi-modal p.text-annotation {
+  color: #8c949b;
+}
+.flexi-modal ul.list-terms {
+  margin-left: 17px;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  list-style: disc;
+}
+.flexi-modal ul.list-terms li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+.flexi-modal table {
+  margin: 30px 0;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.flexi-modal table thead th {
+  min-width: 120px;
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+  border-top: none;
+  border-bottom: 1px solid #E6E8EA;
+}
+.flexi-modal table thead th:first-child {
+  min-width: 150px;
+}
+.flexi-modal table tbody {
+  border-bottom: 1px solid #E6E8EA;
+}
+.flexi-modal table tbody td {
+  border-top: 1px solid #E6E8EA;
+}
+
+#flexi-interests-calc-modal table thead th {
+  min-width: 90px;
+}
+#flexi-interests-calc-modal table thead th:first-child {
+  min-width: 150px;
+}
+
 @media (max-width: 991px) {
   .page-flexi-header {
     padding: 8vw 30px;
@@ -547,67 +608,6 @@ section#section-flexi-cards {
     width: 100%;
   }
 }
-.flexi-modal h5.modal-title.long-title {
-  font-size: 28px;
-  text-align: left;
-}
-.flexi-modal h5.modal-title.long-title::after {
-  display: none;
-}
-.flexi-modal p {
-  margin-bottom: 15px;
-  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
-.flexi-modal p strong {
-  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
-}
-.flexi-modal p.table-title {
-  margin-top: 50px;
-  font-size: 20px;
-  line-height: 1.5;
-}
-.flexi-modal p.text-annotation {
-  color: #8c949b;
-}
-.flexi-modal ul.list-terms {
-  margin-left: 17px;
-  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  list-style: disc;
-}
-.flexi-modal ul.list-terms li {
-  margin-bottom: 5px;
-  line-height: 1.5;
-}
-.flexi-modal table {
-  margin: 30px 0;
-  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
-.flexi-modal table thead th {
-  min-width: 120px;
-  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
-  border-top: none;
-  border-bottom: 1px solid #E6E8EA;
-}
-.flexi-modal table thead th:first-child {
-  min-width: 150px;
-}
-.flexi-modal table tbody {
-  border-bottom: 1px solid #E6E8EA;
-}
-.flexi-modal table tbody td {
-  border-top: 1px solid #E6E8EA;
-}
-
-#flexi-interests-calc-modal table thead th {
-  min-width: 90px;
-}
-#flexi-interests-calc-modal table thead th:first-child {
-  min-width: 150px;
-}
-
 @media (max-width: 576px) {
   .page-flexi-header {
     height: 50vw;
