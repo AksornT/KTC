@@ -634,12 +634,12 @@ section#section-flexi-cards {
 
   section#section-flexi-shops {
     p {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     a.button-contact-shop {
-      margin-top: 0;
-      font-size: 14px;
+      margin-top: 10px;
+      font-size: 18px;
     }
 
     .box-center-v {
@@ -661,6 +661,17 @@ section#section-flexi-cards {
       margin-top: 5px;
       font-family: $font-thin;
       font-size: 4.5vw;
+    }
+  }
+
+  section#section-flexi-shops {
+    p {
+      font-size: 3.7vw;
+    }
+
+    a.button-contact-shop {
+      margin-top: 0;
+      font-size: 3.7vw;
     }
   }
 }
