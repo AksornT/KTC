@@ -400,6 +400,14 @@ section#section-flexi-cards {
     line-height: 1.4;
   }
 
+  #page-flexi-content section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #page-flexi-content h4 {
+    font-size: 20px;
+  }
+
   #page-flexi-content .content-pre-nav {
     padding: 25px 0;
     text-align: center;
@@ -468,6 +476,40 @@ section#section-flexi-cards {
   section#section-flexi-cards figure.box-info .btn {
     margin-top: 0;
     font-size: 14px;
+  }
+
+  section#section-flexi-installments .left {
+    text-align: center;
+  }
+  section#section-flexi-installments .right {
+    padding: 20px 5px;
+  }
+
+  #nav-flexi-installments {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  #nav-flexi-installments li.nav-item a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+
+  #content-flexi-installments a.button-terms {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  section#section-flexi-shops p {
+    font-size: 14px;
+  }
+  section#section-flexi-shops a.button-contact-shop {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  section#section-flexi-shops .box-center-v {
+    padding: 30px;
   }
 }
 @media (max-width: 576px) {

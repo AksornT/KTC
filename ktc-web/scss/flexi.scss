@@ -498,6 +498,17 @@ section#section-flexi-cards {
     }
   }
 
+  #page-flexi-content {
+    section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+
   #page-flexi-content .content-pre-nav {
     padding: 25px 0;
     text-align: center;
@@ -590,6 +601,51 @@ section#section-flexi-cards {
     }
   }
 
+  section#section-flexi-installments {
+    .left {
+      text-align: center;
+    }
+
+    .right {
+      padding: 20px 5px;
+    }
+  }
+
+  #nav-flexi-installments {
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    li.nav-item {
+      a {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  #content-flexi-installments {
+    a.button-terms {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  section#section-flexi-shops {
+    p {
+      font-size: 14px;
+    }
+
+    a.button-contact-shop {
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    .box-center-v {
+      padding: 30px;
+    }
+  }
 }
 
 // mobile
