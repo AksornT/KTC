@@ -468,9 +468,15 @@
   .input-notice{
     line-height: 24px;
   }
-
   .detail-register-desc h5{
     margin-top: 25px;
+  }
+  a.card-register-center {
+    margin: 35px 0 70px 0;
+  }
+  .box-more {
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 
 }

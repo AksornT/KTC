@@ -604,9 +604,9 @@
   .proud-logo {
     margin: 127px auto 40px auto;
   }
-  .proud-logo + h2.on-mobile {
+  .proud-logo + h2 {
     font-size: 20px;
-    line-height: 36px;
+    line-height: 32px;
   }
   .content-title{
     font-size: 23px;
