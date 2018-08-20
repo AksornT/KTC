@@ -1764,6 +1764,11 @@ a.card-register-center{
 	top: -2px;
 }
 
+.two-icon-link img{
+	width: auto;
+	height: 72px;
+}
+
 .grey-panel{
 	display: block;
 	background: rgba(90,102,112,.05);
@@ -2110,6 +2115,15 @@ h4.content-title:after{
 
 .detail-register-desc:nth-child(1) > h5{
 	margin: 0;
+}
+
+.detail-register-desc.col-lg-6 + .detail-register-desc.col-lg-6:nth-child(2) > h5{
+	margin: 0;
+}
+
+.img-precent{
+	width: 115px;
+	height: auto;
 }
 
 @media (min-width: 1366px) {
