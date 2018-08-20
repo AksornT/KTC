@@ -21,13 +21,25 @@ $(document).ready(function() {
     });
 
     //flexi page nav
+    var flexiNavScrollTo = function(elementId, offset) {
+        offset = offset == null ? 0 : offset;
+        $('html, body').animate({
+            scrollTop: $(elementId).offset().top - offset
+        }, 800);
+    };
     $("body").scrollspy({target: "#nav-flexi-navbar", offset: 180});
-    $("#nav-flexi a.nav-link, #nav-flexi-mobile a.nav-link").on('click touch', function (event) {
+    $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 150
-        }, 800);
+        flexiNavScrollTo(hash, 150);
+    });
+
+    $("#nav-flexi-mobile a.nav-link").each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            flexiNavScrollTo(hash, 100);
+        }, {passive: false})
     });
 });
 
