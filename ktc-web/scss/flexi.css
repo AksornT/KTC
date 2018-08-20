@@ -162,7 +162,19 @@
   margin-left: auto;
 }
 #nav-flexi-mobile .nav.mini .button-flexi-start {
+  height: 30px;
+  padding: 3px 20px;
   font-size: 14px;
+}
+#nav-flexi-mobile .nav.mini .btn-flexi-share {
+  -webkit-background-size: 12px;
+  background-size: 12px;
+}
+#nav-flexi-mobile .nav.mini .button-show-flexi-menu {
+  margin-left: -10px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff url("../img/ico-mini-menu.png") no-repeat center;
 }
 
 #page-flexi-content section {

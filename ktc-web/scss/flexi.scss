@@ -200,9 +200,23 @@ $breakpoint-tablet-max: 991px;
     .nav-right {
       margin-left: auto;
     }
-    
+
     .button-flexi-start {
+      height: 30px;
+      padding: 3px 20px;
       font-size: 14px;
+    }
+
+    .btn-flexi-share {
+      -webkit-background-size: 12px;
+      background-size: 12px;
+    }
+
+    .button-show-flexi-menu {
+      margin-left: -10px;
+      width: 30px;
+      height: 30px;
+      background: #ffffff url("../img/ico-mini-menu.png") no-repeat center;
     }
   }
 }
