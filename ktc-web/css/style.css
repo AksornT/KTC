@@ -1895,6 +1895,74 @@ a.card-register-center{
 	line-height: 24px;
 }
 
+h4.content-title{
+	text-align: left;
+	font-size: 28px;
+}
+
+h4.content-title:after{
+	display: none;
+}
+
+.collapse.in{
+	display: block;
+}
+
+.faq-wrap{
+	margin-bottom: 105px;
+}
+
+.faq-head{
+	opacity: 1;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+	padding: 9px 22px 9px 0;
+	letter-spacing: 0px;
+	border-bottom: rgba(90,102,112,.15) solid 1px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    position: relative;
+}
+
+.faq-head .collapsed{
+	color: #707070;
+}
+
+.faq-head:hover,
+.faq-head:hover .collapsed{
+	cursor: pointer;
+	color: #000;
+}
+
+.faq-head > div{
+	position: relative;
+}
+
+.faq-head > div:after{
+	position: absolute;
+	content: "+";
+	font-size: 18px;
+	color: inherit;
+	left: 100%;
+	top: 50%;
+	margin-top: -9px;
+	transform: rotate(-45deg);
+}
+
+.faq-head > .collapsed:after{
+	transform: rotate(0deg);
+}
+
+.faq-answer{
+	padding: 9px 0 9px 15px;
+	font-size: 14px;
+	color: #000;
+	line-height: 20px;
+	border-bottom: rgba(90,102,112,.15) solid 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 100;
+}
+
 /* loan-cash -eve */
 .content-wrap .on-desk{
 	display: flex;
