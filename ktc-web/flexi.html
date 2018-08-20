@@ -35,7 +35,7 @@
           <li>บริการหักค่าใช้จ่ายอัตโนมัติ<a href="#"></a></li>
           <li>อัตราดอกเบี้ยและค่าธรรมเนียม<a href="#"></a></li>
         </ul>
-      
+
       </li>
       <li>สินเชื่อบุคคล
         <i class="fa fa-angle-down"></i>
@@ -80,7 +80,7 @@
       <div class="login-mobile only-mobile" href="#">
         <img src="img/ico-login.png">
       </div> -->
-      
+
       <!-- หลังล็อกอิน -->
       <div class="login-btn logged-in">
         <div class="profile-image"><img src="img/img-profile.png"></div>
@@ -152,7 +152,7 @@
             <li><a href="#">คำถามที่พบบ่อย</a></li>
           </ul>
         </div>
-        
+
         <div class="menu-btn">
           <div class="menu-lang">
             <div class="lang-header-menu">
@@ -317,7 +317,7 @@
           </li>
         </ul>
       </div>
-    
+
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
           <button class="btn btn-flexi-share"><span class="sr-only">Share</span></button>
@@ -363,7 +363,7 @@
           <div class="left">
             <h5>แบ่งชำระได้นานสูงสุด</h5>
             <span class="text-number">10<small>เดือน</small></span>
-            <a href="#" class="btn btn-link underlined button-terms">เงื่อนไขการใช้บริการ</a>
+            <button class="btn btn-link underlined button-terms" data-toggle="modal" data-target="#flexi-terms-modal">เงื่อนไขการใช้บริการ</button>
           </div>
           <div class="right">
             <h5>อัตราดอกเบี้ย</h5>
@@ -382,7 +382,7 @@
           <div class="left">
             <h5>แบ่งชำระได้นานสูงสุด</h5>
             <span class="text-number">24<small>เดือน</small></span>
-            <a href="#" class="btn btn-link underlined button-terms">เงื่อนไขการใช้บริการ</a>
+            <button class="btn btn-link underlined button-terms" data-toggle="modal" data-target="#flexi-terms-modal">เงื่อนไขการใช้บริการ</button>
           </div>
           <div class="right">
             <h5>อัตราดอกเบี้ย<small>พิเศษเริ่มต้น 0.99 %</small></h5>
@@ -393,7 +393,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="section-flexi-installments">
     <h4>แบ่งชำระง่ายๆ</h4>
     <ul class="nav justify-content-center" id="nav-flexi-installments" role="tablist">
@@ -415,7 +415,7 @@
               ต่อเดือนได้ผ่านช่องทางสะดวก ง่ายๆ เพียงดาวน์โหลด TapKTC โมบายแอปพลิเคชัน หรือ
               เข้าสู่เว็บไซต์ <a href="https://www.ktc.co.th/ClickKTC" target="_blank">www.ktc.co.th/ClickKTC</a> ล็อคอิน เข้าเมนู FLEXI
               บริการแบ่งชำระเลือกรายการใช้้จ่าย และระยะเวลาแบ่งชำระที่ต้องการ</p>
-            <a href="#" class="btn btn-link underlined button-terms">เงื่อนไขการใช้บริการ</a>
+            <button class="btn btn-link underlined button-terms" data-toggle="modal" data-target="#flexi-terms-modal">เงื่อนไขการใช้บริการ</button>
           </div>
         </div>
       </div>
@@ -431,7 +431,7 @@
       </div></div>
     </div>
   </section>
-  
+
   <section id="section-flexi-shops">
     <h4>ร้านค้าสมาชิก</h4>
     <div class="row no-gutters">
@@ -446,7 +446,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="section-flexi-promotions">
     <h4>โปรโมชั่น</h4>
     <div class="text-on-slide text-right">
@@ -764,5 +764,75 @@
     </div>
   </div>
 </div>
+
+<div id="flexi-terms-modal" class="modal fade full-modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row justify-content-center">
+          <div class="col col-lg-11">
+            <h5 class="modal-title long-title">KTC FLEXI แบ่งชำระผ่านวงเงินสินเชื่อพร้อมใช้ KTC PROUD นานสูงสุด 24 เดือน ด้วยอัตราดอกเบี้ย 0%
+              หรืออัตราดอกเบี้ยคงที่ พิเศษเริ่มต้น 0.99% ณ ร้านค้าที่ร่วมรายการ</h5>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <div class="col col-lg-11">
+            <p><strong>เงื่อนไข</strong></p>
+            <ul class="list-terms">
+                <li>สมาชิกสินเชื่อพร้อมใช้ KTC PROUD สามารถใช้บริการแบ่งชำระ KTC FLEXI ด้วยอัตราดอกเบี้ย 0% เฉพาะสินค้าที่ระบุว่าร่วมรายการแบ่งชำระ KTC FLEXI 0% ตามที่กำหนดเท่านั้น</li>
+                <li>สินค้าต้องมีราคาขั้นต่ำ 3,000 บาท โดยสามารถใช้บริการได้ตามวงเงินที่คงเหลืออยู่ในขณะที่ซื้อสินค้า</li>
+                <li>สำหรับสินค้าที่ไม่ได้ร่วมรายการแบ่งชำระ 0% สมาชิกสามารถใช้บริการแบ่งชำระ KTC FLEXI ด้วยอัตราดอกเบี้ย</li>
+                <li>ค่าธรรมเนียมการใช้วงเงิน (อัตราดอกเบี้ยฯ) บริการแบ่งชำระ KTC FLEXI คิดเป็นอัตราดอกเบี้ย แบบคงที่ต่อเดือน (Flat Rate) เทียบเท่ากับอัตราดอกเบี้ยฯแบบลดต้นลดดอกต่อปี (Effective Rate) ดังระบุในตาราง </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-11">
+            <p class="table-title">ตัวอย่างการคำนวณอัตราดอกเบี้ย แบบคงที่ต่อเดือน ค่าธรรมเนียมแบบลดต้นลดดอกต่อปี</p>
+            <div class="table-responsive-lg">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th scope="col">อัตราดอกเบี้ย</th>
+                  <th scope="col">6 เดือน</th>
+                  <th scope="col">10 เดือน</th>
+                  <th scope="col">12 เดือน</th>
+                  <th scope="col">18 เดือน</th>
+                  <th scope="col">24 เดือน</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>0.99%</td>
+                  <td>20.08%</td>
+                  <td>21.05%</td>
+                  <td>21.24%</td>
+                  <td>21.43%</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1.29%*</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>27.36%</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-annotation">* สำหรับระยะเวลาแบ่งชำระที่มากกว่า 18 เดือน</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
