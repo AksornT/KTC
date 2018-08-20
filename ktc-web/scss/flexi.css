@@ -130,24 +130,24 @@
   display: block;
 }
 
-#nav-flexi-mobile .nav.full-size {
+#nav-flexi-mobile .nav.full-size, #nav-flexi-modal .nav.full-size {
   margin-bottom: 20px;
 }
-#nav-flexi-mobile .nav.full-size li.nav-item {
+#nav-flexi-mobile .nav.full-size li.nav-item, #nav-flexi-modal .nav.full-size li.nav-item {
   border-top: 1px solid #E6E8EA;
 }
-#nav-flexi-mobile .nav.full-size li.nav-item:last-child {
+#nav-flexi-mobile .nav.full-size li.nav-item:last-child, #nav-flexi-modal .nav.full-size li.nav-item:last-child {
   border-bottom: 1px solid #E6E8EA;
 }
-#nav-flexi-mobile .nav.full-size li.nav-item.active a {
+#nav-flexi-mobile .nav.full-size li.nav-item.active a, #nav-flexi-modal .nav.full-size li.nav-item.active a {
   color: #CF3339;
 }
-#nav-flexi-mobile .nav.full-size a {
+#nav-flexi-mobile .nav.full-size a, #nav-flexi-modal .nav.full-size a {
   padding: 12px;
   color: #4c4c4c;
   text-align: center;
 }
-#nav-flexi-mobile .nav.mini {
+#nav-flexi-mobile .nav.mini, #nav-flexi-modal .nav.mini {
   position: fixed;
   display: flex;
   padding: 8px 20px;
@@ -158,23 +158,33 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
   z-index: 1;
 }
-#nav-flexi-mobile .nav.mini .nav-right {
+#nav-flexi-mobile .nav.mini .nav-right, #nav-flexi-modal .nav.mini .nav-right {
   margin-left: auto;
 }
-#nav-flexi-mobile .nav.mini .button-flexi-start {
+#nav-flexi-mobile .nav.mini .button-flexi-start, #nav-flexi-modal .nav.mini .button-flexi-start {
   height: 30px;
   padding: 3px 20px;
   font-size: 14px;
 }
-#nav-flexi-mobile .nav.mini .btn-flexi-share {
+#nav-flexi-mobile .nav.mini .btn-flexi-share, #nav-flexi-modal .nav.mini .btn-flexi-share {
   -webkit-background-size: 12px;
   background-size: 12px;
 }
-#nav-flexi-mobile .nav.mini .button-show-flexi-menu {
+#nav-flexi-mobile .nav.mini .button-show-flexi-menu, #nav-flexi-modal .nav.mini .button-show-flexi-menu {
   margin-left: -10px;
   width: 30px;
   height: 30px;
   background: #ffffff url("../img/ico-mini-menu.png") no-repeat center;
+}
+
+#nav-flexi-modal .nav.full-size li.nav-item:first-child {
+  border-top: none;
+}
+#nav-flexi-modal .nav.full-size li.nav-item:last-child {
+  border-bottom: none;
+}
+#nav-flexi-modal .nav.full-size a {
+  text-align: left;
 }
 
 #page-flexi-content section {

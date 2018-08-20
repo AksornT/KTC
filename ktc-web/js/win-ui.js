@@ -28,17 +28,31 @@ $(document).ready(function() {
         }, 800);
     };
     $("body").scrollspy({target: "#nav-flexi-navbar", offset: 180});
+    $('body').on('activate.bs.scrollspy', function (event) {
+        //sync scrollspy to other menu
+        var currentSection = event.target.firstElementChild.hash;
+        $("#nav-flexi-modal li.nav-item").each(function(i, el) {
+            var $el = $(el);
+            if (el.firstElementChild.hash === currentSection) {
+                $el.addClass("active");
+            } else {
+                $el.removeClass("active");
+            }
+            console.log(el.firstElementChild.hash, currentSection);
+        });
+    });
     $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
         flexiNavScrollTo(hash, 150);
     });
 
-    $("#nav-flexi-mobile a.nav-link").each(function (index, elem) {
+    $("#nav-flexi-mobile a.nav-link, #nav-flexi-modal .nav a.nav-link").each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
             flexiNavScrollTo(hash, 100);
+            $("#nav-flexi-modal").modal("hide");
         }, {passive: false})
     });
 });

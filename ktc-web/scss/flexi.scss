@@ -163,7 +163,7 @@ $breakpoint-tablet-max: 991px;
   }
 }
 
-#nav-flexi-mobile {
+#nav-flexi-mobile, #nav-flexi-modal {
   .nav.full-size {
     margin-bottom: 20px;
 
@@ -218,6 +218,22 @@ $breakpoint-tablet-max: 991px;
       height: 30px;
       background: #ffffff url("../img/ico-mini-menu.png") no-repeat center;
     }
+  }
+}
+
+#nav-flexi-modal .nav.full-size {
+  li.nav-item {
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    text-align: left;
   }
 }
 
