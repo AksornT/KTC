@@ -646,6 +646,14 @@ section#section-flexi-cards {
       padding: 30px;
     }
   }
+
+  #section-flexi-promotions {
+    .slide-flexi-promotions {
+      .item {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // mobile
@@ -672,6 +680,21 @@ section#section-flexi-cards {
     a.button-contact-shop {
       margin-top: 0;
       font-size: 3.7vw;
+    }
+  }
+
+  #section-flexi-promotions {
+    .slide-flexi-promotions {
+      .item {
+
+        .slide-title {
+          padding-top: 20px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
