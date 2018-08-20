@@ -23,6 +23,7 @@ $breakpoint-tablet-max: 991px;
 }
 
 .btn.button-flexi-start {
+  display: inline-block;
   padding: 5px 30px;
   font-family: $font-bold;
   font-size: 18px;
@@ -36,13 +37,12 @@ $breakpoint-tablet-max: 991px;
 }
 
 .button-flexi-start.only-desktop {
-  display: inline-block;
   margin-top: 30px;
 }
 
 .button-flexi-start.only-mobile {
-  display: inline-block;
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .page-flexi-header {
@@ -89,6 +89,15 @@ $breakpoint-tablet-max: 991px;
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
+
+  &.only-desktop {
+    display: flex;
+  }
+}
+
+#nav-flexi-navbar {
+  display: flex;
+  flex: 1;
 }
 
 #nav-flexi-navbar .navbar-nav {
@@ -113,10 +122,15 @@ $breakpoint-tablet-max: 991px;
   color: #cf3339;
 }
 
-#nav-flexi .btn-flexi-share {
+.btn-flexi-share {
   width: 30px;
   height: 30px;
   background: #fff url("../img/ico-share.png") no-repeat center;
+
+  &.only-mobile {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 #nav-flexi .button-flexi-start {
@@ -146,6 +160,45 @@ $breakpoint-tablet-max: 991px;
 
   .button-flexi-start {
     display: block;
+  }
+}
+
+#nav-flexi-mobile {
+  .nav.full-size {
+    margin-bottom: 20px;
+
+    li.nav-item {
+      border-top: 1px solid $color-light-grey;
+
+      &:last-child {
+        border-bottom: 1px solid $color-light-grey;
+      }
+
+      &.active a {
+        color: $color-red;
+      }
+    }
+
+    a {
+      padding: 12px;
+      color: #4c4c4c;
+      text-align: center;
+    }
+  }
+
+  .nav.mini {
+    position: fixed;
+    display: flex;
+    top: 45px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+
+    .nav-right {
+      margin-left: auto;
+    }
   }
 }
 
@@ -433,12 +486,31 @@ $breakpoint-tablet-max: 991px;
   }
 }
 
-// mobile
-@include mobile {
+// tablet
+@include tablet {
+  #nav-flexi-mobile {
+    .nav.mini {
+      &.show {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  #nav-flexi-scroll-trigger {
+    padding: 0;
+  }
+
+  #nav-flexi {
+    &, &.only-desktop {
+      display: none;
+    }
+  }
+
 
 }
 
-// tablet
-@include tablet {
+// mobile
+@include mobile {
 
 }

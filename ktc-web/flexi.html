@@ -287,11 +287,8 @@
 
 <article id="page-flexi-content" class="content-wrap">
   <div id="nav-flexi-scroll-trigger"></div>
-  <nav id="nav-flexi" class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-flexi-navbar" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav-flexi-navbar">
+  <nav id="nav-flexi" class="navbar navbar-expand-lg only-desktop">
+      <div id="nav-flexi-navbar">
         <ul class="nav navbar-nav">
           <li class="nav-item active">
             <a href="#section-flexi-cards" class="nav-link">ประเภทบัตร KTC</a>
@@ -317,7 +314,29 @@
         </li>
       </ul>
   </nav>
-  
+  <nav id="nav-flexi-mobile" class="only-mobile">
+    <ul class="nav navbar-nav full-size">
+      <li class="nav-item active">
+        <a href="#section-flexi-cards" class="nav-link">ประเภทบัตร KTC</a>
+      </li>
+      <li class="nav-item">
+        <a href="#section-flexi-installments" class="nav-link">แบ่งจ่ายรายเดือน</a>
+      </li>
+      <li class="nav-item">
+        <a href="#section-flexi-shops" class="nav-link">ร้านค้า</a>
+      </li>
+      <li class="nav-item">
+        <a href="#section-flexi-promotions" class="nav-link">โปรโมชั่น</a>
+      </li>
+    </ul>
+    <div class="nav mini">
+      <button class="btn button-show-flexi-menu"><span class="sr-only">Menu</span></button>
+      <div class="nav-right">
+        <button class="btn btn-flexi-share"><span class="sr-only">Share</span></button>
+        <a href="#" class="btn button-flexi-start">ทำรายการแบ่งชำระออนไลน์</a>
+      </div>
+    </div>
+  </nav>
 
   <section id="section-flexi-cards" class="pt-0">
     <div class="row">
