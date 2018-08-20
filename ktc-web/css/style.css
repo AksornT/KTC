@@ -490,8 +490,9 @@ a:hover{
 }
 
 .another-sub p{
-	font-family: 'Conv_SukhumvitTadmai_Bol';
 	position: relative;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	color: #000000;
 	z-index: 1;
 }
 
