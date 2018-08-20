@@ -470,6 +470,88 @@
   }
   .detail-register-desc h5{
     margin-top: 25px;
+}
+  .img-in-loan-wrap{
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 0;
+    margin: 30px 15px 60px 15px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+  }
+
+  .img-in-loan{
+    width: 100%; 
+    height:auto;
+    margin: -11.5vw 0;
+  }
+
+  .with-loan-img{
+    background: none;
+  }
+
+  .with-loan-img h4{
+    font-size: 24px;
+  }
+
+  .with-loan-img p{
+    letter-spacing: 0;
+    max-width: 510px;
+  }
+
+  .img-precent{
+    width: 160px;
+  }
+
+  .text-head-wrap > div{
+    font-size: 20px;
+    padding: 0 35px 20px 35px;
+    line-height: 32px;
+  }
+
+  .text-head-wrap li {
+    list-style: outside;
+    margin-left: 20px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    line-height: 22px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .text-head-wrap li span{
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+  }
+
+  .text-head-wrap ol{
+    margin-bottom: 14px;
+    display: block;
+  }
+  .little-notice{
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .withStore p{
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+  }
+
+  .store-ktc{
+    display: block;
+    margin: 15px auto;
+  }
+
+  .proud-logo + h2{
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  a.card-register-center{
+    margin: 40px 0 60px 0;
   }
   a.card-register-center {
     margin: 35px 0 70px 0;
