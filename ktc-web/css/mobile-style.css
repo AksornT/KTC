@@ -586,6 +586,7 @@
   }
   .detail-register-desc h5{
     font-size: 20px;
+    margin-top: 25px;
   }
   .detail-register-desc p{
     font-size: 16px;
@@ -613,6 +614,7 @@
   h4.content-title{
     text-align: center;
     padding-top: 0px;
+    margin-bottom: 10px;
   }
 
   .two-icon-link > div{
@@ -621,6 +623,16 @@
 
   button.card-register-center{
     width: 100%;
+  }
+  .faq-head .collapsed {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .faq-head > div {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 20px;
   }
 
 
