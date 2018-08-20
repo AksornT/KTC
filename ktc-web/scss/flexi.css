@@ -427,6 +427,7 @@ section#section-flexi-cards {
   margin-bottom: 15px;
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
 .flexi-modal p strong {
   font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
@@ -434,7 +435,6 @@ section#section-flexi-cards {
 .flexi-modal p.table-title {
   margin-top: 50px;
   font-size: 20px;
-  line-height: 1.5;
 }
 .flexi-modal p.text-annotation {
   color: #8c949b;
@@ -514,7 +514,7 @@ section#section-flexi-cards {
   }
 
   #nav-flexi-mobile .nav.mini.show {
-    top: 45px;
+    top: 66px;
   }
 
   #nav-flexi-scroll-trigger {
@@ -607,6 +607,13 @@ section#section-flexi-cards {
   #section-flexi-promotions .slide-flexi-promotions .item {
     width: 100%;
   }
+
+  .flexi-modal h5.modal-title.long-title {
+    font-size: 16px;
+  }
+  .flexi-modal p.table-title {
+    font-size: 17.5px;
+  }
 }
 @media (max-width: 576px) {
   .page-flexi-header {
@@ -619,6 +626,10 @@ section#section-flexi-cards {
     margin-top: 5px;
     font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
     font-size: 4.5vw;
+  }
+
+  #nav-flexi-mobile .nav.mini.show {
+    top: 45px;
   }
 
   section#section-flexi-shops p {

@@ -538,6 +538,7 @@ section#section-flexi-cards {
     margin-bottom: 15px;
     font-family: $font-normal;
     font-size: 14px;
+    line-height: 1.5;
 
     strong {
       font-family: $font-bold;
@@ -546,7 +547,6 @@ section#section-flexi-cards {
     &.table-title {
       margin-top: 50px;
       font-size: 20px;
-      line-height: 1.5;
     }
 
     &.text-annotation {
@@ -651,7 +651,7 @@ section#section-flexi-cards {
   #nav-flexi-mobile {
     .nav.mini {
       &.show {
-        top: 45px;
+        top: 66px;
       }
     }
   }
@@ -779,6 +779,16 @@ section#section-flexi-cards {
       }
     }
   }
+
+  .flexi-modal {
+    h5.modal-title.long-title {
+      font-size: 16px;
+    }
+
+    p.table-title {
+      font-size: 17.5px;
+    }
+  }
 }
 
 
@@ -795,6 +805,14 @@ section#section-flexi-cards {
       margin-top: 5px;
       font-family: $font-thin;
       font-size: 4.5vw;
+    }
+  }
+
+  #nav-flexi-mobile {
+    .nav.mini {
+      &.show {
+        top: 45px;
+      }
     }
   }
 
