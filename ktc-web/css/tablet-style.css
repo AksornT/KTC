@@ -550,11 +550,11 @@
     line-height: 32px;
   }
 
-  a.card-register-center{
-    margin: 40px 0 60px 0;
-  }
   a.card-register-center {
     margin: 35px 0 70px 0;
+    font-size: 14px;
+    min-width: 108px;
+    padding: 8px 22px;
   }
   .box-more {
     margin-top: 40px;
