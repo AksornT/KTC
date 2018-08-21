@@ -2679,4 +2679,13 @@ section#section-flexi-cards {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .icon-store {
+    width: 116px;
+    margin: 8px 9px 0 9px;
+  }
+
+  .withStore.only-mobile{
+  	padding-bottom: 54px;
+  }
 }
