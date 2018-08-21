@@ -75,14 +75,16 @@ $(document).on('scroll', function() {
     };
 
     //flexi navbar
-    if($(this).scrollTop() >= $('#nav-flexi-scroll-trigger').offset().top) {
+    var navFlexiScrollTrigger = $('#nav-flexi-scroll-trigger');
+    var navFlexiMobileScrollTrigger = $('#nav-flexi-mobile-scroll-trigger');
+    if(navFlexiScrollTrigger.length > 0 && $(this).scrollTop() >= navFlexiScrollTrigger.offset().top) {
         $('#nav-flexi').addClass('fixed');
     } else {
         $('#nav-flexi').removeClass('fixed');
         $('#nav-flexi-navbar li.nav-item:first-child').addClass('active');
     }
 
-    if($(this).scrollTop() >= $('#nav-flexi-mobile-scroll-trigger').offset().top) {
+    if(navFlexiMobileScrollTrigger.length > 0 && $(this).scrollTop() >= navFlexiMobileScrollTrigger.offset().top) {
         $('#nav-flexi-mobile .nav.mini').addClass('show');
     } else {
         $('#nav-flexi-mobile .nav.mini').removeClass('show');
