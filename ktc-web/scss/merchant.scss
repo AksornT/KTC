@@ -41,6 +41,12 @@ article#page-merchant-content {
   section {
     border-bottom: none;
   }
+
+  h4 {
+    &::after {
+      background-color: $color-blue;
+    }
+  }
 }
 
 .btn.button-shop-register {
@@ -72,4 +78,55 @@ article#page-merchant-content {
   .btn.button-shop-register {
     margin-top: 30px;
   }
+}
+
+section#section-merchant-card-type {
+  .row:first-child {
+    margin-bottom: 30px;
+  }
+  .list-card-vendors {
+    display: flex;
+    margin: 30px auto;
+    width: 45vw;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      padding: 20px 0;
+    }
+  }
+
+  .list-payment-services {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+
+    .item-payment-service {
+      padding: 0 20px;
+      width: 20%;
+      text-align: center;
+
+      h5 {
+        font-family: $font-normal;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+/* Merchant Page - tablet - @korstudio */
+@include tablet {
+
+}
+
+/* Merchant Page - mobile - @korstudio */
+@include mobile {
+
 }

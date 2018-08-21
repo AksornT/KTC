@@ -29,6 +29,9 @@ article.page-content img {
 article#page-merchant-content section {
   border-bottom: none;
 }
+article#page-merchant-content h4::after {
+  background-color: #045AA7;
+}
 
 .btn.button-shop-register {
   padding: 5px 30px;
@@ -66,3 +69,40 @@ article#page-merchant-content section {
 .page-merchant-header .btn.button-shop-register {
   margin-top: 30px;
 }
+
+section#section-merchant-card-type .row:first-child {
+  margin-bottom: 30px;
+}
+section#section-merchant-card-type .list-card-vendors {
+  display: flex;
+  margin: 30px auto;
+  width: 45vw;
+  justify-content: space-around;
+  align-items: center;
+}
+section#section-merchant-card-type .list-card-vendors li {
+  padding: 20px 0;
+}
+section#section-merchant-card-type .list-payment-services {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service {
+  padding: 0 20px;
+  width: 20%;
+  text-align: center;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service h5 {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Merchant Page - tablet - @korstudio */
+/* Merchant Page - mobile - @korstudio */
