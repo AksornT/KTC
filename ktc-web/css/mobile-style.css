@@ -634,6 +634,35 @@
     line-height: 20px;
   }
 
+  /* Flexi Page - @korstudio */
+  .page-flexi-header {
+    height: 50vw;
+  }
+  .page-flexi-header img {
+    width: 75px;
+  }
+  .page-flexi-header h2 {
+    margin-top: 5px;
+    font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+    font-size: 4.5vw;
+  }
 
+  #nav-flexi-mobile .nav.mini.show {
+    top: 45px;
+  }
 
+  section#section-flexi-shops p {
+    font-size: 3.7vw;
+  }
+  section#section-flexi-shops a.button-contact-shop {
+    margin-top: 0;
+    font-size: 3.7vw;
+  }
+
+  #section-flexi-promotions .slide-flexi-promotions .item .slide-title {
+    padding-top: 20px;
+  }
+  #section-flexi-promotions .slide-flexi-promotions .item p {
+    font-size: 12px;
+  }
 }

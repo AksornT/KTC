@@ -21,13 +21,39 @@ $(document).ready(function() {
     });
 
     //flexi page nav
+    var flexiNavScrollTo = function(elementId, offset) {
+        offset = offset == null ? 0 : offset;
+        $('html, body').animate({
+            scrollTop: $(elementId).offset().top - offset
+        }, 800);
+    };
     $("body").scrollspy({target: "#nav-flexi-navbar", offset: 180});
+    $('body').on('activate.bs.scrollspy', function (event) {
+        //sync scrollspy to other menu
+        var currentSection = event.target.firstElementChild.hash;
+        $("#nav-flexi-modal li.nav-item").each(function(i, el) {
+            var $el = $(el);
+            if (el.firstElementChild.hash === currentSection) {
+                $el.addClass("active");
+            } else {
+                $el.removeClass("active");
+            }
+            console.log(el.firstElementChild.hash, currentSection);
+        });
+    });
     $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 150
-        }, 800);
+        flexiNavScrollTo(hash, 150);
+    });
+
+    $("#nav-flexi-mobile a.nav-link, #nav-flexi-modal .nav a.nav-link").each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            flexiNavScrollTo(hash, 100);
+            $("#nav-flexi-modal").modal("hide");
+        }, {passive: false})
     });
 });
 
@@ -54,6 +80,13 @@ $(document).on('scroll', function() {
     } else {
         $('#nav-flexi').removeClass('fixed');
         $('#nav-flexi-navbar li.nav-item:first-child').addClass('active');
+    }
+
+    if($(this).scrollTop() >= $('#nav-flexi-mobile-scroll-trigger').offset().top) {
+        $('#nav-flexi-mobile .nav.mini').addClass('show');
+    } else {
+        $('#nav-flexi-mobile .nav.mini').removeClass('show');
+        // $('#nav-flexi-mobile .nav.mini li.nav-item:first-child').addClass('active');
     }
 });
 
