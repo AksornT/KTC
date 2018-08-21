@@ -1962,7 +1962,7 @@ h4.content-title:after{
 }
 
 .faq-answer{
-	padding: 9px 0 9px 15px;
+	padding: 12px 0 12px 15px;
 	font-size: 14px;
 	color: #000;
 	line-height: 20px;
@@ -2070,7 +2070,7 @@ h4.content-title:after{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 .detail-register h3:after {
-  height: 4px;
+  height: 2px;
   width: 50px;
   background: #CF3339;
   position: absolute;
@@ -2080,9 +2080,7 @@ h4.content-title:after{
 }
 .detail-register{
 	background-color: rgba(91, 102, 112, 0.05);
-	background-position: center;
-	background-size: cover;
-	padding: 30px 0 60px 0;
+	padding: 60px 0;
 }
 .detail-register-desc h5{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -2652,6 +2650,7 @@ section#section-flexi-cards {
     line-height: 42px;
 	}
 	.box-cash-long .content-cash {
+		top: calc(50% - 70px);
     left: calc(50% - 240px);
 	}
 	.box-cash-long .content-cash span{
@@ -2688,4 +2687,8 @@ section#section-flexi-cards {
   .withStore.only-mobile{
   	padding-bottom: 54px;
   }
+	.box-more {
+    margin-top: 60px;
+    margin-bottom: 60px;
+	}
 }
