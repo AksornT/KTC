@@ -624,12 +624,12 @@
     width: 100%;
   }
   .faq-head .collapsed {
-    padding: 20px 0;
+    padding: 5px 0;
     font-size: 14px;
     line-height: 20px;
   }
   .faq-head > div {
-    padding: 20px 0;
+    padding: 5px 0;
     font-size: 14px;
     line-height: 20px;
   }

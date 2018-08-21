@@ -1986,14 +1986,8 @@ h4.content-title:after{
 		display: block;
 		padding-top: 14px;
 }
-.box-cash img{
-	width: 100%;
-}
 .box-cash{
 	margin-bottom: 40px;
-}
-.box-img-cash{
-	padding: 0 0;
 }
 .box-cash-long{
 	background-color: rgba(91, 102, 112, 0.05);
@@ -2676,12 +2670,12 @@ section#section-flexi-cards {
 		padding-top: 35px;
 	}
 	.faq-head .collapsed {
-    padding: 12px 0;
+    padding: 5px 0;
     font-size: 14px;
     line-height: 20px;
   }
   .faq-head > div {
-    padding: 20px 0;
+    padding: 5px 0;
     font-size: 14px;
     line-height: 20px;
   }
