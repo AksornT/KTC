@@ -2691,4 +2691,8 @@ section#section-flexi-cards {
     margin-top: 60px;
     margin-bottom: 60px;
 	}
+
+	.with-loan-img p{
+		max-width: 100%;
+	}
 }
