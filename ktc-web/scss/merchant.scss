@@ -1,0 +1,33 @@
+/* Merchant Page - @korstudio */
+@import "variables";
+
+.btn.button-shop-register {
+  @include default-action-button($color-blue);
+}
+
+.page-merchant-header {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 500px;
+  align-items: center;
+  background: #ffffff url("../img/img-merchant-header.jpg") no-repeat center;
+  background-size: cover;
+  font-family: $font-normal;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.5;
+
+    small {
+      display: block;
+      font-family: $font-thin;
+      font-size: 28px;
+    }
+  }
+
+  .btn.button-shop-register {
+    margin-top: 30px;
+  }
+}
