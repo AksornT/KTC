@@ -610,11 +610,15 @@
   }
   .content-title{
     font-size: 23px;
+    padding-top: 40px;
   }
   h4.content-title{
     text-align: center;
     padding-top: 0px;
     margin-bottom: 10px;
+  }
+  .sub-title{
+    margin-bottom: 0px;
   }
 
   .two-icon-link > div{

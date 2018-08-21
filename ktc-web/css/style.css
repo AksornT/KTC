@@ -1962,7 +1962,7 @@ h4.content-title:after{
 }
 
 .faq-answer{
-	padding: 9px 0 9px 15px;
+	padding: 12px 0 12px 15px;
 	font-size: 14px;
 	color: #000;
 	line-height: 20px;
@@ -2652,6 +2652,7 @@ section#section-flexi-cards {
     line-height: 42px;
 	}
 	.box-cash-long .content-cash {
+		top: calc(50% - 70px);
     left: calc(50% - 240px);
 	}
 	.box-cash-long .content-cash span{
@@ -2679,4 +2680,8 @@ section#section-flexi-cards {
     font-size: 14px;
     line-height: 20px;
   }
+	.box-more {
+    margin-top: 60px;
+    margin-bottom: 60px;
+	}
 }
