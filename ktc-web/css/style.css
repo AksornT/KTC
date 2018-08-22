@@ -2664,6 +2664,10 @@ section#section-flexi-cards {
 	line-height: 82px;
 }
 
+.sticky-left li.only-mobile{
+	display: none;
+}
+
 .sticky-left li a{
 	color: #000;
 	width: 100%;
@@ -2700,6 +2704,23 @@ section#section-flexi-cards {
 	margin: 18px 0 18px 20px;
 	display: inline-block;
 	min-width: 0;
+}
+
+.for-sticky{
+	position: relative;
+	top: -148px;
+}
+
+.sticky-white-menu-list li a{
+	line-height: 42px;
+	font-size: 14px;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+	border-bottom: rgba(91,102,112,.15) solid 1px;
+	display: block;
+}
+
+.sticky-white-menu-list li a:hover{
+	color: #CF3339;
 }
 
 @media (min-width: 1366px) {

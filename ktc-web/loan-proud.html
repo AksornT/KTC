@@ -272,9 +272,10 @@
     <div class="content-wrap">
       <div class="sticky-left">
         <ul>
-          <li><a href="#">สิทธิประโยชน์</a></li>
-          <li><a href="#">รายละเอียดการสมัคร</a></li>
-          <li><a href="#">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
+          <li class="only-desktop"><a href="#privillage">สิทธิประโยชน์</a></li>
+          <li class="only-desktop"><a href="#detail-register">รายละเอียดการสมัคร</a></li>
+          <li class="only-desktop"><a href="#proud-regis">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
+          <li class="only-mobile"><img id="sticky-ham" data-toggle="modal" data-target="#sticky-modal"  src="img/ico-menu-sticky.png"></li>
         </ul>
       </div>
       <div class="sticky-right">
@@ -296,6 +297,7 @@
         <div class="btn-wrap">
           <a class="card-register-center" href="#proud-register">สมัครบัตร</a>
         </div>
+        <div id="privillage" class="for-sticky"></div>
         <div class="row text-head-wrap">
           <div class="col-lg-6">สะดวกสบายกับบริการ เบิกถอนเงินสดได้ทุกที่ ทุกเวลา</div>
           <div class="col-lg-6 only-mobile">
@@ -361,6 +363,7 @@
           </div>
         </div>
       </div>
+      <div id="detail-register" class="for-sticky"></div>
       <div class="detail-register">
         <h3>รายละเอียดการสมัคร</h3>
         <div class="content-wrap">
@@ -407,6 +410,8 @@
       </div>
 
       <!-- แบบฟอร์มสมัคร -->
+
+      <div id="proud-regis" class="for-sticky"></div>
       <div id="proud-register" class="content-wrap">
         <h2 class="content-title">สมัครบัตรสินเชื่อพร้อมใช้<span> KTC PROUD</span></h2>
         <p class="sub-title">กรุณากรอกข้อมูล เพื่อให้เจ้าหน้าที่ของ KTC ติดต่อกลับ และแนะนำบัตรที่เหมาะสมกับคุณ</p>
@@ -446,15 +451,11 @@
         $("#proud-regis-complete").hide();
 
         // ซ่อน div แบบฟอร์มแล้วโชว์ div ที่กรอกสำเร็จ เมื่อกดส่งข้อมูล
-        $("#sending-form").on('click touch', function () {
-          $("#proud-regis-complete").show();
-          $("#proud-register").hide();
-          window.location.hash = "#proud-regis-complete";
-        });
-
-        //เลื่อนปิด div กรอกสำเร็จ เมื่อกดปิด
-        $("#close-success").on('click touch', function () {
-          $("#proud-regis-complete").fadeOut(300);
+        // กดปิดแล้วจะกลับไปหาแบบฟอร์ม
+        $("#sending-form, #close-success").on('click touch', function () {
+          $("#proud-regis-complete").toggle();
+          $("#proud-register").toggle();
+          window.location.hash = "#proud-regis";
         });
       </script>
 
@@ -873,8 +874,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
     <div id="search-modal" class="modal fade full-modal" tabindex="-1">
@@ -909,5 +908,26 @@
         </div>
       </div>
     </div>
+
+
+  <div id="sticky-modal" class="modal fade full-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="sticky-white-menu-list">
+            <li><a data-dismiss="modal" onclick="javascript:window.location='#privillage'">สิทธิประโยชน์</a></li>
+            <li><a data-dismiss="modal" onclick="javascript:window.location='#detail-register'">รายละเอียดการสมัคร</a></li>
+            <li><a data-dismiss="modal" onclick="javascript:window.location='#proud-regis'">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
