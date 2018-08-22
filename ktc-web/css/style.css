@@ -577,7 +577,7 @@ a:hover{
 	font-size: 16px;
 	margin-bottom: 9px;
 	line-height: 25px;
-	padding-top: 39px;
+	padding-top: 40px;
 }
 
 .footer a{
@@ -599,7 +599,7 @@ a:hover{
 
 .footer-menu{
 	/*padding-left: 30px;*/
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .footer-menu > .col-lg-3{
@@ -855,14 +855,16 @@ button:focus {
 
 .last-piece{
 	border-top: 1px solid #dfe1e1;
-	padding-bottom: 13px;
+}
+.last-piece .row{
+	padding: 15px 0;
 }
 
 .license{
 	font-family: sans-serif;
 	font-size: 12px;
 	line-height: 14px;
-	padding-top: 7px;
+	padding-top: 10px;
 }
 
 .text-right{
