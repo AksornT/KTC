@@ -731,4 +731,36 @@
     height: auto;
     margin: 60px 0 24px 0;
   }
+
+  .sub-sticky{
+    height: 45px;
+  }
+
+  .sticky-left li{
+    line-height: 45px;
+  }
+
+  .sticky-left li.only-desktop{
+    display: none;
+  }
+
+  .sticky-left li.only-mobile {
+    display: inline-block;
+  }
+
+  .sticky-left li img{
+    padding: 18px;
+    margin-left: -18px;
+  }
+
+  .sticky-right .card-register-center{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px 25px;
+    margin: 7px 0 7px 15px;
+  }
+
+  .for-sticky{
+    top: -90px;
+  }
 }

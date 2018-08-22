@@ -1,5 +1,8 @@
 
 @media (max-width: 576px) {
+  .menu-global > .content-wrap{
+    padding: 0 20px;
+  }
   .footer ul a{
     overflow: hidden;
     height: 0;
@@ -706,5 +709,13 @@
 
   .detail-register h3:after{
     height: 2px;
+  }
+
+  .sub-sticky.active{
+    top: 45px;
+  }
+
+  .sub-sticky > .content-wrap{
+    padding: 0 20px;
   }
 }
