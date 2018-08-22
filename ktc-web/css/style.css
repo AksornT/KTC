@@ -1934,6 +1934,7 @@ h4.content-title:after{
 
 .faq-head .collapsed{
 	color: #707070;
+	line-height: 21px;
 }
 
 .faq-head:hover,
@@ -1944,6 +1945,7 @@ h4.content-title:after{
 
 .faq-head > div{
 	position: relative;
+	line-height: 21px;
 }
 
 .faq-head > div:after{
@@ -2671,7 +2673,6 @@ section#section-flexi-cards {
 	.faq-head .collapsed {
     padding: 5px 0;
     font-size: 14px;
-    line-height: 20px;
   }
   .faq-head > div {
     padding: 5px 0;
