@@ -9,6 +9,10 @@ article.page-content {
     &.no-bottom-line {
       border-bottom: none;
     }
+
+    &.alt-color {
+      background: $section-alt-color;
+    }
   }
 
   h4 {
@@ -117,6 +121,68 @@ section#section-merchant-card-type {
         font-size: 16px;
         line-height: 1.5;
       }
+    }
+  }
+}
+
+section#section-merchant-options {
+  *[class*="col"] {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    border-right: 1px solid $color-light-grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  p {
+    font-family: $font-normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+    &.small {
+      font-family: $font-thin;
+    }
+  }
+
+  .content-alipay {
+    text-align: center;
+    justify-content: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .content-flexi {
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .content-forever {
+    img {
+      margin-bottom: 20px;
+
+      &.img-forever-1000 {
+        margin-top: 30px;
+      }
+    }
+
+    p.small {
+      margin-top: auto;
     }
   }
 }

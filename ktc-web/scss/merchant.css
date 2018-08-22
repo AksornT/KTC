@@ -6,6 +6,9 @@ article.page-content section {
 article.page-content section.no-bottom-line {
   border-bottom: none;
 }
+article.page-content section.alt-color {
+  background: #F6F6F7;
+}
 article.page-content h4 {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -102,6 +105,48 @@ section#section-merchant-card-type .list-payment-services .item-payment-service 
   margin-top: 5px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+section#section-merchant-options *[class*="col"] {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #E7E8EA;
+}
+section#section-merchant-options *[class*="col"]:last-child {
+  border-right: none;
+}
+section#section-merchant-options p {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+section#section-merchant-options p.small {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+}
+section#section-merchant-options .content-alipay {
+  text-align: center;
+  justify-content: center;
+}
+section#section-merchant-options .content-alipay p {
+  font-size: 20px;
+}
+section#section-merchant-options .content-flexi > *:last-child {
+  margin-bottom: 0;
+}
+section#section-merchant-options .content-flexi img {
+  margin-bottom: 20px;
+}
+section#section-merchant-options .content-forever img {
+  margin-bottom: 20px;
+}
+section#section-merchant-options .content-forever img.img-forever-1000 {
+  margin-top: 30px;
+}
+section#section-merchant-options .content-forever p.small {
+  margin-top: auto;
 }
 
 /* Merchant Page - tablet - @korstudio */
