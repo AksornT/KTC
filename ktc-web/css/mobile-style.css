@@ -231,7 +231,7 @@
   }
   .menu-responsive-dropdown .menu-responsive{
     position: relative;
-    border-bottom: 0.5px solid #535353;
+    border-bottom: 1px solid rgba(91,102,112,.4);
     padding: 5px 0;
   }
 
