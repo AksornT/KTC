@@ -665,6 +665,10 @@ a:hover{
 	-moz-box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
 	box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.1);
 	padding-right: 2px;
+	opacity: 0;
+}
+.slide-wrap:hover .owl-prev span, .slide-wrap:hover .owl-next span{
+	opacity: 1;
 }
 .owl-next span{
 	padding: 0 0 0 2px;
@@ -1235,13 +1239,14 @@ button:focus {
 }
 
 .profile-name{
-	font-size: 16px;
+	font-size: 13px;
 	color: #fff;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 84px;
+	padding-right: 5px;
 }
 
 .login-btn.logged-in:hover,
@@ -1471,6 +1476,20 @@ button.close{
     padding-top: 35px;
     padding-left: 20px;
 }
+
+.on-default{
+	display: inline-block;
+}
+.on-hover{
+	display: none;
+}
+a:hover .on-default{
+	display: none;
+}
+a:hover .on-hover{
+	display: inline-block;
+}
+
 
 /* creditcard page -eve */
 .content-filter{
