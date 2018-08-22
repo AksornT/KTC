@@ -1,0 +1,132 @@
+/* Merchant Page - @korstudio */
+@import "variables";
+
+article.page-content {
+  section {
+    padding: 60px 0;
+    border-bottom: 1px solid #E6E8EA;
+
+    &.no-bottom-line {
+      border-bottom: none;
+    }
+  }
+
+  h4 {
+    font-family: $font-normal;
+    font-size: 40px;
+    text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 10px auto;
+      width: 50px;
+      height: 2px;
+      background-color: $color-red;
+    }
+
+    &.no-dash {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+article#page-merchant-content {
+  section {
+    border-bottom: none;
+  }
+
+  h4 {
+    &::after {
+      background-color: $color-blue;
+    }
+  }
+}
+
+.btn.button-shop-register {
+  @include default-action-button($color-blue);
+}
+
+.page-merchant-header {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 500px;
+  align-items: center;
+  background: #ffffff url("../img/img-merchant-header.jpg") no-repeat center;
+  background-size: cover;
+  font-family: $font-normal;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.5;
+
+    small {
+      display: block;
+      font-family: $font-thin;
+      font-size: 28px;
+    }
+  }
+
+  .btn.button-shop-register {
+    margin-top: 30px;
+  }
+}
+
+section#section-merchant-card-type {
+  .row:first-child {
+    margin-bottom: 30px;
+  }
+  .list-card-vendors {
+    display: flex;
+    margin: 30px auto;
+    width: 45vw;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      padding: 20px 0;
+    }
+  }
+
+  .list-payment-services {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+
+    .item-payment-service {
+      padding: 0 20px;
+      width: 20%;
+      text-align: center;
+
+      h5 {
+        font-family: $font-normal;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+/* Merchant Page - tablet - @korstudio */
+@include tablet {
+
+}
+
+/* Merchant Page - mobile - @korstudio */
+@include mobile {
+
+}

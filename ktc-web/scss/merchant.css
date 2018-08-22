@@ -1,0 +1,108 @@
+/* Merchant Page - @korstudio */
+article.page-content section {
+  padding: 60px 0;
+  border-bottom: 1px solid #E6E8EA;
+}
+article.page-content section.no-bottom-line {
+  border-bottom: none;
+}
+article.page-content h4 {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+article.page-content h4::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  width: 50px;
+  height: 2px;
+  background-color: #CF3339;
+}
+article.page-content h4.no-dash::after {
+  display: none;
+}
+article.page-content img {
+  max-width: 100%;
+}
+
+article#page-merchant-content section {
+  border-bottom: none;
+}
+article#page-merchant-content h4::after {
+  background-color: #045AA7;
+}
+
+.btn.button-shop-register {
+  padding: 5px 30px;
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  background: #045AA7;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.page-merchant-header {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 500px;
+  align-items: center;
+  background: #ffffff url("../img/img-merchant-header.jpg") no-repeat center;
+  background-size: cover;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.page-merchant-header h1 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+.page-merchant-header h1 small {
+  display: block;
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+}
+.page-merchant-header .btn.button-shop-register {
+  margin-top: 30px;
+}
+
+section#section-merchant-card-type .row:first-child {
+  margin-bottom: 30px;
+}
+section#section-merchant-card-type .list-card-vendors {
+  display: flex;
+  margin: 30px auto;
+  width: 45vw;
+  justify-content: space-around;
+  align-items: center;
+}
+section#section-merchant-card-type .list-card-vendors li {
+  padding: 20px 0;
+}
+section#section-merchant-card-type .list-payment-services {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service {
+  padding: 0 20px;
+  width: 20%;
+  text-align: center;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service h5 {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+section#section-merchant-card-type .list-payment-services .item-payment-service p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Merchant Page - tablet - @korstudio */
+/* Merchant Page - mobile - @korstudio */

@@ -126,7 +126,7 @@
   }
   .menu-responsive-dropdown .menu-responsive{
     position: relative;
-    border-bottom: 0.5px solid #535353;
+    border-bottom: 1px solid rgba(91,102,112,.4);
     padding: 5px 0;
   }
 
@@ -713,7 +713,7 @@
   .fakeBlock{
     display: none;
   }
-  
+
   .proud-regis-complete p {
     font-size: 14px;
     font-family: "Conv_SukhumvitTadmai_Bol";
