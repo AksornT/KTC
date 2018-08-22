@@ -67,6 +67,13 @@ $(document).on('scroll', function() {
         $('.ghost-footer').removeClass('active');
     };
 
+
+    if($(this).scrollTop()>=$('#sticky-trigger').position().top){
+        $('.sub-sticky').addClass('active');
+    }else{
+        $('.sub-sticky').removeClass('active');
+    };
+
 //something appeared on footer
     if($(this).scrollTop()>=$('#foot-trigger').position().top){
         $('.ghost-footer').addClass('active-mobile');

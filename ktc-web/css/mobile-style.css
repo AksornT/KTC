@@ -681,24 +681,6 @@
     font-size: 12px;
   }
 
-  .proud-regis-complete p {
-    font-size: 14px;
-    font-family: "Conv_SukhumvitTadmai_Bol";
-    line-height: 22px;
-    padding-bottom: 10px;
-  }
-
-  .proud-regis-complete span{
-    font-size: 12px;
-    font-family: "Conv_SukhumvitTadmai_Tex";
-  }
-
-  .img-result{
-    width: 84px;
-    height: auto;
-    margin: 60px 0 24px 0;
-  }
-
   .detail-register .content-title{
     padding-top: 0;
     margin-bottom: 41px;

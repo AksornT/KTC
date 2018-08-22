@@ -2601,6 +2601,84 @@ section#section-flexi-cards {
 	min-width: 150px;
 }
 
+
+
+.sub-sticky{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	height: 82px;
+	border-bottom: 1px solid rgba(112,112,112,.15);
+	z-index: 3;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sub-sticky.active{
+	top: 65px;
+	opacity: 1;
+	pointer-events: all;
+}
+
+.sub-sticky .content-wrap{
+	max-width: 1366px;
+	padding: 0 40px;
+}
+
+.sticky-left{
+	float: left;
+	height: 100%;
+	font-size: 0;
+}
+
+.sticky-left li{
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+	margin-right: 40px;
+	line-height: 82px;
+}
+
+.sticky-left li a{
+	color: #000;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.sticky-left li a:hover{
+	color: #CF3339;
+}
+
+.sticky-right{
+	float: right;
+	height: 100%;
+	font-size: 0;
+}
+
+.sticky-right a{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sticky-right a img{
+	opacity: 1;
+}
+
+.sticky-right a:hover img{
+	opacity: 0.5;
+}
+
+.sticky-right .card-register-center{
+	font-size: 16px;
+	padding: 10px 34px;
+	line-height: 26px;
+	margin: 18px 0 18px 20px;
+	display: inline-block;
+	min-width: 0;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
