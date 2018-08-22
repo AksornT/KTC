@@ -149,5 +149,35 @@ section#section-merchant-options .content-forever p.small {
   margin-top: auto;
 }
 
+section#section-merchant-register-form .form-row {
+  margin-top: 50px;
+}
+section#section-merchant-register-form .form-row .form-col.left {
+  padding-right: 45px;
+}
+section#section-merchant-register-form .form-row .form-col.right {
+  padding-left: 45px;
+}
+section#section-merchant-register-form input[type="text"].form-control {
+  padding: 5px 0;
+  font-size: 16px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+section#section-merchant-register-form .row-merchant-options .custom-checkbox {
+  padding-left: 56px;
+}
+section#section-merchant-register-form .row-merchant-options label.custom-control-label::before {
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-color: #8B939A;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
 /* Merchant Page - tablet - @korstudio */
 /* Merchant Page - mobile - @korstudio */

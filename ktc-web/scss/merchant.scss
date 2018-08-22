@@ -187,6 +187,50 @@ section#section-merchant-options {
   }
 }
 
+section#section-merchant-register-form {
+  .form-row {
+    margin-top: 50px;
+    $form-spacing: 80px;
+
+    .form-col {
+      &.left {
+        padding-right: ($form-spacing / 2) + 5px;
+      }
+
+      &.right {
+        padding-left: ($form-spacing / 2) + 5px;
+      }
+    }
+  }
+
+  input[type="text"].form-control {
+    padding: 5px 0;
+    font-size: 16px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+  }
+
+  .row-merchant-options {
+    .custom-checkbox {
+      padding-left: 56px;
+    }
+
+    label.custom-control-label {
+      &::before {
+        top: 0;
+        width: 26px;
+        height: 26px;
+        border-color: #8B939A;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
 /* Merchant Page - tablet - @korstudio */
 @include tablet {
 
