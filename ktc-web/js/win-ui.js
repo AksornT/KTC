@@ -55,6 +55,19 @@ $(document).ready(function() {
             $("#nav-flexi-modal").modal("hide");
         }, {passive: false})
     });
+
+    //for styling form 
+    $('.form-wrap [type="text"]').each(function(){
+      var fLabel = $(this).attr('placeholder');
+      $(this).after( '<label>' + fLabel + '</label>' );
+      $(this).focusout(function(){
+        if ($(this).val().length == 0){
+            $(this).removeClass("hasText");
+        } else {
+            $(this).addClass("hasText");
+        }
+      });
+     });
 });
 
 //change header when scroll down.
@@ -97,6 +110,8 @@ $(document).on('scroll', function() {
         $('#nav-flexi-mobile .nav.mini').removeClass('show');
         // $('#nav-flexi-mobile .nav.mini li.nav-item:first-child').addClass('active');
     }
+
+
 });
 
 //for menu mobile
