@@ -9,6 +9,10 @@ article.page-content {
     &.no-bottom-line {
       border-bottom: none;
     }
+
+    &.alt-color {
+      background: $section-alt-color;
+    }
   }
 
   h4 {
@@ -117,6 +121,214 @@ section#section-merchant-card-type {
         font-size: 16px;
         line-height: 1.5;
       }
+    }
+  }
+}
+
+section#section-merchant-options {
+  *[class*="col"] {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    border-right: 1px solid $color-light-grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  p {
+    font-family: $font-normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+    &.small {
+      font-family: $font-thin;
+    }
+  }
+
+  .content-alipay {
+    text-align: center;
+    justify-content: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .content-flexi {
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .content-forever {
+    img {
+      margin-bottom: 20px;
+
+      &.img-forever-1000 {
+        margin-top: 30px;
+      }
+    }
+
+    p.small {
+      margin-top: auto;
+    }
+  }
+}
+
+section#section-merchant-register-form {
+  .form-row {
+    margin-top: 50px;
+    $form-spacing: 80px;
+
+    .form-col {
+      &.left {
+        padding-right: ($form-spacing / 2) + 5px;
+      }
+
+      &.right {
+        padding-left: ($form-spacing / 2) + 5px;
+      }
+    }
+  }
+
+  .form-control {
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  input[type="text"].form-control {
+    padding: 3px 0;
+    font-family: $font-normal;
+    font-size: 16px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: rgba(90,102,112,.4);
+    border-radius: 0;
+
+    &:focus {
+      border-color: rgba(90,102,112,.4);
+      box-shadow: none;
+    }
+  }
+
+  .row-merchant-options {
+    $checkbox-size: 26px;
+
+    h5 {
+      margin-bottom: 15px;
+      font-family: $font-normal;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .custom-checkbox {
+      margin-top: 30px;
+      padding-left: 56px;
+      height: $checkbox-size;
+
+      /* bootstrap override */
+      .custom-control-input {
+        &:checked ~ .custom-control-label {
+          &::before {
+            border-color: $color-blue;
+            background-color: $color-blue;
+          }
+        }
+
+        &:focus ~ .custom-control-label::before {
+          box-shadow: none;
+        }
+      }
+    }
+
+    label.custom-control-label {
+      font-family: $font-normal;
+      font-size: 16px;
+      line-height: 1.5;
+
+      &::before {
+        top: 0;
+        width: $checkbox-size;
+        height: $checkbox-size;
+        border: 1px solid #8B939A;
+        background-color: #ffffff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+
+      &::after {
+        top: 0;
+        width: $checkbox-size;
+        height: $checkbox-size;
+        background-size: 60%;
+      }
+    }
+  }
+
+  #sending-form {
+    background-color: $color-blue;
+  }
+
+  .row-merchant-download-docs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+
+    .content-col {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn.button-download-link {
+      text-align: left;
+      font-family: $font-normal;
+      font-size: 24px;
+      color: #000000;
+    }
+  }
+}
+
+.contact-ribbon {
+  padding: 17px 15px;
+  background: $color-blue;
+  text-align: center;
+
+  .text-contact {
+    font-family: $font-normal;
+    font-size: 20px;
+    color: #ffffff;
+
+    em {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 28px;
+
+      strong {
+        font-family: $font-bold;
+      }
+    }
+
+    img {
+      display: inline-block;
+      margin-left: 50px;
+      margin-right: 5px;
+      vertical-align: middle;
     }
   }
 }

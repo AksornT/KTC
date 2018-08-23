@@ -329,6 +329,133 @@
       </div>
     </div>
   </section>
+  <section id="section-merchant-options" class="alt-color">
+    <div class="content-wrap">
+      <div class="row">
+        <div class="col-12 col-lg content-alipay">
+          <p>ครบทุกรูปแบบในการชำระค่าใช้จ่าย<br>
+            และรองรับการชำระเงินจากนักท่องเที่ยวจีน<br>
+            ผ่านแอพลิเคชั่น Alipay</p>
+          <img src="img/ico-alipay.png" alt="Alipay">
+        </div>
+        <div class="col-12 col-lg content-flexi">
+          <img src="img/ico-ktc-flexi-colored.png" alt="KTC Flexi">
+          <p>เพิ่มโอกาสการขายด้วย<br>
+            บริการแบ่งชำระผ่านบัตร KTC</p>
+          <img src="img/img-zero-perzent.png" alt="0%">
+          <p class="small">เพิ่มโอกาสการขายด้วยบริการแบ่งชำระ KTC FLEXI ผ่านบัตร KTC<br>
+            แบ่งเบาภาระให้สมาชิกด้วยบริการแบ่งชำระ KTC FLEXI 0%<br>
+            หรือ อัตราดอกเบี้ยพิเศษฯ </p>
+        </div>
+        <div class="col-12 col-lg content-forever">
+          <img src="img/ico-ktc-forever-colored.png" alt="KTC Forever">
+          <p>ขายง่าย แลกคะแนนสะสมได้</p>
+          <img src="img/img-forever-1000.png" class="img-forever-1000" alt="1000">
+          <p class="small">สามารถใช้คะแนนสะสม KTC FOREVER REWARDS<br>
+            ที่ไม่มีวันหมดอายุ แทนเงินสด หรือแลกรับสินค้า / บริการ ณ จุดขาย</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="section-merchant-register-form">
+    <div class="content-wrap">
+      <h4>สมัครร้านค้าสมาชิก</h4>
+      <form action="merchant.html" method="post">
+        <div class="form-row">
+          <div class="col-12 col-md form-col left">
+            <input type="text" name="name" class="form-control" placeholder="ชื่อ - สกุล ผู้ติดต่อ">
+          </div>
+          <div class="col-12 col-md form-col right">
+            <input type="text" name="business-name" class="form-control" placeholder="ชื่อร้าน / ห้าง / บริษัท">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-12 col-md form-col left">
+            <input type="text" name="business-type" class="form-control" placeholder="ประเภทธุรกิจ">
+          </div>
+          <div class="col-12 col-md form-col right">
+            <input type="text" name="tel" class="form-control" placeholder="เบอร์โทรศัพท์ติดต่อ">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-12 col-md form-col left">
+            <input type="text" name="province" class="form-control" placeholder="จังหวัด">
+          </div>
+          <div class="col-12 col-md form-col right">
+            <input type="text" name="city" class="form-control" placeholder="เขต">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-12 col-md-6 form-col left">
+            <input type="text" name="email" class="form-control" placeholder="อีเมล">
+          </div>
+        </div>
+        <div class="form-row row-merchant-options">
+          <div class="col">
+            <h5>กรุณาเลือกบริการรับช่องทางที่ต้องการสมัคร</h5>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-edc">
+              <label class="custom-control-label" for="checkbox-merchant-edc">เครื่องรูดบัตร</label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-mpos">
+              <label class="custom-control-label" for="checkbox-merchant-mpos">เครื่องรูดบัตรแบบพกพา</label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-online">
+              <label class="custom-control-label" for="checkbox-merchant-online">ระบบรับชำระเงินออนไลน์</label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-alipay">
+              <label class="custom-control-label" for="checkbox-merchant-alipay">ระบบชำระเงิน ALIPAY</label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-qrpay">
+              <label class="custom-control-label" for="checkbox-merchant-qrpay">ระบบชำระเงิน QRPAY</label>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkbox-merchant-recurring">
+              <label class="custom-control-label" for="checkbox-merchant-recurring">บริการหักบัญชีบัตรเครดิตลูกค้าอัตโนมัติ</label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <button id="sending-form" class="card-register-center">ส่งข้อมูล</button>
+        </div>
+      </form>
+      <div class="row row-merchant-download-docs">
+        <div class="col-12 col-lg-auto content-col">
+          <img src="img/ico-detail-list.png" alt="">
+          <a href="#" class="btn btn-link underlined button-download-link">ดูรายละเอียดเอกสารประกอบ<br>การสมัครร้านค้าสมาชิก</a>
+        </div>
+        <div class="col-12 col-lg-auto content-col">
+          <img src="img/ico-mobile-touch.png" alt="">
+          <a href="#" class="btn btn-link underlined button-download-link">ดาวน์โหลดใบสมัคร<br>ร้านค้าสมาชิก</a>
+        </div>
+        <div class="col-12 col-lg-auto content-col">
+          <img src="img/ico-mobile-touch.png" alt="">
+          <a href="#" class="btn btn-link underlined button-download-link">ดาวน์โหลดรับสมัคร<br>รับชำระด้วย Alipay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contact-ribbon">
+    <h3 class="text-contact"><em>ติดต่อฝ่ายธุรกิจร้านค้า <img src="img/ico-tel-white.png" alt="Tel"> <strong>02 123 5799</strong></em> ทุกวัน    ตลอด  24  ชั่วโมง</h3>
+  </div>
 </article>
 <!-- /content -->
 

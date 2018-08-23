@@ -6,6 +6,9 @@ article.page-content section {
 article.page-content section.no-bottom-line {
   border-bottom: none;
 }
+article.page-content section.alt-color {
+  background: #F6F6F7;
+}
 article.page-content h4 {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -102,6 +105,159 @@ section#section-merchant-card-type .list-payment-services .item-payment-service 
   margin-top: 5px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+section#section-merchant-options *[class*="col"] {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #E7E8EA;
+}
+section#section-merchant-options *[class*="col"]:last-child {
+  border-right: none;
+}
+section#section-merchant-options p {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+section#section-merchant-options p.small {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+}
+section#section-merchant-options .content-alipay {
+  text-align: center;
+  justify-content: center;
+}
+section#section-merchant-options .content-alipay p {
+  font-size: 20px;
+}
+section#section-merchant-options .content-flexi > *:last-child {
+  margin-bottom: 0;
+}
+section#section-merchant-options .content-flexi img {
+  margin-bottom: 20px;
+}
+section#section-merchant-options .content-forever img {
+  margin-bottom: 20px;
+}
+section#section-merchant-options .content-forever img.img-forever-1000 {
+  margin-top: 30px;
+}
+section#section-merchant-options .content-forever p.small {
+  margin-top: auto;
+}
+
+section#section-merchant-register-form .form-row {
+  margin-top: 50px;
+}
+section#section-merchant-register-form .form-row .form-col.left {
+  padding-right: 45px;
+}
+section#section-merchant-register-form .form-row .form-col.right {
+  padding-left: 45px;
+}
+section#section-merchant-register-form .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+section#section-merchant-register-form input[type="text"].form-control {
+  padding: 3px 0;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgba(90, 102, 112, 0.4);
+  border-radius: 0;
+}
+section#section-merchant-register-form input[type="text"].form-control:focus {
+  border-color: rgba(90, 102, 112, 0.4);
+  box-shadow: none;
+}
+section#section-merchant-register-form .row-merchant-options h5 {
+  margin-bottom: 15px;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+section#section-merchant-register-form .row-merchant-options .custom-checkbox {
+  margin-top: 30px;
+  padding-left: 56px;
+  height: 26px;
+  /* bootstrap override */
+}
+section#section-merchant-register-form .row-merchant-options .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #045AA7;
+  background-color: #045AA7;
+}
+section#section-merchant-register-form .row-merchant-options .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+section#section-merchant-register-form .row-merchant-options label.custom-control-label {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+section#section-merchant-register-form .row-merchant-options label.custom-control-label::before {
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #8B939A;
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+section#section-merchant-register-form .row-merchant-options label.custom-control-label::after {
+  top: 0;
+  width: 26px;
+  height: 26px;
+  background-size: 60%;
+}
+section#section-merchant-register-form #sending-form {
+  background-color: #045AA7;
+}
+section#section-merchant-register-form .row-merchant-download-docs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+}
+section#section-merchant-register-form .row-merchant-download-docs .content-col {
+  display: flex;
+  align-items: center;
+}
+section#section-merchant-register-form .row-merchant-download-docs .btn.button-download-link {
+  text-align: left;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+.contact-ribbon {
+  padding: 17px 15px;
+  background: #045AA7;
+  text-align: center;
+}
+.contact-ribbon .text-contact {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.contact-ribbon .text-contact em {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 28px;
+}
+.contact-ribbon .text-contact em strong {
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+}
+.contact-ribbon .text-contact img {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 /* Merchant Page - tablet - @korstudio */
