@@ -1991,7 +1991,7 @@ h4.content-title:after{
 	transform: rotate(0deg);
 }
 
-.faq-answer{
+.faq-answer > div{
 	padding: 12px 0 12px 15px;
 	font-size: 14px;
 	color: #000;
@@ -2753,6 +2753,10 @@ section#section-flexi-cards {
 	color: #CF3339;
 	font-size: 12px;
 	top: 38px;
+}
+
+.panel-heading[role='tab'] {
+  cursor: pointer;
 }
 
 @media (min-width: 1366px) {
