@@ -384,6 +384,14 @@ a:hover{
     opacity: 1;
 }
 
+.menu-global.alway-mini{
+	margin: 0;
+}
+
+.menu-global.alway-mini .open-on-top{
+	display: none;
+}
+
 .open-on-top h4{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 28px;
@@ -683,7 +691,7 @@ a:hover{
 
 .index-slide2 .owl-nav button.owl-prev{
 	position: absolute;
-	top: 8vw;
+	top: 9.5vw;
 	left: -30px;
 	transform: translateY(-50%);
 	opacity: 1;
@@ -855,6 +863,8 @@ button:focus {
 
 .last-piece{
 	border-top: 1px solid #dfe1e1;
+	padding-bottom: 13px;
+	padding-top: 8px;
 }
 .last-piece .row{
 	padding: 15px 0;
@@ -864,7 +874,7 @@ button:focus {
 	font-family: sans-serif;
 	font-size: 12px;
 	line-height: 14px;
-	padding-top: 10px;
+	padding-top: 12px;
 }
 
 .text-right{
@@ -1865,18 +1875,15 @@ a.card-register-center{
     font-family: 'Conv_SukhumvitTadmai_Tex';
 	margin-top: 60px;
 	height: 30px;
+	border-radius: 0;
 }
 
 .form-wrap input::placeholder{
-	color: rgba(90,102,112,.7);
+	color: #fff;
 }
 
 .form-wrap input:focus{
 	outline: none;
-}
-
-.form-wrap input:focus::placeholder{
-	color: #fff;
 }
 
 .input-notice{
@@ -2721,6 +2728,31 @@ section#section-flexi-cards {
 
 .sticky-white-menu-list li a:hover{
 	color: #CF3339;
+}
+
+.form-wrap input[type="text"] + label{
+	position: absolute;
+    top: 65px;
+    left: 15px;
+    color: rgba(90,102,112,.7);
+    pointer-events: none;
+    opacity: 1;
+}
+
+.form-wrap input[type="text"]:focus{
+	border-bottom: 1px solid #CF3339;
+}
+
+.form-wrap input[type="text"].hasText + label{
+	font-size: 12px;
+	top: 38px;
+}
+
+.form-wrap input[type="text"]:focus + label,
+.form-wrap input[type="text"].hasText:focus + label{
+	color: #CF3339;
+	font-size: 12px;
+	top: 38px;
 }
 
 @media (min-width: 1366px) {
