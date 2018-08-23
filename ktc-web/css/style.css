@@ -296,6 +296,7 @@ a:hover{
 
 .menu-global > .content-wrap{
     padding: 0 30px;
+		max-width: none;
     position: fixed;
     z-index: 4;
     max-width: none;
@@ -587,7 +588,7 @@ a:hover{
 	font-size: 16px;
 	margin-bottom: 9px;
 	line-height: 25px;
-	padding-top: 39px;
+	padding-top: 40px;
 }
 
 .footer a{
@@ -609,7 +610,7 @@ a:hover{
 
 .footer-menu{
 	/*padding-left: 30px;*/
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .footer-menu > .col-lg-3{
@@ -867,6 +868,9 @@ button:focus {
 	border-top: 1px solid #dfe1e1;
 	padding-bottom: 13px;
 	padding-top: 8px;
+}
+.last-piece .row{
+	padding: 15px 0;
 }
 
 .license{
