@@ -298,6 +298,7 @@ a:hover{
     padding: 0 30px;
     position: fixed;
     z-index: 4;
+    max-width: none;
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
@@ -386,6 +387,7 @@ a:hover{
 
 .menu-global.alway-mini{
 	margin: 0;
+	padding-bottom: 66px;
 }
 
 .menu-global.alway-mini .open-on-top{

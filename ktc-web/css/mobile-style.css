@@ -306,6 +306,11 @@
     width: 87vw;
     height: 45px;
   }
+
+  .menu-global.alway-mini{
+    padding-bottom: 45px;
+  }
+
   #ktc-logo{
     position: relative;
     z-index: 6;
