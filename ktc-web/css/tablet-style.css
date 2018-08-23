@@ -61,6 +61,10 @@
     margin-left: 14px;
   }
 
+  .alway-mini .menu-mobile {
+    width: 18px;
+  }
+
   .menu-responsive-dropdown{
     position: absolute;
     top: 0;

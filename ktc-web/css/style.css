@@ -1872,6 +1872,7 @@ a.card-register-center{
     font-family: 'Conv_SukhumvitTadmai_Tex';
 	margin-top: 60px;
 	height: 30px;
+	border-radius: 0;
 }
 
 .form-wrap input::placeholder{
