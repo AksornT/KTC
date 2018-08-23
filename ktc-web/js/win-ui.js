@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('#menu-global').addClass('mini-header alway-mini');
+    $('#menu-global.expand-menu').removeClass('mini-header alway-mini');
 	$('.footer-menu h3').on('click touch', function () {
         $('.footer-menu h3').not(this).each(function(){
 	        $(this).removeClass('active');

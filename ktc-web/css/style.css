@@ -384,6 +384,14 @@ a:hover{
     opacity: 1;
 }
 
+.menu-global.alway-mini{
+	margin: 0;
+}
+
+.menu-global.alway-mini .open-on-top{
+	display: none;
+}
+
 .open-on-top h4{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 28px;
