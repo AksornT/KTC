@@ -281,7 +281,38 @@
   </div>
 </header>
 
+<!-- start sub-sticky -->
+<div class="sub-sticky">
+  <div class="content-wrap">
+    <div class="sticky-left">
+      <ul>
+        <li class="only-desktop"><a href="#">เครื่องรูดบัตร</a></li>
+        <li class="only-desktop"><a href="#">เครื่องรูดบัตรแบบพกพา</a></li>
+        <li class="only-desktop"><a href="#">ระบบรับชำระเงินออนไลน์</a></li>
+        <li class="only-desktop"><a href="#">ระบบชำระเงิน ALIPAY</a></li>
+        <li class="only-mobile"><img id="sticky-ham" data-toggle="modal" data-target="#sticky-modal"  src="img/ico-menu-sticky.png"></li>
+      </ul>
+    </div>
+    <div class="sticky-right">
+      <!-- dropdown -->
+      <div class="dropdown sticky-dropdown">
+        <button class="btn dropdown-toggle" type="button" id="sticky-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          เพิ่มเติม
+        </button>
+        <div class="dropdown-menu" aria-labelledby="sticky-dropdown-button">
+          <a class="dropdown-item" href="#">ระบบชำระเงิน QRPAY</a>
+          <a class="dropdown-item" href="#">บริการหักบัญชีบัตรเครดิตลูกค้าอัตโนมัติ</a>
+        </div>
+      </div>
+      <a href="#"><img src="img/ico-sticky-link.png"></a>
+      <a href="#form-anchor" class="btn button-shop-register nav-center-v">สมัครร้านค้าสมาชิก</a>
+    </div>
+  </div>
+</div>
+<!-- end sub-sticky -->
+
 <article id="page-merchant-content" class="page-content">
+  <div id="sticky-trigger"></div>
   <section id="section-merchant-card-type">
     <div class="content-wrap">
       <div class="row">
@@ -358,6 +389,7 @@
     </div>
     
   </section>
+  <div id="form-anchor" class="for-sticky"></div>
   <section id="section-merchant-register-form">
     <div class="content-wrap">
       <h4>สมัครร้านค้าสมาชิก</h4>

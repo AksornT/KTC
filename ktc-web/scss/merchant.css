@@ -1,4 +1,68 @@
 /* Merchant Page - @korstudio */
+.sub-sticky .dropdown {
+  display: inline-block;
+  margin-right: 20px;
+}
+.sub-sticky .dropdown .btn.focus, .sub-sticky .dropdown .btn:focus {
+  box-shadow: none;
+}
+.sub-sticky .dropdown .dropdown-menu {
+  display: block;
+  padding: 0;
+  min-width: 300px;
+  top: 50px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+.sub-sticky .dropdown .dropdown-menu .dropdown-item {
+  position: relative;
+  padding: 15px 20px;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+.sub-sticky .dropdown .dropdown-menu .dropdown-item::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: 10px;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 1px;
+  background: #F5F6F6;
+}
+.sub-sticky .dropdown .dropdown-menu .dropdown-item:last-child::after {
+  display: none;
+}
+.sub-sticky .dropdown.open .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+.sub-sticky .dropdown.open .dropdown-toggle::after {
+  transform: rotate(-180deg);
+}
+.sub-sticky .dropdown-toggle {
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+.sub-sticky .dropdown-toggle::after {
+  content: "\f107";
+  width: auto;
+  height: auto;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  vertical-align: baseline;
+}
+
 article.page-content section {
   padding: 60px 0;
   border-bottom: 1px solid #E6E8EA;
@@ -47,6 +111,12 @@ article#page-merchant-content h4::after {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn.button-shop-register.nav-center-v {
+  padding: 10px 15px;
+  margin: 18px 0 18px 20px;
+  display: inline-block;
+  min-width: 0;
 }
 
 .page-merchant-header {
