@@ -59,16 +59,20 @@ $(document).ready(function() {
     });
     
     //global sub-nav sticky bar
-    $('.sub-sticky .sticky-left a').on('click touch', function (event) {
+    $('.sub-sticky a').on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        navScrollTo(hash);
+        if (hash !== "#") {
+            navScrollTo(hash);
+        }
     });
-    $('.sub-sticky .sticky-left a').each(function (index, elem) {
+    $('.sub-sticky a').each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
-            navScrollTo(hash);
+            if (hash !== "#") {
+                navScrollTo(hash);
+            }
         }, {passive: false})
     });
 
