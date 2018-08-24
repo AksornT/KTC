@@ -333,6 +333,11 @@ section#section-merchant-register-form {
   }
 }
 
+#faq ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+
 /* Merchant Page - tablet - @korstudio */
 @include tablet {
 
