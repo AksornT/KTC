@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     //flexi page nav
-    var flexiNavScrollTo = function(elementId, offset) {
+    var navScrollTo = function(elementId, offset) {
         offset = offset == null ? 0 : offset;
         $('html, body').animate({
             scrollTop: $(elementId).offset().top - offset
@@ -46,15 +46,29 @@ $(document).ready(function() {
     $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        flexiNavScrollTo(hash, 150);
+        navScrollTo(hash, 150);
     });
 
     $("#nav-flexi-mobile a.nav-link, #nav-flexi-modal .nav a.nav-link").each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
-            flexiNavScrollTo(hash, 100);
+            navScrollTo(hash, 100);
             $("#nav-flexi-modal").modal("hide");
+        }, {passive: false})
+    });
+    
+    //global sub-nav sticky bar
+    $('.sub-sticky .sticky-left a').on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        navScrollTo(hash);
+    });
+    $('.sub-sticky .sticky-left a').each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            navScrollTo(hash);
         }, {passive: false})
     });
 
