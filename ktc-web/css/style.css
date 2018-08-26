@@ -2548,15 +2548,18 @@ section#section-flexi-cards {
 	margin-bottom: 60px;
 }
 #section-flexi-shops .row {
-	min-height: 450px;
 	background: #F6F6F6;
 }
 #section-flexi-shops div[class*="col"] {
 	padding: 60px 30px;
+}
+#section-flexi-shops .box-full-img {
+	min-height: 450px;
+	padding: 60px 30px;
 	background: transparent no-repeat center;
 	background-size: cover;
 }
-#section-flexi-shops div[class*="col"].box-center-v {
+#section-flexi-shops .box-center-v {
 	align-self: center;
 }
 #section-flexi-shops p {
