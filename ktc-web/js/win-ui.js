@@ -67,12 +67,14 @@ $(document).on('scroll', function() {
         $('.ghost-footer').removeClass('active');
     };
 
-
-    if($(this).scrollTop()>=$('#sticky-trigger').position().top){
+    var stickyTrigger = $('#sticky-trigger');
+    var isStickyTriggerExisted = stickyTrigger.length > 0;
+    if(isStickyTriggerExisted &&
+        $(this).scrollTop() >= stickyTrigger.position().top){
         $('.sub-sticky').addClass('active');
     }else{
         $('.sub-sticky').removeClass('active');
-    };
+    }
 
 //something appeared on footer
     if($(this).scrollTop()>=$('#foot-trigger').position().top){
