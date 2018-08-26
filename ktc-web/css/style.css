@@ -639,6 +639,37 @@ a:hover{
 	transform: none;
 }
 
+/* articles and sections */
+article.page-content section {
+	padding: 60px 0;
+	border-bottom: 1px solid #E6E8EA;
+}
+article.page-content section.no-bottom-line {
+	border-bottom: none;
+}
+article.page-content section.alt-color {
+	background: #F6F6F7;
+}
+article.page-content h4 {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+article.page-content h4::after {
+	content: '';
+	display: block;
+	margin: 10px auto;
+	width: 50px;
+	height: 2px;
+	background-color: #CF3339;
+}
+article.page-content h4.no-dash::after {
+	display: none;
+}
+article.page-content img {
+	max-width: 100%;
+}
+
 /* slide - eve */
 .item img{
 	width: 100%;
