@@ -61,6 +61,16 @@
     margin-left: 14px;
   }
 
+  .alway-mini.menu-global .on-right .menu-mobile {
+    background: url(../img/ico-menu-mobile.png);
+    background-size: 100%;
+    opacity: 1;
+    pointer-events: all;
+    width: 18px;
+    height: 16px;
+    margin-left: 14px;
+  }
+
   .menu-responsive-dropdown{
     position: absolute;
     top: 0;

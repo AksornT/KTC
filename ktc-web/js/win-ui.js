@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('#menu-global').addClass('mini-header alway-mini');
+    $('#menu-global.expand-menu').removeClass('mini-header alway-mini');
 	$('.footer-menu h3').on('click touch', function () {
         $('.footer-menu h3').not(this).each(function(){
 	        $(this).removeClass('active');
@@ -21,7 +23,7 @@ $(document).ready(function() {
     });
 
     //flexi page nav
-    var flexiNavScrollTo = function(elementId, offset) {
+    var navScrollTo = function(elementId, offset) {
         offset = offset == null ? 0 : offset;
         $('html, body').animate({
             scrollTop: $(elementId).offset().top - offset
@@ -44,17 +46,48 @@ $(document).ready(function() {
     $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        flexiNavScrollTo(hash, 150);
+        navScrollTo(hash, 150);
     });
 
     $("#nav-flexi-mobile a.nav-link, #nav-flexi-modal .nav a.nav-link").each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
-            flexiNavScrollTo(hash, 100);
+            navScrollTo(hash, 100);
             $("#nav-flexi-modal").modal("hide");
         }, {passive: false})
     });
+    
+    //global sub-nav sticky bar
+    $('.sub-sticky a').on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        if (hash !== "#") {
+            navScrollTo(hash);
+        }
+    });
+    $('.sub-sticky a').each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            if (hash !== "#") {
+                navScrollTo(hash);
+            }
+        }, {passive: false})
+    });
+
+    //for styling form 
+    $('.form-wrap [type="text"]').each(function(){
+      var fLabel = $(this).attr('placeholder');
+      $(this).after( '<label>' + fLabel + '</label>' );
+      $(this).focusout(function(){
+        if ($(this).val().length == 0){
+            $(this).removeClass("hasText");
+        } else {
+            $(this).addClass("hasText");
+        }
+      });
+     });
 });
 
 //change header when scroll down.
@@ -99,6 +132,8 @@ $(document).on('scroll', function() {
         $('#nav-flexi-mobile .nav.mini').removeClass('show');
         // $('#nav-flexi-mobile .nav.mini li.nav-item:first-child').addClass('active');
     }
+
+
 });
 
 //for menu mobile

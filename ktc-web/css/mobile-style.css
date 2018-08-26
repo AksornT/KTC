@@ -306,6 +306,11 @@
     width: 87vw;
     height: 45px;
   }
+
+  .menu-global.alway-mini{
+    padding-bottom: 45px;
+  }
+
   #ktc-logo{
     position: relative;
     z-index: 6;
@@ -701,6 +706,25 @@
 
   .form-wrap > div:nth-child(1) input{
     margin-top: 3px;
+  }
+
+  .form-wrap input[type="text"] + label{
+    top: 62px;
+  }
+
+  .form-wrap input[type="text"]:focus + label,
+  .form-wrap input[type="text"].hasText + label,
+  .form-wrap input[type="text"].hasText:focus + label{
+    top: 35px;
+  }
+
+  .form-wrap > div:nth-child(1) input[type="text"] + label{
+    top: 12px;
+  }
+
+  .form-wrap > div:nth-child(1) input[type="text"]:focus + label,
+  .form-wrap > div:nth-child(1) input[type="text"].hasText + label{
+    top: -15px;
   }
 
   h4.content-title.faq-title{

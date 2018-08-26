@@ -281,7 +281,38 @@
   </div>
 </header>
 
+<!-- start sub-sticky -->
+<div class="sub-sticky">
+  <div class="content-wrap">
+    <div class="sticky-left">
+      <ul>
+        <li class="only-desktop"><a href="#">เครื่องรูดบัตร</a></li>
+        <li class="only-desktop"><a href="#">เครื่องรูดบัตรแบบพกพา</a></li>
+        <li class="only-desktop"><a href="#">ระบบรับชำระเงินออนไลน์</a></li>
+        <li class="only-desktop"><a href="#">ระบบชำระเงิน ALIPAY</a></li>
+        <li class="only-mobile"><img id="sticky-ham" data-toggle="modal" data-target="#sticky-modal"  src="img/ico-menu-sticky.png"></li>
+      </ul>
+    </div>
+    <div class="sticky-right">
+      <!-- dropdown -->
+      <div class="dropdown sticky-dropdown">
+        <button class="btn dropdown-toggle" type="button" id="sticky-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          เพิ่มเติม
+        </button>
+        <div class="dropdown-menu" aria-labelledby="sticky-dropdown-button">
+          <a class="dropdown-item" href="#">ระบบชำระเงิน QRPAY</a>
+          <a class="dropdown-item" href="#">บริการหักบัญชีบัตรเครดิตลูกค้าอัตโนมัติ</a>
+        </div>
+      </div>
+      <a href="#"><img src="img/ico-sticky-link.png"></a>
+      <a href="#form-anchor" class="btn button-shop-register nav-center-v">สมัครร้านค้าสมาชิก</a>
+    </div>
+  </div>
+</div>
+<!-- end sub-sticky -->
+
 <article id="page-merchant-content" class="page-content">
+  <div id="sticky-trigger"></div>
   <section id="section-merchant-card-type">
     <div class="content-wrap">
       <div class="row">
@@ -358,6 +389,7 @@
     </div>
     
   </section>
+  <div id="form-anchor" class="for-sticky"></div>
   <section id="section-merchant-register-form">
     <div class="content-wrap">
       <h4>สมัครร้านค้าสมาชิก</h4>
@@ -457,6 +489,113 @@
     <h3 class="text-contact"><em>ติดต่อฝ่ายธุรกิจร้านค้า <img src="img/ico-tel-white.png" alt="Tel"> <strong>02 123 5799</strong></em> ทุกวัน    ตลอด  24  ชั่วโมง</h3>
   </div>
 </article>
+<div class="content-wrap">
+  <h4 class="content-title faq-title">คำถามที่พบบ่อย</h4>
+    <div id="faq" class="row faq-wrap" role="tablist" aria-multiselectable="true">
+      <div class="col-sm-6 col-12">
+        <div class="theFAQ" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq1">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans1" data-parent=".theFAQ" aria-expanded="true" aria-controls="ans1">
+                  การสมัครเป็นร้านค้าสมาชิกของ KTC สามารถสมัครผ่านช่องทางใดบ้าง
+                </div>
+              </h4>
+            </div>
+            <div id="ans1" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq1">
+              <div>ร้านค้าสามารถสมัครเป็นร้านค้าสมาชิกได้ 3 ช่องทางหลัก
+                <ol>
+                  <li>กรอกข้อมูลผ่านเว็บไซต์ <a href="merchant.html">สมัครร้านค้าสมาชิก</a></li>
+                  <li>ติดต่อฝ่ายธุรกิจร้านค้า โทร 02 123 5700 ทุกวัน ตลอด 24 ชั่วโมง</li>
+                  <li>อีเมลมาที่ <a href="mailto:ktc_merchant@ktc.co.th">ktc_merchant@ktc.co.th</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq2">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans2" data-parent=".theFAQ" aria-expanded="false" aria-controls="ans2">
+                  ใช้เวลาในการอนุมัติและติดตั้งเครื่อง / บริการ ภายในกี่วัน
+                </div>
+              </h4>
+            </div>
+            <div id="ans2" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq2">
+              <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="theFAQ" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq7">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans7" data-parent=".theFAQ" aria-expanded="true" aria-controls="ans7">
+                  ร้านค้าสมาชิกจะได้รับเงินจากการรับบัตรอย่างไร
+                </div>
+              </h4>
+            </div>
+            <div id="ans7" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq7">
+              <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq8">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans8" data-parent=".theFAQ" aria-expanded="false" aria-controls="ans8">
+                  บริการรับชำระเงิน ALIPAY เป็นบริการรับชำระเงินที่เหมาะกับร้านค้าประเภทใด
+                </div>
+              </h4>
+            </div>
+            <div id="ans8" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq8">
+              <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq9">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans9" data-parent=".theFAQ" aria-expanded="false" aria-controls="ans9">
+                  หากพบปัญหาในการใช้บริการ / เครื่องชำรุด สามารถติดต่อได้ที่ใด
+                </div>
+              </h4>
+            </div>
+            <div id="ans9" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq9">
+              <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="faq10">
+              <h4 class="panel-title faq-head">
+                <div class="collapsed" data-toggle="collapse" data-target="#ans10" data-parent=".theFAQ" aria-expanded="false" aria-controls="ans10">
+                  การทำรายการแบ่งชำระ KTC FLEXI มีการกำหนดยอดขั้นต่ำหรือไม่
+                </div>
+              </h4>
+            </div>
+            <div id="ans10" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq10">
+              <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+</div>
 <!-- /content -->
 
 <div class="footer">
