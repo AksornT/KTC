@@ -2762,6 +2762,56 @@ section#section-flexi-cards {
   cursor: pointer;
 }
 
+/* login page -eve */
+.bg-login{
+	background: url("../img/bg_login.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.box-login-con{
+	padding-top: 140px;
+	padding-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+	display: block;
+}
+.box-input-form{
+	position: relative;
+}
+.box-login-con h3{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 24px;
+	margin-top: 0px;
+}
+.box-login-con i{
+	font-family: 'FontAwesome';
+	width: 32px;
+	padding-right: 10px;
+}
+.box-login-con.form-wrap input{
+	width: 320px;
+}
+.box-login-con.form-wrap input[type="text"] + label{
+	left: 30px;
+}
+.box-login-con.form-wrap input[type="text"]:focus + label,
+.box-login-con.form-wrap input[type="text"].hasText:focus + label{
+	left: 0;
+}
+.box-login-con.form-wrap input[type="text"].hasText + label{
+	left: 0;
+}
+.box-login-con.form-wrap input[type="checkbox"]{
+	width: auto;
+}
+
+#footer-login-form .footer-only-login,
+#footer-login-form .social-footer{
+	display: none;
+}
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
