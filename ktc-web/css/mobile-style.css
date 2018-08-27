@@ -560,10 +560,11 @@
   }
   .box-line-right{
   	border-left: none;
+    border-top: 1px solid rgba(91, 102, 112, 0.15);
+    padding-top: 30px;
   }
   .box-more{
-    border-top: 1px solid rgba(91, 102, 112, 0.15);
-    padding-top: 60px;
+    padding-top: 0px;
     margin-bottom: 20px;
   }
   .box-con-cal {
@@ -645,14 +646,17 @@
     margin-bottom: 20px;
   }
   .faq-head .collapsed {
-    padding: 5px 0;
+    padding: 0 0 15px 0;
     font-size: 14px;
     line-height: 20px;
   }
   .faq-head > div {
-    padding: 5px 0;
+    padding: 0;
     font-size: 14px;
     line-height: 20px;
+  }
+  .faq-head > div:after{
+    font-size: 26px;
   }
 
   /* Flexi Page - @korstudio */
@@ -730,6 +734,7 @@
 
   h4.content-title.faq-title{
     padding-top: 60px;
+    margin-bottom: 30px
   }
 
   .detail-register h3:after{
