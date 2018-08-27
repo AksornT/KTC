@@ -129,6 +129,19 @@ $(document).ready(function() {
         }
       });
      });
+
+
+    //for search
+    $(".suggess-list").on('click touch', function () {
+      $("#fake-result").empty();
+      $(this).clone().appendTo( "#fake-result" );
+      var searchtext = $(this).find("p").text();
+      $( "#search" ).val( searchtext );
+      $("#suggest-box").blur();
+    });
+    $("#search").on('click touch', function () {
+      $("#fake-result").empty();
+    });
 });
 
 //change header when scroll down.

@@ -317,10 +317,10 @@
     height: 45px;
   }
 
-  .search-cat-wrap label,
+  /*.search-cat-wrap label,
   .search-cat-wrap > label:nth-child(2){
     padding: 12px 5px;
-  }
+  }*/
 
   .modal-header{
     position: relative;
@@ -790,5 +790,40 @@
 
   .for-sticky{
     /*top: -90px;*/
+  }
+
+  .search-wrap{
+    margin-top: 40px;
+    padding-bottom: 200px;
+  }
+
+  .search-input-wrap{
+    width: calc(100% - 33px);
+  }
+
+  .subcat-wrap{
+    max-width: calc(100% - 111px);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .search-cat-wrap label{
+    padding: 12px 25px;
+    line-height: 12px;
+    font-size: 12px;
+    width: 110px;
+  }
+
+  .search-cat-wrap > label:nth-child(2){
+    width: 110px;
+    text-align: left;
+  }
+
+  .search-cat-head{
+    padding-right: 0;
+    margin-top: 24px;
+  }
+  .search-cat-wrap{
+    margin-top: 20px;
   }
 }

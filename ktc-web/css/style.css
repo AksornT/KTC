@@ -1237,7 +1237,7 @@ body.modal-open{
 .input-search{
 	line-height: 30px;
 	font-size: 20px;
-	font-family: sans-serif;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 	width: 656px;
 	border: none;
 	border-bottom: 1px solid rgba(91,100,112,.15);
@@ -1259,20 +1259,22 @@ body.modal-open{
 }
 
 .button-search{
-	background: #fff;
+	background: #cf3339;
 	text-align: center;
-	color: #cf3339;
-	border: 1px solid #cf3339;
+	color: #fff;
 	border-radius: 3px;
 	font-size: 14px;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	width: 108px;
 	height: 30px;
 	line-height: 26px;
+	margin: 60px 0 0 0;
+	opacity: 1;
+	border: none;
 }
 
 .button-search:hover{
-	background: #f3d4d6;
+	opacity: 0.65;
 	cursor: pointer;
 }
 
@@ -1280,7 +1282,9 @@ body.modal-open{
 	display: block;
 	font-size: 0;
 	text-align: center;
-    margin-top: 10vh;
+    margin-top: 40px;
+    margin-bottom: 51px;
+    overflow: hidden;
 }
 
 .search-cat-wrap *{
@@ -1292,15 +1296,57 @@ body.modal-open{
 	display: none;
 }
 
-.search-cat-wrap input[type="checkbox"]:checked + label{
+.search-cat-head{
+	font-size: 16px;
+	text-align: right;
+	padding-right: 92px;
+}
+
+.search-cat-head > div > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search-cat-head > div > h4{
+	padding-right: 3px;
+}
+
+.search-cat-head i {
+    transform: rotate(0deg);
+}
+
+.search-cat-head .collapsed i {
+    transform: rotate(-180deg);
+}
+
+/*.search-cat-wrap input[type="checkbox"]:checked + label{
 	color: #cf3339;
+}*/
+
+.search-cat-wrap input[type="checkbox"] + label:after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	top: 7px;
+	left: 1px;
+	border-radius: 3px;
+	border: 1px solid rgba(91,100,112,.15);
+	background: none;
+	position: absolute;
+	background-position: center;
+}
+
+.search-cat-wrap input[type="checkbox"]:checked + label:after{
+	border: 1px solid rgba(207,51,57,1);
+	background: url(../img/ico-checkbox-checked.png) no-repeat;
+	background-position: center;
 }
 
 .search-cat-wrap label{
-	padding: 12px 35px;
+	padding: 12px 30px;
 	line-height: 12px;
 	font-size: 16px;
-	border-left: 1px solid rgba(91,100,112,.15);
+	position: relative;
 }
 
 .search-cat-wrap > label:nth-child(2){
@@ -2941,6 +2987,80 @@ section#section-flexi-cards {
 #footer-login-form .footer-only-login,
 #footer-login-form .social-footer{
 	display: none;
+}
+
+.search-input-wrap{
+	position: relative;
+}
+
+.suggess-box{
+	position: absolute;
+	height: auto;
+	left: 9px;
+	right: 13px;
+	top: 80%;
+	background: #fff;
+	border-radius: 3px;
+	padding: 12px 20px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+}
+
+input:focus + .suggess-box,
+.suggess-box:focus{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.suggess-list,
+.suggess-list:hover{
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 1px solid rgba(91,100,112,.15);
+}
+
+.suggess-list:nth-last-child(1){
+	border: none;
+}
+
+.suggess-list > *{
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	color: #5B6670;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+    max-width: calc(100% - 75px);
+}
+
+.suggess-list:hover > *{
+	color: #000;
+}
+
+.suggess-img-wrap{
+	width: 73px;
+	height: 54px;
+	padding: 8px 14px 8px 0;
+	text-align: center;
+}
+
+.suggess-img-wrap img{
+	width: auto;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#fake-result{
+	pointer-events:none;
+	position: absolute;
+    left: 21px;
+    right: 0;
+    bottom: 1px;
+    background: #fff;
+    opacity: 1;
 }
 
 @media (min-width: 1366px) {
