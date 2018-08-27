@@ -528,7 +528,7 @@ a:hover{
 	color: #454545;
 	border-bottom: 4px solid #CF3339;
 	display: inline-block;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 .text-on-slide{
@@ -689,7 +689,7 @@ article.page-content img {
 	font-size: 16px;
 	line-height: 24px;
 	padding-top: 10px;
-	margin-bottom: 60px;
+	margin-bottom: 47px;
 }
 .owl-nav button{
 	background: none;
@@ -1730,8 +1730,8 @@ a.card-register-center{
 }
 
 .text-content-wrap .only-desktop{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .text-content-wrap li {
     list-style: outside;
@@ -1769,7 +1769,7 @@ a.card-register-center{
 }
 
 .withStore p{
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     font-size: 16px;
     font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -2958,7 +2958,7 @@ section#section-flexi-cards {
   }
 
   .withStore.only-mobile{
-  	padding-bottom: 54px;
+  	padding-bottom: 60px;
   }
 	.box-more {
     margin: 60px auto;
@@ -2966,5 +2966,9 @@ section#section-flexi-cards {
 
 	.with-loan-img p{
 		max-width: 100%;
+	}
+
+	#privillage .text-content-wrap > div{
+		padding:  0 60px;
 	}
 }

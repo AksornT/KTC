@@ -517,6 +517,7 @@
   .with-loan-img p{
     letter-spacing: 0;
     max-width: 510px;
+    margin-bottom: 40px;
   }
 
   .img-precent{
@@ -528,12 +529,12 @@
     padding: 0 35px 10px 35px;
     line-height: 32px;
   }
-  .text-head-wrap .only-mobile{
-    margin-bottom: 60px;
-    padding-bottom: 0;
-  }
   .withStore.only-mobile{
     padding-bottom: 0;
+  }
+
+  .text-head-wrap > div:nth-child(even){
+    padding-bottom: 60px;
   }
 
   .text-head-wrap li {
