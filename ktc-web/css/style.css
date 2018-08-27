@@ -414,7 +414,7 @@ a:hover{
 	display: none;
 }
 
-.open-on-top h4{
+.open-on-top h1{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 28px;
 	letter-spacing: 1.5px;
@@ -422,7 +422,7 @@ a:hover{
 	margin-bottom: 30px;
 }
 
-.open-on-top h4 span{
+.open-on-top h1 span{
 	font-size: 32px;
 }
 
