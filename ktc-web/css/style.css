@@ -2671,7 +2671,17 @@ section#section-flexi-cards {
 	line-height: 1.4;
 }
 #section-flexi-promotions .slide-flexi-promotions .item .item-footer {
+	display: flex;
 	margin-top: auto;
+}
+#section-flexi-promotions .slide-flexi-promotions .item .item-footer .left{
+	display: flex;
+	flex-flow: column;
+	flex: auto;
+}
+#section-flexi-promotions .slide-flexi-promotions .item .item-footer .right {
+	display: flex;
+	width: 26px;
 }
 #section-flexi-promotions .slide-flexi-promotions .button-register {
 	display: block;
