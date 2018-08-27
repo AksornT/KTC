@@ -2242,6 +2242,11 @@ a.media.on-desk img {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+.btn.button-flexi-start.invert {
+	color: #CF3339;
+	background: #ffffff;
+	border: 1px solid #CF3339;
+}
 
 .button-flexi-start.only-desktop {
 	margin-top: 30px;
