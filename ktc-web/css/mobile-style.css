@@ -404,7 +404,7 @@
   }
   .index-head{
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 60px;
     padding-bottom: 4px;
     border-bottom: 3px solid #CF3339;
   }
@@ -505,8 +505,8 @@
   }
   .main-loan h3{
   	font-size: 20px;
-    padding-top: 45px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    margin-bottom: 45px;
   }
   .main-loan .box-content {
     margin-top: 20px;
@@ -563,7 +563,6 @@
   }
   .box-more{
     border-top: 1px solid rgba(91, 102, 112, 0.15);
-    margin-top: 20px;
     padding-top: 60px;
     margin-bottom: 20px;
   }
