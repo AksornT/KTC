@@ -379,6 +379,25 @@ a:hover{
 	display: none;
 }
 
+/* favorite button */
+.btn.button-favorite {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent url("../img/ico-fav-inactive.svg") no-repeat center;
+}
+.btn.button-favorite.active,
+.btn.button-favorite.active:not(:disabled):not(.disabled),
+.btn.button-favorite:not(:disabled):not(.disabled):active {
+	background: transparent url("../img/ico-fav-active.svg") no-repeat center;
+}
+.btn.button-favorite.focus,
+.btn.button-favorite:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
 .open-on-top{
     padding: 66px 0 45px 0;
     position: relative;
