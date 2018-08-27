@@ -655,6 +655,9 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .faq-head > div:after{
+    font-size: 26px;
+  }
 
   /* Flexi Page - @korstudio */
   .page-flexi-header {
