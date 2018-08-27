@@ -272,10 +272,10 @@
   <div class="sub-sticky">
     <div class="content-wrap">
       <div class="sticky-left">
-        <ul>
-          <li class="only-desktop"><a href="#privillage">สิทธิประโยชน์</a></li>
-          <li class="only-desktop"><a href="#detail-register">รายละเอียดการสมัคร</a></li>
-          <li class="only-desktop"><a href="#proud-regis">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
+        <ul class="nav">
+          <li class="only-desktop nav-item"><a href="#privillage">สิทธิประโยชน์</a></li>
+          <li class="only-desktop nav-item"><a href="#detail-register">รายละเอียดการสมัคร</a></li>
+          <li class="only-desktop nav-item"><a href="#proud-regis">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
           <li class="only-mobile"><img id="sticky-ham" data-toggle="modal" data-target="#sticky-modal"  src="img/ico-menu-sticky.png"></li>
         </ul>
       </div>
@@ -286,7 +286,7 @@
     </div>
   </div>
     <!-- end sub-sticky -->
-
+<div id="sticky-trigger"></div>
     <!-- start page -->
     <div class="page-loan-proud">
       <div class="proud-head">
@@ -296,13 +296,13 @@
         <img class="proud-logo" src="img/logo-cash.png">
         <h2>ตอบสนองทุกความต้องการ สินเชื่ออเนกประสงค์ KTC CASH<br>อนุมัติเร็ว ผ่อนเป็นงวดๆ สบายๆ</h2>
         <span class="cash-desc">วงเงินอนุมัติสินเชื่อสูงสุด 5 เท่าของรายได้อิสระ เลือกวันครบกำหนดชำระได้ด้วยตนเอง</span >
-        <div id="sticky-trigger"></div>
+        
         <div class="btn-wrap">
           <a class="card-register-center" href="#">สมัครบัตร</a>
         </div>
       </div>
+      <section id="privillage" class="for-sticky" >
       <div class="content-wrap">
-        <div id="privillage" class="for-sticky"></div>
         <div class="reverse-box">
           <div class="row box-cash">
             <div class="col-lg-6 img-in-loan-wrap"><img class="img-in-loan" src="img/img-loan-cash-1.png"></div>
@@ -357,7 +357,8 @@
           </div>
         </div>
       </div>
-      <div id="detail-register" class="for-sticky"></div>
+      </section>
+      <section id="detail-register" class="for-sticky" >
       <div class="detail-register">
         <h3>รายละเอียดการสมัคร</h3>
         <div class="content-wrap">
@@ -387,7 +388,8 @@
           </div>
         </div>
       </div>
-      <div id="proud-regis" class="for-sticky"></div>
+    </section>
+    <section id="proud-regis" class="for-sticky">
       <!-- แบบฟอร์มสมัคร -->
       <div id="proud-register" class="content-wrap">
         <h2 class="content-title">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</h2>
@@ -423,6 +425,7 @@
           <button id="close-success" class="card-register-center">ปิด</button>
         </div>
       </div>
+    </section>
       <script>
         // ซ่อน div "หลังกรอกแบบฟอร์มสำเร็จ"
         $("#proud-regis-complete").hide();
@@ -905,10 +908,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <ul class="sticky-white-menu-list">
-            <li><a data-dismiss="modal" onclick="javascript:window.location='#privillage'">สิทธิประโยชน์</a></li>
-            <li><a data-dismiss="modal" onclick="javascript:window.location='#detail-register'">รายละเอียดการสมัคร</a></li>
-            <li><a data-dismiss="modal" onclick="javascript:window.location='#proud-regis'">สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
+          <ul class="sticky-white-menu-list nav">
+            <li class="nav-item"><a href='#privillage'>สิทธิประโยชน์</a></li>
+            <li class="nav-item"><a href='#detail-register'>รายละเอียดการสมัคร</a></li>
+            <li class="nav-item"><a href='#proud-regis'>สมัครบัตรสินเชื่อพร้อมใช้ KTC PROUD</a></li>
           </ul>
         </div>
       </div>

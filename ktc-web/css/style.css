@@ -1658,6 +1658,7 @@ a:hover .on-hover{
 	height: 512px;
 	width: 100%;
 	position: relative;
+	margin-top: -66px;
 }
 
 .proud-head img{
@@ -2313,7 +2314,16 @@ h4.content-title:after{
 	right: 0;
 	background: #fff;
 	z-index: 1;
+	border-bottom: 1px solid rgba(112,112,112,.15);
 }
+.fixed #nav-flexi-navbar .nav-item{
+	border: none;
+}
+.fixed #nav-flexi-navbar .nav-item .nav-link{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 #nav-flexi.fixed #nav-flexi-navbar .navbar-nav {
 	margin-left: 0;
 	padding: 0;
@@ -2768,7 +2778,7 @@ section#section-flexi-cards {
 
 .for-sticky{
 	position: relative;
-	top: -148px;
+	/*top: -148px;*/
 }
 
 .sticky-white-menu-list li a{
@@ -2777,6 +2787,7 @@ section#section-flexi-cards {
 	font-family: "Conv_SukhumvitTadmai_Tex";
 	border-bottom: rgba(91,102,112,.15) solid 1px;
 	display: block;
+	color: #000;
 }
 
 .sticky-white-menu-list li a:hover{

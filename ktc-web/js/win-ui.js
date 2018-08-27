@@ -76,6 +76,47 @@ $(document).ready(function() {
         }, {passive: false})
     });
 
+
+    //Sticky page nav
+    var stickyNavScrollTo = function(elementId, offset) {
+        offset = offset == null ? 0 : offset;
+        $('html, body').animate({
+            scrollTop: $(elementId).offset().top - offset
+        }, 800);
+    };
+
+    $("body").scrollspy({target: ".sub-sticky", offset: 180});
+
+    $('body').on('activate.bs.scrollspy', function (event) {
+        //sync scrollspy to other menu
+        var currentSection = event.target.firstElementChild.hash;
+        $("#sticky-modal li a").each(function(i, el) {
+            var $el = $(el);
+            if (el.firstElementChild.hash === currentSection) {
+                $el.addClass("active");
+            } else {
+                $el.removeClass("active");
+            }
+            console.log(els.firstElementChild.hash, currentSection);
+        });
+    });
+
+    $(".sub-sticky .sticky-left a").on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        stickyNavScrollTo(hash, 150);
+    });
+
+
+    $("#sticky-modal a").each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            flexiNavScrollTo(hash, 100);
+            $("#sticky-modal").modal("hide");
+        }, {passive: false})
+    });
+
     //for styling form 
     $('.form-wrap [type="text"]').each(function(){
       var fLabel = $(this).attr('placeholder');

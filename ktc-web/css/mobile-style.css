@@ -745,4 +745,8 @@
   .sub-sticky > .content-wrap{
     padding: 0 20px;
   }
+
+  .proud-head{
+    margin-top: -45px;
+  }
 }
