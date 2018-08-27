@@ -138,6 +138,7 @@ $(document).on('scroll', function() {
         $('.ghost-footer').addClass('active');
     }else{
         $('#menu-global').removeClass('mini-header');
+        $('#menu-global.expand-menu .scrolled-menu > li').removeClass('active');
         $('.ghost-footer').removeClass('active');
     };
 
