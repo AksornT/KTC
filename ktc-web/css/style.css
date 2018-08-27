@@ -1709,7 +1709,7 @@ a:hover .on-hover{
 }
 
 a.card-register-center{
-	margin: 80px 0;
+	margin: 30px 0 60px 0;
 }
 
 .card-register-center:hover{
@@ -1729,6 +1729,10 @@ a.card-register-center{
 	padding: 0 60px 24px 60px;
 }
 
+.text-content-wrap .only-desktop{
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .text-content-wrap li {
     list-style: outside;
     margin-left: 55px;
@@ -1828,7 +1832,7 @@ a.card-register-center{
 
 .two-icon-link{
 	max-width: 985px;
-	margin: 86px auto 95px auto;
+	margin: 60px auto 60px auto;
 	text-align: center;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
@@ -1979,6 +1983,7 @@ a.card-register-center{
 h4.content-title{
 	text-align: left;
 	font-size: 28px;
+	padding-top: 0px;
 }
 
 h4.content-title:after{
@@ -1990,7 +1995,7 @@ h4.content-title:after{
 }
 
 .faq-wrap{
-	margin-bottom: 105px;
+	margin-bottom: 60px;
 }
 
 .faq-head{
@@ -2103,8 +2108,7 @@ h4.content-title:after{
 	padding-top: 14px;
 }
 .box-more{
-	margin-top: 80px;
-	margin-bottom: 100px;
+	margin: 60px 0;
 }
 .box-con-cal{
 	padding-left: calc(40% - 350px);
@@ -2164,7 +2168,7 @@ h4.content-title:after{
 .detail-register-desc p{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 20px;
-	padding: 24px 0;
+	padding: 24px 0 10px 0;
 }
 .detail-register-desc li{
 	font-family: Helvetica, Arial, sans-serif ;
@@ -2937,9 +2941,7 @@ section#section-flexi-cards {
 	.detail-register-desc h5{
     margin-top: 0px;
   }
-	h4.content-title{
-		padding-top: 35px;
-	}
+
 	.faq-head .collapsed {
     padding: 5px 0;
     font-size: 14px;
@@ -2959,8 +2961,7 @@ section#section-flexi-cards {
   	padding-bottom: 54px;
   }
 	.box-more {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px auto;
 	}
 
 	.with-loan-img p{
