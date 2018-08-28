@@ -151,6 +151,7 @@ section#section-merchant-card-type {
     display: flex;
     margin-top: 60px;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     .item-payment-service {
       padding: 0 20px;
@@ -167,6 +168,24 @@ section#section-merchant-card-type {
         margin-top: 5px;
         font-size: 16px;
         line-height: 1.5;
+      }
+
+      @include tablet {
+        margin-top: 20px;
+        padding: 0 12px;
+        width: 50%;
+
+        &:last-child {
+          width: 100%;
+        }
+
+        h5 {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

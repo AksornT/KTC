@@ -131,6 +131,7 @@ section#section-merchant-card-type .list-payment-services {
   display: flex;
   margin-top: 60px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 section#section-merchant-card-type .list-payment-services .item-payment-service {
   padding: 0 20px;
@@ -146,6 +147,22 @@ section#section-merchant-card-type .list-payment-services .item-payment-service 
   margin-top: 5px;
   font-size: 16px;
   line-height: 1.5;
+}
+@media (max-width: 991px) {
+  section#section-merchant-card-type .list-payment-services .item-payment-service {
+    margin-top: 20px;
+    padding: 0 12px;
+    width: 50%;
+  }
+  section#section-merchant-card-type .list-payment-services .item-payment-service:last-child {
+    width: 100%;
+  }
+  section#section-merchant-card-type .list-payment-services .item-payment-service h5 {
+    font-size: 14px;
+  }
+  section#section-merchant-card-type .list-payment-services .item-payment-service p {
+    font-size: 14px;
+  }
 }
 
 section#section-merchant-options *[class*="col"] {
