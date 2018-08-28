@@ -300,6 +300,10 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   vertical-align: middle;
 }
 
+#content-merchant-faq {
+  padding-top: 60px;
+}
+
 #faq ol {
   list-style: decimal;
   padding-left: 16px;
