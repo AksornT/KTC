@@ -193,11 +193,24 @@ section#section-merchant-options .content-forever p.small {
 section#section-merchant-register-form .form-row {
   margin-top: 50px;
 }
+section#section-merchant-register-form .form-row.form-wrap {
+  margin-top: 0;
+}
+section#section-merchant-register-form .form-row.form-wrap input[type="text"]:focus + label,
+section#section-merchant-register-form .form-row.form-wrap input[type="text"].hasText:focus + label {
+  color: #045AA7;
+}
 section#section-merchant-register-form .form-row .form-col.left {
   padding-right: 45px;
 }
+section#section-merchant-register-form .form-row .form-col.left label {
+  left: 5px;
+}
 section#section-merchant-register-form .form-row .form-col.right {
   padding-left: 45px;
+}
+section#section-merchant-register-form .form-row .form-col.right label {
+  left: 45px;
 }
 section#section-merchant-register-form .form-control:focus {
   border-color: transparent;
@@ -259,6 +272,9 @@ section#section-merchant-register-form .row-merchant-options label.custom-contro
 }
 section#section-merchant-register-form #sending-form {
   background-color: #045AA7;
+}
+section#section-merchant-register-form .img-result {
+  margin-top: 85px;
 }
 section#section-merchant-register-form .row-merchant-download-docs {
   margin-top: 30px;
