@@ -50,6 +50,7 @@
 .sub-sticky .dropdown-toggle {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  background-color: transparent;
 }
 .sub-sticky .dropdown-toggle::after {
   content: "\f107";
