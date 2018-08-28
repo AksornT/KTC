@@ -76,6 +76,47 @@ $(document).ready(function() {
         }, {passive: false})
     });
 
+
+    //Sticky page nav
+    var stickyNavScrollTo = function(elementId, offset) {
+        offset = offset == null ? 0 : offset;
+        $('html, body').animate({
+            scrollTop: $(elementId).offset().top - offset
+        }, 800);
+    };
+
+    $("body").scrollspy({target: ".sub-sticky", offset: 180});
+
+    $('body').on('activate.bs.scrollspy', function (event) {
+        //sync scrollspy to other menu
+        var currentSection = event.target.firstElementChild.hash;
+        $("#sticky-modal li a").each(function(i, el) {
+            var $el = $(el);
+            if (el.firstElementChild.hash === currentSection) {
+                $el.addClass("active");
+            } else {
+                $el.removeClass("active");
+            }
+            console.log(els.firstElementChild.hash, currentSection);
+        });
+    });
+
+    $(".sub-sticky .sticky-left a").on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        stickyNavScrollTo(hash, 150);
+    });
+
+
+    $("#sticky-modal a").each(function (index, elem) {
+        elem.addEventListener('touchend', function (event) {
+            event.preventDefault();
+            var hash = this.hash;
+            flexiNavScrollTo(hash, 100);
+            $("#sticky-modal").modal("hide");
+        }, {passive: false})
+    });
+
     //for styling form 
     $('.form-wrap [type="text"]').each(function(){
       var fLabel = $(this).attr('placeholder');
@@ -88,6 +129,19 @@ $(document).ready(function() {
         }
       });
      });
+
+
+    //for search
+    $(".suggess-list").on('click touch', function () {
+      $("#fake-result").empty();
+      $(this).clone().appendTo( "#fake-result" );
+      var searchtext = $(this).find("p").text();
+      $( "#search" ).val( searchtext );
+      $("#suggest-box").blur();
+    });
+    $("#search").on('click touch', function () {
+      $("#fake-result").empty();
+    });
 });
 
 //change header when scroll down.
@@ -97,15 +151,18 @@ $(document).on('scroll', function() {
         $('.ghost-footer').addClass('active');
     }else{
         $('#menu-global').removeClass('mini-header');
+        $('#menu-global.expand-menu .scrolled-menu > li').removeClass('active');
         $('.ghost-footer').removeClass('active');
     };
 
-
-    if($(this).scrollTop()>=$('#sticky-trigger').position().top){
+    var stickyTrigger = $('#sticky-trigger');
+    var isStickyTriggerExisted = stickyTrigger.length > 0;
+    if(isStickyTriggerExisted &&
+        $(this).scrollTop() >= stickyTrigger.position().top){
         $('.sub-sticky').addClass('active');
     }else{
         $('.sub-sticky').removeClass('active');
-    };
+    }
 
 //something appeared on footer
     if($(this).scrollTop()>=$('#foot-trigger').position().top){

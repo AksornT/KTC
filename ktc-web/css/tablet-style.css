@@ -229,13 +229,15 @@
   .index-slide2 .owl-nav button.owl-next {
     top: 13.5vw;
   }
-  .open-on-top h4{
+  .open-on-top h1{
     margin-top: 30px;
   }
-  .open-on-top h4.title-mobile{
+  .open-on-top h2.title-mobile{
     letter-spacing: 0.5px;
     margin-bottom: 8px;
     line-height: 36px;
+    margin-top: 30px;
+    font-size: 32px;
   }
   .icon-wrap {
     padding: 30px 0 0 0;
@@ -317,10 +319,10 @@
     height: 45px;
   }
 
-  .search-cat-wrap label,
+  /*.search-cat-wrap label,
   .search-cat-wrap > label:nth-child(2){
     padding: 12px 5px;
-  }
+  }*/
 
   .modal-header{
     position: relative;
@@ -466,6 +468,9 @@
   .detail-register{
     padding: 40px 0 40px 0;
   }
+  .detail-register h3{
+    margin-bottom: 60px;
+  }
   .detail-register-desc{
     margin-bottom: 35px;
   }
@@ -514,6 +519,7 @@
   .with-loan-img p{
     letter-spacing: 0;
     max-width: 510px;
+    margin-bottom: 60px;
   }
 
   .img-precent{
@@ -522,8 +528,15 @@
 
   .text-head-wrap > div{
     font-size: 20px;
-    padding: 0 35px 20px 35px;
+    padding: 0 35px 10px 35px;
     line-height: 32px;
+  }
+  .withStore.only-mobile{
+    padding-bottom: 0;
+  }
+
+  .text-head-wrap > div:nth-child(even){
+    padding-bottom: 60px;
   }
 
   .text-head-wrap li {
@@ -568,14 +581,21 @@
   }
 
   a.card-register-center {
-    margin: 35px 0 70px 0;
+    margin: 30px 0 60px 0;
     font-size: 14px;
     min-width: 108px;
     padding: 8px 22px;
   }
   .box-more {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .box-cash {
+    margin-bottom: 60px;
+  }
+
+  h4.content-title{
+    margin-bottom: 30px;
   }
 
   /* Flexi Page - @korstudio */
@@ -717,7 +737,7 @@
   }
 
   .two-icon-link{
-    margin: 30px 0;
+    margin: 60px 0;
   }
 
   .fakeBlock{
@@ -771,6 +791,41 @@
   }
 
   .for-sticky{
-    top: -90px;
+    /*top: -90px;*/
+  }
+
+  .search-wrap{
+    margin-top: 40px;
+    padding-bottom: 200px;
+  }
+
+  .search-input-wrap{
+    width: calc(100% - 33px);
+  }
+
+  .subcat-wrap{
+    max-width: calc(100% - 111px);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .search-cat-wrap label{
+    padding: 12px 25px;
+    line-height: 12px;
+    font-size: 12px;
+    width: 110px;
+  }
+
+  .search-cat-wrap > label:nth-child(2){
+    width: 110px;
+    text-align: left;
+  }
+
+  .search-cat-head{
+    padding-right: 0;
+    margin-top: 24px;
+  }
+  .search-cat-wrap{
+    margin-top: 20px;
   }
 }

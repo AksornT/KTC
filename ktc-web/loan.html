@@ -158,10 +158,7 @@
             <div class="menu-lang">
               <div class="lang-header-menu">
                 <img src="img/ico-lang.png"><label for="lang-change">Language</label>
-                <select class="" id="lang-change">
-                  <option>TH</option>
-                  <option>EN</option>
-                </select>
+                <p id="lang-change">EN</p>
               </div>
             </div>
             <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
@@ -173,9 +170,9 @@
       <div class="content-wrap">
         <div class="row">
           <div class="col-lg-6">
-            <h4 class="only-desktop">Fulfill your life with <span>KTC Credit</span></h4>
+            <h1 class="only-desktop">Fulfill your life with <span>KTC Credit</span></h1>
             <p class="only-desktop">Suspendisse accumsan in ante et dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec pulvinar leo, vel malesuada orci.</p>
-            <h4 class="title-mobile only-mobile">ประสบการณ์<br>ให้ความหมายกับชีวิต</h4>
+            <h2 class="title-mobile only-mobile">ประสบการณ์<br>ให้ความหมายกับชีวิต</h2>
           </div>
           <div class="col-lg-6 row icon-wrap">
             <a class="big-link col-4" href="creditcard.html">
@@ -506,30 +503,76 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="search-cat-wrap">
-              <input type="checkbox" name="" id="all-cat">
-              <label for="all-cat">ทั้งหมด</label>
-              <div class="subcat-wrap">
-                <input type="checkbox" name="" id="credit-cat">
-                <label for="credit-cat">บัตรเครดิต</label>
-                <input type="checkbox" name="" id="privill-cat">
-                <label for="privill-cat">สิทธิพิเศษ</label>
-                <input type="checkbox" name="" id="article-cat">
-                <label for="article-cat">บทความ</label>
-                <input type="checkbox" name="" id="other-cat">
-                <label for="other-cat">อื่นๆ</label>
-              </div>
-            </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="search-wrap">
-              <img src="img/ico-search-black.png">
-              <input class="input-search" type="text" placeholder="ค้นหาทุกสิ่งใน KTC">
-              <button class="button-search">ค้นหา</button>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="search-head">
+                <div class="panel-title search-cat-head">
+                  <div class="" data-toggle="collapse" data-target="#search-cat-wrap" aria-expanded="true" aria-controls="search-cat-wrap">
+                    <img src="img/ico-sort.png"><h4>ตัวกรอง</h4><i class="fa fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- <div id="ans12" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq12">
+                <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div> -->
+              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapse in" role="tabpanel" aria-labelledby="search-head" aria-expanded="true">
+                <input type="checkbox" name="" id="all-cat">
+                <label for="all-cat">ทั้งหมด</label>
+                <div class="subcat-wrap">
+                  <input type="checkbox" name="" id="credit-cat">
+                  <label for="credit-cat">บัตรเครดิต</label>
+                  <input type="checkbox" name="" id="privill-cat">
+                  <label for="privill-cat">สิทธิพิเศษ</label>
+                  <input type="checkbox" name="" id="article-cat">
+                  <label for="article-cat">บทความ</label>
+                  <input type="checkbox" name="" id="other-cat">
+                  <label for="other-cat">อื่นๆ</label>
+                </div>
+              </div>
             </div>
+            <form class="search-wrap">
+              <img src="img/ico-search-black.png">
+              <div class="search-input-wrap">
+                <input id="search" autocomplete="off" class="input-search" type="text" placeholder="ค้นหาทุกสิ่งใน KTC">
+                <div tabindex="0" id="suggest-box" class="suggess-box">
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-credit.png">
+                    </div>
+                    <p>KTC X VISA SIGNATURE</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-shopping.png">
+                    </div>
+                    <p>KTC X MASTERCARD</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-service-custom.png">
+                    </div>
+                    <p>มูลนิธิศิริราช</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-other.png">
+                    </div>
+                    <p>Early Inactive Q1 2018</p>
+                  </div>
+                </div>
+                <div id="fake-result"></div>
+              </div>
+              <div class="btn-wrap">
+                <button class="button-search">ค้นหา</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
