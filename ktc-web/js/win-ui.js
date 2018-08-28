@@ -62,16 +62,18 @@ $(document).ready(function() {
     $('.sub-sticky a').on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
+        var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
         if (hash !== "#") {
-            navScrollTo(hash);
+            navScrollTo(hash, topOffset);
         }
     });
     $('.sub-sticky a').each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
+            var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
             if (hash !== "#") {
-                navScrollTo(hash);
+                navScrollTo(hash, topOffset);
             }
         }, {passive: false})
     });
@@ -104,7 +106,8 @@ $(document).ready(function() {
     $(".sub-sticky .sticky-left a").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        stickyNavScrollTo(hash, 150);
+        var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
+        navScrollTo(hash, topOffset);
     });
 
 
@@ -141,6 +144,14 @@ $(document).ready(function() {
     });
     $("#search").on('click touch', function () {
       $("#fake-result").empty();
+    });
+
+    //for anchor
+    $('a[data-scroll="scroll"]').on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        var offset = $(this).attr('data-offset') | 0;
+        navScrollTo(hash, offset);
     });
 });
 
