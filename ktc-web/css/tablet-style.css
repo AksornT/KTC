@@ -575,7 +575,7 @@
     margin: 13px auto;
   }
 
-  .proud-logo + h2{
+  .proud-logo + h1 {
     font-size: 18px;
     line-height: 32px;
   }
@@ -603,7 +603,7 @@
     padding: 8vw 30px;
     height: 40vw;
   }
-  .page-flexi-header h2 {
+  .page-flexi-header h1 {
     font-size: 28px;
     line-height: 1.4;
   }
