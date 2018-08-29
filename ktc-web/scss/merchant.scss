@@ -60,6 +60,10 @@
         transform: rotate(-180deg);
       }
     }
+
+    @include tablet {
+      display: none;
+    }
   }
 
   .dropdown-toggle {
