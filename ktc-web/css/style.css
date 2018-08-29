@@ -2941,6 +2941,30 @@ section#section-flexi-cards {
 	color: #CF3339;
 }
 
+/* alternate styles for popup menu (sticky menu modal) */
+.nav-menu-modal {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav-menu-modal .nav {
+	margin-bottom: 20px;
+}
+.nav-menu-modal .nav li.nav-item {
+	border-bottom: 1px solid #E7E8EA;
+}
+.nav-menu-modal .nav li.nav-item:last-child {
+	border-bottom: none;
+}
+.nav-menu-modal .nav li.nav-item.active a,
+.nav-menu-modal .nav a:hover {
+	color: #CF3339;
+}
+.nav-menu-modal .nav a {
+	padding: 14px 0;
+	color: #4c4c4c;
+	font-size: 14px;
+	text-align: left;
+}
+
 .form-wrap input[type="text"] + label{
 	position: absolute;
     top: 65px;
