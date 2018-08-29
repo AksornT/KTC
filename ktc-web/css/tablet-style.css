@@ -183,13 +183,13 @@
     top: 23px;
     left: 56px;
   }
-  .menu-responsive-dropdown .lang-header-menu select{
+  .menu-responsive-dropdown .lang-header-menu p{
     float: right;
     background-color: transparent;
     color: #707070;
     font-family: 'Gotham-Bold';
     border-radius: 4px;
-    border-color: #707070;
+    border: #707070 1px solid;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -575,7 +575,7 @@
     margin: 13px auto;
   }
 
-  .proud-logo + h2{
+  .proud-logo + h1 {
     font-size: 18px;
     line-height: 32px;
   }
@@ -598,12 +598,28 @@
     margin-bottom: 30px;
   }
 
+  /* login page -eve */
+  .last-piece.for-login-pg .text-right{
+    display: inline-block;
+    padding-right: 0px;
+  }
+  .last-piece.for-login-pg .text-right .lang-footer label{
+    display: none;
+  }
+  .last-piece.for-login-pg .license{
+    text-align: left;
+  }
+  .box-login-con{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   /* Flexi Page - @korstudio */
   .page-flexi-header {
     padding: 8vw 30px;
     height: 40vw;
   }
-  .page-flexi-header h2 {
+  .page-flexi-header h1 {
     font-size: 28px;
     line-height: 1.4;
   }
@@ -804,7 +820,6 @@
   }
 
   .subcat-wrap{
-    max-width: calc(100% - 111px);
     text-align: left;
     vertical-align: top;
   }
@@ -813,7 +828,8 @@
     padding: 12px 25px;
     line-height: 12px;
     font-size: 12px;
-    width: 110px;
+    width: 33%;
+    vertical-align: top;
   }
 
   .search-cat-wrap > label:nth-child(2){
@@ -827,5 +843,14 @@
   }
   .search-cat-wrap{
     margin-top: 20px;
+  }
+  .search-slide .owl-nav{
+    top: calc(10vw - 12px);
+  }
+  .ktc-tabs li a{
+    padding: 0 4vw;
+  }
+  .search-cat-wrap label:hover{
+    opacity: 1;
   }
 }

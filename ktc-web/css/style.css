@@ -562,9 +562,10 @@ a:hover{
 .text-on-slide a{
 	text-align: right;
 	font-size: 18px;
-	color: #757575;
+	color: #000;
 	padding-top: 13px;
 	padding-right: 0;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 .text-on-slide a:hover{
@@ -592,6 +593,7 @@ a:hover{
 .owl-item{
 	display: inline-block;
 	opacity: 0;
+	vertical-align: top;
 }
 
 .owl-item.active{
@@ -699,9 +701,9 @@ article.page-content img {
 }
 .item .slide-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 20px;
-	padding-top: 14px;
-	line-height: 38px;
+    font-size: 20px;
+    padding: 19px 0 5px 0;
+    line-height: 28px;
 }
 .item .slide-content{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -959,7 +961,8 @@ button:focus {
     cursor: pointer;
 }
 
-.last-piece #lang-change{
+.last-piece #lang-change,
+.last-piece #lang2-change{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -976,8 +979,8 @@ button:focus {
     line-height: 22px;
 }
 
-.last-piece #lang-change::-ms-expand{
-	display: none;
+.lang-footer:hover{
+	cursor: pointer;
 }
 
 .lang-footer label{
@@ -1642,9 +1645,23 @@ a:hover .on-hover{
 }
 .breadcrumb.bc-content .breadcrumb-item a{
 	color: rgba(91, 102, 112, 0.6);
+	outline: 0;
 }
-.breadcrumb.bc-content .breadcrumb-item.active{
+.breadcrumb.bc-content .breadcrumb-item.active a{
 	color: rgba(0, 0, 0, 1);
+}
+.breadcrumb.bc-content .breadcrumb-item a:hover{
+	color: rgba(0, 0, 0, 1);
+}
+.breadcrumb.bc-content .breadcrumb-item.active a:hover{
+	cursor: default;
+}
+.breadcrumb.bc-content li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+	vertical-align: middle;
 }
 .col-right-filter{
 	text-align: right;
@@ -1757,7 +1774,7 @@ a:hover .on-hover{
 	display: block;
 }
 
-.proud-logo + h2{
+.proud-logo + h1 {
 	font-size: 26px;
 	line-height: 42px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -1978,15 +1995,16 @@ a.card-register-center{
 	padding-top: 60px;
 	padding-bottom: 100px;
 }
-.main-loan h3{
-	text-align: center;
-	font-size: 35px;
-	padding-bottom: 10px;
-	margin-bottom: 65px;
-	display: block;
+.main-loan h1{
 	position: relative;
+	display: block;
+	margin-bottom: 65px;
+	padding-bottom: 10px;
+	font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	text-align: center;
 }
-.main-loan h3:after {
+.main-loan h1:after {
     height: 4px;
     width: 50px;
     background: #CF3339;
@@ -2092,7 +2110,7 @@ h4.content-title:after{
 	font-size: 16px;
 	line-height: 30px;
 	color: #000;
-	padding: 0 22px 15px 0;
+	padding:0 0 15px 0;
 	letter-spacing: 0px;
   font-family: 'Conv_SukhumvitTadmai_Bol';
   position: relative;
@@ -2101,8 +2119,6 @@ h4.content-title:after{
 .faq-head .collapsed{
 	/*color: #707070;*/
 	line-height: 21px;
-	border-bottom: rgba(90,102,112,.15) solid 1px;
-	padding-bottom: 15px;
 }
 
 .faq-head:hover,
@@ -2114,6 +2130,17 @@ h4.content-title:after{
 .faq-head > div{
 	position: relative;
 	line-height: 21px;
+	padding-right: 24px;
+	padding-top: 15px;
+	border-top: rgba(90,102,112,.15) solid 1px;
+}
+
+.panel-default:nth-child(1) .faq-head > div{
+	border: none;
+}
+
+.theFAQ{
+	border-bottom: rgba(90,102,112,.15) solid 1px;
 }
 
 .faq-head > div:after{
@@ -2122,8 +2149,8 @@ h4.content-title:after{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
 	font-size: 30px;
 	color: inherit;
-	left: 100%;
-	top: 30%;
+	top: 22px;
+	right: 10px;
 	margin-top: -9px;
 	transform: rotate(-45deg);
 }
@@ -2134,11 +2161,9 @@ h4.content-title:after{
 
 .faq-answer > div{
 	padding: 0 0 30px 0;
-	margin-bottom: 10px;
 	font-size: 14px;
 	color: #000;
 	line-height: 20px;
-	border-bottom: rgba(90,102,112,.15) solid 1px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 100;
 }
@@ -2337,7 +2362,7 @@ a.media.on-desk img {
 	background-size: cover;
 }
 
-.page-flexi-header h2 {
+.page-flexi-header h1 {
 	margin-top: 15px;
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 42px;
@@ -2945,6 +2970,17 @@ section#section-flexi-cards {
 }
 
 /* login page -eve */
+.on-right.header-login-pg{
+	padding-top: 24px;
+	cursor: pointer;
+}
+.on-right.header-login-pg p{
+	padding-left: 6px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  font-size: 16px;
+	display: inline-block;
+	color: #fff;
+}
 .bg-login{
 	background: url("../img/bg-login.png");
 	background-size: cover;
@@ -2971,6 +3007,7 @@ section#section-flexi-cards {
 	font-family: 'FontAwesome';
 	width: 32px;
 	padding-right: 10px;
+	color: rgba(91,102,112,.55);
 }
 .box-login-con.form-wrap input{
 	width: 320px;
@@ -2986,12 +3023,226 @@ section#section-flexi-cards {
 	left: 0;
 }
 .box-login-con.form-wrap input[type="checkbox"]{
-	width: auto;
+	width: 20px;
+}
+/* Hide the browser's default checkbox */
+.box-other-form input[type="checkbox"]{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid rgba(91,102,112,.7);
+	cursor: pointer;
+}
+/* When the checkbox is checked, add a blue background */
+.box-other-form input:checked ~ .checkmark {
+  background-color: #CF3339;
+	border: none;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.box-other-form input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.box-other-form .checkmark:after {
+	left: 7px;
+	top: 2px;
+	width: 7px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box-other-form.checkbox-form{
+	padding-top: 60px;
+}
+.box-other-form{
+	position: relative;
+}
+.box-other-form label{
+	color: #000;
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	padding-left: 40px;
+}
+button.btn-login-pg:disabled{
+  background-color: rgba(91,102,112,.6);
+}
+button.btn-login-pg{
+	width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  border-color: transparent;
+  background-color: #CF3339;
+  color: #fff;
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+  margin: 60px 0 30px 0;
+  cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+.box-other-form a{
+	color: #000;
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+.link-regis{
+	text-align: center;
+  margin: 45px 0;
+  color: #000;
+  font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+.link-regis a{
+	color: #CF3339;
+  font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-decoration: underline;
+	padding-left: 20px;
 }
 
 #footer-login-form .footer-only-login,
 #footer-login-form .social-footer{
 	display: none;
+}
+
+/* register page */
+.on-right.header-regis-pg{
+	padding-top: 24px;
+	cursor: pointer;
+}
+.on-right.header-regis-pg p{
+	padding-left: 6px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  font-size: 16px;
+	display: inline-block;
+	color: #fff;
+	vertical-align: top;
+}
+.on-right.header-regis-pg img{
+	width: 13px;
+}
+.box-login-con.form-wrap input[type="checkbox"]{
+	display: none;
+}
+/* Hide the browser's default radio */
+.box-other-form input[type="radio"]{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom radio */
+.dotmark {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+	background-color: #fff;
+	border-radius: 60px;
+	border: 1px solid rgba(91,102,112,.7);
+	cursor: pointer;
+}
+/* When the radio is checked, add a blue background */
+.box-other-form input:checked ~ .dotmark {
+  background-color: #CF3339;
+	border: none;
+}
+/* Create the dotmark/indicator (hidden when not checked) */
+.dotmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the dotmark when checked */
+.box-other-form input:checked ~ .dotmark:after {
+  display: block;
+}
+/* Style the dotmark/indicator */
+.box-other-form .dotmark:after {
+	left: 6px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+	border: solid white;
+	border-radius: 60px;
+	background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box-radio{
+	padding: 0 15px;
+}
+.box-radio label{
+	padding-left: 20px;
+}
+#pg-regis.form-wrap input[type="text"] + label {
+  left: 0;
+}
+.box-input-form .form-group{
+	margin-bottom: 0;
+}
+.box-input-form .form-group label{
+	font-size: 12px;
+	color: rgba(91,102,112,.55);
+	margin-top: 60px;
+}
+.box-input-form .form-control{
+	padding-left: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+	color: #000;
+}
+.box-input-form .form-control:focus{
+	box-shadow: none;
+	border-color: #CF3339;
+}
+/*style items (options):*/
+.select-items {
+  box-shadow: 0 1px 3px rgba(0,0,0,.16);
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+a.link-regis{
+	text-decoration: underline;
+}
+button.btn-next-step:disabled{
+  background-color: rgba(91,102,112,.6);
+}
+button.btn-next-step{
+	width: 145px;
+  height: 45px;
+  border-radius: 6px;
+  border-color: transparent;
+  background-color: #CF3339;
+  color: #fff;
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+  margin: 60px 0 30px 0;
+  cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 }
 
 .search-input-wrap{
@@ -3009,6 +3260,7 @@ section#section-flexi-cards {
 	padding: 12px 20px;
 	opacity: 0;
 	pointer-events: none;
+	z-index: 100;
 	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
@@ -3068,6 +3320,136 @@ input:focus + .suggess-box,
     opacity: 1;
 }
 
+#search-result-page{
+	padding-top: 25px;
+}
+
+.content-wrap > nav > .breadcrumb{
+	padding-left: 0;
+}
+
+.tab-content .tab-pane{
+	opacity: 0;
+	transition: all .15s ease-out;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+}
+.tab-content .tab-pane.in{
+	opacity: 1;
+}
+
+#result-content .index-head{
+	margin:  0 0 0 -15px;
+}
+#result-content .index-head a{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	color: #000;
+    line-height: 33px;
+    font-size: 20px;
+}
+
+.text-on-slide .index-head a:after{
+	display: none;
+}
+
+.lang-wrap{
+	display: none;
+	cursor: pointer;
+}
+
+.lang-wrap.active{
+	display: block;
+}
+
+.menu-resp-scroll .lang-wrap{
+    width: calc(100% - 40px);
+    float: right;
+}
+
+.ktc-tabs{
+	border: none;
+	text-align: center;
+	flex: 0;
+	display: block;
+	margin-bottom: 60px;
+	font-size: 0;
+}
+
+.ktc-tabs li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ktc-tabs li a{
+    color: #000;
+    padding: 0 4.37vw;
+    border-right: 1px solid rgba(91,102,112,.15);
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 20px;
+    line-height: 55px;
+    display: block;
+}
+
+.ktc-tabs li:nth-last-child(1) a{
+	border: none;
+}
+
+.ktc-tabs li a:hover,
+.ktc-tabs li.active a{
+    color: #CF3339;
+}
+
+.ktc-tabs li.active a{
+	pointer-events: none;
+}
+
+.ktc-tabs li.active a:hover{
+	cursor: default;
+}
+
+.title-center{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 23px 0 30px 0;
+    line-height: 33px;
+}
+
+#result-content .text-on-slide{
+	margin-bottom: 30px;
+}
+
+.search-slide{
+	position: relative;
+}
+
+.search-slide .owl-nav{
+    left: -30px;
+    right: -30px;
+    display: block;
+    top: calc(5vw - 14px);
+    position: absolute;
+}
+
+.search-slide .owl-nav .owl-next{
+	float: right;
+}
+
+.search-wrap .btn-wrap{
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+.search-wrap .btn-wrap .button-search{
+	position: static;
+	margin: 20px;
+}
+
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
@@ -3083,6 +3465,13 @@ input:focus + .suggess-box,
     .page-flexi-header {
         padding-left: calc(50vw - 535px);
         padding-right: calc(50vw - 535px);
+    }
+
+    .search-slide .owl-nav{
+    	top: 55px;
+    }
+    .ktc-tabs li a{
+    	padding: 0 60px;
     }
 }
 

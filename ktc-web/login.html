@@ -23,7 +23,7 @@
           <img src="img/KTC.png">
         </a>
       </div>
-      <ul class="scrolled-menu">
+      <!--<ul class="scrolled-menu">
         <li>บัตรเครดิต
           <i class="fa fa-angle-down"></i>
           <ul>
@@ -65,44 +65,10 @@
             <li>คำถามที่พบบ่อย<a href="#"></a></li>
           </ul>
         </li>
-      </ul>
-      <div class="on-right">
-        <a class="search-on-menu" data-toggle="modal" data-target="#search-modal">
-          <i class="fa fa-search"></i>
-        </a>
-        <div id="card-register" class="card-register-btn" data-toggle="modal" data-target="#card-register-modal" href="#">สมัครบัตร</div>
-        <!-- ก่อนล็อกอิน -->
-        <!-- <a class="login-btn" href="#">
-           <i class="fa fa-lock"></i>
-          เข้าสู่ระบบ
-        </a>
-        <div class="login-mobile only-mobile" href="#">
-          <img src="img/ico-login.png">
-        </div> -->
-
-        <!-- หลังล็อกอิน -->
-        <div class="login-btn logged-in">
-          <div class="profile-image"><img src="img/img-profile.png"></div>
-          <p class="profile-name">บัญชีของฉัน</p><i class="fa fa-angle-down"></i>
-          <ul>
-            <li><a href="#"><div class="subimg-wrap"><img src="img/ico-subprofile-1.png"></div><p>บัตร KTC ของฉัน</p></a></li>
-            <li><a href="#"><div class="subimg-wrap"><img src="img/ico-subprofile-2.png"></div><p>โปรโมชั่นของฉัน</p></a></li>
-            <li><a href="#"><div class="subimg-wrap"><img src="img/ico-subprofile-3.png"></div><p>ออกจากระบบ</p></a></li>
-          </ul>
-          <div class="for-sub-profile-mobile">
-            <div class="profile-image"><img src="img/img-profile.png"></div>
-            <button type="button" class="close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-        </div>
-
-
-        <div class="profile-on-menu">
-          <!--<div class="profile-image"><img src="img/ico-user.png"></div>-->
-          <span class="profile-name"></span>
-          <div class="menu-mobile only-mobile" onclick="myFunction()"></div>
-        </div>
+      </ul>-->
+      <div class="on-right header-login-pg">
+        <a href="index.html"><img src="img/ico-home.png">
+        <p>กลับไปหน้าหลัก</p></a>
       </div>
       <div id="scrolled-menu-responsive" class="menu-responsive-dropdown only-mobile">
         <div class="menu-resp-scroll">
@@ -157,8 +123,15 @@
           <div class="menu-btn">
             <div class="menu-lang">
               <div class="lang-header-menu">
-                <img src="img/ico-lang.png"><label for="lang-change">Language</label>
-                <p id="lang-change">EN</p>
+                <img src="img/ico-lang.png">
+                  <div class="lang-wrap active">
+                    <label for="lang-change">Language</label>
+                    <p id="lang-change">EN</p>
+                  </div>
+                  <div class="lang-wrap">
+                    <label for="lang2-change">Language</label>
+                    <p id="lang2-change">TH</p>
+                  </div>
               </div>
             </div>
             <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
@@ -277,16 +250,18 @@
             <i class="fas fa-lock"></i>
             <input type="text" placeholder="รหัสผ่าน">
           </div>
-          <div class="box-other-form">
-            <input type="checkbox" name="remember-password">
-            <label>จำชื่อผู้ใช้งาน</label>
+          <div class="box-other-form checkbox-form">
+            <label>จำชื่อผู้ใช้งาน
+              <input type="checkbox" name="remember-password">
+              <span class="checkmark"></span>
+            </label>
           </div>
-          <button value="submit">เข้าสู่ระบบ</button>
-          <div>
-            <p>ลืมชื่อผู้ใช้งาน</p>
-            <p>ลืมรหัสผ่าน</p>
+          <button class="btn-login-pg" value="submit" disabled>เข้าสู่ระบบ</button>
+          <div class="row box-other-form">
+            <a href="#" class="col-6 text-left">ลืมชื่อผู้ใช้งาน</a>
+            <a href="#" class="col-6 text-right">ลืมรหัสผ่าน</a>
           </div>
-          <p>ยังไม่มีบัญชีผู้ใช้งาน? <a href="#">ลงทะเบียน</a></p>
+          <p class="link-regis">ยังไม่มีบัญชีผู้ใช้งาน? <a href="register-member.html">ลงทะเบียน</a></p>
         </div>
       </div>
     </div>
@@ -432,10 +407,10 @@
         </div>
       </div>
     </div>
-    <div class="content-wrap last-piece">
+    <div class="content-wrap last-piece for-login-pg">
       <div class="row">
-        <div class="col-lg-6 license">สงวนลิขสิทธิ์ © 2561 บริษัท บัตรกรุงไทย จำกัด (มหาชน)</div>
-        <div class="col-lg-6 text-right">
+        <div class="col-10 col-lg-6 license">สงวนลิขสิทธิ์ © 2561 บริษัท บัตรกรุงไทย จำกัด (มหาชน)</div>
+        <div class="col-2 col-lg-6 text-right">
           <div class="social-footer">
             <a href="#">
               <img class="on-default" src="img/ico-social-facebook.png">
@@ -454,13 +429,16 @@
               <img class="on-hover" src="img/ico-social-line-color.png">
             </a>
           </div>
-          <div class="lang-footer">
-            <label for="lang-change">Language</label>
-            <select class="" id="lang-change">
-              <option>TH</option>
-              <option>EN</option>
-            </select>
-          </div>
+            <a class="lang-footer">
+              <div class="lang-wrap active">
+                <label for="lang-change">Language</label>
+                <p id="lang-change">EN</p>
+              </div>
+              <div class="lang-wrap">
+                <label for="lang2-change">Language</label>
+                <p id="lang2-change">TH</p>
+              </div>
+            </a>
         </div>
       </div>
     </div>
@@ -505,34 +483,74 @@
 
   </div>
 
-    <div id="search-modal" class="modal fade full-modal" tabindex="-1">
+  <div id="search-modal" class="modal fade full-modal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="search-cat-wrap">
-              <input type="checkbox" name="" id="all-cat">
-              <label for="all-cat">ทั้งหมด</label>
-              <div class="subcat-wrap">
-                <input type="checkbox" name="" id="credit-cat">
-                <label for="credit-cat">บัตรเครดิต</label>
-                <input type="checkbox" name="" id="privill-cat">
-                <label for="privill-cat">สิทธิพิเศษ</label>
-                <input type="checkbox" name="" id="article-cat">
-                <label for="article-cat">บทความ</label>
-                <input type="checkbox" name="" id="other-cat">
-                <label for="other-cat">อื่นๆ</label>
-              </div>
-            </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="search-wrap">
-              <img src="img/ico-search-black.png">
-              <input class="input-search" type="text" placeholder="ค้นหาทุกสิ่งใน KTC">
-              <button class="button-search">ค้นหา</button>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="search-head">
+                <div class="panel-title search-cat-head">
+                  <div class="collapsed" data-toggle="collapse" data-target="#search-cat-wrap" aria-controls="search-cat-wrap">
+                    <img src="img/ico-sort.png"><h4>ตัวกรอง</h4><i class="fa fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapsed collapse" role="tabpanel" aria-labelledby="search-head" style="height: 0px;">
+                <div class="subcat-wrap">
+                  <input checked="checked" type="checkbox" name="" id="all-cat">
+                  <label for="all-cat">ทั้งหมด</label>
+                  <input type="checkbox" name="" id="credit-cat" class="subcat">
+                  <label for="credit-cat">บัตรเครดิต</label>
+                  <input type="checkbox" name="" id="privill-cat" class="subcat">
+                  <label for="privill-cat">สิทธิพิเศษ</label>
+                  <input type="checkbox" name="" id="article-cat" class="subcat">
+                  <label for="article-cat">บทความ</label>
+                  <input type="checkbox" name="" id="other-cat" class="subcat">
+                  <label for="other-cat">อื่นๆ</label>
+                </div>
+              </div>
             </div>
+            <form class="search-wrap">
+              <img src="img/ico-search-black.png">
+              <div class="search-input-wrap">
+                <input id="search" autocomplete="off" class="input-search" type="text" placeholder="ค้นหาทุกสิ่งใน KTC">
+                <div tabindex="0" id="suggest-box" class="suggess-box">
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-credit.png">
+                    </div>
+                    <p>KTC X VISA SIGNATURE</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-shopping.png">
+                    </div>
+                    <p>KTC X MASTERCARD</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-service-custom.png">
+                    </div>
+                    <p>มูลนิธิศิริราช</p>
+                  </div>
+                  <div class="suggess-list">
+                    <div class="suggess-img-wrap">
+                      <img src="img/ico-other.png">
+                    </div>
+                    <p>Early Inactive Q1 2018</p>
+                  </div>
+                </div>
+                <div id="fake-result"></div>
+              </div>
+              <div class="btn-wrap">
+                <button class="button-search">ค้นหา</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

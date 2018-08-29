@@ -15,11 +15,11 @@ $(document).ready(function() {
 
 
     //search-category selected
-    $(".subcat-wrap label").on('click touch', function () {
-      $(this).parent().siblings().prop("checked", false);
+    $(".subcat + label").on('click touch', function () {
+      $("#all-cat").removeAttr("checked").checkboxradio('refresh');
     });
-    $(".search-cat-wrap > label").on('click touch', function () {
-      $(".subcat-wrap input").prop("checked", false);
+    $("#all-cat + label").on('click touch', function () {
+      $(".subcat").removeAttr("checked").checkboxradio('refresh');
     });
 
     //flexi page nav
@@ -132,6 +132,11 @@ $(document).ready(function() {
         }
       });
      });
+
+    //for switch language
+    $(".lang-wrap").on('click touch', function () {
+      $(".lang-wrap").toggleClass('active');
+    });
 
 
     //for search

@@ -157,8 +157,15 @@
           <div class="menu-btn">
             <div class="menu-lang">
               <div class="lang-header-menu">
-                <img src="img/ico-lang.png"><label for="lang-change">Language</label>
-                <p id="lang-change">EN</p>
+                <img src="img/ico-lang.png">
+                  <div class="lang-wrap active">
+                    <label for="lang-change">Language</label>
+                    <p id="lang-change">EN</p>
+                  </div>
+                  <div class="lang-wrap">
+                    <label for="lang2-change">Language</label>
+                    <p id="lang2-change">TH</p>
+                  </div>
               </div>
             </div>
             <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
@@ -266,7 +273,7 @@
 
     <!-- start page -->
     <div class="content-wrap main-loan">
-      <h3>เลือกสินเชื่อที่ตรงใจคุณ</h3>
+      <h1>เลือกสินเชื่อที่ตรงใจคุณ</h1>
       <div class="row">
         <div class="col-lg-6 text-center">
           <a href="loan-proud.html"><img src="img/img-ktc-visa-signature.png"></a>
@@ -448,13 +455,16 @@
               <img class="on-hover" src="img/ico-social-line-color.png">
             </a>
           </div>
-          <div class="lang-footer">
-            <label for="lang-change">Language</label>
-            <select class="" id="lang-change">
-              <option>TH</option>
-              <option>EN</option>
-            </select>
-          </div>
+            <a class="lang-footer">
+              <div class="lang-wrap active">
+                <label for="lang-change">Language</label>
+                <p id="lang-change">EN</p>
+              </div>
+              <div class="lang-wrap">
+                <label for="lang2-change">Language</label>
+                <p id="lang2-change">TH</p>
+              </div>
+            </a>
         </div>
       </div>
     </div>
@@ -511,28 +521,22 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="search-head">
                 <div class="panel-title search-cat-head">
-                  <div class="" data-toggle="collapse" data-target="#search-cat-wrap" aria-expanded="true" aria-controls="search-cat-wrap">
+                  <div class="collapsed" data-toggle="collapse" data-target="#search-cat-wrap" aria-controls="search-cat-wrap">
                     <img src="img/ico-sort.png"><h4>ตัวกรอง</h4><i class="fa fa-angle-up"></i>
                   </div>
                 </div>
               </div>
-              <!-- <div id="ans12" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq12">
-                <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div> -->
-              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapse in" role="tabpanel" aria-labelledby="search-head" aria-expanded="true">
-                <input type="checkbox" name="" id="all-cat">
-                <label for="all-cat">ทั้งหมด</label>
+              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapsed collapse" role="tabpanel" aria-labelledby="search-head" style="height: 0px;">
                 <div class="subcat-wrap">
-                  <input type="checkbox" name="" id="credit-cat">
+                  <input checked="checked" type="checkbox" name="" id="all-cat">
+                  <label for="all-cat">ทั้งหมด</label>
+                  <input type="checkbox" name="" id="credit-cat" class="subcat">
                   <label for="credit-cat">บัตรเครดิต</label>
-                  <input type="checkbox" name="" id="privill-cat">
+                  <input type="checkbox" name="" id="privill-cat" class="subcat">
                   <label for="privill-cat">สิทธิพิเศษ</label>
-                  <input type="checkbox" name="" id="article-cat">
+                  <input type="checkbox" name="" id="article-cat" class="subcat">
                   <label for="article-cat">บทความ</label>
-                  <input type="checkbox" name="" id="other-cat">
+                  <input type="checkbox" name="" id="other-cat" class="subcat">
                   <label for="other-cat">อื่นๆ</label>
                 </div>
               </div>

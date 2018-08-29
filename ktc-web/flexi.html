@@ -157,11 +157,15 @@
         <div class="menu-btn">
           <div class="menu-lang">
             <div class="lang-header-menu">
-              <img src="img/ico-lang.png"><label for="lang-change">Language</label>
-              <select class="" id="lang-change">
-                <option>TH</option>
-                <option>EN</option>
-              </select>
+              <img src="img/ico-lang.png">
+                  <div class="lang-wrap active">
+                    <label for="lang-change">Language</label>
+                    <p id="lang-change">EN</p>
+                  </div>
+                  <div class="lang-wrap">
+                    <label for="lang2-change">Language</label>
+                    <p id="lang2-change">TH</p>
+                  </div>
             </div>
           </div>
           <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
@@ -273,10 +277,9 @@
     <div class="row">
       <div class="col">
         <img src="img/ico-ktc-flexi-white.png" alt="KTC Flexi">
-        <h1 class="sr-only">KTC Flexi</h1>
-        <h2>บัตรเครดิตผ่อน 0%<br>
+        <h1>บัตรเครดิตผ่อน 0%<br>
           แบ่งชำระง่ายๆ พร้อมดอกเบี้ย<br>
-          สุดพิเศษ 0% จาก KTC</h2>
+          สุดพิเศษ 0% จาก KTC</h1>
         <a href="#" class="btn button-flexi-start only-desktop">ทำรายการแบ่งชำระออนไลน์</a>
       </div>
     </div>
@@ -285,9 +288,8 @@
     <div class="row">
       <div class="col-6">
         <img src="img/ico-ktc-flexi-white.png" alt="KTC Flexi">
-        <h1 class="sr-only">KTC Flexi</h1>
-        <h2>บัตรเครดิตแบ่งจ่าย 0%<br>
-          ผ่อนสบายๆ กว่า 10,000 ร้านค้า</h2>
+        <h1>บัตรเครดิตแบ่งจ่าย 0%<br>
+          ผ่อนสบายๆ กว่า 10,000 ร้านค้า</h1>
       </div>
     </div>
   </div>
@@ -331,6 +333,7 @@
       </ul>
   </nav>
   <nav id="nav-flexi-mobile" class="only-mobile">
+    <span>KTC Flexi</span>
     <ul class="nav navbar-nav full-size">
       <li class="nav-item active">
         <a href="#section-flexi-cards" class="nav-link">ประเภทบัตร KTC</a>
@@ -438,6 +441,7 @@
 </article>
 
 <article class="page-content">
+  <h4 class="sr-only">ร้านค้าสมาชิก</h4>
   <section id="section-flexi-shops" class="no-bottom-line">
     <h4>ร้านค้าสมาชิก</h4>
     <div class="row no-gutters">
@@ -454,6 +458,7 @@
 </article>
 
 <article class="page-content content-wrap">
+  <h4 class="sr-only">โปรโมชั่น</h4>
   <section id="section-flexi-promotions">
     <h4>โปรโมชั่น</h4>
     <div class="text-on-slide text-right">
@@ -737,10 +742,16 @@
             <img class="on-hover" src="img/ico-social-line-color.png">
           </a>
         </div>
-        <div class="lang-footer">
-          <label for="lang-change">Language</label>
-          <p id="lang-change">EN</p>
-        </div>
+            <a class="lang-footer">
+              <div class="lang-wrap active">
+                <label for="lang-change">Language</label>
+                <p id="lang-change">EN</p>
+              </div>
+              <div class="lang-wrap">
+                <label for="lang2-change">Language</label>
+                <p id="lang2-change">TH</p>
+              </div>
+            </a>
       </div>
     </div>
   </div>
@@ -797,28 +808,22 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="search-head">
                 <div class="panel-title search-cat-head">
-                  <div class="" data-toggle="collapse" data-target="#search-cat-wrap" aria-expanded="true" aria-controls="search-cat-wrap">
+                  <div class="collapsed" data-toggle="collapse" data-target="#search-cat-wrap" aria-controls="search-cat-wrap">
                     <img src="img/ico-sort.png"><h4>ตัวกรอง</h4><i class="fa fa-angle-up"></i>
                   </div>
                 </div>
               </div>
-              <!-- <div id="ans12" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq12">
-                <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div> -->
-              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapse in" role="tabpanel" aria-labelledby="search-head" aria-expanded="true">
-                <input type="checkbox" name="" id="all-cat">
-                <label for="all-cat">ทั้งหมด</label>
+              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapsed collapse" role="tabpanel" aria-labelledby="search-head" style="height: 0px;">
                 <div class="subcat-wrap">
-                  <input type="checkbox" name="" id="credit-cat">
+                  <input checked="checked" type="checkbox" name="" id="all-cat">
+                  <label for="all-cat">ทั้งหมด</label>
+                  <input type="checkbox" name="" id="credit-cat" class="subcat">
                   <label for="credit-cat">บัตรเครดิต</label>
-                  <input type="checkbox" name="" id="privill-cat">
+                  <input type="checkbox" name="" id="privill-cat" class="subcat">
                   <label for="privill-cat">สิทธิพิเศษ</label>
-                  <input type="checkbox" name="" id="article-cat">
+                  <input type="checkbox" name="" id="article-cat" class="subcat">
                   <label for="article-cat">บทความ</label>
-                  <input type="checkbox" name="" id="other-cat">
+                  <input type="checkbox" name="" id="other-cat" class="subcat">
                   <label for="other-cat">อื่นๆ</label>
                 </div>
               </div>

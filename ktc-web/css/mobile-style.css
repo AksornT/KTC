@@ -281,7 +281,7 @@
     top: 23px;
     left: 56px;
   }
-  .menu-responsive-dropdown .lang-header-menu select{
+  .menu-responsive-dropdown .lang-header-menu p{
     float: right;
     background-color: transparent;
     color: #707070;
@@ -503,7 +503,7 @@
   .main-loan{
     padding-bottom: 60px;
   }
-  .main-loan h3{
+  .main-loan h1{
   	font-size: 20px;
     padding-top: 60px;
     margin-bottom: 45px;
@@ -646,17 +646,55 @@
     margin-bottom: 20px;
   }
   .faq-head .collapsed {
-    padding: 0 0 15px 0;
     font-size: 14px;
     line-height: 20px;
   }
   .faq-head > div {
-    padding: 0;
     font-size: 14px;
     line-height: 20px;
   }
   .faq-head > div:after{
     font-size: 26px;
+  }
+
+  /* login page -eve */
+  .on-right.header-login-pg {
+    padding-top: 14px;
+  }
+  .on-right.header-login-pg p{
+    font-size: 14px;
+  }
+  .bg-login{
+    background: none;
+  }
+  .box-login-con{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .box-login-con.form-wrap input{
+    width: 260px;
+  }
+  .bg-login .content-wrap{
+    padding: 0 40px;
+  }
+  .box-login-con h3{
+    font-size: 20px;
+  }
+  .box-other-form label{
+    font-size: 16px;
+  }
+  .box-other-form a{
+    font-size: 16px;
+  }
+  .link-regis, .link-regis a{
+    font-size: 16px;
+  }
+  .last-piece.for-login-pg .license{
+    padding-left: 20px;
+  }
+  .last-piece.for-login-pg .text-right{
+    padding-right: 20px;
   }
 
   /* Flexi Page - @korstudio */
