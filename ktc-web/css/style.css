@@ -3162,6 +3162,7 @@ input:focus + .suggess-box,
 
 .lang-wrap{
 	display: none;
+	cursor: pointer;
 }
 
 .lang-wrap.active{
