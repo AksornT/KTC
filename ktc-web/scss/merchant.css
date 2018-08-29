@@ -286,6 +286,12 @@ section#section-merchant-options .content-forever p.small {
   }
 }
 
+@media (max-width: 991px) {
+  section#section-merchant-register-form h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
 section#section-merchant-register-form .form-row {
   margin-top: 50px;
 }
@@ -307,6 +313,31 @@ section#section-merchant-register-form .form-row .form-col.right {
 }
 section#section-merchant-register-form .form-row .form-col.right label {
   left: 45px;
+}
+@media (max-width: 991px) {
+  section#section-merchant-register-form .form-row .form-col.left {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section#section-merchant-register-form .form-row .form-col.left label {
+    left: 5px;
+  }
+  section#section-merchant-register-form .form-row .form-col.right {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  section#section-merchant-register-form .form-row .form-col.right label {
+    left: 15px;
+  }
+}
+@media (max-width: 576px) {
+  section#section-merchant-register-form .form-row .form-col.left, section#section-merchant-register-form .form-row .form-col.right {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  section#section-merchant-register-form .form-row .form-col.left label, section#section-merchant-register-form .form-row .form-col.right label {
+    left: 5px;
+  }
 }
 section#section-merchant-register-form .form-control:focus {
   border-color: transparent;
@@ -366,6 +397,12 @@ section#section-merchant-register-form .row-merchant-options label.custom-contro
   height: 26px;
   background-size: 60%;
 }
+@media (max-width: 991px) {
+  section#section-merchant-register-form .row-merchant-options h5 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
 section#section-merchant-register-form #sending-form {
   background-color: #045AA7;
 }
@@ -381,11 +418,31 @@ section#section-merchant-register-form .row-merchant-download-docs .content-col 
   display: flex;
   align-items: center;
 }
+section#section-merchant-register-form .row-merchant-download-docs .img-wrap {
+  text-align: center;
+}
 section#section-merchant-register-form .row-merchant-download-docs .btn.button-download-link {
   text-align: left;
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   color: #000000;
+}
+@media (max-width: 991px) {
+  section#section-merchant-register-form .row-merchant-download-docs .btn.button-download-link {
+    font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+  section#section-merchant-register-form .row-merchant-download-docs .img-wrap {
+    width: 80px;
+  }
+  section#section-merchant-register-form .row-merchant-download-docs .img-wrap img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+  section#section-merchant-register-form .row-merchant-download-docs .content-col {
+    flex-basis: 350px;
+    max-width: 350px;
+  }
 }
 
 .contact-ribbon {

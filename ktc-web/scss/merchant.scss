@@ -335,6 +335,13 @@ section#section-merchant-options {
 }
 
 section#section-merchant-register-form {
+  @include tablet {
+    h4 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
   .form-row {
     margin-top: 50px;
 
@@ -362,6 +369,37 @@ section#section-merchant-register-form {
 
         label {
           left: ($form-spacing / 2) + 5px;
+        }
+      }
+
+      @include tablet {
+        &.left {
+          padding-left: 5px;
+          padding-right: 15px;
+
+          label {
+            left: 5px;
+          }
+        }
+
+        &.right {
+          padding-left: 15px;
+          padding-right: 5px;
+
+          label {
+            left: 15px;
+          }
+        }
+      }
+
+      @include mobile {
+        &.left, &.right {
+          padding-left: 5px;
+          padding-right: 5px;
+
+          label {
+            left: 5px;
+          }
         }
       }
     }
@@ -443,6 +481,13 @@ section#section-merchant-register-form {
         background-size: 60%;
       }
     }
+
+    @include tablet {
+      h5 {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
   }
 
   #sending-form {
@@ -463,11 +508,36 @@ section#section-merchant-register-form {
       align-items: center;
     }
 
+    .img-wrap {
+      text-align: center;
+    }
+
     .btn.button-download-link {
       text-align: left;
       font-family: $font-normal;
       font-size: 24px;
       color: #000000;
+    }
+
+    @include tablet {
+      .btn.button-download-link {
+        font-family: $font-thin;
+        font-size: 18px;
+      }
+
+      .img-wrap {
+        width: 80px;
+
+        img {
+          max-width: 60px;
+          max-height: 60px;
+        }
+      }
+      
+      .content-col {
+        flex-basis: 350px;
+        max-width: 350px;
+      }
     }
   }
 }
