@@ -844,4 +844,10 @@
   .search-cat-wrap{
     margin-top: 20px;
   }
+  .search-slide .owl-nav{
+    top: calc(10vw - 12px);
+  }
+  .ktc-tabs li a{
+    padding: 0 4vw;
+  }
 }
