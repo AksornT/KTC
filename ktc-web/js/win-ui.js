@@ -130,6 +130,11 @@ $(document).ready(function() {
       });
      });
 
+    //for switch language
+    $(".lang-footer").on('click touch', function () {
+      $(".lang-wrap").toggleClass('active');
+    });
+
 
     //for search
     $(".suggess-list").on('click touch', function () {
