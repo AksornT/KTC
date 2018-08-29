@@ -1791,12 +1791,12 @@ a:hover .on-hover{
 	display: inline-block;
 }
 
-.card-register-center{
+.card-register-center, .btn-action {
 	background: #CF3339;
 	color: #fff;
 	text-align: center;
 	font-size: 18px;
-	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-family: 'Conv_SukhumvitTadmai_Bol', Helvetica, Arial, sans-serif;
 	padding: 13px 49px;
 	border-radius: 6px;
 	border: transparent;
@@ -1804,25 +1804,25 @@ a:hover .on-hover{
 	min-width: 176px;
 	position: relative;
 	top: 0;
-	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 
-a.card-register-center{
+a.card-register-center, a.btn-action {
 	margin: 30px 0 60px 0;
 }
 
-.card-register-center:hover{
+.card-register-center:hover, .btn-action:hover {
 	cursor: pointer;
 	color: #fff;
 	top: -3px;
-	-webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
 }
 
-.card-register-center.blue {
+.card-register-center.blue, .btn-action.blue {
 	background: #045aa7;
 }
 
@@ -2913,7 +2913,8 @@ section#section-flexi-cards {
 	opacity: 0.5;
 }
 
-.sticky-right .card-register-center{
+.sticky-right .card-register-center,
+.sticky-right .btn-action {
 	font-size: 16px;
 	padding: 10px 34px;
 	line-height: 26px;

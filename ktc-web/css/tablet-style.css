@@ -580,7 +580,7 @@
     line-height: 32px;
   }
 
-  a.card-register-center {
+  a.card-register-center, a.btn-action {
     margin: 30px 0 60px 0;
     font-size: 14px;
     min-width: 108px;
@@ -799,7 +799,8 @@
     margin-left: -18px;
   }
 
-  .sticky-right .card-register-center{
+  .sticky-right .card-register-center,
+  .sticky-right .btn-action {
     font-size: 14px;
     line-height: 22px;
     padding: 4px 25px;
