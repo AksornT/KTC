@@ -469,9 +469,39 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   margin-right: 5px;
   vertical-align: middle;
 }
+@media (max-width: 991px) {
+  .contact-ribbon .text-contact {
+    font-size: 14px;
+  }
+  .contact-ribbon .text-contact em {
+    font-size: 20px;
+  }
+  .contact-ribbon .text-contact img {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-ribbon .text-contact em {
+    display: block;
+    margin-right: 0;
+  }
+  .contact-ribbon .text-contact .tel-wrap {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 3px;
+  }
+  .contact-ribbon .text-contact img {
+    margin-left: 0;
+  }
+}
 
 #content-merchant-faq {
   padding-top: 60px;
+}
+@media (max-width: 576px) {
+  #content-merchant-faq {
+    padding-top: 0;
+  }
 }
 
 #faq ol {
