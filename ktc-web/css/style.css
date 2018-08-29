@@ -3168,6 +3168,11 @@ input:focus + .suggess-box,
 	display: block;
 }
 
+.menu-resp-scroll .lang-wrap{
+    width: calc(100% - 40px);
+    float: right;
+}
+
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{

@@ -281,7 +281,7 @@
     top: 23px;
     left: 56px;
   }
-  .menu-responsive-dropdown .lang-header-menu select{
+  .menu-responsive-dropdown .lang-header-menu p{
     float: right;
     background-color: transparent;
     color: #707070;

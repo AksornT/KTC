@@ -183,13 +183,13 @@
     top: 23px;
     left: 56px;
   }
-  .menu-responsive-dropdown .lang-header-menu select{
+  .menu-responsive-dropdown .lang-header-menu p{
     float: right;
     background-color: transparent;
     color: #707070;
     font-family: 'Gotham-Bold';
     border-radius: 4px;
-    border-color: #707070;
+    border: #707070 1px solid;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;

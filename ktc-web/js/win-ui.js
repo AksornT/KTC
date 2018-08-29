@@ -131,7 +131,7 @@ $(document).ready(function() {
      });
 
     //for switch language
-    $(".lang-footer").on('click touch', function () {
+    $(".lang-wrap").on('click touch', function () {
       $(".lang-wrap").toggleClass('active');
     });
 
