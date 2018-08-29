@@ -113,7 +113,37 @@ article#page-merchant-content h4::after {
 .page-merchant-header .btn.button-shop-register {
   margin-top: 30px;
 }
+@media (max-width: 991px) {
+  .page-merchant-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+  .page-merchant-header h1 {
+    font-size: 3.2vw;
+  }
+  .page-merchant-header h1 small {
+    font-size: 0.64em;
+  }
+  .page-merchant-header .btn.button-shop-register {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .page-merchant-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-merchant-header h1 {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 991px) {
+  section#section-merchant-card-type h4 {
+    font-size: 20px;
+  }
+}
 section#section-merchant-card-type .row:first-child {
   margin-bottom: 30px;
 }
@@ -126,6 +156,14 @@ section#section-merchant-card-type .list-card-vendors {
 }
 section#section-merchant-card-type .list-card-vendors li {
   padding: 20px 0;
+}
+@media (max-width: 991px) {
+  section#section-merchant-card-type .list-card-vendors {
+    width: 300px;
+  }
+  section#section-merchant-card-type .list-card-vendors li {
+    padding: 20px 10px;
+  }
 }
 section#section-merchant-card-type .list-payment-services {
   display: flex;
@@ -150,6 +188,7 @@ section#section-merchant-card-type .list-payment-services .item-payment-service 
 }
 @media (max-width: 991px) {
   section#section-merchant-card-type .list-payment-services .item-payment-service {
+    /* TABLET */
     margin-top: 20px;
     padding: 0 12px;
     width: 50%;

@@ -129,9 +129,42 @@ article#page-merchant-content {
   .btn.button-shop-register {
     margin-top: 30px;
   }
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+
+    h1 {
+      font-size: 3.2vw;
+
+      small {
+        font-size: 0.64em;
+      }
+    }
+
+    .btn.button-shop-register {
+      font-size: 14px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    h1 {
+      font-size: 14px;
+    }
+  }
 }
 
 section#section-merchant-card-type {
+  @include tablet {
+    h4 {
+      font-size: 20px;
+    }
+  }
+
   .row:first-child {
     margin-bottom: 30px;
   }
@@ -144,6 +177,14 @@ section#section-merchant-card-type {
 
     li {
       padding: 20px 0;
+    }
+
+    @include tablet {
+      width: 300px;
+
+      li {
+        padding: 20px 10px;
+      }
     }
   }
 
@@ -171,6 +212,7 @@ section#section-merchant-card-type {
       }
 
       @include tablet {
+        /* TABLET */
         margin-top: 20px;
         padding: 0 12px;
         width: 50%;
