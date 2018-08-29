@@ -562,9 +562,10 @@ a:hover{
 .text-on-slide a{
 	text-align: right;
 	font-size: 18px;
-	color: #757575;
+	color: #000;
 	padding-top: 13px;
 	padding-right: 0;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 .text-on-slide a:hover{
@@ -592,6 +593,7 @@ a:hover{
 .owl-item{
 	display: inline-block;
 	opacity: 0;
+	vertical-align: top;
 }
 
 .owl-item.active{
@@ -699,9 +701,9 @@ article.page-content img {
 }
 .item .slide-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 20px;
-	padding-top: 14px;
-	line-height: 38px;
+    font-size: 20px;
+    padding: 19px 0 5px 0;
+    line-height: 28px;
 }
 .item .slide-content{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -3225,7 +3227,10 @@ input:focus + .suggess-box,
 	margin:  0 0 0 -15px;
 }
 #result-content .index-head a{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
 	color: #000;
+    line-height: 33px;
+    font-size: 20px;
 }
 
 .text-on-slide .index-head a:after{
@@ -3246,6 +3251,76 @@ input:focus + .suggess-box,
     float: right;
 }
 
+.ktc-tabs{
+	border: none;
+	text-align: center;
+	flex: 0;
+	display: block;
+	margin-bottom: 60px;
+	font-size: 0;
+}
+
+.ktc-tabs li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ktc-tabs li a{
+    color: #000;
+    padding: 0 4.37vw;
+    border-right: 1px solid rgba(91,102,112,.15);
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 20px;
+    line-height: 55px;
+    display: block;
+}
+
+.ktc-tabs li:nth-last-child(1) a{
+	border: none;
+}
+
+.ktc-tabs li a:hover,
+.ktc-tabs li.active a{
+    color: #CF3339;
+}
+
+.ktc-tabs li.active a{
+	pointer-events: none;
+}
+
+.ktc-tabs li.active a:hover{
+	cursor: default;
+}
+
+.title-center{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 23px 0 30px 0;
+    line-height: 33px;
+}
+
+#result-content .text-on-slide{
+	margin-bottom: 30px;
+}
+
+.search-slide{
+	position: relative;
+}
+
+.search-slide .owl-nav{
+    left: -30px;
+    right: -30px;
+    display: block;
+    top: calc(5vw - 14px);
+    position: absolute;
+}
+
+.search-slide .owl-nav .owl-next{
+	float: right;
+}
+
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
@@ -3262,6 +3337,13 @@ input:focus + .suggess-box,
     .page-flexi-header {
         padding-left: calc(50vw - 535px);
         padding-right: calc(50vw - 535px);
+    }
+
+    .search-slide .owl-nav{
+    	top: 55px;
+    }
+    .ktc-tabs li a{
+    	padding: 0 60px;
     }
 }
 
