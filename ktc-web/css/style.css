@@ -2050,7 +2050,11 @@ a.card-register-center, a.btn-action {
 	margin: 145px 0 30px 0;
 }
 
-.proud-regis-complete, .form-register-completed{
+section .form-register-completed .img-result {
+	margin-top: 85px;
+}
+
+.proud-regis-complete, .form-register-completed {
 	text-align: center;
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 20px;
