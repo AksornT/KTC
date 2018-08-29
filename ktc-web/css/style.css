@@ -3145,6 +3145,7 @@ button.btn-login-pg{
 	padding: 12px 20px;
 	opacity: 0;
 	pointer-events: none;
+	z-index: 100;
 	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
@@ -3319,6 +3320,18 @@ input:focus + .suggess-box,
 
 .search-slide .owl-nav .owl-next{
 	float: right;
+}
+
+.search-wrap .btn-wrap{
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+.search-wrap .btn-wrap .button-search{
+	position: static;
+	margin: 20px;
 }
 
 

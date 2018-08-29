@@ -657,28 +657,22 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="search-head">
                 <div class="panel-title search-cat-head">
-                  <div class="" data-toggle="collapse" data-target="#search-cat-wrap" aria-expanded="true" aria-controls="search-cat-wrap">
+                  <div class="collapsed" data-toggle="collapse" data-target="#search-cat-wrap" aria-controls="search-cat-wrap">
                     <img src="img/ico-sort.png"><h4>ตัวกรอง</h4><i class="fa fa-angle-up"></i>
                   </div>
                 </div>
               </div>
-              <!-- <div id="ans12" class="panel-collapse collapse faq-answer" role="tabpanel" aria-labelledby="faq12">
-                <div>คำตอบ คือ Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div> -->
-              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapse in" role="tabpanel" aria-labelledby="search-head" aria-expanded="true">
-                <input type="checkbox" name="" id="all-cat">
-                <label for="all-cat">ทั้งหมด</label>
+              <div id="search-cat-wrap" class="panel-collapse search-cat-wrap collapsed collapse" role="tabpanel" aria-labelledby="search-head" style="height: 0px;">
                 <div class="subcat-wrap">
-                  <input type="checkbox" name="" id="credit-cat">
+                  <input checked="checked" type="checkbox" name="" id="all-cat">
+                  <label for="all-cat">ทั้งหมด</label>
+                  <input type="checkbox" name="" id="credit-cat" class="subcat">
                   <label for="credit-cat">บัตรเครดิต</label>
-                  <input type="checkbox" name="" id="privill-cat">
+                  <input type="checkbox" name="" id="privill-cat" class="subcat">
                   <label for="privill-cat">สิทธิพิเศษ</label>
-                  <input type="checkbox" name="" id="article-cat">
+                  <input type="checkbox" name="" id="article-cat" class="subcat">
                   <label for="article-cat">บทความ</label>
-                  <input type="checkbox" name="" id="other-cat">
+                  <input type="checkbox" name="" id="other-cat" class="subcat">
                   <label for="other-cat">อื่นๆ</label>
                 </div>
               </div>

@@ -820,7 +820,6 @@
   }
 
   .subcat-wrap{
-    max-width: calc(100% - 111px);
     text-align: left;
     vertical-align: top;
   }
@@ -829,7 +828,8 @@
     padding: 12px 25px;
     line-height: 12px;
     font-size: 12px;
-    width: 110px;
+    width: 33%;
+    vertical-align: top;
   }
 
   .search-cat-wrap > label:nth-child(2){
@@ -849,5 +849,8 @@
   }
   .ktc-tabs li a{
     padding: 0 4vw;
+  }
+  .search-cat-wrap label:hover{
+    opacity: 1;
   }
 }
