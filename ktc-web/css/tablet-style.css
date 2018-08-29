@@ -598,6 +598,22 @@
     margin-bottom: 30px;
   }
 
+  /* login page -eve */
+  .last-piece.for-login-pg .text-right{
+    display: inline-block;
+    padding-right: 0px;
+  }
+  .last-piece.for-login-pg .text-right .lang-footer label{
+    display: none;
+  }
+  .last-piece.for-login-pg .license{
+    text-align: left;
+  }
+  .box-login-con{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   /* Flexi Page - @korstudio */
   .page-flexi-header {
     padding: 8vw 30px;

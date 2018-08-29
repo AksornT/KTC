@@ -67,7 +67,7 @@
         </li>
       </ul>-->
       <div class="on-right header-login-pg">
-        <a href="index.html"><img src="img/ico-home.png">
+        <a href="#"><img src="img/ico-home.png">
         <p>กลับไปหน้าหลัก</p></a>
       </div>
       <div id="scrolled-menu-responsive" class="menu-responsive-dropdown only-mobile">
@@ -123,15 +123,8 @@
           <div class="menu-btn">
             <div class="menu-lang">
               <div class="lang-header-menu">
-                <img src="img/ico-lang.png">
-                  <div class="lang-wrap active">
-                    <label for="lang-change">Language</label>
-                    <p id="lang-change">EN</p>
-                  </div>
-                  <div class="lang-wrap">
-                    <label for="lang2-change">Language</label>
-                    <p id="lang2-change">TH</p>
-                  </div>
+                <img src="img/ico-lang.png"><label for="lang-change">Language</label>
+                <p id="lang-change">EN</p>
               </div>
             </div>
             <button data-toggle="modal" data-target="#card-register-modal">สมัครบัตร</button>
@@ -241,14 +234,15 @@
     <div class="bg-login">
       <div class="content-wrap">
         <div class="row box-login-con form-wrap">
-          <h3 class="index-head">เข้าสู่ระบบ</h3>
+          <h3 class="index-head">ลงทะเบียน</h3>
           <div class="box-input-form">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="ชื่อผู้ใช้งาน">
+            <input type="text" placeholder="เลือกประเภท">
           </div>
           <div class="box-input-form">
-            <i class="fas fa-lock"></i>
-            <input type="text" placeholder="รหัสผ่าน">
+            <input type="text" placeholder="หมายเลข 13 หลัก">
+          </div>
+          <div class="box-input-form">
+            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก">
           </div>
           <div class="box-other-form checkbox-form">
             <label>จำชื่อผู้ใช้งาน
@@ -257,11 +251,6 @@
             </label>
           </div>
           <button class="btn-login-pg" value="submit" disabled>เข้าสู่ระบบ</button>
-          <div class="row box-other-form">
-            <a href="#" class="col-6 text-left">ลืมชื่อผู้ใช้งาน</a>
-            <a href="#" class="col-6 text-right">ลืมรหัสผ่าน</a>
-          </div>
-          <p class="link-regis">ยังไม่มีบัญชีผู้ใช้งาน? <a href="#">ลงทะเบียน</a></p>
         </div>
       </div>
     </div>
@@ -429,16 +418,13 @@
               <img class="on-hover" src="img/ico-social-line-color.png">
             </a>
           </div>
-            <a class="lang-footer">
-              <div class="lang-wrap active">
-                <label for="lang-change">Language</label>
-                <p id="lang-change">EN</p>
-              </div>
-              <div class="lang-wrap">
-                <label for="lang2-change">Language</label>
-                <p id="lang2-change">TH</p>
-              </div>
-            </a>
+          <div class="lang-footer">
+            <label for="lang-change">Language</label>
+            <select class="" id="lang-change">
+              <option>TH</option>
+              <option>EN</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
