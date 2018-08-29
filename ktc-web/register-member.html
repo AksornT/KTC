@@ -66,9 +66,9 @@
           </ul>
         </li>
       </ul>-->
-      <div class="on-right header-login-pg">
-        <a href="#"><img src="img/ico-home.png">
-        <p>กลับไปหน้าหลัก</p></a>
+      <div class="on-right header-regis-pg">
+        <a href="login.html"><img src="img/ico-login.png">
+        <p>เข้าสู่ระบบ</p></a>
       </div>
       <div id="scrolled-menu-responsive" class="menu-responsive-dropdown only-mobile">
         <div class="menu-resp-scroll">
@@ -233,10 +233,30 @@
     <!-- start page -->
     <div class="bg-login">
       <div class="content-wrap">
-        <div class="row box-login-con form-wrap">
+        <div id="pg-regis" class="row box-login-con form-wrap">
           <h3 class="index-head">ลงทะเบียน</h3>
+          <div class="row box-radio">
+            <div class="col-6 box-other-form checkbox-form">
+              <label>บุคคลธรรมดา
+                <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <span class="dotmark"></span>
+              </label>
+            </div>
+            <div class="col-6 box-other-form checkbox-form">
+              <label>ร้านค้าสมาชิก
+                <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <span class="dotmark"></span>
+              </label>
+            </div>
+          </div>
           <div class="box-input-form">
-            <input type="text" placeholder="เลือกประเภท">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">เลือกประเภท</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>หมายเลขบัตรประชาชน</option>
+                <option>หมายเลขหนังสือเดินทาง</option>
+              </select>
+            </div>
           </div>
           <div class="box-input-form">
             <input type="text" placeholder="หมายเลข 13 หลัก">
@@ -245,12 +265,13 @@
             <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก">
           </div>
           <div class="box-other-form checkbox-form">
-            <label>จำชื่อผู้ใช้งาน
+            <label>ยอมรับ
               <input type="checkbox" name="remember-password">
               <span class="checkmark"></span>
             </label>
+            <a href="#" class="link-regis">ข้อตกลงและเงื่อนไข</a>
           </div>
-          <button class="btn-login-pg" value="submit" disabled>เข้าสู่ระบบ</button>
+          <button class="btn-next-step" value="" disabled>ถัดไป</button>
         </div>
       </div>
     </div>
