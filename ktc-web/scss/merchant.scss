@@ -246,6 +246,17 @@ section#section-merchant-options {
     &:last-child {
       border-right: none;
     }
+
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-right: none;
+      border-bottom: 1px solid $color-light-grey;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 
   p {
@@ -256,6 +267,19 @@ section#section-merchant-options {
     &.small {
       font-family: $font-thin;
     }
+
+    @include tablet {
+      font-size: 20px;
+
+      &.small {
+        font-size: 14px;
+      }
+    }
+  }
+
+  a {
+    color: $color-blue;
+    text-decoration: underline;
   }
 
   .content-alipay {
@@ -264,6 +288,11 @@ section#section-merchant-options {
 
     p {
       font-size: 20px;
+    }
+
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 30px;
     }
   }
 
@@ -278,6 +307,12 @@ section#section-merchant-options {
       margin-bottom: 20px;
     }
 
+    @include tablet {
+      img.auto-width-mobile {
+        width: 20vw;
+        max-width: 120px;
+      }
+    }
   }
 
   .content-forever {
@@ -291,6 +326,10 @@ section#section-merchant-options {
 
     p.small {
       margin-top: auto;
+    }
+
+    @include tablet {
+      padding-bottom: 0;
     }
   }
 }

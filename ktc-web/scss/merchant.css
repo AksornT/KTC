@@ -215,6 +215,17 @@ section#section-merchant-options *[class*="col"] {
 section#section-merchant-options *[class*="col"]:last-child {
   border-right: none;
 }
+@media (max-width: 991px) {
+  section#section-merchant-options *[class*="col"] {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid #E7E8EA;
+  }
+  section#section-merchant-options *[class*="col"]:last-child {
+    border-bottom: none;
+  }
+}
 section#section-merchant-options p {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -223,6 +234,18 @@ section#section-merchant-options p {
 section#section-merchant-options p.small {
   font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
 }
+@media (max-width: 991px) {
+  section#section-merchant-options p {
+    font-size: 20px;
+  }
+  section#section-merchant-options p.small {
+    font-size: 14px;
+  }
+}
+section#section-merchant-options a {
+  color: #045AA7;
+  text-decoration: underline;
+}
 section#section-merchant-options .content-alipay {
   text-align: center;
   justify-content: center;
@@ -230,11 +253,23 @@ section#section-merchant-options .content-alipay {
 section#section-merchant-options .content-alipay p {
   font-size: 20px;
 }
+@media (max-width: 991px) {
+  section#section-merchant-options .content-alipay {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
 section#section-merchant-options .content-flexi > *:last-child {
   margin-bottom: 0;
 }
 section#section-merchant-options .content-flexi img {
   margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  section#section-merchant-options .content-flexi img.auto-width-mobile {
+    width: 20vw;
+    max-width: 120px;
+  }
 }
 section#section-merchant-options .content-forever img {
   margin-bottom: 20px;
@@ -244,6 +279,11 @@ section#section-merchant-options .content-forever img.img-forever-1000 {
 }
 section#section-merchant-options .content-forever p.small {
   margin-top: auto;
+}
+@media (max-width: 991px) {
+  section#section-merchant-options .content-forever {
+    padding-bottom: 0;
+  }
 }
 
 section#section-merchant-register-form .form-row {
