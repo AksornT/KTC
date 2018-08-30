@@ -704,6 +704,13 @@
   button.btn-next-step{
     width: 100%;
   }
+  #box-condition {
+    padding: 40px 20px 80px 20px;
+  }
+  .condition-title h3{
+    font-size: 32px;
+    line-height: 42px;
+  }
 
   /* register for member 2 -eve */
   button.btn-back-step{
