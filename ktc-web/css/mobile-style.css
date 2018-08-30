@@ -697,6 +697,23 @@
     padding-right: 20px;
   }
 
+  /* register for member page -eve */
+  .on-right.header-regis-pg {
+    padding-top: 14px;
+  }
+  button.btn-next-step{
+    width: 100%;
+  }
+
+  /* register for member 2 -eve */
+  button.btn-back-step{
+    width: 140px;
+    margin-right: 0;
+  }
+  button.btn-next-step{
+    width: 140px;
+  }
+
   /* Flexi Page - @korstudio */
   .page-flexi-header {
     height: 50vw;
