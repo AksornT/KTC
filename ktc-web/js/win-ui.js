@@ -16,10 +16,10 @@ $(document).ready(function() {
 
     //search-category selected
     $(".subcat + label").on('click touch', function () {
-      $("#all-cat").removeAttr("checked").checkboxradio('refresh');
+      $("#all-cat").prop('checked', false).checkboxradio('refresh');
     });
     $("#all-cat + label").on('click touch', function () {
-      $(".subcat").removeAttr("checked").checkboxradio('refresh');
+      $(".subcat").prop('checked', false).checkboxradio('refresh');
     });
 
     //flexi page nav
