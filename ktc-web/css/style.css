@@ -3306,7 +3306,6 @@ button.btn-next-step{
 	line-height: 32px;
 	letter-spacing: 0px;
 }
-
 /* register for member 2 -eve */
 .txt-desc-input p{
 	font-size: 14px;
@@ -3341,10 +3340,17 @@ button.btn-back-step{
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 	margin-right: 20px;
 }
-
 /* register for member 3 -eve */
 #email.box-input-form{
 	display: none;
+}
+/* register for member success */
+.bg-login .card-register-center{
+	margin-top: 25px;
+	margin-bottom: 145px;
+}
+.bg-login .img-result {
+    margin-bottom: 25px;
 }
 
 .search-input-wrap{
