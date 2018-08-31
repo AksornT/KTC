@@ -212,6 +212,14 @@ a:hover{
 	background: #CF3339;
 }
 
+.scrolled-menu > li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .scrolled-menu ul{
 	top: 100%;
 	position: absolute;
@@ -353,6 +361,7 @@ a:hover{
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
+    background: rgba(255,255,255,0);
 
 }
 
@@ -364,8 +373,7 @@ a:hover{
 }
 
 .menu-global a.login-btn:hover{
-	background: #fff;
-	color:#333;
+    background: rgba(255,255,255,0.4);
 }
 
 .menu-global .content-wrap{
@@ -711,7 +719,7 @@ article.page-content img {
 	line-height: 24px;
 	padding-top: 10px;
 }
-.slide-wrap .item{
+.slide-wrap .index-slide2 .item{
 	margin-bottom: 47px;
 	display: block;
 	padding: 13px 0;
@@ -3118,6 +3126,7 @@ section#section-flexi-cards {
 }
 button.btn-default:disabled{
   background-color: rgba(91,102,112,.6);
+  pointer-events: none;
 }
 button.btn-default{
 	width: 100%;
@@ -3131,6 +3140,10 @@ button.btn-default{
   margin: 60px 0 30px 0;
   cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+button.btn-default:disabled:hover{
+	cursor: default;
 }
 .box-other-form a{
 	color: #000;
