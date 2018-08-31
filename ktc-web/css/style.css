@@ -3123,6 +3123,7 @@ section#section-flexi-cards {
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	padding-left: 40px;
+	cursor: pointer;
 }
 button.btn-default:disabled{
   background-color: rgba(91,102,112,.6);
@@ -3266,6 +3267,9 @@ button.btn-default:disabled:hover{
 .box-input-form .form-control:focus{
 	box-shadow: none;
 	border-color: #CF3339;
+}
+.box-input-form .select-item{
+	width: 60px;
 }
 a.link-regis{
 	text-decoration: underline !important;
