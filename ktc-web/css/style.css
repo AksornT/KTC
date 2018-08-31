@@ -3116,10 +3116,10 @@ section#section-flexi-cards {
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	padding-left: 40px;
 }
-button.btn-login-pg:disabled{
+button.btn-default:disabled{
   background-color: rgba(91,102,112,.6);
 }
-button.btn-login-pg{
+button.btn-default{
 	width: 100%;
   height: 45px;
   border-radius: 6px;
@@ -3231,6 +3231,9 @@ button.btn-login-pg{
 #pg-regis.form-wrap input[type="text"] + label {
   left: 0;
 }
+#pg-regis.box-login-con input{
+	width: 100%;
+}
 .box-input-form .form-group{
 	margin-bottom: 0;
 }
@@ -3251,15 +3254,8 @@ button.btn-login-pg{
 	box-shadow: none;
 	border-color: #CF3339;
 }
-/*style items (options):*/
-.select-items {
-  box-shadow: 0 1px 3px rgba(0,0,0,.16);
-}
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 a.link-regis{
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 button.btn-next-step:disabled{
   background-color: rgba(91,102,112,.6);
@@ -3276,6 +3272,79 @@ button.btn-next-step{
   margin: 60px 0 30px 0;
   cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+.form-wrap input.err-message + label + span:after{
+	content: '\f06a';
+	font-family: 'FontAwesome';
+	color: #CF3339;
+	position: absolute;
+	top: 67px;
+	right: 3px;
+}
+.box-input-form span{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 14px;
+	color: #CF3339;
+}
+.txt-err-padd input{
+	margin-bottom: 6px;
+}
+/* modal condition */
+#box-condition{
+	padding: 60px 80px 80px 80px;
+}
+.condition-title h3{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 40px;
+	border-bottom: 1px solid rgba(91,102,112,.15);
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.condition-content p, .condition-content li{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0px;
+}
+
+/* register for member 2 -eve */
+.txt-desc-input p{
+	font-size: 14px;
+  line-height: 21px;
+}
+.box-other-form.txt-desc-input{
+	margin-top: 40px;
+}
+.box-other-form.txt-desc-input p{
+	margin-bottom: 12px;
+}
+.box-other-form.txt-desc-input a p{
+	display: inline-block;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 18px;
+  text-decoration: underline;
+  color: #CF3339;
+	vertical-align: top;
+  padding-left: 5px;
+}
+button.btn-back-step{
+	width: 145px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #CF3339;
+  background-color: #fff;
+  color: #CF3339;
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+  margin: 60px 0 30px 0;
+  cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	margin-right: 20px;
+}
+
+/* register for member 3 -eve */
+#email.box-input-form{
+	display: none;
 }
 
 .search-input-wrap{

@@ -57,7 +57,7 @@ $(document).ready(function() {
             $("#nav-flexi-modal").modal("hide");
         }, {passive: false})
     });
-    
+
     //global sub-nav sticky bar
     $('.sub-sticky a').on('click touch', function (event) {
         event.preventDefault();
@@ -120,7 +120,7 @@ $(document).ready(function() {
         }, {passive: false})
     });
 
-    //for styling form 
+    //for styling form
     $('.form-wrap [type="text"]').each(function(){
       var fLabel = $(this).attr('placeholder');
       $(this).after( '<label>' + fLabel + '</label>' );
@@ -244,3 +244,18 @@ $(document).ready(function() {
     });
 
 });
+
+//for chackbox
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("email");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
