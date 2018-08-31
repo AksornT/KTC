@@ -3595,6 +3595,7 @@ input:focus + .suggess-box,
 .promotion-range{
     line-height: 26px;
     margin: 14px 0 4px 0;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 img[href]{
