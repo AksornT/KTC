@@ -679,6 +679,28 @@ article.page-content section.no-bottom-line {
 article.page-content section.alt-color {
 	background: #F6F6F7;
 }
+article.page-content section.full-width {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 28px;
+}
+article.page-content section.full-width h4 {
+	margin-bottom: 60px;
+}
+article.page-content section.full-width .row {
+	background: #F6F6F6;
+}
+article.page-content section.full-width div[class*="col"] {
+	display: flex;
+	flex-flow: column;
+	min-height: 450px;
+	justify-content: center;
+	background: transparent no-repeat center;
+	background-size: cover;
+}
+article.page-content section.full-width p {
+	line-height: 1.65;
+}
 article.page-content h4 {
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
@@ -1765,7 +1787,7 @@ a:hover .on-hover{
 	cursor: pointer;
 }
 
-.proud-head{
+.proud-head, .header-big-cover {
 	background: url("../img/bg_menu.png");
 	background-size: cover;
 	height: 512px;
@@ -1774,22 +1796,23 @@ a:hover .on-hover{
 	margin-top: -66px;
 }
 
-.proud-head img{
+.proud-head img, .header-big-cover img {
 	position: absolute;
 	bottom: -76px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.proud-logo{
+.proud-logo, .header-big-cover-logo {
 	margin: 117px auto 22px auto;
 	display: block;
 }
 
-.proud-logo + h1 {
+.proud-logo + h1,
+.header-big-cover-logo + h1 {
 	font-size: 26px;
 	line-height: 42px;
-	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
