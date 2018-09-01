@@ -77,22 +77,41 @@ article#page-merchant-content h4::after {
 }
 
 .btn.button-shop-register {
+  position: relative;
   padding: 5px 30px;
+  top: 0;
   font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
   background: #045AA7;
   border-radius: 6px;
+  text-decoration: none;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.btn.button-shop-register:hover {
+  top: -3px;
+  -webkit-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2);
 }
 .btn.button-shop-register.nav-center-v {
   padding: 10px 15px;
   margin: 18px 0 18px 20px;
   display: inline-block;
   min-width: 0;
+}
+.btn.button-shop-register.invert {
+  color: #045AA7;
+  background-color: #ffffff;
+  border-color: #045AA7;
 }
 
 .page-merchant-header {
@@ -559,40 +578,40 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   line-height: 1.5;
 }
 
-#page-merchant-inner-content section {
+.page-merchant-inner-content section {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   border-bottom: none;
 }
-#page-merchant-inner-content h4 {
+.page-merchant-inner-content h4 {
   font-size: 35px;
 }
-#page-merchant-inner-content h4::after {
+.page-merchant-inner-content h4::after {
   background-color: #045AA7;
 }
-#page-merchant-inner-content section.section-after-header {
-  font-size: 20px;
-  line-height: 1.5;
-}
-#page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
-  padding-right: 80px;
-  border-right: 1px solid #E7E8EA;
-}
-#page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
-  padding-left: 80px;
-}
-#page-merchant-inner-content section.section-after-header h3 {
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-#page-merchant-inner-content section.section-after-header p, #page-merchant-inner-content section.section-after-header ul > li {
-  line-height: 1.8;
-}
-#page-merchant-inner-content section.section-after-header p > a, #page-merchant-inner-content section.section-after-header ul > li > a {
+.page-merchant-inner-content p a, .page-merchant-inner-content ul > li a {
   color: #045AA7;
   text-decoration: underline;
 }
-#page-merchant-inner-content section.section-after-header .btn-link.underlined {
+.page-merchant-inner-content section.section-after-header {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
+  padding-right: 80px;
+  border-right: 1px solid #E7E8EA;
+}
+.page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
+  padding-left: 80px;
+}
+.page-merchant-inner-content section.section-after-header h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.page-merchant-inner-content section.section-after-header p, .page-merchant-inner-content section.section-after-header ul > li {
+  line-height: 1.8;
+}
+.page-merchant-inner-content section.section-after-header .btn-link.underlined {
   color: #045AA7;
 }
 
@@ -615,4 +634,42 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 }
 .section-after-header.content-merchant-edc .button-more {
   margin-top: 30px;
+}
+
+section.content-edc-detail .row > [class*="col"] {
+  padding: 0 60px;
+}
+section.content-edc-detail p {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+section.content-edc-detail p:last-child {
+  margin-bottom: 0;
+}
+section.content-edc-detail p strong {
+  display: block;
+  font-size: 1.4em;
+}
+section.content-edc-detail p small {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+section.content-edc-detail .button-shop-register {
+  margin-top: 10px;
+}
+section.content-edc-detail .text-phone {
+  display: block;
+  margin-top: 15px;
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  color: #045AA7;
+}
+section.content-edc-detail .text-phone::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  background: transparent url("../img/ico-tel-blue.png") no-repeat;
 }

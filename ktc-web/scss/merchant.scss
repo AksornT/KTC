@@ -106,6 +106,12 @@ article#page-merchant-content {
     display: inline-block;
     min-width: 0;
   }
+
+  &.invert {
+    color: $color-blue;
+    background-color: #ffffff;
+    border-color: $color-blue;
+  }
 }
 
 .page-merchant-header {
