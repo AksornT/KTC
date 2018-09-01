@@ -105,6 +105,24 @@
     h2 {
       font-size: 14px;
     }
+
+    nav[aria-label="breadcrumb"] {
+      top: 45px;
+
+      .breadcrumb {
+        padding: 2px 0 5px;
+      }
+
+      .breadcrumb-item {
+        + .breadcrumb-item::before {
+          padding: 0 2px;
+        }
+
+        a {
+          font-size: 12px;
+        }
+      }
+    }
   }
 
   article.page-merchant-inner-content {

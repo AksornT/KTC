@@ -1,6 +1,7 @@
 /* Page - Merchant inner pages */
 
 .page-merchant-inner-header {
+  position: relative;
   /* all background images will be inserted in HTML for template programming purpose */
   .header-big-cover {
     &::before {
@@ -22,7 +23,7 @@
     }
   }
 
-  .content-wrap {
+  > .content-wrap {
     &::after {
       content: '';
       display: block;
@@ -49,6 +50,37 @@
     font-size: 28px;
     text-align: center;
     line-height: 1.5;
+  }
+
+  nav[aria-label="breadcrumb"] {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    background: rgba(0,0,0,0.4);
+
+    .breadcrumb {
+      margin: 0;
+      padding: 7px 0 10px;
+    }
+
+    .breadcrumb-item {
+      + .breadcrumb-item::before {
+        color: rgba(255,255,255,0.6);
+      }
+
+      a {
+        font-size: 14px;
+        color: rgba(255,255,255,0.6);
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      &.active a {
+        color: #ffffff;
+      }
+    }
   }
 }
 

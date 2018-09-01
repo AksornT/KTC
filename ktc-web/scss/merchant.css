@@ -537,6 +537,7 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 /* Merchant Page - mobile - @korstudio */
 /* Page - Merchant inner pages */
 .page-merchant-inner-header {
+  position: relative;
   /* all background images will be inserted in HTML for template programming purpose */
 }
 .page-merchant-inner-header .header-big-cover::before {
@@ -557,7 +558,7 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 .page-merchant-inner-header .header-big-cover img {
   bottom: -55px;
 }
-.page-merchant-inner-header .content-wrap::after {
+.page-merchant-inner-header > .content-wrap::after {
   content: '';
   display: block;
   width: 100%;
@@ -579,6 +580,29 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   font-size: 28px;
   text-align: center;
   line-height: 1.5;
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] {
+  position: absolute;
+  width: 100%;
+  top: 66px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb {
+  margin: 0;
+  padding: 7px 0 10px;
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.6);
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item a:hover {
+  color: #ffffff;
+}
+.page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item.active a {
+  color: #ffffff;
 }
 
 article.page-merchant-inner-content section {
@@ -787,6 +811,18 @@ section.content-edc-detail .text-phone::before {
   }
   .page-merchant-inner-header h2 {
     font-size: 14px;
+  }
+  .page-merchant-inner-header nav[aria-label="breadcrumb"] {
+    top: 45px;
+  }
+  .page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb {
+    padding: 2px 0 5px;
+  }
+  .page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 2px;
+  }
+  .page-merchant-inner-header nav[aria-label="breadcrumb"] .breadcrumb-item a {
+    font-size: 12px;
   }
 
   article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
