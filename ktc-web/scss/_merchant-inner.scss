@@ -1,0 +1,103 @@
+/* Page - Merchant inner pages */
+
+.page-merchant-inner-header {
+  /* all background images will be inserted in HTML for template programming purpose */
+  .header-big-cover {
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 400px;
+      height: 260px;
+      left: 50%;
+      bottom: -60px;
+      background: #ffffff;
+      border-radius: 16px;
+      transform: translateX(-50%);
+      @include default-box-shadow(3px, 10px);
+    }
+
+    img {
+      bottom: -55px;
+    }
+  }
+
+  .content-wrap {
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $color-light-grey;
+    }
+  }
+
+  .header-big-cover-logo + h1 {
+    font-size: 35px;
+
+    small {
+      display: block;
+      margin-top: 5px;
+      font-family: $font-thin;
+      font-size: 0.8em;
+    }
+
+    + h2 {
+      margin-top: 8px;
+      font-family: $font-thin;
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}
+
+#page-merchant-inner-content {
+  section {
+    font-family: $font-normal;
+    line-height: 1.5;
+    border-bottom: none;
+  }
+
+  h4 {
+    font-size: 35px;
+
+    &::after {
+      background-color: $color-blue;
+    }
+  }
+
+  section.section-after-header {
+    font-size: 20px;
+    line-height: 1.5;
+
+    [class*="col"] {
+      &:first-child {
+        padding-right: 80px;
+        border-right: 1px solid $color-light-grey;
+      }
+
+      &:last-child {
+        padding-left: 80px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    p, ul > li {
+      line-height: 1.8;
+
+      > a {
+        color: $color-blue;
+        text-decoration: underline;
+      }
+    }
+
+    .btn-link.underlined {
+      color: $color-blue;
+    }
+  }
+}
