@@ -588,6 +588,7 @@ article.page-merchant-inner-content section {
 }
 article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
   font-size: 35px;
+  line-height: 1;
 }
 article.page-merchant-inner-content h3::after, article.page-merchant-inner-content h4::after {
   background-color: #045AA7;
