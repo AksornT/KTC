@@ -72,7 +72,7 @@
 article#page-merchant-content section {
   border-bottom: none;
 }
-article#page-merchant-content h4::after {
+article#page-merchant-content h3::after, article#page-merchant-content h4::after {
   background-color: #045AA7;
 }
 
@@ -476,6 +476,9 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   font-size: 20px;
   color: #ffffff;
 }
+.contact-ribbon .text-contact::after {
+  display: none;
+}
 .contact-ribbon .text-contact em {
   display: inline-block;
   margin-right: 20px;
@@ -578,40 +581,40 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   line-height: 1.5;
 }
 
-.page-merchant-inner-content section {
+article.page-merchant-inner-content section {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   border-bottom: none;
 }
-.page-merchant-inner-content h4 {
+article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
   font-size: 35px;
 }
-.page-merchant-inner-content h4::after {
+article.page-merchant-inner-content h3::after, article.page-merchant-inner-content h4::after {
   background-color: #045AA7;
 }
-.page-merchant-inner-content p a, .page-merchant-inner-content ul > li a {
+article.page-merchant-inner-content p a, article.page-merchant-inner-content ul > li a {
   color: #045AA7;
   text-decoration: underline;
 }
-.page-merchant-inner-content section.section-after-header {
+article.page-merchant-inner-content section.section-after-header {
   font-size: 20px;
   line-height: 1.5;
 }
-.page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
+article.page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
   padding-right: 80px;
   border-right: 1px solid #E7E8EA;
 }
-.page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
+article.page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
   padding-left: 80px;
 }
-.page-merchant-inner-content section.section-after-header h3 {
+article.page-merchant-inner-content section.section-after-header h3 {
   margin-bottom: 20px;
   font-size: 28px;
 }
-.page-merchant-inner-content section.section-after-header p, .page-merchant-inner-content section.section-after-header ul > li {
+article.page-merchant-inner-content section.section-after-header p, article.page-merchant-inner-content section.section-after-header ul > li {
   line-height: 1.8;
 }
-.page-merchant-inner-content section.section-after-header .btn-link.underlined {
+article.page-merchant-inner-content section.section-after-header .btn-link.underlined {
   color: #045AA7;
 }
 

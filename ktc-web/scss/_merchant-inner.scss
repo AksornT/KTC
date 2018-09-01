@@ -52,14 +52,14 @@
   }
 }
 
-.page-merchant-inner-content {
+article.page-merchant-inner-content {
   section {
     font-family: $font-normal;
     line-height: 1.5;
     border-bottom: none;
   }
 
-  h4 {
+  h3, h4 {
     font-size: 35px;
 
     &::after {

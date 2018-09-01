@@ -90,7 +90,7 @@ article#page-merchant-content {
     border-bottom: none;
   }
 
-  h4 {
+  h3, h4 {
     &::after {
       background-color: $color-blue;
     }
@@ -557,6 +557,10 @@ section#section-merchant-register-form {
     font-family: $font-normal;
     font-size: 20px;
     color: #ffffff;
+
+    &::after {
+      display: none;
+    }
 
     em {
       display: inline-block;

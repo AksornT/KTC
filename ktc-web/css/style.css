@@ -710,11 +710,13 @@ article.page-content section.full-width.alt-color {
 article.page-content section.full-width.alt-color .row {
 	background-color: transparent;
 }
+article.page-content h3,
 article.page-content h4 {
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-align: center;
 }
+article.page-content h3::after,
 article.page-content h4::after {
 	content: '';
 	display: block;
@@ -723,6 +725,7 @@ article.page-content h4::after {
 	height: 2px;
 	background-color: #CF3339;
 }
+article.page-content h3.no-dash::after,
 article.page-content h4.no-dash::after {
 	display: none;
 }
