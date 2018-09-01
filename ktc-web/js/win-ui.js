@@ -147,6 +147,9 @@ $(document).ready(function() {
         var offset = $(this).attr('data-offset') | 0;
         navScrollTo(hash, offset);
     });
+    $('a[href="#"]').on('click touch', function (event) {
+        event.preventDefault();
+    });
 });
 
 //change header when scroll down.
