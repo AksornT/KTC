@@ -1,4 +1,25 @@
 /* Merchant Page - @korstudio */
+.sub-sticky {
+  /* global sticky styles */
+}
+.sub-sticky .sticky-left li.nav-back {
+  margin-right: 20px;
+}
+.sub-sticky .sticky-left li.nav-back a {
+  position: relative;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 0;
+}
+.sub-sticky .sticky-left li.nav-back a:hover {
+  left: -5px;
+}
+.sub-sticky .sticky-left li.active a {
+  color: #CF3339;
+  pointer-events: none;
+  cursor: pointer;
+}
 .sub-sticky .dropdown {
   display: inline-block;
   margin-right: 20px;
@@ -67,6 +88,13 @@
   -webkit-font-smoothing: antialiased;
   border: none;
   vertical-align: baseline;
+}
+
+#nav-sticky-merchant .sticky-left li.active a {
+  color: #045AA7;
+}
+#nav-sticky-merchant .sticky-left li a:hover {
+  color: #045AA7;
 }
 
 article#page-merchant-content section {
@@ -536,26 +564,27 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 /* Merchant Page - tablet - @korstudio */
 @media (min-width: 1024px) and (max-width: 1365px) {
   /* iPad Pro specific fix */
-  .sub-sticky {
+  #nav-sticky-merchant.sub-sticky {
     height: 70px;
   }
-  .sub-sticky .dropdown {
+  #nav-sticky-merchant.sub-sticky .dropdown {
     margin-right: 15px;
   }
-  .sub-sticky .dropdown .dropdown-menu .dropdown-item {
+  #nav-sticky-merchant.sub-sticky .dropdown .dropdown-menu .dropdown-item {
     font-size: 14px;
   }
-  .sub-sticky .dropdown-toggle {
+  #nav-sticky-merchant.sub-sticky .dropdown-toggle {
     font-size: 14px;
   }
-
-  .sticky-left li {
+  #nav-sticky-merchant.sub-sticky .sticky-left li {
     margin-right: 20px;
     font-size: 14px;
     line-height: 70px;
   }
-
-  .sticky-right .btn-action {
+  #nav-sticky-merchant.sub-sticky .sticky-left li.nav-back {
+    margin-right: 10px;
+  }
+  #nav-sticky-merchant.sub-sticky .sticky-right .btn-action {
     margin: 15px 0 15px 20px;
     padding: 7px 25px;
     font-size: 14px;
