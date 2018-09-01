@@ -23,10 +23,10 @@ $breakpoint-tablet-max: 991px;
   }
 }
 
-@mixin default-box-shadow() {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+@mixin default-box-shadow($offset: 1px, $blur: 3px) {
+  -webkit-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
+  box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
 }
 
 @mixin default-action-button($button-color) {
