@@ -618,7 +618,41 @@ article.page-merchant-inner-content section.section-after-header p, article.page
 article.page-merchant-inner-content section.section-after-header .btn-link.underlined {
   color: #045AA7;
 }
+article.page-merchant-inner-content .detail-register h3, article.page-merchant-inner-content .detail-register h4 {
+  padding-bottom: 0;
+}
+article.page-merchant-inner-content .detail-register .detail-register-desc:first-child {
+  padding-right: 50px;
+}
+article.page-merchant-inner-content .detail-register .detail-register-desc:last-child {
+  padding-left: 50px;
+}
+article.page-merchant-inner-content .detail-register-desc h5 {
+  font-size: 20px;
+}
+article.page-merchant-inner-content .detail-register-desc p {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+article.page-merchant-inner-content .detail-register-desc li {
+  list-style: outside;
+  margin-left: 15px;
+}
+article.page-merchant-inner-content .detail-register-desc ol + p {
+  margin-top: 10px;
+}
+article.page-merchant-inner-content .detail-register-desc .list-none li {
+  margin-left: 0;
+  list-style: none;
+}
 
+@media (max-width: 991px) {
+  article.page-merchant-inner-content .detail-register-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .section-after-header.content-merchant-edc .list-card-vendors {
   display: flex;
   margin: 20px auto;

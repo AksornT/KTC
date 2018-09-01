@@ -103,4 +103,52 @@ article.page-merchant-inner-content {
       color: $color-blue;
     }
   }
+
+  .detail-register {
+    h3, h4 {
+      padding-bottom: 0;
+    }
+
+    .detail-register-desc:first-child {
+      padding-right: 50px;
+    }
+    .detail-register-desc:last-child {
+      padding-left: 50px;
+    }
+  }
+
+  .detail-register-desc {
+    h5 {
+      font-size: 20px;
+    }
+
+    p {
+      padding-top: 15px;
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+
+    li {
+      list-style: outside;
+      margin-left: 15px;
+    }
+
+    ol + p {
+      margin-top: 10px;
+    }
+
+    .list-none li {
+      margin-left: 0;
+      list-style: none;
+    }
+  }
+}
+
+@include tablet {
+  article.page-merchant-inner-content {
+    .detail-register-desc {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
