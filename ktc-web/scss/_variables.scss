@@ -23,6 +23,12 @@ $breakpoint-tablet-max: 991px;
   }
 }
 
+@mixin media-query($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
 @mixin default-box-shadow($offset: 1px, $blur: 3px) {
   -webkit-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);

@@ -624,6 +624,41 @@ section#section-merchant-register-form {
 }
 
 /* Merchant Page - tablet - @korstudio */
+@include media-query(1024px, 1365px) {
+  /* iPad Pro specific fix */
+  .sub-sticky {
+    height: 70px;
+
+    .dropdown {
+      margin-right: 15px;
+
+      .dropdown-menu {
+        .dropdown-item {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .dropdown-toggle {
+      font-size: 14px;
+    }
+  }
+
+  .sticky-left li {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 70px;
+  }
+
+  .sticky-right {
+    .btn-action {
+      margin: 15px 0 15px 20px;
+      padding: 7px 25px;
+      font-size: 14px;
+    }
+  }
+}
+
 @include tablet {
 
 }

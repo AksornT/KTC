@@ -534,6 +534,33 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 }
 
 /* Merchant Page - tablet - @korstudio */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  /* iPad Pro specific fix */
+  .sub-sticky {
+    height: 70px;
+  }
+  .sub-sticky .dropdown {
+    margin-right: 15px;
+  }
+  .sub-sticky .dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+  }
+  .sub-sticky .dropdown-toggle {
+    font-size: 14px;
+  }
+
+  .sticky-left li {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 70px;
+  }
+
+  .sticky-right .btn-action {
+    margin: 15px 0 15px 20px;
+    padding: 7px 25px;
+    font-size: 14px;
+  }
+}
 /* Merchant Page - mobile - @korstudio */
 /* Page - Merchant inner pages */
 .page-merchant-inner-header {
