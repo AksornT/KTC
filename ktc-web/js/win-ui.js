@@ -46,38 +46,35 @@ $(document).ready(function() {
     $("#nav-flexi a.nav-link").on('click touch', function (event) {
         event.preventDefault();
         var hash = this.hash;
-        navScrollTo(hash, 150);
+        if (hash.length > 0) {
+            navScrollTo(hash, 150);
+        }
     });
 
     $("#nav-flexi-mobile a.nav-link, #nav-flexi-modal .nav a.nav-link").each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
             event.preventDefault();
             var hash = this.hash;
-            navScrollTo(hash, 100);
+            if (hash.length > 0) {
+                navScrollTo(hash, 100);
+            }
             $("#nav-flexi-modal").modal("hide");
         }, {passive: false})
     });
 
     //global sub-nav sticky bar
-    $('.sub-sticky a').on('click touch', function (event) {
-        event.preventDefault();
-        var hash = this.hash;
-        var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
-        if (hash !== "#") {
-            navScrollTo(hash, topOffset);
-        }
-    });
-    $('.sub-sticky a').each(function (index, elem) {
-        elem.addEventListener('touchend', function (event) {
+    $('.sub-sticky a[href^="#"]').each(function (index, elem) {
+        var touchHandler = function (event) {
             event.preventDefault();
             var hash = this.hash;
             var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
-            if (hash !== "#") {
+            if (hash !== "#" && hash.length > 0) {
                 navScrollTo(hash, topOffset);
             }
-        }, {passive: false})
+        };
+        elem.addEventListener('click', touchHandler);
+        elem.addEventListener('touchend', touchHandler, {passive: false});
     });
-
 
     //Sticky page nav
     var stickyNavScrollTo = function(elementId, offset) {
@@ -102,14 +99,6 @@ $(document).ready(function() {
             console.log(els.firstElementChild.hash, currentSection);
         });
     });
-
-    $(".sub-sticky .sticky-left a").on('click touch', function (event) {
-        event.preventDefault();
-        var hash = this.hash;
-        var topOffset = $('#menu-global').innerHeight() + $('.sub-sticky').innerHeight();
-        navScrollTo(hash, topOffset);
-    });
-
 
     $("#sticky-modal a").each(function (index, elem) {
         elem.addEventListener('touchend', function (event) {
