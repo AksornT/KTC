@@ -52,7 +52,7 @@
   }
 }
 
-#page-merchant-inner-content {
+.page-merchant-inner-content {
   section {
     font-family: $font-normal;
     line-height: 1.5;
@@ -64,6 +64,13 @@
 
     &::after {
       background-color: $color-blue;
+    }
+  }
+
+  p, ul > li {
+    a {
+      color: $color-blue;
+      text-decoration: underline;
     }
   }
 
@@ -89,11 +96,6 @@
 
     p, ul > li {
       line-height: 1.8;
-
-      > a {
-        color: $color-blue;
-        text-decoration: underline;
-      }
     }
 
     .btn-link.underlined {
