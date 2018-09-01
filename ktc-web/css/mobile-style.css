@@ -601,10 +601,10 @@
     font-size: 18px;
     line-height: 26px;
   }
-  .proud-head{
+  .proud-head, .header-big-cover{
     height: 234px;
   }
-  .proud-head img {
+  .proud-head img, .header-big-cover img {
     position: absolute;
     bottom: -76px;
     left: 50%;
@@ -811,7 +811,11 @@
     padding: 0 20px;
   }
 
-  .proud-head{
+  .proud-head, .header-big-cover {
     margin-top: -45px;
+  }
+
+  article.page-content section.full-width div[class*="col"] {
+    min-height: 250px;
   }
 }

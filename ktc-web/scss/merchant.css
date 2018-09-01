@@ -564,16 +564,16 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
   height: 1px;
   background: #E7E8EA;
 }
-.page-merchant-inner-header .header-big-cover-logo + h1 {
+.page-merchant-inner-header h1 {
   font-size: 35px;
 }
-.page-merchant-inner-header .header-big-cover-logo + h1 small {
+.page-merchant-inner-header h1 small {
   display: block;
   margin-top: 5px;
   font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
 }
-.page-merchant-inner-header .header-big-cover-logo + h1 + h2 {
+.page-merchant-inner-header h2 {
   margin-top: 8px;
   font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
   font-size: 28px;
@@ -583,15 +583,19 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 
 article.page-merchant-inner-content section {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   border-bottom: none;
+}
+article.page-merchant-inner-content #form-merchant label {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
 }
 article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
   font-size: 35px;
-  line-height: 1;
 }
 article.page-merchant-inner-content h3::after, article.page-merchant-inner-content h4::after {
   background-color: #045AA7;
+}
+article.page-merchant-inner-content p, article.page-merchant-inner-content ul > li {
+  line-height: 1.5;
 }
 article.page-merchant-inner-content p a, article.page-merchant-inner-content ul > li a {
   color: #045AA7;
@@ -611,6 +615,7 @@ article.page-merchant-inner-content section.section-after-header [class*="col"]:
 article.page-merchant-inner-content section.section-after-header h3 {
   margin-bottom: 20px;
   font-size: 28px;
+  text-align: left;
 }
 article.page-merchant-inner-content section.section-after-header p, article.page-merchant-inner-content section.section-after-header ul > li {
   line-height: 1.8;
@@ -708,11 +713,57 @@ section.content-edc-detail .text-phone::before {
 
 /* Merchant inner page - tablet */
 @media (max-width: 991px) {
+  article.page-merchant-inner-content section {
+    padding: 40px 0;
+  }
+  article.page-merchant-inner-content section.full-width div[class*="col"] {
+    min-height: 350px;
+  }
+  article.page-merchant-inner-content section.section-after-header h3 {
+    line-height: 1.5;
+  }
   article.page-merchant-inner-content .detail-register .detail-register-desc:first-child {
     padding-right: 15px;
   }
   article.page-merchant-inner-content .detail-register .detail-register-desc:last-child {
     padding-left: 15px;
+  }
+  article.page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
+    margin-bottom: 40px;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #E7E8EA;
+  }
+  article.page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
+    padding-left: 0;
+  }
+  article.page-merchant-inner-content section.section-after-header h3 {
+    text-align: center;
+  }
+  article.page-merchant-inner-content section.section-after-header p {
+    text-align: center;
+  }
+  article.page-merchant-inner-content section.section-after-header ul {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* EDC */
+  .section-after-header.content-merchant-edc .list-card-vendors {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .section-after-header.content-merchant-edc .button-more {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  section.content-edc-detail.no-padding-bottom-mobile {
+    padding-bottom: 0;
+  }
+  section.content-edc-detail .row > [class*="col"] {
+    padding: 40px;
   }
 }
 /* Merchant inner page - mobile */
@@ -741,10 +792,39 @@ section.content-edc-detail .text-phone::before {
   article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
     font-size: 20px;
   }
+  article.page-merchant-inner-content section.section-after-header [class*="col"]:first-child {
+    margin-bottom: 35px;
+  }
+  article.page-merchant-inner-content section.section-after-header [class*="col"]:last-child {
+    padding-left: 0;
+  }
   article.page-merchant-inner-content section.section-after-header h3 {
     font-size: 20px;
   }
   article.page-merchant-inner-content section.section-after-header p {
     font-size: 14px;
+  }
+  article.page-merchant-inner-content section.section-after-header ul > li {
+    font-size: 14px;
+  }
+
+  #section-merchant-register-form h3, #section-merchant-register-form h4 {
+    margin-bottom: 20px;
+  }
+
+  /* EDC */
+  .section-after-header.content-merchant-edc .list-card-vendors img {
+    max-width: 65px;
+    max-height: 35px;
+  }
+  .section-after-header.content-merchant-edc .button-more {
+    font-size: 12px;
+  }
+
+  section.content-edc-detail p {
+    font-size: 14px;
+  }
+  section.content-edc-detail p strong {
+    font-size: 20px;
   }
 }

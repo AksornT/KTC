@@ -32,7 +32,7 @@
     }
   }
 
-  .header-big-cover-logo + h1 {
+  h1 {
     font-size: 35px;
 
     small {
@@ -41,27 +41,31 @@
       font-family: $font-thin;
       font-size: 0.8em;
     }
+  }
 
-    + h2 {
-      margin-top: 8px;
-      font-family: $font-thin;
-      font-size: 28px;
-      text-align: center;
-      line-height: 1.5;
-    }
+  h2 {
+    margin-top: 8px;
+    font-family: $font-thin;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
 article.page-merchant-inner-content {
   section {
     font-family: $font-normal;
-    line-height: 1.5;
     border-bottom: none;
+  }
+
+  #form-merchant {
+    label {
+      font-family: $font-thin;
+    }
   }
 
   h3, h4 {
     font-size: 35px;
-    line-height: 1;
 
     &::after {
       background-color: $color-blue;
@@ -69,6 +73,8 @@ article.page-merchant-inner-content {
   }
 
   p, ul > li {
+    line-height: 1.5;
+
     a {
       color: $color-blue;
       text-decoration: underline;
@@ -93,6 +99,7 @@ article.page-merchant-inner-content {
     h3 {
       margin-bottom: 20px;
       font-size: 28px;
+      text-align: left;
     }
 
     p, ul > li {
@@ -140,15 +147,6 @@ article.page-merchant-inner-content {
     .list-none li {
       margin-left: 0;
       list-style: none;
-    }
-  }
-}
-
-@include tablet {
-  article.page-merchant-inner-content {
-    .detail-register-desc {
-      padding-left: 15px;
-      padding-right: 15px;
     }
   }
 }
