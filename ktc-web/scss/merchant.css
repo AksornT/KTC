@@ -647,12 +647,6 @@ article.page-merchant-inner-content .detail-register-desc .list-none li {
   list-style: none;
 }
 
-@media (max-width: 991px) {
-  article.page-merchant-inner-content .detail-register-desc {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 .section-after-header.content-merchant-edc .list-card-vendors {
   display: flex;
   margin: 20px auto;
@@ -710,4 +704,47 @@ section.content-edc-detail .text-phone::before {
   height: 22px;
   margin-right: 12px;
   background: transparent url("../img/ico-tel-blue.png") no-repeat;
+}
+
+/* Merchant inner page - tablet */
+@media (max-width: 991px) {
+  article.page-merchant-inner-content .detail-register .detail-register-desc:first-child {
+    padding-right: 15px;
+  }
+  article.page-merchant-inner-content .detail-register .detail-register-desc:last-child {
+    padding-left: 15px;
+  }
+}
+/* Merchant inner page - mobile */
+@media (max-width: 576px) {
+  .page-merchant-inner-header .header-big-cover {
+    height: 185px;
+  }
+  .page-merchant-inner-header .header-big-cover::before {
+    width: 270px;
+    height: 175px;
+    bottom: -87.5px;
+  }
+  .page-merchant-inner-header .header-big-cover img {
+    width: auto;
+    max-width: 210px;
+    max-height: 150px;
+    bottom: -75px;
+  }
+  .page-merchant-inner-header h1 {
+    font-size: 20px;
+  }
+  .page-merchant-inner-header h2 {
+    font-size: 14px;
+  }
+
+  article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
+    font-size: 20px;
+  }
+  article.page-merchant-inner-content section.section-after-header h3 {
+    font-size: 20px;
+  }
+  article.page-merchant-inner-content section.section-after-header p {
+    font-size: 14px;
+  }
 }
