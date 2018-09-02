@@ -137,6 +137,23 @@ article.page-merchant-inner-content {
     }
   }
 
+  .list-card-vendors {
+    display: flex;
+    margin: 20px auto;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      padding: 10px 0;
+    }
+
+    img {
+      max-width: 70px;
+      max-height: 40px;
+    }
+  }
+
   .detail-register {
     h3, h4 {
       padding-bottom: 0;

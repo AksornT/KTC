@@ -700,6 +700,20 @@ article.page-merchant-inner-content section.section-after-header p, article.page
 article.page-merchant-inner-content section.section-after-header .btn-link.underlined {
   color: #045AA7;
 }
+article.page-merchant-inner-content .list-card-vendors {
+  display: flex;
+  margin: 20px auto;
+  width: 65%;
+  justify-content: space-around;
+  align-items: center;
+}
+article.page-merchant-inner-content .list-card-vendors li {
+  padding: 10px 0;
+}
+article.page-merchant-inner-content .list-card-vendors img {
+  max-width: 70px;
+  max-height: 40px;
+}
 article.page-merchant-inner-content .detail-register h3, article.page-merchant-inner-content .detail-register h4 {
   padding-bottom: 0;
 }
@@ -740,20 +754,6 @@ article.page-merchant-inner-content .detail-register-desc .list-none li {
   margin-bottom: 0;
 }
 
-.section-after-header.content-merchant-edc .list-card-vendors {
-  display: flex;
-  margin: 20px auto;
-  width: 65%;
-  justify-content: space-around;
-  align-items: center;
-}
-.section-after-header.content-merchant-edc .list-card-vendors li {
-  padding: 10px 0;
-}
-.section-after-header.content-merchant-edc .list-card-vendors img {
-  max-width: 70px;
-  max-height: 40px;
-}
 .section-after-header.content-merchant-edc .list-text {
   list-style: disc;
 }
@@ -810,6 +810,10 @@ section.content-edc-detail .text-phone::before {
   article.page-merchant-inner-content section.section-after-header h3 {
     line-height: 1.5;
   }
+  article.page-merchant-inner-content .list-card-vendors {
+    margin: 30px auto;
+    width: 100%;
+  }
   article.page-merchant-inner-content .detail-register .detail-register-desc:first-child {
     padding-right: 15px;
   }
@@ -831,16 +835,12 @@ section.content-edc-detail .text-phone::before {
   article.page-merchant-inner-content section.section-after-header p {
     text-align: center;
   }
-  article.page-merchant-inner-content section.section-after-header ul {
+  article.page-merchant-inner-content section.section-after-header ul.list-text {
     margin-left: 50px;
     margin-right: 50px;
   }
 
   /* EDC */
-  .section-after-header.content-merchant-edc .list-card-vendors {
-    margin-bottom: 30px;
-    width: 100%;
-  }
   .section-after-header.content-merchant-edc .button-more {
     display: block;
     margin-top: 20px;
@@ -907,16 +907,16 @@ section.content-edc-detail .text-phone::before {
   article.page-merchant-inner-content section.section-after-header ul > li {
     font-size: 14px;
   }
+  article.page-merchant-inner-content .list-card-vendors img {
+    max-width: 65px;
+    max-height: 35px;
+  }
 
   #section-merchant-register-form.form-inner-page h3, #section-merchant-register-form.form-inner-page h4 {
     margin-bottom: 20px;
   }
 
   /* EDC */
-  .section-after-header.content-merchant-edc .list-card-vendors img {
-    max-width: 65px;
-    max-height: 35px;
-  }
   .section-after-header.content-merchant-edc .button-more {
     font-size: 12px;
   }
