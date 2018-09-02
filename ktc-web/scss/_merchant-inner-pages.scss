@@ -1,0 +1,32 @@
+/* EDC */
+.section-after-header.content-merchant-edc {
+  .list-text {
+    list-style: disc;
+  }
+
+  .button-more {
+    margin-top: 30px;
+  }
+}
+
+/* mPOS */
+.content-inner-merchant-detail.section-mpos-app-download {
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+  }
+
+  p {
+    margin-bottom: 15px;
+
+    strong {
+      font-size: 35px;
+      line-height: 1.3;
+    }
+  }
+
+  .list-app-platforms {
+    margin-top: 30px;
+  }
+}
