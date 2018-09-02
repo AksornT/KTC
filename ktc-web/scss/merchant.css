@@ -665,9 +665,6 @@ article.page-merchant-inner-content section {
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: none;
 }
-article.page-merchant-inner-content #form-merchant label {
-  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
-}
 article.page-merchant-inner-content h3, article.page-merchant-inner-content h4 {
   font-size: 35px;
 }
@@ -730,6 +727,17 @@ article.page-merchant-inner-content .detail-register-desc ol + p {
 article.page-merchant-inner-content .detail-register-desc .list-none li {
   margin-left: 0;
   list-style: none;
+}
+
+#section-merchant-register-form.form-inner-page {
+  padding-bottom: 0;
+}
+
+#form-merchant.form-inner-page label {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+}
+#form-merchant.form-inner-page #sending-form {
+  margin-bottom: 0;
 }
 
 .section-after-header.content-merchant-edc .list-card-vendors {
@@ -900,7 +908,7 @@ section.content-edc-detail .text-phone::before {
     font-size: 14px;
   }
 
-  #section-merchant-register-form h3, #section-merchant-register-form h4 {
+  #section-merchant-register-form.form-inner-page h3, #section-merchant-register-form.form-inner-page h4 {
     margin-bottom: 20px;
   }
 

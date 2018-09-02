@@ -90,12 +90,6 @@ article.page-merchant-inner-content {
     border-bottom: none;
   }
 
-  #form-merchant {
-    label {
-      font-family: $font-thin;
-    }
-  }
-
   h3, h4 {
     font-size: 35px;
 
@@ -180,5 +174,19 @@ article.page-merchant-inner-content {
       margin-left: 0;
       list-style: none;
     }
+  }
+}
+
+#section-merchant-register-form.form-inner-page {
+  padding-bottom: 0;
+}
+
+#form-merchant.form-inner-page {
+  label {
+    font-family: $font-thin;
+  }
+
+  #sending-form {
+    margin-bottom: 0;
   }
 }
