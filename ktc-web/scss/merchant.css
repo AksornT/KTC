@@ -624,6 +624,12 @@ section#section-merchant-register-form .row-merchant-download-docs .btn.button-d
 .page-merchant-inner-header h1 {
   font-size: 35px;
 }
+.page-merchant-inner-header h1.header-title.no-logo {
+  margin-top: 120px;
+  font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 42px;
+}
 .page-merchant-inner-header h1 small {
   display: block;
   margin-top: 5px;

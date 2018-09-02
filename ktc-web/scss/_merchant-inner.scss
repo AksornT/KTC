@@ -36,6 +36,13 @@
   h1 {
     font-size: 35px;
 
+    &.header-title.no-logo {
+      margin-top: 120px;
+      font-family: $font-normal;
+      text-align: center;
+      line-height: 42px;
+    }
+
     small {
       display: block;
       margin-top: 5px;
