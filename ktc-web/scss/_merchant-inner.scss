@@ -158,6 +158,30 @@ article.page-merchant-inner-content {
     }
   }
 
+  .list-app-platforms {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 30px;
+
+      a {
+        position: relative;
+        top: 0;
+        opacity: 1;
+
+        &:hover {
+          top: -3px;
+          opacity: 0.6;
+        }
+      }
+
+      img {
+        height: 70px;
+      }
+    }
+  }
+
   .detail-register {
     h3, h4 {
       padding-bottom: 0;

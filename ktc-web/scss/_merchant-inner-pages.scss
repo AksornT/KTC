@@ -10,6 +10,17 @@
 }
 
 /* mPOS */
+article.page-merchant-inner-content {
+  section.section-after-header.content-merchant-mpos {
+    [class*="col"] {
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+}
+
+
 .content-inner-merchant-detail.section-mpos-app-download {
   text-align: center;
 

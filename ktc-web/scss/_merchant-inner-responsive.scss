@@ -20,6 +20,8 @@
       width: 100%;
     }
 
+
+
     .detail-register {
       .detail-register-desc:first-child {
         padding-right: 15px;
@@ -55,6 +57,20 @@
         margin-left: 50px;
         margin-right: 50px;
       }
+
+      /* mPOS */
+      &.content-merchant-mpos {
+        [class*="col"] {
+          &:first-child {
+            margin-bottom: 0;
+            border: none;
+          }
+
+          &:last-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
   }
 
@@ -67,7 +83,7 @@
       padding: 40px;
     }
   }
-  
+
   /* EDC */
   .section-after-header.content-merchant-edc {
     .button-more {
@@ -76,7 +92,6 @@
       text-align: center;
     }
   }
-
 }
 
 /* Merchant inner page - mobile */
@@ -163,6 +178,16 @@
         max-height: 35px;
       }
     }
+
+    .list-app-platforms {
+      li {
+        margin: 0 15px;
+
+        img {
+          height: 35px;
+        }
+      }
+    }
   }
 
   section.content-inner-merchant-detail {
@@ -188,4 +213,10 @@
     }
   }
 
+  /* mPOS */
+  .content-inner-merchant-detail.section-mpos-app-download {
+    p strong {
+      font-size: 20px;
+    }
+  }
 }
