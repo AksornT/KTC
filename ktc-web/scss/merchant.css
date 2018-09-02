@@ -697,6 +697,9 @@ article.page-merchant-inner-content section.section-after-header h3 {
 article.page-merchant-inner-content section.section-after-header p, article.page-merchant-inner-content section.section-after-header ul > li {
   line-height: 1.8;
 }
+article.page-merchant-inner-content section.section-after-header p + h3 {
+  margin-top: 40px;
+}
 article.page-merchant-inner-content section.section-after-header .btn-link.underlined {
   color: #045AA7;
 }
@@ -743,6 +746,44 @@ article.page-merchant-inner-content .detail-register-desc .list-none li {
   list-style: none;
 }
 
+section.content-inner-merchant-detail .row > [class*="col"] {
+  padding: 0 60px;
+}
+section.content-inner-merchant-detail p {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+section.content-inner-merchant-detail p:last-child {
+  margin-bottom: 0;
+}
+section.content-inner-merchant-detail p strong {
+  display: block;
+  font-size: 1.4em;
+}
+section.content-inner-merchant-detail p small {
+  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+section.content-inner-merchant-detail .button-shop-register {
+  margin-top: 10px;
+}
+section.content-inner-merchant-detail .text-phone {
+  display: block;
+  margin-top: 15px;
+  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  color: #045AA7;
+}
+section.content-inner-merchant-detail .text-phone::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  background: transparent url("../img/ico-tel-blue.png") no-repeat;
+}
+
 #section-merchant-register-form.form-inner-page {
   padding-bottom: 0;
 }
@@ -759,44 +800,6 @@ article.page-merchant-inner-content .detail-register-desc .list-none li {
 }
 .section-after-header.content-merchant-edc .button-more {
   margin-top: 30px;
-}
-
-section.content-edc-detail .row > [class*="col"] {
-  padding: 0 60px;
-}
-section.content-edc-detail p {
-  margin-bottom: 50px;
-  font-size: 20px;
-}
-section.content-edc-detail p:last-child {
-  margin-bottom: 0;
-}
-section.content-edc-detail p strong {
-  display: block;
-  font-size: 1.4em;
-}
-section.content-edc-detail p small {
-  font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
-section.content-edc-detail .button-shop-register {
-  margin-top: 10px;
-}
-section.content-edc-detail .text-phone {
-  display: block;
-  margin-top: 15px;
-  font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
-  font-size: 35px;
-  line-height: 1;
-  color: #045AA7;
-}
-section.content-edc-detail .text-phone::before {
-  content: '';
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  margin-right: 12px;
-  background: transparent url("../img/ico-tel-blue.png") no-repeat;
 }
 
 /* Merchant inner page - tablet */
@@ -840,18 +843,18 @@ section.content-edc-detail .text-phone::before {
     margin-right: 50px;
   }
 
+  section.content-inner-merchant-detail.no-padding-bottom-mobile {
+    padding-bottom: 0;
+  }
+  section.content-inner-merchant-detail .row > [class*="col"] {
+    padding: 40px;
+  }
+
   /* EDC */
   .section-after-header.content-merchant-edc .button-more {
     display: block;
     margin-top: 20px;
     text-align: center;
-  }
-
-  section.content-edc-detail.no-padding-bottom-mobile {
-    padding-bottom: 0;
-  }
-  section.content-edc-detail .row > [class*="col"] {
-    padding: 40px;
   }
 }
 /* Merchant inner page - mobile */
@@ -912,6 +915,13 @@ section.content-edc-detail .text-phone::before {
     max-height: 35px;
   }
 
+  section.content-inner-merchant-detail p {
+    font-size: 14px;
+  }
+  section.content-inner-merchant-detail p strong {
+    font-size: 20px;
+  }
+
   #section-merchant-register-form.form-inner-page h3, #section-merchant-register-form.form-inner-page h4 {
     margin-bottom: 20px;
   }
@@ -919,12 +929,5 @@ section.content-edc-detail .text-phone::before {
   /* EDC */
   .section-after-header.content-merchant-edc .button-more {
     font-size: 12px;
-  }
-
-  section.content-edc-detail p {
-    font-size: 14px;
-  }
-  section.content-edc-detail p strong {
-    font-size: 20px;
   }
 }

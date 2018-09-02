@@ -58,6 +58,16 @@
     }
   }
 
+  section.content-inner-merchant-detail {
+    &.no-padding-bottom-mobile {
+      padding-bottom: 0;
+    }
+
+    .row > [class*="col"] {
+      padding: 40px;
+    }
+  }
+  
   /* EDC */
   .section-after-header.content-merchant-edc {
     .button-more {
@@ -67,15 +77,6 @@
     }
   }
 
-  section.content-edc-detail {
-    &.no-padding-bottom-mobile {
-      padding-bottom: 0;
-    }
-
-    .row > [class*="col"] {
-      padding: 40px;
-    }
-  }
 }
 
 /* Merchant inner page - mobile */
@@ -164,6 +165,16 @@
     }
   }
 
+  section.content-inner-merchant-detail {
+    p {
+      font-size: 14px;
+
+      strong {
+        font-size: 20px;
+      }
+    }
+  }
+
   #section-merchant-register-form.form-inner-page {
     h3, h4 {
       margin-bottom: 20px;
@@ -177,13 +188,4 @@
     }
   }
 
-  section.content-edc-detail {
-    p {
-      font-size: 14px;
-
-      strong {
-        font-size: 20px;
-      }
-    }
-  }
 }
