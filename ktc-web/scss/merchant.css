@@ -904,6 +904,25 @@ article.page-merchant-inner-content section.full-width.content-merchant-online d
   line-height: 1.3;
 }
 
+/* Alipay */
+.content-inner-merchant-detail.content-merchant-alipay [class*="col"] {
+  align-items: center;
+}
+.content-inner-merchant-detail.content-merchant-alipay [class*="col"].alt-color {
+  background-color: #ffffff;
+}
+.content-inner-merchant-detail.content-merchant-alipay img {
+  margin-bottom: 15px;
+  max-width: none;
+}
+.content-inner-merchant-detail.content-merchant-alipay p {
+  font-size: 18px;
+}
+.content-inner-merchant-detail.content-merchant-alipay p strong {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
 /* Merchant inner page - tablet */
 @media (max-width: 991px) {
   article.page-merchant-inner-content section {
@@ -1070,6 +1089,17 @@ article.page-merchant-inner-content section.full-width.content-merchant-online d
   }
 
   .content-inner-merchant-detail.section-online-details p strong {
+    font-size: 20px;
+  }
+
+  /* Alipay */
+  .content-inner-merchant-detail.content-merchant-alipay img {
+    margin-bottom: 20px;
+  }
+  .content-inner-merchant-detail.content-merchant-alipay p {
+    font-size: 14px;
+  }
+  .content-inner-merchant-detail.content-merchant-alipay p strong {
     font-size: 20px;
   }
 }
