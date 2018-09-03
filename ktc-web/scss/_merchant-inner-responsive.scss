@@ -133,6 +133,10 @@
         max-width: 210px;
         max-height: 150px;
         bottom: -75px;
+
+        &.img-qrpay {
+          bottom: -100px;
+        }
       }
     }
 

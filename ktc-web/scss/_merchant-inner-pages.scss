@@ -128,3 +128,10 @@ article.page-merchant-inner-content {
     }
   }
 }
+
+/* QRPay */
+.page-merchant-inner-header {
+  .header-big-cover img.img-qrpay {
+    bottom: -80px;
+  }
+}

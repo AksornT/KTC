@@ -923,6 +923,11 @@ article.page-merchant-inner-content section.full-width.content-merchant-online d
   font-size: 35px;
 }
 
+/* QRPay */
+.page-merchant-inner-header .header-big-cover img.img-qrpay {
+  bottom: -80px;
+}
+
 /* Merchant inner page - tablet */
 @media (max-width: 991px) {
   article.page-merchant-inner-content {
@@ -1019,6 +1024,9 @@ article.page-merchant-inner-content section.full-width.content-merchant-online d
     max-width: 210px;
     max-height: 150px;
     bottom: -75px;
+  }
+  .page-merchant-inner-header .header-big-cover img.img-qrpay {
+    bottom: -100px;
   }
   .page-merchant-inner-header h1 {
     font-size: 20px;
