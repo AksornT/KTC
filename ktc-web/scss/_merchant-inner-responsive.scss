@@ -75,6 +75,19 @@
         }
       }
     }
+
+    /* Alipay */
+    @include override-content {
+      &.content-merchant-alipay {
+        img {
+          margin-bottom: 20px;
+
+          &.icon-alipay {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 
   section.content-inner-merchant-detail {
@@ -251,10 +264,6 @@
   /* Alipay */
   @include override-content {
     &.content-merchant-alipay {
-      img {
-        margin-bottom: 20px;
-      }
-
       p {
         font-size: 14px;
 
