@@ -121,7 +121,7 @@ $(document).ready(function() {
     });
 
     //for styling form
-    $('.form-wrap [type="text"]').each(function(){
+    $('.form-wrap input[type="text"], .form-wrap input[type="password"]').each(function(){
       var fLabel = $(this).attr('placeholder');
       $(this).after( '<label>' + fLabel + '</label>' );
       $(this).focusout(function(){

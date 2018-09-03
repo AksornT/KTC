@@ -3024,9 +3024,8 @@ section#section-flexi-cards {
 }
 .bg-login{
 	background: url("../img/bg-login.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
+	background-size: 100% 100%;
+	min-height: calc(100vh - 118px);
 }
 .box-login-con{
 	padding-top: 140px;
