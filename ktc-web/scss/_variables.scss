@@ -23,19 +23,38 @@ $breakpoint-tablet-max: 991px;
   }
 }
 
-@mixin default-box-shadow() {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+@mixin media-query($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin default-box-shadow($offset: 1px, $blur: 3px) {
+  -webkit-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
+  box-shadow: 0 $offset $blur rgba(0, 0, 0, 0.2);
 }
 
 @mixin default-action-button($button-color) {
+  position: relative;
   padding: 5px 30px;
+  top: 0;
   font-family: $font-bold;
   font-size: 18px;
   font-weight: normal;
   color: #ffffff;
   background: $button-color;
   border-radius: 6px;
+  text-decoration: none;
   @include default-box-shadow;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    top: -3px;
+    @include default-box-shadow(1px, 13px);
+  }
 }
