@@ -858,4 +858,179 @@
   .search-cat-wrap label:hover{
     opacity: 1;
   }
+
+  /*forever*/
+
+  #page-flexi-content section.forever {
+    padding-bottom: 60px;
+    border: none;
+  }
+
+  .forever .special-button {
+    padding-bottom: 0px;
+  }
+
+  #section-flexi-cards-mobile.forever .box-title-forever{    
+    margin-bottom: 8px;
+  }
+
+  .forever #nav-flexi-scroll-trigger{
+    padding-bottom: 20px;
+  }
+
+  .page-forever-header h2 {
+    font-size: 23px;
+    line-height: 34px;
+    margin-top: 80px;
+  }
+
+
+
+  .page-forever-header {
+    padding: 4px 0;
+    height: 39vw;
+  }
+
+  .forever .btn.button-flexi-start {
+    font-size: 18px;
+  }
+
+  #page-flexi-content.forever .content-pre-nav h3 {
+    font-size: 22px;
+  }
+
+  #page-flexi-content .content-pre-nav h4 {
+    font-size: 20px;
+  }
+
+
+  #page-flexi-content.forever .content-pre-nav {
+    padding-top: 35px;
+    padding-bottom: 0px;
+  }
+
+  .forever #nav-flexi-mobile .nav.full-size a, #nav-flexi-modal .nav.full-size a {
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  #section-flexi-cards-mobile.forever h4 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  #section-flexi-cards-mobile.forever .title-new{
+    margin-top: 28px;
+  }
+
+  #section-flexi-cards-mobile.forever .box-title-forever.rg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .forever section#section-flexi-shops p {
+    font-size: 30px;
+  }
+
+  .forever #page-flexi-content img {
+    width:100%;
+    height: auto;
+  }
+
+  .forever #section-flexi-shops .row {
+    height: auto;
+  }
+
+  #page-flexi-content .forever img {
+    width:100%;
+  }
+
+  .forever #section-flexi-shops .only-shopping {
+    font-size:24px;
+  }
+
+  .forever #section-flexi-shops .button-contact-shop-new1 {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 35px;
+  }
+
+  .forever #section-flexi-shops .only-score {
+    font-size: 20px;
+  }
+
+  .forever #section-flexi-shops .button-contact-shop {
+    font-size: 20px;
+  }
+
+  .forever #section-flexi-shops .button-contact-shop-new {
+    font-size: 20px;
+  }
+
+  #section-flexi-cards-mobile.forever .sub-title-new {  
+    font-size: 20px;
+  }
+
+
+  .forever .btn-link.underlined {
+    font-size: 20px;
+  }
+
+  #page-flexi-content.forever .content-pre-nav h3 {
+    font-size: 30px;
+  }
+
+  #page-flexi-content .box-info-forever img {
+    width: 66%;
+  }
+
+  .forever .btn-flexi-share.only-mobile {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  #page-flexi-content.forever section#section-flexi-promotions{
+    padding-top: 0px;
+  }
+
+  .forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
+    padding-bottom: 10px;
+    padding-top: 25px;
+  }
+
+  #section-flexi-cards-mobile.forever h4 {
+    margin-top: 0px; 
+  }
+
+  #section-flexi-cards-mobile.only-mobile.forever h4 {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+  }
+  .forever #section-flexi-shops {
+    margin-bottom: 0px;
+  }
+  .forever #section-flexi-shops p {
+    margin-top: 5px;
+  }
+
+  .forever .text-on-slide {
+    margin: 5px 0;
+  }
+
+ .forever section#section-flexi-shops .box-center-v {
+    padding: 60px;
+  }
+
+
+  .forever section#section-flexi-shops h4 {
+    margin-bottom: 40px;
+  }
+
+  .forever #section-flexi-promotions .slide-flexi-promotions .item p {
+    font-size: 20px;
+  }
+
+    .forever .item .slide-title {
+    font-size: 24px;
+    line-height: 37px;
+  }
 }

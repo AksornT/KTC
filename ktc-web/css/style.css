@@ -2439,14 +2439,16 @@ a.media.on-desk img {
 	right: 0;
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	-ms-transition: height 0.3s;
-	-o-transition: height 0.3s;
-	transition: height 0.3s;
 }
 #nav-flexi.only-desktop {
 	display: flex;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#nav-flexi.only-desktop.fixed {
+	opacity: 1;
+	pointer-events: all;
 }
 
 #nav-flexi-navbar {
@@ -2747,9 +2749,9 @@ section#section-flexi-cards {
 #section-flexi-shops .row {
 	background: #F6F6F6;
 }
-#section-flexi-shops div[class*="col"] {
+/*#section-flexi-shops div[class*="col"] {
 	padding: 60px 30px;
-}
+}*/
 #section-flexi-shops .box-full-img {
 	min-height: 450px;
 	padding: 60px 30px;
@@ -2803,6 +2805,9 @@ section#section-flexi-cards {
 #section-flexi-promotions .slide-flexi-promotions .item .item-footer {
 	display: flex;
 	margin-top: auto;
+}
+.forever #section-flexi-promotions .slide-flexi-promotions .item .item-footer {
+	display: block;
 }
 #section-flexi-promotions .slide-flexi-promotions .item .item-footer .left{
 	display: flex;
@@ -3714,6 +3719,277 @@ img[href]:hover{
 	overflow: hidden;
 }
 
+/*== page forever ==*/
+
+
+.page-forever-header .content-wrap{
+	padding: 0 60px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1366px;
+}
+
+.forever .btn-link.underlined {
+    font-size: 14px;
+    color: #DB195E;
+    text-decoration: underline;
+}
+
+.forever .item .slide-title {
+    line-height: 32px;
+}
+
+.forever #section-flexi-promotions .slide-flexi-promotions .item p {
+    padding-top: 10px;
+ }
+
+ .forever .btn.button-flexi-start {
+	display: inline-block;
+	height:40px;
+	padding: 5px 30px;
+	font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	background: #DB195E;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+}
+
+.button-forever-start.only-desktop {
+	margin-top: 30px;
+}
+
+.page-forever-header {
+	background: url("../img/bg-header-desktop2.jpg") no-repeat center;
+	background-size: auto 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    height: 512px;
+}
+
+.page-forever-header h2 {
+	margin-top: 15px;
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 47px;
+	color: #ffffff;
+	line-height: 65px;
+}
+
+.forever #nav-flexi-scroll-trigger {
+	padding-bottom: 60px;
+}
+
+.forever .order-lg-first {
+	padding-right: 0px;
+}
+
+.forever #nav-flexi {
+    padding-right: 55px;
+    padding-left: 36px;
+}
+
+#page-flexi-content.forever section:last-child{
+	padding-bottom: 60px;
+}
+
+#page-flexi-content.forever h4 {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.forever section#section-flexi-cards.only-desktop{
+	margin-top: 0px;
+}
+
+#page-flexi-content.forever h4::after {
+	content: '';
+	display: block;
+	margin: 10px auto;
+	width: 50px;
+	height: 4px;
+	background-color: #DB195E;
+}
+
+.box-info-forever img{
+	max-width: 100%;
+	margin-top:54px;
+}
+
+section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-flexi-cards-mobile.forever > .row > *[class*="col"]:first-child {
+	border-bottom: 1px solid #E6E8EA;
+	padding-bottom: 40px;
+}
+
+.forever #section-flexi-cards > .row > *[class*="col"]:first-child {
+	border: none;
+	padding-bottom: 0px;
+}
+
+#section-flexi-cards-mobile.forever .box-title ,#section-flexi-cards .box-title {
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 100px;
+}
+
+
+#section-flexi-cards-mobile.forever .box-title-forever,#section-flexi-cards .box-title-forever {
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 67px;
+	margin-top: 57px;
+}
+
+#section-flexi-cards-mobile.forever .box-title-forever.rg,#section-flexi-cards .box-title-forever.rg{
+	margin-bottom: 37px;
+	margin-top: 23px;
+	text-align: center;
+}
+
+#section-flexi-cards-mobile.forever h4,#section-flexi-cards h4 {
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 35px;
+}
+#section-flexi-cards-mobile.forever h4::after,#section-flexi-cards h4::after {
+	display: none;
+}
+
+#section-flexi-cards-mobile.forever h4::after,#section-flexi-cards h4::after {
+	content: '';
+	display: block;
+	margin: 10px auto;
+	width: 50px;
+	height: 4px;
+	background-color: #DB195E;
+}
+
+
+#section-flexi-cards-mobile.forever small,#section-flexi-cards small {
+	font-size: 0.8em;
+}
+
+#section-flexi-cards-mobile.forever .title-new,#section-flexi-cards .title-new {
+	text-align: center;
+	font-size: 28px;
+	line-height: 1.8;
+	margin-top: 114px;
+}
+
+
+
+#section-flexi-cards-mobile.forever .sub-title,#section-flexi-cards .sub-title {
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.8;
+}
+
+#section-flexi-cards-mobile.forever .sub-title-new,#section-flexi-cards .sub-title-new {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+#section-flexi-cards-mobile.forever .sub-title-new.rg,#section-flexi-cards .sub-title-new.rg {
+	font-size: 20px;
+	line-height: 1.8;
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+}
+
+
+#section-flexi-cards-mobile.forever figure.box-info,#section-flexi-cards figure.box-info {
+	display: flex;
+	margin-top: auto;
+	height: 220px;
+	text-align: center;
+}
+
+#section-flexi-cards figure.box-info-forever .text-number {
+	font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
+	font-size: 100px;
+	color: #DB195E;
+
+}
+
+.forever #nav-flexi-mobile .nav.full-size {
+    display: none;
+}
+
+.forever #section-flexi-shops{
+	margin-bottom: 60px;
+}
+
+.forever #section-flexi-shops .row.no-gutters {
+	margin-bottom: 60px;
+}
+
+.forever #section-flexi-shops .row.no-gutters:nth-last-child(1) {
+	margin-bottom: 0;
+}
+
+.forever #section-flexi-shops .row {
+	background: #F6F6F6;
+	height: 451.41px;
+}
+
+.forever #section-flexi-shops .row:nth-last-child(1){
+	background: #FFFFFF;
+
+}
+
+.forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
+	align-self: center;
+}
+
+.forever #section-flexi-shops p {
+	line-height: 37px;
+}
+
+
+.forever #section-flexi-shops .only-shopping {
+	font-size: 20px;
+	line-height: 33px;
+	font-family: Conv_SukhumvitTadmai_Thi;
+	margin-top: 20px;
+}
+
+.forever #section-flexi-shops .only-shopping:nth-last-child(1) {
+	margin-top: 8px;
+}
+
+.forever #section-flexi-shops .button-contact-shop {
+	margin-top: 36px;
+	font-size: 20px;
+}
+
+.forever #section-flexi-shops .button-contact-shop-new{
+	font-size: 20px;
+}
+
+.forever #section-flexi-shops .button-contact-shop-new1{
+	font-size: 30px;
+	padding-top: 12px;
+	padding-bottom: 45px;
+}
+
+#section-flexi-promotions .slide-flexi-promotions .promotion-forever{
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+}
+
+
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
@@ -3737,6 +4013,28 @@ img[href]:hover{
     .ktc-tabs li a{
     	padding: 0 60px;
     }
+
+    /*== page forever ==*/
+    .page-forever-header {
+	    background-size: cover;
+	    background-position: center 0px;
+	}
+	.page-forever-header .content-wrap {
+	    max-width: none;
+	    padding-left: calc(50% - 628px);
+	}
+}
+
+@media (min-width: 1920px) {
+
+	.page-forever-header .content-wrap {
+    padding-left: 17.5%;
+	}
+
+	.page-forever-header {
+    background-position: center 15%;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -3812,5 +4110,117 @@ img[href]:hover{
 
 	#privillage .text-content-wrap > div{
 		padding:  0 60px;
+	}
+
+	/*== page forever ==*/
+	.page-forever-header{
+	  padding: 40px 0;
+      height: 372px;
+	}
+
+	.page-forever-header h2{
+	  line-height: 46px;
+      margin-top: 53px;
+      font-size: 33px;
+	}
+
+	.forever #section-flexi-shops .row.no-gutters {
+    	height:auto;
+	}
+
+	.forever .btn.button-flexi-start {
+		height: auto;
+    	font-size: 16px;
+	}
+
+	.forever #section-flexi-shops .button-contact-shop {
+    	font-size: 18px;
+	}
+
+	.forever #section-flexi-shops .button-contact-shop-new {
+    	font-size: 18px;
+	}
+
+	.forever #section-flexi-shops .only-score {
+    	margin-top: 15px;
+    	margin-bottom: 15px;
+ 
+	}
+
+	.forever #section-flexi-shops .button-contact-shop {
+    	margin-top: 25px;
+	}
+
+	.forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
+		align-self: auto;
+		margin-top: 15px;
+	}
+
+	.forever #section-flexi-shops .button-contact-shop-new1 {
+    	font-size: 24px;
+    	padding-bottom: 20px;
+    	padding-top: 10px;
+	}
+
+	.forever #section-flexi-shops .only-shopping {
+		margin-top: 10px;
+		font-size: 15px;
+	}
+
+	.forever #section-flexi-shops .only-shopping:nth-last-child(1)  {
+		margin-top: -4px;
+	}
+
+
+
+	.forever #section-flexi-shops p {
+   		margin-top: 20px;
+	}
+
+
+	.forever #section-flexi-shops .row.no-gutters {
+    margin-bottom: 45px;
+	}
+
+	#section-flexi-cards .box-title-forever {
+    margin-bottom: 47px;
+    margin-top: 37px;
+	}
+
+
+	#section-flexi-cards .box-title-forever.rg {
+    margin-bottom: 35px;
+    margin-top: 18px;
+	}
+
+	#page-flexi-content.forever h4 {
+    margin-top: 0px;
+	}
+
+	.forever section#section-flexi-cards.only-desktop{
+	margin-top: 0px;
+	}
+
+
+	.forever #section-flexi-shops .row {
+    height: 400px;
+	}
+
+	.forever .item .slide-title {
+    font-size: 18px;
+    line-height: 22px;
+	}
+
+	.forever #section-flexi-promotions .slide-flexi-promotions .item p {
+    padding-top: 11px;
+    font-size: 14px;
+ 	}
+
+ 	.forever #section-flexi-shops {
+    margin-bottom: 35px;
+	}
+
+	.forever .text-on-slide {
+    margin: 5px 0;
 	}
 }
