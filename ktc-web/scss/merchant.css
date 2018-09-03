@@ -985,6 +985,9 @@ article.page-merchant-inner-content section.full-width.content-merchant-online d
   .page-merchant-inner-header h1 {
     font-size: 20px;
   }
+  .page-merchant-inner-header h1 strong {
+    margin-bottom: 0;
+  }
   .page-merchant-inner-header h2 {
     font-size: 14px;
   }
