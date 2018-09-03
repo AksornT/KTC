@@ -701,6 +701,9 @@ article.page-content section.full-width div[class*="col"] {
 	background: transparent no-repeat center;
 	background-size: cover;
 }
+article.page-content section.full-width.compact div[class*="col"] {
+	min-height: 300px;
+}
 article.page-content section.full-width p {
 	line-height: 1.65;
 }
