@@ -39,13 +39,13 @@
   pointer-events: none;
   cursor: default;
 }
-.sub-sticky .dropdown .dropdown-menu .dropdown-item {
+.sub-sticky .dropdown .dropdown-item {
   position: relative;
   padding: 15px 20px;
   font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
-.sub-sticky .dropdown .dropdown-menu .dropdown-item::after {
+.sub-sticky .dropdown .dropdown-item::after {
   content: '';
   position: absolute;
   display: block;
@@ -56,8 +56,12 @@
   height: 1px;
   background: #F5F6F6;
 }
-.sub-sticky .dropdown .dropdown-menu .dropdown-item:last-child::after {
+.sub-sticky .dropdown .dropdown-item:last-child::after {
   display: none;
+}
+.sub-sticky .dropdown .dropdown-item.active, .sub-sticky .dropdown .dropdown-item:active {
+  color: #045AA7;
+  background-color: transparent;
 }
 .sub-sticky .dropdown.open .dropdown-menu {
   display: block;
