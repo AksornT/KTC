@@ -49,6 +49,12 @@
       font-family: $font-thin;
       font-size: 0.8em;
     }
+
+    strong {
+      display: block;
+      margin-bottom: 22px;
+      font-family: $font-bold;
+    }
   }
 
   h2 {
