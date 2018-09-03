@@ -3688,6 +3688,31 @@ img[href]:hover{
 	padding-bottom: 110px;
 }
 
+.mobile-cat{
+	margin: -58px 0 0 auto;
+}
+
+#search-cat-wrap-top{
+	margin: 0;
+}
+
+#search-cat-wrap-top .ktc-tabs{
+	margin-top: 45px;
+}
+
+#result-content .slide-wrap .item{
+	margin-bottom: 47px;
+}
+
+#result-content .item .slide-title{
+	height: 80px;
+	overflow: hidden;
+}
+
+#result-content .item .slide-content{
+	height: 82px;
+	overflow: hidden;
+}
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{

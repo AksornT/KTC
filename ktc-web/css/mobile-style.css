@@ -133,6 +133,15 @@
   }
   .menu-global .on-right .only-mobile{
     display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    margin-left: 6px;
+  }
+  .menu-global .on-right .only-mobile.login-mobile{
+    display: inline-block;
+    top: 0;
+    padding: 8px 8px;
+    margin: 0;
   }
   .menu-global .on-right .login-btn{
     display: none;
@@ -817,5 +826,22 @@
 
   article.page-content section.full-width div[class*="col"] {
     min-height: 250px;
+  }
+
+  .slide-wrap .card-register-btn{
+    margin-bottom: 60px
+  }
+
+  .title-center{
+    font-size: 14px;
+  }
+
+  #result-content .item .slide-title, 
+  #result-content .item .slide-content{
+    height: auto;
+  }
+
+  #result-content .text-on-slide a{
+    padding-top: 11px;
   }
 }
