@@ -779,6 +779,16 @@ article.page-merchant-inner-content .detail-register-desc .list-none li {
   margin-left: 0;
   list-style: none;
 }
+article.page-merchant-inner-content .video-container {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 49.7512437811%;
+}
+article.page-merchant-inner-content .video-container iframe, article.page-merchant-inner-content .video-container object, article.page-merchant-inner-content .video-container embed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 section.content-inner-merchant-detail .row > [class*="col"] {
   padding: 0 60px;

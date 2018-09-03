@@ -233,6 +233,18 @@ article.page-merchant-inner-content {
       list-style: none;
     }
   }
+
+  .video-container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: (600 * 100 / 1206)#{"%"};
+
+    iframe, object, embed {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 section.content-inner-merchant-detail {
