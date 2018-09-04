@@ -3688,13 +3688,6 @@ input:focus + .suggess-box,
 	color: #000;
 }
 
-.search-wrap .btn-wrap{
-	position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-}
-
 .search-wrap .btn-wrap .button-search{
 	position: static;
 	margin: 20px;

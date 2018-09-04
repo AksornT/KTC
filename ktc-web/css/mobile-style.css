@@ -1026,4 +1026,11 @@
   margin-bottom: 40px;
 }
 
+.search-wrap .btn-wrap{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
 }
