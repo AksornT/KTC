@@ -81,7 +81,7 @@
   .tel > span{
     display: inline-block;
     vertical-align: middle;
-    margin: 38px 7px;
+    margin: 38px 0 38px 7px;
   }
 
   .footer-menu + div{
