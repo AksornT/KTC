@@ -2662,6 +2662,10 @@ a.media.on-desk img {
 	max-width: 100%;
 }
 
+.forever#page-flexi-content img {
+	margin-bottom: -4px;
+}
+
 section#section-flexi-cards {
 	padding: 0 0 50px;
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3996,7 +4000,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .forever #section-flexi-shops .row {
 	background: #F6F6F6;
-	height: 451.41px;
 }
 
 .forever #section-flexi-shops .row:nth-last-child(1){
@@ -4043,6 +4046,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+	border-radius: 3px;
+}
+
+#section-flexi-promotions .slide-flexi-promotions .promotion-forever img{
+	display: block;
 }
 
 
