@@ -1819,10 +1819,27 @@ a:hover .on-hover{
 	background-size: cover;
 	height: 195px;
 	padding: 40px 0;
+	/*display: none;*/
 }
 .click-compare img{
 	width: 138px;
   margin-bottom: 10px;
+}
+.box-compare-credit{
+	position: relative;
+}
+.box-compare-credit p:after{
+	position: absolute;
+	content: 'x';
+	color: #fff;
+	font-size: 14px;
+	width: 20px;
+	height: 20px;
+	background-color: #cf3339;
+	border-radius: 60px;
+	top: -6px;
+	right: 60px;
+	cursor: pointer;
 }
 .click-compare p{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -1833,6 +1850,9 @@ a:hover .on-hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 24px;
 	line-height: 28px;
+}
+.btn-right{
+	text-align: right;
 }
 .click-compare .btn-default{
 	width: 148px;
@@ -1847,11 +1867,21 @@ a:hover .on-hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	color: #cf3339;
 	font-size: 18px;
-	background-color: #fff;
+	background-color: transparent;
 	border-radius: 6px;
 	border: 1px solid #cf3339;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 	cursor: pointer;
+}
+.click-compare .btn-default:hover,
+.click-compare .btn-cancel:hover{
+	    box-shadow: 0 1px 12px rgba(0, 0, 0, .2);
+}
+.click-compare .on-desktop{
+	display: block;
+}
+.click-compare .on-mobile{
+	display: none;
 }
 
 .proud-head, .header-big-cover {
@@ -4212,7 +4242,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	.forever #section-flexi-shops .only-score {
     	margin-top: 15px;
     	margin-bottom: 15px;
- 
+
 	}
 
 	.forever #section-flexi-shops .button-contact-shop {
@@ -4291,4 +4321,9 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	.forever .text-on-slide {
     margin: 5px 0;
 	}
+
+	/* creditcard page -eve */
+	.box-compare-credit p:after {
+    right: 30px;
+  }
 }

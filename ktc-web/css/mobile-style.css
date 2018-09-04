@@ -508,6 +508,20 @@
 		margin-right: -16px;
 	}
 
+  /* creditcard page -eve */
+  .click-compare .on-desktop{
+  	display: none;
+  }
+  .click-compare .on-mobile{
+  	display: block;
+  }
+  .click-compare .btn-default, .click-compare .btn-cancel{
+    width: 158px;
+  }
+  .box-compare-credit p:after {
+    right: 18px;
+  }
+
   /* loan page -eve */
   .main-loan{
     padding-bottom: 60px;
@@ -839,7 +853,7 @@
     font-size: 14px;
   }
 
-  #result-content .item .slide-title, 
+  #result-content .item .slide-title,
   #result-content .item .slide-content{
     height: auto;
   }
@@ -850,7 +864,7 @@
 
   /* page - forever*/
 
-  
+
   .page-forever-header h2 {
     font-size: 14px;
     line-height: 20px;
@@ -933,7 +947,7 @@
 
   #section-flexi-cards-mobile.forever .box-title-forever {
       margin-top: 18px;
-  } 
+  }
 
   #page-flexi-content.forever h4 {
     font-size: 20px;
@@ -994,7 +1008,7 @@
 }
 
 .forever section#section-flexi-shops .box-center-v {
-     padding: 40px; 
+     padding: 40px;
 }
 
 .forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {

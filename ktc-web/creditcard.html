@@ -272,29 +272,38 @@
   </div>
 
     <!-- start page -->
-    <div class="click-compare">
+    <div id="myCompare" class="click-compare">
       <div class="content-wrap">
         <div class="row">
-          <div class="col-sm-2 compare-title">
-            <p>บัตรที่ต้องการ<br>เปรียบเทียบ</p>
+          <div class="col-lg-2 compare-title">
+            <p>บัตรที่ต้องการเปรียบเทียบ</p>
           </div>
-          <div class="col-sm-8">
+          <div class="col-lg-8 on-desktop">
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-4 text-center box-compare-credit">
                 <img src="img/img-ktc-x-visa-signature.png">
                 <p>KTC X VISA SIGNATURE</p>
               </div>
-              <div class="col-sm-4 text-center">
-                <img src="img/img-ktc-x-visa-signature.png">
-                <p>KTC X VISA SIGNATURE</p>
+              <div class="col-sm-4 text-center box-compare-credit">
+                <img src="img/img-dis-compare.png">
               </div>
-              <div class="col-sm-4 text-center">
-                <img src="img/img-ktc-x-visa-signature.png">
-                <p>KTC X VISA SIGNATURE</p>
+              <div class="col-sm-4 text-center box-compare-credit">
+                <img src="img/img-dis-compare.png">
               </div>
             </div>
           </div>
-          <div class="col-sm-2 text-right">
+          <div class="col-lg-8 on-mobile">
+            <div class="row">
+              <div class="col-6 text-center box-compare-credit">
+                <img src="img/img-ktc-x-visa-signature.png">
+                <p>KTC X VISA SIGNATURE</p>
+              </div>
+              <div class="col-6 text-center box-compare-credit">
+                <img src="img/img-dis-compare.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 btn-right">
             <button class="btn-default" disabled>เปรียบเทียบ</button>
             <button class="btn-cancel">ยกเลิก</button>
           </div>
@@ -325,7 +334,7 @@
     <div class="content-wrap main-credit">
       <h3>เลือกบัตรเครดิตที่ใช่ในสไตล์คุณ</h3>
       <div class="row creditcard-row">
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-x-visa-signature.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -337,12 +346,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-visa-signature.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -354,12 +363,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-x-visa-signature.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -371,12 +380,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-x-world-rewards-mastercard.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -388,14 +397,14 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row creditcard-row">
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-visa-platinum.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -407,12 +416,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-platinum-mastercard.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -424,12 +433,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-new-card-jcb-tiger.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -441,12 +450,12 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <img src="img/img-ktc-cash-back-visa-platinum.png">
           <div class="box-credit-content">
             <div class="main-content">
@@ -458,7 +467,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a href="creditcard-compared.html">เปรียบเทียบ</a>
+                <a onclick="myFunction()">เปรียบเทียบ</a>
               </div>
             </div>
           </div>

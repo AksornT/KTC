@@ -408,6 +408,29 @@
       flex: none;
   }
 
+  /* creditcard page -eve */
+  .click-compare .on-desktop{
+  	display: none;
+  }
+  .click-compare .on-mobile{
+  	display: block;
+  }
+  .click-compare{
+    height: 357px;
+  }
+  .compare-title p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .btn-right{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .box-compare-credit p:after{
+    right: 95px;
+  }
+
   /* loan page -eve */
   .main-loan .box-content {
     margin-top: 20px;
@@ -871,7 +894,7 @@
     text-align: center;
   }
 
-  #section-flexi-cards-mobile.forever .box-title-forever{    
+  #section-flexi-cards-mobile.forever .box-title-forever{
     margin-bottom: 8px;
     margin-top: 18px;
   }
@@ -968,7 +991,7 @@
     font-size: 20px;
   }
 
-  #section-flexi-cards-mobile.forever .sub-title-new {  
+  #section-flexi-cards-mobile.forever .sub-title-new {
     font-size: 20px;
   }
 
@@ -1001,11 +1024,11 @@
   }
 
   #section-flexi-cards-mobile.forever h4 {
-    margin-top: 0px; 
+    margin-top: 0px;
   }
 
   #section-flexi-cards-mobile.only-mobile.forever h4 {
-    margin-top: 0px; 
+    margin-top: 0px;
     margin-bottom: 0px;
   }
   .forever #section-flexi-shops {

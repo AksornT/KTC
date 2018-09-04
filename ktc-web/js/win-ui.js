@@ -251,3 +251,13 @@ function myFunction() {
     text.style.display = "none";
   }
 }
+
+//for compare credit
+function myFunction() {
+    var x = document.getElementById("myCompare");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
