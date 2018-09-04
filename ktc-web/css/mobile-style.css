@@ -832,7 +832,7 @@
   }
 
   .slide-wrap .card-register-btn{
-    margin-bottom: 60px
+    /*margin-bottom: 60px*/
   }
 
   .title-center{
@@ -1020,6 +1020,17 @@
 
 .forever .order-lg-first{
   padding-right: 15px;
+}
+
+#result-content .slide-wrap .item{
+  margin-bottom: 40px;
+}
+
+.search-wrap .btn-wrap{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
 }
 
 }
