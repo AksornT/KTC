@@ -1753,6 +1753,7 @@ a:hover .on-hover{
 .btn-filter img{
 	width: 28px;
 	height: auto;
+	vertical-align: bottom;
 }
 .main-credit{
 	margin-bottom: 130px;
@@ -1769,7 +1770,7 @@ a:hover .on-hover{
 	margin-bottom: 40px;
 }
 .box-credit-content{
-	padding: 20px 10px 20px; 10px;
+	padding: 20px 10px 20px 10px;
 }
 .main-credit .credit-title{
 	font-family: 'Gotham-Bold';
@@ -1794,7 +1795,7 @@ a:hover .on-hover{
 	text-decoration: underline !important;
 }
 .txt-link-right{
-	padding: 5px 0;
+	padding: 2px 10px;
 }
 .txt-link-right a:hover{
 	color: #cf3339;

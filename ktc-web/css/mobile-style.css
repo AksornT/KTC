@@ -521,6 +521,12 @@
   .box-compare-credit p:after {
     right: 18px;
   }
+  .box-credit-content{
+  	padding: 20px 10px 40px 10px;
+  }
+  .main-credit h3{
+    font-size: 26px;
+  }
 
   /* loan page -eve */
   .main-loan{

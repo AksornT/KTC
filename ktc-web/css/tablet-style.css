@@ -430,6 +430,15 @@
   .box-compare-credit p:after{
     right: 95px;
   }
+  .col-right-filter input{
+    width: 260px;
+  }
+  .btn-filter img{
+    width: 20px;
+  }
+  .btn-filter span{
+    font-size: 12px;
+  }
 
   /* loan page -eve */
   .main-loan .box-content {
