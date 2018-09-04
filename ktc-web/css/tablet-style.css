@@ -862,20 +862,22 @@
   /*forever*/
 
   #page-flexi-content section.forever {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     border: none;
   }
 
   .forever .special-button {
     padding-bottom: 0px;
+    text-align: center;
   }
 
   #section-flexi-cards-mobile.forever .box-title-forever{    
     margin-bottom: 8px;
+    margin-top: 18px;
   }
 
   .forever #nav-flexi-scroll-trigger{
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 
   .page-forever-header h2 {
@@ -973,6 +975,7 @@
 
   .forever .btn-link.underlined {
     font-size: 20px;
+    display: inline-block;
   }
 
   #page-flexi-content.forever .content-pre-nav h3 {
