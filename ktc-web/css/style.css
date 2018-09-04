@@ -199,8 +199,8 @@ a:hover{
 .scrolled-menu > li:after{
 	position: absolute;
 	bottom: 0;
-	left: 16px;
-	right: 16px;
+	left: 0.8rem;
+	right: 0.8rem;
 	height: 3px;
 	background: #000;
 	content: "";
@@ -1323,6 +1323,10 @@ body.modal-open{
 	margin: 60px 0 0 0;
 	opacity: 1;
 	border: none;
+}
+
+.input-search + .button-search{
+	margin-top: 0;
 }
 
 .button-search:hover{
