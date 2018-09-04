@@ -101,3 +101,37 @@ article.page-merchant-inner-content {
     }
   }
 }
+
+/* Alipay */
+@include override-content {
+  &.content-merchant-alipay {
+    [class*="col"] {
+      align-items: center;
+
+      &.alt-color {
+        background-color: #ffffff;
+      }
+    }
+
+    img {
+      margin-bottom: 15px;
+      max-width: none;
+    }
+
+    p {
+      font-size: 18px;
+
+      strong {
+        margin-bottom: 10px;
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* QRPay */
+.page-merchant-inner-header {
+  .header-big-cover img.img-qrpay {
+    bottom: -80px;
+  }
+}

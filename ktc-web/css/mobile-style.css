@@ -827,6 +827,9 @@
   article.page-content section.full-width div[class*="col"] {
     min-height: 250px;
   }
+  article.page-content section.full-width.compact div[class*="col"] {
+    min-height: 165px;
+  }
 
   .slide-wrap .card-register-btn{
     margin-bottom: 60px
