@@ -1085,7 +1085,7 @@
 
 .promotion-page .item .slide-title + .slide-content{
   margin-bottom: 20px;
-  height: 54px;
+  height: 36px;
 }
 
 .promotion-page .item .slide-content{
@@ -1097,6 +1097,42 @@
   padding-bottom: 5px;
   position: relative;
   top: 7px;
+}
+
+.submit-btn{
+  min-width: 0;
+  width: calc(50% - 10px);
+  margin-right: 0;
+}
+
+.cancel-btn{
+  min-width: 0;
+  margin-left: 0;
+  width: calc(50% - 10px);
+}
+
+#edit-my-link-modal .btn-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+}
+
+#edit-my-link-modal .modal-body .content-wrap{
+  padding-bottom: 70px;
+}
+
+.edit-button{
+  font-size: 12px;
+  line-height: 20px;
+  background-size: auto 100%;
+  margin-top: 5px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+  padding: 0;
 }
 
 }

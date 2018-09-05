@@ -201,6 +201,40 @@ $(document).ready(function() {
     });  
 
 
+    //for sort list in promotion
+    var sortList = 0;
+    $('#edit-my-link-modal .all-type-list').on('click touch', function (){
+        if(sortList <= 3) {
+            if ($(this).hasClass('active')) {
+                $('.all-type-list').removeClass( "active" );
+                sortList = 0;
+                $('.list-number').text('');
+                return false;
+            } else {
+                sortList = sortList + 1;
+                $(this).addClass( "active" );
+                $(this).find('.list-number').text(sortList);
+                console.log(sortList);
+                if(sortList == 4) {
+                    $('.submit-btn').prop("disabled", false);
+                } else {
+                    $('.submit-btn').prop("disabled", true);
+                }
+                return false;
+            } 
+        } else {
+            if ($(this).hasClass('active')) {
+                $('.all-type-list').removeClass( "active" );
+                sortList = 0;
+                $('.list-number').text('');
+                $('.submit-btn').prop("disabled", true);
+                return false;
+            }
+        }
+
+    });  
+
+
     //for search
     $(".suggess-list").on('click touch', function () {
       $("#fake-result").empty();

@@ -4350,10 +4350,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .promotion-page .item  .slide-title + .slide-content{
 	display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    height: 82px;
+    height: 58px;
+    margin-bottom: 10px;
 }
 
 .banner-row a{
@@ -4618,6 +4619,130 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     border-radius: 6px;
     position: relative;
     display: inline-block;
+}
+
+.edit-button{
+	font-size: 20px;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+	padding-left: 25px;
+	background: url("../img/ico-edit.png") no-repeat; 
+	background-position: left center;
+	float: right;
+}
+
+.all-type-list{
+	display: inline-block;
+	margin: 20px 15px;
+	position: relative;
+	top: 0;
+	vertical-align: top;
+	width: 77px;
+}
+
+a.all-type-list[href]:hover{
+	top: -3px;
+}
+
+.all-type-list > div{
+	width: 75px;
+	height: 75px;
+	border: 1px solid #BBBBBC;
+	border-radius: 6px;
+	margin-bottom: 9px;
+	position: relative;
+}
+
+.all-type-list img{
+    height: 55px;
+    width: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.all-type-list p{
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+	color: #000;
+}
+
+#edit-my-link-modal .btn-wrap{
+	margin-top: 80px;
+}
+
+.cancel-btn{
+	font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 18px;
+    line-height: 10px;
+    padding: 9px 15px;
+    height: 45px;
+    color: #cf3339;
+    background: #FFF;
+    border: 1px solid #cf3339;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    min-width: 158px;
+    margin: 10px;
+}
+
+.submit-btn{
+	font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 18px;
+    line-height: 10px;
+    padding: 9px 15px;
+    height: 45px;
+    color: #FFF;
+    background: #cf3339;
+    border: 1px solid #cf3339;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    min-width: 158px;
+}
+
+.submit-btn[disabled]{
+	background: rgba(91,102,112,.6);
+	border: none;
+}
+
+.submit-btn[disabled]:hover{
+	cursor: default;
+}
+
+.list-number{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 22px;
+	background: #cf3339;
+	color: #fff;
+	font-size: 10px;
+	opacity: 0;
+	top: -10px;
+	right: -10px;
+	border-radius: 50%;
+}
+
+.all-type-list.active .list-number{
+	opacity: 1;
+}
+
+.first-box-setting{
+	margin-bottom: -50px;
+}
+
+.promotion-page .text-on-slide.no-subtitle{
+	margin-bottom: 5px;
+}
+
+.slide-wrap .index-slide2.sub-sub .item{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 @media (min-width: 1366px) {
