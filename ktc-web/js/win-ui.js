@@ -162,13 +162,13 @@ $(document).ready(function() {
     $('#filter-modal .select-all-btn').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        $('#filter-modal').find('input').prop('checked', true).trigger('change'); 
+        $('#filter-modal').find('input').prop('checked', true).trigger('change');
     });
 
     $('#filter-modal .reset-btn').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        $('#filter-modal').find('input').prop('checked', false).trigger('change'); 
+        $('#filter-modal').find('input').prop('checked', false).trigger('change');
     });
 
     $('.form-check-required input').change(function(){
@@ -179,13 +179,13 @@ $(document).ready(function() {
             if($(this).is(':checkbox')){
                 if(!$(this).prop('checked')){
                     filledAll = false;
-                }  
+                }
             }
             else{
                 if($(this).val().length <= 0){
                     filledAll = false;
-                }  
-            } 
+                }
+            }
         });
         if(filledAll) {
             form.find('.btn-submit-form').removeClass('disabled');
@@ -197,7 +197,7 @@ $(document).ready(function() {
 
     $('.form-check-required input').keyup(function(){
         $(this).trigger('change');
-    });  
+    });
 
 
     //for sort list in promotion
@@ -220,7 +220,7 @@ $(document).ready(function() {
                     $('.submit-btn').prop("disabled", true);
                 }
                 return false;
-            } 
+            }
         } else {
             if ($(this).hasClass('active')) {
                 $('.all-type-list').removeClass( "active" );
@@ -231,7 +231,7 @@ $(document).ready(function() {
             }
         }
 
-    });  
+    });
 
 
     //for search
@@ -376,8 +376,3 @@ function myFunction() {
         x.style.display = "none";
     }
 }
-
-//for calendar
-$(document).ready(function() {
-  $('.input-date-picker').datepicker();
-});

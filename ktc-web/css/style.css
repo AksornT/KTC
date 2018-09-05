@@ -4524,7 +4524,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	width: 10px;
 	height: 10px;
 	padding: 0;
-	border:none; 
+	border:none;
 	background: #BBBBBC;
 	border-radius: 50%;
 	margin: 0 4px;
@@ -4646,15 +4646,15 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .menu-sub-icon {
   margin-top: 20px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .menu-sub-icon .nav {
-	margin: 0 -10px; 
+	margin: 0 -10px;
 }
 
 .menu-sub-icon .nav-item {
-    position: relative; 
+    position: relative;
 }
 .menu-sub-icon .nav-item:after {
   content: '';
@@ -4665,11 +4665,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
   top: 0;
   display: block;
   background: #5B6670;
-  opacity: 0.15; 
+  opacity: 0.15;
 }
 
 .menu-sub-icon .nav-item:last-child:after {
-  display: none; 
+  display: none;
 }
 
 .menu-sub-icon .nav-link {
@@ -4678,11 +4678,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     font-size: 16px;
     line-height: 26px;
     color: #5B6670;
-    padding: 22px 20px 28px 20px; 
+    padding: 22px 20px 28px 20px;
 }
 .menu-sub-icon .nav-link img {
 	display: block;
-	margin: 0 auto 8px; 
+	margin: 0 auto 8px;
 	height: 61px;
 	width: auto;
 }
@@ -4849,13 +4849,13 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 #filter-modal .form-content .checkbox input {
-  display: none; 
+  display: none;
 }
   #filter-modal .form-content .checkbox input:checked + label:before {
     border: 2px solid #cf3339;
     background-color: #cf3339;
     background-image: url("../img/ico-checked.png");
-    background-size: contain; 
+    background-size: contain;
 }
 #filter-modal .topic-select-row .checkbox {
     margin-bottom: 30px;
@@ -4867,7 +4867,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
   @media only screen and (max-width: 767px) {
     #filter-modal .form-wrap {
       padding: 0;
-} 
+}
 }
 
 #filter-modal .filter-select-row {
@@ -4876,7 +4876,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
   @media only screen and (max-width: 767px) {
     #filter-modal .filter-select-row {
       margin-bottom: 35px;
-} 
+}
 }
   #filter-modal .filter-select-row button {
     font-family: "Conv_SukhumvitTadmai_Bol";
@@ -4910,7 +4910,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
         width: 80px;
         padding: 2px 5px;
         margin-right: 10px;
-} 
+}
 }
 
 #filter-modal .topic-select-row {
@@ -4931,7 +4931,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
       #filter-modal .topic-select-row .checkbox:last-child {
         margin-bottom: 0;
-} 
+}
 }
 
 #filter-modal .card-select-row {
@@ -4948,19 +4948,19 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
       #filter-modal .card-select-row .img-checkbox {
         flex: 0 0 25%;
-} 
+}
 }
   @media only screen and (max-width: 767px) {
     #filter-modal .card-select-row.with-text .img-checkbox {
       width: 150px;
       flex: 0 0 50%;
-} 
+}
 }
   #filter-modal .card-select-row .img-checkbox {
     text-align: center;
     padding: 0 10px;
 }
-    
+
 }
     #filter-modal .card-select-row .img-checkbox label {
       border: 1px solid #8B939A;
@@ -4974,7 +4974,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
           #filter-modal .card-select-row .img-checkbox label img {
             width: 100%;
-} 
+}
 }
     #filter-modal .card-select-row .img-checkbox input {
       display: none;
@@ -5008,7 +5008,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
           font-size: 12px;
           line-height: 22px;
           margin-top: 3px;
-} 
+}
 }
 
 #filter-modal .footer-row {
@@ -5019,7 +5019,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
   @media only screen and (max-width: 767px) {
     #filter-modal .footer-row {
       padding-top: 20px;
-} 
+}
 }
   #filter-modal .footer-row .submit-filter-btn {
     font-family: "Conv_SukhumvitTadmai_Bol";
@@ -5037,7 +5037,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     @media only screen and (max-width: 767px) {
       #filter-modal .footer-row .submit-filter-btn {
         width: 100%;
-} 
+}
 }
     #filter-modal .footer-row .submit-filter-btn:disabled {
       background: #5B6670;
@@ -5058,7 +5058,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	font-size: 20px;
 	font-family: "Conv_SukhumvitTadmai_Tex";
 	padding-left: 25px;
-	background: url("../img/ico-edit.png") no-repeat; 
+	background: url("../img/ico-edit.png") no-repeat;
 	background-position: left center;
 	float: right;
 }
