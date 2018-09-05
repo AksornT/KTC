@@ -1073,6 +1073,18 @@
   font-size: 16px;
   line-height: 26px;
 }
+.article-wrap .article-cover {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#promotion-detail .breadcrumb{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.article-wrap .article-icon .fav-btn{
+  margin-right: 0;
+}
 .promotion-page .index-slide1 .owl-item.active{
   opacity: 1;
 }
@@ -1231,10 +1243,12 @@
   line-height: 18px;
 }
 #terms-modal .header {
+  margin-top: 0;
+}
+#terms-modal .sub-header {
   margin-top: 40px;
 }
 .main-terms-modal.world-modal .close{
-  top: 2rem;
   right: 2rem;
 }
 

@@ -5435,6 +5435,11 @@ a.all-type-list[href]:hover{
     margin: 60px 0 30px 0;
 }
 
+#promotion-detail .breadcrumb{
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
 .modal.full-modal.show {
     padding-right: 0 !important;
 }
