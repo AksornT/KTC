@@ -1068,4 +1068,12 @@
     font-size: 24px;
     line-height: 37px;
   }
+  
+
+  .search-wrap .btn-wrap{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
 }

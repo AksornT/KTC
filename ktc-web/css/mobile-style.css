@@ -440,6 +440,7 @@
   }
   .item .slide-title{
     font-size: 14px;
+    line-height: 20px;
     padding-top: 10px;
   }
   .item .slide-content{
@@ -1046,11 +1047,21 @@
   margin-bottom: 40px;
 }
 
-.search-wrap .btn-wrap{
-  position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #fff;
+.promotion-range{
+  font-size: 12px;
+}
+
+.seach-result-text-content{
+  height: 71px;
+  -webkit-line-clamp: 3;
+}
+
+#type4 .seach-result-other-box-wrap:nth-child(n + 3){
+  display: none;
+}
+
+.owl-item{
+  opacity: 1;
 }
 
 }

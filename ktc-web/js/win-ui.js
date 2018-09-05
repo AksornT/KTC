@@ -150,6 +150,15 @@ $(document).ready(function() {
     $('a[href="#"]').on('click touch', function (event) {
         event.preventDefault();
     });
+
+    //discard credit cards in compare table
+    $('.campare-table th .compare-cancel').on('click touch', function (event) {
+        var indexZ = $(this).parent().parent().index();
+        $(this).parent().parent().remove();
+        $('.campare-table tbody tr').each(function(){
+          $(this).find('td').eq( indexZ ).remove();
+        });
+    });
 });
 
 //change header when scroll down.

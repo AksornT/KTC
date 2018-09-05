@@ -542,6 +542,10 @@ a:hover{
 	z-index: 1;
 }
 
+.scrolled-menu > li i {
+    margin-right: -10px;
+}
+
 .only-desktop{
 	display: block;
 }
@@ -1113,6 +1117,7 @@ body.modal-open{
   height: 100%;
   border-radius: 0;
   overflow: auto;
+  border: none;
   border-top: 4px solid #CF3339;
 }
 
@@ -1308,6 +1313,7 @@ body.modal-open{
 
 .input-search:focus{
 	outline: 0;
+	border-color:#cf3339;
 }
 
 .button-search{
@@ -1671,6 +1677,11 @@ button.close{
 	vertical-align: top;
     padding-top: 35px;
     padding-left: 20px;
+}
+
+.campare-table th:nth-child(n + 5),
+.campare-table td:nth-child(n + 5){
+	display: none;
 }
 
 .on-default{
@@ -3514,7 +3525,7 @@ button.btn-back-step{
 	height: auto;
 	left: 9px;
 	right: 13px;
-	top: 80%;
+	top: calc(100% + 5px);
 	background: #fff;
 	border-radius: 3px;
 	padding: 12px 20px;
@@ -3776,6 +3787,12 @@ img[href]:hover{
     line-height: 22px;
     color: #000;
     padding-top: 5px;
+	height: 49px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 
 #result-content{
@@ -3799,19 +3816,27 @@ img[href]:hover{
 	display: block;
 }
 
-#result-content .item .slide-title{
+#result-content #type1 .item .slide-title{
 	height: 56px;
     overflow: hidden;
     font-size: 14px;
     line-height: 16px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 
-#result-content .item .slide-content{
-	height: 28px;
+#result-content #type1 .item .slide-content{
+    height: 32px;
     overflow: hidden;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 16px;
     padding-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 
 /*== page forever ==*/
