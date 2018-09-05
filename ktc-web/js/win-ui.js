@@ -13,7 +13,6 @@ $(document).ready(function() {
       return false;
     });
 
-
     //search-category selected
     $(".subcat + label").on('click touch', function () {
       $("#all-cat").prop('checked', false).checkboxradio('refresh');

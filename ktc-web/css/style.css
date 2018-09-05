@@ -128,6 +128,10 @@ a:hover{
 	color: rgba(255,255,255,0.7);
 }
 
+.menu-global a.menu-responsive{
+	color: #fff;
+}
+
 .menu-global:after{
 	content: "";
 	clear: both;
