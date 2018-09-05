@@ -127,6 +127,79 @@ $(document).ready(function() {
       $(".lang-wrap").toggleClass('active');
     });
 
+    //for favorite button
+    $(".fav-btn").on('click touch', function () {
+      $(this).toggleClass('active');
+    });
+
+    /* FILTER FORM */
+    $('#filter-modal input').change(function(){
+        var hasChecked = false;
+        var checkedAll = true;
+        $('#filter-modal').find('input').each(function(){
+            if($(this).prop('checked')){
+                hasChecked=true;
+            }
+            else{
+                checkedAll=false;
+            }
+        });
+        if(checkedAll){
+            $('#filter-modal').find('.select-all-btn').attr('disabled', 'disabled');
+        }
+        else{
+            $('#filter-modal').find('.select-all-btn').removeAttr('disabled');
+        }
+        if(hasChecked){
+            $('#filter-modal').find('.submit-filter-btn').removeAttr('disabled');
+            $('#filter-modal').find('.reset-btn').removeAttr('disabled');
+        }
+        else{
+            $('#filter-modal').find('.submit-filter-btn').attr('disabled','disabled');
+            $('#filter-modal').find('.reset-btn').attr('disabled', 'disabled');
+        }
+    });
+
+    $('#filter-modal .select-all-btn').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('#filter-modal').find('input').prop('checked', true).trigger('change'); 
+    });
+
+    $('#filter-modal .reset-btn').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('#filter-modal').find('input').prop('checked', false).trigger('change'); 
+    });
+
+    $('.form-check-required input').change(function(){
+        //Check if all required input has filled
+        var filledAll = true;
+        var form = $(this).parents('form');
+        form.find('.required').each(function(){
+            if($(this).is(':checkbox')){
+                if(!$(this).prop('checked')){
+                    filledAll = false;
+                }  
+            }
+            else{
+                if($(this).val().length <= 0){
+                    filledAll = false;
+                }  
+            } 
+        });
+        if(filledAll) {
+            form.find('.btn-submit-form').removeClass('disabled');
+        }
+        else {
+            form.find('.btn-submit-form').addClass('disabled');
+        }
+    });
+
+    $('.form-check-required input').keyup(function(){
+        $(this).trigger('change');
+    });  
+
 
     //for search
     $(".suggess-list").on('click touch', function () {

@@ -553,13 +553,22 @@ a:hover{
 	display: none;
 }
 
-.index-head{
+.index-head,
+.text-on-slide .index-head a{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 20px;
 	color: #454545;
 	border-bottom: 4px solid #CF3339;
 	display: inline-block;
 	margin-top: 60px;
+}
+
+.text-on-slide .index-head a{
+	border: none;
+}
+.text-on-slide .index-head{
+	margin-left: -15px;
+	margin-top: 0;
 }
 
 .text-on-slide{
@@ -578,6 +587,10 @@ a:hover{
 	padding-top: 13px;
 	padding-right: 0;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.text-on-slide.no-subtitle .view-all{
+	margin-top: 65px;
 }
 
 .text-on-slide a:hover{
@@ -4112,7 +4125,500 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	display: block;
 }
 
+.index-slide1 .owl-dots{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
 
+.index-slide1 .owl-dots .owl-dot{
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border:none; 
+	background: #BBBBBC;
+	border-radius: 50%;
+	margin: 0 4px;
+}
+
+.index-slide1 .owl-dots .owl-dot.active{
+	background: #CF3339;
+}
+
+.row-search-filter {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.row-search-filter .input-search-inline {
+    border-radius: 6px;
+    border: 1px solid #5B6670;
+    padding: 6px 15px;
+    display: inline-block;
+    width: 335px;
+    height: 40px;
+    position: relative;
+}
+
+.row-search-filter .filter-btn {
+    font-family: 'SukhumvitTadmai_Tex';
+    font-size: 20px;
+    line-height: 38px;
+    color: #5B6670;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: -10px;
+    margin-left: 22px;
+}
+
+.row-search-filter .filter-btn img {
+    width: 28px;
+    margin-right: 5px;
+}
+
+.row-search-filter .filter-btn img + span{
+	font-size: 20px;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+}
+
+.row-search-filter .input-search-inline input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-family: "Conv_SukhumvitTadmai_Tex";
+    font-size: 14px;
+    line-height: 26px;
+    background: none;
+    padding: 0;
+}
+
+.row-search-filter .input-search-inline:after {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url(../img/ico-search-inline.png);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.slide-wrap.promo-wrap {
+    margin-bottom: 20px;
+}
+
+
+.menu-sub-icon {
+  margin-top: 20px;
+  margin-bottom: 50px; 
+}
+
+.menu-sub-icon .nav {
+	margin: 0 -10px; 
+}
+
+.menu-sub-icon .nav-item {
+    position: relative; 
+}
+.menu-sub-icon .nav-item:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background: #5B6670;
+  opacity: 0.15; 
+}
+
+.menu-sub-icon .nav-item:last-child:after {
+  display: none; 
+}
+
+.menu-sub-icon .nav-link {
+    text-align: center;
+    font-family: "Conv_SukhumvitTadmai_Tex";
+    font-size: 16px;
+    line-height: 26px;
+    color: #5B6670;
+    padding: 22px 20px 28px 20px; 
+}
+.menu-sub-icon .nav-link img {
+	display: block;
+	margin: 0 auto 8px; 
+	height: 61px;
+	width: auto;
+}
+
+.menu-sub-icon .permanent-link .nav-link img{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.menu-sub-icon .permanent-link .nav-link img + p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-sub-icon .permanent-link .nav-link{
+	height: 100%;
+	background: rgba(91,102,112,.05);
+}
+
+.menu-sub-icon .permanent-link:after{
+	display: none;
+}
+
+.menu-sub-icon .permanent-link .nav-link:after{
+	content:'';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 1px;
+	margin-left: -1px;
+}
+
+.promotion-page .menu-sub-icon{
+	margin-bottom: -25px;
+}
+
+.promotion-page .breadcrumb{
+	margin-top: 40px;
+	padding-left: 0;
+}
+
+.promotion-page .slide-wrap + .slide-padd{
+	margin-top: -60px;
+}
+
+.slide-wrap .item .slide-meta .fav-btn {
+    border: 0;
+    width: 18px;
+    height: 24px;
+    background: url(../img/ico-fav.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    float: right;
+}
+
+.slide-wrap .item .slide-meta .fav-btn:hover {
+    background-image: url(../img/ico-fav-line.png);
+    background-size: 100% auto;
+    background-position: center;
+    cursor: pointer;
+}
+
+.slide-wrap .item .slide-meta .fav-btn.active {
+    background-image: url(../img/ico-fav-fill.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.slide-wrap .item .slide-btn {
+    font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 14px;
+    line-height: 10px;
+    padding: 2px 15px;
+    height: 30px;
+    color: #cf3339;
+    background: #FFF;
+    border: 1px solid #cf3339;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+.promotion-page .item .slide-title{
+	display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    height: 75px;
+}
+
+.promotion-page .item  .slide-title + .slide-content{
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 82px;
+}
+
+.banner-row a{
+	position: relative;
+	display: block;
+}
+.banner-row a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #333;
+	pointer-events: none;
+	opacity: 0.1;
+	border-radius: 3px;
+}
+
+.banner-row a:hover:after{
+	opacity: 0;
+}
+
+.banner-row a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.row-search-filter.only-mobile{
+	margin-top: auto;
+	text-align: right;
+	display: none;
+}
+
+#filter-modal .form-content .checkbox label {
+  position: relative;
+  padding-left: 40px;
+  font-family: "Conv_SukhumvitTadmai_Tex";
+  font-size: 14px;
+  color: #000;
+}
+
+#filter-modal .form-content .checkbox label:hover{
+	cursor: pointer;
+}
+
+  .form-content .checkbox label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8B939A;
+    border-radius: 3px;
+    position: absolute;
+    left: 0px;
+    top: -3px;
+}
+
+#filter-modal .form-content .checkbox input {
+  display: none; 
+}
+  #filter-modal .form-content .checkbox input:checked + label:before {
+    border: 2px solid #cf3339;
+    background-color: #cf3339;
+    background-image: url("../img/ico-checked.png");
+    background-size: contain; 
+}
+#filter-modal .topic-select-row .checkbox {
+    margin-bottom: 30px;
+}
+
+#filter-modal .form-wrap {
+  max-width: 1200px;
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .form-wrap {
+      padding: 0;
+} 
+}
+
+#filter-modal .filter-select-row {
+  margin-bottom: 60px;
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .filter-select-row {
+      margin-bottom: 35px;
+} 
+}
+  #filter-modal .filter-select-row button {
+    font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 14px;
+    line-height: 10px;
+    padding: 2px 15px;
+    width: 110px;
+    height: 30px;
+    background: #FFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: #cf3339;
+    border: 1px solid #cf3339;
+    margin-right: 20px;
+}
+#filter-modal .filter-select-row button:hover{
+	cursor: pointer;
+}
+    #filter-modal .filter-select-row button[disabled] {
+      color: #9DA3A9;
+      border: 1px solid #9DA3A9;
+}
+#filter-modal .filter-select-row button[disabled]:hover{
+	cursor: default;
+}
+
+    @media only screen and (max-width: 767px) {
+      #filter-modal .filter-select-row button {
+        font-family: "Conv_SukhumvitTadmai_Tex";
+        font-size: 12px;
+        width: 80px;
+        padding: 2px 5px;
+        margin-right: 10px;
+} 
+}
+
+#filter-modal .topic-select-row {
+  border-bottom: 1px solid #E6E8EA;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+  #filter-modal .topic-select-row .checkbox {
+    margin-bottom: 30px;
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .topic-select-row {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+}
+      #filter-modal .topic-select-row .checkbox {
+        margin-bottom: 20px;
+}
+      #filter-modal .topic-select-row .checkbox:last-child {
+        margin-bottom: 0;
+} 
+}
+
+#filter-modal .card-select-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .card-select-row {
+      margin-right: -10px;
+      margin-left: -10px;
+      margin-bottom: 20px;
+}
+      #filter-modal .card-select-row .img-checkbox {
+        flex: 0 0 25%;
+} 
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .card-select-row.with-text .img-checkbox {
+      width: 150px;
+      flex: 0 0 50%;
+} 
+}
+  #filter-modal .card-select-row .img-checkbox {
+    text-align: center;
+    padding: 0 10px;
+}
+    
+}
+    #filter-modal .card-select-row .img-checkbox label {
+      border: 1px solid #8B939A;
+      border-radius: 6px;
+      position: relative;
+      display: inline-block;
+}
+      @media only screen and (max-width: 767px) {
+        #filter-modal .card-select-row .img-checkbox label {
+          display: block;
+}
+          #filter-modal .card-select-row .img-checkbox label img {
+            width: 100%;
+} 
+}
+    #filter-modal .card-select-row .img-checkbox input {
+      display: none;
+}
+      #filter-modal .card-select-row .img-checkbox input:checked + label {
+        border: 1px solid #cf3339;
+}
+        #filter-modal .card-select-row .img-checkbox input:checked + label:before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: #cf3339;
+          background-image: url("../img/ico-checked.png");
+          background-size: contain;
+          border-radius: 100%;
+          position: absolute;
+          right: -10px;
+          top: -10px;
+}
+    #filter-modal .card-select-row .img-checkbox span {
+      display: block;
+      margin-top: 12px;
+      font-family: 'Conv_SukhumvitTadmai_Tex';
+      font-size: 14px;
+      line-height: 26px;
+      color: #000;
+}
+      @media only screen and (max-width: 767px) {
+        #filter-modal .card-select-row .img-checkbox span {
+          font-size: 12px;
+          line-height: 22px;
+          margin-top: 3px;
+} 
+}
+
+#filter-modal .footer-row {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+  @media only screen and (max-width: 767px) {
+    #filter-modal .footer-row {
+      padding-top: 20px;
+} 
+}
+  #filter-modal .footer-row .submit-filter-btn {
+    font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 18px;
+    line-height: 8px;
+    width: 158px;
+    height: 45px;
+    background: #cf3339;
+    color: #FFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    border: 0;
+}
+    @media only screen and (max-width: 767px) {
+      #filter-modal .footer-row .submit-filter-btn {
+        width: 100%;
+} 
+}
+    #filter-modal .footer-row .submit-filter-btn:disabled {
+      background: #5B6670;
+      opacity: 0.6;
+}
+
+#filter-modal .card-select-row .img-checkbox input:checked + label {
+    border: 1px solid #cf3339;
+}
+#filter-modal .card-select-row .img-checkbox label {
+    border: 1px solid #8B939A;
+    border-radius: 6px;
+    position: relative;
+    display: inline-block;
+}
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{

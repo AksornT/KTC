@@ -1064,4 +1064,39 @@
   opacity: 1;
 }
 
+.promotion-page .index-slide1 .owl-item{
+  opacity: 0;
+}
+.promotion-page .index-slide1 .owl-item.active{
+  opacity: 1;
+}
+
+.index-slide1 .owl-dots{
+  margin: 0 0 10px 0;
+}
+
+.slide-wrap .item .slide-meta .fav-btn{
+  margin-top: -3px;
+}
+
+.promotion-page .item .slide-title{
+  height: 50px;
+}
+
+.promotion-page .item .slide-title + .slide-content{
+  margin-bottom: 20px;
+  height: 54px;
+}
+
+.promotion-page .item .slide-content{
+  margin-bottom: 0;
+}
+
+.menu-sub-icon .permanent-link .nav-link{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: relative;
+  top: 7px;
+}
+
 }
