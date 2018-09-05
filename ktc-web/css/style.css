@@ -4194,6 +4194,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     background-color: transparent;
     background-repeat: no-repeat;
     margin-right: 10px;
+		display: inline-block;
 }
 .article-wrap .article-icon .fav-btn.active {
     background-image: url(../img/ico-art-fav-fill.png);
@@ -4203,7 +4204,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     width: 25px;
     height: 25px;
     background-size: contain;
-    background-image: url(../img/ico-share.png);
+    background-image: url(../img/ico-share-pro.png);
     background-color: transparent;
     background-repeat: no-repeat;
     position: relative;
@@ -5233,6 +5234,7 @@ a.all-type-list[href]:hover{
   .ui-datepicker .ui-datepicker-prev span,
   .ui-datepicker .ui-datepicker-next span {
     background-image: none !important;
+		display: none;
 	}
   .ui-datepicker .ui-datepicker-prev:before,
   .ui-datepicker .ui-datepicker-next:before {
@@ -5245,13 +5247,24 @@ a.all-type-list[href]:hover{
   .ui-datepicker .ui-datepicker-prev {
     top: 10px;
     left: 14px;
+		float: left;
+    padding-top: 5px;
 	}
     .ui-datepicker .ui-datepicker-prev:before {
-      background-image: url("../img/ico-cal-prev.png");
+			content: '<';
+	    background-color: #cf3339;
+	    border-radius: 60px;
+			font-family: 'Conv_SukhumvitTadmai_Bol';
+	    color: #fff;
+	    text-align: center;
+	    padding-top: 3px;
+			display: inline-block;
 		}
     .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
       top: 10px;
       left: 14px;
+			float: left;
+	    padding-top: 5px;
 		}
     .ui-datepicker .ui-datepicker-prev.ui-state-disabled {
       display: none;
@@ -5259,29 +5272,41 @@ a.all-type-list[href]:hover{
   .ui-datepicker .ui-datepicker-next {
     top: 10px;
     right: 14px;
+		float: right;
+    padding-top: 5px;
 	}
     .ui-datepicker .ui-datepicker-next:before {
-      background-image: url("../img/ico-cal-next.png");
+			content: '>';
+	    background-color: #cf3339;
+	    border-radius: 60px;
+			font-family: 'Conv_SukhumvitTadmai_Bol';
+	    color: #fff;
+	    text-align: center;
+	    padding-top: 3px;
+			display: inline-block;
 		}
     .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
       top: 10px;
       right: 14px;
+			float: right;
+    	padding-top: 5px;
 		}
     .ui-datepicker .ui-datepicker-next.ui-state-disabled {
       display: none;
 		}
   .ui-datepicker .ui-datepicker-title {
-    font-family: 'SukhumvitTadmai_Bold';
+    font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 20px;
     line-height: 38px;
-    color: #00B2E3;
+    color: #cf3339;
+		text-align: center;
 	}
     .ui-datepicker .ui-datepicker-title .ui-datepicker-month {
       margin-right: 20px;
 		}
   .ui-datepicker .ui-datepicker-calendar {
     table-layout: fixed;
-    font-family: 'SukhumvitTadmai_Text';
+    font-family: 'Conv_SukhumvitTadmai_Tex';
     padding: 0;
     display: block;
     width: 100% !important;
@@ -5337,7 +5362,7 @@ a.all-type-list[href]:hover{
           color: #D41367;
 				}
       .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today a {
-        color: #00B2E3;
+        color: #cf3339;
 			}
       .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-range {
         position: relative;
@@ -5369,7 +5394,7 @@ a.all-type-list[href]:hover{
         border-radius: 100%;
 			}
       .ui-datepicker .ui-datepicker-calendar td .ui-state-active {
-        background: #00B2E3 !important;
+        background: #CF3339 !important;
         color: #FFF !important;
         border-radius: 100%;
 			}
@@ -5381,8 +5406,11 @@ a.all-type-list[href]:hover{
     padding: 10px 10px;
 }
 
+.form-wrap input.input-file{
+	margin-bottom: 10px;
+}
 .form-content .btn-submit-form {
-    background: #D41367;
+    background: #CF3339;
     color: #FFF;
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 18px;
@@ -5403,6 +5431,10 @@ a.all-type-list[href]:hover{
 		font-size: 18px;
 		font-family: 'Conv_SukhumvitTadmai_Tex';
 }
+#promo-regis-complete .img-result {
+    margin: 60px 0 30px 0;
+}
+
 .modal.full-modal.show {
     padding-right: 0 !important;
 }
