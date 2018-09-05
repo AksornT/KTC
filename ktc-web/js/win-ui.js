@@ -376,3 +376,8 @@ function myFunction() {
         x.style.display = "none";
     }
 }
+
+//for calendar
+$(document).ready(function() {
+  $('.input-date-picker').datepicker();
+});

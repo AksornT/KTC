@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/win-ui.js"></script>
@@ -45,7 +46,7 @@
             <li>อัตราดอกเบี้ยและค่าธรรมเนียม<a href="#"></a></li>
           </ul>
         </li>
-        <li>โปรโมชั่น<a href="promotion.html"></a>
+        <li>โปรโมชั่น
         </li>
         <li>ธุรกิจร้านค้า<a href="merchant.html"></a>
           </li>
@@ -129,9 +130,9 @@
               <li><a href="#">อัตราดอกเบี้ยและค่าธรรมเนียม</a></li>
             </ul>
           </div>
-          <a href="promotion.html" class="menu-responsive">
+          <div class="menu-responsive">
             <img src="img/ico-privilege.png"><h3>โปรโมชั่น</h3>
-          </a>
+          </div>
           <div class="menu-responsive">
             <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
           </div>
@@ -177,9 +178,9 @@
       <div class="content-wrap">
         <div class="row">
           <div class="col-lg-6">
-            <h4 class="only-desktop">Fulfill your life with <span>KTC Credit</span></h4>
+            <h1 class="only-desktop">Fulfill your life with <span>KTC Credit</span></h1>
             <p class="only-desktop">Suspendisse accumsan in ante et dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec pulvinar leo, vel malesuada orci.</p>
-            <h4 class="title-mobile only-mobile">ประสบการณ์<br>ให้ความหมายกับชีวิต</h4>
+            <h2 class="title-mobile only-mobile">ประสบการณ์<br>ให้ความหมายกับชีวิต</h2>
           </div>
           <div class="col-lg-6 row icon-wrap">
             <a class="big-link col-4" href="creditcard.html">
@@ -272,203 +273,168 @@
   </div>
 
     <!-- start page -->
-    <div id="myCompare" class="click-compare">
+    <div id="promotion-detail">
       <div class="content-wrap">
+        <div class="row-breadcrumb-filter">
+          <div class="site-breadcrumb">
+            <a href="#">หน้าหลัก</a> /
+            <a href="#">สิทธิพิเศษ</a> /
+            <a href="#">ร้านอาหาร</a> /
+            <a href="#" class="current">Yuutaro</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrap article-wrap">
+        <div class="article-cover">
+          <div class="item">
+            <img src="img/img-bn-promo.png">
+          </div>
+        </div>
         <div class="row">
-          <div class="col-lg-2 compare-title">
-            <p>บัตรที่ต้องการเปรียบเทียบ</p>
-          </div>
-          <div class="col-lg-8">
-            <div class="row">
-              <div class=" col-sm-6 col-lg-4 text-center box-compare-credit">
-                <img src="img/img-ktc-x-visa-signature.png">
-                <p>KTC X VISA SIGNATURE</p>
-              </div>
-              <div class="col-sm-6 col-lg-4 text-center box-compare-credit">
-                <img src="img/img-dis-compare.png">
-              </div>
-              <div class="col-lg-4 text-center box-compare-credit on-desktop">
-                <img src="img/img-dis-compare.png">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 btn-right">
-            <button class="btn-default" disabled>เปรียบเทียบ</button>
-            <button class="btn-cancel">ยกเลิก</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-filter">
-      <div class="content-wrap">
-        <div class="row">
-          <div class="col-sm-6">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb bc-content">
-                <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
-                <li class="breadcrumb-item active" aria-current="page">บัตรเครดิต</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="col-sm-6 col-right-filter">
-            <div class="search-credit">
-              <input placeholder="ค้นหาสิทธิพิเศษ">
-              <a>
-                <i class="fas fa-search"></i>
-              </a>
-            </div>
-            <a class="btn-filter">
-              <img src="img/ico-filter.png">
-              <span>ตัวกรอง</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content-wrap main-credit">
-      <h3>เลือกบัตรเครดิตที่ใช่ในสไตล์คุณ</h3>
-      <div class="row creditcard-row">
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-x-visa-signature.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC X VISA SIGNATURE</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+          <div class="col-9 article-title">ประสบการณ์...อร่อยสุดคุ้ม กับบัตรเครดิต KTC ที่ YUUTARO</div>
+          <div class="col-3 article-icon">
+            <div class="fav-btn"></div>
+            <div class="share-btn">
+              <div class="share-popover">
+                <a class="share-fb-btn" href="#"></a>
+                <a class="share-tw-btn" href="#"></a>
+                <a class="share-line-btn" href="#"></a>
+                <a class="share-mail-btn" href="#"></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-visa-signature.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC X WORLD REWARD MASTERCARD</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-x-visa-signature.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC X WORLD REWARD MASTERCARD</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+        <div class="article-content">
+            <!-- HTML CONTENT FROM TEXT EDITOR ? -->
+            <p>YUUTARO อาหารญี่ปุ่นแสนอร่อย ที่ทุกเมนูรับประกันความอร่อยหลากหลาย และมีหนึ่งวัตถุดิบสุดล้ำค่า เรียกได้ว่าเป็นของหายาก<br>จากท้องทะเล ที่ทำหลายคนติดอกติดใจ
+                และหลงรักในรสชาติที่หวานเบาๆ นุ่มลิ้น แทบละลายในปากเวลารับประทาน กับไข่หอยเม่น <br>ที่ YUUTARO นำเข้าแบบข้ามน้ำข้ามทะเลจากญี่ปุ่นมาให้ทุกท่านได้ลิ้มลองกัน</p>
+            <p><span class="hightlight">ส่วนลด 10%</span><br/>
+                สำหรับเมนู A la cart ไม่รวมเครื่องดื่ม</p>
+            <p><b>ระยะเวลา</b><br>
+                1 มิ.ย. - 31 ส.ค. 61</p>
+            <div class="article-collapse">
+              <a class="title collapsed" data-toggle="collapse" href="#collapseBranch">สาขาที่ร่วมรายการ<i class="fa fa-angle-up"></i></a>
+              <div class="info collapse" id="collapseBranch">
+                <p>เมื่อใช้จ่ายผ่านบัตร + ใช้คะแนนสะสม KTC FOREVER REWARDS เท่ากับยอดใช้จ่าย/เซลส์สลิป<br>ใช้สิทธิได้ที่ ร้านโชคชัยสเต็กเฮาส์ สาขาปากช่อง และ สาขารังสิต</p>
+                <ul>
+                  <li>สาขาสุขุมวิท 51 โทร. <span>02 662 6070-1</span> <a class="i-map"><img src="img/ico-location.png" /></a></li>
+                  <li>Central Embassy ชั้น 5 โทร. <span>02 160 5880-1</span>  <a class="i-map"><img src="img/ico-location.png" /></a></li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-x-world-rewards-mastercard.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC WORLD REWARD MASTERCARD</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
+            <div class="article-tag">
+              <a href="#">Cooking</a>
+              <a href="#">Activity</a>
+              <a href="#">Leisure</a>
+              <a href="#">Desserts</a>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
+            <div class="article-collapse">
+              <a class="title" data-toggle="modal" data-target="#terms-modal">เงื่อนไขรายการส่งเสริมการขาย<i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="article-link">
+              <div class="title">YUUTARO</div>
+              <div class="link"><img src="img/ico-glob-link.png" /><a href="#">https://www.facebook.com/yuutarobkk/</a></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row creditcard-row">
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-visa-platinum.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC X VISA SIGNATURE</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
+          <!-- START REGISTER SECTION -->
+          <div class="register-wrapper">
+            <div class="section-title">ลงทะเบียนร่วมรายการ</div>
+            <div class="d-flex justify-content-center">
+              <ul class="nav nav-justified" role="tablist">
+                <li class="nav-item active"><a class="nav-link" data-toggle="pill" href="#tab-online" role="tab">ลงทะเบียนออนไลน์</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#tab-sms" role="tab">ลงทะเบียนผ่าน SMS</a></li>
+              </ul>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-platinum-mastercard.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC VISA PLATINUM MASTERCARD</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-new-card-jcb-tiger.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC JCB PLATINUM</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <img src="img/img-ktc-cash-back-visa-platinum.png">
-          <div class="box-credit-content">
-            <div class="main-content">
-              <p class="credit-title">KTC CASH BACK VISA PLATINUM</p>
-              <p class="credit-content">Earn KTC FOREVER REWARDS X3 points for every spending in foreign currency</p>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button>สมัครบัตร</button>
-              </div>
-              <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="tab-content">
+              <div class="tab-pane fade show active in" id="tab-online" role="tabpanel">
+                <form class="form-register form-content form-check-required form-wrap">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <!-- IF LOGIN -->
+                      <!--<div class="input-ico input-ico-right input-select">
+                        <label>กรุณาเลือกบัตรที่ต้องการลงทะเบียน</label>
+                        <input type="text" class="input-card-picker required" placeholder="กรุณาเลือกบัตรที่ต้องการลงทะเบียน" readonly />
+                      </div>-->
+                      <!-- IF NOT LOGIN -->
+                      <div class="input-ico input-ico-right">
+                        <input type="text" class="input-card-text required" placeholder="กรุณาระบุหมายเลขบัตร 16 หลัก" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-ico input-ico-right">
+                        <input type="text" class="input-text required" placeholder="กรุณาระบุหมายเลขโทรศัพท์มือถือ / อีเมล">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-ico input-ico-right">
+                        <input type="text" class="input-text required" placeholder="ระบุชื่อร้านค้า / เว็บไซต์ / แอปพลิเคชั่นที่ใช้จ่าย">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-ico input-ico-right input-baht">
+                        <input type="text" class="input-text required" placeholder="ระบุยอดใช้จ่ายต่อรายการ">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-ico input-ico-right input-date">
+                        <input type="text" class="input-date-picker required" placeholder="ระบุ วัน / เดือน / ปี (ค.ศ) ที่ใช้จ่าย">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-ico input-ico-right input-upload">
+                        <input type="file" class="required" />
+                        <input type="text" class="input-file" placeholder="กรุณาแนบไฟล์" readonly />
+                        <span>( ไฟล์ jpg, png, pdf, ขนาดไม่เกิน 2 MB ) การแนบหลักฐานจะช่วยทำให้ตรวจสอบได้เร็วขึ้น</span>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-md-center">
+                      <div class="checkbox">
+                        <input type="checkbox" name="cb-accpet" id="cb_accpet" class="required"><label for="cb_accpet">ขอยืนยันว่าข้อมูลที่ได้ระบุไว้เป็นข้อมูลจริง</label>
+                      </div>
+                    </div>
 
+                  <div class="col-12 d-flex justify-content-center">
+                    <button id="sending-form" class="btn btn-submit-form disabled">ส่งข้อมูล</button>
+                  </div>
+                </div>
+                <!-- END ROW -->
+                </form>
+              </div>
+              <div class="tab-pane fade" id="tab-sms" role="tabpanel">
+                <p>1. พิมพ์ “DD” วรรค ตามด้วยเลขบัตรฯ 16 หลัก</p>
+                <p>2. ส่งมาที่ 0613845000</p>
+                <p>3. จะได้รับข้อความตอบกลับเมื่อลงทะเบียนสำเร็จ</p>
+              </div>
+              <!-- หลังกรอกแบบฟอร์มสำเร็จ -->
+              <div id="proud-regis-complete" class="content-wrap proud-regis-complete">
+                <img class="img-result" src="img/ico-register-success.png">
+                <p>ขอบคุณที่ไว้วางใจเลือกใช้บริการรับชำระเงินจาก KTC</p>
+                <span>ระบบได้รับข้อมูลเรียบร้อยแล้ว เจ้าหน้าที่จะติดต่อกลับภายใน X ชั่วโมง ในวันและเวลาทำการ</span>
+                <div class="btn-wrap">
+                  <button id="close-success" class="card-register-center">ปิด</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END REGISTER SECTION -->
+      </div>
+    </div>
+    <!-- end page -->
+
+    <script>
+      // ซ่อน div "หลังกรอกแบบฟอร์มสำเร็จ"
+      $("#proud-regis-complete").hide();
+
+      // ซ่อน div แบบฟอร์มแล้วโชว์ div ที่กรอกสำเร็จ เมื่อกดส่งข้อมูล
+      // กดปิดแล้วจะกลับไปหาแบบฟอร์ม
+      $("#sending-form, #close-success").on('click touch', function () {
+        $("#proud-regis-complete").toggle();
+        $("#proud-register").toggle();
+        window.location.hash = "#proud-regis";
+      });
+    </script>
+
+  <!-- start Footer -->
   <div class="footer">
     <div id="foot-trigger"></div>
     <div class="content-wrap">
@@ -646,7 +612,8 @@
     <div class="to-top ghost-footer">↑</div>
   </div>
 
-
+  <!-- end Footer -->
+  <!-- start modal -->
   <div id="card-register-modal" class="modal fade full-modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -680,7 +647,7 @@
     </div>
   </div>
 
-  <div id="search-modal" class="modal fade full-modal" tabindex="-1">
+    <div id="search-modal" class="modal fade full-modal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -748,6 +715,83 @@
                 <button class="button-search">ค้นหา</button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="terms-modal" class="main-terms-modal modal fade full-modal world-modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-wrap">
+              <div class="header">
+                <div class="title">เงื่อนไขการรับคะแนนสะสมกับบัตรเครดิต KTC</div>
+                <div class="name">รับคะแนนสะสมง่ายๆ สูงสุด X3</div>
+              </div>
+              <div class="content">
+                <p class="content-head">รับคะแนนสะสมง่ายๆ สูงสุด X3<br>
+                  รับคะแนนสะสม KTC FOREVER REWARDS สูงสุด X3  เมื่อใช้จ่ายในหมวดร้านอาหาร ช้อปปิ้ง ท่องเที่ยว และทุกการใช้จ่ายที่เป็นสกุลเงินต่างประเทศ</p>
+                <p>เงื่อนไขการรับคะแนนสะสม KTC FOREVER REWARDS สูงสุด X3</p>
+                <ul>
+                  <li>ทุก 25 บาทที่ใช้จ่ายผ่านบัตรเครดิต KTC VISA SIGNATURE ทุกประเภท รับ 1 คะแนนสะสม KTC FOREVER REWARDS</li>
+                  <li>คะแนนสะสม KTC FOREVER REWARDS สูงสุด X3 สำหรับบัตรเครดิต KTC X VISA SIGNATURE = 1 คะแนนสะสมปกติ + 1 คะแนนสะสมพิเศษจากทุกการใช้จ่ายผ่านบัตรฯ ในหมวดที่กำหนด +1 คะแนนสะสม
+                    พิเศษเมื่อมียอดใช้จ่ายผ่านบัตรฯ ในหมวดที่กำหนดครบทุก 300,000 บาท ตั้งแต่ 1 ม.ค. – 31 ธ.ค. 61</li>
+                  <li>คะแนนสะสมพิเศษจากทุกการใช้จ่ายผ่านบัตรฯ ในหมวดที่กำหนดจะถูกโอนเข้าบัญชีบัตรฯ ของสมาชิก ภายใน 60 วันหลังจากวันสุดท้ายของเดือนที่ทำรายการ ส่วนคะแนนสะสมพิเศษเมื่อมียอดใช้จ่ายผ่าน บัตรฯ ใน
+                    หมวดที่กำหนดครบทุก 300,000 บาท สำหรับบัตรเครดิต KTC X VISA SIGNATURE จะถูกโอนเข้าบัญชีบัตรฯ ของสมาชิก ภายใน 90 วันหลังจากวันสุดท้ายของเดือนที่ทำรายการ</li>
+                  <li>หมวดรายการใช้จ่ายที่ให้คะแนน X3 สำหรับบัตรเครดิต KTC X VISA SIGNATURE รายละเอียดดังนี้</li>
+                  <li>หมวดร้านอาหาร หมายถึง ร้านค้าที่ระบุใน MCC Code 5462, 5811, 5812, 5813 และ 5814 ในระบบของ Visa เท่านั้น</li>
+                  <li>หมวดช้อปปิ้ง หมายถึง ร้านค้าที่ระบุใน MCC Code 5094, 5611, 5621, 5631, 5641, 5651, 5655, 5661, 5681, 5691, 5697, 5698, 5699, 5941, 5944, 5948, 5977, 7296, 5111, 5192, 5942, 5943,
+                    5947, 5994, 5310, 5311, 5331, 5964, 5965 และ 5309 ในระบบของ Visa เท่านั้น</li>
+                  <li>หมวดท่องเที่ยว หมายถึง ร้านค้าที่ระบุใน MCC Code 3000-3299, 4511, 3351 - 3441, 7512, 7513, 7519, 7523, 3501-3828 และ 7011
+                    ในระบบของ Visa เท่านั้น</li>
+                  <li>หมวดการใช้จ่ายด้วยสกุลเงินต่างประเทศ</li>
+                  <li>สงวนสิทธิ์ไม่สามารถโอนคะแนนสะสม KTC FOREVER REWARDS จากบัตรเครดิต KTC ทุกประเภทมาที่บัตรเครดิต KTC X VISA SIGNATURE ได้
+                    ยกเว้นการโอนระหว่างบัตรหลักและบัตรเสริม</li>
+                  <li>สงวนสิทธิ์ในการเปลี่ยนแปลงสิทธิประโยชน์ ส่วนลด และเงื่อนไขโดยไม่ต้องแจ้งให้ทราบล่วงหน้า</li>
+                  <li>สิทธิพิเศษตั้งแต่วันที่ 1 ม.ค. – 31 ธ.ค. 61</li>
+                </ul>
+              </div>
+              <div class="header">
+                <div class="name">ห้องรับรอง Royal Silk Lounge 2 ครั้ง/ปี</div>
+              </div>
+              <div class="content">
+                <p class="content-head">แสดงบัตรโดยสารของสายการบินไทยและ/หรือสายการบินไทยสมายล์ สำหรับเส้นทางระหว่างประเทศ พร้อม Lounge Voucher ที่ ห้องรับรอง Royal Silk Loungeอาคารเทียบเครื่องบิน C และ E ณ สนามบินสุวรรณภูมิ</p>
+                <p>ข้อกำหนดและเงื่อนไขการใช้บริการห้องรับรองพิเศษ Royal Silk Lounge - International</p>
+                <ul>
+                  <li>สงวนสิทธิ์สำหรับผู้ที่มีชื่อตามบัตรเครดิต KTC VISA SIGNATURE ทุกประเภท เฉพาะบัตรหลักเท่านั้น</li>
+                  <li>แสดงบัตรที่นั่งเที่ยวบินขาออกระหว่างประเทศของสายการบินไทยหรือสายการบินไทยสมายล์ และ Lounge Voucher พร้อมบัตรเครดิต KTC VISA SIGNATURE ทุกประเภท ทุกครั้งที่ใช้บริการ</li>
+                  <li>สิทธิประโยชน์ไม่ครอบคลุมถึงบริการเสริมอื่นๆ อาทิ บริการอาบน้ำ บริการนวด หรือบริการสปา</li>
+                  <li>ผู้ติดตามสามารถใช้บริการห้องรับรองพิเศษได้โดยต้องเดินทางด้วยเที่ยวบินเดียวกันและต้องเสียค่าใช้บริการเพิ่มเติมในอัตราที่บริษัท การบินไทย กำหนด</li>
+                  <li>บริษัท การบินไทย ขอสงวนสิทธิ์การใช้บริการไม่เกิน 2.5 ชั่วโมงต่อคูปอง หากเกินกว่านี้ ต้องเสียค่าใช้บริการเพิ่มเติมตามที่บริษัทฯ กำหนด</li>
+                  <li>บริษัท การบินไทย ขอสงวนสิทธิ์ในการแก้ไข เปลี่ยนแปลง หรือยกเลิกข้อกำหนดและเงื่อนไขการใช้บริการห้องรับรองพิเศษนี้ โดยมิต้องแจ้งให้ทราบล่วงหน้า</li>
+                  <li>คูปองหมดอายุ 31 ธ.ค. 61</li>
+                </ul>
+              </div>
+              <div class="header">
+                <div class="name">ได้มากกว่าทั่วโลก กับสิทธิพิเศษจาก VISA SIGNATURE สิทธิพิเศษจากโรงแรมชั้นนำทั่วโลกกว่า 900 แห่ง<br>สิทธิพิเศษจาก Hertz</div>
+              </div>
+              <div class="content">
+                <p class="content-head">รับส่วนลด 10% เมื่อเช่ารถแบบ self-drive ทุกที่ทั่วโลก พร้อมเลือกรับสิทธิพิเศษเช่ารถแบบ Standard เพิ่ม 1 วัน หรือ อัพเกรดรถ 1 ขั้น และรับบัตรสมาชิก Hertz Gold Plus Rewards</p>
+                <p>เงื่อนไขสิทธิพิเศษ Hertz</p>
+                <ul>
+                  <li>สิทธิพิเศษส่วนลด 10% จากราคา Affordable Rates (leisure retail rates) เท่านั้น เมื่อเช่ารถอย่างน้อย 1 วัน (สำรองการเช่ารถด้วยรหัส CDP#83181)</li>
+                  <li>สิทธิพิเศษเช่ารถแบบ Standard เพิ่ม 1 วัน เมื่อเช่ารถอย่างน้อย 6 วัน (เช่ารถ 6 วัน ฟรี 1 วัน) และ สิทธิพิเศษอัพเกรดรถ 1 ขั้น เมื่อเช่ารถอย่างน้อย 5 วัน</li>
+                  <li>สิทธิพิเศษที่สาขาที่ร่วมรายการ ทุกที่ ทั่วโลก</li>
+                  <li>สงวนสิทธิ์สำรองการเช่ารถล่วงหน้าอย่างน้อย 24 ชั่วโมง (อย่างน้อย 48 ชั่วโมงที่สาขาในประเทศในเอเชีย)</li>
+                  <li>สงวนสิทธิ์สมาชิกจะต้องชำระค่าบริการด้วยบัตรเครดิต KTC VISA SIGNATURE ทุกประเภทเท่านั้น</li>
+                  <li>สิทธิพิเศษไม่สามารถใช้ร่วมกับสิทธิพิเศษอื่นๆ ได้</li>
+                  <li>สงวนสิทธิ์การเปลี่ยนแปลงหรือยกเลิกรายละเอียดและเงื่อนไข โดยไม่ต้องแจ้งให้ทราบล่วงหน้า</li>
+                  <li>ศึกษารายละเอียดและเงื่อนไขเพิ่มเติม และทำการจองที่ www.happartners.com/visa/visa_signature.php</li>
+                  <li>สิทธิพิเศษตั้งแต่วันนี้ – 31 ธ.ค. 61</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

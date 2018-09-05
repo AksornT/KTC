@@ -1067,8 +1067,91 @@
 .promotion-page .index-slide1 .owl-item{
   opacity: 0;
 }
+
+/* promotion detail -eve */
+.article-wrap .article-title{
+  font-size: 16px;
+  line-height: 26px;
+}
 .promotion-page .index-slide1 .owl-item.active{
   opacity: 1;
+}
+.article-wrap .article-content p{
+  font-size: 14px;
+  line-height: 22px;
+}
+.article-wrap .article-content .hightlight{
+  font-size: 16px;
+}
+.article-wrap .article-content b{
+  font-size: 16px;
+}
+.article-wrap .article-collapse .title{
+  font-size: 16px;
+}
+.article-wrap .article-collapse .info li {
+  font-size: 14px;
+}
+.article-wrap .article-collapse {
+  margin-bottom: 20px;
+}
+.article-wrap .article-tag {
+  margin-bottom: 20px;
+}
+.register-wrapper .nav .nav-item{
+  padding: 0;
+}
+.register-wrapper .nav .nav-link{
+  font-size: 16px;
+}
+.register-wrapper .nav .active .nav-link{
+  font-size: 16px;
+}
+.form-content .input-ico.input-ico-right.input-baht:after{
+  top: auto;
+  bottom: 0px;
+}
+.form-content .input-ico.input-ico-right.input-date:after{
+  top: auto;
+  bottom: 0px;
+}
+.form-content .input-ico.input-ico-right.input-upload:after{
+  top: auto;
+  bottom: 0px;
+}
+.form-content .input-ico.input-ico-right span{
+  line-height: 21px;
+  padding-top: 10px;
+}
+.register-wrapper .form-register .checkbox {
+    margin: 40px 0 60px;
+}
+.register-wrapper .form-register .btn-submit-form{
+  width: 100%;
+  font-size: 20px;
+}
+.article-wrap .article-link .title{
+  font-size: 16px;
+}
+.article-wrap .article-link .link a {
+  font-size: 14px;
+}
+.article-wrap .article-link {
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+.section-title{
+  font-size: 20px;
+  line-height: 38px;
+}
+.article-wrap .article-content{
+  margin-bottom: 20px;
+}
+#tab-sms {
+  margin-top: 0px;
+}
+#tab-sms p{
+  font-size: 12px;
 }
 
 .index-slide1 .owl-dots{
@@ -1134,5 +1217,26 @@
 .breadcrumb-item+.breadcrumb-item::before{
   padding: 0;
 }
+
+#terms-modal .header .title{
+  font-size: 18px;
+  line-height: 30px;
+}
+#terms-modal .header .name {
+  font-size: 14px;
+  line-height: 22px;
+}
+#terms-modal .content {
+  font-size: 12px;
+  line-height: 18px;
+}
+#terms-modal .header {
+  margin-top: 40px;
+}
+.main-terms-modal.world-modal .close{
+  top: 2rem;
+  right: 2rem;
+}
+
 
 }

@@ -412,9 +412,6 @@
   .click-compare .on-desktop{
   	display: none;
   }
-  .click-compare .on-mobile{
-  	display: block;
-  }
   .click-compare{
     height: 357px;
   }
@@ -1068,7 +1065,7 @@
     font-size: 24px;
     line-height: 37px;
   }
-  
+
 
   .search-wrap .btn-wrap{
     position: fixed;
