@@ -4190,14 +4190,18 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     width: 25px;
     height: 25px;
     background-size: contain;
-    background-image: url(../img/ico-favorite.png);
+    background-image: url(../img/ico-fav.png);
     background-color: transparent;
     background-repeat: no-repeat;
     margin-right: 10px;
 		display: inline-block;
+		cursor: pointer;
+}
+.article-wrap .article-icon .fav-btn:hover {
+    background-image: url(../img/ico-fav-line.png);
 }
 .article-wrap .article-icon .fav-btn.active {
-    background-image: url(../img/ico-art-fav-fill.png);
+    background-image: url(../img/ico-fav-fill.png);
 }
 .article-wrap .article-icon .share-btn {
     border: 0;
@@ -4209,6 +4213,13 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     background-repeat: no-repeat;
     position: relative;
     display: inline-block;
+		cursor: pointer;
+}
+.article-wrap .article-icon .share-btn:hover {
+    background-image: url(../img/ico-share-pro-line.png);
+}
+.article-wrap .article-icon .share-btn.active {
+    background-image: url(../img/ico-share-pro-fill.png);
 }
 .article-wrap .article-icon .share-popover {
     position: absolute;
@@ -4233,16 +4244,40 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     display: block;
 }
 .article-wrap .article-icon .share-popover a.share-fb-btn {
-    background-image: url(../img/ico-share-fb.png);
+    background-image: url(../img/ico-social-facebook.png);
+}
+.article-wrap .article-icon .share-popover a.share-fb-btn:hover {
+    background-image: url(../img/ico-social-facebook-color.png);
 }
 .article-wrap .article-icon .share-popover a.share-tw-btn {
-    background-image: url(../img/ico-share-tw.png);
+    background-image: url(../img/ico-social-twitter.png);
+}
+.article-wrap .article-icon .share-popover a.share-tw-btn:hover {
+    background-image: url(../img/ico-social-twitter-color.png);
 }
 .article-wrap .article-icon .share-popover a.share-line-btn {
-    background-image: url(../img/ico-share-line.png);
+    background-image: url(../img/ico-social-line.png);
+}
+.article-wrap .article-icon .share-popover a.share-line-btn:hover {
+    background-image: url(../img/ico-social-line-color.png);
 }
 .article-wrap .article-icon .share-popover a.share-mail-btn {
-    background-image: url(../img/ico-share-mail.png);
+    background-image: url(../img/ico-social-mail.png);
+}
+.article-wrap .article-icon .share-popover a.share-mail-btn:hover {
+    background-image: url(../img/ico-social-mail-color.png);
+}
+.article-wrap .article-icon .share-popover:after {
+    width: 0px;
+    height: 0px;
+    content: '';
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ECEEED;
+    position: absolute;
+    right: 29px;
+    bottom: -8px;
+    display: block;
 }
 .article-wrap .article-content {
     font-family: Helvetica, Arial, sans-serif;
