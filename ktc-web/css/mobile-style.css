@@ -1085,6 +1085,12 @@
 .article-wrap .article-icon .fav-btn{
   margin-right: 0;
 }
+.article-wrap .article-icon .share-popover{
+  right: -12px;
+}
+.article-wrap .article-icon .share-popover:after{
+  right: 17px;
+}
 .promotion-page .index-slide1 .owl-item.active{
   opacity: 1;
 }
