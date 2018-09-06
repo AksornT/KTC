@@ -4589,6 +4589,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
       padding-bottom: 30px;
       line-height: 0;
       padding: 12px 16px;
+			cursor: pointer;
 		}
       .ui-menu .ui-menu-item.ui-card-item .info {
         padding-left: 12px;
@@ -5270,7 +5271,7 @@ a.all-type-list[href]:hover{
 }
 .ui-autocomplete.form-dropdown {
   padding: 0;
-	width: 42% !important;
+	width: 42vw !important;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.16);
 }
 
