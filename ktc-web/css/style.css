@@ -2971,12 +2971,13 @@ section#section-flexi-cards {
 .flexi-modal h5.modal-title.long-title {
 	font-size: 28px;
 	text-align: left;
+	margin-bottom: -14px;
 }
 .flexi-modal h5.modal-title.long-title::after {
 	display: none;
 }
 .flexi-modal p {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
@@ -2985,7 +2986,7 @@ section#section-flexi-cards {
 	font-family: "Conv_SukhumvitTadmai_Bol", Helvetica, Arial, sans-serif;
 }
 .flexi-modal p.table-title {
-	margin-top: 50px;
+	margin-top: 25px;
 	font-size: 20px;
 }
 .flexi-modal p.text-annotation {
@@ -5070,7 +5071,8 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	position: relative;
 	top: 0;
 	vertical-align: top;
-	width: 77px;
+	width: 75px;
+	max-width: 19.5vw;
 }
 
 a.all-type-list[href]:hover{
