@@ -1085,6 +1085,12 @@
 .article-wrap .article-icon .fav-btn{
   margin-right: 0;
 }
+.article-wrap .article-icon .share-popover{
+  right: -12px;
+}
+.article-wrap .article-icon .share-popover:after{
+  right: 17px;
+}
 .promotion-page .index-slide1 .owl-item.active{
   opacity: 1;
 }
@@ -1133,7 +1139,7 @@
 }
 .ui-autocomplete.form-dropdown {
   padding-left: 10px;
-  width: 90% !important;
+  width: 90vw !important;
 }
 .form-content .input-ico.input-ico-right.input-select:after{
   top: auto;
