@@ -126,8 +126,8 @@ $(document).ready(function() {
       $(".lang-wrap").toggleClass('active');
     });
 
-    //for favorite button
-    $(".fav-btn").on('click touch', function () {
+    //for favorite and share button
+    $(".fav-btn, .share-btn").on('click touch', function () {
       $(this).toggleClass('active');
     });
 
