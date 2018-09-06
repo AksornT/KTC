@@ -1,4 +1,11 @@
 @font-face {
+  font-family: Helvetica;
+  src: local("Helvetica");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
 	font-family: 'Gotham-Bold';
 	src: url('../fonts/GothamRnd-Bold.eot');
 	src: local('☺'), url('../fonts/GothamRnd-Bold.woff') format('woff'), url('../fonts/GothamRnd-Bold.ttf') format('truetype'), url('../fonts/GothamRnd-Bold.svg') format('svg');
@@ -644,7 +651,11 @@ a:hover{
 .footer a{
 	color: #000;
 	font-family: Helvetica, Arial, sans-serif ;
-	font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+	letter-spacing: 0;
+	font-size: 13px;
 	line-height: 17px;
 	display: block;
 	position: relative;
