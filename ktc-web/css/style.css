@@ -1583,7 +1583,7 @@ button.close{
 	text-align: center;
 	text-decoration: underline;
 	font-size: 14px;
-	padding-top: 34px;
+	padding-top: 15px;
 }
 
 .recompared a{
@@ -1641,6 +1641,7 @@ button.close{
 .campare-table th{
 	text-align: center;
 	width: calc(33% - 71px);
+	vertical-align: top;
 }
 
 .campare-table td{
@@ -1689,12 +1690,13 @@ button.close{
 	display: inline-block;
 	background: #CF3339;
 	border-radius: 3px;
-	opacity: 1;
+	position: relative;
+	top: 0;
 	margin-bottom: 52px;
 }
 
 .campare-table th > a:hover{
-	opacity: 0.75
+	top: -3px;
 }
 
 .campare-table th:nth-child(1){
@@ -3792,6 +3794,11 @@ input:focus + .suggess-box,
 
 #result-content .text-on-slide{
 	margin-bottom: 17px;
+    align-items: flex-end;
+}
+
+#result-content .text-on-slide div + a {
+    padding-bottom: 10px;
 }
 
 .search-slide{
@@ -4368,6 +4375,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .article-wrap .article-content a {
     font-weight: bold;
     color: #CF3339;
+    cursor: pointer;
 }
 .article-wrap .article-content .hightlight{
 		font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -4514,13 +4522,13 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     opacity: 1;
     border-bottom: 2px solid #CF3339;
 }
-.register-wrapper .form-register .row {
+/*.register-wrapper .form-register .row {
     margin: 0 -40px;
 }
 .register-wrapper .form-register .row > div {
     padding-left: 40px;
     padding-right: 40px;
-}
+}*/
 .form-content .input-ico {
     padding-left: 34px;
     height: 30px;
@@ -5684,6 +5692,39 @@ a.all-type-list[href]:hover{
 	border-bottom: 1px solid #CF3339;
 }
 
+.campare-table th > a.blank-card{
+	width: 138px;
+	height: 90px;
+	background: rgba(90,102,112,.15);
+	border-radius: 6px;
+	text-align: center;
+	margin: 0 auto 60px auto;
+	padding: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.blank-card:after{
+    width: 34px;
+    height: 34px;
+    margin: 0 auto;
+    color: #e6e8ea;
+    position: relative;
+    top: 28px;
+    background: rgba(90,102,112,.07);
+    content: '+';
+    display: block;
+    line-height: 32px;
+    font-size: 26px;
+    border-radius: 50%;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.campare-table tr th.recompare-mobile{
+	display: none;
+}
+
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
@@ -5923,4 +5964,9 @@ a.all-type-list[href]:hover{
 	.box-compare-credit p:after {
     right: 30px;
   }
+
+	.campare-table th:nth-child(n + 4), 
+	.campare-table td:nth-child(n + 4){
+		display: none;
+	}
 }

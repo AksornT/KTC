@@ -132,9 +132,9 @@
           <a href="promotion.html" class="menu-responsive">
             <img src="img/ico-privilege.png"><h3>โปรโมชั่น</h3>
           </a>
-          <div class="menu-responsive">
-            <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
-          </div>
+          <a class="menu-responsive" href="merchant.html">
+              <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
+            </a>
           <div class="menu-responsive">
             <img src="img/ico-travel-service.png"><h3>บริการท่องเที่ยว</h3>
           </div>
@@ -275,11 +275,14 @@
 <!-- start page -->
     <div class="content-wrap page-credit-compare">
       <div class="row">
-        <div class="col-sm-9 breadcrumb">
-          <a href="./index.html">หน้าหลัก</a> / <a href="#" class="active">บัตรเครดิต</a>
-        </div>
-        <div class="col-sm-3 recompared">
-          <a href="#" >เปรียบเทียบใหม่</a>
+        <nav class="col-9" aria-label="breadcrumb">
+          <ol class="breadcrumb bc-content">
+            <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">บัตรเครดิต</a></li>
+          </ol>
+        </nav>
+        <div class="col-3 recompared">
+          <a href="creditcard.html" >เปรียบเทียบใหม่</a>
         </div>
       </div>
       <div class="compare-table-wrap">
@@ -293,7 +296,7 @@
                   <button class="compare-cancel"><p>+</p></button>
                 </div>
                 <p>KTC X VISA SIGNATURE</p>
-                <a href="#">สมัครบัตร</a>
+                <a href="creditcard-detail.html">สมัครบัตร</a>
               </th>
               <th>
                 <div class="compare-head-wrap">
@@ -301,7 +304,7 @@
                   <button class="compare-cancel"><p>+</p></button>
                 </div>
                 <p>KTC JCB PLATINUM</p>
-                <a href="#">สมัครบัตร</a>
+                <a href="creditcard-detail.html">สมัครบัตร</a>
               </th>
               <th>
                 <div class="compare-head-wrap">
@@ -309,18 +312,15 @@
                   <button class="compare-cancel"><p>+</p></button>
                 </div>
                 <p>KTC X VISA SIGNATURE</p>
-                <a href="#">สมัครบัตร</a>
+                <a href="creditcard-detail.html">สมัครบัตร</a>
               </th>
               <th>
-                <div class="compare-head-wrap blank-card">
-                  <p>+</p>
-                </div>
+                <a class="compare-head-wrap blank-card"></a>
               </th>
               <th>
-                <div class="compare-head-wrap blank-card">
-                  <p>+</p>
-                </div>
+                <a class="compare-head-wrap blank-card"></a>
               </th>
+              <th class="recompare-mobile"><a href="creditcard.html">เปรียบเทียบใหม่</a></th>
             </tr>
           </thead>
           <tbody>
@@ -381,7 +381,7 @@
               <td></td>
             </tr>
             <tr>
-              <td>บริการ<br>Airport Lounge</td>
+              <td>บริการ Airport Lounge</td>
               <td>มั่นใจทุกครั้งที่ช้อปออนไลน์ประกันภัยความคุ้มครองการซื้อสินค้าออนไลน์ ผ่านบัตรเครดิต KTC PLATINUM MASTERCARD ทุกประเภท กรณีไม่จัดส่งสินค้า และ/หรือการจัดส่งสินค้าไม่ถูกต้องและไม่ครบถ้วน ด้วยวงเงินประกันสูงสุด200 ดอลล่าร์สหรัฐโดย Mastercard</td>
               <td>บริการ Airport Lounge ในหลายประเทศ อาทิ สนามบินในประเทศญี่ปุ่น 28 แห่ง, ฮ่องกง, เกาหลี, สิงคโปร์, จีน และฮาวาย</td>
               <td>บริการ Airport Lounge ในหลายประเทศ อาทิ สนามบินในประเทศญี่ปุ่น 28 แห่ง, ฮ่องกง, เกาหลี, สิงคโปร์, จีน และฮาวาย</td>

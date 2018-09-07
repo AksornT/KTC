@@ -1,5 +1,158 @@
+@media (max-width: 767px) {
+  /*for creditcards compare*/
+
+  .campare-table tr{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .campare-table tbody tr{
+    padding: 20px 0;
+  }
+
+  .campare-table th,
+  .campare-table td{
+    padding: 0 20px;
+    width: 50%;
+    display: inline-block;
+    border: none;
+  }
+
+  .campare-table th:nth-child(1){
+    display: block;
+    width: 100%;
+    padding: 0 0 18px 0;
+    text-align: center;
+    margin-top: -4px;
+    font-family: 'Conv_SukhumvitTadmai_Tex'
+  }
+
+  .campare-table td:nth-child(1) {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+  }
+
+  .campare-table th:nth-child(2),
+  .campare-table td:nth-child(2){
+    padding-right: 10px;
+  }
+
+  .campare-table th:nth-child(3),
+  .campare-table td:nth-child(3){
+    padding-left: 10px;
+  }
+
+  .campare-table td:nth-child(2):before,
+  .campare-table td:nth-child(3):before{
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: rgba(90,102,112,.15);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .campare-table thead{
+    display: block;
+    background: #fff;
+    top: 0;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0);
+  }
+
+  .campare-table tr th.recompare-mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .campare-table tr th.recompare-mobile a{
+    content: "เปรียบเทียบใหม่";
+    color: #CF3339;
+    font-size: 14px;
+    text-decoration: underline;
+    width: 100%;
+    padding: 10px 10px 16px 10px;
+    text-align: center;
+    display: block;
+    background: none;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .campare-table th > a{
+    padding-left: 0;
+    padding-right: 0;
+    width: 138px;
+    margin-bottom: 10px;
+  }
+
+  .campare-table th > p{
+    margin: 15px 0 20px 0;
+    height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .campare-table tbody{
+    border: none;
+  }
+
+  .recompared{
+    display: none;
+  }
+
+  .campare-table {
+    width: calc(100% + 40px);
+    margin: 0 -20px 105px -20px;
+  }
+
+  .active-mobile .campare-table thead{
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    z-index: 1;
+  }
+
+  .active-mobile .campare-table th:nth-child(1){
+    color: #fff;
+  }
+
+  .campare-table tbody {
+    display: block;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+  }
+
+  .active-mobile .campare-table tbody {
+    margin-top: 290px;
+  }
+
+}
+
 
 @media (max-width: 576px) {
+  .breadcrumb.bc-content{
+    padding-left: 0;
+  }
   .menu-global > .content-wrap{
     padding: 0 20px;
   }
@@ -867,6 +1020,7 @@
 
   #result-content .text-on-slide a{
     padding-top: 11px;
+    line-height: 20px;
   }
 
   /* page - forever*/

@@ -288,11 +288,13 @@ $(document).on('scroll', function() {
     }
 
 //something appeared on footer
+
     if($(this).scrollTop()>=$('#foot-trigger').position().top){
         $('.ghost-footer').addClass('active-mobile');
     }else{
         $('.ghost-footer').removeClass('active-mobile');
     };
+
 
     //flexi navbar
     var navFlexiScrollTrigger = $('#nav-flexi-scroll-trigger');
@@ -310,6 +312,15 @@ $(document).on('scroll', function() {
         $('#nav-flexi-mobile .nav.mini').removeClass('show');
         // $('#nav-flexi-mobile .nav.mini li.nav-item:first-child').addClass('active');
     }
+
+
+    //for credit cards compared table
+    if($(this).scrollTop()>= 84){
+        $('.page-credit-compare').addClass('active-mobile');
+    }else{
+        $('.page-credit-compare').removeClass('active-mobile');
+    };
+
 
 
 });
