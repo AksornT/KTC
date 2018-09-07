@@ -1799,10 +1799,10 @@ a:hover .on-hover{
 	vertical-align: middle;
 }
 .btn-filter span{
-	font-size: 20px;
+	font-size: 18px;
 }
 .btn-filter img{
-	width: 28px;
+	width: 20px;
 	height: auto;
 	vertical-align: bottom;
 }
@@ -1931,6 +1931,70 @@ a:hover .on-hover{
 }
 .click-compare .on-desktop{
 	display: block;
+}
+.filter-title h1{
+  position: relative;
+  display: block;
+  margin-bottom: 70px;
+  padding-bottom: 10px;
+  font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.filter-title h1:after {
+  height: 4px;
+  width: 50px;
+  background: #CF3339;
+  position: absolute;
+  left: calc(50% - 25px);
+  content: "";
+  top: 100%;
+}
+.filter-content p{
+  font-family: 'Conv_SukhumvitTadmai_Tex';
+  text-align: center;
+  font-size: 28px;
+}
+.filter-content .box-other-form label{
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.row-lifestyle{
+  padding: 0 40px;
+}
+.filter-content .box-other-form img{
+  height: 45px;
+}
+.filter-content .box-other-form img.img-visaaa{
+  height: 25px;
+}
+.filter-content .box-other-form.checkbox-form {
+  padding-top: 40px;
+}
+.filter-content .checkmark{
+  top: 40px;
+}
+.btn-filter-search{
+  text-align: center;
+}
+.btn-filter-search .btn-cancel{
+  width: 145px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid rgba(91,102,112,0.6);
+  background-color: #fff;
+  color: rgba(91,102,112,0.6);
+  font-size: 18px;
+  font-family: 'Conv_SukhumvitTadmai_Bol';
+  margin: 140px 10px 30px 0;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+.btn-filter-search .btn-default{
+  width: 145px;
+  margin-top: 140px;
+  margin-left: 10px;
 }
 
 .proud-head, .header-big-cover {

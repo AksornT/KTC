@@ -313,11 +313,8 @@
           <div class="col-sm-6 col-right-filter">
             <div class="search-credit">
               <input placeholder="ค้นหาสิทธิพิเศษ">
-              <a>
-                <i class="fas fa-search"></i>
-              </a>
             </div>
-            <a class="btn-filter">
+            <a class="btn-filter" data-toggle="modal" data-target="#filter-modal">
               <img src="img/ico-filter.png">
               <span>ตัวกรอง</span>
             </a>
@@ -752,5 +749,153 @@
         </div>
       </div>
     </div>
+
+    <div id="filter-modal" class="modal fade full-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="box-condition" class="modal-body">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="condition-head">
+                  <div class="panel-title filter-title">
+                    <h1>ตัวกรอง</h1>
+                  </div>
+                </div>
+              </div>
+              <form class="condition-wrap">
+                <div class="filter-content">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <p>เงินเดือน</p>
+                      <div class="box-other-form checkbox-form">
+                        <label>15,000 - 50,000 บาท
+                          <input type="checkbox" name="">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="box-other-form checkbox-form">
+                        <label>50,000 บาทขึ้นไป
+                          <input type="checkbox" name="">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 filter-lifestyle">
+                      <div class="row row-lifestyle">
+                        <div class="col-lg-12">
+                          <p>Lifestyle</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>ท่องเที่ยว
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>กีฬา
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>ช้อปปิ้ง
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>รถยนต์และน้ำมัน
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>ร้านอาหาร
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>เครดิตเงินคืน
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                          <div class="box-other-form checkbox-form">
+                            <label>สุขภาพ
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <p>แบรนด์</p>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                          <div class="box-other-form checkbox-form">
+                            <label><img src="img/ico-master-card.png">
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                          <div class="box-other-form checkbox-form">
+                            <label><img src="img/ico-jcb.png">
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                          <div class="box-other-form checkbox-form">
+                            <label><img src="img/ico-visa.png" class="img-visaaa">
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                          <div class="box-other-form checkbox-form">
+                            <label><img src="img/ico-union-pay.png">
+                              <input type="checkbox" name="">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-filter-search">
+                    <button class="btn-cancel">ล้างค่า</button>
+                    <button class="btn-default" disabled>ค้นหา</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
