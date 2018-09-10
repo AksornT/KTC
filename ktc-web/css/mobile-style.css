@@ -669,9 +669,6 @@
   .click-compare .on-mobile{
   	display: block;
   }
-  .click-compare .btn-default, .click-compare .btn-cancel{
-    width: 158px;
-  }
   .box-compare-credit p:after {
     right: 18px;
   }
@@ -680,6 +677,25 @@
   }
   .main-credit h3{
     font-size: 26px;
+  }
+  #filter-credit-modal #box-condition {
+    padding: 20px 40px 80px 40px;
+  }
+  .filter-title h1{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .filter-content p{
+    font-size: 18px;
+  }
+  .filter-content .box-other-form label{
+    font-size: 16px;
+  }
+  .filter-content .box-other-form img {
+    height: 35px;
+  }
+  .filter-content .box-other-form img.img-visaaa {
+    height: 22px;
   }
 
   /* loan page -eve */

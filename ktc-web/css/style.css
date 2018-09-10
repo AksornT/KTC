@@ -1767,18 +1767,6 @@ a:hover .on-hover{
 	border: 1px solid #5B6670;
 	border-radius: 6px;
 	margin-right: 20px;
-	position: relative;
-}
-.col-right-filter input:after{
-	position: absolute;
-	content: '\f002';
-	font-family: 'FontAwesome';
-	color: #454545;
-	top: 0;
-	right: 0;
-	width: 23px;
-	height: 23px;
-	z-index: 6;
 }
 .col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 14px;
@@ -1796,6 +1784,21 @@ a:hover .on-hover{
   font-size: 14px;
 	color: #5B6670;
 }
+.col-right-filter .search-credit{
+  display: inline-block;
+  position: relative;
+}
+.col-right-filter .search-credit:after{
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url(../img/ico-search-inline.png);
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
 .btn-filter{
 	display: inline-block;
 	vertical-align: middle;
@@ -1807,6 +1810,9 @@ a:hover .on-hover{
 	width: 20px;
 	height: auto;
 	vertical-align: bottom;
+}
+.btn-filter.only-mobile{
+  display: none;
 }
 .main-credit{
 	margin-bottom: 130px;
@@ -1961,6 +1967,9 @@ a:hover .on-hover{
   font-size: 22px;
   letter-spacing: 0;
   line-height: 28px;
+}
+.filter-content .checkmark{
+  border: 1px solid #CF3339;
 }
 .row-lifestyle{
   padding: 0 40px;
@@ -5965,7 +5974,7 @@ a.all-type-list[href]:hover{
     right: 30px;
   }
 
-	.campare-table th:nth-child(n + 4), 
+	.campare-table th:nth-child(n + 4),
 	.campare-table td:nth-child(n + 4){
 		display: none;
 	}

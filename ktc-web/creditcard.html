@@ -280,11 +280,11 @@
           </div>
           <div class="col-lg-8">
             <div class="row">
-              <div class=" col-sm-6 col-lg-4 text-center box-compare-credit">
+              <div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit">
                 <img src="img/img-ktc-x-visa-signature.png">
                 <p>KTC X VISA SIGNATURE</p>
               </div>
-              <div class="col-sm-6 col-lg-4 text-center box-compare-credit">
+              <div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit">
                 <img src="img/img-dis-compare.png">
               </div>
               <div class="col-lg-4 text-center box-compare-credit on-desktop">
@@ -293,8 +293,10 @@
             </div>
           </div>
           <div class="col-lg-2 btn-right">
-            <button class="btn-default" disabled>เปรียบเทียบ</button>
-            <button class="btn-cancel">ยกเลิก</button>
+            <div class="row reverse-col">
+              <div class="col-6 col-sm-6 col-lg-12"><button class="btn-default" disabled>เปรียบเทียบ</button></div>
+              <div class="col-6 col-sm-6 col-lg-12"><button class="btn-cancel">ยกเลิก</button></div>
+            </div>
           </div>
         </div>
       </div>
@@ -302,19 +304,23 @@
     <div class="content-filter">
       <div class="content-wrap">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-lg-6">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bc-content">
                 <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
                 <li class="breadcrumb-item active" aria-current="page">บัตรเครดิต</li>
               </ol>
             </nav>
+            <a class="btn-filter only-mobile" data-toggle="modal" data-target="#filter-credit-modal">
+              <img src="img/ico-filter.png">
+              <span>ตัวกรอง</span>
+            </a>
           </div>
-          <div class="col-sm-6 col-right-filter">
+          <div class="col-sm-12 col-lg-6 col-right-filter">
             <div class="search-credit">
               <input placeholder="ค้นหาสิทธิพิเศษ">
             </div>
-            <a class="btn-filter" data-toggle="modal" data-target="#filter-modal">
+            <a class="btn-filter only-desktop" data-toggle="modal" data-target="#filter-credit-modal">
               <img src="img/ico-filter.png">
               <span>ตัวกรอง</span>
             </a>
@@ -750,7 +756,7 @@
       </div>
     </div>
 
-    <div id="filter-modal" class="modal fade full-modal" tabindex="-1">
+    <div id="filter-credit-modal" class="modal fade full-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -789,7 +795,7 @@
                         <div class="col-lg-12">
                           <p>Lifestyle</p>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>ท่องเที่ยว
                               <input type="checkbox" name="">
@@ -797,7 +803,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>กีฬา
                               <input type="checkbox" name="">
@@ -805,7 +811,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>ช้อปปิ้ง
                               <input type="checkbox" name="">
@@ -813,7 +819,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>รถยนต์และน้ำมัน
                               <input type="checkbox" name="">
@@ -821,7 +827,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>ร้านอาหาร
                               <input type="checkbox" name="">
@@ -829,7 +835,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>เครดิตเงินคืน
                               <input type="checkbox" name="">
@@ -837,7 +843,7 @@
                             </label>
                           </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-lg-6">
                           <div class="box-other-form checkbox-form">
                             <label>สุขภาพ
                               <input type="checkbox" name="">
@@ -888,7 +894,7 @@
                     </div>
                   </div>
                   <div class="btn-filter-search">
-                    <button class="btn-cancel">ล้างค่า</button>
+                    <button type="reset" class="btn-cancel">ล้างค่า</button>
                     <button class="btn-default" disabled>ค้นหา</button>
                   </div>
                 </div>

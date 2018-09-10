@@ -420,15 +420,47 @@
     margin-bottom: 30px;
     font-size: 24px;
   }
+  .content-filter .breadcrumb{
+    padding-left: 0px;
+  }
+  .content-filter nav{
+    display: inline-block;
+  }
+  .btn-filter.only-desktop{
+  	display: none;
+  }
+  .btn-filter.only-mobile{
+  	display: inline-block;
+    float: right;
+    padding-top: 12px;
+  }
+  .col-right-filter{
+  	text-align: center;
+  }
+  .col-right-filter input{
+    width: 100%;
+  }
+  .col-right-filter .search-credit{
+    display: block;
+  }
+  .main-credit h3{
+    padding-top: 20px;
+  }
   .btn-right{
     text-align: center;
     margin-top: 30px;
   }
+  .click-compare .reverse-col{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
   .box-compare-credit p:after{
     right: 95px;
   }
-  .col-right-filter input{
-    width: 260px;
+  .click-compare .btn-default,
+  .click-compare .btn-cancel{
+    width: 100%;
   }
   .btn-filter img{
     width: 20px;
@@ -456,6 +488,15 @@
   }
   .btn-filter-search .btn-default{
     margin-top: 80px;
+  }
+  .creditcard-row {
+    margin-bottom: 0px;
+  }
+  .box-credit-content {
+    padding: 20px 10px 40px 10px;
+  }
+  .main-credit {
+    margin-bottom: 60px;
   }
 
   /* loan page -eve */
