@@ -499,6 +499,70 @@
     margin-bottom: 60px;
   }
 
+  /* creditcard detail -eve */
+  #header-card-detail .center-responsive{
+    text-align: center;
+  }
+  #header-card-detail .content-desc.only-mobile{
+    display: inline-block;
+    margin-top: 30px;
+  }
+  #header-card-detail .content-desc.only-desktop,
+  #header-card-detail .header-desc.only-desktop{
+    display: none;
+  }
+  .only-mobile .desc-responsive h2{
+     margin-top: 40px;
+  }
+  #header-card-detail .content-desc h2 {
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 30px;
+  }
+  #header-card-detail .content-desc h3{
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #content-card-detail .section-intro h3{
+    font-size: 26px;
+  }
+  #content-card-detail .section-intro p a{
+    margin: auto 15px;
+  }
+  #content-card-detail .section-intro p{
+    padding: 0 10px;
+  }
+  article.page-content section.full-width .row {
+    background: transparent;
+  }
+  #content-card-detail .section-desc-promotion p strong{
+    margin-bottom: 20px;
+  }
+  #content-card-detail .section-desc-promotion p{
+    margin-bottom: 40px;
+  }
+  #content-card-detail.page-content .content-inner-merchant-detail .section-service-detail{
+    padding: 60px 0 60px 0;
+    margin-top: -20px;
+  }
+  #content-card-detail section.content-inner-merchant-detail .row > [class*="col"]{
+    padding: 20px;
+  }
+  .sub-sticky .sticky-left li.nav-back {
+    margin-right: 0px;
+  }
+  .card-sub-sticky .nav-img-card img{
+    width: 40px;
+    height: auto;
+    padding: 0px;
+    vertical-align: top;
+    margin-top: -8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.4);
+  }
+  #card-detail-regis .detail-register-desc.section-doc-regis h5 {
+    margin-top: 20px;
+  }
+
   /* loan page -eve */
   .main-loan .box-content {
     margin-top: 20px;
