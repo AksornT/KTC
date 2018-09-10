@@ -29,6 +29,7 @@
   }
   .menu-global .on-right .only-mobile{
   	display: inline-block;
+    padding: 15px 0;
   }
   .on-right .profile-image img{
     width: 28px;
