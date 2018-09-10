@@ -1756,6 +1756,7 @@ a:hover .on-hover{
 }
 .breadcrumb-item+.breadcrumb-item::before{
 	vertical-align: middle;
+	padding: 0;
 }
 .col-right-filter{
 	text-align: right;
@@ -1877,7 +1878,7 @@ a:hover .on-hover{
 .click-compare{
 	background-color: #F2F2F2;
 	background-size: cover;
-	height: 195px;
+	/*height: 195px;*/
 	padding: 40px 0;
 	opacity: 0;
 	pointer-events: none;
@@ -6021,11 +6022,15 @@ a.all-type-list[href]:hover{
 
 	/* creditcard page -eve */
 	.box-compare-credit p + span {
-	    right: 30px;
+	    right: calc(50% - 80px);
   	}
 
 	.campare-table th:nth-child(n + 4),
 	.campare-table td:nth-child(n + 4){
+		display: none;
+	}
+
+	.box-compare-credit:nth-child(n+3){
 		display: none;
 	}
 }
