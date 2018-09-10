@@ -383,7 +383,7 @@
                     </div>
                     <div class="col-12 col-md-6">
                       <div class="input-ico input-ico-right input-upload">
-                        <input type="file" class="required" />
+                        <input type="file" name="myDocument" class="required" />
                         <input type="text" class="input-file" placeholder="กรุณาแนบไฟล์" readonly />
                         <span>( ไฟล์ jpg, png, pdf, ขนาดไม่เกิน 2 MB ) การแนบหลักฐานจะช่วยทำให้ตรวจสอบได้เร็วขึ้น</span>
                       </div>
@@ -436,6 +436,18 @@
       //for calendar
       $(document).ready(function() {
         $('.input-date-picker').datepicker();
+      });
+
+      //simple validate
+      $(".form-content .input-ico input").change(function() {
+          var empty = $(this).parent().parent().parent().find("input").filter(function() {
+              return this.value === "";
+          });
+          if(empty.length) {
+              $(".btn-submit-form").addClass('disabled');
+          }else{
+            $(".btn-submit-form").removeClass('disabled');
+          }
       });
     </script>
 

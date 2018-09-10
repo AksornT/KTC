@@ -4616,8 +4616,16 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     color: #666666;
 }
 .form-content .input-ico input[type=file] {
-    display: none;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
+
+.form-content .input-ico input[type=file]:hover{
+	cursor: pointer;
+}
+
 .register-wrapper .form-register .checkbox {
     margin: 90px 0 70px;
 }

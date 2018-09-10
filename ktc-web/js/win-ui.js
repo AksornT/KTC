@@ -112,7 +112,7 @@ $(document).ready(function() {
     $('.form-wrap input[type="text"], .form-wrap input[type="password"]').each(function(){
       var fLabel = $(this).attr('placeholder');
       $(this).after( '<label>' + fLabel + '</label>' );
-      $(this).focusout(function(){
+      $(this).change(function(){
         if ($(this).val().length == 0){
             $(this).removeClass("hasText");
         } else {
@@ -265,6 +265,13 @@ $(document).ready(function() {
           $(this).find('td').eq( indexZ ).remove();
         });
     });
+
+    $('.form-content .input-ico input[type=file]').change(function() {
+        var filename = $(this).val();
+        $(this).next().val(filename).addClass('hasText');
+    });
+
+
 });
 
 //change header when scroll down.
