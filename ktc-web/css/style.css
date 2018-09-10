@@ -1935,10 +1935,33 @@ a:hover .on-hover{
 }
 .click-compare .btn-default:hover,
 .click-compare .btn-cancel:hover{
-	    box-shadow: 0 1px 12px rgba(0, 0, 0, .2);
+	 box-shadow: 0 1px 12px rgba(0, 0, 0, .2);
 }
 .click-compare .on-desktop{
 	display: block;
+}
+.compare-active{
+  position: relative;
+}
+.compare-active.active img,
+.compare-active.active .box-credit-content{
+  opacity: .4;
+}
+.compare-active.active:after{
+  position: absolute;
+	content: '\f00c';
+  font-family: 'FontAwesome';
+	color: #fff;
+	font-size: 14px;
+	width: 20px;
+	height: 20px;
+  background-color: #cf3339;
+	border-radius: 60px;
+	top: -6px;
+	right: 6px;
+  padding: 3px;
+	cursor: pointer;
+  opacity: 1;
 }
 .filter-title h1{
   position: relative;
@@ -1989,13 +2012,17 @@ a:hover .on-hover{
 .btn-filter-search{
   text-align: center;
 }
+.btn-filter-search .btn-cancel:disabled{
+  border: 1px solid rgba(91,102,112,0.6);
+  color: rgba(91,102,112,0.6);
+}
 .btn-filter-search .btn-cancel{
   width: 145px;
   height: 45px;
   border-radius: 6px;
-  border: 1px solid rgba(91,102,112,0.6);
+  border: 1px solid #CF3339;
   background-color: #fff;
-  color: rgba(91,102,112,0.6);
+  color: #CF3339;
   font-size: 18px;
   font-family: 'Conv_SukhumvitTadmai_Bol';
   margin: 140px 10px 30px 0;
