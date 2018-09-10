@@ -121,6 +121,22 @@ $(document).ready(function() {
       });
      });
 
+    //styling select dropdown
+    $('.form-wrap select').each(function(){
+        $(this).after( '<span class="select-arrow"></span>' );
+    });
+
+    //switch page when register
+    $('#regis-mem').on('click touch', function () {
+      $("#pg-regis").attr("action", "register-member-2.html");
+    });
+
+    $('#regis-mer').on('click touch', function () {
+      $("#pg-regis").attr("action", "register-merchant-2.html");
+    });
+        
+
+
     //for switch language
     $(".lang-wrap").on('click touch', function () {
       $(".lang-wrap").toggleClass('active');
@@ -351,6 +367,8 @@ $(document).ready(function() {
         var filename = $(this).val();
         $(this).next().val(filename).addClass('hasText');
     });
+
+
 
 
 });

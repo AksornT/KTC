@@ -865,6 +865,7 @@
   }
   .bg-login{
     background: none;
+    min-height: calc(100vh - 96px);
   }
   .box-login-con{
     width: 100%;

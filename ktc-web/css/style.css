@@ -357,6 +357,8 @@ a:hover{
 	border-radius: 6px;
 	font-size: 13px;
 	background: #cf3339;
+	position: relative;
+	top: 0;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
@@ -372,6 +374,8 @@ a:hover{
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
+    position: relative;
+    top: 0;
     background: rgba(255,255,255,0);
 
 }
@@ -384,7 +388,7 @@ a:hover{
 }
 
 .menu-global a.login-btn:hover{
-    background: rgba(255,255,255,0.4);
+    top: -3px;
 }
 
 .menu-global .content-wrap{
@@ -1094,8 +1098,8 @@ button:focus {
 }
 
 #card-register:hover{
-	background: #f08b8f;
 	cursor: pointer;
+	top: -3px;
 }
 
 body.modal-open{
@@ -3565,6 +3569,7 @@ button.btn-default:disabled:hover{
   border-right: none;
   border-radius: 0;
 	color: #000;
+	-webkit-appearance: none;
 }
 .box-input-form .form-control:focus{
 	box-shadow: none;
@@ -3885,6 +3890,18 @@ input:focus + .suggess-box,
 	max-width: 100%;
     width: auto;
     height: auto;
+}
+
+.box-input-form span.select-arrow{
+    width: 30px;
+    height: 35px;
+    margin-top: -36px;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    background: url('../img/ico-input-arrow.png') no-repeat;
+    background-position: center center;
+    pointer-events: none;
 }
 
 .slide-wrap .item{
@@ -5783,6 +5800,27 @@ a.all-type-list[href]:hover{
 
 .campare-table tr th.recompare-mobile{
 	display: none;
+}
+
+.box-radio.disabled{
+	pointer-events: none;
+}
+
+.box-radio.disabled > div{
+	opacity: 0.5;
+}
+
+.box-radio.disabled > div.active{
+	opacity: 1;
+}
+
+.form-wrap .info-text{
+	margin-top: 60px;
+	margin-bottom: 6px;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 4px 0;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 
