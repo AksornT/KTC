@@ -2423,6 +2423,136 @@ a.card-register-center, a.btn-action {
     top: 100%;
 }
 
+/* creditcard detail -eve*/
+#header-card-detail .proud-head{
+  margin-bottom: 125px;
+}
+#header-card-detail .header-title{
+  font-family: 'Conv_SukhumvitTadmai_Bol';
+  text-align: center;
+  margin-top: 20px;
+}
+#header-card-detail .header-desc{
+  margin-bottom: 30px;
+}
+#header-card-detail .content-desc h2{
+  font-family: 'Conv_SukhumvitTadmai_Bol';
+}
+#header-card-detail .content-desc h3{
+  margin-top: 10px;
+}
+#header-card-detail a.card-register-center{
+  margin: 60px 0 60px 0;
+}
+#header-card-detail.page-merchant-inner-header > .content-wrap::after{
+  display: none;
+}
+article#content-card-detail section{
+  padding-top: 0px;
+}
+#content-card-detail.page-content .content-inner-merchant-detail .section-service-detail{
+  border-top: 1px solid #E7E8EA;
+  padding-top: 60px;
+}
+#content-card-detail .content-title{
+  padding-top: 0px;
+}
+#content-card-detail .section-after-header img{
+  height: 150px;
+}
+#content-card-detail .section-intro{
+  text-align: center;
+}
+#content-card-detail .section-intro h3{
+  font-family: 'Conv_SukhumvitTadmai_Thi';
+  font-size: 40px;
+}
+#content-card-detail .section-intro p{
+  font-family: 'Conv_SukhumvitTadmai_Thi';
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#content-card-detail .section-intro p a{
+  font-family: 'Conv_SukhumvitTadmai_Tex';
+  margin: auto 30px;
+}
+#content-card-detail .section-intro .no-dash{
+  text-align: center;
+  margin-top: 30px;
+}
+#content-card-detail .section-desc-promotion p strong{
+  font-family: 'Conv_SukhumvitTadmai_Thi';
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+#content-card-detail .section-desc-promotion p{
+  font-family: 'Conv_SukhumvitTadmai_Thi';
+  font-size: 14px;
+}
+#content-card-detail .section-service-detail{
+  text-align: left;
+}
+#content-card-detail .section-service-detail h5{
+  font-family: 'Conv_SukhumvitTadmai_Tex';
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+#content-card-detail .section-service-detail p,
+#content-card-detail .section-service-detail li{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+#content-card-detail .section-service-detail p span{
+  font-family: 'Conv_SukhumvitTadmai_Thi';
+  font-size: 14px;
+  text-decoration: underline;
+  display: block;
+}
+#content-card-detail .section-service-detail p a{
+  color: #000;
+}
+#content-card-detail .section-service-detail .service-desc {
+  margin-bottom: 32px;
+}
+#card-detail-regis .detail-register-desc h5 {
+  font-family: 'Conv_SukhumvitTadmai_Tex';
+  font-size: 28px;
+}
+#card-detail-regis .detail-register-desc p {
+  font-family: 'Conv_SukhumvitTadmai_Tex';
+  font-size: 20px;
+  padding: 24px 0 10px 0;
+}
+#card-detail-regis .detail-register-desc span{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding-top: 6px;
+}
+#card-detail-regis .detail-register-desc span strong{
+  text-decoration: underline;
+  font-weight: 600;
+}
+article.page-content #card-detail-regis h3::after{
+  background-color: #CF3339;
+}
+.card-sub-sticky .nav-img-card img{
+  height: 40px;
+  vertical-align: middle;
+  box-shadow: 0px 3px 12px rgba(0,0,0,.4);
+}
+.card-sub-sticky .nav-name-card{
+  font-family: "Conv_SukhumvitTadmai_Bol";
+}
+#header-card-detail .content-desc.only-mobile{
+  display: none;
+}
+
 /* loan page -eve */
 .main-loan{
 	padding-top: 60px;
@@ -6201,4 +6331,18 @@ a.all-type-list[href]:hover{
 	.box-compare-credit:nth-child(n+3){
 		display: none;
 	}
-}
+
+  /* creditcard detail -eve */
+  #card-detail-regis .detail-register-desc.section-doc-regis h5 {
+    margin-top: 60px;
+  }
+  
+  /* creditcard detail -eve */
+  #card-detail-regis .detail-register-desc h5 {
+    margin-top: 0px;
+  }
+  #card-detail-regis .detail-register-desc.section-doc-regis h5{
+    margin-top: 60px;
+  }
+
+  }
