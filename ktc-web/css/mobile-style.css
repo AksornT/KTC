@@ -698,6 +698,51 @@
     height: 22px;
   }
 
+  /* creditcard detail -eve */
+  #content-card-detail .padd-resp{
+    margin-top: 40px;
+  }
+  #content-card-detail .section-after-header img {
+    height: 100px;
+  }
+  #content-card-detail .section-desc-promotion p strong{
+    font-size: 26px;
+    line-height: 32px;
+  }
+  #content-card-detail .section-desc-promotion p{
+    margin-bottom: 20px;
+  }
+  .only-mobile-height-top{
+    min-height: auto !important;
+  }
+  .only-mobile-space-top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .only-mobile-space-bottom{
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  #content-card-detail.page-content .content-inner-merchant-detail .section-service-detail{
+    padding: 40px 0 0 0;
+  }
+  .section-service-detail .col-space-resp{
+    padding-top: 0px !important;
+  }
+  #content-card-detail .section-service-detail h5{
+    font-size: 20px;
+  }
+  #card-detail-regis .detail-register-desc h5{
+    font-size: 20px;
+  }
+  #card-detail-regis .detail-register-desc p{
+    font-size: 18px;
+  }
+  #content-card-detail .sub-title{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
   /* loan page -eve */
   .main-loan{
     padding-bottom: 60px;
