@@ -230,9 +230,90 @@ $(document).ready(function() {
                 return false;
             }
         }
-
     });
 
+    //for choose credit card to compare
+    var cards = 0;
+    $('.chooseThis').on('click touch', function (){
+        if(cards <= 2) {
+            if ($(this).parent().parent().parent().parent().hasClass('active')) {
+                return false;
+            } else {
+                cards = cards + 1;
+                $(this).parent().parent().parent().parent().addClass( "active" ).addClass("choice-" + cards);
+                console.log(cards);
+                var creditImage = $(this).parent().parent().parent().parent().find('img').attr('src');
+                var creditText = $(this).parent().parent().parent().find('.credit-title').text();
+                $(".compared-box > div:nth-child("+cards+") img").attr('src', creditImage).addClass('gotImage');
+                $(".compared-box > div:nth-child("+cards+") img + p").text(creditText);
+                $(".compared-box > div:nth-child("+cards+")").addClass("compare-item-" + cards);
+                $('.click-compare').addClass('active');
+                if(cards >= 2) {
+                    $('.go-compare').prop("disabled", false);
+                } else {
+                    $('.go-compare').prop("disabled", true);
+                }
+                return false;
+            }
+        }
+        compareFunction();
+    
+    });
+
+    function compareFunction() {
+
+        $('.box-compare-credit:nth-child(1) p + span').bind('click touch', function (event){
+            $(this).parent().remove();
+            $('.choice-1').removeClass('active').removeClass('choice-1');
+            $('.choice-2').removeClass('choice-2').addClass('choice-1');
+            $('.box-compare-credit:nth-child(1)').removeClass('compare-item-2').addClass('compare-item-1');
+            $('.choice-3').removeClass('choice-3').addClass('choice-2');
+            $('.box-compare-credit:nth-child(2)').removeClass('compare-item-3').addClass('compare-item-2');
+            $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
+            cards = cards - 1;
+            if(cards == 0) {
+                $('.click-compare').removeClass('active');
+            }
+            console.log(cards);
+            $( '.box-compare-credit p + span' ).unbind();
+            compareFunction();
+            return false;
+        });
+
+        $('.box-compare-credit:nth-child(2) p + span').bind('click touch', function (event){
+            $(this).parent().remove();
+            $('.choice-2').removeClass('active').removeClass('choice-2');
+            $('.choice-3').removeClass('choice-3').addClass('choice-2');
+            $('.box-compare-credit:nth-child(2)').removeClass('compare-item-3').addClass('compare-item-2');
+            $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
+            cards = cards - 1;
+            if(cards == 0) {
+                $('.click-compare').removeClass('active');
+            }
+            console.log(cards);
+            $( '.box-compare-credit p + span' ).unbind();
+            compareFunction();
+            return false;
+        });
+
+
+
+        $('.box-compare-credit:nth-child(3) p + span').bind('click touch', function (event){
+            $(this).parent().remove();
+            $('.choice-3').removeClass('active').removeClass('choice-3');
+            $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
+            cards = cards - 1;
+            if(cards == 0) {
+                $('.click-compare').removeClass('active');
+            }
+            console.log(cards);
+            $( '.box-compare-credit p + span' ).unbind();
+            compareFunction();
+            return false;
+        });
+    }
+
+    compareFunction();
 
     //for search
     $(".suggess-list").on('click touch', function () {

@@ -274,31 +274,36 @@
     <!-- start page -->
     <div id="myCompare" class="click-compare">
       <div class="content-wrap">
-        <div class="row">
+        <form class="row" action="creditcard-compared.html">
           <div class="col-lg-2 compare-title">
             <p>บัตรที่ต้องการเปรียบเทียบ</p>
           </div>
           <div class="col-lg-8">
-            <div class="row">
+            <div class="row compared-box">
               <div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit">
-                <img src="img/img-ktc-x-visa-signature.png">
-                <p>KTC X VISA SIGNATURE</p>
+                <img src="img/img-dis-compare.png">
+                <p></p>
+                <span>+</span>
               </div>
               <div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit">
                 <img src="img/img-dis-compare.png">
+                <p></p>
+                <span>+</span>
               </div>
-              <div class="col-lg-4 text-center box-compare-credit on-desktop">
+              <div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit">
                 <img src="img/img-dis-compare.png">
+                <p></p>
+                <span>+</span>
               </div>
             </div>
           </div>
           <div class="col-lg-2 btn-right">
             <div class="row reverse-col">
-              <div class="col-6 col-sm-6 col-lg-12"><button class="btn-default" disabled>เปรียบเทียบ</button></div>
+              <div class="col-6 col-sm-6 col-lg-12"><button class="go-compare btn-default" disabled>เปรียบเทียบ</button></div>
               <div class="col-6 col-sm-6 col-lg-12"><button class="btn-cancel">ยกเลิก</button></div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <div class="content-filter">
@@ -328,7 +333,7 @@
         </div>
       </div>
     </div>
-    <div class="content-wrap main-credit">
+    <form method="get" action="creditcard-detail.html" class="content-wrap main-credit">
       <h3>เลือกบัตรเครดิตที่ใช่ในสไตล์คุณ</h3>
       <div class="row creditcard-row">
         <div class="col-sm-6 col-lg-3 compare-active">
@@ -340,10 +345,10 @@
             </div>
             <div class="row">
               <div class="col-6">
-                <button>สมัครบัตร</button>
+                <button type="submit" value="Submit">สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -360,7 +365,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -377,7 +382,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -394,7 +399,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -413,7 +418,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -430,7 +435,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -447,7 +452,7 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
@@ -464,13 +469,13 @@
                 <button>สมัครบัตร</button>
               </div>
               <div class="col-6 text-right txt-link-right">
-                <a onclick="myFunction()">เปรียบเทียบ</a>
+                <a class="chooseThis">เปรียบเทียบ</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
 
   <div class="footer">
     <div id="foot-trigger"></div>

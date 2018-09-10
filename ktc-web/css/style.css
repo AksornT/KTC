@@ -1879,8 +1879,17 @@ a:hover .on-hover{
 	background-size: cover;
 	height: 195px;
 	padding: 40px 0;
-	/*display: none;*/
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 }
+.click-compare.active{
+	opacity: 1;
+	pointer-events: all;
+}
+
 .click-compare img{
 	width: 138px;
   margin-bottom: 10px;
@@ -1888,11 +1897,10 @@ a:hover .on-hover{
 .box-compare-credit{
 	position: relative;
 }
-.box-compare-credit p:after{
+.box-compare-credit p + span{
 	position: absolute;
-	content: 'x';
 	color: #fff;
-	font-size: 14px;
+	font-size: 18px;
 	width: 20px;
 	height: 20px;
 	background-color: #cf3339;
@@ -1900,7 +1908,14 @@ a:hover .on-hover{
 	top: -6px;
 	right: 60px;
 	cursor: pointer;
+	display: none;
+	transform: rotate(45deg);
+	font-family: 'Conv_SukhumvitTadmai_Bol';
 }
+.box-compare-credit .gotImage + p + span{
+	display: block;
+}
+
 .click-compare p{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
@@ -6005,9 +6020,9 @@ a.all-type-list[href]:hover{
 	}
 
 	/* creditcard page -eve */
-	.box-compare-credit p:after {
-    right: 30px;
-  }
+	.box-compare-credit p + span {
+	    right: 30px;
+  	}
 
 	.campare-table th:nth-child(n + 4),
 	.campare-table td:nth-child(n + 4){
