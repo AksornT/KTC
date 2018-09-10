@@ -357,8 +357,6 @@ a:hover{
 	border-radius: 6px;
 	font-size: 13px;
 	background: #cf3339;
-	position: relative;
-	top: 0;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
@@ -374,8 +372,6 @@ a:hover{
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
-    position: relative;
-    top: 0;
     background: rgba(255,255,255,0);
 
 }
@@ -388,7 +384,7 @@ a:hover{
 }
 
 .menu-global a.login-btn:hover{
-    top: -3px;
+    background: rgba(255,255,255,0.4);
 }
 
 .menu-global .content-wrap{
@@ -1098,8 +1094,8 @@ button:focus {
 }
 
 #card-register:hover{
+	background: #f08b8f;
 	cursor: pointer;
-	top: -3px;
 }
 
 body.modal-open{
@@ -1760,7 +1756,6 @@ a:hover .on-hover{
 }
 .breadcrumb-item+.breadcrumb-item::before{
 	vertical-align: middle;
-	padding: 0;
 }
 .col-right-filter{
 	text-align: right;
@@ -1882,19 +1877,10 @@ a:hover .on-hover{
 .click-compare{
 	background-color: #F2F2F2;
 	background-size: cover;
-	/*height: 195px;*/
+	height: 195px;
 	padding: 40px 0;
-	opacity: 0;
-	pointer-events: none;
-	position: fixed;
-	z-index: 1;
-	width: 100%;
+	/*display: none;*/
 }
-.click-compare.active{
-	opacity: 1;
-	pointer-events: all;
-}
-
 .click-compare img{
 	width: 138px;
   margin-bottom: 10px;
@@ -1902,10 +1888,11 @@ a:hover .on-hover{
 .box-compare-credit{
 	position: relative;
 }
-.box-compare-credit p + span{
+.box-compare-credit p:after{
 	position: absolute;
+	content: 'x';
 	color: #fff;
-	font-size: 18px;
+	font-size: 14px;
 	width: 20px;
 	height: 20px;
 	background-color: #cf3339;
@@ -1913,14 +1900,7 @@ a:hover .on-hover{
 	top: -6px;
 	right: 60px;
 	cursor: pointer;
-	display: none;
-	transform: rotate(45deg);
-	font-family: 'Conv_SukhumvitTadmai_Bol';
 }
-.box-compare-credit .gotImage + p + span{
-	display: block;
-}
-
 .click-compare p{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
@@ -3699,7 +3679,6 @@ button.btn-default:disabled:hover{
   border-right: none;
   border-radius: 0;
 	color: #000;
-	-webkit-appearance: none;
 }
 .box-input-form .form-control:focus{
 	box-shadow: none;
@@ -4020,18 +3999,6 @@ input:focus + .suggess-box,
 	max-width: 100%;
     width: auto;
     height: auto;
-}
-
-.box-input-form span.select-arrow{
-    width: 30px;
-    height: 35px;
-    margin-top: -36px;
-    display: inline-block;
-    right: 0;
-    position: absolute;
-    background: url('../img/ico-input-arrow.png') no-repeat;
-    background-position: center center;
-    pointer-events: none;
 }
 
 .slide-wrap .item{
@@ -5932,27 +5899,6 @@ a.all-type-list[href]:hover{
 	display: none;
 }
 
-.box-radio.disabled{
-	pointer-events: none;
-}
-
-.box-radio.disabled > div{
-	opacity: 0.5;
-}
-
-.box-radio.disabled > div.active{
-	opacity: 1;
-}
-
-.form-wrap .info-text{
-	margin-top: 60px;
-	margin-bottom: 6px;
-	font-size: 18px;
-	line-height: 22px;
-	padding: 4px 0;
-    font-family: 'Conv_SukhumvitTadmai_Tex';
-}
-
 
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
@@ -6189,22 +6135,21 @@ a.all-type-list[href]:hover{
 	}
 
 	/* creditcard page -eve */
-	.box-compare-credit p + span {
-	    right: calc(50% - 80px);
-  	}
+	.box-compare-credit p:after {
+    right: 30px;
+  }
 
 	.campare-table th:nth-child(n + 4),
 	.campare-table td:nth-child(n + 4){
 		display: none;
 	}
 
-	.box-compare-credit:nth-child(n+3){
-		display: none;
-	}
-
   /* creditcard detail -eve */
-  #card-detail-regis .detail-register-desc.section-doc-regis h5 {
+  #card-detail-regis .detail-register-desc h5 {
+    margin-top: 0px;
+  }
+  #card-detail-regis .detail-register-desc.section-doc-regis h5{
     margin-top: 60px;
   }
 
-}
+  }
