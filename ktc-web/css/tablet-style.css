@@ -1270,4 +1270,11 @@
       line-height: 14px;
     }
 
+    /* article detail -eve */
+    .article-title h1 {
+        font-family: 'Conv_SukhumvitTadmai_Tex';
+        font-size: 16px;
+        line-height: 20px;
+    }
+
 }
