@@ -2316,6 +2316,10 @@ a.card-register-center, a.btn-action {
     top: -4px;
 }
 
+.content-wrap .row.box-login-con{
+	width:360px;
+}
+
 .icon-store{
 	width: 135px;
 	margin: 8px 3px 0 3px;
@@ -3722,6 +3726,11 @@ button.btn-default{
   cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 }
+
+.only-desktop button.btn-default{
+	width: 165px ;
+}
+
 
 button.btn-default:disabled:hover{
 	cursor: default;
