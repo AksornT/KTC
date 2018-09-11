@@ -1276,9 +1276,18 @@
   }
 
     /* article detail -eve */
+    .art-on-desktop{
+      display: none;
+    }
+    .art-on-mobile{
+      display: block;
+      margin-top: 20px;
+      margin-bottom: -18px;
+      padding-left: 0;
+    }
     .sidebar-right-top .index-head,
     .sidebar-right-bottom .index-head {
-        margin-top: 60px;
+      margin-top: 60px;
     }
 
 }

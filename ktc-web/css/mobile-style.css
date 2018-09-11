@@ -1546,6 +1546,15 @@
     font-size: 10px;
     line-height: 15px;
 }
+#article-detail .breadcrumb{
+    font-size: 10px;
+}
+#article-detail .breadcrumb .breadcrumb-item.active{
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 
 }
