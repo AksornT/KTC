@@ -1402,11 +1402,13 @@
   margin-top: -3px;
 }
 
-.promotion-page .item .slide-title{
+.promotion-page .item .slide-title,
+.article-page .item .slide-title{
   height: 50px;
 }
 
-.promotion-page .item .slide-title + .slide-content{
+.promotion-page .item .slide-title + .slide-content,
+.article-page .item .slide-title + .slide-content{
   margin-bottom: 20px;
   height: 36px;
 }
@@ -1480,6 +1482,9 @@
   right: 2rem;
 }
 
+  .menu-sub-icon .five-icons .nav-item{
+    flex: 33.33%;
+  }
 /* article detail -eve */
 .article-title h1 {
     font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -1528,6 +1533,18 @@
     font-size: 10px;
     line-height: 15px;
 }
+
+  .menu-sub-icon .five-icons .nav-item:nth-child(1){
+    margin-left: 16.66%;
+  }
+
+  .menu-sub-icon .five-icons .nav-item:nth-child(2){
+    margin-right: 16.66%;
+  }
+
+  .article-category .slide-wrap .index-slide2 .item{
+    margin-bottom: 14px;
+  }
 
 
 }

@@ -1270,6 +1270,11 @@
       line-height: 14px;
     }
 
+
+  .menu-sub-icon .five-icons .nav-item{
+    flex:auto;
+  }
+
     /* article detail -eve */
     .sidebar-right-top .index-head,
     .sidebar-right-bottom .index-head {
