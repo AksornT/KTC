@@ -1482,5 +1482,17 @@
   right: 2rem;
 }
 
+  .menu-sub-icon .five-icons .nav-item{
+    flex: 33.33%;
+  }
+
+  .menu-sub-icon .five-icons .nav-item:nth-child(1){
+    margin-left: 16.66%;
+  }
+
+  .menu-sub-icon .five-icons .nav-item:nth-child(2){
+    margin-right: 16.66%;
+  }
+
 
 }

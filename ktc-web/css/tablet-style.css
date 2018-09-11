@@ -1270,4 +1270,9 @@
       line-height: 14px;
     }
 
+
+  .menu-sub-icon .five-icons .nav-item{
+    flex:auto;
+  }
+
 }

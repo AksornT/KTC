@@ -5122,7 +5122,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
   right: 0;
   top: 0;
   display: block;
-  background: #5B6670;
+  /*background: #5B6670;*/
   opacity: 0.15;
 }
 
@@ -5136,7 +5136,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     font-size: 16px;
     line-height: 26px;
     color: #5B6670;
-    padding: 22px 20px 28px 20px;
+    padding: 22px 20px 0 20px;
 }
 .menu-sub-icon .nav-link img {
 	display: block;
@@ -6082,6 +6082,45 @@ a.all-type-list[href]:hover{
 	padding: 4px 0;
     font-family: 'Conv_SukhumvitTadmai_Tex';
 }
+
+.menu-sub-icon .nav.five-icons{
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+.article-page > .content-wrap:nth-last-child(1){
+	padding-bottom:60px;
+}
+
+.article-page .menu-sub-icon{
+	margin-bottom: 0;
+}
+
+.article-page .text-on-slide{
+	margin: 0;
+}
+
+.article-page .slide-wrap .index-slide2 .item,
+.article-page .slide-wrap .index-slide2 .item .slide-content{
+	margin-bottom: 0;
+}
+
+.article-page .breadcrumb{
+	padding-left: 0;
+	margin: 0;
+}
+
+.space-of-the-end{
+	height: 105px;
+}
+
+.article-page .promo-wrap .owl-item{
+	opacity: 0;
+}
+.article-page .promo-wrap .owl-item.active{
+	opacity: 1;
+}
+
 
 
 @media (min-width: 1366px) {
