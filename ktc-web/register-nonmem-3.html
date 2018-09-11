@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/win-ui.js"></script>
+    <script type="text/javascript" src="js/jqueryui_datepicker_thai_min.js"></script>
     <title>KTC</title>
   </head>
-  <body>
+  <body class="non-member">
   <div id="menu-global" class="menu-global">
     <div class="content-wrap">
       <div id="ktc-logo">
@@ -98,9 +100,9 @@
           <a href="promotion.html" class="menu-responsive">
             <img src="img/ico-privilege.png"><h3>โปรโมชั่น</h3>
           </a>
-          <a class="menu-responsive" href="merchant.html">
-              <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
-            </a>
+          <div class="menu-responsive">
+            <img src="img/ico-business-store.png"><h3>ธุรกิจร้านค้า</h3>
+          </div>
           <div class="menu-responsive">
             <img src="img/ico-travel-service.png"><h3>บริการท่องเที่ยว</h3>
           </div>
@@ -238,28 +240,28 @@
           <div class="row box-radio">
             <div class="col-6 box-other-form checkbox-form">
               <label>บุคคลธรรมดา
-                <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <input type="radio" name="gridRadios" autocomplete="off" id="gridRadios1" value="option1" checked>
                 <span class="dotmark"></span>
               </label>
             </div>
             <div class="col-6 box-other-form checkbox-form">
               <label>ร้านค้าสมาชิก
-                <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <input type="radio" name="gridRadios" autocomplete="off" id="gridRadios2" value="option2">
                 <span class="dotmark"></span>
               </label>
             </div>
           </div>
           <div class="box-input-form">
-            <input type="text" placeholder="ชื่อ">
+            <input type="text" autocomplete="off" placeholder="ชื่อ">
           </div>
           <div class="box-input-form">
-            <input type="text" placeholder="นามสกุล">
+            <input type="text" autocomplete="off" placeholder="นามสกุล">
+          </div>
+          <div class="box-input-form form-wrap">
+            <input type="text" id="calendar" autocomplete="off" placeholder="วันเกิด">
           </div>
           <div class="box-input-form">
-            <input type="text" placeholder="วันเกิด">
-          </div>
-          <div class="box-input-form">
-            <input type="text" placeholder="อีเมล">
+            <input type="text" autocomplete="off" placeholder="อีเมล">
           </div>
           <div class="box-other-form checkbox-form">
             <label>ต้องการรับข้อเสนอสุดพิเศษและโปรโมชั่นจาก KTC
@@ -268,12 +270,27 @@
             </label>
           </div>
           <div id="email" class="box-input-form">
-            <input type="text" placeholder="อีเมล">
+            <input type="text" autocomplete="off" placeholder="อีเมล">
           </div>
           <div>
             <button class="btn-next-step" value="" >ถัดไป</button>
           </div>
         </form>
+        <script type="text/javascript">
+
+          var fullmonth_array= [ "มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน",
+          "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม" ];
+            $("#calendar").datepicker_thai({
+              dateFormat: 'dd/mm/yy',
+              changeMonth: true,
+              changeYear: true,   
+              numberOfMonths: 1,
+              langTh:true,
+              yearTh:true,
+              monthNamesShort: fullmonth_array,
+              yearRange: '-100:+0'
+            });
+        </script>
       </div>
     </div>
     <!-- end page -->

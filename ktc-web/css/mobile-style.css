@@ -1482,5 +1482,14 @@
   right: 2rem;
 }
 
-
+.ui-datepicker .ui-datepicker-calendar td{
+  padding: 4px 10px;
+}
+.non-member .ui-datepicker select.ui-datepicker-month{
+  margin-left: 30px;
+  margin-right:15px;
+}
+.non-member .ui-datepicker select.ui-datepicker-year{
+  margin-left: 0px;
+}
 }

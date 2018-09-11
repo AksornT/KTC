@@ -3594,12 +3594,26 @@ section#section-flexi-cards {
 	background-size: 100% 100%;
 	min-height: calc(100vh - 118px);
 }
+
+
+.bg-login .box-input-form #calendar{
+	background: url('../img/img-square.png')  no-repeat;
+    background-position: center right 13px;     /*Position of the background-image*/
+    display: inline-block;	
+}
+
+.bg-login .box-input-form #calendar:focus{
+	background: url('../img/img-square-after.png')  no-repeat;
+    background-position: center right 13px;     /*Position of the background-image*/
+    display: inline-block;	
+}
+
 .box-login-con{
 	padding-top: 140px;
 	padding-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 360px;
+	width: 404px;
 	display: block;
 }
 .box-input-form{
@@ -5636,6 +5650,112 @@ a.all-type-list[href]:hover{
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.non-member .ui-datepicker {
+    padding: 0px;
+    display: none;
+    left: 50% !important;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.non-member .ui-datepicker .ui-datepicker-calendar {
+    padding: 5px 15px;
+}
+
+
+.non-member .ui-datepicker .ui-datepicker-title {
+    font: 18px/1.5 "Conv_SukhumvitTadmai_Bol"; 
+    display:table; 
+    padding-bottom: 15px;
+   display: inline-block;
+    text-align: center;
+
+}
+
+
+.non-member .ui-datepicker .ui-datepicker-calendar th {
+     color:#2b2b2b; 
+    width:50px; 
+    height:35px; 
+    line-height:30px; 
+    text-align:center; 
+    cursor:default; 
+}
+
+.non-member .ui-datepicker .ui-datepicker-calendar td a {
+     line-height: 27px; 
+    text-transform:uppercase; 
+    font-size:90%; 
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    padding-top: 10px;
+}
+
+.non-member .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all{
+	cursor:default; 
+    background: #cf3339; 
+    height: 45px; 
+    color:#fff; 
+    font-weight:bold; 
+    text-shadow:0px -1px 0 #87260C; 
+    text-transform: uppercase; 
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.non-member .ui-datepicker select {
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+    font-size: 18px;
+    border: none;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	text-align: center;
+    color:#ffffff;
+     margin: 0 20px;
+     width: 116px;
+    margin: 0 23px;
+    background: url(../img/img-arrow-non-member.png) no-repeat;
+    background-position: center right;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.non-member .ui-datepicker select option{
+	color: #000;
+}
+.non-member .ui-datepicker select.ui-datepicker-month {
+     margin-left: 40px;
+}
+
+.non-member .ui-datepicker select.ui-datepicker-year {
+     width: 70px;
+     margin-left: 10px;
+}
+
+.non-member .ui-datepicker .ui-datepicker-next:before {
+    content: '>';
+    background-color: #fff;
+    border-radius: 60px;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    color: #cf3339;
+    text-align: center;
+    padding-top: 4px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.non-member .ui-datepicker .ui-datepicker-prev:before {
+    content: '<';
+    background-color: #fff;
+    border-radius: 60px;
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    color: #cf3339;
+    text-align: center;
+    padding-top: 4px;
+    display: inline-block;
+    margin-left: 12px;
+    
+}
 /* js ui */
 .ui-menu {
   transition: none;
@@ -5702,6 +5822,10 @@ a.all-type-list[href]:hover{
   filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
   padding: 10px 10px;
 }
+
+}
+
+
 @media only screen and (min-width: 992px) {
   .ui-datepicker {
     width: auto !important;
@@ -5725,9 +5849,12 @@ a.all-type-list[href]:hover{
   .ui-datepicker .ui-datepicker-group {
     width: 100%;
 	}
+.non-member .ui-datepicker .ui-datepicker-calendar{
+	max-width: 100%;
 }
 .ui-datepicker .ui-datepicker-group-first {
 	position: relative;
+}
 }
 @media only screen and (min-width: 992px) {
   .ui-datepicker .ui-datepicker-group-first:after {
@@ -5784,6 +5911,17 @@ a.all-type-list[href]:hover{
 	float: right;
   padding-top: 5px;
 }
+
+.non-member .ui-datepicker .ui-datepicker-next {
+  top: 4px;
+  position: absolute;
+}
+
+.non-member .ui-datepicker .ui-datepicker-prev {
+  top: 4px;
+  position: absolute;
+ }
+
 .ui-datepicker .ui-datepicker-next:before {
 	content: '>';
   background-color: #cf3339;
@@ -5834,7 +5972,7 @@ a.all-type-list[href]:hover{
   padding: 4px 5px;
 }
 .ui-datepicker .ui-datepicker-calendar td {
-  padding: 4px 5px;
+  padding: 4px 15px;
 }
 .ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar td a {
   text-align: center;
@@ -5925,7 +6063,7 @@ a.all-type-list[href]:hover{
 }
 .ui-datepicker .ui-datepicker-calendar td .ui-state-active:before{
 	background: #CF3339 !important;
-  color: #FFF !important;
+   color: #FFF !important;
 	width: 30px;
   height: 30px;
   content: '';
@@ -5935,6 +6073,24 @@ a.all-type-list[href]:hover{
   left: -4px;
   border-radius: 60px;
 }
+
+
+.non-member .ui-datepicker .ui-datepicker-calendar td .ui-state-active:before{
+	background: #CF3339 !important;
+   color: #FFF !important;
+	width: 30px;
+  	height: 30px;
+  	content: '';
+  	position: absolute;
+  	z-index: -1;
+	bottom: 0px;
+  	left: -15px;
+  	border-radius: 60px;
+  	margin-left: 50%;
+}
+
+
+
 .ui-datepicker {
   transition: none;
   background: #fff;
@@ -6081,6 +6237,7 @@ a.all-type-list[href]:hover{
 	line-height: 22px;
 	padding: 4px 0;
     font-family: 'Conv_SukhumvitTadmai_Tex';
+}
 }
 
 
