@@ -6184,6 +6184,10 @@ a.all-type-list[href]:hover{
     font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
 }
+.art-con-comment textarea:focus{
+	outline: none;
+    border-color: #CF3339;
+}
 .art-con-comment textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
