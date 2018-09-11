@@ -2316,7 +2316,7 @@ a.card-register-center, a.btn-action {
     top: -4px;
 }
 
-.content-wrap .row.box-login-con{
+.content-wrap .row.box-login-con.only-login{
 	width:360px;
 }
 
