@@ -1271,10 +1271,9 @@
     }
 
     /* article detail -eve */
-    .article-title h1 {
-        font-family: 'Conv_SukhumvitTadmai_Tex';
-        font-size: 16px;
-        line-height: 20px;
+    .sidebar-right-top .index-head,
+    .sidebar-right-bottom .index-head {
+        margin-top: 60px;
     }
 
 }

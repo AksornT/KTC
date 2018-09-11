@@ -6199,12 +6199,12 @@ a.all-type-list[href]:hover{
 .sidebar-right .item img:hover{
 	top: -3px;
 }
-.sidebar-right .side-title{
+#article-detail .sidebar-right .side-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 16px;
 	line-height: 24px;
 }
-.sidebar-right .side-content{
+#article-detail .sidebar-right .side-content{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
 	line-height: 20px;

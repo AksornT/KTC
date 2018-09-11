@@ -1086,8 +1086,6 @@
   }
 
   /* page - forever*/
-
-
   .page-forever-header h2 {
     font-size: 14px;
     line-height: 20px;
@@ -1480,6 +1478,55 @@
 }
 .main-terms-modal.world-modal .close{
   right: 2rem;
+}
+
+/* article detail -eve */
+.article-title h1 {
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 16px;
+    line-height: 24px;
+}
+.article-title .art-con-title h2 {
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+    font-size: 12px;
+    line-height: 18px;
+}
+.article-title .art-con-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.art-con-detail img {
+    margin: 20px auto;
+}
+#article-detail .index-head{
+    font-size: 20px;
+}
+.art-con-comment .card-register-center {
+    padding: 10px 20px;
+    width: 158px;
+}
+#article-detail .side-content-wrap p{
+    margin-bottom: 10px;
+}
+#article-detail .sidebar-right .side-title{
+    font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 14px;
+    line-height: 22px;
+}
+#article-detail .sidebar-right .side-content{
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 12px;
+    line-height: 20px;
+}
+.sidebar-right .side-content-wrap{
+    margin-bottom: 0px;
+}
+#article-detail .article-wrap .article-content {
+    margin-bottom: 60px;
+}
+.media.box-comment .text-right p {
+    font-size: 10px;
+    line-height: 15px;
 }
 
 
