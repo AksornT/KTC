@@ -5740,6 +5740,7 @@ a.all-type-list[href]:hover{
 }
 .non-member .ui-datepicker select.ui-datepicker-month {
      margin-left: 40px;
+     margin-right: 10px;
 }
 
 .non-member .ui-datepicker select.ui-datepicker-year {
@@ -5964,9 +5965,7 @@ a.all-type-list[href]:hover{
 	text-align: center;
 	letter-spacing: 0;
 }
-.ui-datepicker .ui-datepicker-title .ui-datepicker-month {
-  margin-right: 20px;
-}
+
 .ui-datepicker .ui-datepicker-calendar {
   table-layout: fixed;
   font-family: 'Conv_SukhumvitTadmai_Tex';
