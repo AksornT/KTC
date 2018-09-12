@@ -1221,6 +1221,8 @@ body.modal-open{
     font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
+
+
 .only-mobile .social-footer{
     text-align: center;
     padding: 0;
@@ -1829,7 +1831,14 @@ a:hover .on-hover{
 }
 .main-credit img{
 	width: 100%;
+	position: relative;
+	top: 0px;
 }
+
+.main-credit img:hover{
+	top:-3px;
+}
+
 .creditcard-row{
 	margin-bottom: 40px;
 }
@@ -1877,7 +1886,8 @@ a:hover .on-hover{
 	cursor: pointer;
 }
 .main-credit button:hover{
-	margin-top: -3px;
+	background-color: #cf3339;
+	color: #fff;
 }
 .click-compare{
 	background-color: #F2F2F2;
