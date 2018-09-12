@@ -244,11 +244,11 @@
           <h3 class="index-head">เข้าสู่ระบบ</h3>
           <div class="box-input-form">
             <i class="fas fa-user"></i>
-            <input id="input-username" type="text" placeholder="ชื่อผู้ใช้งาน">
+            <input class="required" id="input-username" type="text" placeholder="ชื่อผู้ใช้งาน">
           </div>
           <div class="box-input-form">
             <i class="fas fa-lock"></i>
-            <input type="text" placeholder="รหัสผ่าน">
+            <input class="required" type="password" placeholder="รหัสผ่าน">
           </div>
           <div class="box-other-form checkbox-form">
             <label>จำชื่อผู้ใช้งาน
@@ -256,25 +256,13 @@
               <span class="checkmark"></span>
             </label>
           </div>
-          <button class="btn-default submit-button" value="submit" disabled>เข้าสู่ระบบ</button>
+          <button class="btn-default submit-button" type="submit" disabled>เข้าสู่ระบบ</button>
           <div class="row box-other-form">
             <a href="forgot-username.html" class="col-6 text-left">ลืมชื่อผู้ใช้งาน</a>
             <a href="forgot-password.html" class="col-6 text-right">ลืมรหัสผ่าน</a>
           </div>
           <p class="link-regis">ยังไม่มีบัญชีผู้ใช้งาน? <a href="register-member.html">ลงทะเบียน</a></p>
         </form>
-        <script type="text/javascript">
-          //จำลองการ validte แล้วปุ่ม disabled
-          $(document).ready(function() {
-            $( "#input-username" ).change(function() {
-              if ($(this).val().length == 0){
-                    $(".submit-button").prop("disabled", true);;
-                } else {
-                    $(".submit-button").prop("disabled", false);
-                }
-              });
-            });
-          </script>
       </div>
     </div>
     <!-- end page -->

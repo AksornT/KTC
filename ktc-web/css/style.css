@@ -3562,7 +3562,8 @@ section#section-flexi-cards {
 	text-align: left;
 }
 
-.form-wrap input[type="text"] + label{
+.form-wrap input[type="text"] + label,
+.form-wrap input[type="password"] + label{
 	position: absolute;
     top: 65px;
     left: 15px;
@@ -3571,17 +3572,21 @@ section#section-flexi-cards {
     opacity: 1;
 }
 
-.form-wrap input[type="text"]:focus{
+.form-wrap input[type="text"]:focus,
+.form-wrap input[type="password"]:focus{
 	border-bottom: 1px solid #CF3339;
 }
 
-.form-wrap input[type="text"].hasText + label{
+.form-wrap input[type="text"].hasText + label,
+.form-wrap input[type="password"].hasText + label{
 	font-size: 12px;
 	top: 38px;
 }
 
 .form-wrap input[type="text"]:focus + label,
-.form-wrap input[type="text"].hasText:focus + label{
+.form-wrap input[type="text"].hasText:focus + label,
+.form-wrap input[type="password"]:focus + label,
+.form-wrap input[type="password"].hasText:focus + label{
 	color: #CF3339;
 	font-size: 12px;
 	top: 38px;
@@ -3647,14 +3652,18 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input{
 	width: 320px;
 }
-.box-login-con.form-wrap input[type="text"] + label{
+.box-login-con.form-wrap input[type="text"] + label,
+.box-login-con.form-wrap input[type="password"] + label{
 	left: 30px;
 }
 .box-login-con.form-wrap input[type="text"]:focus + label,
-.box-login-con.form-wrap input[type="text"].hasText:focus + label{
+.box-login-con.form-wrap input[type="text"].hasText:focus + label,
+.box-login-con.form-wrap input[type="password"]:focus + label,
+.box-login-con.form-wrap input[type="password"].hasText:focus + label{
 	left: 0;
 }
-.box-login-con.form-wrap input[type="text"].hasText + label{
+.box-login-con.form-wrap input[type="text"].hasText + label,
+.box-login-con.form-wrap input[type="password"].hasText + label{
 	left: 0;
 }
 .box-login-con.form-wrap input[type="checkbox"]{
@@ -3841,7 +3850,8 @@ button.btn-default:disabled:hover{
 .box-radio label{
 	padding-left: 20px;
 }
-#pg-regis.form-wrap input[type="text"] + label {
+#pg-regis.form-wrap input[type="text"] + label,
+#pg-regis.form-wrap input[type="password"] + label {
   left: 0;
 }
 #pg-regis.box-login-con input{
@@ -4903,7 +4913,8 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .register-wrapper .form-register .input-ico-right {
     margin-bottom: 60px;
 }
-.form-content.form-wrap input[type="text"] + label{
+.form-content.form-wrap input[type="text"] + label,
+.form-content.form-wrap input[type="password"] + label{
 	left: 5px;
 }
 .form-content .input-ico:after {

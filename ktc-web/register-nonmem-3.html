@@ -252,20 +252,22 @@
             </div>
           </div>
           <div class="box-input-form">
-            <input type="text" autocomplete="off" placeholder="ชื่อ">
+            <input class="required" type="text" autocomplete="off" placeholder="ชื่อ">
           </div>
           <div class="box-input-form">
-            <input type="text" autocomplete="off" placeholder="นามสกุล">
+            <input class="required" type="text" autocomplete="off" placeholder="นามสกุล">
           </div>
           <div class="box-input-form form-wrap">
-            <input type="text" id="calendar" autocomplete="off" placeholder="วันเกิด">
-          </div>
-          <div class="box-input-form">
-            <input type="text" autocomplete="off" placeholder="อีเมล">
+            <input class="required" type="text" id="calendar" autocomplete="off" placeholder="วันเกิด">
           </div>
           <div class="box-other-form checkbox-form">
             <label>ต้องการรับข้อเสนอสุดพิเศษและโปรโมชั่นจาก KTC
-              <input type="checkbox">
+              <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <script>
+                function myFunction() {
+                  $('#email').toggle();
+                }
+              </script>
               <span class="checkmark"></span>
             </label>
           </div>
@@ -273,7 +275,7 @@
             <input type="text" autocomplete="off" placeholder="อีเมล">
           </div>
           <div>
-            <button class="btn-next-step" value="" >ถัดไป</button>
+            <button type="submit" class="btn-next-step" value="" >ถัดไป</button>
           </div>
         </form>
         <script type="text/javascript">
@@ -288,7 +290,13 @@
               langTh:true,
               yearTh:true,
               monthNamesShort: fullmonth_array,
-              yearRange: '-100:+0'
+              yearRange: '-100:+0',
+              onSelect: function() {
+                $(this).change(function(){
+                  console.log('It works.');
+                });
+              }
+              }
             });
         </script>
       </div>

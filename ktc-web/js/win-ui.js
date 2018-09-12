@@ -109,6 +109,7 @@ $(document).ready(function() {
     });
 
     //for styling form
+    function stylinginputFunction() {
     $('.form-wrap input[type="text"], .form-wrap input[type="password"]').each(function(){
       var fLabel = $(this).attr('placeholder');
       $(this).after( '<label>' + fLabel + '</label>' );
@@ -120,6 +121,75 @@ $(document).ready(function() {
         }
       });
      });
+    }
+    stylinginputFunction();
+    $('.form-wrap input[type="text"], .form-wrap input[type="password"]').each(function(){
+        if ($(this).val().length == 0){
+            $(this).removeClass("hasText");
+        } else {
+            $(this).addClass("hasText");
+        }
+     });
+
+    //can submit only when all input are filled
+
+    $('.form-wrap button[type="submit"]').prop('disabled', true);
+    
+
+    var toValidate = jQuery('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required');
+    var theValidate = jQuery('.form-wrap input[type="checkbox"].required');
+    valid = false;
+    valid2 = true;
+    if ($('.form-wrap input[type="checkbox"]').hasClass('required')){
+        valid2 = false;
+    }
+
+    theValidate.on('touch click', function () {
+        if ($(this).prop('checked') == true) {
+            jQuery(this).data('valid2', true);
+            console.log("checked");
+        } else {
+            jQuery(this).data('valid2', false);
+            console.log("notChecked");
+        }
+        theValidate.each(function () {
+            if (jQuery(this).data('valid2') == true) {
+                valid2 = true;
+            } else {
+                valid2 = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+    });
+    toValidate.on('keyup', function () {
+        if (jQuery(this).val().length > 0) {
+            jQuery(this).data('valid', true);
+            console.log("filled");
+        } else{
+            jQuery(this).data('valid', false);
+            console.log("notFilled");
+        }
+        toValidate.each(function () {
+            if (jQuery(this).data('valid') == true) {
+                valid = true;
+            } else {
+                valid = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+    });
+
+
+
+
 
     //styling select dropdown
     $('.form-wrap select').each(function(){

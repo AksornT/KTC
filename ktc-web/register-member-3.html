@@ -250,15 +250,15 @@
             </div>
           </div>
           <div class="box-input-form txt-err-padd txt-desc-input">
-            <input type="text" placeholder="ชื่อผู้ใช้งาน">
+            <input class="required" type="text" placeholder="ชื่อผู้ใช้งาน">
             <p>ชื่อผู้ใช้จะต้องอยู่ระหว่าง 6-15 ตัว และต้องประกอบไปด้วยตัวอักษร A-Z หรือตัวเลข 0-9 </p>
           </div>
           <div class="box-input-form txt-err-padd txt-desc-input">
-            <input type="text" placeholder="รหัสผ่าน">
+            <input class="required" type="password" placeholder="รหัสผ่าน">
             <p>รหัสผ่านจะต้องอยู่ระหว่าง 8-20 ตัว และต้องประกอบไปด้วยตัวอักษร A-Z และตัวเลข 0-9</p>
           </div>
           <div class="box-input-form txt-err-padd txt-desc-input">
-            <input type="text" placeholder="ยืนยันรหัสผ่าน">
+            <input class="required" type="password" placeholder="ยืนยันรหัสผ่าน">
             <p>กรุณาระบุรหัสผ่านอีกครั้ง</p>
           </div>
           <div class="box-other-form checkbox-form">
@@ -270,11 +270,16 @@
           <div id="email" class="box-input-form">
             <input type="text" placeholder="อีเมล">
           </div>
+          <script>
+            function myFunction() {
+              $('#email').toggle();
+            }
+          </script>
           <div class="only-desktop">
-            <button class="btn-default" value="" >ลงทะเบียนใช้งาน</button>
+            <button type="submit" class="btn-default" value="" >ลงทะเบียนใช้งาน</button>
           </div>
           <div class="only-mobile">
-            <button class="btn-default" id="big-size" value="" >ลงทะเบียนใช้งาน</button>
+            <button type="submit" class="btn-default" id="big-size" value="" >ลงทะเบียนใช้งาน</button>
           </div>
         </form>
       </div>

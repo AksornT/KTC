@@ -259,22 +259,28 @@
             </div>
           </div>
           <div class="box-input-form">
-            <input type="text" placeholder="หมายเลข 13 หลัก">
+            <input class="required" type="text" placeholder="หมายเลข 13 หลัก">
           </div>
           <div class="box-input-form txt-err-padd">
-            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก" class="err-message">
+            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก" class="err-message required">
             <span>กรุณาระบุหมายเลขโทรศัพท์มือถือที่ให้ไว้กับ KTC</span>
           </div>
+
+          <!-- จำลองเส้นทางไป Register Non KTC Member จะไม่มี div นี้ใน HTML ตัวจริง-->
+          <div class="box-input-form">
+            <br><a href="register-nonmem-2.html"><span>***คลิกตรงนี้เพื่อไปหน้า Register แบบ Non KTC Member***</span></a>
+          </div>
+          <!-- จบ div ที่ใช้จำลอง -->
+          
           <div class="box-other-form checkbox-form">
             <label>ยอมรับ
-              <input type="checkbox" name="">
+              <input class="required" type="checkbox" name="" value="">
               <span class="checkmark"></span>
             </label>
             <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
           </div>
-       
-            <button  class="btn-next-step" value="">ถัดไป</button>
-          </div>
+          <div>
+            <button class="btn-next-step" value="" type="submit" >ถัดไป</button>
           </div>
         </form>
       </div>
