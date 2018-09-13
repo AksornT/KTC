@@ -6337,6 +6337,12 @@ a.all-type-list[href]:hover{
 .art-on-mobile{
 	display: none;
 }
+.art-on-desktop{
+	display: block;
+    margin-top: 20px;
+    margin-bottom: -18px;
+    padding-left: 0;
+}
 .article-title h1{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 30px;
