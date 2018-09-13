@@ -778,7 +778,11 @@ article.page-content img {
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 	border-radius: 6px;
 	position: relative;
-  top: 0;
+    top: 0;
+}
+
+.item img:hover{
+	top: -3px;
 }
 .item .slide-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -5276,6 +5280,13 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     position: relative;
     top: 0;
 }
+
+.slide-wrap .item .slide-btn:hover {
+    color: #FFF;
+    background: #cf3339;
+}
+
+
 
 .promotion-page .item .slide-title,
 .article-page .item .slide-title{
