@@ -348,7 +348,7 @@
             </div>
             <div class="tab-content">
               <div class="tab-pane fade show active in" id="tab-online" role="tabpanel">
-                <form class="form-register form-content form-check-required form-wrap">
+                <form action="register-campaign-success.html" class="form-register form-content form-check-required form-wrap">
                   <div class="row">
                     <div class="col-12 col-md-6">
                       <!-- IF LOGIN -->
@@ -409,29 +409,11 @@
             </div>
           </div>
           <!-- END REGISTER SECTION -->
-          <!-- หลังกรอกแบบฟอร์มสำเร็จ -->
-          <div id="promo-regis-complete" class="content-wrap proud-regis-complete">
-            <img class="img-result" src="img/ico-register-success.png">
-            <p>คุณได้ทำการลงทะเบียนออนไลน์สำเร็จแล้ว</p>
-            <div class="btn-wrap">
-              <button id="close-success" class="card-register-center">ปิด</button>
-            </div>
-          </div>
       </div>
     </div>
     <!-- end page -->
 
     <script>
-      // ซ่อน div "หลังกรอกแบบฟอร์มสำเร็จ"
-      $("#promo-regis-complete").hide();
-
-      // ซ่อน div แบบฟอร์มแล้วโชว์ div ที่กรอกสำเร็จ เมื่อกดส่งข้อมูล
-      // กดปิดแล้วจะกลับไปหาแบบฟอร์ม
-      $("#sending-form, #close-success").on('click touch', function () {
-        $("#promo-regis-complete").toggle();
-        $("#promotion-register").toggle();
-        window.location.hash = "#promotion-register";
-      });
 
       //for calendar
       $(document).ready(function() {

@@ -258,7 +258,7 @@
             <input class="required" type="text" autocomplete="off" placeholder="นามสกุล">
           </div>
           <div class="box-input-form form-wrap">
-            <input class="required" type="text" id="calendar" autocomplete="off" placeholder="วันเกิด">
+            <input class="" type="text" id="calendar" autocomplete="off" placeholder="วันเกิด">
           </div>
           <div class="box-other-form checkbox-form">
             <label>ต้องการรับข้อเสนอสุดพิเศษและโปรโมชั่นจาก KTC
@@ -267,6 +267,7 @@
                 function myFunction() {
                   $('#email').toggle();
                 }
+
               </script>
               <span class="checkmark"></span>
             </label>
@@ -290,12 +291,13 @@
               langTh:true,
               yearTh:true,
               monthNamesShort: fullmonth_array,
-              yearRange: '-100:+0',
-              onSelect: function() {
-                $(this).change(function(){
-                  console.log('It works.');
-                });
-              }
+              yearRange: '-100:+0'
+            });
+            $("#calendar").change(function(){
+              if ($(this).val().length == 0){
+                  $(this).removeClass("hasText");
+              } else {
+                  $(this).addClass("hasText");
               }
             });
         </script>

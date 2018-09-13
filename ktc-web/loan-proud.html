@@ -436,50 +436,29 @@
       <div id="proud-register" class="content-wrap">
         <h2 class="content-title">สมัครบัตรสินเชื่อพร้อมใช้<span> KTC PROUD</span></h2>
         <p class="sub-title">กรุณากรอกข้อมูล เพื่อให้เจ้าหน้าที่ของ KTC ติดต่อกลับ และแนะนำบัตรที่เหมาะสมกับคุณ</p>
-        <form class="row form-wrap">
+        <form action="register-campaign-success.html" class="row form-wrap">
           <div class="col-sm-6 col-12">
-            <input type="text" placeholder="ชื่อ">
+            <input class="required" type="text" placeholder="ชื่อ">
           </div>
           <div class="col-sm-6 col-12">
-            <input type="text" placeholder="นามสกุล">
+            <input class="required" type="text" placeholder="นามสกุล">
           </div>
           <div class="col-sm-6 col-12">
-            <input type="text" placeholder="กรุณาระบุหมายเลขโทรศัพท์ (10 หลัก)">
+            <input class="required" type="text" placeholder="กรุณาระบุหมายเลขโทรศัพท์ (10 หลัก)">
           </div>
           <div class="col-sm-6 col-12">
-            <input type="text" placeholder="กรุณาระบุอีเมล์">
+            <input class="required" type="text" placeholder="กรุณาระบุอีเมล์">
           </div>
           <div class="col-sm-6 col-12">
-            <input type="text" placeholder="รายได้ต่อเดือน">
+            <input class="required" type="text" placeholder="รายได้ต่อเดือน">
             <p class="input-notice">ข้อมูลของผู้สมัครจะไม่ถูกเปิดเผยหรือใช้ร่วมกับบุคคลที่ 3 นอกเหนือจาก KTC</p>
           </div>
+          <div class="btn-wrap">
+            <button type="submit" id="sending-form" class="card-register-center">ส่งข้อมูล</button>
+          </div>
         </form>
-        <div class="btn-wrap">
-          <button id="sending-form" class="card-register-center">ส่งข้อมูล</button>
-        </div>
-      </div>
-      <!-- หลังกรอกแบบฟอร์มสำเร็จ -->
-      <div id="proud-regis-complete" class="content-wrap proud-regis-complete">
-        <img class="img-result" src="img/ico-register-success.png">
-        <p>ขอบคุณที่ไว้วางใจเลือกใช้บริการรับชำระเงินจาก KTC</p>
-        <span>ระบบได้รับข้อมูลเรียบร้อยแล้ว เจ้าหน้าที่จะติดต่อกลับภายใน X ชั่วโมง ในวันและเวลาทำการ</span>
-        <div class="btn-wrap">
-          <button id="close-success" class="card-register-center">ปิด</button>
-        </div>
       </div>
     </section>
-      <script>
-        // ซ่อน div "หลังกรอกแบบฟอร์มสำเร็จ"
-        $("#proud-regis-complete").hide();
-
-        // ซ่อน div แบบฟอร์มแล้วโชว์ div ที่กรอกสำเร็จ เมื่อกดส่งข้อมูล
-        // กดปิดแล้วจะกลับไปหาแบบฟอร์ม
-        $("#sending-form, #close-success").on('click touch', function () {
-          $("#proud-regis-complete").toggle();
-          $("#proud-register").toggle();
-          window.location.hash = "#proud-regis";
-        });
-      </script>
 
       <div class="content-wrap">
         <h4 class="content-title faq-title">คำถามที่พบบ่อย</h2>

@@ -2252,6 +2252,12 @@ article.page-content #card-detail-regis h3::after{
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 
+.card-register-center:disabled{
+	pointer-events:none;
+	background: rgba(91,102,112,.6) !important;
+	color: #fff;
+}
+
 a.card-register-center, a.btn-action {
 	margin: 30px 0 60px 0;
 }
@@ -2328,6 +2334,7 @@ a.card-register-center, a.btn-action {
 
 .content-wrap .row.box-login-con.only-login{
 	width:360px;
+	max-width: 100%;
 }
 
 .icon-store{
@@ -3590,6 +3597,26 @@ section#section-flexi-cards {
 	color: #CF3339;
 	font-size: 12px;
 	top: 38px;
+}
+
+.form-wrap #calendar + label,
+.form-wrap #calendar:focus + label{
+	top: 38px;
+	font-size: 12px;
+}
+
+.form-wrap #calendar:focus + label{
+	color: #CF3339;
+}
+
+.form-wrap #calendar:placeholder-shown + label{
+	top: 65px;
+	font-size: 16px;
+}
+
+.form-wrap #calendar:placeholder-shown:focus + label{
+	top: 38px;
+	font-size: 12px;
 }
 
 .panel-heading[role='tab'] {
@@ -6454,6 +6481,10 @@ a.all-type-list[href]:hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.campaign-success-page{
+	padding-bottom: 45px;
 }
 
 
