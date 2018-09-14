@@ -6366,9 +6366,12 @@ a.all-type-list[href]:hover{
 }
 .art-on-desktop{
 	display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: -18px;
     padding-left: 0;
+}
+#article-detail .article-wrap .article-cover {
+    margin-bottom: 40px;
 }
 .article-title h1{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -6377,7 +6380,7 @@ a.all-type-list[href]:hover{
 }
 .article-title .art-con-title{
 	margin-top: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .article-title .art-con-title h2{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -6400,39 +6403,51 @@ a.all-type-list[href]:hover{
 }
 .art-con-detail img{
 	width: 100%;
-	margin: 40px auto;
+	margin: 20px auto 40px auto;
 }
-.art-con-tag .index-head,
+.art-con-tag{
+	margin-top: 40px;
+}
+.art-con-tag .article-tag {
+    margin-bottom: 0px;
+}
 .art-con-comment .index-head{
-	margin-bottom: 35px;
+	margin-top: 40px;
+	margin-bottom: 25px;
 }
 .art-con-comment textarea{
+	height: 115px;
 	width: 100%;
-	border: 1px solid #838383;
+	border: 1px solid #C8C8C8;
     border-radius: 3px;
+    resize: none;
     padding: 10px;
-    font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 14px;
+    font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
 }
 .art-con-comment textarea:focus{
 	outline: none;
     border-color: #CF3339;
 }
 .art-con-comment textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  	font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 14px;
+  	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	color: #C8C8C8;
 }
 .art-con-comment textarea::-moz-placeholder { /* Firefox 19+ */
-  	font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 14px;
+  	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	color: #C8C8C8;
 }
 .art-con-comment textarea:-ms-input-placeholder { /* IE 10+ */
-  	font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 14px;
+  	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	color: #C8C8C8;
 }
 .art-con-comment textarea:-moz-placeholder { /* Firefox 18- */
-  	font-family: 'Conv_SukhumvitTadmai_Tex';
-	font-size: 14px;
+  	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 16px;
+	color: #C8C8C8;
 }
 .art-con-comment .btn-wrap{
 	text-align: right;
@@ -6451,6 +6466,7 @@ a.all-type-list[href]:hover{
 .media.box-comment h5{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 16px;
+	margin-bottom: 10px;
 }
 .media.box-comment p{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -6461,16 +6477,18 @@ a.all-type-list[href]:hover{
 }
 .media.box-comment .text-right p{
 	margin-bottom: 0px;
+	padding-left: 10px;
 	font-size: 12px;
 	line-height: 20px;
+	display: inline-block;
 }
 .sidebar-right-top .index-head{
 	margin-top: 0px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 .sidebar-right-bottom .index-head{
-	margin-top: 30px;
-	margin-bottom: 35px;
+	margin-top: 0px;
+	margin-bottom: 25px;
 }
 .sidebar-right-bottom .index-head a:hover{
 	color: #CF3339;
@@ -6479,7 +6497,7 @@ a.all-type-list[href]:hover{
 	color: #454545;
 }
 .sidebar-right .side-content-wrap{
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 40px;
 }
 .sidebar-right .item img{
@@ -6493,11 +6511,13 @@ a.all-type-list[href]:hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 16px;
 	line-height: 24px;
+	margin-bottom: 10px;
 }
 #article-detail .sidebar-right .side-content{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
 	line-height: 20px;
+	margin-bottom: 0px;
 }
 
 .campaign-success-page{
