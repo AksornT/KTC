@@ -1510,18 +1510,18 @@
 
 /* article detail -eve */
 .article-title h1 {
-    font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 16px;
     line-height: 24px;
 }
 .article-title .art-con-title h2 {
-    font-family: 'Conv_SukhumvitTadmai_Thi';
     font-size: 12px;
     line-height: 18px;
 }
+#article-detail .article-wrap .article-title {
+    margin-bottom: 30px;
+}
 .article-title .art-con-title {
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 .art-con-detail img {
     margin: 20px auto;
@@ -1552,18 +1552,34 @@
 #article-detail .article-wrap .article-content {
     margin-bottom: 60px;
 }
+.art-con-comment .index-head {
+    margin-top: 20px;
+}
+#article-detail button.card-register-center{
+    font-size: 16px;
+    min-width: 160px;
+}
 .media.box-comment .text-right p {
     font-size: 10px;
     line-height: 15px;
+}
+.art-on-mobile{
+    margin-top: 0px;
 }
 #article-detail .breadcrumb{
     font-size: 10px;
 }
 #article-detail .breadcrumb .breadcrumb-item.active{
-  width: 220px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#article-detail .article-wrap .article-tag a{
+    margin-right: 0px;
+}
+.comment-content {
+    margin-top: 30px;
 }
 
 
