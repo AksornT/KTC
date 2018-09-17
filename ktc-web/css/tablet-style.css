@@ -274,9 +274,10 @@
     padding-top: 8px;
   }
   .item .slide-title{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 18px;
     line-height: 28px;
+    height: 65px;
   }
   .item .slide-content{
     padding-top: 5px;
@@ -1203,6 +1204,7 @@
 
   .row-search-filter.only-mobile{
     display: flex;
+    margin: 20px 0 0 0;
   }
 
   .row-search-filter .filter-btn.only-desktop{
@@ -1304,6 +1306,15 @@
     }
     .sidebar-right .side-content-wrap {
       margin-bottom: 20px;
+    }
+
+    .promotion-page .item .slide-title, 
+    .article-page .item .slide-title{
+      height: 65px;
+    }
+
+    .article-page .slide-wrap .index-slide2 .item .slide-content{
+      height: 43px;
     }
 
 }

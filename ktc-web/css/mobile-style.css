@@ -567,12 +567,11 @@
   .index-head{
     font-size: 14px;
     margin-top: 60px;
-    padding-bottom: 4px;
     border-bottom: 3px solid #CF3339;
   }
   .text-on-slide{
-    margin-top: 11.8px;
-    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-bottom: 0;
   }
   .text-on-slide p{
     font-size: 16px;
@@ -1402,7 +1401,7 @@
 }
 
 .index-slide1 .owl-dots{
-  margin: 0 0 10px 0;
+  margin: 0 ;
 }
 
 .slide-wrap .item .slide-meta .fav-btn{
@@ -1587,6 +1586,14 @@
 }
 .comment-content {
     margin-top: 30px;
+}
+
+.text-on-slide.no-subtitle .view-all{
+  padding-bottom: 8px;
+}
+
+.article-page .slide-wrap .index-slide2 .item .slide-content{
+  height: 36px;
 }
 
 
