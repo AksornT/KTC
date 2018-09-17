@@ -1410,13 +1410,13 @@
 
 .promotion-page .item .slide-title,
 .article-page .item .slide-title{
-  height: 50px;
+  height: 48px;
 }
 
 .promotion-page .item .slide-title + .slide-content,
 .article-page .item .slide-title + .slide-content{
   margin-bottom: 20px;
-  height: 36px;
+  height: 33px;
 }
 
 .promotion-page .item .slide-content{
@@ -1594,7 +1594,7 @@
 }
 
 .article-page .slide-wrap .index-slide2 .item .slide-content{
-  height: 36px;
+  height: 33px;
 }
 
 

@@ -282,7 +282,7 @@
   .item .slide-content{
     padding-top: 5px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.4;
   }
 
   .slide-wrap:before,
@@ -1310,11 +1310,13 @@
 
     .promotion-page .item .slide-title, 
     .article-page .item .slide-title{
-      height: 65px;
+      height: 60px;
+      line-height: 1.4;
     }
 
     .article-page .slide-wrap .index-slide2 .item .slide-content{
-      height: 43px;
+      height: 44px;
+      line-height: 1.4;
     }
 
 }
