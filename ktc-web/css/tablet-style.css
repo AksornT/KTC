@@ -1238,7 +1238,7 @@
       max-width: 40px;
       max-height: 40px;
       height: auto;
-      margin: 0 auto 5px;
+      margin: 0 auto -2px auto;
     }
 
     .menu-sub-icon .permanent-link .nav-link:after{
