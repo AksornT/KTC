@@ -1281,13 +1281,31 @@
     }
     .art-on-mobile{
       display: block;
-      margin-top: 20px;
-      margin-bottom: -18px;
       padding-left: 0;
+    }
+    #article-detail .article-wrap .article-cover{
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    #article-detail .article-wrap .article-title{
+      margin-bottom: 40px;
+    }
+    .article-title .art-con-title h2{
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .article-title .art-con-title {
+      margin-top: 15px;
+    }
+    .art-con-detail img {
+      margin: 20px auto 20px auto;
     }
     .sidebar-right-top .index-head,
     .sidebar-right-bottom .index-head {
-      margin-top: 60px;
+      margin-top: 20px;
+    }
+    .sidebar-right .side-content-wrap {
+      margin-bottom: 20px;
     }
 
 }
