@@ -152,6 +152,7 @@
 @media (max-width: 576px) {
   .breadcrumb.bc-content{
     padding-left: 0;
+    font-size: 12px;
   }
   .menu-global > .content-wrap{
     padding: 0 20px;
@@ -1334,8 +1335,11 @@
 .article-wrap .article-collapse {
   margin-bottom: 20px;
 }
+.art-con-tag {
+  margin-top: 30px;
+}
 .article-wrap .article-tag {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .register-wrapper .nav .nav-item{
   padding: 0;
@@ -1523,9 +1527,6 @@
 .article-title .art-con-title {
     margin-top: 10px;
 }
-.art-con-detail img {
-    margin: 20px auto;
-}
 #article-detail .index-head{
     font-size: 20px;
 }
@@ -1569,10 +1570,10 @@
     margin-top: 0px;
 }
 #article-detail .breadcrumb{
-    font-size: 10px;
+    padding-right: 0px;
 }
 #article-detail .breadcrumb .breadcrumb-item.active{
-    width: 216px;
+    width: calc(100% - 80px);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
