@@ -1529,7 +1529,9 @@
     font-size: 20px;
 }
 .art-con-comment .card-register-center {
-    padding: 10px 20px;
+    padding: 7px 20px;
+    font-size: 16px;
+    min-width: 158px;
     width: 158px;
 }
 #article-detail .side-content-wrap p{
@@ -1556,10 +1558,6 @@
 }
 .sidebar-right-bottom h3.index-head{
     margin-top: 30px;
-}
-#article-detail button.card-register-center{
-    font-size: 16px;
-    min-width: 160px;
 }
 .media.box-comment .text-right p {
     font-size: 10px;
