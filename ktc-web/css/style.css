@@ -6377,7 +6377,7 @@ a.all-type-list[href]:hover{
     margin-bottom: 40px;
 }
 #article-detail .article-wrap .article-title{
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }
 .article-title h1{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -6396,6 +6396,7 @@ a.all-type-list[href]:hover{
 .article-content .art-con-detail{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	line-height: 1.4;
 }
 .article-content .art-con-detail p b{
 	font-family: Helvetica, Arial, sans-serif;
