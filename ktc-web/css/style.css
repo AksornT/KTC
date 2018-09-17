@@ -6391,7 +6391,10 @@ nav[aria-label="breadcrumb"]{
 }
 #article-detail .article-wrap .article-cover {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+#article-detail .item.item-img-cover img:hover {
+    top: auto;
 }
 #article-detail .article-wrap .article-title{
 	margin-bottom: 45px;
@@ -6427,7 +6430,7 @@ nav[aria-label="breadcrumb"]{
 }
 .art-con-detail img{
 	width: 100%;
-	margin: 20px auto 40px auto;
+	margin: 20px auto 20px auto;
 }
 .art-con-tag{
 	margin-top: 40px;
@@ -6437,7 +6440,7 @@ nav[aria-label="breadcrumb"]{
 }
 .art-con-comment .index-head{
 	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-bottom: 13px;
 }
 .art-con-comment textarea{
 	height: 115px;
@@ -6477,8 +6480,9 @@ nav[aria-label="breadcrumb"]{
 	text-align: right;
 }
 .art-con-comment .card-register-center{
-	padding: 10px 49px;
-	margin: 20px 0;
+	padding: 7px 40px;
+    margin: 20px 0;
+    font-size: 16px;
 }
 .comment-content{
 	margin-top: 40px;
@@ -6508,11 +6512,11 @@ nav[aria-label="breadcrumb"]{
 }
 .sidebar-right-top .index-head{
 	margin-top: 0px;
-	margin-bottom: 25px;
+	margin-bottom: 13px;
 }
 .sidebar-right-bottom .index-head{
 	margin-top: 0px;
-	margin-bottom: 25px;
+	margin-bottom: 13px;
 }
 .sidebar-right-bottom .index-head a:hover{
 	color: #CF3339;

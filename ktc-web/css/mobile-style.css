@@ -1577,7 +1577,7 @@
     font-size: 10px;
 }
 #article-detail .breadcrumb .breadcrumb-item.active{
-    width: 220px;
+    width: 216px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1587,6 +1587,12 @@
 }
 .comment-content {
     margin-top: 30px;
+}
+#article-detail .article-wrap .article-icon {
+    padding-top: 10px;
+}
+#article-detail .article-wrap .article-cover {
+    margin-bottom: 0px;
 }
 
 
