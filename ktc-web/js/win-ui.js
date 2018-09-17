@@ -135,11 +135,11 @@ $(document).ready(function() {
 
     $('.form-wrap button[type="submit"]').prop('disabled', true);
     
-
     var toValidate = jQuery('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required');
     var theValidate = jQuery('.form-wrap input[type="checkbox"].required');
     valid = false;
     valid2 = true;
+    valid3 = true;
     if ($('.form-wrap input[type="checkbox"]').hasClass('required')){
         valid2 = false;
     }
@@ -159,32 +159,80 @@ $(document).ready(function() {
                 valid2 = false;
             }
         });
-        if (valid === true && valid2 === true) {
+        if (valid === true && valid2 === true && valid3 === true) {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
         } else {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
         }
+
+        console.log("valid =" + valid);
+        console.log("valid2 =" + valid2);
+        console.log("valid3 =" + valid3);
     });
     toValidate.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
+        if ($(this).val().length > 0) {
+            $(this).data('valid', true);
             console.log("filled");
         } else{
-            jQuery(this).data('valid', false);
+            $(this).data('valid', false);
             console.log("notFilled");
         }
         toValidate.each(function () {
-            if (jQuery(this).data('valid') == true) {
+            if ($(this).data('valid') == true) {
                 valid = true;
             } else {
                 valid = false;
             }
         });
-        if (valid === true && valid2 === true) {
+        if (valid === true && valid2  === true && valid3 === true) {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
         } else {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
         }
+
+        console.log("valid =" + valid);
+        console.log("valid2 =" + valid2);
+        console.log("valid3 =" + valid3);
+    });
+
+    $('#myCheck').on('touch click', function () {
+        $('#email').toggle();
+        if ($("#email input").hasClass("required")) {
+            $('#email input').removeClass('required');
+            valid3 = true;
+        } else {
+            $('#email input').addClass('required');
+            valid3 = false;
+        }
+        $('#email .required').val("");
+        if (valid === true && valid2  === true && valid3 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+
+        console.log("valid =" + valid);
+        console.log("valid2 =" + valid2);
+        console.log("valid3 =" + valid3);
+    });
+
+    $('#email input').on('keyup', function () {
+        if (jQuery(this).val().length > 0) {
+            valid3 = true;
+            console.log("filled");
+        } else{
+            valid3 = false;
+            console.log("notFilled");
+        }
+        if (valid === true && valid2  === true && valid3 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+
+        console.log("valid =" + valid);
+        console.log("valid2 =" + valid2);
+        console.log("valid3 =" + valid3);
     });
 
 
