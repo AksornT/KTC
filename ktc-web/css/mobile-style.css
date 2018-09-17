@@ -1562,9 +1562,6 @@
     font-size: 16px;
     min-width: 160px;
 }
-.media.box-comment .text-right{
-  margin-top: 0px;
-}
 .media.box-comment .text-right p {
     font-size: 10px;
     line-height: 15px;

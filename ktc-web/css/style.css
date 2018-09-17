@@ -6391,7 +6391,7 @@ nav[aria-label="breadcrumb"]{
 }
 #article-detail .article-wrap .article-cover {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #article-detail .item.item-img-cover img:hover {
     top: auto;
@@ -6481,7 +6481,7 @@ nav[aria-label="breadcrumb"]{
 }
 .art-con-comment .card-register-center{
 	padding: 7px 40px;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 16px;
 }
 .comment-content{
@@ -6499,9 +6499,6 @@ nav[aria-label="breadcrumb"]{
 .media.box-comment p{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
-}
-.media.box-comment .text-right{
-	margin-top: 5px;
 }
 .media.box-comment .text-right p{
 	margin-bottom: 0px;
