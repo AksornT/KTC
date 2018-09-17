@@ -1561,9 +1561,6 @@
     font-size: 16px;
     min-width: 160px;
 }
-.media.box-comment .text-right{
-  margin-top: 0px;
-}
 .media.box-comment .text-right p {
     font-size: 10px;
     line-height: 15px;
@@ -1576,7 +1573,7 @@
     font-size: 10px;
 }
 #article-detail .breadcrumb .breadcrumb-item.active{
-    width: 220px;
+    width: 216px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1586,6 +1583,12 @@
 }
 .comment-content {
     margin-top: 30px;
+}
+#article-detail .article-wrap .article-icon {
+    padding-top: 10px;
+}
+#article-detail .article-wrap .article-cover {
+    margin-bottom: 0px;
 }
 
 .text-on-slide.no-subtitle .view-all{
