@@ -6401,7 +6401,7 @@ nav[aria-label="breadcrumb"]{
     top: auto;
 }
 #article-detail .article-wrap .article-title{
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 }
 .article-title h1{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -6445,6 +6445,7 @@ nav[aria-label="breadcrumb"]{
 .art-con-comment .index-head{
 	margin-top: 40px;
 	margin-bottom: 13px;
+	line-height: 1;
 }
 .art-con-comment textarea{
 	height: 115px;
@@ -6514,10 +6515,12 @@ nav[aria-label="breadcrumb"]{
 .sidebar-right-top .index-head{
 	margin-top: 0px;
 	margin-bottom: 13px;
+	line-height: 1;
 }
 .sidebar-right-bottom .index-head{
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-bottom: 13px;
+	line-height: 1;
 }
 .sidebar-right-bottom .index-head a:hover{
 	color: #CF3339;
@@ -6526,7 +6529,7 @@ nav[aria-label="breadcrumb"]{
 	color: #454545;
 }
 .sidebar-right .side-content-wrap{
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	margin-bottom: 40px;
 }
 .sidebar-right .item img{
@@ -6539,8 +6542,8 @@ nav[aria-label="breadcrumb"]{
 #article-detail .sidebar-right .side-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 10px;
+	line-height: 1.4;
+	margin-bottom: 5px;
 	display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -6550,7 +6553,7 @@ nav[aria-label="breadcrumb"]{
 #article-detail .sidebar-right .side-content{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 1.4;
 	margin-bottom: 0px;
 	display: -webkit-box;
     -webkit-line-clamp: 2;

@@ -151,7 +151,7 @@
 
 @media (max-width: 576px) {
   .breadcrumb.bc-content{
-    padding-left: 0;
+    padding: 5px 0 7px 0;
     font-size: 12px;
   }
   .menu-global > .content-wrap{
@@ -1317,7 +1317,7 @@
 }
 .article-wrap .article-content p{
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.4;
 }
 .article-wrap .article-content .hightlight{
   font-size: 16px;
@@ -1521,13 +1521,14 @@
     line-height: 18px;
 }
 #article-detail .article-wrap .article-title {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 .article-title .art-con-title {
     margin-top: 10px;
 }
 #article-detail .index-head{
     font-size: 20px;
+    line-height: 1;
 }
 .art-con-comment .card-register-center {
     padding: 7px 20px;
@@ -1558,7 +1559,7 @@
     margin-top: 20px;
 }
 .sidebar-right-bottom h3.index-head{
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .media.box-comment .text-right p {
     font-size: 10px;
@@ -1596,6 +1597,10 @@
 
 .article-page .slide-wrap .index-slide2 .item .slide-content{
   height: 33px;
+}
+
+.index-slide1 .item {
+    padding-top: 5px;
 }
 
 
