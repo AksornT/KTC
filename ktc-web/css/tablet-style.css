@@ -276,8 +276,7 @@
   .item .slide-title{
     padding-top: 10px;
     font-size: 18px;
-    line-height: 28px;
-    height: 65px;
+    max-height: 60px;
   }
   .item .slide-content{
     padding-top: 5px;

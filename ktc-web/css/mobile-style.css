@@ -276,6 +276,7 @@
   }
   .menu-global .search-on-menu{
     padding: 7px;
+    top: 0;
   }
   .menu-global .on-right{
     width: 250px;
@@ -593,13 +594,12 @@
   }
   .item .slide-title{
     font-size: 14px;
-    line-height: 20px;
+    max-height: 47px;
     padding-top: 10px;
   }
   .item .slide-content{
     font-size: 12px;
     padding-top: 0px;
-    margin-bottom: 47px;
     line-height: 18px;
   }
   .footer-badge.tapktc{
