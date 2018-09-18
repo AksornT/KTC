@@ -212,7 +212,7 @@ a:hover{
 	position: absolute;
 	bottom: 0;
 	left: 0.8rem;
-	right: 1.05rem;
+	right: 0.75rem;
 	height: 3px;
 	background: #000;
 	content: "";
@@ -220,7 +220,8 @@ a:hover{
 }
 
 .scrolled-menu > li:hover:after,
-.scrolled-menu > li.active:after{
+.scrolled-menu > li.active:after,
+.scrolled-menu > li.current:after{
 	background: #CF3339;
 }
 
@@ -371,7 +372,7 @@ a:hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 13px;
     letter-spacing: 1px;
-    padding: 2px 15px 6px 12px;
+    padding: 7px 12px;
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
@@ -559,7 +560,9 @@ a:hover{
 }
 
 .scrolled-menu > li i {
-    margin-right: -10px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 9px);
 }
 
 .only-desktop{
@@ -6617,12 +6620,13 @@ nav[aria-label="breadcrumb"]{
 
 @media (max-width: 1200px) {
 	.scrolled-menu > li{
-		font-size: 14px;
-    	padding: 23px 0.3rem 16px 0.3rem;
+		font-size: 13px;
+    	padding: 23px 0.7rem 16px 0.1rem;
+    	font-family: 'Conv_SukhumvitTadmai_Tex';
 	}
 	.scrolled-menu > li:after {
-	    left: 0.35rem;
-	    right: 0.53rem;
+	    left: 0.11rem;
+	    right: 0.6rem;
 	}
 	.card-register-btn{
 		font-size: 12px;
@@ -6835,6 +6839,10 @@ nav[aria-label="breadcrumb"]{
   }
   #card-detail-regis .detail-register-desc.section-doc-regis h5{
     margin-top: 60px;
+  }
+
+  .owl-item {
+    opacity: 1;
   }
 
   }
