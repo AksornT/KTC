@@ -75,6 +75,10 @@ $(document).ready(function() {
         elem.addEventListener('touchend', touchHandler, {passive: false});
     });
 
+
+
+    
+
     //Sticky page nav
     var stickyNavScrollTo = function(elementId, offset) {
         offset = offset == null ? 0 : offset;
@@ -134,9 +138,7 @@ $(document).ready(function() {
     //can submit only when all input are filled
 
     $('.form-wrap button[type="submit"]').prop('disabled', true);
-    
-
-    var toValidate = jQuery('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required');
+    var toValidate = jQuery('.form-wrap input[type="text"].required,.form-wrap input[type="password"].required');
     var theValidate = jQuery('.form-wrap input[type="checkbox"].required');
     valid = false;
     valid2 = true;
@@ -165,7 +167,8 @@ $(document).ready(function() {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
         }
     });
-    toValidate.on('keyup', function () {
+
+     toValidate.on('keyup', function () {
         if (jQuery(this).val().length > 0) {
             jQuery(this).data('valid', true);
             console.log("filled");
@@ -185,7 +188,9 @@ $(document).ready(function() {
         } else {
             jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
         }
-    });
+     });
+
+ 
 
 
 
@@ -204,6 +209,8 @@ $(document).ready(function() {
     $('#regis-mer').on('click touch', function () {
       $("#pg-regis").attr("action", "register-merchant-2.html");
     });
+
+   
         
 
 
@@ -563,3 +570,47 @@ function myFunction() {
         x.style.display = "none";
     }
 }
+
+
+
+
+function show1(){
+  document.getElementById('type2').style.display ='none';
+  document.getElementById('type1').style.display ='block';
+}
+function show2(){
+  document.getElementById('type2').style.display ='block';
+  document.getElementById('type1').style.display ='none';
+}
+
+
+
+$(document).ready(function() {
+
+      var idcardSelected = document.getElementById("idcardSelected");
+      var idcard = document.getElementById("idcard");
+      // Input Passpord
+      var passpord= document.getElementById("passpord");
+
+
+      $('#exampleFormControlSelect1').change(function(){
+      // If the checkbox is checked, display the output text
+          if ($(this).val() == "idcard"){
+                $(idcard).show();
+                $(passpord).hide();
+                console.log('id');
+          } else {
+                $(idcard).hide();
+                $(passpord).show();
+                console.log('passport');
+          }
+      });
+
+
+});
+
+
+
+
+
+
