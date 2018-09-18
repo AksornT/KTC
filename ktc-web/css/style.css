@@ -212,7 +212,7 @@ a:hover{
 	position: absolute;
 	bottom: 0;
 	left: 0.8rem;
-	right: 0.8rem;
+	right: 1.05rem;
 	height: 3px;
 	background: #000;
 	content: "";
@@ -383,7 +383,7 @@ a:hover{
 
 .login-btn i{
     font-size: 19px;
-    margin: 0 1px;
+    margin: -5px 1px;
     position: relative;
     top: 2px;
 }
@@ -6617,12 +6617,20 @@ nav[aria-label="breadcrumb"]{
 
 @media (max-width: 1200px) {
 	.scrolled-menu > li{
-		font-size: 15px;
+		font-size: 14px;
     	padding: 23px 0.3rem 16px 0.3rem;
+	}
+	.scrolled-menu > li:after {
+	    left: 0.35rem;
+	    right: 0.53rem;
 	}
 	.card-register-btn{
 		font-size: 12px;
     	padding: 8px 16px;
+	}
+	.login-btn{
+		font-size: 12px;
+    	padding: 7px 16px;
 	}
 
 	.profile-name{
