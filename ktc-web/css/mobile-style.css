@@ -839,11 +839,12 @@
   .detail-register-desc h5{
     font-size: 20px;
     margin-top: 25px;
-    line-height: 33px;
+    line-height: 28px;
   }
   .detail-register-desc p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
+    padding: 20px 0 6px 0;
   }
   .proud-head, .header-big-cover{
     height: 234px;
@@ -856,7 +857,7 @@
     width: 268px;
   }
   .proud-logo {
-    margin: 127px auto 40px auto;
+    margin: 110px auto 30px auto;
   }
   .proud-logo + h2 {
     font-size: 20px;
