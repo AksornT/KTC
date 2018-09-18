@@ -75,6 +75,10 @@ $(document).ready(function() {
         elem.addEventListener('touchend', touchHandler, {passive: false});
     });
 
+
+
+    
+
     //Sticky page nav
     var stickyNavScrollTo = function(elementId, offset) {
         offset = offset == null ? 0 : offset;
@@ -236,9 +240,6 @@ $(document).ready(function() {
     });
 
 
-
-
-
     //styling select dropdown
     $('.form-wrap select').each(function(){
         $(this).after( '<span class="select-arrow"></span>' );
@@ -252,6 +253,8 @@ $(document).ready(function() {
     $('#regis-mer').on('click touch', function () {
       $("#pg-regis").attr("action", "register-merchant-2.html");
     });
+
+   
         
 
 
@@ -605,9 +608,53 @@ function myFunction() {
 //for compare credit
 function myFunction() {
     var x = document.getElementById("myCompare");
-    if (x.style.display === "none") {
+    if (x.style.display == "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
 }
+
+
+
+
+function show1(){
+  document.getElementById('type2').style.display ='none';
+  document.getElementById('type1').style.display ='block';
+}
+function show2(){
+  document.getElementById('type2').style.display ='block';
+  document.getElementById('type1').style.display ='none';
+}
+
+
+
+$(document).ready(function() {
+
+      var idcardSelected = document.getElementById("idcardSelected");
+      var idcard = document.getElementById("idcard");
+      // Input Passpord
+      var passpord= document.getElementById("passpord");
+
+
+      $('#exampleFormControlSelect1').change(function(){
+      // If the checkbox is checked, display the output text
+          if ($(this).val() == "idcard"){
+                $(idcard).show();
+                $(passpord).hide();
+                console.log('id');
+          } else {
+                $(idcard).hide();
+                $(passpord).show();
+                console.log('passport');
+          }
+      });
+
+
+});
+
+
+
+
+
+

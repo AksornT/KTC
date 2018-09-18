@@ -1663,6 +1663,21 @@ button.close{
 	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 }
+#type1 {
+  display: block;
+}
+
+#type2 {
+  display: none;
+}
+
+#idcard {
+  display: block;
+}
+
+#passpord {
+  display: none;
+}
 
 .compare-cancel:hover{
 	cursor: pointer;
@@ -2264,14 +2279,14 @@ article.page-content #card-detail-regis h3::after{
 }
 
 .card-register-center, .btn-action {
-	background: #CF3339;
-	color: #fff;
+	background: #fff;
+	color: #CF3339;
 	text-align: center;
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Bol', Helvetica, Arial, sans-serif;
 	padding: 13px 49px;
 	border-radius: 6px;
-	border: transparent;
+	border: 1px solid #CF3339;
 	margin: 60px 0;
 	min-width: 176px;
 	position: relative;
@@ -2285,6 +2300,7 @@ article.page-content #card-detail-regis h3::after{
 	pointer-events:none;
 	background: rgba(91,102,112,.6) !important;
 	color: #fff;
+	border-color: transparent;
 }
 
 a.card-register-center, a.btn-action {
@@ -2293,7 +2309,7 @@ a.card-register-center, a.btn-action {
 
 .card-register-center:hover, .btn-action:hover {
 	cursor: pointer;
-	color: #fff;
+	color: #CF3339;
 	top: -3px;
 	-webkit-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
@@ -2458,7 +2474,7 @@ a.card-register-center, a.btn-action {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     font-family: 'Conv_SukhumvitTadmai_Tex';
     line-height: 1.5;
     padding-top: 60px;
@@ -2657,6 +2673,7 @@ article.page-content #card-detail-regis h3::after{
 .input-notice{
 	padding: 7px 0;
     font-family: 'Conv_SukhumvitTadmai_Tex';
+    line-height: 21px;
 }
 
 .img-result{
@@ -3549,7 +3566,7 @@ section#section-flexi-cards {
 .sticky-right .card-register-center,
 .sticky-right .btn-action {
 	font-size: 16px;
-	padding: 10px 34px;
+	padding: 8px 32px;
 	line-height: 26px;
 	margin: 18px 0 18px 20px;
 	display: inline-block;
@@ -3615,7 +3632,7 @@ section#section-flexi-cards {
 
 .form-wrap input[type="text"].hasText + label,
 .form-wrap input[type="password"].hasText + label{
-	font-size: 12px;
+	font-size: 14px;
 	top: 38px;
 }
 
