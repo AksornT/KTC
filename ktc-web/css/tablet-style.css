@@ -259,7 +259,7 @@
     flex: 0 100%;
   }
   .index-head {
-    padding-bottom: 4px;
+    /*padding-bottom: 4px;*/
   }
   .another-sub span{
     display: none;
@@ -274,14 +274,15 @@
     padding-top: 8px;
   }
   .item .slide-title{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 18px;
     line-height: 28px;
+    height: 65px;
   }
   .item .slide-content{
     padding-top: 5px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.4;
   }
 
   .slide-wrap:before,
@@ -634,8 +635,8 @@
     margin-bottom: 0;
   }
   .sub-title{
-    line-height: 36px;
-    font-size: 20px;
+    line-height: 26px;
+    font-size: 16px;
     letter-spacing: 0;
   }
   .input-notice{
@@ -963,7 +964,7 @@
   .sticky-right .btn-action {
     font-size: 14px;
     line-height: 22px;
-    padding: 4px 25px;
+    padding: 3px 25px;
     margin: 7px 0 7px 15px;
   }
 
@@ -1203,6 +1204,7 @@
 
   .row-search-filter.only-mobile{
     display: flex;
+    margin: 20px 0 0 0;
   }
 
   .row-search-filter .filter-btn.only-desktop{
@@ -1215,7 +1217,6 @@
 
   .menu-sub-icon .nav-item {
     flex: 0 0 25%;
-    margin-bottom: 10px;
   }
     .menu-sub-icon .nav-item:after {
       height: 60px;
@@ -1227,7 +1228,6 @@
       display: none;
     }
   .menu-sub-icon .nav-link {
-    height: 100px;
     font-size: 12px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1238,7 +1238,7 @@
       max-width: 40px;
       max-height: 40px;
       height: auto;
-      margin: 0 auto 5px;
+      margin: 0 auto -2px auto;
     }
 
     .menu-sub-icon .permanent-link .nav-link:after{
@@ -1281,13 +1281,42 @@
     }
     .art-on-mobile{
       display: block;
-      margin-top: 20px;
-      margin-bottom: -18px;
       padding-left: 0;
+    }
+    #article-detail .article-wrap .article-cover{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #article-detail .article-wrap .article-title{
+      margin-bottom: 20px;
+    }
+    .article-title .art-con-title h2{
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .article-title .art-con-title {
+      margin-top: 15px;
+    }
+    .art-con-detail img {
+      margin: 10px auto 20px auto;
     }
     .sidebar-right-top .index-head,
     .sidebar-right-bottom .index-head {
-      margin-top: 60px;
+      margin-top: 40px;
+    }
+    .sidebar-right .side-content-wrap {
+      margin-bottom: 20px;
+    }
+
+    .promotion-page .item .slide-title, 
+    .article-page .item .slide-title{
+      height: 60px;
+      line-height: 1.4;
+    }
+
+    .article-page .slide-wrap .index-slide2 .item .slide-content{
+      height: 44px;
+      line-height: 1.4;
     }
 
 }

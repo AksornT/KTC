@@ -151,7 +151,8 @@
 
 @media (max-width: 576px) {
   .breadcrumb.bc-content{
-    padding-left: 0;
+    padding: 5px 0 7px 0;
+    font-size: 12px;
   }
   .menu-global > .content-wrap{
     padding: 0 20px;
@@ -567,18 +568,17 @@
   .index-head{
     font-size: 14px;
     margin-top: 60px;
-    padding-bottom: 4px;
     border-bottom: 3px solid #CF3339;
   }
   .text-on-slide{
-    margin-top: 11.8px;
-    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-bottom: 0;
   }
   .text-on-slide p{
     font-size: 16px;
   }
   .text-on-slide a{
-    font-size: 11px;
+    font-size: 14px;
     padding: 2px;
   }
   .owl-nav button{
@@ -839,11 +839,12 @@
   .detail-register-desc h5{
     font-size: 20px;
     margin-top: 25px;
-    line-height: 33px;
+    line-height: 28px;
   }
   .detail-register-desc p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
+    padding: 20px 0 6px 0;
   }
   .proud-head, .header-big-cover{
     height: 234px;
@@ -856,7 +857,7 @@
     width: 268px;
   }
   .proud-logo {
-    margin: 127px auto 40px auto;
+    margin: 110px auto 30px auto;
   }
   .proud-logo + h2 {
     font-size: 20px;
@@ -885,7 +886,7 @@
     padding: 30px 0;
   }
   button.card-register-center, button.btn-action {
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     margin-bottom: 20px;
   }
@@ -1317,7 +1318,7 @@
 }
 .article-wrap .article-content p{
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.4;
 }
 .article-wrap .article-content .hightlight{
   font-size: 16px;
@@ -1334,8 +1335,11 @@
 .article-wrap .article-collapse {
   margin-bottom: 20px;
 }
+.art-con-tag {
+  margin-top: 30px;
+}
 .article-wrap .article-tag {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .register-wrapper .nav .nav-item{
   padding: 0;
@@ -1402,7 +1406,7 @@
 }
 
 .index-slide1 .owl-dots{
-  margin: 0 0 10px 0;
+  margin: 0 ;
 }
 
 .slide-wrap .item .slide-meta .fav-btn{
@@ -1411,13 +1415,13 @@
 
 .promotion-page .item .slide-title,
 .article-page .item .slide-title{
-  height: 50px;
+  height: 48px;
 }
 
 .promotion-page .item .slide-title + .slide-content,
 .article-page .item .slide-title + .slide-content{
   margin-bottom: 20px;
-  height: 36px;
+  height: 33px;
 }
 
 .promotion-page .item .slide-content{
@@ -1510,27 +1514,27 @@
 
 /* article detail -eve */
 .article-title h1 {
-    font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 16px;
     line-height: 24px;
 }
 .article-title .art-con-title h2 {
-    font-family: 'Conv_SukhumvitTadmai_Thi';
     font-size: 12px;
     line-height: 18px;
 }
+#article-detail .article-wrap .article-title {
+    margin-bottom: 12px;
+}
 .article-title .art-con-title {
     margin-top: 10px;
-    margin-bottom: 20px;
-}
-.art-con-detail img {
-    margin: 20px auto;
 }
 #article-detail .index-head{
     font-size: 20px;
+    line-height: 1;
 }
 .art-con-comment .card-register-center {
-    padding: 10px 20px;
+    padding: 7px 20px;
+    font-size: 16px;
+    min-width: 158px;
     width: 158px;
 }
 #article-detail .side-content-wrap p{
@@ -1539,12 +1543,12 @@
 #article-detail .sidebar-right .side-title{
     font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
 }
 #article-detail .sidebar-right .side-content{
     font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
 }
 .sidebar-right .side-content-wrap{
     margin-bottom: 0px;
@@ -1552,18 +1556,52 @@
 #article-detail .article-wrap .article-content {
     margin-bottom: 60px;
 }
+.art-con-comment .index-head {
+    margin-top: 20px;
+}
+.sidebar-right-bottom h3.index-head{
+    margin-top: 60px;
+}
 .media.box-comment .text-right p {
     font-size: 10px;
     line-height: 15px;
+    padding-left: 5px;
+}
+.art-on-mobile{
+    margin-top: 0px;
 }
 #article-detail .breadcrumb{
-    font-size: 10px;
+    padding-right: 0px;
 }
 #article-detail .breadcrumb .breadcrumb-item.active{
-  width: 220px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    width: calc(100% - 80px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#article-detail .article-wrap .article-tag a{
+    margin-right: 0px;
+}
+.comment-content {
+    margin-top: 30px;
+}
+#article-detail .article-wrap .article-icon {
+    padding-top: 10px;
+}
+#article-detail .article-wrap .article-cover {
+    margin-bottom: 0px;
+}
+
+.text-on-slide.no-subtitle .view-all{
+  padding-bottom: 8px;
+}
+
+.article-page .slide-wrap .index-slide2 .item .slide-content{
+  height: 33px;
+}
+
+.index-slide1 .item {
+    padding-top: 5px;
 }
 
 
