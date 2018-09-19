@@ -2700,11 +2700,14 @@ section .form-register-completed .img-result {
 	cursor: pointer;
 }
 .main-loan a img:hover{
-	margin-top: -3px;
+	top: -3px;
+	box-shadow: 0px 3px 13px rgba(0,0,0,0.3);
 }
 .main-loan img{
 	width: 270px;
 	height: auto;
+	position: relative;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 .main-loan .box-content{
 	margin-top: 28px;
