@@ -408,9 +408,13 @@ $(document).ready(function() {
             $('.box-compare-credit:nth-child(2)').removeClass('compare-item-3').addClass('compare-item-2');
             $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
             cards = cards - 1;
-            if(cards == 0) {
+            if(cards == 1) {
+                $('.go-compare').prop("disabled", true);
+            }
+            if(cards == 0 ) {
                 $('.click-compare').removeClass('active');
             }
+            
             console.log(cards);
             $( '.box-compare-credit p + span' ).unbind();
             compareFunction();
@@ -424,6 +428,9 @@ $(document).ready(function() {
             $('.box-compare-credit:nth-child(2)').removeClass('compare-item-3').addClass('compare-item-2');
             $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
             cards = cards - 1;
+            if(cards == 1) {
+                $('.go-compare').prop("disabled", true);
+            }
             if(cards == 0) {
                 $('.click-compare').removeClass('active');
             }
@@ -438,8 +445,11 @@ $(document).ready(function() {
         $('.box-compare-credit:nth-child(3) p + span').bind('click touch', function (event){
             $(this).parent().remove();
             $('.choice-3').removeClass('active').removeClass('choice-3');
-            $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>')
+            $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>');
             cards = cards - 1;
+            if(cards == 1) {
+                $('.go-compare').prop("disabled", true);
+            }
             if(cards == 0) {
                 $('.click-compare').removeClass('active');
             }
@@ -451,6 +461,21 @@ $(document).ready(function() {
     }
 
     compareFunction();
+
+    $('.click-compare .btn-cancel').on('click touch', function () {
+        cards = 0;
+        $('.click-compare').removeClass('active');
+        $('.go-compare').prop("disabled", true);
+        $('.compare-active').removeClass('active choice-1 choice-2 choice-3');
+        $('.box-compare-credit').each(function(){
+            $(this).remove();
+        });
+        $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div><div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div><div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>');
+        console.log(cards);
+        compareFunction();
+        return false;
+    });
+
 
     //for search
     $(".suggess-list").on('click touch', function () {

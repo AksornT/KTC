@@ -1155,7 +1155,7 @@ body.modal-open{
 .full-modal .close{
 	top: 1rem;
 	right: 1rem;
-	position: absolute;
+	position: fixed;
 	color: #CF3339;
 	font-size: 40px;
 	opacity: 1;
@@ -1224,6 +1224,10 @@ body.modal-open{
     -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
 	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+}
+
+.card-choice:nth-child(1){
+	margin-top: 38px;
 }
 
 .card-choice:hover{
@@ -1782,12 +1786,12 @@ a:hover .on-hover{
 
 /* creditcard page -eve */
 .content-filter{
-	padding-top: 35px;
 	padding-bottom: 26px;
 }
 .breadcrumb.bc-content{
 	background-color: transparent;
 	padding-top: 15px;
+	padding-left: 0;
 }
 .breadcrumb.bc-content .breadcrumb-item a{
 	color: rgba(91, 102, 112, 0.6);
@@ -1812,6 +1816,9 @@ a:hover .on-hover{
 }
 .col-right-filter{
 	text-align: right;
+    align-self: center;
+    margin-bottom: 1rem;
+    padding-top: 10px;
 }
 .col-right-filter input{
 	width: 335px;
@@ -1819,7 +1826,6 @@ a:hover .on-hover{
 	padding-left: 20px;
 	border: 1px solid #5B6670;
 	border-radius: 6px;
-	margin-right: 20px;
 }
 .col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 14px;
@@ -1840,6 +1846,7 @@ a:hover .on-hover{
 .col-right-filter .search-credit{
   display: inline-block;
   position: relative;
+  margin-right: 20px;
 }
 .col-right-filter .search-credit:after{
   display: block;
@@ -1850,7 +1857,7 @@ a:hover .on-hover{
   background-image: url(../img/ico-search-inline.png);
   position: absolute;
   top: 8px;
-  right: 30px;
+  right: 10px;
 }
 .btn-filter{
 	display: inline-block;
@@ -1866,6 +1873,9 @@ a:hover .on-hover{
 }
 .btn-filter.only-mobile{
   display: none;
+}
+.btn-filter.only-desktop.with-tablet{
+	margin-bottom: 6px;
 }
 .main-credit{
 	margin-bottom: 130px;
@@ -1889,7 +1899,7 @@ a:hover .on-hover{
 	margin-bottom: 40px;
 }
 .box-credit-content{
-	padding: 20px 10px 20px 10px;
+	padding: 20px 10px 0 10px;
 }
 .main-credit .credit-title{
 	font-family: 'Gotham-Bold';
@@ -1937,9 +1947,8 @@ a:hover .on-hover{
 }
 .click-compare{
 	background-color: #F2F2F2;
-	background-size: cover;
 	/*height: 195px;*/
-	padding: 40px 0;
+	padding: 20px 0 10px 0;
 	opacity: 0;
 	pointer-events: none;
 	position: fixed;
@@ -1980,12 +1989,13 @@ a:hover .on-hover{
 .click-compare p{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 1.4;
 }
 .compare-title p{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 24px;
 	line-height: 28px;
+	margin-top: 17px;
 }
 .btn-right{
 	text-align: right;
@@ -2059,16 +2069,19 @@ a:hover .on-hover{
 }
 .filter-content p{
   font-family: 'Conv_SukhumvitTadmai_Tex';
-  text-align: center;
-  font-size: 28px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 33px;
+  margin: 20px 0 10px 0;
 }
 .filter-content .box-other-form label{
-  font-size: 22px;
+  font-size: 14px;
   letter-spacing: 0;
-  line-height: 28px;
+  line-height: 1.4;
 }
 .filter-content .checkmark{
   border: 1px solid #CF3339;
+  top: 10px;
 }
 .row-lifestyle{
   padding: 0 40px;
@@ -2080,10 +2093,7 @@ a:hover .on-hover{
   height: 25px;
 }
 .filter-content .box-other-form.checkbox-form {
-  padding-top: 40px;
-}
-.filter-content .checkmark{
-  top: 40px;
+  padding: 10px 0;
 }
 .btn-filter-search{
   text-align: center;
@@ -2101,13 +2111,13 @@ a:hover .on-hover{
   color: #CF3339;
   font-size: 18px;
   font-family: 'Conv_SukhumvitTadmai_Bol';
-  margin: 140px 10px 30px 0;
+  margin: 50px 10px 30px 0;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 }
 .btn-filter-search .btn-default{
   width: 145px;
-  margin-top: 140px;
+  margin-top: 50px;
   margin-left: 10px;
 }
 
@@ -3758,10 +3768,10 @@ section#section-flexi-cards {
   position: absolute;
   top: 60px;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 	background-color: #fff;
-	border-radius: 3px;
+	border-radius: 2px;
 	border: 1px solid rgba(91,102,112,.7);
 	cursor: pointer;
 }
@@ -3782,10 +3792,10 @@ section#section-flexi-cards {
 }
 /* Style the checkmark/indicator */
 .box-other-form .checkmark:after {
-	left: 7px;
+	left: 6px;
 	top: 2px;
-	width: 7px;
-	height: 12px;
+	width: 6px;
+	height: 11px;
 	border: solid white;
 	border-width: 0 2px 2px 0;
 	border-radius: 2px;
@@ -3996,7 +4006,7 @@ button.btn-next-step{
 }
 /* modal condition */
 #box-condition{
-	padding: 60px 80px 80px 80px;
+	padding: 4px 80px 80px 80px;
 }
 .condition-title h3{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -6616,6 +6626,18 @@ nav[aria-label="breadcrumb"]{
 	padding-bottom: 45px;
 }
 
+.filter-content .brand-wrap .box-other-form.checkbox-form{
+	height: 100%;
+	display: flex;
+}
+
+.filter-content .brand-wrap .box-other-form label{
+	align-self: center;
+}
+
+.filter-content .brand-wrap .checkmark{
+	top: calc(50% - 11px);
+}
 
 
 @media (min-width: 1366px) {
