@@ -1195,8 +1195,10 @@ body.modal-open{
 	display: block;
 	width: 100%;
 	position: relative;
-	margin-bottom: 38px;
+	margin-bottom: 25px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 35px;
+
 }
 
 .full-modal .modal-title:after{
@@ -5188,22 +5190,22 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .row-search-filter .filter-btn {
     font-family: 'SukhumvitTadmai_Tex';
     font-size: 20px;
-    line-height: 38px;
+    line-height: 28px;
     color: #5B6670;
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-    margin-top: -10px;
+    margin-top: 0px;
     margin-left: 22px;
 }
 
 .row-search-filter .filter-btn img {
-    width: 28px;
+    width: 20px;
     margin-right: 5px;
 }
 
 .row-search-filter .filter-btn img + span{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Conv_SukhumvitTadmai_Tex";
 }
 
@@ -5263,7 +5265,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     font-size: 16px;
     line-height: 26px;
     color: #5B6670;
-    padding: 22px 20px 22px 20px;
+    padding: 18px 20px 18px 20px;
 }
 
 .article-page .menu-sub-icon .nav-link{
@@ -5312,8 +5314,12 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .promotion-page .breadcrumb{
-	margin-top: 40px;
+	margin: 0;
 	padding-left: 0;
+}
+
+.bn-for-desktop{
+	margin-top: 60px;
 }
 
 .promotion-page .slide-wrap + .slide-padd{
@@ -5365,8 +5371,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     background: #cf3339;
 }
 
-
-
 .promotion-page .item .slide-title,
 .article-page .item .slide-title{
 	display: -webkit-box;
@@ -5386,6 +5390,10 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     overflow: hidden;
     max-height: 56px;
     margin-bottom: 10px;
+}
+
+.slide-wrap.last-slide{
+	margin-bottom: 100px;
 }
 
 .banner-row a{
@@ -5658,7 +5666,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
 }
 
 .edit-button{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Conv_SukhumvitTadmai_Tex";
 	padding-left: 25px;
 	background: url("../img/ico-edit.png") no-repeat;
@@ -5668,11 +5676,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
 
 .all-type-list{
 	display: inline-block;
-	margin: 20px 15px;
+	margin: 10px 5px;
 	position: relative;
 	top: 0;
 	vertical-align: top;
-	width: 75px;
+	width: 145px;
 	max-width: 19.5vw;
 }
 
@@ -5687,6 +5695,8 @@ a.all-type-list[href]:hover{
 	border-radius: 6px;
 	margin-bottom: 9px;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .all-type-list img{
@@ -5697,15 +5707,15 @@ a.all-type-list[href]:hover{
 }
 
 .all-type-list p{
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 14px;
+	line-height: 18px;
 	text-align: center;
 	font-family: "Conv_SukhumvitTadmai_Tex";
 	color: #000;
 }
 
 #edit-my-link-modal .btn-wrap{
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .cancel-btn{
