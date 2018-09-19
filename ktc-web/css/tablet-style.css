@@ -427,22 +427,11 @@
   .content-filter nav{
     display: inline-block;
   }
-  .btn-filter.only-desktop{
-  	display: none;
-  }
-  .btn-filter.only-mobile{
-  	display: inline-block;
-    float: right;
-    padding-top: 12px;
-  }
   .col-right-filter{
-  	text-align: center;
+  	text-align: right;
   }
   .col-right-filter input{
     width: 100%;
-  }
-  .col-right-filter .search-credit{
-    display: block;
   }
   .main-credit h3{
     padding-top: 20px;
@@ -462,12 +451,6 @@
   .click-compare .btn-default,
   .click-compare .btn-cancel{
     width: 100%;
-  }
-  .btn-filter img{
-    width: 20px;
-  }
-  .btn-filter span{
-    font-size: 12px;
   }
   .filter-lifestyle{
     padding-top: 40px;
@@ -1316,6 +1299,10 @@
     .article-page .slide-wrap .index-slide2 .item .slide-content{
       height: 44px;
       line-height: 1.4;
+    }
+
+    .btn-filter.only-desktop.with-tablet{
+      display: inline-block;
     }
 
 }

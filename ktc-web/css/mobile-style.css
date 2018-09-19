@@ -689,7 +689,7 @@
     font-size: 18px;
   }
   .filter-content .box-other-form label{
-    font-size: 16px;
+    /*font-size: 16px;*/
   }
   .filter-content .box-other-form img {
     height: 35px;
@@ -1603,6 +1603,27 @@
 .index-slide1 .item {
     padding-top: 5px;
 }
+
+  .btn-filter.only-mobile{
+    display: inline-block;
+    float: right;
+    padding-top: 7px;
+  }
+  .col-right-filter .search-credit{
+    display: block;
+    margin-right: 0;
+  }
+
+  .btn-filter img{
+    width: 20px;
+  }
+  .btn-filter span{
+    font-size: 12px;
+  }
+
+  .btn-filter.only-desktop.with-tablet {
+    display: none;
+  }
 
 
 }
