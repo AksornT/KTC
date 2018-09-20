@@ -6083,8 +6083,9 @@ a.all-type-list[href]:hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
   color: #fff;
   text-align: center;
-  padding-top: 3px;
+    padding-top: 3px;
 	display: inline-block;
+	margin-left: 25px;
 }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
   top: 10px;
@@ -6099,7 +6100,7 @@ a.all-type-list[href]:hover{
   top: 10px;
   right: 14px;
 	float: right;
-  padding-top: 5px;
+   padding-top: 5px;
 }
 
 .non-member .ui-datepicker .ui-datepicker-next {
@@ -6121,6 +6122,7 @@ a.all-type-list[href]:hover{
   text-align: center;
   padding-top: 3px;
 	display: inline-block;
+	margin-right: 25px;
 }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
   top: 10px;
@@ -6160,7 +6162,7 @@ a.all-type-list[href]:hover{
   padding: 4px 5px;
 }
 .ui-datepicker .ui-datepicker-calendar td {
-  padding: 4px 15px;
+  padding: 4px 10px;
 }
 .ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar td a {
   text-align: center;
@@ -6191,6 +6193,8 @@ a.all-type-list[href]:hover{
   bottom: 0px;
   left: -4px;
   border-radius: 60px;
+  margin-left: 50%;
+  left: -15px;
 }
 .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-warning {
   position: relative;
@@ -6258,8 +6262,23 @@ a.all-type-list[href]:hover{
   position: absolute;
   z-index: -1;
 	bottom: 0px;
-  left: -4px;
+  left: -15px;
   border-radius: 60px;
+  margin-left: 50%;
+}
+
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month{
+	margin-right: 20px;
+}
+
+.ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar tr{
+	text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 2px;
+    border-radius: 100%;
 }
 
 
