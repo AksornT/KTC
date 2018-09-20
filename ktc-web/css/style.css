@@ -6126,6 +6126,7 @@ a.all-type-list[href]:hover{
   left: 14px;
 	float: left;
   padding-top: 5px;
+  position: absolute;
 }
 .ui-datepicker .ui-datepicker-prev:before {
 	content: '<';
@@ -6136,7 +6137,7 @@ a.all-type-list[href]:hover{
   text-align: center;
     padding-top: 3px;
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 12px;
 }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
   top: 10px;
@@ -6152,6 +6153,7 @@ a.all-type-list[href]:hover{
   right: 14px;
 	float: right;
    padding-top: 5px;
+   position: absolute;
 }
 
 .non-member .ui-datepicker .ui-datepicker-next {
@@ -6173,7 +6175,7 @@ a.all-type-list[href]:hover{
   text-align: center;
   padding-top: 3px;
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 12px;
 }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
   top: 10px;
