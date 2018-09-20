@@ -287,6 +287,8 @@ a:hover{
 .slide-wrap{
 	overflow: hidden;
 	position: relative;
+	padding-top: 5px;
+	margin-top: -5px;
 }
 
 .slide-wrap:before{
@@ -4319,16 +4321,26 @@ input:focus + .suggess-box,
 }
 
 .slide-wrap .card-register-btn{
-	color: #fff;
+	font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 14px;
+    line-height: 14px;
+    padding: 7px 20px;
+    height: 30px;
+    color: #cf3339;
+    background: #FFF;
+    border: 1px solid #cf3339;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
 	display: inline-block;
-	line-height: 14px;
-	position: relative;
-	top: 0;
-	margin-top: 15px;
 }
 
 .slide-wrap .card-register-btn:hover{
-	top: -3px;
+	color:#fff;
+	background:  #cf3339;
 }
 
 .promotion-range{
