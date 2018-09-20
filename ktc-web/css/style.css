@@ -599,6 +599,7 @@ a:hover{
 	color: #454545;
 	border-bottom: 4px solid #CF3339;
 	display: inline-block;
+	padding-bottom: 5px;
 }
 
 .text-on-slide .index-head a{
@@ -3718,6 +3719,7 @@ section#section-flexi-cards {
 .form-wrap input[type="password"].hasText + label{
 	font-size: 14px;
 	top: 38px;
+	color: black;
 }
 
 .form-wrap input[type="text"]:focus + label,
@@ -3785,8 +3787,8 @@ section#section-flexi-cards {
 }
 
 .box-login-con{
-	padding-top: 140px;
-	padding-bottom: 100px;
+	padding-top: 10vh;
+	padding-bottom: 3vh;
 	margin-left: auto;
 	margin-right: auto;
 	width: 404px;
@@ -3825,10 +3827,12 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input[type="password"]:focus + label,
 .box-login-con.form-wrap input[type="password"].hasText:focus + label{
 	left: 0;
+	color: black;
 }
 .box-login-con.form-wrap input[type="text"].hasText + label,
 .box-login-con.form-wrap input[type="password"].hasText + label{
 	left: 0;
+	color:black;
 }
 .box-login-con.form-wrap input[type="checkbox"]{
 	width: 20px;
@@ -3842,7 +3846,7 @@ section#section-flexi-cards {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 0;
   height: 18px;
   width: 18px;
@@ -3880,7 +3884,7 @@ section#section-flexi-cards {
   transform: rotate(45deg);
 }
 .box-other-form.checkbox-form{
-	padding-top: 60px;
+	padding-top: 40px;
 }
 .box-other-form{
 	position: relative;
@@ -3905,7 +3909,7 @@ button.btn-default{
   color: #fff;
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-  margin: 60px 0 30px 0;
+  margin: 40px 0 30px 0;
   cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
 }
@@ -3979,7 +3983,7 @@ button.btn-default:disabled:hover{
 /* Create a custom radio */
 .dotmark {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 0;
   height: 20px;
   width: 20px;
@@ -4780,6 +4784,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	text-align: center;
 	padding-top: 13px;
 }
+
 /* promotion detail -eve */
 .row-breadcrumb-filter {
     padding-top: 35px;
@@ -4813,14 +4818,14 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     top: 0;
 }
 .article-wrap .article-title {
-    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 35px;
     line-height: 54px;
     margin-bottom: 20px;
 }
 .article-wrap .article-icon {
     text-align: right;
-    padding-top: 16px;
+    padding: 16px 0 0 0;
 }
 .article-wrap .article-icon .fav-btn {
     border: 0;
@@ -5177,7 +5182,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .register-wrapper .form-register .checkbox {
-    margin: 90px 0 70px;
+    margin: 90px 0 40px;
 }
 .form-content .checkbox input {
     display: none;
@@ -5428,10 +5433,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .bn-for-desktop{
 	margin-top: 60px;
-}
-
-.promotion-page .slide-wrap + .slide-padd{
-	margin-top: -60px;
 }
 
 .slide-wrap .item .slide-meta .fav-btn {
@@ -5891,8 +5892,8 @@ a.all-type-list[href]:hover{
 	margin-bottom: -50px;
 }
 
-.promotion-page .text-on-slide.no-subtitle{
-	margin-bottom: 5px;
+.text-on-slide.no-subtitle{
+	margin: 0px;
 }
 
 .slide-wrap .index-slide2.sub-sub .item{
@@ -6135,6 +6136,7 @@ a.all-type-list[href]:hover{
   left: 14px;
 	float: left;
   padding-top: 5px;
+  position: absolute;
 }
 .ui-datepicker .ui-datepicker-prev:before {
 	content: '<';
@@ -6143,8 +6145,9 @@ a.all-type-list[href]:hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
   color: #fff;
   text-align: center;
-  padding-top: 3px;
+    padding-top: 3px;
 	display: inline-block;
+	margin-left: 12px;
 }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
   top: 10px;
@@ -6159,7 +6162,8 @@ a.all-type-list[href]:hover{
   top: 10px;
   right: 14px;
 	float: right;
-  padding-top: 5px;
+   padding-top: 5px;
+   position: absolute;
 }
 
 .non-member .ui-datepicker .ui-datepicker-next {
@@ -6181,6 +6185,7 @@ a.all-type-list[href]:hover{
   text-align: center;
   padding-top: 3px;
 	display: inline-block;
+	margin-right: 12px;
 }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
   top: 10px;
@@ -6220,7 +6225,7 @@ a.all-type-list[href]:hover{
   padding: 4px 5px;
 }
 .ui-datepicker .ui-datepicker-calendar td {
-  padding: 4px 15px;
+  padding: 4px 10px;
 }
 .ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar td a {
   text-align: center;
@@ -6251,6 +6256,8 @@ a.all-type-list[href]:hover{
   bottom: 0px;
   left: -4px;
   border-radius: 60px;
+  margin-left: 50%;
+  left: -15px;
 }
 .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-warning {
   position: relative;
@@ -6318,8 +6325,23 @@ a.all-type-list[href]:hover{
   position: absolute;
   z-index: -1;
 	bottom: 0px;
-  left: -4px;
+  left: -15px;
   border-radius: 60px;
+  margin-left: 50%;
+}
+
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month{
+	margin-right: 20px;
+}
+
+.ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar tr{
+	text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 2px;
+    border-radius: 100%;
 }
 
 
@@ -6384,8 +6406,12 @@ a.all-type-list[href]:hover{
   	margin-top: 0;
   	margin-bottom: 0;
 }
+#promotion-detail .item img:hover{
+	top: auto;
+}
 #promotion-detail .article-wrap .article-cover{
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #promotion-detail .article-wrap .article-content p{
 	line-height: 1.4;

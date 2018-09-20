@@ -918,6 +918,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .content-wrap .box-login-con{
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+  }
   .box-login-con.form-wrap input{
     width: 260px;
   }
@@ -1305,8 +1310,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 }
 #promotion-detail .breadcrumb{
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
+}
+.article-wrap .article-icon{
+  padding: 10px 0 0 0;
 }
 .article-wrap .article-icon .fav-btn{
   margin-right: 0;
@@ -1345,6 +1353,10 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 .article-wrap .article-tag {
   margin-bottom: 10px;
 }
+.article-wrap .article-tag a{
+  padding: 3px 23px;
+  margin-right: 0px;
+}
 .register-wrapper .nav .nav-item{
   padding: 0;
 }
@@ -1379,7 +1391,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   padding-top: 10px;
 }
 .register-wrapper .form-register .checkbox {
-    margin: 40px 0 60px;
+    margin: 40px 0 40px;
 }
 .register-wrapper .form-register .btn-submit-form{
   width: 100%;
@@ -1496,12 +1508,20 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 .main-terms-modal.world-modal .close{
   right: 2rem;
 }
+.ui-datepicker{
+  left:15px !important;
+}
 
 .ui-datepicker .ui-datepicker-calendar td{
-  padding: 4px 10px;
+  padding: 4px 7px;
 }
   .menu-sub-icon .five-icons .nav-item{
     flex: 33.33%;
+  }
+
+  .proud-regis-complete button.card-register-center{
+    width: auto;
+    font-size: 18px;
   }
 
   .menu-sub-icon .five-icons .nav-item:nth-child(1){
