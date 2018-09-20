@@ -3709,6 +3709,7 @@ section#section-flexi-cards {
 .form-wrap input[type="password"].hasText + label{
 	font-size: 14px;
 	top: 38px;
+	color: black;
 }
 
 .form-wrap input[type="text"]:focus + label,
@@ -3816,10 +3817,12 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input[type="password"]:focus + label,
 .box-login-con.form-wrap input[type="password"].hasText:focus + label{
 	left: 0;
+	color: black;
 }
 .box-login-con.form-wrap input[type="text"].hasText + label,
 .box-login-con.form-wrap input[type="password"].hasText + label{
 	left: 0;
+	color:black;
 }
 .box-login-con.form-wrap input[type="checkbox"]{
 	width: 20px;
@@ -6123,6 +6126,7 @@ a.all-type-list[href]:hover{
   left: 14px;
 	float: left;
   padding-top: 5px;
+  position: absolute;
 }
 .ui-datepicker .ui-datepicker-prev:before {
 	content: '<';
@@ -6133,7 +6137,7 @@ a.all-type-list[href]:hover{
   text-align: center;
     padding-top: 3px;
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 12px;
 }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
   top: 10px;
@@ -6149,6 +6153,7 @@ a.all-type-list[href]:hover{
   right: 14px;
 	float: right;
    padding-top: 5px;
+   position: absolute;
 }
 
 .non-member .ui-datepicker .ui-datepicker-next {
@@ -6170,7 +6175,7 @@ a.all-type-list[href]:hover{
   text-align: center;
   padding-top: 3px;
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 12px;
 }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
   top: 10px;
