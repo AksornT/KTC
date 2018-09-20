@@ -112,6 +112,11 @@ a, button{
 	cursor: pointer;
 }
 
+input:focus, select:focus{
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
 a:hover{
 	cursor: pointer;
 	text-decoration: none;
@@ -2714,11 +2719,15 @@ section#section-merchant-register-form select.form-control:focus,
     height: 35px;
     margin-top: -36px;
     display: inline-block;
-    right: 0;
+    right: 15px;
     position: absolute;
     background: url(../img/ico-input-arrow.png) no-repeat;
     background-position: center center;
     pointer-events: none;
+}
+
+.form-wrap.box-login-con span.select-arrow{
+	right: 0;
 }
 
 .form-wrap .left span.select-arrow{
