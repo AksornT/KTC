@@ -4753,7 +4753,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     top: 0;
 }
 .article-wrap .article-title {
-    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 35px;
     line-height: 54px;
     margin-bottom: 20px;
@@ -5117,7 +5117,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .register-wrapper .form-register .checkbox {
-    margin: 90px 0 70px;
+    margin: 90px 0 40px;
 }
 .form-content .checkbox input {
     display: none;
@@ -5368,10 +5368,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .bn-for-desktop{
 	margin-top: 60px;
-}
-
-.promotion-page .slide-wrap + .slide-padd{
-	margin-top: -60px;
 }
 
 .slide-wrap .item .slide-meta .fav-btn {
@@ -5831,8 +5827,8 @@ a.all-type-list[href]:hover{
 	margin-bottom: -50px;
 }
 
-.promotion-page .text-on-slide.no-subtitle{
-	margin-bottom: 5px;
+.text-on-slide.no-subtitle{
+	margin: 0px;
 }
 
 .slide-wrap .index-slide2.sub-sub .item{
@@ -6324,8 +6320,12 @@ a.all-type-list[href]:hover{
   	margin-top: 0;
   	margin-bottom: 0;
 }
+#promotion-detail .item img:hover{
+	top: auto;
+}
 #promotion-detail .article-wrap .article-cover{
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #promotion-detail .article-wrap .article-content p{
 	line-height: 1.4;
