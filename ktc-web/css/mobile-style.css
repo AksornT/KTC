@@ -276,6 +276,7 @@
   }
   .menu-global .search-on-menu{
     padding: 7px;
+    top: 0;
   }
   .menu-global .on-right{
     width: 250px;
@@ -593,13 +594,12 @@
   }
   .item .slide-title{
     font-size: 14px;
-    line-height: 20px;
+    max-height: 47px;
     padding-top: 10px;
   }
   .item .slide-content{
     font-size: 12px;
     padding-top: 0px;
-    margin-bottom: 47px;
     line-height: 18px;
   }
   .footer-badge.tapktc{
@@ -689,7 +689,7 @@
     font-size: 18px;
   }
   .filter-content .box-other-form label{
-    font-size: 16px;
+    /*font-size: 16px;*/
   }
   .filter-content .box-other-form img {
     height: 35px;
@@ -1290,6 +1290,10 @@
   opacity: 0;
 }
 
+nav[aria-label="breadcrumb"] + .row-search-filter {
+    padding-top: 6px;
+}
+
 /* promotion detail -eve */
 .article-wrap .article-title{
   font-size: 16px;
@@ -1603,6 +1607,27 @@
 .index-slide1 .item {
     padding-top: 5px;
 }
+
+  .btn-filter.only-mobile{
+    display: inline-block;
+    float: right;
+    padding-top: 7px;
+  }
+  .col-right-filter .search-credit{
+    display: block;
+    margin-right: 0;
+  }
+
+  .btn-filter img{
+    width: 20px;
+  }
+  .btn-filter span{
+    font-size: 12px;
+  }
+
+  .btn-filter.only-desktop.with-tablet {
+    display: none;
+  }
 
 
 }
