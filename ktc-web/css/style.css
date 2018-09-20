@@ -6297,9 +6297,18 @@ a.all-type-list[href]:hover{
     margin: 60px 0 30px 0;
 }
 
+#promotion-detail nav{
+	padding-left: 0;
+}
 #promotion-detail .breadcrumb{
-  margin-top: 40px;
-  margin-bottom: 0;
+  	margin-top: 0;
+  	margin-bottom: 0;
+}
+#promotion-detail .article-wrap .article-cover{
+	margin-top: 10px;
+}
+#promotion-detail .article-wrap .article-content p{
+	line-height: 1.4;
 }
 
 .modal.full-modal.show {
