@@ -2313,8 +2313,8 @@ article.page-content #card-detail-regis h3::after{
 .card-register-center:disabled{
 	pointer-events:none;
 	background: rgba(91,102,112,.6) !important;
-	color: #fff;
-	border-color: transparent;
+	color: #fff !important;
+	border-color: transparent !important;
 }
 
 a.card-register-center, a.btn-action {
@@ -3862,6 +3862,14 @@ button.btn-default:disabled:hover{
 	color: #000;
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+.vl {
+    border-left: rgba(90,102,112,.4) solid 1px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 .link-regis{
 	text-align: center;
