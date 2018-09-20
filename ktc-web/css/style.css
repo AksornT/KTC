@@ -2291,14 +2291,14 @@ article.page-content #card-detail-regis h3::after{
 }
 
 .card-register-center, .btn-action {
-	background: #fff;
-	color: #CF3339;
+	background: #CF3339;
+	color: #fff;
 	text-align: center;
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Bol', Helvetica, Arial, sans-serif;
 	padding: 13px 49px;
 	border-radius: 6px;
-	border: 1px solid #CF3339;
+	border: transparent;
 	margin: 60px 0;
 	min-width: 176px;
 	position: relative;
@@ -2321,7 +2321,7 @@ a.card-register-center, a.btn-action {
 
 .card-register-center:hover, .btn-action:hover {
 	cursor: pointer;
-	color: #CF3339;
+	color: #fff;
 	top: -3px;
 	-webkit-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
@@ -2734,6 +2734,13 @@ section .form-register-completed .img-result {
 	font-family: 'Conv_SukhumvitTadmai_Thi';
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.page-loan-proud .card-register-center,
+.sticky-right.page-loan .card-register-center{
+	color: #CF3339;
+	border: 1px solid #CF3339;
+	background-color: #fff;
 }
 
 h4.content-title{
@@ -4847,16 +4854,18 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 		font-size: 20px;
 }
 .article-wrap .article-collapse {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 .article-wrap .article-collapse .title {
     font-family: 'Conv_SukhumvitTadmai_Bol';
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     color: #000;
+    letter-spacing: 0;
 }
 .article-wrap .article-collapse .title i {
     margin-left: 10px;
+    font-family: 'FontAwesome';
 }
 .article-wrap .article-collapse .title.collapsed i {
     transform: rotate(180deg);
@@ -4864,7 +4873,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .article-wrap .article-collapse .info {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
     margin-top: 10px;
 }
 .article-wrap .article-collapse .info span {
@@ -4881,9 +4890,13 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .article-wrap .article-collapse .info p{
 	margin-bottom: 0;
+	letter-spacing: 0;
 }
 .article-wrap .article-tag {
+	margin-top: 20px;
     margin-bottom: 40px;
+    padding-bottom: 40px;
+	border-bottom: 1px solid #E6E8EA;
 }
 .article-wrap .article-tag a {
     font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -4909,9 +4922,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     color: #000;
 }
 .article-wrap .article-link{
-	padding-bottom: 60px;
 	margin-bottom: 60px;
-	border-bottom: 1px solid #E6E8EA;
 }
 .article-wrap .article-link .link {
     font-family: Helvetica, Arial, sans-serif;
