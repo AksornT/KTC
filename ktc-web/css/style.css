@@ -287,6 +287,8 @@ a:hover{
 .slide-wrap{
 	overflow: hidden;
 	position: relative;
+	padding-top: 5px;
+	margin-top: -5px;
 }
 
 .slide-wrap:before{
@@ -2311,8 +2313,8 @@ article.page-content #card-detail-regis h3::after{
 .card-register-center:disabled{
 	pointer-events:none;
 	background: rgba(91,102,112,.6) !important;
-	color: #fff;
-	border-color: transparent;
+	color: #fff !important;
+	border-color: transparent !important;
 }
 
 a.card-register-center, a.btn-action {
@@ -3861,6 +3863,14 @@ button.btn-default:disabled:hover{
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
+.vl {
+    border-left: rgba(90,102,112,.4) solid 1px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
 .link-regis{
 	text-align: center;
   margin: 45px 0;
@@ -4319,16 +4329,26 @@ input:focus + .suggess-box,
 }
 
 .slide-wrap .card-register-btn{
-	color: #fff;
+	font-family: "Conv_SukhumvitTadmai_Bol";
+    font-size: 14px;
+    line-height: 14px;
+    padding: 7px 20px;
+    height: 30px;
+    color: #cf3339;
+    background: #FFF;
+    border: 1px solid #cf3339;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
 	display: inline-block;
-	line-height: 14px;
-	position: relative;
-	top: 0;
-	margin-top: 15px;
 }
 
 .slide-wrap .card-register-btn:hover{
-	top: -3px;
+	color:#fff;
+	background:  #cf3339;
 }
 
 .promotion-range{
