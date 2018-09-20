@@ -918,6 +918,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .content-wrap .box-login-con{
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+  }
   .box-login-con.form-wrap input{
     width: 260px;
   }
@@ -1505,6 +1510,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 }
   .menu-sub-icon .five-icons .nav-item{
     flex: 33.33%;
+  }
+
+  .proud-regis-complete button.card-register-center{
+    width: auto;
+    font-size: 18px;
   }
 
   .menu-sub-icon .five-icons .nav-item:nth-child(1){
