@@ -235,45 +235,190 @@
       <div class="content-wrap">
         <form action="forgot-username-2.html" id="pg-regis" class="row box-login-con form-wrap">
           <h3 class="index-head">ลืมชื่อผู้ใช้งาน</h3>
-          <div class="row box-radio">
+           <div class="row box-radio">
             <div class="col-6 box-other-form checkbox-form">
-              <label>บุคคลธรรมดา
+              <label id="forgot-user"  onclick="show1();">บุคคลธรรมดา
                 <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                 <span class="dotmark"></span>
               </label>
+              
             </div>
             <div class="col-6 box-other-form checkbox-form">
-              <label>ร้านค้าสมาชิก
+              <label id="forgot-user-mer" onclick="show2();">ร้านค้าสมาชิก
                 <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
                 <span class="dotmark"></span>
               </label>
             </div>
           </div>
-          <div class="box-input-form">
+
+
+          
+          <div id="type1" class="box-input-form">
             <div class="form-group">
               <label for="exampleFormControlSelect1">เลือกประเภท</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>หมายเลขบัตรประชาชน</option>
-                <option>หมายเลขหนังสือเดินทาง</option>
+              <select class="form-control" id="exampleFormControlSelect1" >
+                <option class="select-item" id="idcardSelected" value="idcard">หมายเลขบัตรประชาชน</option>
+                <option class="select-item" >หมายเลขหนังสือเดินทาง</option>
               </select>
             </div>
-          </div>
-          <div class="box-input-form">
+          
+           <div class="box-input-form" id="idcard" >
             <input class="required" type="text" placeholder="หมายเลข 13 หลัก">
           </div>
+          <div class="box-input-form" id="passpord">
+            <input class="required" type="text" placeholder="ระบุหมายเลขหนังสือเดินทาง">
+          </div>
+         
           <div class="box-input-form txt-err-padd">
             <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก" class="err-message required">
             <span>กรุณาระบุหมายเลขโทรศัพท์มือถือที่ให้ไว้กับ KTC</span>
           </div>
-          <div>
-            <a href="register-member-2.html">
-              <button type="submit" class="btn-next-step" value="" >ถัดไป</button>
-            </a>
+
+         
+           <!-- ขึ้นยอมรับ -->
+          <div class="box-other-form checkbox-form">
+             <label>ยอมรับ
+               <input class="required" id="check1" type="checkbox" name="" value="">
+               <span class="checkmark"></span>
+             </label>
+             <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
+           </div>
+           <div>
+             <button class="btn-next-step" type="submit" >ถัดไป</button>
+           </div> 
           </div>
-        </form>
+          <!-- จบ div ที่ใช้จำลอง -->    <!-- จบบุคคลธรรมดา -->
+
+          <!-- ร้านนค้านะ -->
+
+          <div id="type2" class="box-input-form">
+          <div class="box-input-form">
+            <input class="required" type="text" placeholder="ระบุหมายเลขประจำตัวผู้เสียภาษีอากร">
+          </div>
+          <div class="box-input-form txt-err-padd">
+            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
+          </div>
+       
+          <!-- ขึ้นยอมรับ -->
+            <div class="box-other-form checkbox-form">
+              <label>ยอมรับ
+                <input class="required" id="check2" type="checkbox" name="" value="">
+                <span class="checkmark"></span>
+              </label>
+              <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
+            </div>
+            <div>
+              <button class="btn-next-step" type="submit" >ถัดไป</button>
+            </div> 
+          </div>
+
+        </form>      
       </div>
     </div>
     <!-- end page -->
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.form-wrap button[type="submit"]').prop('disabled', true);
+      var toValidate1 = jQuery('.form-wrap #type1 input[type="text"].required,.form-wrap #type1 input[type="password"].required');
+      var toValidate2 = jQuery('.form-wrap #type2 input[type="text"].required,.form-wrap #type2 input[type="password"].required');
+      var theValidate1 = jQuery('.form-wrap #type1 input[type="checkbox"].required');
+      var theValidate2 = jQuery('.form-wrap #type2 input[type="checkbox"].required');
+
+      theValidate1.on('touch click', function () {
+        if ($(this).prop('checked') == true) {
+            jQuery(this).data('valid2', true);
+            console.log("checked");
+        } else {
+            jQuery(this).data('valid2', false);
+            console.log("notChecked");
+        }
+        theValidate1.each(function () {
+            if (jQuery(this).data('valid2') == true) {
+                valid2 = true;
+            } else {
+                valid2 = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+    });
+
+     theValidate2.on('touch click', function () {
+        if ($(this).prop('checked') == true) {
+            jQuery(this).data('valid2', true);
+            console.log("checked");
+        } else {
+            jQuery(this).data('valid2', false);
+            console.log("notChecked");
+        }
+        theValidate2.each(function () {
+            if (jQuery(this).data('valid2') == true) {
+                valid2 = true;
+            } else {
+                valid2 = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+    });
+
+     
+
+    toValidate1.on('keyup', function () {
+        if (jQuery(this).val().length > 0) {
+            jQuery(this).data('valid', true);
+            console.log("filled");
+        } else{
+            jQuery(this).data('valid', false);
+            console.log("notFilled");
+        }
+        toValidate1.each(function () {
+            if (jQuery(this).data('valid') == true) {
+                valid = true;
+            } else {
+                valid = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+     });
+
+    toValidate2.on('keyup', function () {
+        if (jQuery(this).val().length > 0) {
+            jQuery(this).data('valid', true);
+            console.log("filled");
+        } else{
+            jQuery(this).data('valid', false);
+            console.log("notFilled");
+        }
+        toValidate2.each(function () {
+            if (jQuery(this).data('valid') == true) {
+                valid = true;
+            } else {
+                valid = false;
+            }
+        });
+        if (valid === true && valid2 === true) {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
+        } else {
+            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
+        }
+    });
+  });
+
+      
+
+    </script>
 
   <!-- start Footer -->
   <div id="footer-login-form" class="footer">

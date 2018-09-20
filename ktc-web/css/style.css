@@ -3697,6 +3697,13 @@ section#section-flexi-cards {
 	font-size: 24px;
 	margin-top: 0px;
 }
+
+.bg-login .index-sub-head{
+	margin-top: 60px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 18px;
+	color: black !important;
+}
 .box-login-con i{
 	font-family: 'FontAwesome';
 	width: 32px;

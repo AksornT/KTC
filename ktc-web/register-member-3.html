@@ -235,8 +235,8 @@
       <div class="content-wrap">
         <form action="register-member-success.html" id="pg-regis" class="row box-login-con form-wrap">
           <h3 class="index-head">ลงทะเบียน</h3>
-          <div class="row box-radio">
-            <div class="col-6 box-other-form checkbox-form">
+          <div class="row box-radio disabled">
+            <div class="col-6 box-other-form checkbox-form active">
               <label>บุคคลธรรมดา
                 <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                 <span class="dotmark"></span>
@@ -249,7 +249,15 @@
               </label>
             </div>
           </div>
+
+          <div>
+              <p class="index-sub-head">ตั้งข้อมูลการใช้งาน</p>
+          </div>
+
+
+          
           <div class="box-input-form txt-err-padd txt-desc-input">
+
             <input class="required" type="text" placeholder="ชื่อผู้ใช้งาน">
             <p>ชื่อผู้ใช้จะต้องอยู่ระหว่าง 6-15 ตัว และต้องประกอบไปด้วยตัวอักษร A-Z หรือตัวเลข 0-9 </p>
           </div>
@@ -263,7 +271,7 @@
           </div>
           <div class="box-other-form checkbox-form">
             <label>ต้องการรับข้อเสนอสุดพิเศษและโปรโมชั่นจาก KTC
-              <input type="checkbox id="myCheck"">
+              <input type="checkbox" id="myCheck">
               <span class="checkmark"></span>
             </label>
           </div>
