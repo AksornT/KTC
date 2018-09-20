@@ -1310,8 +1310,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 }
 #promotion-detail .breadcrumb{
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
+}
+.article-wrap .article-icon{
+  padding: 10px 0 0 0;
 }
 .article-wrap .article-icon .fav-btn{
   margin-right: 0;
@@ -1350,6 +1353,10 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 .article-wrap .article-tag {
   margin-bottom: 10px;
 }
+.article-wrap .article-tag a{
+  padding: 3px 23px;
+  margin-right: 0px;
+}
 .register-wrapper .nav .nav-item{
   padding: 0;
 }
@@ -1384,7 +1391,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   padding-top: 10px;
 }
 .register-wrapper .form-register .checkbox {
-    margin: 40px 0 60px;
+    margin: 40px 0 40px;
 }
 .register-wrapper .form-register .btn-submit-form{
   width: 100%;
