@@ -1278,6 +1278,17 @@
     flex:auto;
   }
 
+    #promotion-detail .article-wrap .article-cover{
+      margin-bottom: 5px;
+    }
+    #promotion-detail .article-wrap .article-title{
+      letter-spacing: 0;
+      line-height: 50px;
+    }
+    .form-content .input-ico.input-ico-right span{
+      line-height: 22px;
+    }
+
     /* article detail -eve */
     .art-on-desktop{
       display: none;
