@@ -3709,6 +3709,7 @@ section#section-flexi-cards {
 .form-wrap input[type="password"].hasText + label{
 	font-size: 14px;
 	top: 38px;
+	color: black;
 }
 
 .form-wrap input[type="text"]:focus + label,
@@ -3816,10 +3817,12 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input[type="password"]:focus + label,
 .box-login-con.form-wrap input[type="password"].hasText:focus + label{
 	left: 0;
+	color: black;
 }
 .box-login-con.form-wrap input[type="text"].hasText + label,
 .box-login-con.form-wrap input[type="password"].hasText + label{
 	left: 0;
+	color:black;
 }
 .box-login-con.form-wrap input[type="checkbox"]{
 	width: 20px;
