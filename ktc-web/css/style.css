@@ -4771,6 +4771,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	text-align: center;
 	padding-top: 13px;
 }
+
 /* promotion detail -eve */
 .row-breadcrumb-filter {
     padding-top: 35px;
@@ -4811,7 +4812,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .article-wrap .article-icon {
     text-align: right;
-    padding-top: 16px;
+    padding: 16px 0 0 0;
 }
 .article-wrap .article-icon .fav-btn {
     border: 0;
