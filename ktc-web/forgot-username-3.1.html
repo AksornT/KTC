@@ -233,34 +233,31 @@
     <!-- start page -->
     <div class="bg-login">
       <div class="content-wrap">
-        <form action="forgot-password-3.html" id="pg-regis" class="row box-login-con form-wrap">
-          <h3 class="index-head">ลืมรหัสผ่าน</h3>
+        <form action="index-logged.html" id="pg-regis" class="row box-login-con form-wrap">
+          <h3 class="index-head">ลืมชื่อผู้ใช้งาน</h3>
           <div class="row box-radio disabled">
-            <div class="col-6 box-other-form checkbox-form active">
+            <div class="col-6 box-other-form checkbox-form">
               <label>บุคคลธรรมดา
-                <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <input type="radio" name="gridRadios" id="gridRadios1" value="option1">
                 <span class="dotmark"></span>
               </label>
             </div>
-            <div class="col-6 box-other-form checkbox-form">
+            <div class="col-6 box-other-form checkbox-form active">
               <label>ร้านค้าสมาชิก
-                <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <input type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
                 <span class="dotmark"></span>
               </label>
             </div>
           </div>
           <div class="box-input-form txt-err-padd txt-desc-input">
-            <input class="required" type="text" placeholder="รหัส OTP ที่ได้รับทางโทรศัพท์มือถือ">
-            <p>รหัสอ้างอิง: KRTKRN</p>
-            <p>OTP สำหรับยืนยันหมายเลขโทรศัพท์จะถูกส่งไปที่หมายเลข 08-6111-1765</p>
+            <p class="info-text">ชื่อผู้ใช้งานของคุณคือ: KTC1234</p>
           </div>
-          <div class="box-other-form txt-desc-input">
-            <p>กรุณากด "ขอรหัส OTP อีกครั้ง" หากคุณยังไม่ได้รับรหัส OTP</p>
-            <a href="#"><img src="img/ico-refresh.png"><p>ขอรหัส OTP อีกครั้ง</p></a>
+          <div class="box-input-form txt-err-padd txt-desc-input">
+            <input class="required" type="password" placeholder="รหัสผ่าน">
+            <p>กรุณาระบุรหัสผ่านเพื่อใช้งานกับชื่อผู้ใช้งานนี้</p>
           </div>
           <div>
-             <button class="btn-back-step" type="button" onclick="window.location.href='forgot-password.html'" value="" >กลับ</button>
-             <button type='submit' class="btn-next-step" value="" >ถัดไป</button>
+             <button type='submit' class="btn-next-step" value="" >เข้าสู่ระบบ</button>
           </div>
         </form>
       </div>

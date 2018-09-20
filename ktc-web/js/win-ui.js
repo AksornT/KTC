@@ -258,6 +258,23 @@ $(document).ready(function() {
       $("#pg-regis").attr("action", "register-merchant-2.html");
     });
 
+    $('#forgot-pass').on('click touch', function () {
+      $("#pg-regis").attr("action", "forgot-password-2.html");
+     });
+
+     $('#forgot-user').on('click touch', function () {
+      $("#pg-regis").attr("action", "forgot-username-2.html");
+    });
+
+    $('#forgot-pass-mer').on('click touch', function () {
+      $("#pg-regis").attr("action", "forgot-password-2.1.html");
+    });
+
+    $('#forgot-user-mer').on('click touch', function () {
+      $("#pg-regis").attr("action", "forgot-username-2.1.html");
+    });
+
+
    
         
 
