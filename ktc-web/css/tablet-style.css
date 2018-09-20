@@ -1326,4 +1326,8 @@
       display: inline-block;
     }
 
+    .form-wrap .left span.select-arrow{
+      right: 15px;
+    }
+
 }

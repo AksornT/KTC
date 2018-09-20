@@ -296,8 +296,6 @@
         <li class="only-desktop"><a href="merchant-alipay.html">ระบบชำระเงิน ALIPAY</a></li>
         <li class="only-mobile"><img id="sticky-ham" data-toggle="modal" data-target="#nav-merchant-modal"  src="img/ico-menu-sticky.png"></li>
       </ul>
-    </div>
-    <div class="sticky-right">
       <!-- dropdown -->
       <div class="dropdown sticky-dropdown">
         <button class="btn dropdown-toggle" type="button" id="sticky-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -308,6 +306,8 @@
           <a class="dropdown-item" href="merchant-recurring.html">บริการหักบัญชีบัตรเครดิตลูกค้าอัตโนมัติ</a>
         </div>
       </div>
+    </div>
+    <div class="sticky-right">
       <a href="#"><img src="img/ico-sticky-link.png"></a>
       <a href="#form-anchor" data-offset="150" class="btn-action blue nav-center-v">สมัครร้านค้าสมาชิก</a>
     </div>
@@ -413,10 +413,22 @@
                 <input type="text" name="tel" class="form-control" placeholder="เบอร์โทรศัพท์ติดต่อ">
               </div>
               <div class="col-12 col-md-6 form-col left">
-                <input type="text" name="province" class="form-control" placeholder="จังหวัด">
+                <label class="before-dropdown">จังหวัด</label>
+                <select class="form-control">
+                  <option disabled selected value="">- จังหวัด -</option>
+                  <option value="">กรุงเทพฯ</option>
+                  <option value="">ปัตตานี</option>
+                  <option value="">เชียงราย</option>
+                </select>
               </div>
               <div class="col-12 col-md-6 form-col right">
-                <input type="text" name="city" class="form-control" placeholder="เขต">
+                <label class="before-dropdown">เขต</label>
+                <select class="form-control">
+                  <option disabled selected value="">- เขต -</option>
+                  <option value="">เมือง</option>
+                  <option value="">บางเขน</option>
+                  <option value="">จตุจักร</option>
+                </select>
               </div>
               <div class="col-12 col-md-6 form-col left">
                 <input type="text" name="email" class="form-control" placeholder="อีเมล">
