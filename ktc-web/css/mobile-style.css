@@ -1625,5 +1625,10 @@
     display: none;
   }
 
+  .form-wrap .left span.select-arrow,
+  .form-wrap .right span.select-arrow{
+      right: 5px;
+  }
+
 
 }

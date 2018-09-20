@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+    //disable auto complete
+    $('input, form').attr('autocomplete', 'false');
+
     $('#menu-global').addClass('mini-header alway-mini');
     $('#menu-global.expand-menu').removeClass('mini-header alway-mini');
 	$('.footer-menu h3').on('click touch', function () {
