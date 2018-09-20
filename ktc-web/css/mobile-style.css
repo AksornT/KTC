@@ -1496,9 +1496,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 .main-terms-modal.world-modal .close{
   right: 2rem;
 }
+.ui-datepicker{
+  left:15px !important;
+}
 
 .ui-datepicker .ui-datepicker-calendar td{
-  padding: 4px 10px;
+  padding: 4px 7px;
 }
   .menu-sub-icon .five-icons .nav-item{
     flex: 33.33%;
@@ -1627,6 +1630,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
   .btn-filter.only-desktop.with-tablet {
     display: none;
+  }
+
+  .form-wrap .left span.select-arrow,
+  .form-wrap .right span.select-arrow{
+      right: 5px;
   }
 
 

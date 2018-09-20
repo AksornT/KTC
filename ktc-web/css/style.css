@@ -107,6 +107,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a, button{
+	cursor: pointer;
+}
+
 a:hover{
 	cursor: pointer;
 	text-decoration: none;
@@ -364,6 +369,10 @@ a:hover{
 	position: relative;
 	top: 0;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.menu-global .card-register-btn{
+	background: rgba(201,51,57,.9);
 }
 
 .menu-global a.card-register-btn:hover{
@@ -1463,7 +1472,7 @@ body.modal-open{
 	top: 7px;
 	left: 1px;
 	border-radius: 3px;
-	border: 1px solid rgba(91,100,112,.15);
+	border: 1px solid rgba(91,100,112,.65);
 	background: none;
 	position: absolute;
 	background-position: center;
@@ -2664,7 +2673,9 @@ article.page-content #card-detail-regis h3::after{
     margin-bottom: 20px;
 }
 
-.form-wrap input{
+.form-wrap input,
+.form-wrap input:-webkit-autofill,
+.form-wrap input:focus:-webkit-autofill{
 	width: 100%;
 	padding:0;
 	border: none;
@@ -2674,6 +2685,7 @@ article.page-content #card-detail-regis h3::after{
 	margin-top: 60px;
 	height: 30px;
 	border-radius: 0;
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .form-wrap input::placeholder{
@@ -2682,6 +2694,40 @@ article.page-content #card-detail-regis h3::after{
 
 .form-wrap input:focus{
 	outline: none;
+}
+
+.form-wrap select.form-control,
+section#section-merchant-register-form select.form-control:focus,
+.form-wrap select.form-control:focus{
+    padding-left: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    color: #000;
+    -webkit-appearance: none;
+    border-color:#ced4da; 
+}
+
+.form-wrap span.select-arrow {
+    width: 30px;
+    height: 35px;
+    margin-top: -36px;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    background: url(../img/ico-input-arrow.png) no-repeat;
+    background-position: center center;
+    pointer-events: none;
+}
+
+.form-wrap .left span.select-arrow{
+	right: 45px;
+}
+
+.before-dropdown{
+	font-size: 14px;
+    margin-top: 38px;
 }
 
 .input-notice{
@@ -3546,6 +3592,11 @@ section#section-flexi-cards {
 	font-size: 0;
 }
 
+.sticky-left > ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .sticky-left li{
 	display: inline-block;
 	font-size: 18px;
@@ -3665,7 +3716,7 @@ section#section-flexi-cards {
 .form-wrap input[type="password"]:focus + label,
 .form-wrap input[type="password"].hasText:focus + label{
 	color: #CF3339;
-	font-size: 12px;
+	font-size: 14px;
 	top: 38px;
 }
 
@@ -6079,8 +6130,9 @@ a.all-type-list[href]:hover{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
   color: #fff;
   text-align: center;
-  padding-top: 3px;
+    padding-top: 3px;
 	display: inline-block;
+	margin-left: 25px;
 }
 .ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
   top: 10px;
@@ -6095,7 +6147,7 @@ a.all-type-list[href]:hover{
   top: 10px;
   right: 14px;
 	float: right;
-  padding-top: 5px;
+   padding-top: 5px;
 }
 
 .non-member .ui-datepicker .ui-datepicker-next {
@@ -6117,6 +6169,7 @@ a.all-type-list[href]:hover{
   text-align: center;
   padding-top: 3px;
 	display: inline-block;
+	margin-right: 25px;
 }
 .ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover {
   top: 10px;
@@ -6156,7 +6209,7 @@ a.all-type-list[href]:hover{
   padding: 4px 5px;
 }
 .ui-datepicker .ui-datepicker-calendar td {
-  padding: 4px 15px;
+  padding: 4px 10px;
 }
 .ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar td a {
   text-align: center;
@@ -6187,6 +6240,8 @@ a.all-type-list[href]:hover{
   bottom: 0px;
   left: -4px;
   border-radius: 60px;
+  margin-left: 50%;
+  left: -15px;
 }
 .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-warning {
   position: relative;
@@ -6254,8 +6309,23 @@ a.all-type-list[href]:hover{
   position: absolute;
   z-index: -1;
 	bottom: 0px;
-  left: -4px;
+  left: -15px;
   border-radius: 60px;
+  margin-left: 50%;
+}
+
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month{
+	margin-right: 20px;
+}
+
+.ui-datepicker .ui-datepicker-calendar td span, .ui-datepicker .ui-datepicker-calendar tr{
+	text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 2px;
+    border-radius: 100%;
 }
 
 
@@ -6959,6 +7029,10 @@ nav[aria-label="breadcrumb"]{
 
   .owl-item {
     opacity: 1;
+  }
+
+  body section#section-merchant-register-form .row-merchant-download-docs .btn.button-download-link{
+  	font-size: 18px;
   }
 
   }
