@@ -3817,7 +3817,10 @@ section#section-flexi-cards {
 	color: rgba(91,102,112,.55);
 }
 .box-login-con.form-wrap input{
-	width: 320px;
+	width: 404px !important;
+}
+.box-login-con.form-wrap.only-login input{
+	width: 320px !important;
 }
 .box-login-con.form-wrap input[type="text"] + label,
 .box-login-con.form-wrap input[type="password"] + label{
@@ -3983,11 +3986,11 @@ button.btn-default:disabled:hover{
 }
 /* Create a custom radio */
 .dotmark {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  height: 20px;
-  width: 20px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 20px;
+	width: 20px;
 	background-color: #fff;
 	border-radius: 60px;
 	border: 1px solid rgba(91,102,112,.7);
