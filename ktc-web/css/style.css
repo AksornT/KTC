@@ -1843,21 +1843,22 @@ a:hover .on-hover{
 	padding-left: 20px;
 	border: 1px solid #5B6670;
 	border-radius: 6px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 .col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input::-moz-placeholder { /* Firefox 19+ */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input:-ms-input-placeholder { /* IE 10+ */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input:-moz-placeholder { /* Firefox 18- */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter .search-credit{
@@ -6642,6 +6643,8 @@ nav[aria-label="breadcrumb"]{
 }
 .art-con-tag .article-tag {
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: none;
 }
 .art-con-comment .index-head{
 	margin-top: 40px;
