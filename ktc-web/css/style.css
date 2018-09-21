@@ -1939,13 +1939,15 @@ a:hover .on-hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 12px;
 	color: #000;
+	display: block;
 	text-decoration: underline !important;
 }
 .txt-link-right{
 	padding: 2px 10px;
+	align-self: center;
 }
 .txt-link-right a:hover{
-	color: #cf3339;
+	color: #cf3339 !important;
 }
 .main-credit button{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -3090,7 +3092,7 @@ a.media.on-desk img {
 }
 
 #nav-flexi-scroll-trigger {
-	padding-bottom: 150px;
+	padding-bottom: 60px;
 }
 
 #nav-flexi {
@@ -3236,6 +3238,8 @@ a.media.on-desk img {
 	width: 30px;
 	height: 30px;
 	background: #ffffff url("../img/ico-mini-menu.png") no-repeat center;
+	outline: 0;
+	box-shadow: none;
 }
 
 #nav-flexi-modal .nav.full-size li.nav-item:first-child {
@@ -3372,8 +3376,11 @@ section#section-flexi-cards {
 	margin-top: 50px;
 	margin-bottom: 60px;
 }
-#nav-flexi-installments li.nav-item:first-child {
+#nav-flexi-installments li.nav-item {
 	border-right: 1px solid #E6E8EA;
+}
+#nav-flexi-installments li.nav-item:nth-last-child(1) {
+	border:none;
 }
 #nav-flexi-installments li.nav-item a {
 	padding: 15px 40px 9px;
@@ -3664,6 +3671,43 @@ section#section-flexi-cards {
 	/*top: -148px;*/
 }
 
+#nav-flexi .sticky-right .card-register-center{
+	margin: 0 0 0 20px;
+}
+
+#nav-flexi-mobile a.card-register-center{
+	padding: 3px 20px;
+	top: 0 !important;
+}
+
+#nav-flexi .sticky-left li{
+    line-height: 1;
+    width: 30px;
+    height: 40px;
+    margin: 0;
+}
+
+#nav-flexi .sticky-left li a{
+	position: relative;
+	left: 0;
+    text-align: center;
+}
+
+#nav-flexi .sticky-left li a:hover{
+	left: -3px;
+}
+
+#nav-flexi .sticky-left li a img{
+	margin-top: 50%;
+}
+
+#nav-flexi h1{
+	display: flex;
+	align-self: center;
+	margin-right: 25px;
+	font-family: "Conv_SukhumvitTadmai_Bol";
+}
+
 .sticky-white-menu-list li a{
 	line-height: 42px;
 	font-size: 14px;
@@ -3794,6 +3838,7 @@ section#section-flexi-cards {
 	margin-right: auto;
 	width: 404px;
 	display: block;
+	overflow: hidden;
 }
 .box-input-form{
 	position: relative;
@@ -3817,10 +3862,11 @@ section#section-flexi-cards {
 	color: rgba(91,102,112,.55);
 }
 .box-login-con.form-wrap input{
-	width: 404px !important;
+	width: 100%;
 }
 .box-login-con.form-wrap.only-login input{
-	width: 320px !important;
+	  width: calc(100% - 30px) !important;
+
 }
 .box-login-con.form-wrap input[type="text"] + label,
 .box-login-con.form-wrap input[type="password"] + label{
@@ -3951,7 +3997,7 @@ button.btn-default:disabled:hover{
   font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	text-decoration: underline;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 #footer-login-form .footer-only-login,
@@ -4042,7 +4088,7 @@ button.btn-default:disabled:hover{
 }
 .box-input-form .form-group label{
 	font-size: 12px;
-	color: rgba(91,102,112,.55);
+	color: black;
 	margin-top: 60px;
 }
 .box-input-form .form-control{
@@ -4115,7 +4161,7 @@ button.btn-next-step{
 }
 /* register for member 2 -eve */
 .txt-desc-input p{
-	font-size: 14px;
+	font-size: 12px;
   line-height: 21px;
 }
 .box-other-form.txt-desc-input{
@@ -4127,7 +4173,7 @@ button.btn-next-step{
 .box-other-form.txt-desc-input a p{
 	display: inline-block;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 18px;
+	font-size: 16px;
   text-decoration: underline;
   color: #CF3339;
 	vertical-align: top;
@@ -6066,7 +6112,7 @@ a.all-type-list[href]:hover{
   padding: 15px 0;
 }
 .ui-autocomplete.form-dropdown {
-  padding: 0;
+ 	padding: 0;
 	width: 42vw !important;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.16);
 }
@@ -7063,6 +7109,16 @@ nav[aria-label="breadcrumb"]{
 
   body section#section-merchant-register-form .row-merchant-download-docs .btn.button-download-link{
   	font-size: 18px;
+  }
+
+  #section-flexi-promotions .slide-wrap{
+    overflow: visible;
+    width: calc(100% + 110px);
+    margin-left: -55px;
+  }
+
+  #section-flexi-promotions .slide-flexi-promotions{
+  	padding: 0 55px;
   }
 
   }

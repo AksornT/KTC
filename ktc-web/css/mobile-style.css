@@ -906,13 +906,21 @@
   .on-right.header-login-pg {
     padding-top: 14px;
   }
+
+  .bg-login {
+    background: url(../img/bg-login.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: calc(100vh - 82px);
+}
+
   .on-right.header-login-pg p{
     font-size: 14px;
   }
-  .bg-login{
-    background: none;
-    min-height: calc(100vh - 96px);
+
+  .row.box-radio.disabled{
+    padding-bottom: 10px;
   }
+  
   .box-login-con{
     width: 100%;
     padding-top: 40px;
@@ -924,13 +932,17 @@
     padding-bottom: 3vh;
   }
 
-  .box-login-con.form-wrap.only-login input{
-    width: 261px !important;
+
+  .bg-login .img-result{
+    margin-bottom: 30px;
+  }
+
+  .proud-regis-complete p, .form-register-completed p{
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
   
-  }
-  .box-login-con.form-wrap input{
-    width: 295px !important;
-  }
   .bg-login .content-wrap{
     padding: 0 40px;
   }
@@ -1668,6 +1680,63 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   .form-wrap .right span.select-arrow{
       right: 5px;
   }
+
+  #section-flexi-promotions .slide-wrap{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  #section-flexi-promotions .slide-flexi-promotions{
+    padding: 0 20px;
+  }
+
+  #nav-flexi-installments li.nav-item a {
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 14px;
+  }
+
+  .flexi-modal table,
+    .flexi-modal thead,
+    .flexi-modal tbody,
+    .flexi-modal tr,
+    .flexi-modal th,
+    .flexi-modal td{
+      display: block;
+      font-size: 0;
+    }
+
+    .flexi-modal thead{
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+    }
+
+    .flexi-modal tbody{
+      display: inline-block;
+      width: 59%;
+      vertical-align: top;
+    }
+
+    .flexi-modal tbody tr{
+      width: 49.5%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .flexi-modal th,
+    .flexi-modal td{
+      font-size: 16px;
+      height: 41px;
+    }
+
+    .flexi-modal table thead th{
+      border-top: 1px solid #E6E8EA;
+      border-bottom: none;
+    }
+    .flexi-modal table thead{
+      border-bottom: 1px solid #E6E8EA;
+    }
 
 
 }
