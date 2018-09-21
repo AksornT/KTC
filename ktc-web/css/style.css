@@ -1843,21 +1843,22 @@ a:hover .on-hover{
 	padding-left: 20px;
 	border: 1px solid #5B6670;
 	border-radius: 6px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 .col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input::-moz-placeholder { /* Firefox 19+ */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input:-ms-input-placeholder { /* IE 10+ */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter input:-moz-placeholder { /* Firefox 18- */
-  font-size: 14px;
+  	/*font-size: 14px;*/
 	color: #5B6670;
 }
 .col-right-filter .search-credit{
@@ -3860,7 +3861,10 @@ section#section-flexi-cards {
 	color: rgba(91,102,112,.55);
 }
 .box-login-con.form-wrap input{
-	width: 320px;
+	width: 404px !important;
+}
+.box-login-con.form-wrap.only-login input{
+	width: 320px !important;
 }
 .box-login-con.form-wrap input[type="text"] + label,
 .box-login-con.form-wrap input[type="password"] + label{
@@ -3991,7 +3995,7 @@ button.btn-default:disabled:hover{
   font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	text-decoration: underline;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 #footer-login-form .footer-only-login,
@@ -4026,11 +4030,11 @@ button.btn-default:disabled:hover{
 }
 /* Create a custom radio */
 .dotmark {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  height: 20px;
-  width: 20px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 20px;
+	width: 20px;
 	background-color: #fff;
 	border-radius: 60px;
 	border: 1px solid rgba(91,102,112,.7);
@@ -4082,7 +4086,7 @@ button.btn-default:disabled:hover{
 }
 .box-input-form .form-group label{
 	font-size: 12px;
-	color: rgba(91,102,112,.55);
+	color: black;
 	margin-top: 60px;
 }
 .box-input-form .form-control{
@@ -4155,7 +4159,7 @@ button.btn-next-step{
 }
 /* register for member 2 -eve */
 .txt-desc-input p{
-	font-size: 14px;
+	font-size: 12px;
   line-height: 21px;
 }
 .box-other-form.txt-desc-input{
@@ -4167,7 +4171,7 @@ button.btn-next-step{
 .box-other-form.txt-desc-input a p{
 	display: inline-block;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 18px;
+	font-size: 16px;
   text-decoration: underline;
   color: #CF3339;
 	vertical-align: top;
@@ -5943,6 +5947,7 @@ a.all-type-list[href]:hover{
 .slide-wrap .index-slide2.sub-sub .item{
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-bottom: 40px;
 }
 .non-member .ui-datepicker {
     padding: 0px;
@@ -6618,6 +6623,13 @@ nav[aria-label="breadcrumb"]{
 	margin-bottom: 0;
 }
 
+.promotion-page .slide-wrap:nth-last-child(1){
+	padding-bottom: 100px;
+}
+#promo-sub-cat .index-head{
+	margin-top: 20px;
+}
+
 /* article detail -eve */
 .art-on-mobile{
 	display: none;
@@ -6678,6 +6690,8 @@ nav[aria-label="breadcrumb"]{
 }
 .art-con-tag .article-tag {
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: none;
 }
 .art-con-comment .index-head{
 	margin-top: 40px;
