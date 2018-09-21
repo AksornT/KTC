@@ -6508,6 +6508,7 @@ a.all-type-list[href]:hover{
 
 .box-radio.disabled{
 	pointer-events: none;
+	overflow: hidden;
 }
 
 .box-radio.disabled > div{

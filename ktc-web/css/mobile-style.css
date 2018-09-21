@@ -910,11 +910,15 @@
   .bg-login {
     background: url(../img/bg-login.png) no-repeat;
     background-size: 100% 100%;
-    min-height: calc(100vh - 118px);
+    min-height: calc(100vh - 95px);
 }
 
   .on-right.header-login-pg p{
     font-size: 14px;
+  }
+
+  .row.box-radio.disabled{
+    padding-bottom: 10px;
   }
   
   .box-login-con{
