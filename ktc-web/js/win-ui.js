@@ -65,6 +65,22 @@ $(document).ready(function() {
         }, {passive: false})
     });
 
+    $('#nav-flexi .sticky-right .card-register-center').on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        if (hash.length > 0) {
+            navScrollTo(hash, 170);
+        }
+    });
+
+    $('#nav-flexi-mobile a.card-register-center').on('click touch', function (event) {
+        event.preventDefault();
+        var hash = this.hash;
+        if (hash.length > 0) {
+            navScrollTo(hash, 120);
+        }
+    });
+
     //global sub-nav sticky bar
     $('.sub-sticky a[href^="#"]').each(function (index, elem) {
         var touchHandler = function (event) {
