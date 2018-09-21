@@ -3838,6 +3838,7 @@ section#section-flexi-cards {
 	margin-right: auto;
 	width: 404px;
 	display: block;
+	overflow: hidden;
 }
 .box-input-form{
 	position: relative;
@@ -3861,10 +3862,11 @@ section#section-flexi-cards {
 	color: rgba(91,102,112,.55);
 }
 .box-login-con.form-wrap input{
-	width: 404px !important;
+	width: 100%;
 }
 .box-login-con.form-wrap.only-login input{
-	width: 320px !important;
+	  width: calc(100% - 30px) !important;
+
 }
 .box-login-con.form-wrap input[type="text"] + label,
 .box-login-con.form-wrap input[type="password"] + label{
@@ -6110,7 +6112,7 @@ a.all-type-list[href]:hover{
   padding: 15px 0;
 }
 .ui-autocomplete.form-dropdown {
-  padding: 0;
+ 	padding: 0;
 	width: 42vw !important;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.16);
 }
@@ -6552,7 +6554,6 @@ a.all-type-list[href]:hover{
 
 .box-radio.disabled{
 	pointer-events: none;
-	overflow: hidden;
 }
 
 .box-radio.disabled > div{

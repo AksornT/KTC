@@ -932,9 +932,6 @@
     padding-bottom: 3vh;
   }
 
-  .box-login-con.form-wrap.only-login input{
-    width: 261px !important;
-  }
 
   .bg-login .img-result{
     margin-bottom: 30px;
@@ -947,6 +944,7 @@
 
   .box-login-con.form-wrap input{
     width: 295px !important;
+    max-width: 100%;
   }
   .bg-login .content-wrap{
     padding: 0 40px;
