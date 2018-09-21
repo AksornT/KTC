@@ -3951,7 +3951,7 @@ button.btn-default:disabled:hover{
   font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	text-decoration: underline;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 #footer-login-form .footer-only-login,
@@ -4042,7 +4042,7 @@ button.btn-default:disabled:hover{
 }
 .box-input-form .form-group label{
 	font-size: 12px;
-	color: rgba(91,102,112,.55);
+	color: black;
 	margin-top: 60px;
 }
 .box-input-form .form-control{
@@ -4115,7 +4115,7 @@ button.btn-next-step{
 }
 /* register for member 2 -eve */
 .txt-desc-input p{
-	font-size: 14px;
+	font-size: 12px;
   line-height: 21px;
 }
 .box-other-form.txt-desc-input{
@@ -4127,7 +4127,7 @@ button.btn-next-step{
 .box-other-form.txt-desc-input a p{
 	display: inline-block;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
-	font-size: 18px;
+	font-size: 16px;
   text-decoration: underline;
   color: #CF3339;
 	vertical-align: top;

@@ -906,13 +906,17 @@
   .on-right.header-login-pg {
     padding-top: 14px;
   }
+
+  .bg-login {
+    background: url(../img/bg-login.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: calc(100vh - 118px);
+}
+
   .on-right.header-login-pg p{
     font-size: 14px;
   }
-  .bg-login{
-    background: none;
-    min-height: calc(100vh - 96px);
-  }
+  
   .box-login-con{
     width: 100%;
     padding-top: 40px;
@@ -926,8 +930,17 @@
 
   .box-login-con.form-wrap.only-login input{
     width: 261px !important;
-  
   }
+
+  .bg-login .img-result{
+    margin-bottom: 30px;
+  }
+
+  .proud-regis-complete p, .form-register-completed p{
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
   .box-login-con.form-wrap input{
     width: 295px !important;
   }
