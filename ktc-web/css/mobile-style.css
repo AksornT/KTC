@@ -910,7 +910,7 @@
   .bg-login {
     background: url(../img/bg-login.png) no-repeat;
     background-size: 100% 100%;
-    min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 82px);
 }
 
   .on-right.header-login-pg p{
