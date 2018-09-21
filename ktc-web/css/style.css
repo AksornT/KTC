@@ -5899,6 +5899,7 @@ a.all-type-list[href]:hover{
 .slide-wrap .index-slide2.sub-sub .item{
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-bottom: 40px;
 }
 .non-member .ui-datepicker {
     padding: 0px;
@@ -6572,6 +6573,13 @@ nav[aria-label="breadcrumb"]{
 
 .article-category .slide-wrap.promo-wrap{
 	margin-bottom: 0;
+}
+
+.promotion-page .slide-wrap:nth-last-child(1){
+	padding-bottom: 100px;
+}
+#promo-sub-cat .index-head{
+	margin-top: 20px;
 }
 
 /* article detail -eve */
