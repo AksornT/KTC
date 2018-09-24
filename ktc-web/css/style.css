@@ -2803,6 +2803,13 @@ section .form-register-completed .img-result {
 	border: 1px solid #CF3339;
 	background-color: #fff;
 }
+.sticky-right.page-loan .card-register-center:hover,
+.nav-right.page-loan .card-register-center:hover{
+	top: auto;
+    background-color: #CF3339;
+    border-color: transparent;
+    color: #fff;
+}
 
 h4.content-title{
 	text-align: left;
