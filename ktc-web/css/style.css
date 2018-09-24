@@ -2797,10 +2797,8 @@ section .form-register-completed .img-result {
 	line-height: 24px;
 }
 
-.page-loan-proud .card-register-center,
 .sticky-right.page-loan .card-register-center,
-.nav-right.page-loan .card-register-center,
-.btn-wrap.page-loan .card-register-center{
+.nav-right.page-loan .card-register-center{
 	color: #CF3339;
 	border: 1px solid #CF3339;
 	background-color: #fff;
