@@ -482,6 +482,9 @@
   .main-credit {
     margin-bottom: 60px;
   }
+  .btn-filter span{
+    display: none;
+  }
 
   /* creditcard detail -eve */
   #header-card-detail .center-responsive{
@@ -1286,6 +1289,13 @@
     }
     .form-content .input-ico.input-ico-right span{
       line-height: 22px;
+    }
+    #terms-modal .header .title{
+      line-height: 50px;
+      margin-bottom: 25px;
+    }
+    #terms-modal .header .name{
+      line-height: 36px;
     }
 
     /* article detail -eve */
