@@ -1523,7 +1523,8 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
 #terms-modal .header .title{
   font-size: 18px;
-  line-height: 30px;
+  line-height: 28px;
+  margin-bottom: 10px;
 }
 #terms-modal .header .name {
   font-size: 14px;
@@ -1684,9 +1685,6 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
   .btn-filter img{
     width: 20px;
-  }
-  .btn-filter span{
-    display: none;
   }
 
   .btn-filter.only-desktop.with-tablet {
