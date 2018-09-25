@@ -965,7 +965,7 @@
     padding-right: 20px;
   }
   #box-condition{
-    padding: 4px 20px 40px 20px;
+    padding: 4px 40px 80px 40px;
   }
 
   /* register for member page -eve */
@@ -989,8 +989,12 @@
     padding: 40px 20px 80px 20px;
   }
   .condition-title h3{
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .condition-content p, .condition-content li{
+    font-size: 12px;
+    line-height: 18px;
   }
 
   /* register for member 2 -eve */
@@ -1681,7 +1685,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     width: 20px;
   }
   .btn-filter span{
-    font-size: 12px;
+    display: none;
   }
 
   .btn-filter.only-desktop.with-tablet {
