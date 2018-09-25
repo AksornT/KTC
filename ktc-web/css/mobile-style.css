@@ -981,6 +981,10 @@
   }
   #pg-regis.form-wrap input[type="text"] + label, #pg-regis.form-wrap input[type="password"] + label{
     font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
   }
 
  
