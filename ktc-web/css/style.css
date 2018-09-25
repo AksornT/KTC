@@ -1851,6 +1851,7 @@ a:hover .on-hover{
 	border: 1px solid #5B6670;
 	border-radius: 6px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+	line-height: 32px;
 }
 .col-right-filter input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   	/*font-size: 14px;*/
