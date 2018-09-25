@@ -935,11 +935,13 @@
 
   .bg-login .img-result{
     margin-bottom: 30px;
+    width:84px;
   }
 
   .proud-regis-complete p, .form-register-completed p{
     font-size: 24px;
     padding-bottom: 20px;
+    margin-top: 0px;
   }
 
   
@@ -1556,6 +1558,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   .proud-regis-complete button.card-register-center{
     width: auto;
     font-size: 18px;
+    margin-top: 25px;
   }
 
   .menu-sub-icon .five-icons .nav-item:nth-child(1){

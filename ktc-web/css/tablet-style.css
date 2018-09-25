@@ -900,10 +900,19 @@
   }
 
   .proud-regis-complete p, .form-register-completed p {
-    font-size: 14px;
+    font-size: 32px;
     font-family: "Conv_SukhumvitTadmai_Bol";
     line-height: 22px;
     padding-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .bg-login .img-result{
+    width: auto;
+  }
+
+  .bg-login .card-register-center{
+    margin-top: 40px;
   }
 
   .proud-regis-complete span, .form-register-completed span {
