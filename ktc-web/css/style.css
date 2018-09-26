@@ -6854,6 +6854,17 @@ nav[aria-label="breadcrumb"]{
 }
 
 
+/*Safari Only*/
+@media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+        .campare-table th:nth-child(1) { 
+            width: calc(33% - 71px);
+        }
+    }
+}
+
+
+
 @media (min-width: 1366px) {
 	.menu-global .content-wrap{
 		padding-left: calc(50vw - 653px);
