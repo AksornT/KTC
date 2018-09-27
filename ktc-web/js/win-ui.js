@@ -303,6 +303,11 @@ $(document).ready(function() {
     //for favorite and share button
     $(".fav-btn, .share-btn").on('click touch', function () {
       $(this).toggleClass('active');
+      return false;
+    });
+
+    $('body').on('click touch', function () {
+      $('.share-btn').removeClass('active');
     });
 
     /* FILTER FORM */
@@ -382,13 +387,14 @@ $(document).ready(function() {
                 $('.all-type-list').removeClass( "active" );
                 sortList = 0;
                 $('.list-number').text('');
+                $('.submit-btn').prop("disabled", true);
                 return false;
             } else {
                 sortList = sortList + 1;
                 $(this).addClass( "active" );
                 $(this).find('.list-number').text(sortList);
                 console.log(sortList);
-                if(sortList == 4) {
+                if(sortList >= 1) {
                     $('.submit-btn').prop("disabled", false);
                 } else {
                     $('.submit-btn').prop("disabled", true);
