@@ -1204,7 +1204,7 @@
 
   .row-search-filter.only-mobile{
     display: flex;
-    margin: 20px 0 0 0;
+    margin: 20px 0 ;
   }
 
   .row-search-filter .filter-btn.only-desktop{
