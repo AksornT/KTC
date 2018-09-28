@@ -5138,6 +5138,8 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .article-wrap .article-tag a:hover {
     opacity: 1;
+    border: 1px solid #CF3339;
+    color: #CF3339;
 }
 .article-wrap .article-link .title {
     font-family: 'Gotham-Bold';
@@ -6817,7 +6819,7 @@ nav[aria-label="breadcrumb"]{
     border-radius: 3px;
     resize: none;
     padding: 10px;
-    font-family: 'Conv_SukhumvitTadmai_Thi';
+    font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 }
 .art-con-comment textarea:focus{
@@ -6825,22 +6827,22 @@ nav[aria-label="breadcrumb"]{
     border-color: #CF3339;
 }
 .art-con-comment textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 	color: #C8C8C8;
 }
 .art-con-comment textarea::-moz-placeholder { /* Firefox 19+ */
-  	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 	color: #C8C8C8;
 }
 .art-con-comment textarea:-ms-input-placeholder { /* IE 10+ */
-  	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 	color: #C8C8C8;
 }
 .art-con-comment textarea:-moz-placeholder { /* Firefox 18- */
-  	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 	color: #C8C8C8;
 }
