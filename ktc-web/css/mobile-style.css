@@ -271,9 +271,6 @@
     width: 116px;
   }
 
-  .content-wrap {
-    padding: 0 20px;
-  }
   .menu-global .search-on-menu{
     padding: 7px;
     top: 0;
@@ -593,12 +590,12 @@
     padding-left: 15px
   }
   .item .slide-title{
-    font-size: 14px;
+    font-size: 16px;
     max-height: 47px;
     padding-top: 10px;
   }
   .item .slide-content{
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 0px;
     line-height: 18px;
   }
@@ -1469,7 +1466,8 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
 .promotion-page .item .slide-title,
 .article-page .item .slide-title{
-  height: 48px;
+  height: 56px;
+  max-height: 56px;
 }
 
 .promotion-page .item .slide-title + .slide-content,
