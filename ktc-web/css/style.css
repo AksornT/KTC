@@ -5443,6 +5443,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     height: 40px;
     position: relative;
     outline: 0;
+    z-index: 1;
 }
 
 .row-search-filter .input-search-inline input{
@@ -6962,6 +6963,17 @@ nav[aria-label="breadcrumb"]{
         .campare-table th:nth-child(1) { 
             width: calc(33% - 71px);
         }
+    }
+}
+
+/*Firefox Only*/
+@-moz-document url-prefix() {
+	.item .slide-content{
+		padding-right: 24px;
+	}
+    .slide-wrap .item .slide-meta .fav-btn {
+        position: absolute;
+        right: 0;
     }
 }
 
