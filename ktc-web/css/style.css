@@ -2816,6 +2816,7 @@ section .form-register-completed .img-result {
 }
 .main-loan img{
 	width: 270px;
+	top: 0;
 	height: auto;
 	position: relative;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
@@ -3197,13 +3198,14 @@ a.media.on-desk img {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	border: 1px solid #fff;
-	background: #fff url("../img/ico-share.png") no-repeat center;
+	background: #fff url("../img/ico-share-pro.png") no-repeat center;
+	background-size: 80% auto ;
 }
 
 .btn-flexi-share:focus{
 	outline: 0;
-	border: 1px solid #CF3339;
+	background: #CF3339 url('../img/ico-share-pro-fill.png') no-repeat center;
+	background-size: 100% auto ;
 	box-shadow: none;
 }
 
