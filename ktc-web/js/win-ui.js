@@ -427,6 +427,7 @@ $(document).ready(function() {
                 $(".compared-box > div:nth-child("+cards+") img + p").text(creditText);
                 $(".compared-box > div:nth-child("+cards+")").addClass("compare-item-" + cards);
                 $('.click-compare').addClass('active');
+                $('.main-credit').addClass('addTop');
                 if(cards >= 2) {
                     $('.go-compare').prop("disabled", false);
                 } else {
@@ -460,6 +461,7 @@ $(document).ready(function() {
             }
             if(cards == 0 ) {
                 $('.click-compare').removeClass('active');
+                $('.main-credit').removeClass('addTop');
             }
             
             console.log(cards);
@@ -480,6 +482,7 @@ $(document).ready(function() {
             }
             if(cards == 0) {
                 $('.click-compare').removeClass('active');
+                $('.main-credit').removeClass('addTop');
             }
             console.log(cards);
             $( '.box-compare-credit p + span' ).unbind();
@@ -499,6 +502,7 @@ $(document).ready(function() {
             }
             if(cards == 0) {
                 $('.click-compare').removeClass('active');
+                $('.main-credit').removeClass('addTop');
             }
             console.log(cards);
             $( '.box-compare-credit p + span' ).unbind();
@@ -518,6 +522,7 @@ $(document).ready(function() {
             $(this).remove();
         });
         $('.compared-box').append('<div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div><div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div><div class="col-6 col-sm-6 col-lg-4 text-center box-compare-credit"><img src="img/img-dis-compare.png"><p></p><span>+</span></div>');
+        $('.main-credit').removeClass('addTop');
         console.log(cards);
         compareFunction();
         return false;

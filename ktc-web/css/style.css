@@ -1909,7 +1909,12 @@ a:hover .on-hover{
 }
 .main-credit{
 	margin-bottom: 130px;
+	padding-top: 0;
 }
+.main-credit.addTop{
+	padding-top: 150px;
+}
+
 .main-credit h3{
 	text-align: center;
 	font-size: 35px;
