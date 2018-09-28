@@ -4983,6 +4983,19 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     justify-content: space-between;
     padding: 9px;
 }
+
+.article-wrap .article-icon .share-popover.on-bottom{
+	top: auto;
+	bottom: -56px;
+}
+
+.article-wrap .article-icon .share-popover.on-bottom:after{
+	border-top: none;
+	border-bottom: 8px solid #ECEEED;
+	bottom: auto;
+	top: -8px;
+}
+
 .btn-flexi-share + .share-popover{
 	top: 100%;
 }

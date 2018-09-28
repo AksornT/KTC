@@ -561,9 +561,6 @@ $(document).ready(function() {
         $(this).next().val(filename).addClass('hasText');
     });
 
-
-
-
 });
 
 //change header when scroll down.
@@ -618,6 +615,13 @@ $(document).on('scroll', function() {
         $('.page-credit-compare').addClass('active-mobile');
     }else{
         $('.page-credit-compare').removeClass('active-mobile');
+    };
+
+    // for share button
+    if($(this).scrollTop()>=$('.article-icon .share-btn').offset().top - 200){
+        $('.share-popover').addClass('on-bottom');
+    }else{
+        $('.share-popover').removeClass('on-bottom');
     };
 
 
