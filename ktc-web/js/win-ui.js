@@ -618,7 +618,7 @@ $(document).on('scroll', function() {
     };
 
     // for share button
-    if($(this).scrollTop()>=$('.article-icon .share-btn').offset().top - 250){
+    if($(this).scrollTop()>=$('.article-icon .share-btn').offset().top - 200){
         $('.share-popover').addClass('on-bottom');
     }else{
         $('.share-popover').removeClass('on-bottom');

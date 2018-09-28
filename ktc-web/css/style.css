@@ -4985,6 +4985,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     align-items: center;
     justify-content: space-between;
     padding: 9px;
+    z-index: 1;
 }
 
 .article-wrap .article-icon .share-popover.on-bottom{
