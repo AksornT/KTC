@@ -6966,6 +6966,17 @@ nav[aria-label="breadcrumb"]{
     }
 }
 
+/*Firefox Only*/
+@-moz-document url-prefix() {
+	.item .slide-content{
+		padding-right: 24px;
+	}
+    .slide-wrap .item .slide-meta .fav-btn {
+        position: absolute;
+        right: 0;
+    }
+}
+
 
 
 @media (min-width: 1366px) {
