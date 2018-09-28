@@ -5443,6 +5443,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     height: 40px;
     position: relative;
     outline: 0;
+    z-index: 1;
 }
 
 .row-search-filter .input-search-inline input{
