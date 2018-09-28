@@ -6592,13 +6592,6 @@ a.all-type-list[href]:hover{
 .world-modal .modal-content {
     border-top: 4px solid #CF3339;
 }
-.full-modal .modal-header {
-    border: none;
-    font-size: 40px;
-    line-height: 38px;
-    padding-top: 60px;
-    display: block;
-}
 .main-terms-modal.world-modal .close {
     color: #CF3339;
 }
