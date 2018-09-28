@@ -730,7 +730,7 @@ a:hover{
 
 /* articles and sections */
 article.page-content section {
-	padding: 60px 0;
+	padding: 40px 0;
 	border-bottom: 1px solid #E6E8EA;
 }
 article.page-content section.no-bottom-line {
@@ -748,7 +748,7 @@ article.page-content section.full-width {
 	font-size: 28px;
 }
 article.page-content section.full-width h4 {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 article.page-content section.full-width .row {
 	background: #F6F6F6;
@@ -1006,8 +1006,8 @@ button:focus {
 }
 
 .image-link{
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .tel p{
@@ -1421,7 +1421,7 @@ body.modal-open{
 	width: 108px;
 	height: 30px;
 	line-height: 26px;
-	margin: 60px 0 0 0;
+	margin: 40px 0 0 0;
 	opacity: 1;
 	border: none;
 }
@@ -2179,7 +2179,7 @@ article#content-card-detail section{
 }
 #content-card-detail.page-content .content-inner-merchant-detail .section-service-detail{
   border-top: 1px solid #E7E8EA;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 #content-card-detail .content-title{
   padding-top: 0px;
@@ -2366,7 +2366,7 @@ a.card-register-center, a.btn-action {
 	line-height: 46px;
 	text-align: center;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-	padding: 0 60px 24px 60px;
+	padding: 0 40px 24px 40px;
 }
 
 .text-content-wrap .only-desktop{
@@ -2405,7 +2405,7 @@ a.card-register-center, a.btn-action {
 .text-content-wrap .little-notice{
     margin-left: 35px;
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .withStore p{
@@ -2477,7 +2477,7 @@ a.card-register-center, a.btn-action {
 
 .two-icon-link{
 	max-width: 985px;
-	margin: 60px auto 60px auto;
+	margin: 40px auto 40px auto;
 	text-align: center;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
@@ -2518,7 +2518,7 @@ a.card-register-center, a.btn-action {
     margin-bottom: 30px;
     font-family: 'Conv_SukhumvitTadmai_Tex';
     line-height: 1.5;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .content-title:after {
     height: 2px;
@@ -2559,7 +2559,7 @@ article#content-card-detail section{
 }
 #content-card-detail.page-content .content-inner-merchant-detail .section-service-detail{
   border-top: 1px solid #E7E8EA;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 #content-card-detail .content-title{
   padding-top: 0px;
@@ -2928,7 +2928,7 @@ h4.content-title:after{
 		padding-top: 14px;
 }
 .box-cash{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .box-cash-long{
 	background-color: rgba(91, 102, 112, 0.05);
@@ -2969,7 +2969,7 @@ h4.content-title:after{
 	padding-top: 14px;
 }
 .box-more{
-	margin: 60px 0;
+	margin: 40px 0;
 }
 .box-con-cal{
 	padding-left: calc(40% - 350px);
@@ -3030,7 +3030,7 @@ a.media.on-desk img {
 }
 .detail-register{
 	background-color: rgba(91, 102, 112, 0.05);
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .detail-register-desc h5{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -3050,7 +3050,7 @@ a.media.on-desk img {
 }
 
 .detail-register-desc > h5{
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .detail-register-desc.col-lg-12 + .detail-register-desc.col-lg-6{
@@ -3123,7 +3123,7 @@ a.media.on-desk img {
 }
 
 #nav-flexi-scroll-trigger {
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 #nav-flexi {
@@ -3302,13 +3302,13 @@ a.media.on-desk img {
 }
 
 #page-flexi-content section {
-	padding: 60px 0;
+	padding: 40px 0;
 	border-bottom: 1px solid #E6E8EA;
 }
 
 #page-flexi-content.forever section {
 	padding:  0px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	border-bottom:none;
 }
 #page-flexi-content h4 {
@@ -3422,8 +3422,8 @@ section#section-flexi-cards {
 }
 
 #nav-flexi-installments {
-	margin-top: 50px;
-	margin-bottom: 60px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 #nav-flexi-installments li.nav-item {
 	border-right: 1px solid #E6E8EA;
@@ -3474,7 +3474,7 @@ section#section-flexi-cards {
 	font-size: 28px;
 }
 #section-flexi-shops h4 {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 #section-flexi-shops .row {
 	background: #F6F6F6;
@@ -3484,7 +3484,7 @@ section#section-flexi-cards {
 }*/
 #section-flexi-shops .box-full-img {
 	min-height: 450px;
-	padding: 60px 30px;
+	padding: 40px 30px;
 	background: transparent no-repeat center;
 	background-size: cover;
 }
@@ -4390,7 +4390,7 @@ input:focus + .suggess-box,
 	text-align: center;
 	flex: 0;
 	display: block;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-size: 0;
 }
 
@@ -4586,7 +4586,7 @@ img[href]:hover{
 }
 
 #result-content .slide-wrap .item{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	display: block;
 }
 
@@ -4675,7 +4675,7 @@ img[href]:hover{
 }
 
 .forever #nav-flexi-scroll-trigger {
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 .forever .order-lg-first {
@@ -4688,7 +4688,7 @@ img[href]:hover{
 }
 
 #page-flexi-content.forever section:last-child{
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 #page-flexi-content.forever h4 {
@@ -4820,11 +4820,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .forever #section-flexi-shops{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .forever #section-flexi-shops .row.no-gutters {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .forever #section-flexi-shops .row.no-gutters:nth-last-child(1) {
@@ -4911,11 +4911,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     color: #000;
 }
 .article-wrap {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .article-wrap .article-cover {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .item img {
     width: 100%;
@@ -5160,7 +5160,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     color: #000;
 }
 .article-wrap .article-link{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .article-wrap .article-link .link {
     font-family: Helvetica, Arial, sans-serif;
@@ -5203,7 +5203,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .register-wrapper .nav {
     justify-content: center;
     max-width: 800px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 .register-wrapper .nav .nav-item {
@@ -5263,7 +5263,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     padding-left: 0;
 }
 .register-wrapper .form-register .input-ico-right {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .form-content.form-wrap input[type="text"] + label,
 .form-content.form-wrap input[type="password"] + label{
@@ -5595,7 +5595,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .bn-for-desktop{
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .slide-wrap .item .slide-meta .fav-btn {
@@ -5754,7 +5754,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
 }
 
 #filter-modal .filter-select-row {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
   @media only screen and (max-width: 767px) {
     #filter-modal .filter-select-row {
@@ -5799,7 +5799,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
 #filter-modal .topic-select-row {
   border-bottom: 1px solid #E6E8EA;
   padding-bottom: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
   #filter-modal .topic-select-row .checkbox {
     margin-bottom: 30px;
@@ -6557,7 +6557,7 @@ a.all-type-list[href]:hover{
     height: 45px;
 }
 #tab-sms{
-		margin-top: 60px;
+		margin-top: 40px;
 }
 #tab-sms p{
 		margin-bottom: 15px;
@@ -6565,7 +6565,7 @@ a.all-type-list[href]:hover{
 		font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 #promo-regis-complete .img-result {
-    margin: 60px 0 30px 0;
+    margin: 40px 0 30px 0;
 }
 
 #promotion-detail nav{
@@ -7097,10 +7097,10 @@ nav[aria-label="breadcrumb"]{
   }
 
   .withStore.only-mobile{
-  	padding-bottom: 60px;
+  	padding-bottom: 40px;
   }
 	.box-more {
-    margin: 60px auto;
+    margin: 40px auto;
 	}
 
 	.with-loan-img p{
@@ -7239,7 +7239,7 @@ nav[aria-label="breadcrumb"]{
 
   /* creditcard detail -eve */
   #card-detail-regis .detail-register-desc.section-doc-regis h5 {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   
   /* creditcard detail -eve */
@@ -7247,7 +7247,7 @@ nav[aria-label="breadcrumb"]{
     margin-top: 0px;
   }
   #card-detail-regis .detail-register-desc.section-doc-regis h5{
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .owl-item {
