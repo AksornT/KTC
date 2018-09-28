@@ -272,6 +272,7 @@
   }
   .text-on-slide a{
     padding-top: 8px;
+    font-size: 16px;
   }
   .item .slide-title{
     padding-top: 10px;
@@ -560,6 +561,10 @@
   }
 
   /* loan-cash page -eve */
+  .content-wrap {
+    padding: 0 20px;
+  }
+
   .content-wrap .on-desk{
     display: none !important;
   }
@@ -1308,6 +1313,9 @@
     }
     #terms-modal .header .name{
       line-height: 36px;
+    }
+    .first-box-setting {
+      margin-bottom: -30px;
     }
 
     /* article detail -eve */
