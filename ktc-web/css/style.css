@@ -1178,11 +1178,13 @@ body.modal-open{
 
 .full-modal .close{
 	top: 1rem;
-	right: 1rem;
+	right: 2rem;
 	position: fixed;
 	color: #CF3339;
 	font-size: 40px;
 	opacity: 1;
+	z-index: 6;
+	font-family: "Conv_SukhumvitTadmai_Thi";
 }
 
 .full-modal .close:hover{
@@ -1814,8 +1816,7 @@ a:hover .on-hover{
 }
 .breadcrumb.bc-content{
 	background-color: transparent;
-	padding-top: 15px;
-	padding-left: 0;
+	padding: 0;
 }
 .breadcrumb.bc-content .breadcrumb-item a{
 	color: rgba(91, 102, 112, 0.6);
@@ -2108,7 +2109,7 @@ a:hover .on-hover{
   line-height: 1.4;
 }
 .filter-content .checkmark{
-  border: 1px solid #CF3339;
+  border: 1px solid #8B939A;
   top: 10px;
 }
 .row-lifestyle{
@@ -5330,14 +5331,14 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     display: block;
     width: 20px;
     height: 20px;
-    border: 2px solid #8B939A;
+    border: 1px solid #8B939A;
     border-radius: 2px;
     position: absolute;
     left: 0px;
     top: -3px;
 }
 .form-content .checkbox input:checked + label:before {
-    border: 2px solid #CF3339;
+    border: 1px solid #CF3339;
     background-color: #CF3339;
     background-image: url(../img/ico-checked.png);
     background-size: contain;
@@ -5509,7 +5510,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     font-size: 16px;
     line-height: 26px;
     color: #5B6670;
-    padding: 18px 20px 18px 20px;
+    padding: 18px 15px 18px 15px;
 }
 
 .article-page .menu-sub-icon .nav-link{
@@ -5692,7 +5693,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
     display: block;
     width: 20px;
     height: 20px;
-    border: 2px solid #8B939A;
+    border: 1px solid #8B939A;
     border-radius: 3px;
     position: absolute;
     left: 0px;
