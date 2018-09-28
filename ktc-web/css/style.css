@@ -6208,6 +6208,8 @@ a.all-type-list[href]:hover{
   padding: 10px 10px;
 }
 
+.text-on-slide .index-head a {
+    padding: 0;
 }
 
 
