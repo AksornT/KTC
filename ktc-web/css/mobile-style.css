@@ -1452,7 +1452,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   margin-top: 0px;
 }
 #tab-sms p{
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.article-wrap .article-collapse .info p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .index-slide1 .owl-dots{
