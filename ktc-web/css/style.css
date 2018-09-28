@@ -6703,6 +6703,13 @@ nav[aria-label="breadcrumb"]{
 	padding-top: 10px;
 }
 
+.article-category .row-search-filter{
+	margin-top: 20px;
+}
+.article-category .text-on-slide .index-head:nth-child(1){
+	margin-top: 0px;
+}
+
 .article-category .slide-wrap .index-slide2 .item{
 	padding: 13px 15px;
 	margin-bottom: 14px;
