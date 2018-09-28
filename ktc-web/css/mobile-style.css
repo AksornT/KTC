@@ -1587,8 +1587,8 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
 /* article detail -eve */
 .article-title h1 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
 }
 .article-title .art-con-title h2 {
     font-size: 12px;
@@ -1633,7 +1633,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     margin-top: 20px;
 }
 .sidebar-right-bottom h3.index-head{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .media.box-comment .text-right p {
     font-size: 10px;
