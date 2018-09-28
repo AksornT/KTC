@@ -2691,7 +2691,18 @@ article.page-content #card-detail-regis h3::after{
     margin-bottom: 20px;
 }
 
-.form-wrap input,
+.form-wrap input{
+	width: 100%;
+	padding:0;
+	border: none;
+	font-size: 16px;
+	border-bottom: rgba(90,102,112,.4) solid 1px;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-top: 60px;
+	height: 30px;
+	border-radius: 0;
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 .form-wrap input:-webkit-autofill,
 .form-wrap input:focus:-webkit-autofill{
 	width: 100%;
