@@ -2356,7 +2356,7 @@ a.card-register-center, a.btn-action {
 	margin: 30px 0 60px 0;
 }
 
-.card-register-center:hover, .btn-action:hover {
+.card-register-center:hover {
 	cursor: pointer;
 	color: #fff;
 	top: -3px;
@@ -2365,9 +2365,19 @@ a.card-register-center, a.btn-action {
 	box-shadow: 0 1px 13px 0 rgba(0,0,0,0.2);
 }
 
-.card-register-center.blue, .btn-action.blue {
+.card-register-center.blue {
 	background: #045aa7;
 }
+.btn-action.blue {
+	background-color: #fff;
+	border: 1px solid #045aa7;
+	color: #045aa7;
+}
+.btn-action:hover{
+	background-color: #045aa7;
+	color: #fff;
+}
+
 
 .text-head-wrap > div{
 	font-size: 30px;
