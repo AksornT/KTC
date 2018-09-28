@@ -1351,6 +1351,10 @@
       margin-bottom: 20px;
     }
 
+    .promotion-page .menu-sub-icon {
+      margin-bottom: 0px;
+    }
+
     .promotion-page .item .slide-title, 
     .article-page .item .slide-title{
       height: 60px;
