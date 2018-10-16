@@ -668,12 +668,18 @@ a:hover{
 	background: #ededed;
 }
 
-.footer h3{
+.footer h3,
+.footer h3 a{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 16px;
 	margin-bottom: 9px;
 	line-height: 25px;
 	padding-top: 40px;
+}
+
+.footer h3 a{
+	margin: 0;
+	padding: 0;
 }
 
 .footer a{
@@ -695,6 +701,15 @@ a:hover{
 
 .footer a:hover{
 	color: #cf3339;
+}
+
+.footer a.tel,
+.footer a.tel:hover{
+	color: #000;
+}
+
+.footer .download-section a{
+	margin: 0;
 }
 
 .footer-menu{
@@ -778,6 +793,7 @@ article.page-content h4 {
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-align: center;
+	position: relative;
 }
 article.page-content h3::after,
 article.page-content h4::after {
@@ -794,6 +810,13 @@ article.page-content h4.no-dash::after {
 }
 article.page-content img {
 	max-width: 100%;
+}
+
+.share-on-top{
+	margin-left: -30px;
+	float: right;
+	position: relative;
+	padding-bottom: 8px;
 }
 
 /* slide - eve */
@@ -3212,6 +3235,7 @@ a.media.on-desk img {
 .btn-flexi-share.only-mobile {
 	margin-top: 20px;
 	width: 100%;
+	background-size: auto 80%;
 }
 
 #nav-flexi .button-flexi-start {
@@ -3279,7 +3303,7 @@ a.media.on-desk img {
 	right: 0;
 	background: #fff;
 	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
-	z-index: 1;
+	z-index: 2;
 }
 #nav-flexi-mobile .nav.mini .nav-right, #nav-flexi-modal .nav.mini .nav-right {
 	margin-left: auto;
@@ -3291,8 +3315,8 @@ a.media.on-desk img {
 	font-size: 14px;
 }
 #nav-flexi-mobile .nav.mini .btn-flexi-share, #nav-flexi-modal .nav.mini .btn-flexi-share {
-	-webkit-background-size: 12px;
-	background-size: 12px;
+	-webkit-background-size: 22px;
+	background-size: 22px;
 }
 #nav-flexi-mobile .nav.mini .button-show-flexi-menu, #nav-flexi-modal .nav.mini .button-show-flexi-menu {
 	margin-left: -10px;
@@ -3335,6 +3359,7 @@ a.media.on-desk img {
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-align: center;
+	position: relative;
 }
 #page-flexi-content h4::after {
 	content: '';
@@ -4358,10 +4383,6 @@ input:focus + .suggess-box,
     opacity: 1;
 }
 
-#search-result-page{
-	padding-top: 25px;
-}
-
 .content-wrap > nav > .breadcrumb{
 	padding-left: 0;
 }
@@ -4475,6 +4496,7 @@ input:focus + .suggess-box,
     top: 5vw;
     position: absolute;
     pointer-events: none;
+    transform: translateY(-10px);
 }
 
 .search-slide .owl-nav button{
@@ -4493,8 +4515,7 @@ input:focus + .suggess-box,
 }
 
 .search-slide .item img{
-	max-width: 100%;
-    width: auto;
+	width: 100%;
     height: auto;
 }
 
@@ -6983,6 +7004,31 @@ nav[aria-label="breadcrumb"]{
 
 .filter-content .brand-wrap .checkmark{
 	top: calc(50% - 11px);
+}
+
+.search-slide.type-credits .owl-stage,
+.search-slide.type-credits .owl-item,
+.search-slide.type-promotion .owl-stage,
+.search-slide.type-promotion .owl-item{
+	display: flex;
+}
+
+#result-content .slide-wrap .search-slide.type-credits .item,
+#result-content .slide-wrap .search-slide.type-promotion .item{
+    display: flex;
+    flex-flow: column;
+}
+
+.search-slide.type-credits .slide-content{
+	margin-bottom: 30px;
+}
+
+.search-slide.type-credits .card-register-btn,
+.search-slide.type-promotion .card-register-btn{
+	text-align: center;
+	width: 110px;
+	white-space: nowrap;
+	margin-top: auto;
 }
 
 
