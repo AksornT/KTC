@@ -3347,7 +3347,6 @@ a.media.on-desk img {
 
 #page-flexi-content section {
 	padding: 40px 0;
-	border-bottom: 1px solid #E6E8EA;
 }
 
 #page-flexi-content.forever section {
@@ -3902,6 +3901,116 @@ section#section-flexi-cards {
   cursor: pointer;
 }
 
+.section-cards{
+	position: relative;
+}
+.section-cards img{
+	position: relative;
+	width: 100%;
+}
+.section-cards .cards-txt-right{
+	position: absolute;
+	top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+.section-cards .cards-txt-left{
+	position: absolute;
+	top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+#section-loan-card .box-title{
+	padding-top: 40px;
+}
+#section-loan-card .box-title .title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 34px;
+  	text-align: left;
+}
+#section-loan-card .box-title .sub-title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 24px;
+  	text-align: left;
+  	line-height: 30px;
+  	padding-top: 6px;
+}
+#page-flexi-content .section-cards h4::after{
+	display: none;
+}
+.section-cards .box-info h5{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 20px;
+}
+.section-cards .box-info span{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 90px;
+  	margin: 30px auto;
+}
+.section-cards .box-info small{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 24px;
+}
+.section-cards .box-info button,
+.section-cards .box-info a{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 14px;
+  	display: block;
+}
+.section-cards figure.box-info {
+    display: flex;
+    margin-top: auto;
+    height: 220px;
+    text-align: center;
+    margin-top: 45px;
+}
+.section-cards figure.box-info > * {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    /* padding: 10px 30px; */
+}
+.section-cards figure.box-info > .left {
+    border-right: 1px solid #E6E8EA;
+}
+#section-credit-card .box-title .sub-title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 24px;
+  	line-height: 30px;
+  	padding-top: 6px;
+  	color: #cf3339;
+}
+#section-credit-card .box-title .title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 34px;
+  	color: #cf3339;
+  	text-align: center;
+}
+#section-credit-card .box-info h5{
+	color: #cf3339;
+}
+#section-credit-card .box-info span{
+	color: #cf3339;
+}
+#section-merch .box-title .title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 40px;
+  	color: #fff;
+  	text-align: left;
+  	margin-bottom: 18px;
+}
+#section-merch .box-title .sub-title{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-size: 20px;
+  	text-align: left;
+  	line-height: 30px;
+  	color: #fff;
+}
+.section-cards a.button-contact-shop{
+	padding-left: 0;
+}
+
+
 /* login page -eve */
 .on-right.header-login-pg{
 	padding-top: 24px;
@@ -3910,7 +4019,7 @@ section#section-flexi-cards {
 .on-right.header-login-pg p{
 	padding-left: 6px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-  font-size: 16px;
+  	font-size: 16px;
 	display: inline-block;
 	color: #fff;
 }
