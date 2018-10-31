@@ -3901,8 +3901,13 @@ section#section-flexi-cards {
   cursor: pointer;
 }
 
+#content-flexi-installments p{
+	line-height: 1.4;
+}
+
 .section-cards{
 	position: relative;
+	overflow: hidden;
 }
 .section-cards img{
 	position: relative;
@@ -3910,29 +3915,26 @@ section#section-flexi-cards {
 }
 .section-cards .cards-txt-right{
 	position: absolute;
-	top: 50%;
+	bottom: 50%;
     right: 10%;
     transform: translateY(-50%);
 }
 .section-cards .cards-txt-left{
 	position: absolute;
-	top: 50%;
+	bottom: 50%;
     left: 10%;
     transform: translateY(-50%);
 }
-#section-loan-card .box-title{
-	padding-top: 40px;
-}
-#section-loan-card .box-title .title{
+.flexi-loan .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 34px;
   	text-align: left;
 }
-#section-loan-card .box-title .sub-title{
+.flexi-loan .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 24px;
   	text-align: left;
-  	line-height: 30px;
+  	line-height: 1.4;
   	padding-top: 6px;
 }
 #page-flexi-content .section-cards h4::after{
@@ -3960,7 +3962,7 @@ section#section-flexi-cards {
 .section-cards figure.box-info {
     display: flex;
     margin-top: auto;
-    height: 220px;
+    height: auto;
     text-align: center;
     margin-top: 45px;
 }
@@ -3973,37 +3975,40 @@ section#section-flexi-cards {
 .section-cards figure.box-info > .left {
     border-right: 1px solid #E6E8EA;
 }
-#section-credit-card .box-title .sub-title{
+.flexi-credit.section-cards figure.box-info > .left {
+    border-right: 1px solid #cf3339;
+}
+.flexi-credit .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 24px;
-  	line-height: 30px;
+  	line-height: 1.4;
   	padding-top: 6px;
   	color: #cf3339;
 }
-#section-credit-card .box-title .title{
+.flexi-credit .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 34px;
   	color: #cf3339;
   	text-align: center;
 }
-#section-credit-card .box-info h5{
+.flexi-credit .box-info h5{
 	color: #cf3339;
 }
-#section-credit-card .box-info span{
+.flexi-credit .box-info span{
 	color: #cf3339;
 }
-#section-merch .box-title .title{
+.flexi-shop .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 40px;
   	color: #fff;
   	text-align: left;
   	margin-bottom: 18px;
 }
-#section-merch .box-title .sub-title{
+.flexi-shop .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
   	font-size: 20px;
   	text-align: left;
-  	line-height: 30px;
+  	line-height: 1.4;
   	color: #fff;
 }
 .section-cards a.button-contact-shop{

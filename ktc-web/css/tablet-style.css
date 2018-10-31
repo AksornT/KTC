@@ -1027,6 +1027,35 @@
     opacity: 1;
   }
 
+  .section-cards .cards-txt-right{
+    position: relative;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    right: auto;
+    padding: 40px 40px;
+  }
+  .section-cards .cards-txt-left{
+    position: relative;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    left: auto;
+    padding: 40px 40px;
+  }
+  .flexi-loan .box-title{
+    padding-left: 85px;
+  }
+  .flexi-shop .box-title .title{
+    color: #000;
+  }
+  .flexi-shop .box-title .sub-title{
+    color: #000;
+  }
+
+
   /*forever*/
 
   #page-flexi-content section.forever {
