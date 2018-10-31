@@ -7031,6 +7031,164 @@ nav[aria-label="breadcrumb"]{
 	margin-top: auto;
 }
 
+.page-merchant-inner-header nav[aria-label="breadcrumb"]{
+	padding-top: 0;
+}
+
+
+/*== static page template ==*/
+.global-space{
+	display: block;
+	width: 100%;
+	height: 40px;
+}
+.static-wrap .row > div{
+	align-self: center;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.static-wrap{
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden;
+}
+
+.static-wrap img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.static-wrap h5{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 40px;
+	line-height: 1.6;
+	display: block;
+	margin:0 0 8px 0;
+}
+
+.static-wrap p{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 20px;
+	display: block;
+}
+
+.static-wrap .mid-size{
+	font-size: 26px;
+	margin: 30px 0;
+}
+
+.static-wrap a{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.static-wrap a:hover{
+	opacity: 0.7;
+}
+
+.static-wrap .link-more{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 16px;
+	text-decoration: underline;
+	color: #CF3339;
+	margin: 33px 0;
+	display: block;
+	margin: 33px 0 0 0;
+}
+
+.static-merchant .link-more{
+	color: #0055B8;
+}
+
+.half-half-white-reverse .link-more{
+	margin-bottom: 33px;
+}
+
+.static-wrap .overlap-wrap{
+	padding: 50px 0;
+	position: relative;
+	margin-left: -16.5%;
+	width: 116.5%; 
+	background: #fff;
+}
+.half-overlap-grey .overlap-wrap{
+	background: #F9F9F9;
+}
+
+.half-half-blue-reverse {
+	background: #0055B8;
+}
+
+.half-half-blue-reverse,
+.half-half-blue-reverse .link-more,
+.negative-text,
+.negative-text .link-more{
+	color: #fff;
+}
+
+.text-on-right-img{
+	position: absolute;
+    left: auto;
+    right: 0;
+}
+
+.text-on-center-img{
+	position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.text-on-left-img{
+	position: absolute;
+    left: 0;
+    right: auto;
+}
+
+.tel-number{
+	text-align: center;
+	padding: 45px 15px;
+}
+
+.tel-number p{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 35px;
+	display: block;
+}
+.tel-number .the-number{
+	font-size: 41px;
+	padding: 1px 0 1px 70px; 
+	display: inline-block;
+	margin: 20px 0;
+	color: #CF3339;
+	background: url('../img/ico-tel-big.png') no-repeat;
+	background-size: auto 100%;
+}
+
+.static-merchant .the-number{
+	color: #0055B8;
+	background: url('../img/ico-tel-big-blue.png') no-repeat;
+	background-size: auto 100%;
+}
+
+.tel-number .mini-text{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+}
+
+.static-content img{
+	width: auto;
+	margin: 0 auto;
+}
+
+.static-content.text-left{
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)

@@ -1430,4 +1430,44 @@
     right: 0;
   }
 
+  /*Static Content*/
+  .static-wrap .static-content{
+    padding: 40px 35px;
+    position: relative;
+  }
+  .static-wrap .overlap-wrap{
+    width: calc(100% + 40px);
+    margin: -40px -20px;
+    padding: 40px 20px;
+  }
+
+  .static-wrap h5{
+    line-height: 1.3;
+  }
+
+  .static-wrap .text-left h5{
+    text-align: center !important;
+  }
+
+  .static-wrap h5 br{
+    display: none;
+  }
+ 
+  .negative-text, 
+  .negative-text .link-more{
+    color: #212529;
+  }
+
+  .static-wrap .link-more {
+    color: #CF3339;
+    text-align: center;
+  }
+
+  .static-merchant .link-more {
+    color: #0055B8;
+  }
+
+  .half-half-blue-reverse .link-more{
+    color: #fff;
+  }
 }
