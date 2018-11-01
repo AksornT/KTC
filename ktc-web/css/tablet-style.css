@@ -566,6 +566,20 @@
     padding-bottom: 40px;
   }
 
+  .static-wrap .overlap-wrap.text-left {
+    padding: 40px 10%;
+  }
+  .proud-loan-interest .vertical-wrap {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+  .proud-loan-interest .img-ico-flexi{
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
   /* loan-cash page -eve */
   .content-wrap {
     padding: 0 20px;
