@@ -566,6 +566,20 @@
     padding-bottom: 40px;
   }
 
+  .static-wrap .overlap-wrap.text-left {
+    padding: 40px 10%;
+  }
+  .proud-loan-interest .vertical-wrap {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+  .proud-loan-interest .img-ico-flexi{
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
   /* loan-cash page -eve */
   .content-wrap {
     padding: 0 20px;
@@ -1027,11 +1041,59 @@
     opacity: 1;
   }
 
+  .section-cards .cards-txt-right{
+    position: relative;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    right: auto;
+    padding: 40px 40px;
+  }
+  .section-cards .cards-txt-left{
+    position: relative;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    left: auto;
+    padding: 40px 40px;
+  }
+  .flexi-loan .box-title{
+    padding-left: 85px;
+  }
+  .flexi-shop .box-title .title{
+    color: #000;
+  }
+  .flexi-shop .box-title .sub-title{
+    color: #000;
+  }
+
+
   /*forever*/
 
   #page-flexi-content section.forever {
     padding-bottom: 0px;
     border: none;
+  }
+
+  /*.forever p.only-shopping br{
+    display: none;
+  }
+
+*/
+  #page-flexi-content.forever h4 {
+    margin-top: 25px;
+  }
+
+  .forever .section-box div[class*="col"].order-lg-last.box-center-v-1{
+    position: relative;
+    padding: 40px 35px;
+  }
+
+  .forever .section-box div[class*="col"].order-lg-last.box-center-v{
+    position: relative;
+    padding:40px 35px;
   }
 
   .forever .special-button {

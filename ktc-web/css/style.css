@@ -2956,6 +2956,80 @@ h4.content-title:after{
 	font-weight: 100;
 }
 
+.proud-loan{
+	overflow: hidden;
+}
+.proud-loan .proud-after-logo{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+}
+.proud-loan .sub-desc{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 20px;
+	text-align: center;
+	padding-top: 15px;
+}
+.proud-service-withdraw .text-head-wrap{
+	font-size: 30px;
+    line-height: 1.3;
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    padding-bottom: 15px;
+    padding-left: 35px;
+}
+.proud-service-withdraw img.img-service-online{
+	width: 100%;
+}
+.content-service-online{
+	padding: 40px 0;
+}
+.proud-loan-interest img.img-loan-interest{
+	width: 100%;
+	position: relative;
+}
+.proud-loan-interest .vertical-wrap{
+	position: absolute;
+	bottom: 80%;
+    left: 10%;
+    transform: translateY(-20%);
+}
+.proud-loan-interest .img-ico-flexi{
+    width: 184px;
+    height: auto;
+    padding-bottom: 24px;
+}
+.proud-loan-interest .with-loan-img{
+    background: none;
+}
+.static-wrap .overlap-wrap.text-left{
+	padding: 50px 20%;
+}
+.static-wrap p.sub-desc-red{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	color: #CF3339;
+	font-size: 20px;
+	margin-top: -8px;
+    margin-bottom: 8px;
+}
+.static-wrap p.sub-desc-nor{
+	margin-bottom: 12px;
+}
+.text-content-wrap.desc-transfer li{
+	margin-left: 25px;
+	font-size: 20px;
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+}
+.text-content-wrap.desc-transfer li strong{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+}
+.text-content-wrap.desc-transfer .little-notice{
+	margin-left: 0px;
+	font-size: 16px;
+}
+.static-wrap .desc-transfer a{
+	color: #CF3339;
+    text-decoration: underline;
+}
+
+
 /* loan-cash -eve */
 .content-wrap .on-desk{
 	display: flex;
@@ -2968,8 +3042,8 @@ h4.content-title:after{
     line-height: 28px;
     font-family: 'Conv_SukhumvitTadmai_Thi';
     text-align: center;
-		display: block;
-		padding-top: 14px;
+	display: block;
+	padding-top: 14px;
 }
 .box-cash{
 	margin-bottom: 40px;
@@ -3014,46 +3088,48 @@ h4.content-title:after{
 }
 .box-more{
 	margin: 40px 0;
+	text-align: center;
 }
 .box-con-cal{
 	padding-left: calc(40% - 350px);
-  padding-right: calc(40% - 350px);
-  text-align: center;
-}
-.box-con-cal a.media{
-	cursor: pointer;
-	display: inline-block;
-}
-a.media.on-desk img {
+    padding-right: calc(40% - 350px);
+    text-align: center;
     display: inline-block;
+}
+.box-con-cal a {
+	cursor: pointer;
+	position: relative;
+	top: 0;
+}
+.box-con-cal a:hover{
+	top: -3px;
+}
+.box-con-cal a img {
     vertical-align: middle;
 }
-.box-con-cal a.media:hover{
-	margin-top: -3px;
-}
-.box-con-cal .media-body{
-  padding: 20px 0;
-    display: inline-block;
+.box-con-cal .con-cal-txt{
+  	padding: 20px 0;
+    display: block;
     vertical-align: middle;
     width: auto;
-    text-align: left;
+    text-align: center;
 }
-.box-con-cal .media-body h5{
+.box-con-cal .con-cal-txt h5{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
 	color: #000;
 	padding-bottom: 10px;
 }
-.box-con-cal .media-body p{
+.box-con-cal .con-cal-txt p{
 	color: #CF3339;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
 	line-height: 26px;
 	text-decoration: underline;
 }
-.box-line-right{
+/*.box-line-right{
 	border-left: 1px solid rgba(91, 102, 112, 0.15);
-}
+}*/
 .detail-register h3{
 	text-align: center;
 	font-size: 35px;
@@ -3168,6 +3244,7 @@ a.media.on-desk img {
 
 #nav-flexi-scroll-trigger {
 	padding-bottom: 40px;
+	position: absolute;
 }
 
 #nav-flexi {
@@ -3353,7 +3430,7 @@ a.media.on-desk img {
 
 #page-flexi-content.forever section {
 	padding:  0px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	border-bottom:none;
 }
 #page-flexi-content h4 {
@@ -3373,9 +3450,13 @@ a.media.on-desk img {
 #page-flexi-content img {
 	max-width: 100%;
 }
+.forever .content-ticket{
+	position: absolute;
+}
 
 .forever#page-flexi-content img {
 	margin-bottom: -4px;
+	position: relative;
 }
 
 section#section-flexi-cards {
@@ -3519,6 +3600,11 @@ section#section-flexi-cards {
 	text-align: center;
 	font-size: 28px;
 }
+.forever .section-box {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 28px;
+}
 #section-flexi-shops h4 {
 	margin-bottom: 40px;
 }
@@ -3537,6 +3623,11 @@ section#section-flexi-cards {
 #section-flexi-shops .box-center-v {
 	align-self: center;
 }
+
+.forever .section-box .box-center-v {
+	align-self: center;
+}
+
 #section-flexi-shops p {
 	line-height: 1.65;
 }
@@ -3903,8 +3994,13 @@ section#section-flexi-cards {
   cursor: pointer;
 }
 
+#content-flexi-installments p{
+	line-height: 1.4;
+}
+
 .section-cards{
 	position: relative;
+	overflow: hidden;
 }
 .section-cards img{
 	position: relative;
@@ -3912,29 +4008,26 @@ section#section-flexi-cards {
 }
 .section-cards .cards-txt-right{
 	position: absolute;
-	top: 50%;
+	bottom: 50%;
     right: 10%;
     transform: translateY(-50%);
 }
 .section-cards .cards-txt-left{
 	position: absolute;
-	top: 50%;
+	bottom: 50%;
     left: 10%;
     transform: translateY(-50%);
 }
-#section-loan-card .box-title{
-	padding-top: 40px;
-}
-#section-loan-card .box-title .title{
+.flexi-loan .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 34px;
   	text-align: left;
 }
-#section-loan-card .box-title .sub-title{
+.flexi-loan .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 24px;
   	text-align: left;
-  	line-height: 30px;
+  	line-height: 1.4;
   	padding-top: 6px;
 }
 #page-flexi-content .section-cards h4::after{
@@ -3962,7 +4055,7 @@ section#section-flexi-cards {
 .section-cards figure.box-info {
     display: flex;
     margin-top: auto;
-    height: 220px;
+    height: auto;
     text-align: center;
     margin-top: 45px;
 }
@@ -3975,37 +4068,40 @@ section#section-flexi-cards {
 .section-cards figure.box-info > .left {
     border-right: 1px solid #E6E8EA;
 }
-#section-credit-card .box-title .sub-title{
+.flexi-credit.section-cards figure.box-info > .left {
+    border-right: 1px solid #cf3339;
+}
+.flexi-credit .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 24px;
-  	line-height: 30px;
+  	line-height: 1.4;
   	padding-top: 6px;
   	color: #cf3339;
 }
-#section-credit-card .box-title .title{
+.flexi-credit .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 34px;
   	color: #cf3339;
   	text-align: center;
 }
-#section-credit-card .box-info h5{
+.flexi-credit .box-info h5{
 	color: #cf3339;
 }
-#section-credit-card .box-info span{
+.flexi-credit .box-info span{
 	color: #cf3339;
 }
-#section-merch .box-title .title{
+.flexi-shop .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 40px;
   	color: #fff;
   	text-align: left;
   	margin-bottom: 18px;
 }
-#section-merch .box-title .sub-title{
+.flexi-shop .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
   	font-size: 20px;
   	text-align: left;
-  	line-height: 30px;
+  	line-height: 1.4;
   	color: #fff;
 }
 .section-cards a.button-contact-shop{
@@ -4776,7 +4872,7 @@ img[href]:hover{
 }
 
 .forever .btn-link.underlined {
-    font-size: 14px;
+    font-size: 16px;
     color: #DB195E;
     text-decoration: underline;
 }
@@ -4847,7 +4943,8 @@ img[href]:hover{
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 60px;
+	margin-bottom: 25px;
 }
 
 .forever section#section-flexi-cards.only-desktop{
@@ -4865,7 +4962,7 @@ img[href]:hover{
 
 .box-info-forever img{
 	max-width: 100%;
-	margin-top:54px;
+	margin-top:25px;
 }
 
 section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
@@ -4873,7 +4970,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 #section-flexi-cards-mobile.forever > .row > *[class*="col"]:first-child {
-	border-bottom: 1px solid #E6E8EA;
+	/*border-bottom: 1px solid #E6E8EA;*/
 	padding-bottom: 40px;
 }
 
@@ -4946,6 +5043,15 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	line-height: 1.8;
 }
 
+.forever #section-flexi-cards .sub-title-new{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 18px;
+}
+.forever #section-flexi-cards .box-title-forever{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
 #section-flexi-cards-mobile.forever .sub-title-new.rg,#section-flexi-cards .sub-title-new.rg {
 	font-size: 20px;
 	line-height: 1.8;
@@ -4971,60 +5077,82 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     display: none;
 }
 
-.forever #section-flexi-shops{
+.forever .section-box{
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.forever .section-box .row.no-gutters {
 	margin-bottom: 40px;
 }
 
-.forever #section-flexi-shops .row.no-gutters {
-	margin-bottom: 40px;
-}
-
-.forever #section-flexi-shops .row.no-gutters:nth-last-child(1) {
+.forever .section-box .row.no-gutters:nth-last-child(1) {
 	margin-bottom: 0;
 }
 
-.forever #section-flexi-shops .row {
-	background: #F6F6F6;
+.forever .section-box .row {
+	background: none;
 }
 
-.forever #section-flexi-shops .row:nth-last-child(1){
+.forever .section-box .row:nth-last-child(1){
 	background: #FFFFFF;
 
 }
 
-.forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
+.forever .section-box div[class*="col"].order-lg-last.box-center-v {
 	align-self: center;
 }
 
-.forever #section-flexi-shops p {
+.forever .section-box div[class*="col"].order-lg-last.box-center-v-1{
+	align-self: auto;
+	left: 0;
+    right: 0;
+    top: 0;
+    /*padding-top: 55px*/
+    bottom: 50%;
+    display:flex;
+}
+.forever .section-box p {
 	line-height: 37px;
+
+}
+
+.forever .section-box div[class*="col"].order-lg-last.box-center-v-1 > div{
+	align-self: center;
+    margin: 0 auto;
+}
+
+.forever .section-box h5 {
+	font-size: 40px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-bottom: 20px;
 }
 
 
-.forever #section-flexi-shops .only-shopping {
+.forever .section-box .only-shopping {
 	font-size: 20px;
 	line-height: 33px;
 	font-family: Conv_SukhumvitTadmai_Thi;
 	margin-top: 20px;
 }
 
-.forever #section-flexi-shops .only-shopping:nth-last-child(1) {
+.forever .section-box .only-shopping:nth-last-child(1) {
 	margin-top: 8px;
 }
 
-.forever #section-flexi-shops .button-contact-shop {
-	margin-top: 36px;
+.forever .section-box .button-contact-shop {
+	margin-top: 0px;
+	font-size: 20px;
+	padding-right: 4px;
+}
+
+.forever .section-box .button-contact-shop-new{
 	font-size: 20px;
 }
 
-.forever #section-flexi-shops .button-contact-shop-new{
-	font-size: 20px;
-}
-
-.forever #section-flexi-shops .button-contact-shop-new1{
-	font-size: 30px;
-	padding-top: 12px;
-	padding-bottom: 45px;
+.forever .section-box .button-contact-shop-new1{
+	font-size: 18px;
+	padding-left: 5px;
 }
 
 #section-flexi-promotions .slide-flexi-promotions .promotion-forever{
@@ -7615,6 +7743,9 @@ nav[aria-label="breadcrumb"]{
 
 	.forever #section-flexi-shops p {
    		margin-top: 20px;
+   		font-size: 20px;
+		line-height: 33px;
+		font-family: Conv_SukhumvitTadmai_Thi;
 	}
 
 
@@ -7633,9 +7764,7 @@ nav[aria-label="breadcrumb"]{
     margin-top: 18px;
 	}
 
-	#page-flexi-content.forever h4 {
-    margin-top: 0px;
-	}
+	
 
 	.forever section#section-flexi-cards.only-desktop{
 	margin-top: 0px;
