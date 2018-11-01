@@ -1198,6 +1198,20 @@
     margin-top: 28px;
   }
 
+  .forever p.only-shopping br{
+    display: none;
+  }
+
+
+
+  .forever .section-box .only-shopping{
+    font-size: 16px;
+  }
+
+  .forever .section-box h5{
+    font-size: 25px;
+  }
+
   #page-flexi-content.forever .content-pre-nav h3 {
     font-size: 20px;
   }

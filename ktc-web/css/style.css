@@ -3423,7 +3423,7 @@ h4.content-title:after{
 
 #page-flexi-content.forever section {
 	padding:  0px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	border-bottom:none;
 }
 #page-flexi-content h4 {
@@ -3443,9 +3443,13 @@ h4.content-title:after{
 #page-flexi-content img {
 	max-width: 100%;
 }
+.forever .content-ticket{
+	position: absolute;
+}
 
 .forever#page-flexi-content img {
 	margin-bottom: -4px;
+	position: relative;
 }
 
 section#section-flexi-cards {
@@ -3589,6 +3593,11 @@ section#section-flexi-cards {
 	text-align: center;
 	font-size: 28px;
 }
+.forever .section-box {
+	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 28px;
+}
 #section-flexi-shops h4 {
 	margin-bottom: 40px;
 }
@@ -3607,6 +3616,11 @@ section#section-flexi-cards {
 #section-flexi-shops .box-center-v {
 	align-self: center;
 }
+
+.forever .section-box .box-center-v {
+	align-self: center;
+}
+
 #section-flexi-shops p {
 	line-height: 1.65;
 }
@@ -4851,7 +4865,7 @@ img[href]:hover{
 }
 
 .forever .btn-link.underlined {
-    font-size: 14px;
+    font-size: 16px;
     color: #DB195E;
     text-decoration: underline;
 }
@@ -4922,7 +4936,8 @@ img[href]:hover{
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 60px;
+	margin-bottom: 25px;
 }
 
 .forever section#section-flexi-cards.only-desktop{
@@ -4940,7 +4955,7 @@ img[href]:hover{
 
 .box-info-forever img{
 	max-width: 100%;
-	margin-top:54px;
+	margin-top:25px;
 }
 
 section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
@@ -4948,7 +4963,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 #section-flexi-cards-mobile.forever > .row > *[class*="col"]:first-child {
-	border-bottom: 1px solid #E6E8EA;
+	/*border-bottom: 1px solid #E6E8EA;*/
 	padding-bottom: 40px;
 }
 
@@ -5021,6 +5036,15 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	line-height: 1.8;
 }
 
+.forever #section-flexi-cards .sub-title-new{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-size: 18px;
+}
+.forever #section-flexi-cards .box-title-forever{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
 #section-flexi-cards-mobile.forever .sub-title-new.rg,#section-flexi-cards .sub-title-new.rg {
 	font-size: 20px;
 	line-height: 1.8;
@@ -5046,60 +5070,82 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     display: none;
 }
 
-.forever #section-flexi-shops{
+.forever .section-box{
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.forever .section-box .row.no-gutters {
 	margin-bottom: 40px;
 }
 
-.forever #section-flexi-shops .row.no-gutters {
-	margin-bottom: 40px;
-}
-
-.forever #section-flexi-shops .row.no-gutters:nth-last-child(1) {
+.forever .section-box .row.no-gutters:nth-last-child(1) {
 	margin-bottom: 0;
 }
 
-.forever #section-flexi-shops .row {
-	background: #F6F6F6;
+.forever .section-box .row {
+	background: none;
 }
 
-.forever #section-flexi-shops .row:nth-last-child(1){
+.forever .section-box .row:nth-last-child(1){
 	background: #FFFFFF;
 
 }
 
-.forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
+.forever .section-box div[class*="col"].order-lg-last.box-center-v {
 	align-self: center;
 }
 
-.forever #section-flexi-shops p {
+.forever .section-box div[class*="col"].order-lg-last.box-center-v-1{
+	align-self: auto;
+	left: 0;
+    right: 0;
+    top: 0;
+    /*padding-top: 55px*/
+    bottom: 50%;
+    display:flex;
+}
+.forever .section-box p {
 	line-height: 37px;
+
+}
+
+.forever .section-box div[class*="col"].order-lg-last.box-center-v-1 > div{
+	align-self: center;
+    margin: 0 auto;
+}
+
+.forever .section-box h5 {
+	font-size: 40px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-bottom: 20px;
 }
 
 
-.forever #section-flexi-shops .only-shopping {
+.forever .section-box .only-shopping {
 	font-size: 20px;
 	line-height: 33px;
 	font-family: Conv_SukhumvitTadmai_Thi;
 	margin-top: 20px;
 }
 
-.forever #section-flexi-shops .only-shopping:nth-last-child(1) {
+.forever .section-box .only-shopping:nth-last-child(1) {
 	margin-top: 8px;
 }
 
-.forever #section-flexi-shops .button-contact-shop {
-	margin-top: 36px;
+.forever .section-box .button-contact-shop {
+	margin-top: 0px;
+	font-size: 20px;
+	padding-right: 4px;
+}
+
+.forever .section-box .button-contact-shop-new{
 	font-size: 20px;
 }
 
-.forever #section-flexi-shops .button-contact-shop-new{
-	font-size: 20px;
-}
-
-.forever #section-flexi-shops .button-contact-shop-new1{
-	font-size: 30px;
-	padding-top: 12px;
-	padding-bottom: 45px;
+.forever .section-box .button-contact-shop-new1{
+	font-size: 18px;
+	padding-left: 5px;
 }
 
 #section-flexi-promotions .slide-flexi-promotions .promotion-forever{
@@ -7592,6 +7638,9 @@ nav[aria-label="breadcrumb"]{
 
 	.forever #section-flexi-shops p {
    		margin-top: 20px;
+   		font-size: 20px;
+		line-height: 33px;
+		font-family: Conv_SukhumvitTadmai_Thi;
 	}
 
 
@@ -7610,9 +7659,7 @@ nav[aria-label="breadcrumb"]{
     margin-top: 18px;
 	}
 
-	#page-flexi-content.forever h4 {
-    margin-top: 0px;
-	}
+	
 
 	.forever section#section-flexi-cards.only-desktop{
 	margin-top: 0px;

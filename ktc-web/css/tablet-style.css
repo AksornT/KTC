@@ -1063,6 +1063,25 @@
     border: none;
   }
 
+  /*.forever p.only-shopping br{
+    display: none;
+  }
+
+*/
+  #page-flexi-content.forever h4 {
+    margin-top: 25px;
+  }
+
+  .forever .section-box div[class*="col"].order-lg-last.box-center-v-1{
+    position: relative;
+    padding: 40px 35px;
+  }
+
+  .forever .section-box div[class*="col"].order-lg-last.box-center-v{
+    position: relative;
+    padding:40px 35px;
+  }
+
   .forever .special-button {
     padding-bottom: 0px;
     text-align: center;
