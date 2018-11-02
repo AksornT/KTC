@@ -2962,12 +2962,12 @@ h4.content-title:after{
 }
 .proud-loan .sub-desc{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	padding-top: 15px;
 }
 .proud-service-withdraw .text-head-wrap{
-	font-size: 30px;
+	font-size: 40px;
     line-height: 1.3;
     font-family: 'Conv_SukhumvitTadmai_Tex';
     padding-bottom: 15px;
@@ -7544,8 +7544,8 @@ nav[aria-label="breadcrumb"]{
     padding-right: 25px;
 	}
 	.box-con-cal {
-    padding-left: calc(40% - 300px);
-    padding-right: calc(40% - 300px);
+    padding-left: calc(50% - 300px);
+    padding-right: calc(50% - 300px);
 	}
 
 	.detail-register-desc h5{
