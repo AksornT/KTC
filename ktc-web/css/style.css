@@ -3018,7 +3018,7 @@ h4.content-title:after{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
 }
 .text-content-wrap.desc-transfer li strong{
-	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 .text-content-wrap.desc-transfer .little-notice{
 	margin-left: 0px;
@@ -3028,7 +3028,17 @@ h4.content-title:after{
 	color: #CF3339;
     text-decoration: underline;
 }
-
+.static-wrap p strong{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+.static-wrap p .underline{
+	color: #CF3339;
+}
+.static-wrap .little-notice{
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+    font-size: 16px;
+    margin: 33px 0 0 0;
+}
 
 /* loan-cash -eve */
 .content-wrap .on-desk{
