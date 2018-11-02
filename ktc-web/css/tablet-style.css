@@ -1059,14 +1059,19 @@
     left: auto;
     padding: 40px 40px;
   }
-  .flexi-loan .box-title{
-    padding-left: 85px;
+  .section-cards .box-title .title,
+  .section-cards .box-title .sub-title{
+    text-align: center;
   }
   .flexi-shop .box-title .title{
     color: #000;
   }
   .flexi-shop .box-title .sub-title{
     color: #000;
+  }
+  .section-cards a.button-contact-shop {
+    text-align: center;
+    display: block;
   }
 
 
