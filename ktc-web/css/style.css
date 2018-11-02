@@ -798,11 +798,13 @@ article.page-content h4 {
 article.page-content h3::after,
 article.page-content h4::after {
 	content: '';
-	display: block;
-	margin: 10px auto;
-	width: 50px;
-	height: 2px;
-	background-color: #CF3339;
+    display: block;
+    margin: 10px auto;
+    left: 0;
+    position: relative;
+    width: 145px;
+    height: 2px;
+    background-color: #CF3339;
 }
 article.page-content h3.no-dash::after,
 article.page-content h4.no-dash::after {
@@ -3132,7 +3134,7 @@ h4.content-title:after{
 	text-align: center;
 	font-size: 35px;
 	padding-bottom: 10px;
-	margin-bottom: 65px;
+	margin-bottom: 40px;
 	display: block;
 	position: relative;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -7300,20 +7302,15 @@ nav[aria-label="breadcrumb"]{
 .static-wrap h5{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 40px;
-	line-height: 1.6;
+	line-height: 1.5;
 	display: block;
-	margin:0 0 8px 0;
+	margin:0 0 14px 0;
 }
 
 .static-wrap p{
 	font-family: 'Conv_SukhumvitTadmai_Thi';
 	font-size: 20px;
 	display: block;
-}
-
-.static-wrap .mid-size{
-	font-size: 26px;
-	margin: 30px 0;
 }
 
 .static-wrap a{
@@ -7344,7 +7341,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .static-wrap .overlap-wrap{
-	padding: 50px 0;
+	padding: 50px 20px;
 	position: relative;
 	margin-left: -16.5%;
 	width: 116.5%; 
@@ -7354,10 +7351,13 @@ nav[aria-label="breadcrumb"]{
 	background: #F9F9F9;
 }
 
+.half-half-blue,
 .half-half-blue-reverse {
 	background: #0055B8;
 }
 
+.half-half-blue,
+.half-half-blue .link-more,
 .half-half-blue-reverse,
 .half-half-blue-reverse .link-more,
 .negative-text,
@@ -7409,6 +7409,13 @@ nav[aria-label="breadcrumb"]{
 	background-size: auto 100%;
 }
 
+.static-merchant.half-half-blue .the-number{
+	color: #fff;
+	background: url('../img/ico-tel-big-white.png') no-repeat;
+	background-size: auto 100%;
+	line-height: 1;
+}
+
 .tel-number .mini-text{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 20px;
@@ -7416,15 +7423,108 @@ nav[aria-label="breadcrumb"]{
 
 .static-content img{
 	width: auto;
-	margin: 0 auto;
+	display: inline-block;
+}
+
+.static-content li{
+	list-style-type: disc;
+	margin-left: 1.5em;
 }
 
 .static-content.text-left{
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-left: -15px;
 }
 
+.static-content.text-left.text-on-left-img{
+	margin-left: 0;
+}
 
+.full-overimage{
+	position: relative;
+}
+
+.white-layer{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    width: auto;
+    display: flex;
+    background: rgba(255,255,255,0.8);
+}
+
+.white-layer > div{
+    align-self: center;
+    margin: 0 auto;
+}
+
+.page-merchant-inner-header .breadcrumb-top[aria-label="breadcrumb"]{
+	top: auto;
+	z-index: 1;
+}
+
+.full-overimage .text-on-left-img{
+	padding:0 4%;
+}
+
+.full-overimage.top-banner .text-on-left-img.text-left{
+	padding:0 9%;
+}
+
+.top-banner.static-wrap p{
+	font-size: 28px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+.static-content.order-lg-1{
+	padding-left: 30px;
+}
+
+.big-icon-content{
+    text-align: center;
+    padding: 45px 15px;
+}
+.static-wrap .big-icon-content .static-content{
+	align-self: flex-start;
+}
+
+.big-icon-content h5{
+	font-size: 30px;
+}
+
+.half-half-blue .tel-number{
+	position: relative;
+}
+
+.half-half-blue .tel-number:nth-child(1):after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(255,255,255,0.15);
+}
+
+.static-wrap .link-square{
+	padding: 8px 10px;
+	border-radius: 4px;
+	border: 1px solid #CF3339;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+.static-merchant .link-square{
+	border-color: #0055B8;
+}
+
+.half-half-blue .link-square{
+	border-color: #fff;
+}
 
 
 /*Safari Only*/

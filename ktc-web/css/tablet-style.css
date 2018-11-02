@@ -1509,14 +1509,21 @@
   }
 
   .static-wrap h5{
-    line-height: 1.3;
+    line-height: 1.4;
+    font-size: 20px;
+  }
+
+  .static-wrap p,
+  .static-wrap .link-more{
+    font-size: 14px;
   }
 
   .static-wrap .text-left h5{
     text-align: center !important;
   }
 
-  .static-wrap h5 br{
+  .static-wrap h5 br,
+  .static-wrap p br{
     display: none;
   }
  
@@ -1532,9 +1539,72 @@
 
   .static-merchant .link-more {
     color: #0055B8;
+    margin-top: 10px;
   }
 
+  .half-half-blue .link-more,
   .half-half-blue-reverse .link-more{
     color: #fff;
+  }
+
+  .tel-number p{
+    font-size: 24px;
+  }
+  .tel-number .mini-text{
+    font-size: 14px;
+  }
+  .static-wrap .link-more{
+    font-size: 18px;
+  }
+  .tel-number .the-number{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .global-space{
+    display: none;
+  }
+  .white-layer{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+  }
+  .white-layer h5,
+  .white-layer p,
+  .white-layer .link-more{
+    color: #fff;
+  }
+
+  .space-on-left img,
+  .page-content .space-on-left img{
+    max-width: none;
+    width: 200%;
+    margin-left: -100%;
+  }
+  .space-on-right img,
+  .page-content .space-on-right img{
+    max-width: none;
+    width: 200%;
+  }
+  .full-overimage.top-banner .text-on-left-img.text-left{
+    padding:40px 35px;
+  }
+  .top-banner.static-wrap p{
+    font-size: 14px;
+  }
+
+  .static-wrap .big-icon-content .static-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .half-half-blue{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .half-half-blue .tel-number{
+    padding: 20px 35px;
   }
 }
