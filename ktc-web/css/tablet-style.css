@@ -1645,4 +1645,10 @@
   .half-half .row .row .static-content.text-on-left-img{
     padding-left: 35px;
   }
+
+  .static-wrap .btn.button-shop-register{
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+  }
 }
