@@ -557,6 +557,18 @@
     margin-top: 20px;
   }
 
+  .section-service-detail .service-desc .media-body h5,
+  .section-service-detail .service-desc .media-body p,
+  .static-wrap .small-desc .text-left p{
+    text-align: left !important;
+  }
+  .static-wrap .small-desc .text-left{
+    align-self: start !important;
+  }
+  .more-modal .header {
+    margin-top: 40px;
+  }
+
   /* loan page -eve */
   .main-loan .box-content {
     margin-top: 20px;
@@ -1041,24 +1053,6 @@
     opacity: 1;
   }
 
-  .section-cards .cards-txt-right{
-    position: relative;
-    bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-    right: auto;
-    padding: 40px 40px;
-  }
-  .section-cards .cards-txt-left{
-    position: relative;
-    bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-    left: auto;
-    padding: 40px 40px;
-  }
   .section-cards .box-title .title,
   .section-cards .box-title .sub-title{
     text-align: center;

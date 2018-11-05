@@ -812,6 +812,7 @@ article.page-content h4.no-dash::after {
 }
 article.page-content img {
 	max-width: 100%;
+	cursor: pointer;
 }
 
 .share-on-top{
@@ -2596,6 +2597,9 @@ a.card-register-center, a.btn-action {
 	padding-bottom: 30px;
 	margin-bottom: 32px;
 }
+.section-service-detail .service-desc:nth-child(1){
+	margin-top: 40px;
+}
 .section-service-detail .service-desc .media img{
 	width: 50px;
 }
@@ -2623,9 +2627,38 @@ a.card-register-center, a.btn-action {
 	display: inline;
     margin: auto 0 0 0;
 }
+.static-wrap .link-more.link-to-modal{
+	text-decoration: underline;
+	color: #CF3339;
+}
 .negative-text .link-more.static-link-red{
 	color: #CF3339;
 }
+.more-modal .header {
+    border-bottom: 1px solid #E6E8EA;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+    margin-top: 80px;
+}
+.more-modal .header .title {
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 7px;
+}
+.more-modal .content li,
+.more-modal .content p{
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+}
+.more-modal .content p b{
+	font-weight: bold;
+}
+.more-modal .content li{
+	list-style-type: disc;
+    margin-left: 1.5em;
+}
+
 
 /* creditcard detail -eve*/
 #header-card-detail .proud-head{
@@ -3268,6 +3301,12 @@ h4.content-title:after{
 	background: #ffffff;
 	border: 1px solid #CF3339;
 }
+.btn.button-flexi-start.invert:hover {
+    top: auto;
+    background-color: #CF3339;
+    border-color: transparent;
+    color: #fff;
+}
 
 .button-flexi-start.only-desktop {
 	margin-top: 30px;
@@ -3699,9 +3738,6 @@ section#section-flexi-cards {
 #section-flexi-promotions .slide-wrap {
 	overflow: visible;
 }
-#section-flexi-promotions .slide-flexi-promotions {
-	overflow: hidden;
-}
 #section-flexi-promotions .slide-flexi-promotions .owl-stage {
 	display: flex;
 }
@@ -3757,6 +3793,11 @@ section#section-flexi-cards {
 	border: 1px solid #cf3339;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
+	position: relative;
+	top: 0;
+}
+#section-flexi-promotions .slide-flexi-promotions .button-register:hover{
+	top: -3px;
 }
 #section-flexi-promotions a.button-see-all:hover {
 	text-decoration: none;
