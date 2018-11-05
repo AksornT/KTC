@@ -871,6 +871,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 268px;
+    height: auto;
   }
   .proud-logo {
     margin: 110px auto 30px auto;

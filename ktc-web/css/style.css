@@ -2196,12 +2196,17 @@ a:hover .on-hover{
   margin-top: 20px;
 }
 #header-card-detail .header-desc{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 #header-card-detail .content-desc h2{
   font-family: 'Conv_SukhumvitTadmai_Tex';
   font-size: 50px;
 }
+
+#header-card-detail .content-desc h2 .smaller-text{
+	font-size: 30px;
+}
+
 #header-card-detail .content-desc h3{
   margin-top: 10px;
   font-size: 20px;
@@ -2320,8 +2325,8 @@ article.page-content #card-detail-regis h3::after{
 
 .proud-head, .header-big-cover {
 	background: url("../img/bg_menu.png");
-	background-size: cover;
-	height: 512px;
+	background-size: cover !important;
+	height: 387px;
 	width: 100%;
 	position: relative;
 	margin-top: -66px;
@@ -2332,6 +2337,7 @@ article.page-content #card-detail-regis h3::after{
 	bottom: -76px;
 	left: 50%;
 	transform: translateX(-50%);
+	height: 248px;
 }
 
 .proud-logo, .header-big-cover-logo {
@@ -2629,9 +2635,6 @@ a.card-register-center, a.btn-action {
   font-family: 'Conv_SukhumvitTadmai_Bol';
   text-align: center;
   margin-top: 20px;
-}
-#header-card-detail .header-desc{
-  margin-bottom: 30px;
 }
 #header-card-detail a.card-register-center{
   margin: 60px 0 60px 0;
@@ -3474,6 +3477,11 @@ h4.content-title:after{
 
 #nav-sticky-merchant .btn-flexi-share{
 	margin-top: 24px;
+}
+
+#nav-sticky-merchant .btn-flexi-share:focus{
+	background: #045aa7 url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
 }
 
 #page-flexi-content section {
@@ -7346,6 +7354,10 @@ nav[aria-label="breadcrumb"]{
 	display: block;
 }
 
+.static-wrap p b{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
 .static-wrap a{
 	opacity: 1;
 	cursor: pointer;
@@ -7383,14 +7395,27 @@ nav[aria-label="breadcrumb"]{
 	margin-left: -16.5%;
 	width: 116.5%; 
 	background: #fff;
+    height: 29vw;
+    display: flex;
 }
+
 .half-overlap-grey .overlap-wrap{
 	background: #F9F9F9;
+}
+
+.overlap-wrap > div{
+	align-self: center;
+    width: 100%;
 }
 
 .half-half-blue,
 .half-half-blue-reverse {
 	background: #0055B8;
+}
+
+.half-half-black,
+.half-half-black-reverse {
+	background: #000;
 }
 
 .half-half-grey,
@@ -7402,6 +7427,8 @@ nav[aria-label="breadcrumb"]{
 .half-half-blue .link-more,
 .half-half-blue-reverse,
 .half-half-blue-reverse .link-more,
+.half-half-black,
+.half-half-black-reverse,
 .negative-text,
 .negative-text .link-more{
 	color: #fff;
@@ -7423,6 +7450,11 @@ nav[aria-label="breadcrumb"]{
 	position: absolute;
     left: 0;
     right: auto;
+}
+
+.static-content ul{
+	display: inline-block;
+	text-align: left;
 }
 
 .tel-number{
@@ -7526,6 +7558,7 @@ nav[aria-label="breadcrumb"]{
 
 .static-content.order-lg-1{
 	padding-left: calc(3% + 15px);
+	margin-left: 0;
 }
 
 .big-icon-content{
@@ -7569,6 +7602,55 @@ nav[aria-label="breadcrumb"]{
 
 .half-half-blue .link-square{
 	border-color: #fff;
+}
+
+.static-content.text-on-right-img.float-up{
+    background: rgba(255,255,255,.9);
+    padding: 60px 3%;
+    align-self: flex-start;
+    top: 50px;
+    right: 50px;
+
+}
+
+.full-full .static-content{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.top-banner .share-on-top{
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+}
+
+.top-banner .share-on-top .btn-flexi-share{
+    background: url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
+}
+
+.top-banner .share-on-top .btn-flexi-share:focus{
+	background: #CF3339 url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
+}
+
+.top-banner.static-merchant .share-on-top .btn-flexi-share:focus{
+	background: #0055B8 url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
+}
+
+.top-banner .btn-flexi-share + .share-popover{
+	top: auto;
+	bottom: calc(100% + 5px);
+	right: -5px;
+}
+
+.top-banner .btn-flexi-share + .share-popover:after{
+	top: 100%;
+	border-top: 8px solid #ECEEED;
+	border-bottom: none;
+	right: 13px;
+
 }
 
 

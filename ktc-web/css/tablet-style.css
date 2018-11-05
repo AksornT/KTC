@@ -1651,4 +1651,10 @@
     display: block;
     width: 210px;
   }
+
+  .static-content.text-on-right-img.float-up{
+    padding: 40px 35px;
+    top: 0;
+    right: 0;
+  }
 }
