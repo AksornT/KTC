@@ -3322,6 +3322,7 @@ h4.content-title:after{
 	padding-bottom: 100px;
 	background: #ee445b url("../img/bg-flexi-jumbotron.jpg") no-repeat center;
 	background-size: cover;
+	position: relative;
 }
 
 .page-flexi-header h1 {
