@@ -557,6 +557,18 @@
     margin-top: 20px;
   }
 
+  .section-service-detail .service-desc .media-body h5,
+  .section-service-detail .service-desc .media-body p,
+  .static-wrap .small-desc .text-left p{
+    text-align: left !important;
+  }
+  .static-wrap .small-desc .text-left{
+    align-self: start !important;
+  }
+  .more-modal .header {
+    margin-top: 40px;
+  }
+
   /* loan page -eve */
   .main-loan .box-content {
     margin-top: 20px;

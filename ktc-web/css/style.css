@@ -2644,6 +2644,9 @@ a.card-register-center, a.btn-action {
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 1.4;
 }
+.more-modal .content p b{
+	font-weight: bold;
+}
 .more-modal .content li{
 	list-style-type: disc;
     margin-left: 1.5em;
