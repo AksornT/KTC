@@ -1186,18 +1186,11 @@
   .section-cards .box-info button, .section-cards .box-info a{
     font-size: 12px;
   }
-  .section-cards .cards-txt-right,
-  .section-cards .cards-txt-left{
-    padding: 20px 20px;
-  }
   .section-cards a.button-contact-shop {
     font-size: 14px;
   }
   .page-flexi-header h1 {
     font-size: 14px;
-  }
-  .flexi-shop.section-cards .box-title .title{
-    margin-bottom: 8px;
   }
 
 

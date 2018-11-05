@@ -1041,24 +1041,6 @@
     opacity: 1;
   }
 
-  .section-cards .cards-txt-right{
-    position: relative;
-    bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-    right: auto;
-    padding: 40px 40px;
-  }
-  .section-cards .cards-txt-left{
-    position: relative;
-    bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-    left: auto;
-    padding: 40px 40px;
-  }
   .section-cards .box-title .title,
   .section-cards .box-title .sub-title{
     text-align: center;
