@@ -4051,24 +4051,7 @@ section#section-flexi-cards {
 }
 
 .section-cards{
-	position: relative;
 	overflow: hidden;
-}
-.section-cards img{
-	position: relative;
-	width: 100%;
-}
-.section-cards .cards-txt-right{
-	position: absolute;
-	bottom: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-}
-.section-cards .cards-txt-left{
-	position: absolute;
-	bottom: 50%;
-    left: 10%;
-    transform: translateY(-50%);
 }
 .flexi-loan .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -4080,7 +4063,6 @@ section#section-flexi-cards {
   	font-size: 24px;
   	text-align: left;
   	line-height: 1.4;
-  	padding-top: 6px;
 }
 #page-flexi-content .section-cards h4::after{
 	display: none;
@@ -4127,7 +4109,6 @@ section#section-flexi-cards {
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 24px;
   	line-height: 1.4;
-  	padding-top: 6px;
   	color: #cf3339;
 }
 .flexi-credit .box-title .title{
@@ -4156,8 +4137,8 @@ section#section-flexi-cards {
   	line-height: 1.4;
   	color: #fff;
 }
-.section-cards a.button-contact-shop{
-	padding-left: 0;
+.section-cards a.link-more.button-contact-shop{
+	font-size: 14px;
 }
 
 
