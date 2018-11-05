@@ -2620,6 +2620,10 @@ a.card-register-center, a.btn-action {
 	display: inline;
     margin: auto 0 0 0;
 }
+.static-wrap .link-more.link-to-modal{
+	text-decoration: underline;
+	color: #CF3339;
+}
 .negative-text .link-more.static-link-red{
 	color: #CF3339;
 }
