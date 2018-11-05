@@ -812,6 +812,7 @@ article.page-content h4.no-dash::after {
 }
 article.page-content img {
 	max-width: 100%;
+	cursor: pointer;
 }
 
 .share-on-top{
@@ -3297,6 +3298,12 @@ h4.content-title:after{
 	background: #ffffff;
 	border: 1px solid #CF3339;
 }
+.btn.button-flexi-start.invert:hover {
+    top: auto;
+    background-color: #CF3339;
+    border-color: transparent;
+    color: #fff;
+}
 
 .button-flexi-start.only-desktop {
 	margin-top: 30px;
@@ -3723,9 +3730,6 @@ section#section-flexi-cards {
 #section-flexi-promotions .slide-wrap {
 	overflow: visible;
 }
-#section-flexi-promotions .slide-flexi-promotions {
-	overflow: hidden;
-}
 #section-flexi-promotions .slide-flexi-promotions .owl-stage {
 	display: flex;
 }
@@ -3781,6 +3785,11 @@ section#section-flexi-cards {
 	border: 1px solid #cf3339;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
+	position: relative;
+	top: 0;
+}
+#section-flexi-promotions .slide-flexi-promotions .button-register:hover{
+	top: -3px;
 }
 #section-flexi-promotions a.button-see-all:hover {
 	text-decoration: none;
