@@ -235,6 +235,11 @@ a:hover{
 	background: #CF3339;
 }
 
+.scrolled-menu > li:hover:after,
+.scrolled-menu > li.active:after{
+	z-index: 3;
+}
+
 .scrolled-menu > li a{
     position: absolute;
     top: 0;
@@ -244,7 +249,8 @@ a:hover{
 }
 
 .scrolled-menu ul{
-	top: 100%;
+	top: calc(100% - 3px);
+	z-index: 2;
 	position: absolute;
 	left: 0;
 	white-space: nowrap;
@@ -3406,6 +3412,11 @@ h4.content-title:after{
 	box-shadow: none;
 }
 
+#section-merchant-card-type .btn-flexi-share:focus{
+	background: #045AA7 url('../img/ico-share-pro-white.png') no-repeat center;
+	background-size: 80% auto ;
+}
+
 .btn-flexi-share.only-mobile {
 	margin-top: 20px;
 	width: 100%;
@@ -3690,6 +3701,8 @@ section#section-flexi-cards {
 #content-flexi-installments .button-terms {
 	margin-top: 30px;
 	padding: 0;
+	font-size: 16px;
+	font-family: "Conv_SukhumvitTadmai_Thi"
 }
 #content-flexi-installments .right {
 	padding: 20px 90px;
@@ -4098,6 +4111,8 @@ section#section-flexi-cards {
 
 #content-flexi-installments p{
 	line-height: 1.4;
+	font-family: 'Conv_SukhumvitTadmai_Thi';
+  	font-size: 20px;
 }
 
 .section-cards{
@@ -7476,6 +7491,20 @@ nav[aria-label="breadcrumb"]{
 	color: #fff;
 }
 
+
+.half-half-black > .row > div:nth-child(1),
+.half-half-blue > .row > div:nth-child(1),
+.half-half-grey > .row > div:nth-child(1),
+.half-half-white > .row > div:nth-child(1),
+.half-half .row > div:nth-child(1),
+.half-overlap-grey .row > div:nth-child(1){
+	padding: 0 0 0 15px;
+}
+
+.static-wrap .order-lg-2{
+	padding: 0 15px 0 0;
+}
+
 .text-on-right-img{
 	position: absolute;
     left: auto;
@@ -7548,16 +7577,14 @@ nav[aria-label="breadcrumb"]{
 
 .static-content img{
 	width: auto;
-	display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
 }
 
 .static-content li{
 	list-style-type: disc;
 	margin-left: 1.5em;
-}
-
-.static-content.text-left{
-	margin-left: -15px;
 }
 
 .static-content.text-left.text-on-left-img{
@@ -7591,11 +7618,6 @@ nav[aria-label="breadcrumb"]{
 
 .full-overimage.top-banner .text-on-left-img.text-left{
 	padding:0 9%;
-}
-
-.top-banner.static-wrap p{
-	font-size: 28px;
-	font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 
 .static-content.order-lg-1{
@@ -7663,12 +7685,16 @@ nav[aria-label="breadcrumb"]{
 .top-banner .share-on-top{
 	position: absolute;
 	bottom: 5px;
-	right: 25px;
+	right: 60px;
 	top: auto;
 }
 
+.page-flexi-header.top-banner .share-on-top{
+	margin-right: -15px;
+}
+
 .top-banner .share-on-top .btn-flexi-share{
-    background: url(../img/ico-share-pro-white.png) no-repeat center;
+    background: #fff url(../img/ico-share-pro.png) no-repeat center;
     background-size: 80% auto;
 }
 
@@ -7686,6 +7712,7 @@ nav[aria-label="breadcrumb"]{
 	top: auto;
 	bottom: calc(100% + 5px);
 	right: -5px;
+	left: auto;
 }
 
 .top-banner .btn-flexi-share + .share-popover:after{
@@ -7693,7 +7720,20 @@ nav[aria-label="breadcrumb"]{
 	border-top: 8px solid #ECEEED;
 	border-bottom: none;
 	right: 13px;
+	left: auto;
 
+}
+
+section.static-wrap img{
+	cursor: default;
+}
+
+.half-half .full-overimage + .full-overimage{
+	padding: 0 15px 0 0;
+}
+
+article.content-wrap{
+	overflow: hidden;
 }
 
 
@@ -8008,4 +8048,5 @@ nav[aria-label="breadcrumb"]{
   	padding: 0 55px;
   }
 
-  }
+
+}

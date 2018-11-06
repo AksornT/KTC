@@ -1090,12 +1090,12 @@
 
   .forever .section-box div[class*="col"].order-lg-last.box-center-v-1{
     position: relative;
-    padding: 40px 35px;
+    padding: 40px 100px;
   }
 
   .forever .section-box div[class*="col"].order-lg-last.box-center-v{
     position: relative;
-    padding:40px 35px;
+    padding:40px 100px;
   }
 
   .forever .special-button {
@@ -1496,25 +1496,21 @@
 
   /*Static Content*/
   .static-wrap .static-content{
-    padding: 40px 35px;
+    padding: 40px 100px;
     position: relative;
     margin: 0;
   }
-  .static-wrap .overlap-wrap{
-    width: calc(100% + 40px);
-    margin: -40px -20px;
+
+  .static-wrap .overlap-wrap {
+    width: calc(100% + 170px);
+    margin: -40px -85px;
     height: auto;
     padding: 40px 20px;
   }
 
   .static-wrap h5{
     line-height: 1.4;
-    font-size: 20px;
-  }
-
-  .static-wrap p,
-  .static-wrap .link-more{
-    font-size: 14px;
+    font-size: 30px;
   }
 
   .static-wrap .text-left h5,
@@ -1567,6 +1563,7 @@
   }
   .static-wrap .link-more{
     font-size: 18px;
+    margin-bottom: 0;
   }
   .tel-number .the-number{
     font-size: 30px;
@@ -1600,10 +1597,8 @@
     width: 200%;
   }
   .full-overimage.top-banner .text-on-left-img.text-left{
-    padding:40px 35px;
-  }
-  .top-banner.static-wrap p{
-    font-size: 14px;
+    padding:40px 100px;
+    text-align: center !important;
   }
 
   .static-wrap .big-icon-content .static-content{
@@ -1614,10 +1609,6 @@
   .half-half-blue{
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-
-  .half-half-blue .tel-number{
-    padding: 20px 35px;
   }
 
   .still-background,
@@ -1648,8 +1639,69 @@
   }
 
   .static-content.text-on-right-img.float-up{
-    padding: 40px 35px;
+    padding: 40px 100px;
     top: 0;
     right: 0;
   }
+
+  .half-half-black > .row > div:nth-child(1),
+  .half-half-blue > .row > div:nth-child(1),
+  .half-half-grey > .row > div:nth-child(1),
+  .half-half-white > .row > div:nth-child(1),
+  .half-half .row > div:nth-child(1),
+  .half-overlap-grey .row > div:nth-child(1),
+  .static-wrap .order-lg-2{
+    padding: 0 15px;
+  }
+
+  .static-wrap.half-half-blue .row .tel-number{
+    padding: 20px 35px;
+  }
+
+  #section-merchant-card-type{
+    padding-top: 0;
+  }
+  section#section-merchant-card-type .list-card-vendors{
+    margin: 0 auto;
+  }
+
+  section#section-merchant-card-type .list-payment-services{
+    margin-top: 10px;
+  }
+
+  section#section-merchant-card-type .row:first-child{
+    margin-bottom: 20px;
+  }
+
+  .half-half .row .row .static-content.text-on-left-img {
+    padding-left: 100px;
+  }
+
+  .half-half .full-overimage + .full-overimage{
+    padding: 0 15px;
+  }
+
+  .half-half .full-overimage .space-on-left,
+  .half-half .full-overimage .space-on-right{
+    overflow: hidden;
+  }
+
+  .half-half .full-overimage img{
+    margin: -30.37vw 0;
+  }
+
+  .half-half .full-overimage .space-on-left img{
+    margin-left: -100%;
+  }
+
+  .top-banner > .row > div:nth-child(1) img{
+    width: 156vw;
+    max-width: none;
+    margin-left: -56vw;
+  }
+
+  .button-flexi-start{
+
+  }
+
 }
