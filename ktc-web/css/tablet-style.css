@@ -1480,6 +1480,12 @@
     z-index: 1;
   }
 
+  .top-banner .share-on-top {
+    right: 39px;
+    bottom: auto;
+    top: 13px;
+  }
+
   nav + .content-wrap .share-on-top{
     top: 61px;
   }
@@ -1700,8 +1706,18 @@
     margin-left: -56vw;
   }
 
-  .button-flexi-start{
+  .top-banner .share-on-top.with-bc .btn-flexi-share{
+    margin-top: 30px;
+  }
 
+  .proud-after-logo .btn-flexi-share{
+    background: rgba(0,0,0,0.5) url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
+  }
+
+  .proud-after-logo .btn-flexi-share:focus{
+    background: #CF3339 url('../img/ico-share-pro-fill.png') no-repeat center;
+    background-size: 100% auto;
   }
 
 }

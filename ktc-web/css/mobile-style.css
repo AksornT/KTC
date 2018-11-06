@@ -1863,7 +1863,9 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     }
 
   .top-banner .share-on-top{
-    right: 25px;
+    right: 28px;
+    bottom: auto;
+    top: 13px;
   }
 
   .forever .section-box div[class*="col"].order-lg-last.box-center-v-1,
@@ -1910,6 +1912,10 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     text-overflow: ellipsis;
     display: inline-block;
     vertical-align: middle;
+  }
+
+  .top-banner .share-on-top.with-bc .btn-flexi-share {
+    margin-top: 20px;
   }
 
 

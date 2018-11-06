@@ -5352,7 +5352,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .btn-flexi-share + .share-popover {
     position: absolute;
     top: -56px;
-    right: -22px;
+    right: -4px;
     background: #ECEEED;
     width: 168px;
     height: 42px;
@@ -5377,11 +5377,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .btn-flexi-share + .share-popover{
 	top: 100%;
-}
-.only-mobile .btn-flexi-share + .share-popover{
-    top: 38px;
-    right: auto;
-    left: -22px;
 }
 
 .article-wrap .article-icon .share-btn.active .share-popover,
@@ -5441,14 +5436,9 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     border-right: 8px solid transparent;
     border-top: 8px solid #ECEEED;
     position: absolute;
-    right: 29px;
+    right: 11px;
     bottom: -8px;
     display: block;
-}
-
-.only-mobile .btn-flexi-share + .share-popover:after{
-	right: auto;
-	left: 29px;
 }
 
 .btn-flexi-share + .share-popover:after{
@@ -7424,6 +7414,10 @@ nav[aria-label="breadcrumb"]{
 	opacity: 0.7;
 }
 
+.static-wrap a:hover img{
+	cursor: pointer;
+}
+
 .static-wrap .link-more{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 16px;
@@ -7452,7 +7446,7 @@ nav[aria-label="breadcrumb"]{
 	margin-left: -16.5%;
 	width: 116.5%; 
 	background: #fff;
-    height: 29vw;
+    min-height: 29vw;
     display: flex;
 }
 
@@ -7694,7 +7688,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .top-banner .share-on-top .btn-flexi-share{
-    background: #fff url(../img/ico-share-pro.png) no-repeat center;
+    background: rgba(0,0,0,0.5) url(../img/ico-share-pro-white.png) no-repeat center;
     background-size: 80% auto;
 }
 
@@ -7706,22 +7700,6 @@ nav[aria-label="breadcrumb"]{
 .top-banner.static-merchant .share-on-top .btn-flexi-share:focus{
 	background: #0055B8 url(../img/ico-share-pro-white.png) no-repeat center;
     background-size: 80% auto;
-}
-
-.top-banner .btn-flexi-share + .share-popover{
-	top: auto;
-	bottom: calc(100% + 5px);
-	right: -5px;
-	left: auto;
-}
-
-.top-banner .btn-flexi-share + .share-popover:after{
-	top: 100%;
-	border-top: 8px solid #ECEEED;
-	border-bottom: none;
-	right: 13px;
-	left: auto;
-
 }
 
 section.static-wrap img{
@@ -8046,6 +8024,24 @@ article.content-wrap{
 
   #section-flexi-promotions .slide-flexi-promotions{
   	padding: 0 55px;
+  }
+
+  @media (min-width: 992px) {
+  	.top-banner .btn-flexi-share + .share-popover{
+		top: auto;
+		bottom: calc(100% + 10px);
+  	}
+
+  	.btn-flexi-share + .share-popover:after {
+	    border-bottom:none;
+	    border-top:8px solid #ECEEED;
+	    bottom:-8px;
+	    top: auto;
+	}
+
+	.proud-after-logo .btn-flexi-share + .share-popover{
+		top: -45px;
+	}
   }
 
 
