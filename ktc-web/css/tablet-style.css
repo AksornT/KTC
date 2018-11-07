@@ -46,8 +46,8 @@
     top: 4px;
   }
   .login-mobile img{
-    width: 13px;
-    height: 17px;
+    width: 19px;
+    height: auto;
   }
   .menu-mobile{
     position: relative;
@@ -414,6 +414,13 @@
   .footer-menu > .col-lg-3 {
       width: 40%;
       flex: none;
+  }
+
+  .image-link .icon-last-content img {
+    width: 42px;
+  }
+  .image-link .icon-last-content p{
+    font-size: 16px;
   }
 
   /* creditcard page -eve */

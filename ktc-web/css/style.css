@@ -394,7 +394,7 @@ a:hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 13px;
     letter-spacing: 1px;
-    padding: 7px 12px;
+    padding: 5px 12px;
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
@@ -409,6 +409,11 @@ a:hover{
     margin: -5px 1px;
     position: relative;
     top: 2px;
+}
+
+.login-btn img{
+	width: 16px;
+	vertical-align: bottom;
 }
 
 .menu-global a.login-btn:hover{
@@ -647,7 +652,7 @@ a:hover{
     height: 10px;
     display: inline-block;
     content: "";
-    background: url(../img/ico-arrow-right.png);
+    background: url(../img/index/ico-arrow-right.svg);
     margin-left: 3px;
     position: relative;
     left: 0px;
@@ -1016,6 +1021,7 @@ button:focus {
 	width: 100%;
 	overflow: hidden;
 	background: #000;
+	position: relative;
 }
 .image-link img{
 	width: 100% ;
@@ -1029,12 +1035,36 @@ button:focus {
     opacity: 1;
 }
 
+.image-link .icon-last-content{
+	position: absolute;
+    top: 22%;
+    left: calc(50% - 120px);
+    right: calc(50% - 120px);
+    cursor: pointer;
+}
+.image-link .icon-last-content img{
+	width: 60px;
+    margin: auto;
+    opacity: 1;
+}
+.image-link .icon-last-content p{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 20px;
+	padding-top: 6px;
+	color: #fff;
+}
+.to-top .icon-link{
+	width: 11px;
+}
+
 .big-left{
 	padding-right: 13px;
+	position: relative;
 }
 
 .big-right{
 	padding-left: 13px;
+	position: relative;
 }
 
 .image-link{
@@ -4213,6 +4243,10 @@ section#section-flexi-cards {
 	padding-top: 24px;
 	cursor: pointer;
 }
+.on-right.header-login-pg img{
+	width: 18px;
+    vertical-align: bottom;
+}
 .on-right.header-login-pg p{
 	padding-left: 6px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -4268,6 +4302,13 @@ section#section-flexi-cards {
 	width: 32px;
 	padding-right: 10px;
 	color: rgba(91,102,112,.55);
+}
+.box-login-con img{
+	width: 20px;
+    padding-right: 5px;
+}
+.box-login-con .reset-password{
+	vertical-align: middle;
 }
 .box-login-con.form-wrap input{
 	width: 100%;
@@ -5486,6 +5527,12 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     margin-left: 10px;
     font-family: 'FontAwesome';
 }
+.article-wrap .article-collapse .title .op-modal{
+	vertical-align: middle;
+    width: 18px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
 .article-wrap .article-collapse .title.collapsed i {
     transform: rotate(180deg);
 }
@@ -5556,6 +5603,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     position: relative;
     margin-right: 7px;
     top: 4px;
+    width: 21px;
 }
 .article-wrap .article-link .link a {
     color: #000;
