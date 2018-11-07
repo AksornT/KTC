@@ -388,7 +388,7 @@ a:hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 13px;
     letter-spacing: 1px;
-    padding: 7px 12px;
+    padding: 4px 12px;
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
@@ -403,6 +403,10 @@ a:hover{
     margin: -5px 1px;
     position: relative;
     top: 2px;
+}
+
+.login-btn img{
+	width: 16px;
 }
 
 .menu-global a.login-btn:hover{
@@ -641,7 +645,7 @@ a:hover{
     height: 10px;
     display: inline-block;
     content: "";
-    background: url(../img/ico-arrow-right.png);
+    background: url(../img/index/ico-arrow-right.svg);
     margin-left: 3px;
     position: relative;
     left: 0px;
@@ -1010,6 +1014,7 @@ button:focus {
 	width: 100%;
 	overflow: hidden;
 	background: #000;
+	position: relative;
 }
 .image-link img{
 	width: 100% ;
@@ -1023,12 +1028,36 @@ button:focus {
     opacity: 1;
 }
 
+.image-link .icon-last-content{
+	position: absolute;
+    top: 22%;
+    left: calc(50% - 120px);
+    right: calc(50% - 120px);
+    cursor: pointer;
+}
+.image-link .icon-last-content img{
+	width: 60px;
+    margin: auto;
+    opacity: 1;
+}
+.image-link .icon-last-content p{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 20px;
+	padding-top: 6px;
+	color: #fff;
+}
+.to-top .icon-link{
+	width: 11px;
+}
+
 .big-left{
 	padding-right: 13px;
+	position: relative;
 }
 
 .big-right{
 	padding-left: 13px;
+	position: relative;
 }
 
 .image-link{
