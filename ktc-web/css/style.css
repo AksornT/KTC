@@ -394,7 +394,7 @@ a:hover{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
     font-size: 13px;
     letter-spacing: 1px;
-    padding: 4px 12px;
+    padding: 5px 12px;
     border: 1px #fff solid;
     border-radius: 6px;
     margin-left: 4px;
@@ -413,6 +413,7 @@ a:hover{
 
 .login-btn img{
 	width: 16px;
+	vertical-align: bottom;
 }
 
 .menu-global a.login-btn:hover{
@@ -4241,6 +4242,10 @@ section#section-flexi-cards {
 	padding-top: 24px;
 	cursor: pointer;
 }
+.on-right.header-login-pg img{
+	width: 18px;
+    vertical-align: bottom;
+}
 .on-right.header-login-pg p{
 	padding-left: 6px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -4296,6 +4301,13 @@ section#section-flexi-cards {
 	width: 32px;
 	padding-right: 10px;
 	color: rgba(91,102,112,.55);
+}
+.box-login-con img{
+	width: 20px;
+    padding-right: 5px;
+}
+.box-login-con .reset-password{
+	vertical-align: middle;
 }
 .box-login-con.form-wrap input{
 	width: 100%;
@@ -5513,6 +5525,12 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .article-wrap .article-collapse .title i {
     margin-left: 10px;
     font-family: 'FontAwesome';
+}
+.article-wrap .article-collapse .title .op-modal{
+	vertical-align: middle;
+    width: 18px;
+    margin-left: 10px;
+    margin-top: -5px;
 }
 .article-wrap .article-collapse .title.collapsed i {
     transform: rotate(180deg);
