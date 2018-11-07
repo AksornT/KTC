@@ -1568,7 +1568,6 @@
     font-size: 14px;
   }
   .static-wrap .link-more{
-    font-size: 18px;
     margin-bottom: 0;
   }
   .tel-number .the-number{
@@ -1644,6 +1643,7 @@
     width: 210px;
   }
 
+  .static-content.text-on-left-img.float-up,
   .static-content.text-on-right-img.float-up{
     padding: 40px 100px;
     top: 0;
@@ -1718,6 +1718,11 @@
   .proud-after-logo .btn-flexi-share:focus{
     background: #CF3339 url('../img/ico-share-pro-fill.png') no-repeat center;
     background-size: 100% auto;
+  }
+ 
+  .static-wrap .text-left p, 
+  .static-wrap .text-left a{
+    text-align: left !important;
   }
 
 }

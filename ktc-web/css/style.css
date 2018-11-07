@@ -3772,6 +3772,7 @@ section#section-flexi-cards {
 	display: flex;
 	padding: 0 5px;
 	flex-flow: column;
+	width: 100%;
 }
 #section-flexi-promotions .slide-flexi-promotions .item p {
 	margin-bottom: 20px;
@@ -7428,6 +7429,11 @@ nav[aria-label="breadcrumb"]{
 	margin: 33px 0 0 0;
 }
 
+.static-modal .link-more{
+	text-decoration: underline;
+	color: #CF3339;
+}
+
 .static-merchant .link-more{
 	color: #0055B8;
 }
@@ -7561,8 +7567,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .static-content{
-	padding-left:3%;
-	padding-right: 3%;
+	padding:40px 3%;
 }
 
 .half-half .row .row .static-content.text-on-left-img{
@@ -7668,7 +7673,18 @@ nav[aria-label="breadcrumb"]{
     align-self: flex-start;
     top: 50px;
     right: 50px;
+    width: auto;
+    max-width: none;
+}
 
+.static-content.text-on-left-img.float-up{
+    background: rgba(255,255,255,.9);
+    padding: 60px 3%;
+    align-self: flex-start;
+    top: 50px;
+    left: 50px;
+    width: auto;
+    max-width: none;
 }
 
 .full-full .static-content{
@@ -7714,6 +7730,79 @@ article.content-wrap{
 	overflow: hidden;
 }
 
+.static-content .media{
+	padding:30px 25px;
+	position: relative;
+	height: 100%;
+}
+
+.static-content .media img{
+	width: 50px;
+	height: auto;
+	margin:0 20px 0 0;
+}
+
+.static-wrap .media h5{
+	font-size: 20px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin-bottom: 10px;
+}
+
+.static-wrap .media p{
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.static-wrap .media-content > div{
+	align-self: stretch;
+}
+
+.static-content .media:before{
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	bottom: 0;
+	background: rgba(91,102,112,0.15);
+}
+
+.static-wrap .media-body .link-more{
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.static-wrap .media-body .link-more{
+	display: inline;
+}
+
+.static-wrap .media-body p b{
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.static-modal .header{
+	margin: 18px 0 20px 0;
+	padding-bottom: 17px;
+}
+
+.static-modal .content p,
+.static-modal .content li{
+	line-height: 1.6;
+}
+
+.static-modal .content > ul li{
+	margin-left: 1.3em;
+}
+
+.static-modal .content ul.number > li{
+	list-style-type: decimal;
+}
+
+.static-modal .content ul ul li{
+	margin-left: 2.5em;
+}
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)

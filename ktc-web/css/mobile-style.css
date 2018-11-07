@@ -1918,6 +1918,22 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     margin-top: 20px;
   }
 
+  .static-wrap .static-content.media-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .static-wrap .media-content > div{
+    padding: 0;
+  }
+  .static-content .media{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .static-content .media:before{
+    left: 0;
+    right: 0;
+  }
+
 
 
 }
