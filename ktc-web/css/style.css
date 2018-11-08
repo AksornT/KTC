@@ -5359,7 +5359,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     width: 25px;
     height: 25px;
     background-size: contain;
-    background-image: url(../img/ico-fav.png);
+    background-image: url(../img/promotion/ico-fav.svg);
     background-color: transparent;
     background-repeat: no-repeat;
     margin-right: 10px;
@@ -5367,17 +5367,17 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 		cursor: pointer;
 }
 .article-wrap .article-icon .fav-btn:hover {
-    background-image: url(../img/ico-fav-line.png);
+    background-image: url(../img/promotion/ico-fav-line.svg);
 }
 .article-wrap .article-icon .fav-btn.active {
-    background-image: url(../img/ico-fav-fill.png);
+    background-image: url(../img/promotion/ico-fav-fill.svg);
 }
 .article-wrap .article-icon .share-btn {
     border: 0;
     width: 25px;
     height: 25px;
     background-size: contain;
-    background-image: url(../img/ico-share-pro.png);
+    background-image: url(../img/promotion/ico-share-pro.svg);
     background-color: transparent;
     background-repeat: no-repeat;
     position: relative;
@@ -5385,10 +5385,10 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 		cursor: pointer;
 }
 .article-wrap .article-icon .share-btn:hover {
-    background-image: url(../img/ico-share-pro-line.png);
+    background-image: url(../img/promotion/ico-share-pro-line.svg);
 }
 .article-wrap .article-icon .share-btn.active {
-    background-image: url(../img/ico-share-pro-fill.png);
+    background-image: url(../img/promotion/ico-share-pro-fill.svg);
 }
 .article-wrap .article-icon .share-popover,
 .btn-flexi-share + .share-popover {
