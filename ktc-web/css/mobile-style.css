@@ -1923,6 +1923,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     padding-left: 50px;
   }
 
+  .static-content .media{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 
 
 }

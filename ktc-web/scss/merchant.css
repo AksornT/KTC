@@ -773,9 +773,6 @@ article.page-merchant-inner-content .detail-register h3, article.page-merchant-i
 article.page-merchant-inner-content .detail-register .detail-register-desc:first-child {
   padding-right: 50px;
 }
-article.page-merchant-inner-content .detail-register .detail-register-desc:last-child {
-  padding-left: 50px;
-}
 article.page-merchant-inner-content .detail-register-desc h5 {
   font-size: 20px;
 }

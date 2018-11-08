@@ -1246,6 +1246,7 @@
   #section-flexi-cards-mobile.only-mobile.forever h4 {
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 5px;
   }
   .forever #section-flexi-shops {
     margin-bottom: 0px;
@@ -1731,8 +1732,8 @@
     padding: 0;
   }
   .static-content .media{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 80px;
+    padding-right: 80px;
     display: block;
     text-align: center;
   }
@@ -1742,6 +1743,7 @@
   }
   .static-content .media img{
     margin: 0 0 20px 0;
+    width: 100px;
   }
   #header-card-detail .content-desc{
     margin: 30px 0 0 0;
@@ -1774,6 +1776,18 @@
 
   .static-content.text-left.text-on-left-img{
     padding-left: 100px;
+  }
+
+  #header-card-detail a.card-register-center {
+    margin: 30px 0 40px 0;
+  } 
+
+  .media-content > div:nth-last-child(1) .media:before{
+    display: none;
+  }
+
+  .proud-loan .proud-after-logo br{
+    display: none;
   }
 
 }
