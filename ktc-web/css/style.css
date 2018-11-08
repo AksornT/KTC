@@ -827,7 +827,7 @@ article.page-content img {
 }
 
 .share-on-top{
-	margin-left: -30px;
+	left: -30px;
 	float: right;
 	position: relative;
 	padding-bottom: 8px;
@@ -2232,6 +2232,7 @@ a:hover .on-hover{
   text-align: center;
   margin-top: 20px;
 }
+
 #header-card-detail .header-desc{
   margin-bottom: 40px;
 }
@@ -3529,6 +3530,7 @@ h4.content-title:after{
 	height: 30px;
 	padding: 3px 20px;
 	font-size: 14px;
+	margin: 0;
 }
 #nav-flexi-mobile .nav.mini .btn-flexi-share, #nav-flexi-modal .nav.mini .btn-flexi-share {
 	-webkit-background-size: 22px;
@@ -3574,6 +3576,7 @@ h4.content-title:after{
 	padding:  0px;
 	margin-bottom: 0px;
 	border-bottom:none;
+	overflow: hidden;
 }
 #page-flexi-content h4 {
 	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3588,9 +3591,6 @@ h4.content-title:after{
 	width: 50px;
 	height: 2px;
 	background-color: #CF3339;
-}
-#page-flexi-content img {
-	max-width: 100%;
 }
 .forever .content-ticket{
 	position: absolute;
@@ -5013,9 +5013,11 @@ img[href]:hover{
 }
 
 .forever .btn-link.underlined {
-    font-size: 16px;
+    font-size: 20px;
     color: #DB195E;
     text-decoration: underline;
+    padding: 0px 0 5px 0;
+    vertical-align: middle;
 }
 
 .forever .item .slide-title {
@@ -5418,10 +5420,6 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	top: -8px;
 }
 
-.btn-flexi-share + .share-popover{
-	top: 100%;
-}
-
 .article-wrap .article-icon .share-btn.active .share-popover,
 .btn-flexi-share:focus + .share-popover {
     display: flex;
@@ -5485,10 +5483,10 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .btn-flexi-share + .share-popover:after{
-	border-bottom: 8px solid #ECEEED;
-	border-top: none;
-	bottom: auto;
-	top: -8px;
+    border-bottom: none;
+    border-top: 8px solid #ECEEED;
+    bottom: -8px;
+    top: auto;
 }
 .article-wrap .article-content {
     font-family: Helvetica, Arial, sans-serif;
@@ -7637,6 +7635,7 @@ nav[aria-label="breadcrumb"]{
 
 .static-content.text-left.text-on-left-img{
 	margin-left: 0;
+	padding-left: 6%
 }
 
 .full-overimage{
@@ -7743,9 +7742,27 @@ nav[aria-label="breadcrumb"]{
 
 .top-banner .share-on-top{
 	position: absolute;
-	bottom: 5px;
-	right: 60px;
-	top: auto;
+	left: auto;
+    right: 39px;
+    bottom: auto;
+    top: 13px;
+}
+
+.btn-flexi-share + .share-popover{
+	top: 100%;
+}
+
+
+
+.btn-flexi-share + .share-popover:after {
+	border-top: none;
+	border-bottom: 8px solid #ECEEED;
+	top: -8px;
+	bottom: auto;
+} 
+
+.top-banner .share-on-top.with-bc .btn-flexi-share {
+    margin-top: 30px;
 }
 
 .page-flexi-header.top-banner .share-on-top{
@@ -7852,6 +7869,22 @@ article.content-wrap{
 .static-modal .content ul ul li{
 	margin-left: 2.5em;
 }
+
+.static-content .row.small-desc > div {
+    align-self: flex-start;
+}
+
+.navbar-nav .btn-flexi-share + .share-popover{
+	top: 50px;
+}
+
+.navbar-nav .btn-flexi-share + .share-popover:after{
+    border-top: none;
+    border-bottom: 8px solid #ECEEED;
+    top: -8px;
+    bottom: auto;
+}
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
@@ -8165,17 +8198,8 @@ article.content-wrap{
   }
 
   @media (min-width: 992px) {
-  	.top-banner .btn-flexi-share + .share-popover{
-		top: auto;
-		bottom: calc(100% + 10px);
-  	}
 
-  	.btn-flexi-share + .share-popover:after {
-	    border-bottom:none;
-	    border-top:8px solid #ECEEED;
-	    bottom:-8px;
-	    top: auto;
-	}
+  	
 
 	.proud-after-logo .btn-flexi-share + .share-popover{
 		top: -45px;
