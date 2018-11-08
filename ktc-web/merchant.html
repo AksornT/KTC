@@ -534,6 +534,110 @@
   </section>
   <!-- End static -->
 
+  <section id="section-merchant-register-form" class="form-inner-page">
+    <div class="content-wrap">
+      <div class="row row-form-prompt">
+        <div class="col">
+          <h3>สมัครร้านค้าสมาชิก</h3>
+          <form id="form-merchant" class="form-inner-page" action="merchant.html" method="post" autocomplete="false">
+            <div class="form-row form-wrap">
+              <div class="col-12 col-md form-col left">
+                <input type="text" name="name" class="form-control" placeholder="ชื่อ - สกุล ผู้ติดต่อ" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col right">
+                <input type="text" name="business-name" class="form-control" placeholder="ชื่อร้าน / ห้าง / บริษัท" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col left">
+                <input type="text" name="business-type" class="form-control" placeholder="ประเภทธุรกิจ" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col right">
+                <input type="text" name="tel" class="form-control" placeholder="เบอร์โทรศัพท์ติดต่อ" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col left">
+                <input type="text" name="province" class="form-control" placeholder="จังหวัด" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col right">
+                <input type="text" name="city" class="form-control" placeholder="เขต" autocomplete="false">
+              </div>
+              <div class="col-12 col-md-6 form-col left">
+                <input type="text" name="email" class="form-control" placeholder="อีเมล" autocomplete="false">
+              </div>
+            </div>
+            <div class="form-row row-merchant-options">
+              <div class="col">
+                <h5>กรุณาเลือกบริการรับช่องทางที่ต้องการสมัคร</h5>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-edc" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-edc">เครื่องรูดบัตร</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-mpos" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-mpos">เครื่องรูดบัตรแบบพกพา</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-online" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-online">ระบบรับชำระเงินออนไลน์</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-alipay" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-alipay">ระบบชำระเงิน ALIPAY</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-qrpay" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-qrpay">ระบบชำระเงิน QRPAY</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox-merchant-recurring" autocomplete="false">
+                  <label class="custom-control-label" for="checkbox-merchant-recurring">บริการหักบัญชีบัตรเครดิตลูกค้าอัตโนมัติ</label>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <button id="sending-form" class="card-register-center">ส่งข้อมูล</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row row-form-submitted" style="display: none;">
+        <div class="col form-register-completed">
+          <img class="img-result" src="img/index/ico-register-success.svg">
+          <p>ขอบคุณที่ไว้วางใจเลือกใช้บริการรับชำระเงินจาก KTC</p>
+          <span>ระบบได้รับข้อมูลเรียบร้อยแล้ว เจ้าหน้าที่จะติดต่อกลับภายใน X ชั่วโมง ในวันและเวลาทำการ</span>
+          <div class="btn-wrap">
+            <button id="close-success" class="card-register-center blue">ปิด</button>
+          </div>
+        </div>
+      </div>
+      <script>
+          $('.row-form-submitted').hide();
+          $('#form-merchant').submit(function (event) {
+              event.preventDefault();
+              $('.row-form-prompt').hide();
+              $('.row-form-submitted').show();
+          });
+
+          $('#close-success').click(function () {
+              $('.row-form-prompt').show();
+              $('.row-form-submitted').hide();
+          });
+      </script>
+    </div>
+  </section>
+  <div style="height:40px;"></div>
+
 </article>
 <!-- /content -->
 

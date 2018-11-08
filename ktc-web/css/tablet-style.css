@@ -1134,6 +1134,7 @@
 
   .forever .btn.button-flexi-start {
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   #page-flexi-content.forever .content-pre-nav h3 {
@@ -1146,8 +1147,7 @@
 
 
   #page-flexi-content.forever .content-pre-nav {
-    padding-top: 35px;
-    padding-bottom: 0px;
+    padding: 35px 0;
   }
 
   .forever #nav-flexi-mobile .nav.full-size a, #nav-flexi-modal .nav.full-size a {
@@ -1231,7 +1231,7 @@
   }
 
   #page-flexi-content.forever section#section-flexi-promotions{
-    padding-top: 0px;
+    padding: 0px 20px 40px 20px;
   }
 
   .forever #section-flexi-shops div[class*="col"].order-lg-last.box-center-v {
@@ -1485,12 +1485,7 @@
     top: 73px;
     right: 23px;
     z-index: 1;
-  }
-
-  .top-banner .share-on-top {
-    right: 39px;
-    bottom: auto;
-    top: 13px;
+    left: auto;
   }
 
   nav + .content-wrap .share-on-top{
@@ -1713,10 +1708,6 @@
     margin-left: -56vw;
   }
 
-  .top-banner .share-on-top.with-bc .btn-flexi-share{
-    margin-top: 30px;
-  }
-
   .proud-after-logo .btn-flexi-share{
     background: rgba(0,0,0,0.5) url(../img/ico-share-pro-white.png) no-repeat center;
     background-size: 80% auto;
@@ -1726,10 +1717,63 @@
     background: #CF3339 url('../img/ico-share-pro-fill.png') no-repeat center;
     background-size: 100% auto;
   }
- 
-  .static-wrap .text-left p, 
-  .static-wrap .text-left a{
-    text-align: left !important;
+
+  .static-wrap .row > .text-left,
+  .static-wrap .row > .text-right{
+    text-align: center !important;
+  }
+
+  .static-wrap .static-content.media-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .static-wrap .media-content > div{
+    padding: 0;
+  }
+  .static-content .media{
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    text-align: center;
+  }
+  .static-content .media:before{
+    left: 0;
+    right: 0;
+  }
+  .static-content .media img{
+    margin: 0 0 20px 0;
+  }
+  #header-card-detail .content-desc{
+    margin: 30px 0 0 0;
+  }
+
+  #header-card-detail .header-title .btn-flexi-share{
+    background: rgba(0,0,0,0.5) url(../img/ico-share-pro-white.png) no-repeat center;
+      background-size: 80% auto;
+  }
+
+  #header-card-detail .header-title .btn-flexi-share:focus {
+    outline: 0;
+    background: #CF3339 url(../img/ico-share-pro-fill.png) no-repeat center;
+    background-size: 100% auto;
+    box-shadow: none;
+  }
+
+  .nav.mini .btn-flexi-share + .share-popover{
+    top: 50px;
+    right: -90px;
+  }
+
+  .nav.mini .btn-flexi-share + .share-popover:after{
+    border-top: none;
+    border-bottom: 8px solid #ECEEED;
+    top: -8px;
+    bottom: auto;
+    right: 98px;
+  }
+
+  .static-content.text-left.text-on-left-img{
+    padding-left: 100px;
   }
 
 }

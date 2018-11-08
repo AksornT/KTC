@@ -1274,6 +1274,7 @@
 
   .forever .btn-link.underlined {
     font-size: 14px;
+    white-space: normal;
   }
   .page-forever-header .content-wrap {
     padding: 0 20px;
@@ -1918,20 +1919,8 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     margin-top: 20px;
   }
 
-  .static-wrap .static-content.media-content{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .static-wrap .media-content > div{
-    padding: 0;
-  }
-  .static-content .media{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .static-content .media:before{
-    left: 0;
-    right: 0;
+  .static-content.text-left.text-on-left-img{
+    padding-left: 50px;
   }
 
 
