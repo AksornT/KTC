@@ -7928,7 +7928,7 @@ article.content-wrap{
 .table .modal-table-desc td{
 	text-align: center;
 	vertical-align: middle;
-	min-width: 145px;
+	min-width: 135px;
 	max-width: 220px;
 }
 .table .modal-table-desc th p, .table .modal-table-title th p{
