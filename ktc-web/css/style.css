@@ -4207,6 +4207,9 @@ section#section-flexi-cards {
 .section-cards{
 	overflow: hidden;
 }
+.flexi-loan .box-title{
+	display: inline-block;
+}
 .flexi-loan .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 34px;
@@ -7538,6 +7541,15 @@ nav[aria-label="breadcrumb"]{
 
 .static-wrap a:hover img{
 	cursor: pointer;
+}
+
+.static-wrap a.button-flexi-start{
+	position: relative;
+	top: 0;
+}
+.static-wrap a:hover.button-flexi-start{
+	opacity: 1;
+	top: -3px;
 }
 
 .static-wrap .link-more{
