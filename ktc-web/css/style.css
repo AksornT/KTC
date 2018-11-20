@@ -1234,7 +1234,7 @@ button:focus {
 }
 
 .social-footer img{
-	width: 20px;
+	width: 24px;
 	height: auto;
 }
 
@@ -4366,9 +4366,7 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input{
 	width: 100%;
 }
-.box-login-con.form-wrap input:-ms-input-placeholder{
-	color: #fff !important;
-}
+.box-login-con.form-wrap input:-ms-input-placeholder,
 .box-login-con.form-wrap input:focus::-ms-input-placeholder{
 	color: #fff !important;
 }
