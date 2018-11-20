@@ -1118,7 +1118,8 @@ button:focus {
 	line-height: 29px;
 	font-size: 24px;
 	padding-left: 24px;
-	background: url(../img/ico-footer-tel.png) no-repeat;
+	background: url(../img/index/ico-footer-tel.svg) no-repeat;
+	background-size: 20px;
 	background-position: left center;
 	white-space: nowrap;
 }
@@ -1497,9 +1498,11 @@ body.modal-open{
 .input-search:placeholder{
 	color: rgba(91,100,112,.15);
 }
-
 .input-search:focus::placeholder{
 	color: #fff;
+}
+.input-search:focus::-ms-input-placeholder{
+	color: #fff !important;
 }
 
 .input-search:focus{
