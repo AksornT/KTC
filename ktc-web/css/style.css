@@ -6017,8 +6017,15 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     font-family: "Conv_SukhumvitTadmai_Tex";
     font-size: 16px;
     line-height: 26px;
-    color: #5B6670;
     padding: 18px 15px 18px 15px;
+}
+
+.menu-sub-icon .nav-link p{
+    color: #5B6670;
+}
+
+.menu-sub-icon .nav-link:hover p{
+	color: #b63333;
 }
 
 .article-page .menu-sub-icon .nav-link{
