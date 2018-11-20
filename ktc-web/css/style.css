@@ -1501,9 +1501,6 @@ body.modal-open{
 .input-search:focus::placeholder{
 	color: #fff;
 }
-.input-search:focus::-ms-input-placeholder{
-	color: #fff !important;
-}
 
 .input-search:focus{
 	outline: 0;
@@ -4368,6 +4365,12 @@ section#section-flexi-cards {
 }
 .box-login-con.form-wrap input{
 	width: 100%;
+}
+.box-login-con.form-wrap input:-ms-input-placeholder{
+	color: #fff !important;
+}
+.box-login-con.form-wrap input:focus::-ms-input-placeholder{
+	color: #fff !important;
 }
 .box-login-con.form-wrap.only-login input{
 	  width: calc(100% - 30px) !important;
