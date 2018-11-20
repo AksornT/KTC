@@ -368,8 +368,20 @@ a:hover{
     top: 2px;
 }
 
-.menu-global a.search-on-menu:hover{
-	color: #bf2a31;
+.menu-global .search-on-menu img{
+	width: 18px;
+}
+.menu-global .search-on-menu .search-on-default{
+	display: inline-block;
+}
+.menu-global .search-on-menu .search-on-hover{
+	display: none;
+}
+.menu-global a:hover .search-on-default{
+	display: none;
+}
+.menu-global a:hover .search-on-hover{
+	display: inline-block;
 }
 
 .card-register-btn{
@@ -5953,7 +5965,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 
 .row-search-filter .filter-btn img {
-    width: 20px;
+    width: 26px;
     margin-right: 5px;
 }
 
@@ -5965,12 +5977,12 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 .row-search-filter .input-search-inline:after {
     display: block;
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background-size: contain;
-    background-image: url(../img/ico-search-inline.png);
+    background-image: url(../img/promotion/ico-search-inline.svg);
     position: absolute;
-    top: 7px;
+    top: 10px;
     right: 10px;
 }
 
@@ -6079,21 +6091,21 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
     border: 0;
     width: 24px;
     height: 24px;
-    background: url(../img/ico-fav.png) no-repeat;
+    background: url(../img/promotion/ico-fav.svg) no-repeat;
     background-size: 100% auto;
     background-position: center;
     float: right;
 }
 
 .slide-wrap .item .slide-meta .fav-btn:hover {
-    background-image: url(../img/ico-fav-line.png);
+    background-image: url(../img/promotion/ico-fav-line.svg);
     background-size: 100% auto;
     background-position: center;
     cursor: pointer;
 }
 
 .slide-wrap .item .slide-meta .fav-btn.active {
-    background-image: url(../img/ico-fav-fill.png);
+    background-image: url(../img/promotion/ico-fav-fill.svg);
     background-size: 100% auto;
     background-position: center;
 }
