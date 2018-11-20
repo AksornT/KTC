@@ -3364,6 +3364,11 @@ h4.content-title:after{
 	color: #CF3339;
 }
 
+nav.navbar .sub-nav-flexi{
+	display: flex;
+	padding: 0;
+}
+
 /* Flexi Page - @korstudio */
 .btn.button-flexi-start {
 	display: inline-block;
