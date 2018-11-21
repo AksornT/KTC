@@ -426,6 +426,7 @@ a:hover{
 
 .login-btn img{
 	width: 16px;
+	height: 16px;
 	vertical-align: bottom;
 }
 
@@ -1235,7 +1236,7 @@ button:focus {
 
 .social-footer img{
 	width: 24px;
-	height: auto;
+	height: 24px;
 }
 
 .social-footer a{
