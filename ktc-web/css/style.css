@@ -370,6 +370,7 @@ a:hover{
 
 .menu-global .search-on-menu img{
 	width: 18px;
+	height: 18px;
 }
 .menu-global .search-on-menu .search-on-default{
 	display: inline-block;
@@ -426,6 +427,7 @@ a:hover{
 
 .login-btn img{
 	width: 16px;
+	height: 16px;
 	vertical-align: bottom;
 }
 
@@ -1235,7 +1237,7 @@ button:focus {
 
 .social-footer img{
 	width: 24px;
-	height: auto;
+	height: 24px;
 }
 
 .social-footer a{
@@ -4390,6 +4392,12 @@ section#section-flexi-cards {
 	color: #fff !important;
 }
 .box-login-con.form-wrap input:focus::-ms-input-placeholder{
+	color: #fff !important;
+}
+.form-wrap input:-ms-input-placeholder{
+	color: #fff !important;
+}
+.form-wrap input:focus::-ms-input-placeholder{
 	color: #fff !important;
 }
 .box-login-con.form-wrap.only-login input{
