@@ -1986,12 +1986,12 @@ a:hover .on-hover{
 .col-right-filter .search-credit:after{
   display: block;
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   background-size: contain;
-  background-image: url(../img/ico-search-inline.png);
+  background-image: url(../img/promotion/ico-search-inline.svg);
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 10px;
 }
 .btn-filter{
@@ -2000,11 +2000,12 @@ a:hover .on-hover{
 }
 .btn-filter span{
 	font-size: 18px;
+	vertical-align: middle;
 }
 .btn-filter img{
-	width: 20px;
-	height: auto;
-	vertical-align: bottom;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
 }
 .btn-filter.only-mobile{
   display: none;
@@ -3496,19 +3497,19 @@ nav.navbar .sub-nav-flexi{
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #fff url("../img/ico-share-pro.png") no-repeat center;
+	background: #fff url("../img/promotion/ico-share-pro.svg") no-repeat center;
 	background-size: 80% auto ;
 }
 
 .btn-flexi-share:focus{
 	outline: 0;
-	background: #CF3339 url('../img/ico-share-pro-fill.png') no-repeat center;
+	background: #CF3339 url('../img/promotion/ico-share-pro-fill.svg') no-repeat center;
 	background-size: 100% auto ;
 	box-shadow: none;
 }
 
 #section-merchant-card-type .btn-flexi-share:focus{
-	background: #045AA7 url('../img/ico-share-pro-white.png') no-repeat center;
+	background: #045AA7 url('../img/promotion/ico-share-pro-white.svg') no-repeat center;
 	background-size: 80% auto ;
 }
 
@@ -5530,27 +5531,27 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .article-wrap .article-icon .share-popover a.share-fb-btn,
 .btn-flexi-share + .share-popover a.share-fb-btn {
-    background-image: url(../img/ico-social-facebook.png);
+    background-image: url(../img/index/ico-social-facebook.svg);
 }
 .article-wrap .article-icon .share-popover a.share-fb-btn:hover,
 .btn-flexi-share + .share-popover a.share-fb-btn:hover {
-    background-image: url(../img/ico-social-facebook-color.png);
+    background-image: url(../img/index/ico-social-facebook-color.svg);
 }
 .article-wrap .article-icon .share-popover a.share-tw-btn,
 .btn-flexi-share + .share-popover a.share-tw-btn {
-    background-image: url(../img/ico-social-twitter.png);
+    background-image: url(../img/index/ico-social-twitter.svg);
 }
 .article-wrap .article-icon .share-popover a.share-tw-btn:hover,
 .btn-flexi-share + .share-popover a.share-tw-btn:hover {
-    background-image: url(../img/ico-social-twitter-color.png);
+    background-image: url(../img/index/ico-social-twitter-color.svg);
 }
 .article-wrap .article-icon .share-popover a.share-line-btn,
 .btn-flexi-share + .share-popover a.share-line-btn {
-    background-image: url(../img/ico-social-line.png);
+    background-image: url(../img/index/ico-social-line.svg);
 }
 .article-wrap .article-icon .share-popover a.share-line-btn:hover,
 .btn-flexi-share + .share-popover a.share-line-btn:hover {
-    background-image: url(../img/ico-social-line-color.png);
+    background-image: url(../img/index/ico-social-line-color.svg);
 }
 .article-wrap .article-icon .share-popover a.share-mail-btn,
 .btn-flexi-share + .share-popover a.share-mail-btn {
@@ -5832,7 +5833,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .form-content .input-ico.input-ico-right.input-date:after {
     display: inline-block;
-    background-image: url(../img/ico-calendar.png);
+    background-image: url(../img/promotion/ico-calendar.svg);
 		width: 17px;
     margin-right: 5px;
 		top: auto;
@@ -5840,7 +5841,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .form-content .input-ico.input-ico-right.input-upload:after {
     display: inline-block;
-    background-image: url(../img/ico-upload.png);
+    background-image: url(../img/promotion/ico-upload.svg);
 		width: 17px;
     margin-right: 5px;
 		top: auto;
@@ -6000,6 +6001,7 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 
 .row-search-filter .filter-btn img {
     width: 26px;
+    height: 26px;
     margin-right: 5px;
 }
 
@@ -6352,6 +6354,16 @@ nav[aria-label="breadcrumb"] + .row-search-filter{
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+.card-select-row.with-text .img-checkbox label img{
+	height: 38px;
+    width: auto;
+    padding: 10px;
+}
+.card-select-row.type-card-select .img-checkbox label img{
+	height: 45px;
+    width: auto;
+    padding: 6px;
 }
   @media only screen and (max-width: 767px) {
     #filter-modal .card-select-row {
