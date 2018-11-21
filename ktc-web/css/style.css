@@ -431,6 +431,11 @@ a:hover{
 	vertical-align: bottom;
 }
 
+.login-btn .subimg-wrap img{
+	width: 32px;
+	height: 32px;
+}
+
 .menu-global a.login-btn:hover{
     top: -3px;
 }
