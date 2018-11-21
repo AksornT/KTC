@@ -4394,6 +4394,12 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input:focus::-ms-input-placeholder{
 	color: #fff !important;
 }
+.form-wrap input:-ms-input-placeholder{
+	color: #fff !important;
+}
+.form-wrap input:focus::-ms-input-placeholder{
+	color: #fff !important;
+}
 .box-login-con.form-wrap.only-login input{
 	  width: calc(100% - 30px) !important;
 
