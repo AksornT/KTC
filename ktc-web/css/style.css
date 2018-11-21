@@ -1380,6 +1380,10 @@ body.modal-open{
     max-width: calc(100% - 130px);
     font-family: 'Conv_SukhumvitTadmai_Tex';
 }
+.card-choice .left-icon img{
+	width: 76px;
+    height: 53px;
+}
 
 
 
@@ -1484,6 +1488,10 @@ body.modal-open{
 	display: inline-block;
 	vertical-align: middle;
 }
+.search-wrap img.icon-search-result{
+	width: 20px;
+	height: 20px;
+}
 
 .input-search{
 	line-height: 30px;
@@ -1572,6 +1580,11 @@ body.modal-open{
 
 .search-cat-head .collapsed i {
     transform: rotate(-180deg);
+}
+
+.search-cat-head img{
+	width: 28px;
+	height: 28px;
 }
 
 /*.search-cat-wrap input[type="checkbox"]:checked + label{
@@ -3287,6 +3300,8 @@ h4.content-title:after{
 }
 .box-con-cal a img {
     vertical-align: middle;
+    width: 80px;
+    height: 80px;
 }
 .box-con-cal .con-cal-txt{
   	padding: 20px 0;
@@ -5555,11 +5570,11 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 }
 .article-wrap .article-icon .share-popover a.share-mail-btn,
 .btn-flexi-share + .share-popover a.share-mail-btn {
-    background-image: url(../img/ico-social-mail.png);
+    background-image: url(../img/index/ico-social-mail.svg);
 }
 .article-wrap .article-icon .share-popover a.share-mail-btn:hover,
 .btn-flexi-share + .share-popover a.share-mail-btn:hover {
-    background-image: url(../img/ico-social-mail-color.png);
+    background-image: url(../img/index/ico-social-mail-color.svg);
 }
 .article-wrap .article-icon .share-popover:after,
 .btn-flexi-share + .share-popover:after {
@@ -7415,6 +7430,10 @@ nav[aria-label="breadcrumb"]{
 .media.box-comment{
 	border-bottom: 1px solid rgba(112,112,112,.15);
 	margin-bottom: 20px;
+}
+.media.box-comment img{
+	width: 28px;
+	height: 28px;
 }
 .media.box-comment h5{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
