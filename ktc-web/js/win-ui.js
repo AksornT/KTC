@@ -621,6 +621,10 @@ $(document).on('scroll', function() {
         $(".btn-flexi-share").blur()
     }
 
+    if ($(".share-btn")[0]){ 
+        $(".share-btn").removeClass('active');
+    }
+
     if ($("#head-trigger")[0]){ 
         if($(this).scrollTop()>=$('#head-trigger').position().top){
             $('#menu-global').addClass('mini-header');

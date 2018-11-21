@@ -1278,6 +1278,7 @@
 
   nav[aria-label="breadcrumb"] + .row-search-filter{
     margin-top: 0px;
+    padding-top: 6px;
   }
 
   .search-wrap .btn-wrap{

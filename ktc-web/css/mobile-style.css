@@ -1773,7 +1773,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
   .btn-filter.only-mobile{
     display: inline-block;
     float: right;
-    padding-top: 7px;
+    padding-top: 20px;
   }
   .col-right-filter .search-credit{
     display: block;
