@@ -1510,6 +1510,10 @@
     margin: 0;
   }
 
+  .so-much-text + .static-content.text-on-right-img{
+    padding: 40px 100px;
+  }
+
   .static-wrap .overlap-wrap {
     width: calc(100% + 170px);
     margin: -40px -85px;

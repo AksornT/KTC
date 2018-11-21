@@ -844,7 +844,7 @@ article.page-content h4::after {
     left: 0;
     position: relative;
     width: 50%;
-    height: 2px;
+    height: 4px;
     background-color: #CF3339;
 }
 article.page-content h3.no-dash::after,
@@ -1311,12 +1311,13 @@ body.modal-open{
 	line-height: 38px;
 	padding-top: 30px;
 	display: block;
+	text-align: center;
 }
 
 .full-modal .modal-title{
 	text-align: center;
-	display: block;
-	width: 100%;
+	display: inline-block;
+    width: auto;
 	position: relative;
 	margin-bottom: 25px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -1326,12 +1327,11 @@ body.modal-open{
 
 .full-modal .modal-title:after{
 	height: 4px;
-	width: 50px;
+	width: 50%;
 	background: #CF3339;
-	position: absolute;
-	left: calc(50% - 25px);
+	margin-left: 25%;
 	content: "";
-	top: 100%;
+	display: block;
 }
 
 .card-choice{
@@ -2189,9 +2189,13 @@ a:hover .on-hover{
 	cursor: pointer;
   opacity: 1;
 }
+.filter-title{
+	text-align: center;
+}
 .filter-title h1{
   position: relative;
-  display: block;
+  display: inline-block;
+  width: auto
   margin-bottom: 70px;
   padding-bottom: 10px;
   font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
@@ -2200,10 +2204,10 @@ a:hover .on-hover{
 }
 .filter-title h1:after {
   height: 4px;
-  width: 50px;
+  width: 50%;
   background: #CF3339;
   position: absolute;
-  left: calc(50% - 25px);
+  left: 25%;
   content: "";
   top: 100%;
 }
@@ -2655,7 +2659,7 @@ a.card-register-center, a.btn-action {
     transform: translateX(-50%);
 }
 .content-title:after {
-    height: 2px;
+    height: 4px;
     width: 50%;
     background: #CF3339;
     position: absolute;
@@ -2865,9 +2869,15 @@ article.page-content #card-detail-regis h3::after{
 	padding-top: 60px;
 	padding-bottom: 100px;
 }
+
+.main-loan{
+	text-align: center;
+}
+
 .main-loan h1{
 	position: relative;
-	display: block;
+	display: inline-block;
+	width: auto;
 	margin-bottom: 65px;
 	padding-bottom: 10px;
 	font-family: 'Conv_SukhumvitTadmai_Tex', Helvetica, Arial, sans-serif;
@@ -2876,10 +2886,10 @@ article.page-content #card-detail-regis h3::after{
 }
 .main-loan h1:after {
     height: 4px;
-    width: 50px;
+    width: 50%;
     background: #CF3339;
     position: absolute;
-    left: calc(50% - 25px);
+    left: 25%;
     content: "";
     top: 100%;
 }
@@ -3310,7 +3320,7 @@ h4.content-title:after{
     font-family: 'Conv_SukhumvitTadmai_Tex';
 }
 .detail-register h3:after {
-  height: 2px;
+  height: 4px;
   background: #CF3339;
   position: absolute;
   left: 25%;
@@ -3641,8 +3651,8 @@ nav.navbar .sub-nav-flexi{
 	content: '';
 	display: block;
 	margin: 10px auto;
-	width: 50px;
-	height: 2px;
+	width: 50%;
+	height: 4px;
 	background-color: #CF3339;
 }
 .forever .content-ticket{
@@ -3764,6 +3774,8 @@ section#section-flexi-cards {
 	content: '';
 	display: block;
 	margin-top: 3px;
+	width: 50%;
+	margin-left: 25%;
 	height: 4px;
 	background: transparent;
 }
@@ -7548,6 +7560,10 @@ nav[aria-label="breadcrumb"]{
 .static-wrap a.button-flexi-start{
 	position: relative;
 	top: 0;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
 }
 .static-wrap a:hover.button-flexi-start{
 	opacity: 1;
@@ -7772,6 +7788,10 @@ nav[aria-label="breadcrumb"]{
 	font-size: 30px;
 }
 
+.big-icon-content img{
+	width: 150px;
+}
+
 .half-half-blue .tel-number{
 	position: relative;
 }
@@ -7859,6 +7879,11 @@ nav[aria-label="breadcrumb"]{
 
 .top-banner .share-on-top .btn-flexi-share{
     background: rgba(0,0,0,0.5) url(../img/ico-share-pro-white.png) no-repeat center;
+    background-size: 80% auto;
+}
+
+.top-banner .share-on-top .btn-flexi-share:hover{
+    background: rgba(0,0,0,0.8) url(../img/ico-share-pro-white.png) no-repeat center;
     background-size: 80% auto;
 }
 
@@ -8460,6 +8485,11 @@ h4.no-dash{
 
   .so-much-text + .static-content{
     position: relative;
+  }
+
+  .so-much-text + .static-content.text-on-right-img{
+  	margin-left: auto;
+    padding-left: 0;
   }
 
   .still-background,
