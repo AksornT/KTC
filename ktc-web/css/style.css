@@ -4374,7 +4374,9 @@ section#section-flexi-cards {
 .box-login-con.form-wrap input{
 	width: 100%;
 }
-.box-login-con.form-wrap input:-ms-input-placeholder,
+.box-login-con.form-wrap input:-ms-input-placeholder{
+	color: #fff !important;
+}
 .box-login-con.form-wrap input:focus::-ms-input-placeholder{
 	color: #fff !important;
 }
