@@ -1611,7 +1611,7 @@ body.modal-open{
 
 .search-cat-wrap input[type="checkbox"]:checked + label:after{
 	border: 1px solid rgba(207,51,57,1);
-	background: url(../img/ico-checkbox-checked.png) no-repeat;
+	background: url(../img/ico-checkbox-checked.svg) no-repeat;
 	background-position: center;
 }
 
