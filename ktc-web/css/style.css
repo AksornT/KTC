@@ -8176,6 +8176,14 @@ h4.no-dash{
 	padding-top: 60px;
 }
 
+.art-con-tag.d-none + .art-con-comment .index-head{
+	margin-top: 20px;
+}
+
+.article-wrap .article-tag.d-none + .article-link{
+	margin-top: 40px;
+}
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
