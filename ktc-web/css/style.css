@@ -2515,7 +2515,7 @@ article.page-content #card-detail-regis h3::after{
 	padding: 13px 49px;
 	border-radius: 6px;
 	border: transparent;
-	margin: 60px 0;
+	margin: 30px 0 60px 0;
 	min-width: 176px;
 	position: relative;
 	top: 0;
@@ -3038,10 +3038,14 @@ section#section-merchant-register-form select.form-control:focus,
 	padding: 7px 0;
     font-family: 'Conv_SukhumvitTadmai_Tex';
     line-height: 21px;
+    margin-top: 50px;
 }
 
 #proud-register .input-notice{
 	text-align: center;
+}
+article.page-content .title-red-line h3::after{
+	background-color: #CF3339;
 }
 
 .img-result{
