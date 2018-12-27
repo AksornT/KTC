@@ -2329,6 +2329,9 @@ a:hover .on-hover{
 .proud-head.card-details-bkkhospital{
 	background: url(../img/card-details/img-bg-banner-1.png);
 }
+.background-after-head{
+	background: url(../img/card-details/platinum/bg-section-01.png);
+}
 #header-card-detail .proud-head{
   margin-bottom: 125px;
 }
@@ -2343,7 +2346,7 @@ a:hover .on-hover{
 }
 #header-card-detail .content-desc h2{
   font-family: 'Conv_SukhumvitTadmai_Tex';
-  font-size: 50px;
+  font-size: 36px;
 }
 
 #header-card-detail .content-desc h2 .smaller-text{
@@ -2360,6 +2363,17 @@ a:hover .on-hover{
 #header-card-detail.page-merchant-inner-header > .content-wrap::after{
   display: none;
 }
+.type-card{
+	margin: 72px auto 44px auto;
+}
+.type-card h3{
+	font-size: 28px;
+	padding-bottom: 36px;
+}
+.type-card p{
+	font-size: 20px;
+	padding-top: 20px;
+}
 article#content-card-detail section{
   padding-top: 0px;
 }
@@ -2369,6 +2383,18 @@ article#content-card-detail section{
 }
 #content-card-detail .content-title{
   padding-top: 0px;
+}
+#content-card-detail .content-title.title-section{
+	margin-left: 0;
+	transform: translateX(0);
+}
+.static-content .text-point{
+	margin-bottom: -15px;
+	color: #CF3339;
+}
+.static-content .img-point{
+	margin: 0;
+    height: 96px;
 }
 #content-card-detail .section-after-header img{
   height: 150px;
@@ -2923,6 +2949,43 @@ article.page-content #card-detail-regis h3::after{
 }
 #header-card-detail .content-desc.only-mobile{
   display: none;
+}
+
+.static-wrap .row > div.position-on-top{
+	align-self: start;
+}
+.static-wrap .row > div.position-on-top .link-more{
+	margin: 0 0 0 0;
+}
+.block-wrap{
+	padding: 30px 30px 40px 30px;
+	margin: 0 auto;
+}
+.block-wrap.block-content{
+	background: url(../img/card-details/platinum/bg-section-06.jpg);
+	border-radius: 6px;
+	height: 361px;
+	width: 519px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+}
+.static-wrap .block-wrap img{
+	height: 100px;
+	width: auto;
+	margin-top: 0;
+}
+.static-wrap .block-wrap h5{
+	font-family: 'Gotham-Bold';
+	font-size: 30px;
+	letter-spacing: 0;
+	color: #000;
+}
+.static-wrap .block-wrap p{
+	font-size: 20px;
+	color: #000;
+}
+.static-wrap .block-wrap a{
+	font-size: 16px;
+	color: #000;
 }
 
 /* loan page -eve */
