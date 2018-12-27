@@ -1978,6 +1978,10 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       top: 58px;
     }
 
+  .static-content.text-on-right-img.float-up.xvisa{
+    padding: 40px 50px;
+  }
+
 
 
 }

@@ -7657,6 +7657,7 @@ nav[aria-label="breadcrumb"]{
 	padding: 0 !important;
 	margin: 0 !important;
 	overflow: hidden;
+	letter-spacing: 0;
 }
 
 .static-wrap img{
@@ -7673,8 +7674,12 @@ nav[aria-label="breadcrumb"]{
 	margin:0 0 14px 0;
 }
 
+.static-wrap .gold-header h5{
+	color: #C6663A;
+}
+
 .static-wrap p{
-	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 20px;
 	display: block;
 }
@@ -7896,6 +7901,20 @@ nav[aria-label="breadcrumb"]{
     background: rgba(255,255,255,0.8);
 }
 
+.white-layer.white-100{
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 100px;
+    background: none;
+}
+
+.white-layer.white-100 > div{
+	background: rgba(255,255,255,0.8);
+    padding: 30px 50px;
+}
+
 .white-layer > div{
     align-self: center;
     margin: 0 auto;
@@ -7945,6 +7964,16 @@ nav[aria-label="breadcrumb"]{
 	background: rgba(255,255,255,0.15);
 }
 
+#content-card-detail .static-wrap  .content-title{
+	transform: none;
+	margin: 0 auto 35px 0;
+	line-height: 60px;
+}
+
+#content-card-detail .static-wrap  .content-title:after{
+	margin:  0 auto;
+}
+
 .static-wrap .link-square{
 	padding: 8px 10px;
 	border-radius: 4px;
@@ -7980,6 +8009,14 @@ nav[aria-label="breadcrumb"]{
     left: 50px;
     width: auto;
     max-width: none;
+}
+
+.static-content.text-on-right-img.float-up.xvisa{
+	background: none;
+    top: 11vw;
+    padding: 0;
+    right: 9.5vw;
+    max-width: 60%;
 }
 
 .full-full .static-content{
@@ -8284,6 +8321,21 @@ h4.no-dash{
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid #E6E8EA;
+}
+
+.page-content .static-wrap{
+	border: none;
+}
+
+.static-wrap .real-size{
+  	width: auto;
+  	height: auto;
+  	margin: 30px 0 30px auto;
+}
+
+.static-wrap.half-half-reverse .real-size{
+	margin-left: 0;
+    max-width: calc(100% - 30px);
 }
 
 
@@ -8663,6 +8715,11 @@ h4.no-dash{
     display: block;
     left: 0;
     padding: 0;
+  }
+
+  .page-content .still-background img{
+  	max-width: none;
+  	width: auto;
   }
 
   .still-background + .static-content{
