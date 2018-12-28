@@ -2366,6 +2366,9 @@ a:hover .on-hover{
 .type-card{
 	margin: 72px auto 44px auto;
 }
+.type-card img{
+	width: 100%;
+}
 .type-card h3{
 	font-size: 28px;
 	padding-bottom: 36px;
@@ -2951,11 +2954,14 @@ article.page-content #card-detail-regis h3::after{
   display: none;
 }
 
-.static-wrap .row > div.position-on-top{
-	align-self: start;
+.after-header-on-mobile{
+	display: none;
 }
-.static-wrap .row > div.position-on-top .link-more{
-	margin: 0 0 0 0;
+.static-wrap  .position-on-top{
+	align-self: start !important;
+}
+.static-wrap .negative-text.position-on-top .link-more{
+	margin: 30px 20px 60px 20px;
 }
 .block-wrap{
 	padding: 30px 30px 40px 30px;
@@ -2983,9 +2989,11 @@ article.page-content #card-detail-regis h3::after{
 	font-size: 20px;
 	color: #000;
 }
-.static-wrap .block-wrap a{
+.static-wrap .row > div.position-on-top .block-wrap.block-content .link-more{
 	font-size: 16px;
 	color: #000;
+	padding-top: 20px;
+	margin: 0;
 }
 
 /* loan page -eve */
@@ -8683,10 +8691,6 @@ h4.no-dash{
 		display: none;
 	}
 
-  /* creditcard detail -eve */
-  #card-detail-regis .detail-register-desc.section-doc-regis h5 {
-    margin-top: 40px;
-  }
   
   /* creditcard detail -eve */
   #card-detail-regis .detail-register-desc h5 {
@@ -8694,6 +8698,9 @@ h4.no-dash{
   }
   #card-detail-regis .detail-register-desc.section-doc-regis h5{
     margin-top: 40px;
+  }
+  .block-wrap.block-content{
+    margin-top: 30px;
   }
 
   .owl-item {

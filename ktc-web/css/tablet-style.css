@@ -576,6 +576,23 @@
     margin-top: 40px;
   }
 
+  .type-card p{
+    padding-bottom: 40px;
+  }
+  .static-wrap .negative-text.position-on-top{
+    color: #fff;
+  }
+  .static-wrap .negative-text.position-on-top .link-more{
+    color: #fff;
+  }
+  .block-wrap.block-content{
+    height: auto;
+    width: 100%;
+  }
+  .position-on-top.bg-grey{
+    background-color: #f6f7f7;
+  }
+
   /* loan page -eve */
   .main-loan .box-content {
     margin-top: 20px;
