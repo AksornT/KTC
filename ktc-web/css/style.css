@@ -8409,6 +8409,22 @@ h4.no-dash{
     max-width: calc(100% - 30px);
 }
 
+section#detail-register{
+	border: none;
+}
+
+.visasig-wrap img{
+	margin: 0 auto;
+}
+
+.visasig-wrap{
+	padding: 6.955vw 30px 4.393vw 30px;
+}
+
+.static-wrap .visasig-wrap p{
+	font-size: 30px;
+}
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
