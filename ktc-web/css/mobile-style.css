@@ -1880,6 +1880,10 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     padding: 40px 50px;
   }
 
+  .static-wrap .static-content.pl-0{
+    padding: 40px 50px !important;
+  }
+
   .static-wrap .overlap-wrap {
     width: calc(100% + 70px);
     margin: -40px -35px;
@@ -1980,6 +1984,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
 
   .static-content.text-on-right-img.float-up.xvisa{
     padding: 40px 50px;
+  }
+
+  .visasig-wrap{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
   }
 
 

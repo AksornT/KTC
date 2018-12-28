@@ -1506,9 +1506,13 @@
 
   /*Static Content*/
   .static-wrap .static-content{
-    padding: 40px 100px !important;
+    padding: 40px 100px;
     position: relative;
     margin: 0;
+  }
+
+  .static-wrap .static-content.pl-0{
+    padding: 40px 100px !important;
   }
 
   .so-much-text + .static-content.text-on-right-img{
@@ -1588,7 +1592,6 @@
     background: #000;
   }
   .white-layer.white-100{
-    padding: 0;
     background: #000;
   }
   .white-layer.white-100 > div{
@@ -1858,6 +1861,19 @@
   .static-wrap .real-size,
   .static-wrap.half-half-reverse .real-size{
     margin: 30px auto;
+  }
+
+  .visasig-wrap{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .static-wrap .visasig-wrap > div{
+    margin-bottom: 45px;
+  }
+
+  .static-wrap .visasig-wrap .link-more{
+    margin-top: 16px;
   }
 
 }
