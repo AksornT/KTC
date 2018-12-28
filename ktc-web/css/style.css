@@ -2843,7 +2843,7 @@ a.card-register-center, a.btn-action {
   margin-top: 20px;
 }
 #header-card-detail a.card-register-center{
-  margin: 60px 0 60px 0;
+  margin: 20px 0 40px 0;
 }
 #header-card-detail.page-merchant-inner-header > .content-wrap::after{
   display: none;
@@ -2994,6 +2994,16 @@ article.page-content #card-detail-regis h3::after{
 	color: #000;
 	padding-top: 20px;
 	margin: 0;
+}
+.static-wrap .link-more.link-no-margin{
+	margin: 0;
+}
+.page-content .bg-pink-text{
+	width: 90%;
+	height: auto;
+	position: absolute;
+	top: -12%;
+	left: 16%;
 }
 
 /* loan page -eve */
@@ -8718,6 +8728,20 @@ section#detail-register{
   .block-wrap.block-content{
     margin-top: 30px;
   }
+  .block-wrap.block-content{
+    height: 386px;
+    width: 100%;
+  }
+  .page-content .still-background.still-width img{
+  	width: 100%;
+  }
+  .page-content .bg-pink-text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -20%;
+    left: 18%;
+   }
 
   .owl-item {
     opacity: 1;

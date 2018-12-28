@@ -778,6 +778,14 @@
   .type-card {
     margin: 60px auto 0px auto;
   }
+  .type-card h3 {
+    font-size: 26px;
+  }
+  .type-card p{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
   .static-wrap .negative-text.position-on-top{
     color: #fff;
   }
