@@ -878,6 +878,7 @@ article.page-content h4 {
     margin-left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    line-height: 1;
 }
 article.page-content h3::after,
 article.page-content h4::after {
@@ -2334,6 +2335,8 @@ a:hover .on-hover{
 }
 #header-card-detail .proud-head{
   margin-bottom: 125px;
+  margin-top: 0;
+  height: 321px;
 }
 #header-card-detail .header-title{
   font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -2834,9 +2837,6 @@ a.card-register-center, a.btn-action {
 
 
 /* creditcard detail -eve*/
-#header-card-detail .proud-head{
-  margin-bottom: 125px;
-}
 #header-card-detail .header-title{
   font-family: 'Conv_SukhumvitTadmai_Bol';
   text-align: center;
@@ -7992,7 +7992,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .white-layer.white-100 > div{
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.55);
     padding: 30px 50px;
 }
 
@@ -8425,6 +8425,8 @@ section#detail-register{
 
 .visasig-wrap img{
 	margin: 0 auto;
+	width:230px;
+	padding:0 15px
 }
 
 .visasig-wrap{
@@ -8858,6 +8860,16 @@ section#detail-register{
 
   .big-link > div{
   	height: 175px;
+  }
+
+  .white-layer.white-100{
+  	padding-left: 50px;
+  	padding-right: 50px;
+  }
+
+  .static-wrap .visasig-wrap p{
+    font-size: 25px;
+    padding: 0 5px;
   }
 
 

@@ -2029,6 +2029,14 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     padding-top: 50px;
   }
 
+  h1 .share-on-top{
+    right: 16px;
+    top: 60px;
+  }
+  #header-card-detail .proud-head{
+    height: 234px;
+  }
+
 
 
 }

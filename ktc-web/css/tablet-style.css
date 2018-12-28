@@ -1881,11 +1881,16 @@
   .static-wrap .real-size,
   .static-wrap.half-half-reverse .real-size{
     margin: 30px auto;
+    max-width: calc(100% - 30px);
   }
 
   .visasig-wrap{
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .visasig-wrap img{
+    padding:0 30px 0 0;
   }
 
   .static-wrap .visasig-wrap > div{
@@ -1894,6 +1899,11 @@
 
   .static-wrap .visasig-wrap .link-more{
     margin-top: 16px;
+  }
+
+  article.page-content h3, 
+  article.page-content h4{
+    font-size: 30px;
   }
 
 }
