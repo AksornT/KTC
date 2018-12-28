@@ -759,7 +759,6 @@
     font-size: 18px;
     margin-bottom: 40px;
   }
-
   .more-modal .header {
     margin-top: 0px;
   }
@@ -769,6 +768,36 @@
   .more-modal .content li,
   .more-modal .content p{
     font-size: 12px;
+  }
+  .after-header-on-mobile{
+    display: block;
+  }
+  .after-header-on-desktop{
+    display: none;
+  }
+  .type-card {
+    margin: 60px auto 0px auto;
+  }
+  .static-wrap .negative-text.position-on-top{
+    color: #fff;
+  }
+  .static-wrap .negative-text.position-on-top .link-more{
+    color: #fff;
+    margin: 20px 0 0 0;
+  }
+  .block-wrap.block-content{
+    height: auto;
+    width: 100%;
+  }
+  .static-wrap .negative-text .block-wrap.block-content .link-more{
+    color: #000;
+  }
+  .static-wrap .block-wrap h5{
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .static-wrap .block-wrap p{
+    font-size: 18px;
   }
 
   /* loan page -eve */
