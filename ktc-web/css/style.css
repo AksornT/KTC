@@ -2498,7 +2498,23 @@ article.page-content #card-detail-regis h3::after{
   display: none;
 }
 
-.proud-head, .header-big-cover {
+.proud-head{
+	background: url("../img/proud/bg-proud.jpg");
+	background-size: cover !important;
+	height: 387px;
+	width: 100%;
+	position: relative;
+	margin-top: -66px;
+}
+.cash-loan .proud-head{
+	background: url("../img/cash/bg-cash.jpg");
+	background-size: cover !important;
+	height: 387px;
+	width: 100%;
+	position: relative;
+	margin-top: -66px;
+}
+.header-big-cover {
 	background: url("../img/bg_menu.png");
 	background-size: cover !important;
 	height: 387px;
@@ -3278,13 +3294,26 @@ h4.content-title:after{
 	overflow: hidden;
 }
 .proud-loan .proud-after-logo{
-	font-family: 'Conv_SukhumvitTadmai_Thi';
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 35px;
+	text-align: center;
+	margin: 117px auto 22px auto;
 }
 .proud-loan .sub-desc{
-	font-family: 'Conv_SukhumvitTadmai_Thi';
-	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 28px;
 	text-align: center;
-	padding-top: 15px;
+	margin-bottom: 60px;
+	line-height: 38px;
+}
+.proud-loan .content-desc h2 {
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 35px;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+.proud-loan .content-desc h3 {
+    font-size: 20px;
 }
 .proud-service-withdraw .text-head-wrap{
 	font-size: 40px;
@@ -3451,11 +3480,24 @@ h4.content-title:after{
 	padding-bottom: 10px;
 }
 .box-con-cal .con-cal-txt p{
-	color: #CF3339;
+	color: #5B6670;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 14px;
 	line-height: 26px;
 	text-decoration: underline;
+}
+.box-con-cal .con-cal-txt.content-sub h4{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 30px;
+	color: #000;
+	padding-bottom: 17px;
+}
+.box-con-cal .con-cal-txt.content-sub p{
+	color: #000;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+	line-height: 32px;
+	text-decoration: none;
 }
 /*.box-line-right{
 	border-left: 1px solid rgba(91, 102, 112, 0.15);
@@ -7999,6 +8041,15 @@ nav[aria-label="breadcrumb"]{
 .white-layer > div{
     align-self: center;
     margin: 0 auto;
+}
+
+.white-layer.white-half{
+	top: auto;
+    left: 6%;
+    right: auto;
+    bottom: auto;
+    display: block;
+    background: rgba(255,255,255,0.6);
 }
 
 .page-merchant-inner-header .breadcrumb-top[aria-label="breadcrumb"]{
