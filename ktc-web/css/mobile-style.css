@@ -270,7 +270,7 @@
 
   .download-section p{
     text-align: right;
-    width: 90px;
+    width: 110px;
     display: inline-block;
     vertical-align: middle;
     margin: 8px 0 3px 0;
@@ -302,7 +302,6 @@
     display: inline-block;
     vertical-align: middle;
     top: 0;
-    margin-left: 6px;
   }
   .menu-global .on-right .only-mobile.login-mobile{
     display: inline-block;
@@ -333,16 +332,17 @@
     opacity: 0;
     pointer-events: none;
     width: 0px;
-    background: url("../img/ico-menu-mobile.png") no-repeat center center;
+    background: url("../img/index/ico-menu-mobile.svg") no-repeat center center;
   }
+
   .mini-header .menu-mobile {
-    background: url("../img/ico-menu-mobile.png") no-repeat center center;
+    background: url("../img/index/ico-menu-mobile.svg") no-repeat center center;
     background-size: 100%;
     opacity: 1;
     pointer-events: all;
     width: 18px;
     height: 16px;
-    margin-left: 14px;
+    margin-left: 6px;
   }
 
   .menu-responsive-dropdown{
@@ -2019,24 +2019,24 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       top: 58px;
     }
 
-  .static-content.text-on-right-img.float-up.xvisa{
-    padding: 40px 50px;
-  }
+    .static-content.text-on-right-img.float-up.xvisa{
+      padding: 40px 50px;
+    }
 
-  .visasig-wrap{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-  }
+    .visasig-wrap{
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+    }
 
-  h1 .share-on-top{
-    right: 16px;
-    top: 60px;
-  }
-  #header-card-detail .proud-head{
-    height: 234px;
-  }
+    h1 .share-on-top{
+      right: 16px;
+      top: 60px;
+    }
+    #header-card-detail .proud-head{
+      height: 234px;
+    }
 
-
+    
 
 }
