@@ -624,6 +624,29 @@
     padding-top: 40px;
     padding-bottom: 0px;
   }
+  .proud-loan .proud-after-logo {
+    margin: 117px auto 5px auto;
+  }
+  .proud-loan .sub-desc{
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .proud-loan .content-desc h2{
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .proud-loan .content-desc h3 {
+    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-size: 16px;
+  }
+  .img-full-half img{
+    width: 45%;
+    margin: 40px auto auto;
+  }
+  .box-more-wrap .box-con-cal {
+    margin: 0 40px 40px 40px;
+  }
 
   /* loan-cash page -eve */
   .content-wrap {
@@ -1098,9 +1121,6 @@
   .section-cards a.button-contact-shop {
     text-align: center;
     display: block;
-  }
-  .proud-loan .sub-desc{
-    font-size: 14px;
   }
 
 
@@ -1628,6 +1648,14 @@
   .white-layer p,
   .white-layer .link-more{
     color: #fff;
+  }
+  .white-layer.white-half{
+    left: 0;
+    background: #f9f9f9;
+  }
+  .white-layer.white-half h5,
+  .white-layer.white-half p{
+    color: #000;
   }
 
 
