@@ -967,6 +967,7 @@
     font-size: 14px;
   }
 
+
   section#section-flexi-shops h4 {
     margin-bottom: 30px;
   }
@@ -1676,6 +1677,7 @@
   .full-overimage.top-banner .text-on-left-img.text-left{
     padding:40px 100px;
     text-align: center !important;
+    display: none;
   }
 
   .static-wrap .big-icon-content .static-content{

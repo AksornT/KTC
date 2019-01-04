@@ -3346,6 +3346,9 @@ h4.content-title:after{
 	width: 50%;
     margin: 25px auto auto;
 }
+.table.faq-tb strong{
+	font-weight: 600;
+}
 
 .proud-loan{
 	overflow: hidden;
@@ -4506,6 +4509,34 @@ section#section-flexi-cards {
   	font-size: 20px;
 }
 
+.installments-wrap .left{
+	margin: auto;
+}
+.installments-wrap .right{
+	padding-top: 20px;
+}
+.installments-wrap p{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 20px;
+	line-height: 1.4;
+	color: #5B6670;
+	letter-spacing: 0;
+}
+.installments-wrap p.main-desc{
+	color: #000;
+}
+.installments-wrap p.title-desc{
+	font-size: 24px;
+	color: #000;
+}
+.installments-wrap .btn-link{
+	padding: 0;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	color: #5B6670;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
 .section-cards{
 	overflow: hidden;
 }
@@ -4558,13 +4589,12 @@ section#section-flexi-cards {
     flex-flow: column;
     /* padding: 10px 30px; */
 }
-.section-cards figure.box-info > .left {
-    border-right: 1px solid #E6E8EA;
-}
-.flexi-credit.section-cards figure.box-info > .left{
+.flexi-credit.section-cards figure.box-info > .left,
+.flexi-loan.section-cards figure.box-info > .left{
 	position: relative;
 }
-.flexi-credit.section-cards figure.box-info > .left:after {
+.flexi-credit.section-cards figure.box-info > .left:after,
+.flexi-loan.section-cards figure.box-info > .left:after {
     border-right: 1px solid #cf3339;
     width: 1px;
     right: 0;
@@ -4584,7 +4614,7 @@ section#section-flexi-cards {
   	font-size: 40px;
   	text-align: center;
 }
-.flexi-credit .box-info span{
+.box-info span{
 	color: #cf3339;
 }
 .flexi-shop .box-title .title{
