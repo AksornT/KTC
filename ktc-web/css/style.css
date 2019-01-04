@@ -4519,6 +4519,9 @@ section#section-flexi-cards {
   	font-size: 20px;
 }
 
+article.page-content .flexi-installments h4::after{
+	background: none;
+}
 .installments-wrap .left{
 	margin: auto;
 }
