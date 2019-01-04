@@ -4574,7 +4574,7 @@ section#section-flexi-cards {
 .section-cards .box-info span{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 90px;
-  	margin: 30px auto;
+  	/*margin: 30px auto;*/
 }
 .section-cards .box-info small{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -8985,6 +8985,10 @@ section#detail-register{
 
 	.forever .text-on-slide {
     margin: 5px 0;
+	}
+
+	.installments-wrap p br{
+		display: none;
 	}
 
 	/* creditcard page -eve */
