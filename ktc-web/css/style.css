@@ -868,23 +868,12 @@ article.page-content section.full-width.alt-color {
 article.page-content section.full-width.alt-color .row {
 	background-color: transparent;
 }
-article.page-content h3,
-article.page-content h4 {
-	font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 40px;
-	text-align: center;
-	position: relative;
-	display: inline-block;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	white-space: nowrap;
-	line-height: 1;
-}
+
 article.page-content h3::after,
 article.page-content h4::after {
 	content: '';
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
     left: 0;
     position: relative;
     width: 50%;
@@ -2541,7 +2530,6 @@ article#content-card-detail section{
 }
 article.page-content #card-detail-regis h3::after{
   background-color: #CF3339;
-  display: none;
 }
 .card-sub-sticky .nav-img-card img{
   height: 40px;
@@ -2832,7 +2820,6 @@ a.card-register-center, a.btn-action {
     left: 25%;
     content: "";
 	top: 100%;
-	display:none;
 }
 
 .static-wrap.section-service-detail .text-left .row > div{
@@ -3015,7 +3002,6 @@ article#content-card-detail section{
 }
 article.page-content #card-detail-regis h3::after{
   background-color: #CF3339;
-  display: none;
 }
 .card-sub-sticky .nav-img-card img{
   height: 40px;
@@ -3239,6 +3225,7 @@ section .form-register-completed .img-result {
 	height: auto;
 	position: relative;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+	border-radius: 10px;
 }
 .main-loan .box-content{
 	margin-top: 28px;
@@ -3273,10 +3260,6 @@ h4.content-title{
 	text-align: left;
 	font-size: 28px;
 	padding-top: 0px;
-}
-
-h4.content-title:after{
-	display: none;
 }
 
 .collapse.in{
@@ -3564,6 +3547,7 @@ h4.content-title:after{
 	font-size: 14px;
 	line-height: 26px;
 	text-decoration: underline;
+	white-space: nowrap;
 }
 .box-con-cal .con-cal-txt h4 > span{
 	display: inline-block;
@@ -3590,7 +3574,7 @@ h4.content-title:after{
 .detail-register h3{
 	text-align: center;
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 40px;
     display: inline-block;
     position: relative;
@@ -3624,10 +3608,11 @@ h4.content-title:after{
 }
 .detail-register-desc li{
 	font-family: Helvetica, Arial, sans-serif ;
-	list-style: inside;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0px;
+	list-style: outside;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-left: 17px;
 }
 
 .detail-register-desc > h5{
@@ -8705,6 +8690,26 @@ section#detail-register{
 	font-size: 30px;
 }
 
+#proud-regis .content-title{
+	margin-bottom: 32px;
+}
+
+#proud-box .box-more{
+	max-width: 880px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-loan-proud #privillage{
+	padding-top: 0;
+}
+
+.page-loan-proud #privillage:after{
+	display: block;
+}
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
@@ -8829,8 +8834,8 @@ section#detail-register{
 	}
 
 	.detail-register-desc h5{
-    margin-top: 0px;
-  }
+	    /*margin-top: 0px;*/
+	}
 
 	.faq-head .collapsed {
     font-size: 14px;

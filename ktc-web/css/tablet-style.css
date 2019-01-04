@@ -645,7 +645,8 @@
     margin: 40px auto auto;
   }
   .box-more-wrap .box-con-cal {
-    margin: 0 40px 40px 40px;
+    margin: 0 auto 40px auto;
+    padding: 0 15px;
   }
 
   /* loan-cash page -eve */
@@ -1937,9 +1938,18 @@
     margin-top: 16px;
   }
 
-  article.page-content h3, 
-  article.page-content h4{
+  #proud-regis .content-title{
     font-size: 30px;
+    line-height: 45px;
+    white-space: nowrap;
+  }
+
+  .detail-register h3,
+  .page-loan-proud #privillage,
+  #content-card-detail .static-wrap .content-title{
+    font-size: 30px;
+    line-height: 45px;
+    padding: 0;
   }
 
 }
