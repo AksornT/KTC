@@ -1299,13 +1299,15 @@
   }
 
   #page-flexi-content.forever .content-pre-nav h3 {
-    font-size: 20px;
+    font-size: 32px;
+    margin-top: 18px;
   }
-  #page-flexi-content .content-pre-nav h4 {
-    font-size: 14px;
+  #page-flexi-content.forever .content-pre-nav h4 {
+    font-size: 22px;
   }
+
   .forever .btn.button-flexi-start {
-    font-size: 12px;
+    font-size: 18px;
     /*margin-top: 24px;*/
   }
 
@@ -1411,6 +1413,10 @@
 
 .forever #section-flexi-shops .only-shopping {
     font-size: 14px;
+}
+
+.forever .only-shopping .btn-link.underlined{
+    font-size: 18px;
 }
 
 .forever #section-flexi-shops .button-contact-shop-new1 {
