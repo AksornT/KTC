@@ -4504,6 +4504,9 @@ section#section-flexi-cards {
   	font-size: 20px;
 }
 
+article.page-content .flexi-installments h4::after{
+	background: none;
+}
 .installments-wrap .left{
 	margin: auto;
 }
@@ -4559,7 +4562,7 @@ section#section-flexi-cards {
 .section-cards .box-info span{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
   	font-size: 90px;
-  	margin: 30px auto;
+  	/*margin: 30px auto;*/
 }
 .section-cards .box-info small{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
@@ -4590,7 +4593,7 @@ section#section-flexi-cards {
 }
 .flexi-credit.section-cards figure.box-info > .left:after,
 .flexi-loan.section-cards figure.box-info > .left:after {
-    border-right: 1px solid #cf3339;
+    border-right: 1px solid rgba(0,0,0,0.16);
     width: 1px;
     right: 0;
     content: "";
@@ -5444,6 +5447,9 @@ img[href]:hover{
 
 /*== page forever ==*/
 
+.static-wrap.forever-banner h5{
+	margin: 0;
+}
 
 .page-forever-header .content-wrap{
 	padding: 0 60px;
@@ -5453,8 +5459,9 @@ img[href]:hover{
 }
 
 .forever .btn-link.underlined {
-    font-size: 20px;
-    color: #DB195E;
+	font-family: "Conv_SukhumvitTadmai_Tex";
+    font-size: 16px;
+    color: #000;
     text-decoration: underline;
     padding: 0px 0 5px 0;
     vertical-align: middle;
@@ -5729,6 +5736,12 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	margin-top: 8px;
 }
 
+.forever .only-shopping .btn-link.underlined{
+	font-size: 20px;
+	line-height: 33px;
+	color: #000;
+}
+
 .forever .section-box .button-contact-shop {
 	margin-top: 0px;
 	font-size: 20px;
@@ -5759,6 +5772,10 @@ section#section-flexi-cards-mobile.forever,section#section-flexi-cards {
 	display: block;
 	text-align: center;
 	padding-top: 13px;
+}
+
+.forever-share-top{
+	margin-top: 30px;
 }
 
 /* promotion detail -eve */
@@ -8976,6 +8993,10 @@ section#detail-register{
 
 	.forever .text-on-slide {
     margin: 5px 0;
+	}
+
+	.installments-wrap p br{
+		display: none;
 	}
 
 	/* creditcard page -eve */
