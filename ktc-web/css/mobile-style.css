@@ -2069,6 +2069,14 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       height: 234px;
     }
 
+  .static-wrap .flexi-banner{
+    font-size: 32px;
+  }
+
+  .static-wrap .flexi-banner + p{
+    font-size: 22px;
+  }
+
     
 
 }
