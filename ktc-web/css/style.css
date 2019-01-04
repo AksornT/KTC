@@ -4608,7 +4608,7 @@ article.page-content .flexi-installments h4::after{
 }
 .flexi-credit.section-cards figure.box-info > .left:after,
 .flexi-loan.section-cards figure.box-info > .left:after {
-    border-right: 1px solid #cf3339;
+    border-right: 1px solid rgba(0,0,0,0.16);
     width: 1px;
     right: 0;
     content: "";
