@@ -3632,7 +3632,8 @@ h4.content-title:after{
 	height: auto;
 }
 
-#nav-flexi-navbar .nav-item.active .nav-link-act{
+#nav-flexi-navbar .nav-item.active .nav-link-act,
+#nav-flexi-navbar-desktop .nav-item.active .nav-link-act{
 	color: #CF3339;
 }
 
@@ -3725,30 +3726,37 @@ nav.navbar .sub-nav-flexi{
 	pointer-events: all;
 }
 
-#nav-flexi-navbar {
+#nav-flexi-navbar,
+#nav-flexi-navbar-desktop {
 	display: flex;
 	flex: 1;
 }
 
-#nav-flexi-navbar .navbar-nav {
+#nav-flexi-navbar .navbar-nav,
+#nav-flexi-navbar-desktop .navbar-nav {
 	margin: auto;
 	padding-left: 30px;
 }
 
-#nav-flexi-navbar .nav-item {
+#nav-flexi-navbar .nav-item,
+#nav-flexi-navbar-desktop .nav-item {
 	border-right: 1px solid #E6E8EA;
 }
 
-#nav-flexi-navbar .nav-item:last-child {
+#nav-flexi-navbar .nav-item:last-child,
+#nav-flexi-navbar-desktop .nav-item:last-child {
 	border-right: none;
 }
 
-#nav-flexi-navbar .nav-item .nav-link {
+#nav-flexi-navbar .nav-item .nav-link,
+#nav-flexi-navbar-desktop .nav-item .nav-link {
 	padding: 16px 40px;
 	color: #000000;
 }
 
-#nav-flexi-navbar .nav-item.active .nav-link {
+#nav-flexi-navbar .nav-item.active .nav-link,
+#nav-flexi-navbar-desktop .nav-item.active .nav-link,
+#nav-flexi-navbar-desktop .nav-item .nav-link:hover {
 	color: #cf3339;
 }
 
@@ -4595,9 +4603,15 @@ section#section-flexi-cards {
 	padding: 0;
 }
 
-#nav-flexi-desktop #nav-flexi-navbar .nav-item .nav-link{
+#nav-flexi-desktop #nav-flexi-navbar-desktop .nav-item .nav-link{
 	font-size: 18px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
+	color: #000;
+	padding: 16px 40px;
+}
+
+#nav-flexi-desktop #nav-flexi-navbar-desktop .nav-item .nav-link:hover{
+	color: #cf3339;
 }
 
 #nav-flexi-desktop .navbar-nav{
