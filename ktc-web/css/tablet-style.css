@@ -881,10 +881,15 @@
     font-family: "Conv_SukhumvitTadmai_Tex", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
   }
+  #page-flexi-content.forever .content-pre-nav h4{
+    margin-top: 0;
+  }
   #page-flexi-content .content-pre-nav h4 {
     font-family: "Conv_SukhumvitTadmai_Thi", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.4;
+    margin-left: 40%;
+    transform: translateX(-49%);
   }
   #page-flexi-content .content-pre-nav h4::after {
     display: none;
