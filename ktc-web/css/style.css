@@ -3193,7 +3193,7 @@ section#section-merchant-register-form select.form-control:focus,
 #proud-register .input-notice{
 	text-align: center;
 }
-article.page-content .title-red-line h3::after{
+article.page-content .title-red-line h3:after{
 	background-color: #CF3339;
 }
 
@@ -3590,7 +3590,8 @@ h4.content-title:after{
     transform: translateX(-50%);
     font-family: 'Conv_SukhumvitTadmai_Tex';
 }
-.detail-register h3:after {
+.detail-register h3:after,
+.title-red-line h3:after {
   height: 4px;
   background: #CF3339;
   position: absolute;
@@ -3598,6 +3599,7 @@ h4.content-title:after{
   right: 25%;
   content: "";
   top: 100%;
+  display: block;
 }
 .detail-register{
 	background-color: rgba(91, 102, 112, 0.05);
