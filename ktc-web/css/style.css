@@ -2445,7 +2445,8 @@ article#content-card-detail section{
 }
 .static-content .img-point{
 	margin: 0;
-    height: 96px;
+	padding-top: 20px;
+    height: 90px;
 }
 #content-card-detail .section-after-header img{
   height: 150px;
@@ -8725,6 +8726,10 @@ section#detail-register{
 
 .page-loan-proud #privillage:after{
 	display: block;
+}
+
+.static-wrap h5 + h5 + img{
+	margin-top: 20px;
 }
 
 
