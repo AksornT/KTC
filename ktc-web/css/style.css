@@ -2555,13 +2555,14 @@ article.page-content #card-detail-regis h3::after{
 	position: relative;
 	margin-top: -66px;
 }
-.cash-loan .proud-head{
+.proud-loan.cash-loan .proud-head{
 	background: url("../img/cash/bg-cash.jpg");
-	background-size: cover !important;
-	height: 387px;
-	width: 100%;
-	position: relative;
-	margin-top: -66px;
+	margin-bottom: 0;
+}
+.proud-loan .proud-head{
+	margin-bottom: 125px;
+    margin-top: 0;
+    height: 321px;
 }
 .header-big-cover {
 	background: url("../img/bg_menu.png");
@@ -3339,6 +3340,11 @@ h4.content-title:after{
 	line-height: 20px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 100;
+}
+
+.table.faq-tb{
+	width: 50%;
+    margin: 25px auto auto;
 }
 
 .proud-loan{
