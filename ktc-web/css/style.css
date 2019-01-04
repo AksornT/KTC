@@ -4553,23 +4553,28 @@ section#section-flexi-cards {
 .section-cards figure.box-info > .left {
     border-right: 1px solid #E6E8EA;
 }
-.flexi-credit.section-cards figure.box-info > .left {
+.flexi-credit.section-cards figure.box-info > .left{
+	position: relative;
+}
+.flexi-credit.section-cards figure.box-info > .left:after {
     border-right: 1px solid #cf3339;
+    width: 1px;
+    right: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 20px;
+    right: 0;
 }
 .flexi-credit .box-title .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-  	font-size: 24px;
+  	font-size: 20px;
   	line-height: 1.4;
-  	color: #cf3339;
 }
 .flexi-credit .box-title .title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-  	font-size: 34px;
-  	color: #cf3339;
+  	font-size: 40px;
   	text-align: center;
-}
-.flexi-credit .box-info h5{
-	color: #cf3339;
 }
 .flexi-credit .box-info span{
 	color: #cf3339;
@@ -4590,6 +4595,28 @@ section#section-flexi-cards {
 }
 .section-cards a.link-more.button-contact-shop{
 	font-size: 14px;
+}
+
+#nav-flexi-desktop{
+	padding: 0;
+}
+
+#nav-flexi-desktop #nav-flexi-navbar .nav-item .nav-link{
+	font-size: 18px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+}
+
+#nav-flexi-desktop .navbar-nav{
+	position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+#nav-flexi-desktop .nav{
+	position: relative;
+	top: 0;
+	right: 0;
+	padding: 40px 0;
 }
 
 
@@ -8128,6 +8155,21 @@ nav[aria-label="breadcrumb"]{
 .static-content.text-left.text-on-left-img{
 	margin-left: 0;
 	padding-left: 6%
+}
+
+.static-wrap .flexi-banner{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	font-size: 42px;
+	margin: 0;
+}
+
+.static-wrap .flexi-banner + p{
+	font-size: 35px;
+	margin-bottom: 38px;
+}
+
+#section-flexi-promotions{
+	overflow: visible;
 }
 
 .full-overimage{
